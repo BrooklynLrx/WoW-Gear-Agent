@@ -121,6 +121,8 @@ SYSTEM_PROMPT = """你是魔兽世界12.1装备 Builder Agent。你的职责是�
 15. 用户未指定合剂时，优化器应自动选择一瓶最高品质单绿字合剂并计入属性；宝石不自动选择。
 16. 套装必须说明 tier_acquisition_method；转化套装仍展示原装备名称和来源，并注明催化后的套装名称，不能把它说成属性不同的新装备。
 17. optimize_current_loadout 返回的是前端配装提案。不得把提案再次调用 update_build_state 写入当前装备；前端负责应用用户选择的方案。
+18. 用户询问当前装备是否完整、是否合法或当前面板属性时，必须调用 calculate_current_stats；仅调用 get_build_state 不足以声称校验通过，也不得沿用上一份提案的数值。
+19. solutions 数组顺序就是最终推荐顺序。不得自行计算、改名或展示综合评分；score 只供程序内部比较属性偏差。
 """
 
 
@@ -209,14 +211,18 @@ class BuilderAgentSession:
         if not state.equipment:
             missing.append("equipment")
         if missing:
-            return {"success": False, "error": "missing_state", "missing": missing}
-        return calculate_stats(
-            state.class_key,
-            state.spec_key,
-            [item.model_dump() for item in state.equipment],
-            state.consumable_ids,
-            state.constraints.require_complete,
-        )
+            result = {"success": False, "error": "missing_state", "missing": missing}
+        else:
+            result = calculate_stats(
+                state.class_key,
+                state.spec_key,
+                [item.model_dump() for item in state.equipment],
+                state.consumable_ids,
+                state.constraints.require_complete,
+            )
+        if hasattr(self, "tool_trace"):
+            self.tool_trace.append({"tool": "calculate_current_stats", "success": result.get("success", False)})
+        return result
 
     def search_items(
         self,
@@ -274,10 +280,11 @@ class BuilderAgentSession:
     async def reply_payload(self, text: str) -> dict:
         """Return prose plus the optimizer's canonical JSON proposal for the frontend."""
         self.last_optimization_result = None
+        trace_start = len(self.tool_trace)
         message = await self.reply(text)
         return {
             "message": "".join(block.text for block in message.content if hasattr(block, "text")),
             "proposal": self.last_optimization_result,
             "state": self.build_state.model_dump(),
-            "tool_trace": list(self.tool_trace),
+            "tool_trace": list(self.tool_trace[trace_start:]),
         }

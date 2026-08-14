@@ -1,4 +1,7 @@
+import asyncio
+
 import pytest
+from agentscope.message import Msg, TextBlock
 from pydantic import ValidationError
 
 from backend.builder_agent import BuildObjective, BuilderAgentSession
@@ -39,3 +42,19 @@ def test_frontend_payload_uses_canonical_optimizer_result():
     session = object.__new__(BuilderAgentSession)
     session.last_optimization_result = {"success": True, "solutions": [{"equipment": []}]}
     assert session.last_optimization_result["solutions"][0]["equipment"] == []
+
+
+def test_reply_payload_only_returns_current_turn_trace(monkeypatch):
+    session = object.__new__(BuilderAgentSession)
+    from backend.builder_agent import BuildSessionState
+    session.build_state = BuildSessionState(class_key="mage", spec_key="arcane")
+    session.last_optimization_result = None
+    session.tool_trace = [{"tool": "old_turn", "success": True}]
+
+    async def fake_reply(_text):
+        session.tool_trace.append({"tool": "get_build_state", "success": True})
+        return Msg(name="wow_builder", role="assistant", content=[TextBlock(text="ok")])
+
+    monkeypatch.setattr(session, "reply", fake_reply)
+    payload = asyncio.run(session.reply_payload("test"))
+    assert payload["tool_trace"] == [{"tool": "get_build_state", "success": True}]
