@@ -5,6 +5,11 @@ from typing import Literal
 
 from agentscope.agent import Agent, ReActConfig
 from agentscope.credential import OpenAICredential
+from agentscope.event import (
+    TextBlockDeltaEvent,
+    ToolCallStartEvent,
+    ToolResultEndEvent,
+)
 from agentscope.message import Msg, TextBlock
 from agentscope.model import OpenAIChatModel
 from agentscope.permission import PermissionBehavior, PermissionDecision
@@ -287,4 +292,48 @@ class BuilderAgentSession:
             "proposal": self.last_optimization_result,
             "state": self.build_state.model_dump(),
             "tool_trace": list(self.tool_trace[trace_start:]),
+        }
+
+    async def stream_reply_payload(self, text: str):
+        """Yield safe UI events, followed by the canonical proposal and state."""
+        self.last_optimization_result = None
+        trace_start = len(self.tool_trace)
+        tool_names = {}
+        final_message = None
+        yield {"event": "status", "data": {"message": "正在理解配装要求"}}
+        async for chunk in self.agent.reply_stream(
+            Msg(name="user", role="user", content=[TextBlock(text=text)]),
+            yield_final_msg=True,
+        ):
+            if isinstance(chunk, TextBlockDeltaEvent):
+                yield {"event": "text_delta", "data": {"text": chunk.delta}}
+            elif isinstance(chunk, ToolCallStartEvent):
+                tool_names[chunk.tool_call_id] = chunk.tool_call_name
+                yield {
+                    "event": "tool_start",
+                    "data": {"tool": chunk.tool_call_name},
+                }
+            elif isinstance(chunk, ToolResultEndEvent):
+                state = getattr(chunk.state, "value", chunk.state)
+                yield {
+                    "event": "tool_result",
+                    "data": {
+                        "tool": tool_names.get(chunk.tool_call_id, "unknown"),
+                        "success": state == "success",
+                    },
+                }
+            elif isinstance(chunk, Msg):
+                final_message = chunk
+
+        message = "" if final_message is None else "".join(
+            block.text for block in final_message.content if hasattr(block, "text")
+        )
+        yield {"event": "proposal", "data": self.last_optimization_result}
+        yield {"event": "state", "data": self.build_state.model_dump()}
+        yield {
+            "event": "done",
+            "data": {
+                "message": message,
+                "tool_trace": list(self.tool_trace[trace_start:]),
+            },
         }

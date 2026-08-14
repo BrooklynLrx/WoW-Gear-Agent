@@ -25,6 +25,12 @@ class FakeBuilder:
             "tool_trace": [{"tool": "optimize_current_loadout", "success": True}],
         }
 
+    async def stream_reply_payload(self, message):
+        yield {"event": "text_delta", "data": {"text": message}}
+        yield {"event": "proposal", "data": {"success": True, "solutions": []}}
+        yield {"event": "state", "data": self.build_state.model_dump()}
+        yield {"event": "done", "data": {"message": message, "tool_trace": []}}
+
 
 def test_builder_http_flow(monkeypatch):
     api.sessions.clear()
@@ -47,3 +53,13 @@ def test_builder_http_flow(monkeypatch):
     )
     assert reply.status_code == 200
     assert reply.json()["proposal"]["success"] is True
+
+    stream = client.post(
+        f"/api/v1/builder/sessions/{session_id}/messages/stream",
+        json={"message": "生成一套配装"},
+    )
+    assert stream.status_code == 200
+    assert stream.headers["content-type"].startswith("text/event-stream")
+    assert "event: text_delta" in stream.text
+    assert "event: proposal" in stream.text
+    assert "event: done" in stream.text

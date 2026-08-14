@@ -75,6 +75,7 @@ POST   /api/v1/builder/sessions
 GET    /api/v1/builder/sessions/{session_id}
 PATCH  /api/v1/builder/sessions/{session_id}
 POST   /api/v1/builder/sessions/{session_id}/messages
+POST   /api/v1/builder/sessions/{session_id}/messages/stream
 DELETE /api/v1/builder/sessions/{session_id}
 ```
 
@@ -100,6 +101,10 @@ response.proposal.solutions[0].equipment
 
 `message` 只用于展示；`proposal` 才是程序使用的权威数据。
 
+流式接口使用 SSE，按顺序返回 `status`、`tool_start`、`tool_result`、
+`text_delta`、`proposal`、`state`、`done`；异常返回 `error`。前端逐段展示
+`text_delta`，收到完整的 `proposal` 事件后再更新装备栏。
+
 ## 测试
 
 ```bash
@@ -107,7 +112,7 @@ PYTHONPATH=. PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 pytest -q
 PYTHONPATH=. python scripts/audit_all_specs.py
 ```
 
-当前基础测试为 19 项，另有 40 专精批量配装审计脚本。
+当前基础测试为 20 项，另有 40 专精批量配装审计脚本。
 
 ## 当前限制
 

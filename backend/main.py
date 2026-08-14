@@ -1,6 +1,7 @@
 """FastAPI entry point for the WoW Builder Agent."""
 
 import asyncio
+import json
 import logging
 from dataclasses import dataclass, field
 from typing import Any
@@ -8,6 +9,7 @@ from uuid import uuid4
 
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import StreamingResponse
 from pydantic import BaseModel, Field
 
 from backend.builder_agent import (
@@ -122,6 +124,30 @@ async def chat(session_id: str, body: ChatRequest) -> BuilderReply:
     except Exception as exc:
         logger.exception("builder agent failed")
         raise HTTPException(status_code=502, detail="builder_agent_failed") from exc
+
+
+def sse(event: str, data: Any) -> str:
+    return f"event: {event}\ndata: {json.dumps(data, ensure_ascii=False, separators=(',', ':'))}\n\n"
+
+
+@app.post("/api/v1/builder/sessions/{session_id}/messages/stream")
+async def chat_stream(session_id: str, body: ChatRequest) -> StreamingResponse:
+    entry = get_session(session_id)
+
+    async def events():
+        try:
+            async with entry.lock:
+                async for chunk in entry.builder.stream_reply_payload(body.message):
+                    yield sse(chunk["event"], chunk["data"])
+        except Exception:
+            logger.exception("streaming builder agent failed")
+            yield sse("error", {"code": "builder_agent_failed"})
+
+    return StreamingResponse(
+        events(),
+        media_type="text/event-stream",
+        headers={"Cache-Control": "no-cache", "X-Accel-Buffering": "no"},
+    )
 
 
 @app.delete("/api/v1/builder/sessions/{session_id}", status_code=204)
