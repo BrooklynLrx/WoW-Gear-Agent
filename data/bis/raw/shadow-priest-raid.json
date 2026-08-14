@@ -1,0 +1,98 @@
+{
+  "spec": "shadow-priest",
+  "recommendation_context": "raid",
+  "set_kind": "final_bis",
+  "one_set_per_context": true,
+  "gear_source_policy": "unrestricted_final_bis",
+  "gear_source_policy_zh_cn": "最终毕业配装可混用团本、大秘境、制造、套装及转化装备，不按掉落来源拆分。",
+  "patch": "12.1",
+  "last_updated": "August 11, 2026",
+  "source_url": "https://maxroll.gg/wow/class-guides/shadow-priest-raid-guide#gear-header",
+  "items": [
+    {
+      "slot": "Head",
+      "item_id": 271874,
+      "item_en": "Venomkeeper's Horrific Cowl",
+      "location_en": "Ula'tek"
+    },
+    {
+      "slot": "Neck",
+      "item_id": 268265,
+      "item_en": "Aqirbane Reliquary",
+      "location_en": "Ula'tek"
+    },
+    {
+      "slot": "Shoulder",
+      "item_id": 271553,
+      "item_en": "Cosmic Penitent's Echoing Screams",
+      "location_en": "The Lost Explorers or Catalyst"
+    },
+    {
+      "slot": "Cloak",
+      "item_id": 268253,
+      "item_en": "Silken Voodoo Drape",
+      "location_en": "The Coiled Altar"
+    },
+    {
+      "slot": "Chest",
+      "item_id": 271558,
+      "item_en": "Cosmic Penitent's Eclipsing Robes",
+      "location_en": "Vashnik or Catalyst"
+    },
+    {
+      "slot": "Wrist",
+      "item_id": 239648,
+      "item_en": "Martyr's Bindings",
+      "location_en": "Crafting"
+    },
+    {
+      "slot": "Gloves",
+      "item_id": 271556,
+      "item_en": "Cosmic Penitent's Celestial Grips",
+      "location_en": "Entombed Sentinels or Catalyst"
+    },
+    {
+      "slot": "Belt",
+      "item_id": 239664,
+      "item_en": "Arcanoweave Cord",
+      "location_en": "Crafting"
+    },
+    {
+      "slot": "Legs",
+      "item_id": 271554,
+      "item_en": "Enveloping Legwraps of the Cosmic Penitent",
+      "location_en": "Sszorak or Catalyst"
+    },
+    {
+      "slot": "Boots",
+      "item_id": 268255,
+      "item_en": "Cackling Soultreads",
+      "location_en": "The Coiled Altar"
+    },
+    {
+      "slot": "Ring 1",
+      "item_id": 268252,
+      "item_en": "Apex Brute's Claw Ring",
+      "location_en": "Sszorak"
+    },
+    {
+      "slot": "Ring 2",
+      "item_id": 268249,
+      "item_en": "Vile Alchemist's Band",
+      "location_en": "Vashnik"
+    },
+    {
+      "slot": "Trinket 1",
+      "item_id": 250215,
+      "item_en": "Freightrunner's Flask",
+      "location_en": "Murder Row"
+    },
+    {
+      "slot": "Trinket 2",
+      "item_id": null,
+      "item_en": "Gebbo's Bottomless Bag The Lost Explorers Main Hand Jan'thrazet, the Soul Fang Ula'tek Off Hand Spine of the Hissing Abyss",
+      "location_en": "Entombed Sentinels"
+    }
+  ],
+  "fetched_at": "2026-08-13T05:31:37.580192+00:00"
+}

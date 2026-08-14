@@ -1,0 +1,247 @@
+{
+  "class": "priest",
+  "spec": "holy",
+  "source_url": "https://www.wowhead.com/guide/classes/priest/holy/bis-gear#bis-gear",
+  "captured_at": "2026-08-13",
+  "patch": "Patch 12.1.0",
+  "tables": [
+    {
+      "rows": [
+        {
+          "cells": [
+            "Slot",
+            "Item",
+            "Source"
+          ],
+          "items": []
+        },
+        {
+          "cells": [
+            "Weapon",
+            "Jan'thrazet, the Soul Fang",
+            "Ula'tek"
+          ],
+          "items": [
+            {
+              "id": 271092,
+              "name": "Jan'thrazet, the Soul Fang",
+              "url": "https://www.wowhead.com/item=271092/janthrazet-the-soul-fang"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Offhand",
+            "Frostscale's Mystic Frond",
+            "Nymrissa Wavecaller"
+          ],
+          "items": [
+            {
+              "id": 268263,
+              "name": "Frostscale's Mystic Frond",
+              "url": "https://www.wowhead.com/item=268263/frostscales-mystic-frond"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Head",
+            "Venomkeeper's Horrific Cowl",
+            "Ula'tek"
+          ],
+          "items": [
+            {
+              "id": 271874,
+              "name": "Venomkeeper's Horrific Cowl",
+              "url": "https://www.wowhead.com/item=271874/venomkeepers-horrific-cowl"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Neck",
+            "Aqirbane Reliquary",
+            "Ula'tek"
+          ],
+          "items": [
+            {
+              "id": 268265,
+              "name": "Aqirbane Reliquary",
+              "url": "https://www.wowhead.com/item=268265/aqirbane-reliquary"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Shoulders",
+            "Cosmic Penitent's Echoing Screams",
+            "Mor'zahi"
+          ],
+          "items": [
+            {
+              "id": 271553,
+              "name": "Cosmic Penitent's Echoing Screams",
+              "url": "https://www.wowhead.com/item=271553/cosmic-penitents-echoing-screams"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Cloak",
+            "Speakeasy Shroud",
+            "Murder Row"
+          ],
+          "items": [
+            {
+              "id": 251132,
+              "name": "Speakeasy Shroud",
+              "url": "https://www.wowhead.com/item=251132/speakeasy-shroud"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Chest",
+            "Cosmic Penitent's Eclipsing Robes",
+            "Nymrissa Wavecaller"
+          ],
+          "items": [
+            {
+              "id": 271558,
+              "name": "Cosmic Penitent's Eclipsing Robes",
+              "url": "https://www.wowhead.com/item=271558/cosmic-penitents-eclipsing-robes?bonus=13848&original-item=268221"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Wrist",
+            "Martyr's Bindings",
+            "Crafting"
+          ],
+          "items": [
+            {
+              "id": 239648,
+              "name": "Martyr's Bindings",
+              "url": "https://www.wowhead.com/item=239648/martyrs-bindings"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Gloves",
+            "Cosmic Penitent's Celestial Grips",
+            "Breath of Ula'tek"
+          ],
+          "items": [
+            {
+              "id": 271556,
+              "name": "Cosmic Penitent's Celestial Grips",
+              "url": "https://www.wowhead.com/item=271556/cosmic-penitents-celestial-grips"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Belt",
+            "Martyr's Waistwrap",
+            "Crafting"
+          ],
+          "items": [
+            {
+              "id": 239649,
+              "name": "Martyr's Waistwrap",
+              "url": "https://www.wowhead.com/item=239649/martyrs-waistwrap"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Legs",
+            "Enveloping Legwraps of the Cosmic Penitent",
+            "Kings' Rest"
+          ],
+          "items": [
+            {
+              "id": 271554,
+              "name": "Enveloping Legwraps of the Cosmic Penitent",
+              "url": "https://www.wowhead.com/item=271554/enveloping-legwraps-of-the-cosmic-penitent?bonus=13848&original-item=159234"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Boots",
+            "Nek'zali's Spiritwalkers",
+            "Nek'zali the Soulcoiler"
+          ],
+          "items": [
+            {
+              "id": 268218,
+              "name": "Nek'zali's Spiritwalkers",
+              "url": "https://www.wowhead.com/item=268218/nekzalis-spiritwalkers"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Ring",
+            "Apex Brute's Claw Ring",
+            "Sszorak"
+          ],
+          "items": [
+            {
+              "id": 268252,
+              "name": "Apex Brute's Claw Ring",
+              "url": "https://www.wowhead.com/item=268252/apex-brutes-claw-ring"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Ring",
+            "Pilfered Precious Band",
+            "Den of Nalorakk"
+          ],
+          "items": [
+            {
+              "id": 251148,
+              "name": "Pilfered Precious Band",
+              "url": "https://www.wowhead.com/item=251148/pilfered-precious-band"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Trinket",
+            "Gebbo's Bottomless Bag",
+            "Mor'zahi"
+          ],
+          "items": [
+            {
+              "id": 270164,
+              "name": "Gebbo's Bottomless Bag",
+              "url": "https://www.wowhead.com/item=270164/gebbos-bottomless-bag"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Trinket",
+            "Soulcoiler Ritual Vessel",
+            "Nek'zali the Soulcoiler"
+          ],
+          "items": [
+            {
+              "id": 270162,
+              "name": "Soulcoiler Ritual Vessel",
+              "url": "https://www.wowhead.com/item=270162/soulcoiler-ritual-vessel"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "title": "Holy Priest Gear and Best in Slot - Midnight - Wowhead",
+  "updated": "2026/08/12"
+}

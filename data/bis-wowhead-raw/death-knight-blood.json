@@ -1,0 +1,493 @@
+{
+  "class": "death-knight",
+  "spec": "blood",
+  "source_url": "https://www.wowhead.com/guide/classes/death-knight/blood/bis-gear#bis-gear",
+  "captured_at": "2026-08-13",
+  "patch": "Patch 12.1.0",
+  "tables": [
+    {
+      "rows": [
+        {
+          "cells": [
+            "Slot",
+            "Item",
+            "Source"
+          ],
+          "items": []
+        },
+        {
+          "cells": [
+            "Weapon",
+            "Maze-roa, Warlord's Fury",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 268213,
+              "name": "Maze-roa, Warlord's Fury",
+              "url": "https://www.wowhead.com/item=268213/maze-roa-warlords-fury"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Head",
+            "Baleful Grave-Knight's Casque",
+            "Nek'zali the Soulcoiler"
+          ],
+          "items": [
+            {
+              "id": 271474,
+              "name": "Baleful Grave-Knight's Casque",
+              "url": "https://www.wowhead.com/item=271474/baleful-grave-knights-casque?original-item=268229"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Neck",
+            "Aqirbane Reliquary",
+            "Ula'tek"
+          ],
+          "items": [
+            {
+              "id": 268265,
+              "name": "Aqirbane Reliquary",
+              "url": "https://www.wowhead.com/item=268265/aqirbane-reliquary"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Shoulders",
+            "Baleful Grave-Knight's Gibbets",
+            "Temple of Sethraliss"
+          ],
+          "items": [
+            {
+              "id": 271472,
+              "name": "Baleful Grave-Knight's Gibbets",
+              "url": "https://www.wowhead.com/item=271472/baleful-grave-knights-gibbets?original-item=239037"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Cloak",
+            "Silken Voodoo Drape",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 268253,
+              "name": "Silken Voodoo Drape",
+              "url": "https://www.wowhead.com/item=268253/silken-voodoo-drape"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Chest",
+            "Baleful Grave-Knight's Breastplate",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 271477,
+              "name": "Baleful Grave-Knight's Breastplate",
+              "url": "https://www.wowhead.com/item=271477/baleful-grave-knights-breastplate?original-item=268222"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Wrist",
+            "Spellbreaker's Bracers",
+            "Crafting"
+          ],
+          "items": [
+            {
+              "id": 237834,
+              "name": "Spellbreaker's Bracers",
+              "url": "https://www.wowhead.com/item=237834/spellbreakers-bracers"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Gloves",
+            "Baleful Grave-Knight's Deathgrips",
+            "King's Rest"
+          ],
+          "items": [
+            {
+              "id": 271475,
+              "name": "Baleful Grave-Knight's Deathgrips",
+              "url": "https://www.wowhead.com/item=271475/baleful-grave-knights-deathgrips?original-item=159413"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Belt",
+            "Girdle of Toxic Regret",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 268259,
+              "name": "Girdle of Toxic Regret",
+              "url": "https://www.wowhead.com/item=268259/girdle-of-toxic-regret"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Legs",
+            "Chausses of Unbound Rancor",
+            "Ula'tek"
+          ],
+          "items": [
+            {
+              "id": 271878,
+              "name": "Chausses of Unbound Rancor",
+              "url": "https://www.wowhead.com/item=271878/chausses-of-unbound-rancor"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Boots",
+            "Poison-Proof Stompers",
+            "Altar of Fangs"
+          ],
+          "items": [
+            {
+              "id": 273777,
+              "name": "Poison-Proof Stompers",
+              "url": "https://www.wowhead.com/item=273777/poison-proof-stompers"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Ring ( Polished Ammolite )",
+            "Masterwork Sin'dorei Band",
+            "Crafting"
+          ],
+          "items": [
+            {
+              "id": 273066,
+              "name": "Polished Ammolite",
+              "url": "https://www.wowhead.com/item=273066/polished-ammolite"
+            },
+            {
+              "id": 240949,
+              "name": "Masterwork Sin'dorei Band",
+              "url": "https://www.wowhead.com/item=240949/masterwork-sindorei-band"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Ring",
+            "Vile Alchemist's Band",
+            "Vashnik the Malignant"
+          ],
+          "items": [
+            {
+              "id": 268249,
+              "name": "Vile Alchemist's Band",
+              "url": "https://www.wowhead.com/item=268249/vile-alchemists-band"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Ring",
+            "Lightwarden's Bind",
+            "Blinding Vale"
+          ],
+          "items": [
+            {
+              "id": 251194,
+              "name": "Lightwarden's Bind",
+              "url": "https://www.wowhead.com/item=251194/lightwardens-bind"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Trinket",
+            "Voracious Heart of Ula'tek",
+            "Ula'tek"
+          ],
+          "items": [
+            {
+              "id": 270175,
+              "name": "Voracious Heart of Ula'tek",
+              "url": "https://www.wowhead.com/item=270175/voracious-heart-of-ulatek"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Trinket",
+            "Zul'jin's Guillotine Technique",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 270173,
+              "name": "Zul'jin's Guillotine Technique",
+              "url": "https://www.wowhead.com/item=270173/zuljins-guillotine-technique"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rows": [
+        {
+          "cells": [
+            "Slot",
+            "Item",
+            "Source"
+          ],
+          "items": []
+        },
+        {
+          "cells": [
+            "Weapon",
+            "Maze-roa, Warlord's Fury",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 268213,
+              "name": "Maze-roa, Warlord's Fury",
+              "url": "https://www.wowhead.com/item=268213/maze-roa-warlords-fury"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Head",
+            "Baleful Grave-Knight's Casque",
+            "Nek'zali the Soulcoiler"
+          ],
+          "items": [
+            {
+              "id": 271474,
+              "name": "Baleful Grave-Knight's Casque",
+              "url": "https://www.wowhead.com/item=271474/baleful-grave-knights-casque?original-item=268229"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Neck",
+            "Aqirbane Reliquary",
+            "Ula'tek"
+          ],
+          "items": [
+            {
+              "id": 268265,
+              "name": "Aqirbane Reliquary",
+              "url": "https://www.wowhead.com/item=268265/aqirbane-reliquary"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Shoulders",
+            "Baleful Grave-Knight's Gibbets",
+            "Temple of Sethraliss"
+          ],
+          "items": [
+            {
+              "id": 271472,
+              "name": "Baleful Grave-Knight's Gibbets",
+              "url": "https://www.wowhead.com/item=271472/baleful-grave-knights-gibbets?original-item=239037"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Cloak",
+            "Silken Voodoo Drape",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 268253,
+              "name": "Silken Voodoo Drape",
+              "url": "https://www.wowhead.com/item=268253/silken-voodoo-drape"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Chest",
+            "Baleful Grave-Knight's Breastplate",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 271477,
+              "name": "Baleful Grave-Knight's Breastplate",
+              "url": "https://www.wowhead.com/item=271477/baleful-grave-knights-breastplate?original-item=268222"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Wrist",
+            "Spellbreaker's Bracers",
+            "Crafting"
+          ],
+          "items": [
+            {
+              "id": 237834,
+              "name": "Spellbreaker's Bracers",
+              "url": "https://www.wowhead.com/item=237834/spellbreakers-bracers"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Gloves",
+            "Baleful Grave-Knight's Deathgrips",
+            "King's Rest"
+          ],
+          "items": [
+            {
+              "id": 271475,
+              "name": "Baleful Grave-Knight's Deathgrips",
+              "url": "https://www.wowhead.com/item=271475/baleful-grave-knights-deathgrips?original-item=159413"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Belt",
+            "Girdle of Toxic Regret",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 268259,
+              "name": "Girdle of Toxic Regret",
+              "url": "https://www.wowhead.com/item=268259/girdle-of-toxic-regret"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Legs",
+            "Chausses of Unbound Rancor",
+            "Ula'tek"
+          ],
+          "items": [
+            {
+              "id": 271878,
+              "name": "Chausses of Unbound Rancor",
+              "url": "https://www.wowhead.com/item=271878/chausses-of-unbound-rancor"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Boots",
+            "Poison-Proof Stompers",
+            "Altar of Fangs"
+          ],
+          "items": [
+            {
+              "id": 273777,
+              "name": "Poison-Proof Stompers",
+              "url": "https://www.wowhead.com/item=273777/poison-proof-stompers"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Ring ( Polished Ammolite )",
+            "Masterwork Sin'dorei Band",
+            "Crafting"
+          ],
+          "items": [
+            {
+              "id": 273066,
+              "name": "Polished Ammolite",
+              "url": "https://www.wowhead.com/item=273066/polished-ammolite"
+            },
+            {
+              "id": 240949,
+              "name": "Masterwork Sin'dorei Band",
+              "url": "https://www.wowhead.com/item=240949/masterwork-sindorei-band"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Ring",
+            "Ritual Binder's Ring",
+            "King's Rest"
+          ],
+          "items": [
+            {
+              "id": 159459,
+              "name": "Ritual Binder's Ring",
+              "url": "https://www.wowhead.com/item=159459/ritual-binders-ring"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Ring",
+            "Sickening Signet of Atroxus",
+            "Voidscar Arena"
+          ],
+          "items": [
+            {
+              "id": 252258,
+              "name": "Sickening Signet of Atroxus",
+              "url": "https://www.wowhead.com/item=252258/sickening-signet-of-atroxus"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Trinket",
+            "Voracious Heart of Ula'tek",
+            "Ula'tek"
+          ],
+          "items": [
+            {
+              "id": 270175,
+              "name": "Voracious Heart of Ula'tek",
+              "url": "https://www.wowhead.com/item=270175/voracious-heart-of-ulatek"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Trinket",
+            "Zul'jin's Guillotine Technique",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 270173,
+              "name": "Zul'jin's Guillotine Technique",
+              "url": "https://www.wowhead.com/item=270173/zuljins-guillotine-technique"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "title": "Blood Death Knight Gear and Best in Slot - Midnight - Wowhead",
+  "updated": "2026/08/12"
+}

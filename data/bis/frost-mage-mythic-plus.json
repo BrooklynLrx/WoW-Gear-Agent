@@ -1,0 +1,158 @@
+{
+  "spec": "frost-mage",
+  "recommendation_context": "mythic-plus",
+  "set_kind": "final_bis",
+  "one_set_per_context": true,
+  "gear_source_policy": "unrestricted_final_bis",
+  "gear_source_policy_zh_cn": "最终毕业配装可混用团本、大秘境、制造、套装及转化装备，不按掉落来源拆分。",
+  "patch": "12.1",
+  "last_updated": "August 11, 2026",
+  "source_url": "https://maxroll.gg/wow/class-guides/frost-mage-mythic-plus-guide#gear-header",
+  "items": [
+    {
+      "slot": "Head",
+      "item_id": 271874,
+      "item_en": "Venomkeeper's Horrific Cowl",
+      "location_en": "Ula'tek",
+      "name_zh_cn": "守毒者的骇人兜帽",
+      "icon": "inv_helm_cloth_raidwarlockulatek_d_01",
+      "localization_status": "matched_by_item_id"
+    },
+    {
+      "slot": "Neck",
+      "item_id": 268265,
+      "item_en": "Aqirbane Reliquary",
+      "location_en": "Ula'tek",
+      "name_zh_cn": "亚基克星藏骨匣",
+      "icon": "inv_121_jewelry_neck03_green",
+      "localization_status": "matched_by_item_id"
+    },
+    {
+      "slot": "Shoulder",
+      "item_id": 271562,
+      "item_en": "Primal Leywarden's Manaflux",
+      "location_en": "Tier / Catalyst",
+      "name_zh_cn": "始源魔网守卫的法力涌流",
+      "icon": "inv_shoulder_cloth_raidmageulatek_d_01",
+      "localization_status": "matched_by_item_id"
+    },
+    {
+      "slot": "Cloak",
+      "item_id": 268253,
+      "item_en": "Silken Voodoo Drape",
+      "location_en": "The Coiled Altar",
+      "name_zh_cn": "丝质巫毒斗篷",
+      "icon": "inv_cape_leather_raidrogueulatek_d_01",
+      "localization_status": "matched_by_item_id"
+    },
+    {
+      "slot": "Chest",
+      "item_id": 271567,
+      "item_en": "Crest of the Primal Leywarden",
+      "location_en": "Tier / Catalyst",
+      "name_zh_cn": "始源魔网守卫护胸",
+      "icon": "inv_robe_cloth_raidmageulatek_d_01",
+      "localization_status": "matched_by_item_id"
+    },
+    {
+      "slot": "Wrist",
+      "item_id": 239648,
+      "item_en": "Martyr's Bindings",
+      "location_en": "Crafting",
+      "name_zh_cn": "殉难者的裹腕",
+      "icon": "inv_bracer_cloth_questbloodelf_b_01",
+      "localization_status": "matched_by_item_id"
+    },
+    {
+      "slot": "Gloves",
+      "item_id": 271565,
+      "item_en": "Grasps of the Eternal Shadow → Primal Leywarden's Manashapers",
+      "location_en": "Catalyst of The Coiled Altar",
+      "name_zh_cn": "始源魔网守卫的法力塑形手套",
+      "icon": "inv_glove_cloth_raidmageulatek_d_01",
+      "localization_status": "matched_by_item_id"
+    },
+    {
+      "slot": "Belt",
+      "item_id": 271561,
+      "item_en": "Primal Leywarden's Bejeweled Buckle",
+      "location_en": "Catalyst",
+      "name_zh_cn": null,
+      "icon": null,
+      "localization_status": "unmatched"
+    },
+    {
+      "slot": "Legs",
+      "item_id": 271563,
+      "item_en": "Primal Leywarden's Tailored Legwraps",
+      "location_en": "Tier / Catalyst",
+      "name_zh_cn": "始源魔网守卫的精裁裹腿",
+      "icon": "inv_pant_cloth_raidmageulatek_d_01",
+      "localization_status": "matched_by_item_id"
+    },
+    {
+      "slot": "Boots",
+      "item_id": 268255,
+      "item_en": "Cackling Soultreads",
+      "location_en": "The Coiled Altar",
+      "name_zh_cn": "狂笑履魂靴",
+      "icon": "inv_boot_cloth_raidmageulatek_d_01",
+      "localization_status": "matched_by_item_id"
+    },
+    {
+      "slot": "Ring 1",
+      "item_id": 268249,
+      "item_en": "Vile Alchemist's Band",
+      "location_en": "Vashnik the Malignant",
+      "name_zh_cn": "邪恶炼金师指环",
+      "icon": "inv_121_jewelry_ring01_purple",
+      "localization_status": "matched_by_item_id"
+    },
+    {
+      "slot": "Ring 2",
+      "item_id": 158366,
+      "item_en": "Charged Sandstone Band",
+      "location_en": "Temple of Sethraliss",
+      "name_zh_cn": "充能沙石指环",
+      "icon": "inv_ring_80_03d",
+      "localization_status": "matched_by_item_id"
+    },
+    {
+      "slot": "Trinket 1",
+      "item_id": 270164,
+      "item_en": "Gebbo's Bottomless Bag",
+      "location_en": "The Lost Explorers",
+      "name_zh_cn": "盖博的无底袋",
+      "icon": "inv_10_tailoring_bag1_color2",
+      "localization_status": "matched_by_item_id"
+    },
+    {
+      "slot": "Trinket 2",
+      "item_id": 250215,
+      "item_en": "Freightrunner's Flask",
+      "location_en": "Murder Row",
+      "name_zh_cn": "货运者水壶",
+      "icon": "inv_alchemy_90_flask_red",
+      "localization_status": "matched_by_item_id"
+    },
+    {
+      "slot": "Main-hand",
+      "item_id": 271092,
+      "item_en": "Jan'thrazet, the Soul Fang",
+      "location_en": "Ula'tek",
+      "name_zh_cn": "简斯拉泽，灵魂之牙",
+      "icon": "inv_knife_1h_ulatekfang_d_01_spirit",
+      "localization_status": "matched_by_item_id"
+    },
+    {
+      "slot": "Off-hand",
+      "item_id": 245769,
+      "item_en": "Aln'hara Lantern",
+      "location_en": "Crafting",
+      "name_zh_cn": "艾林哈籁灯笼",
+      "icon": "inv_offhand_1h_dungeonharronir_c_01",
+      "localization_status": "matched_by_item_id"
+    }
+  ],
+  "fetched_at": "2026-08-13T05:30:56.012872+00:00"
+}

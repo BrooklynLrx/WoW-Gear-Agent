@@ -1,0 +1,140 @@
+{
+  "spec": "destruction-warlock",
+  "recommendation_context": "raid",
+  "set_kind": "final_bis",
+  "one_set_per_context": true,
+  "gear_source_policy": "unrestricted_final_bis",
+  "gear_source_policy_zh_cn": "最终毕业配装可混用团本、大秘境、制造、套装及转化装备，不按掉落来源拆分。",
+  "patch": "12.1",
+  "last_updated": "August 11, 2026",
+  "source_url": "https://maxroll.gg/wow/class-guides/destruction-warlock-raid-guide#gear-header",
+  "items": [
+    {
+      "slot": "Head",
+      "item_id": 271874,
+      "item_en": "Venomkeeper's Horrific Cowl",
+      "location_en": "Ula'tek",
+      "name_zh_cn": "守毒者的骇人兜帽",
+      "icon": "inv_helm_cloth_raidwarlockulatek_d_01",
+      "localization_status": "matched_by_item_id"
+    },
+    {
+      "slot": "Neck",
+      "item_id": 268265,
+      "item_en": "Aqirbane Reliquary",
+      "location_en": "Ula'tek",
+      "name_zh_cn": "亚基克星藏骨匣",
+      "icon": "inv_121_jewelry_neck03_green",
+      "localization_status": "matched_by_item_id"
+    },
+    {
+      "slot": "Shoulder",
+      "item_id": 271544,
+      "item_en": "Brood Cleanser's Amice → Spires of the Damned Necrolyte",
+      "location_en": "Catalyst of Temple of Sethraliss",
+      "name_zh_cn": "受诅通灵师尖塔肩甲",
+      "icon": "inv_shoulder_cloth_raidwarlockulatek_d_01",
+      "localization_status": "matched_by_item_id"
+    },
+    {
+      "slot": "Cloak",
+      "item_id": 268253,
+      "item_en": "Silken Voodoo Drape",
+      "location_en": "The Coiled Altar",
+      "name_zh_cn": "丝质巫毒斗篷",
+      "icon": "inv_cape_leather_raidrogueulatek_d_01",
+      "localization_status": "matched_by_item_id"
+    },
+    {
+      "slot": "Chest",
+      "item_id": 271549,
+      "item_en": "Damned Necrolyte's Rattling Robes",
+      "location_en": "Vashnik",
+      "name_zh_cn": "受诅通灵师嘎响法袍",
+      "icon": "inv_robe_cloth_raidwarlockulatek_d_01",
+      "localization_status": "matched_by_item_id"
+    },
+    {
+      "slot": "Wrist",
+      "item_id": 239648,
+      "item_en": "Martyr's Bindings",
+      "location_en": "Crafting",
+      "name_zh_cn": "殉难者的裹腕",
+      "icon": "inv_bracer_cloth_questbloodelf_b_01",
+      "localization_status": "matched_by_item_id"
+    },
+    {
+      "slot": "Gloves",
+      "item_id": 271547,
+      "item_en": "Grasps of the Eternal Shadow → Damned Necrolyte's Charred Grasps",
+      "location_en": "Catalyst of The Coiled Altar",
+      "name_zh_cn": "受诅通灵师焦黑之握",
+      "icon": "inv_glove_cloth_raidwarlockulatek_d_01",
+      "localization_status": "matched_by_item_id"
+    },
+    {
+      "slot": "Belt",
+      "item_id": 239649,
+      "item_en": "Martyr's Waistwrap",
+      "location_en": "Crafting",
+      "name_zh_cn": "殉难者的裹腰",
+      "icon": "inv_belt_cloth_questbloodelf_b_01",
+      "localization_status": "matched_by_item_id"
+    },
+    {
+      "slot": "Legs",
+      "item_id": 271545,
+      "item_en": "Damned Necrolyte's Leg Bindings",
+      "location_en": "Sszorak",
+      "name_zh_cn": "受诅通灵师绑腿",
+      "icon": "inv_pant_cloth_raidwarlockulatek_d_01",
+      "localization_status": "matched_by_item_id"
+    },
+    {
+      "slot": "Boots",
+      "item_id": 268255,
+      "item_en": "Cackling Soultreads",
+      "location_en": "The Coiled Altar",
+      "name_zh_cn": "狂笑履魂靴",
+      "icon": "inv_boot_cloth_raidmageulatek_d_01",
+      "localization_status": "matched_by_item_id"
+    },
+    {
+      "slot": "Ring 1",
+      "item_id": 268252,
+      "item_en": "Apex Brute's Claw Ring",
+      "location_en": "Sszorak",
+      "name_zh_cn": "顶级蛮兵爪戒",
+      "icon": "inv_121_jewelry_ring03_red",
+      "localization_status": "matched_by_item_id"
+    },
+    {
+      "slot": "Ring 2",
+      "item_id": 158366,
+      "item_en": "Charged Sandstone Band",
+      "location_en": "Temple of Sethraliss",
+      "name_zh_cn": "充能沙石指环",
+      "icon": "inv_ring_80_03d",
+      "localization_status": "matched_by_item_id"
+    },
+    {
+      "slot": "Trinket 1",
+      "item_id": 250215,
+      "item_en": "Freightrunner's Flask",
+      "location_en": "Murder Row",
+      "name_zh_cn": "货运者水壶",
+      "icon": "inv_alchemy_90_flask_red",
+      "localization_status": "matched_by_item_id"
+    },
+    {
+      "slot": "Trinket 2",
+      "item_id": null,
+      "item_en": "Gebbo's Bottomless Bag The Lost Explorers Weapon Jan'thrazet, the Soul Fang Ula'tek Offhand Spine of the Hissing Abyss",
+      "location_en": "Entombed Sentinels",
+      "name_zh_cn": null,
+      "icon": null,
+      "localization_status": "unmatched"
+    }
+  ],
+  "fetched_at": "2026-08-13T05:32:29.453642+00:00"
+}

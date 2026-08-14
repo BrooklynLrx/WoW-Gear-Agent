@@ -1,0 +1,247 @@
+{
+  "class": "evoker",
+  "spec": "devastation",
+  "source_url": "https://www.wowhead.com/guide/classes/evoker/devastation/bis-gear#bis-gear",
+  "captured_at": "2026-08-13",
+  "patch": "Patch 12.1.0",
+  "tables": [
+    {
+      "rows": [
+        {
+          "cells": [
+            "Slot",
+            "Item",
+            "Source"
+          ],
+          "items": []
+        },
+        {
+          "cells": [
+            "Weapon",
+            "Jan'thrazet, the Soul Fang",
+            "Ula'tek"
+          ],
+          "items": [
+            {
+              "id": 271092,
+              "name": "Jan'thrazet, the Soul Fang",
+              "url": "https://www.wowhead.com/ptr/item=271092/janthrazet-the-soul-fang"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Offhand",
+            "Aln'hara Lantern",
+            "Crafting"
+          ],
+          "items": [
+            {
+              "id": 245769,
+              "name": "Aln'hara Lantern",
+              "url": "https://www.wowhead.com/ptr/item=245769/alnhara-lantern?bonus=13836:9627:13771:8960:8791"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Head",
+            "Calamitous Echo's Magmashapers",
+            "Tier Set"
+          ],
+          "items": [
+            {
+              "id": 271501,
+              "name": "Calamitous Echo's Magmashapers",
+              "url": "https://www.wowhead.com/ptr/item=271501/calamitous-echos-magmashapers?original-item=268230"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Neck",
+            "Aqirbane Reliquary",
+            "Ula'tek"
+          ],
+          "items": [
+            {
+              "id": 268265,
+              "name": "Aqirbane Reliquary",
+              "url": "https://www.wowhead.com/ptr/item=268265/aqirbane-reliquary"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Shoulders",
+            "Calamitous Echo's Sundered Peaks",
+            "Tier Set"
+          ],
+          "items": [
+            {
+              "id": 271499,
+              "name": "Calamitous Echo's Sundered Peaks",
+              "url": "https://www.wowhead.com/ptr/item=271499/calamitous-echos-sundered-peaks?original-item=268231"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Cloak",
+            "Silken Voodoo Drape",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 268253,
+              "name": "Silken Voodoo Drape",
+              "url": "https://www.wowhead.com/ptr/item=268253/silken-voodoo-drape"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Chest",
+            "Searing Caldera of Calamity",
+            "Tier Set"
+          ],
+          "items": [
+            {
+              "id": 271504,
+              "name": "Searing Caldera of Calamity",
+              "url": "https://www.wowhead.com/ptr/item=271504/searing-caldera-of-calamity?original-item=271876"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Wrist",
+            "Farstrider's Plated Bracers",
+            "Crafting"
+          ],
+          "items": [
+            {
+              "id": 244584,
+              "name": "Farstrider's Plated Bracers",
+              "url": "https://www.wowhead.com/ptr/item=244584/farstriders-plated-bracers?bonus=13667:12497:8960:12384:13836:8791"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Gloves",
+            "Calamitous Echo's Ebon Greathorns",
+            "Tier Set"
+          ],
+          "items": [
+            {
+              "id": 271502,
+              "name": "Calamitous Echo's Ebon Greathorns",
+              "url": "https://www.wowhead.com/ptr/item=271502/calamitous-echos-ebon-greathorns?original-item=193752"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Belt",
+            "Serpentine Mixing Belt",
+            "Vashnik the Malignant"
+          ],
+          "items": [
+            {
+              "id": 268254,
+              "name": "Serpentine Mixing Belt",
+              "url": "https://www.wowhead.com/ptr/item=268254/serpentine-mixing-belt"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Legs",
+            "Earthen Pillars of Calamity",
+            "Tier Set"
+          ],
+          "items": [
+            {
+              "id": 271500,
+              "name": "Earthen Pillars of Calamity",
+              "url": "https://www.wowhead.com/ptr/item=271500/earthen-pillars-of-calamity?original-item=268237"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Boots",
+            "Ferocious Scaleboots",
+            "Sszorak"
+          ],
+          "items": [
+            {
+              "id": 268233,
+              "name": "Ferocious Scaleboots",
+              "url": "https://www.wowhead.com/ptr/item=268233/ferocious-scaleboots"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Ring",
+            "Vile Alchemist's Band",
+            "Vashnik the Malignant"
+          ],
+          "items": [
+            {
+              "id": 268249,
+              "name": "Vile Alchemist's Band",
+              "url": "https://www.wowhead.com/ptr/item=268249/vile-alchemists-band"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Ring",
+            "Charged Sandstone Band",
+            "Temple of Sethraliss"
+          ],
+          "items": [
+            {
+              "id": 158366,
+              "name": "Charged Sandstone Band",
+              "url": "https://www.wowhead.com/ptr/item=158366/charged-sandstone-band"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Trinket",
+            "Gebbo's Bottomless Bag",
+            "The Lost Explorers"
+          ],
+          "items": [
+            {
+              "id": 270164,
+              "name": "Gebbo's Bottomless Bag",
+              "url": "https://www.wowhead.com/ptr/item=270164/gebbos-bottomless-bag"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Trinket",
+            "Wavecaller's Seastone",
+            "Nymrissa Wavecaller"
+          ],
+          "items": [
+            {
+              "id": 270167,
+              "name": "Wavecaller's Seastone",
+              "url": "https://www.wowhead.com/ptr/item=270167/wavecallers-seastone"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "title": "Devastation Evoker Gear and Best in Slot - Midnight - Wowhead",
+  "updated": "2026/08/12"
+}

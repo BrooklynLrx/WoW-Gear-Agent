@@ -1,0 +1,7 @@
+SQLAlchemy==2.0.49
+alembic==1.18.4
+PyMySQL==1.4.6
+agentscope==2.0.6
+pydantic==2.12.5
+fastapi==0.141.1
+uvicorn==0.52.2

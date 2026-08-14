@@ -1,0 +1,149 @@
+{
+  "spec": "augmentation-evoker",
+  "recommendation_context": "mythic-plus",
+  "set_kind": "final_bis",
+  "one_set_per_context": true,
+  "gear_source_policy": "unrestricted_final_bis",
+  "gear_source_policy_zh_cn": "最终毕业配装可混用团本、大秘境、制造、套装及转化装备，不按掉落来源拆分。",
+  "patch": "12.1",
+  "last_updated": "August 11, 2026",
+  "source_url": "https://maxroll.gg/wow/class-guides/augmentation-evoker-mythic-plus-guide#gear-header",
+  "items": [
+    {
+      "slot": "Head",
+      "item_id": 271501,
+      "item_en": "Calamitous Echo's Magmashapers",
+      "location_en": "Tier / Catalyst",
+      "name_zh_cn": "灾厄回响的熔岩塑形头盔",
+      "icon": "inv_helm_mail_raidevokerulatek_d_01",
+      "localization_status": "matched_by_item_id"
+    },
+    {
+      "slot": "Neck",
+      "item_id": 268265,
+      "item_en": "Aqirbane Reliquary",
+      "location_en": "Ula'tek",
+      "name_zh_cn": "亚基克星藏骨匣",
+      "icon": "inv_121_jewelry_neck03_green",
+      "localization_status": "matched_by_item_id"
+    },
+    {
+      "slot": "Shoulder",
+      "item_id": 271499,
+      "item_en": "Catalyst Soulslither Spaulders → Calamitous Echo's Sundered Peaks",
+      "location_en": "Coiled Altar / Catalyst",
+      "name_zh_cn": "灾厄回响的裂峰护肩",
+      "icon": "inv_shoulder_mail_raidevokerulatek_d_01",
+      "localization_status": "matched_by_item_id"
+    },
+    {
+      "slot": "Cloak",
+      "item_id": 268253,
+      "item_en": "Silken Voodoo Drape",
+      "location_en": "Coiled Altar",
+      "name_zh_cn": "丝质巫毒斗篷",
+      "icon": "inv_cape_leather_raidrogueulatek_d_01",
+      "localization_status": "matched_by_item_id"
+    },
+    {
+      "slot": "Chest",
+      "item_id": 271876,
+      "item_en": "Awoken Dreadfang Cuirass",
+      "location_en": "Ula'tek",
+      "name_zh_cn": "觉醒恐牙胸甲",
+      "icon": "inv_chest_mail_raidevokerulatek_d_01",
+      "localization_status": "matched_by_item_id"
+    },
+    {
+      "slot": "Wrist",
+      "item_id": 244584,
+      "item_en": "Farstrider's Plated Bracers",
+      "location_en": "Crafting",
+      "name_zh_cn": "远行者的板层护腕",
+      "icon": "inv_bracer_mail_questbloodelf_b_01",
+      "localization_status": "matched_by_item_id"
+    },
+    {
+      "slot": "Gloves",
+      "item_id": 271502,
+      "item_en": "Calamitous Echo's Ebon Greathorns",
+      "location_en": "Tier / Catalyst",
+      "name_zh_cn": "灾厄回响的黑檀巨角护手",
+      "icon": "inv_glove_mail_raidevokerulatek_d_01",
+      "localization_status": "matched_by_item_id"
+    },
+    {
+      "slot": "Belt",
+      "item_id": 268254,
+      "item_en": "Serpentine Mixing Belt",
+      "location_en": "Vashnik",
+      "name_zh_cn": "蛇形调配腰带",
+      "icon": "inv_belt_mail_raidshamanulatek_d_01",
+      "localization_status": "matched_by_item_id"
+    },
+    {
+      "slot": "Legs",
+      "item_id": 271500,
+      "item_en": "Catalyst Cuisses of the Uncoiled Union → Earthen Pillars of Calamity",
+      "location_en": "Coiled Altar / Catalyst",
+      "name_zh_cn": "灾厄大地之柱护腿",
+      "icon": "inv_pant_mail_raidevokerulatek_d_01",
+      "localization_status": "matched_by_item_id"
+    },
+    {
+      "slot": "Boots",
+      "item_id": 268233,
+      "item_en": "Ferocious Scaleboots",
+      "location_en": "Sszorak",
+      "name_zh_cn": "凶暴鳞靴",
+      "icon": "inv_boot_mail_raidhunterulatek_d_01",
+      "localization_status": "matched_by_item_id"
+    },
+    {
+      "slot": "Ring 1",
+      "item_id": 268249,
+      "item_en": "Vile Alchemist's Band",
+      "location_en": "Vashnik",
+      "name_zh_cn": "邪恶炼金师指环",
+      "icon": "inv_121_jewelry_ring01_purple",
+      "localization_status": "matched_by_item_id"
+    },
+    {
+      "slot": "Ring 2",
+      "item_id": 158366,
+      "item_en": "Charged Sandstone Band",
+      "location_en": "Temple of Sethraliss",
+      "name_zh_cn": "充能沙石指环",
+      "icon": "inv_ring_80_03d",
+      "localization_status": "matched_by_item_id"
+    },
+    {
+      "slot": "Trinket 1",
+      "item_id": 270164,
+      "item_en": "Gebbo's Bottomless Bag",
+      "location_en": "Lost Explorers",
+      "name_zh_cn": "盖博的无底袋",
+      "icon": "inv_10_tailoring_bag1_color2",
+      "localization_status": "matched_by_item_id"
+    },
+    {
+      "slot": "Trinket 2",
+      "item_id": null,
+      "item_en": "Wavecaller's Seastone Altar of Fangs Weapon Jan'thrazet, the Soul Fang",
+      "location_en": "Ula'tek",
+      "name_zh_cn": null,
+      "icon": null,
+      "localization_status": "unmatched"
+    },
+    {
+      "slot": "Off-hand",
+      "item_id": 245769,
+      "item_en": "Aln'hara Lantern",
+      "location_en": "Crafting",
+      "name_zh_cn": "艾林哈籁灯笼",
+      "icon": "inv_offhand_1h_dungeonharronir_c_01",
+      "localization_status": "matched_by_item_id"
+    }
+  ],
+  "fetched_at": "2026-08-13T05:30:13.299331+00:00"
+}

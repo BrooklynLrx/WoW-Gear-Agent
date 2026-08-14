@@ -1,0 +1,51 @@
+{
+  "patch": "12.1.0",
+  "season": "Midnight Season 2",
+  "class": "death_knight",
+  "class_zh_cn": "死亡骑士",
+  "spec": "blood",
+  "spec_zh_cn": "鲜血",
+  "set_kind": "overall_bis",
+  "source": {
+    "name": "Wowhead",
+    "url": "https://www.wowhead.com/guide/classes/death-knight/blood/bis-gear#bis-gear",
+    "page_title": "Blood Death Knight Gear and Best in Slot - Midnight",
+    "last_updated": "2026-08-12",
+    "captured_at": "2026-08-13"
+  },
+  "notes_zh_cn": "按 Wowhead 综合 BiS Gear 表原样保存；团本掉落和大秘境掉落推荐未混入本表。页面列出的额外戒指保留为原始候选，Builder 再应用双戒指约束。",
+  "variants": [
+    {
+      "hero_talent": "deathbringer",
+      "hero_talent_zh_cn": "死神使者",
+      "items": [
+        {"slot": "weapon", "id": 268213, "name_en": "Maze-roa, Warlord's Fury", "name_zh_cn": "迈兹罗阿，督军的狂怒", "source_en": "The Coiled Altar", "source_zh_cn": "盘卷祭坛"},
+        {"slot": "head", "id": 271474, "original_item_id": 268229, "name_en": "Baleful Grave-Knight's Casque", "name_zh_cn": "灾厄墓骑面甲", "source_en": "Nek'zali the Soulcoiler", "source_zh_cn": "盘魂者内克扎莉"},
+        {"slot": "neck", "id": 268265, "name_en": "Aqirbane Reliquary", "name_zh_cn": "亚基克星藏骨匣", "source_en": "Ula'tek", "source_zh_cn": "乌拉特克"},
+        {"slot": "shoulder", "id": 271472, "original_item_id": 239037, "name_en": "Baleful Grave-Knight's Gibbets", "name_zh_cn": "灾厄墓骑绞架肩铠", "source_en": "Temple of Sethraliss", "source_zh_cn": "塞塔里斯神庙"},
+        {"slot": "cloak", "id": 268253, "name_en": "Silken Voodoo Drape", "name_zh_cn": "丝质巫毒斗篷", "source_en": "The Coiled Altar", "source_zh_cn": "盘卷祭坛"},
+        {"slot": "chest", "id": 271477, "original_item_id": 268222, "name_en": "Baleful Grave-Knight's Breastplate", "name_zh_cn": "灾厄墓骑胸甲", "source_en": "The Coiled Altar", "source_zh_cn": "盘卷祭坛"},
+        {"slot": "wrist", "id": 237834, "name_en": "Spellbreaker's Bracers", "name_zh_cn": "破法者的护腕", "source_en": "Crafting", "source_zh_cn": "制造"},
+        {"slot": "hands", "id": 271475, "original_item_id": 159413, "name_en": "Baleful Grave-Knight's Deathgrips", "name_zh_cn": "灾厄墓骑死握护手", "source_en": "King's Rest", "source_zh_cn": "诸王之眠"},
+        {"slot": "waist", "id": 268259, "name_en": "Girdle of Toxic Regret", "name_zh_cn": "剧毒悔恨束带", "source_en": "The Coiled Altar", "source_zh_cn": "盘卷祭坛"},
+        {"slot": "legs", "id": 271878, "name_en": "Chausses of Unbound Rancor", "name_zh_cn": "无羁深仇腿甲", "source_en": "Ula'tek", "source_zh_cn": "乌拉特克"},
+        {"slot": "feet", "id": 273777, "name_en": "Poison-Proof Stompers", "name_zh_cn": "防毒踏靴", "source_en": "Altar of Fangs", "source_zh_cn": "毒牙祭坛"},
+        {"slot": "finger_candidate", "id": 240949, "name_en": "Masterwork Sin'dorei Band", "name_zh_cn": "精工辛多雷指环", "socketed_item_id": 273066, "socketed_item_en": "Polished Ammolite", "source_en": "Crafting", "source_zh_cn": "制造"},
+        {"slot": "finger_candidate", "id": 268249, "name_en": "Vile Alchemist's Band", "name_zh_cn": "邪恶炼金师指环", "source_en": "Vashnik the Malignant", "source_zh_cn": "万毒邪祟者瓦什尼克"},
+        {"slot": "finger_candidate", "id": 251194, "name_en": "Lightwarden's Bind", "name_zh_cn": "护光者的禁锢", "source_en": "The Blinding Vale", "source_zh_cn": "夺目谷"},
+        {"slot": "trinket", "id": 270175, "name_en": "Voracious Heart of Ula'tek", "name_zh_cn": "乌拉特克贪婪之心", "source_en": "Ula'tek", "source_zh_cn": "乌拉特克"},
+        {"slot": "trinket", "id": 270173, "name_en": "Zul'jin's Guillotine Technique", "name_zh_cn": "祖尔金的处斩技法", "source_en": "The Coiled Altar", "source_zh_cn": "盘卷祭坛"}
+      ]
+    },
+    {
+      "hero_talent": "sanlayn",
+      "hero_talent_zh_cn": "萨莱茵",
+      "inherits_non_ring_items_from": "deathbringer",
+      "ring_candidates": [
+        {"slot": "finger_candidate", "id": 240949, "name_en": "Masterwork Sin'dorei Band", "name_zh_cn": "精工辛多雷指环", "socketed_item_id": 273066, "socketed_item_en": "Polished Ammolite", "source_en": "Crafting", "source_zh_cn": "制造"},
+        {"slot": "finger_candidate", "id": 159459, "name_en": "Ritual Binder's Ring", "name_zh_cn": "仪式束缚者之戒", "source_en": "King's Rest", "source_zh_cn": "诸王之眠"},
+        {"slot": "finger_candidate", "id": 252258, "name_en": "Sickening Signet of Atroxus", "name_zh_cn": "阿特洛苏斯的腐化玺戒", "source_en": "Voidscar Arena", "source_zh_cn": "虚空之痕竞技场"}
+      ]
+    }
+  ]
+}

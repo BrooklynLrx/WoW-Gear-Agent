@@ -1,0 +1,140 @@
+{
+  "spec": "arms-warrior",
+  "recommendation_context": "raid",
+  "set_kind": "final_bis",
+  "one_set_per_context": true,
+  "gear_source_policy": "unrestricted_final_bis",
+  "gear_source_policy_zh_cn": "最终毕业配装可混用团本、大秘境、制造、套装及转化装备，不按掉落来源拆分。",
+  "patch": "12.1",
+  "last_updated": "August 11, 2026",
+  "source_url": "https://maxroll.gg/wow/class-guides/arms-warrior-raid-guide#gear-header",
+  "items": [
+    {
+      "slot": "Head",
+      "item_id": 271456,
+      "item_en": "Tempered Horns of the Jade Warlord",
+      "location_en": "The Twin Fangs",
+      "name_zh_cn": "翡翠督军的淬火战角",
+      "icon": "inv_helm_plate_raidwarriorulatek_d_01",
+      "localization_status": "matched_by_item_id"
+    },
+    {
+      "slot": "Neck",
+      "item_id": 268265,
+      "item_en": "Aqirbane Reliquary",
+      "location_en": "Ula'tek",
+      "name_zh_cn": "亚基克星藏骨匣",
+      "icon": "inv_121_jewelry_neck03_green",
+      "localization_status": "matched_by_item_id"
+    },
+    {
+      "slot": "Shoulder",
+      "item_id": 271454,
+      "item_en": "Raging Pauldrons of the Jade Warlord",
+      "location_en": "The Lost Explorers",
+      "name_zh_cn": "翡翠督军的狂怒肩铠",
+      "icon": "inv_shoulder_plate_raidwarriorulatek_d_01",
+      "localization_status": "matched_by_item_id"
+    },
+    {
+      "slot": "Cloak",
+      "item_id": 268253,
+      "item_en": "Silken Voodoo Drape",
+      "location_en": "The Coiled Altar",
+      "name_zh_cn": "丝质巫毒斗篷",
+      "icon": "inv_cape_leather_raidrogueulatek_d_01",
+      "localization_status": "matched_by_item_id"
+    },
+    {
+      "slot": "Chest",
+      "item_id": 271459,
+      "item_en": "Cuirass of the Jade Warlord",
+      "location_en": "The Coiled Altar + Catalyst",
+      "name_zh_cn": "翡翠督军胸铠",
+      "icon": "inv_chest_plate_raidwarriorulatek_d_01",
+      "localization_status": "matched_by_item_id"
+    },
+    {
+      "slot": "Wrist",
+      "item_id": 237834,
+      "item_en": "Spellbreaker's Bracers",
+      "location_en": "Blacksmithing",
+      "name_zh_cn": "破法者的护腕",
+      "icon": "inv_plate_questbloodelf_b_01_bracer",
+      "localization_status": "matched_by_item_id"
+    },
+    {
+      "slot": "Gloves",
+      "item_id": 271457,
+      "item_en": "Jeweled Gauntlets of the Jade Warlord",
+      "location_en": "Den of Nalorakk + Catalyst",
+      "name_zh_cn": "翡翠督军的镶玉护手",
+      "icon": "inv_glove_plate_raidwarriorulatek_d_01",
+      "localization_status": "matched_by_item_id"
+    },
+    {
+      "slot": "Belt",
+      "item_id": 268259,
+      "item_en": "Girdle of Toxic Regret",
+      "location_en": "The Coiled Altar",
+      "name_zh_cn": "剧毒悔恨束带",
+      "icon": "inv_belt_plate_raidpaladinulatek_d_01",
+      "localization_status": "matched_by_item_id"
+    },
+    {
+      "slot": "Legs",
+      "item_id": 271878,
+      "item_en": "Chausses of Unbound Rancor",
+      "location_en": "Ula'tek",
+      "name_zh_cn": "无羁深仇腿甲",
+      "icon": "inv_pant_plate_raiddeathknightulatek_d_01",
+      "localization_status": "matched_by_item_id"
+    },
+    {
+      "slot": "Boots",
+      "item_id": 237828,
+      "item_en": "Spellbreaker's March",
+      "location_en": "Blacksmithing",
+      "name_zh_cn": "破法者的步伐",
+      "icon": "inv_plate_questbloodelf_b_01_boot",
+      "localization_status": "matched_by_item_id"
+    },
+    {
+      "slot": "Ring 1",
+      "item_id": 252258,
+      "item_en": "Sickening Signet of Atroxus",
+      "location_en": "Voidscar Arena",
+      "name_zh_cn": "阿特洛苏斯的腐化玺戒",
+      "icon": "inv_12_jewelry_devouringhost_ring_bronze2",
+      "localization_status": "matched_by_item_id"
+    },
+    {
+      "slot": "Ring 2",
+      "item_id": 273792,
+      "item_en": "Band of the Amani Warlord",
+      "location_en": "Altar of Fangs",
+      "name_zh_cn": "阿曼尼督军的指环",
+      "icon": "inv_121_jewelry_ring02_green",
+      "localization_status": "matched_by_item_id"
+    },
+    {
+      "slot": "Trinket 1",
+      "item_id": 270175,
+      "item_en": "Voracious Heart of Ula'tek",
+      "location_en": "Ula'tek",
+      "name_zh_cn": "乌拉特克贪婪之心",
+      "icon": "inv_121_trinket_raid_ulatek_heart",
+      "localization_status": "matched_by_item_id"
+    },
+    {
+      "slot": "Trinket 2",
+      "item_id": null,
+      "item_en": "Zul'jin's Guillotine Technique The Coiled Altar Weapon Maze-roa, Warlord's Fury",
+      "location_en": "The Coiled Altar",
+      "name_zh_cn": null,
+      "icon": null,
+      "localization_status": "unmatched"
+    }
+  ],
+  "fetched_at": "2026-08-13T05:32:36.698297+00:00"
+}

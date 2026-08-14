@@ -1,0 +1,245 @@
+{
+  "patch": "12.1",
+  "season": "Midnight Season 2",
+  "canonical_stat_order": [
+    "critical_strike",
+    "haste",
+    "mastery",
+    "versatility"
+  ],
+  "class_recommendations": [
+    {
+      "class": "mage",
+      "raid": {
+        "spec": "mage.arcane",
+        "hero_talent": "sunfury",
+        "recommendation_level": "primary"
+      },
+      "mythic_plus": {
+        "spec": "mage.arcane",
+        "hero_talent": "sunfury",
+        "recommendation_level": "primary"
+      },
+      "source_type": "creator_curated",
+      "verified_by_user": true,
+      "notes_zh_cn": "12.1赛季法师团本和大秘境均默认推荐日怒奥法；其他法师专精保留为可选玩法。"
+    },
+    {
+      "class": "warlock",
+      "raid": {
+        "spec": "warlock.destruction",
+        "hero_talent": "diabolist",
+        "recommendation_level": "primary"
+      },
+      "mythic_plus": {
+        "spec": "warlock.destruction",
+        "hero_talent": "diabolist",
+        "recommendation_level": "primary"
+      },
+      "source_type": "creator_curated",
+      "verified_by_user": true,
+      "notes_zh_cn": "12.1当前术士团本和大秘境均默认推荐恶魔使徒毁灭术。"
+    }
+  ],
+  "profiles": [
+    {
+      "spec": "mage.arcane",
+      "hero_talent": "sunfury",
+      "is_top_recommended_raid": true,
+      "is_top_recommended_mythic_plus": true,
+      "recommendation_status": {
+        "raid": "class_primary",
+        "mythic_plus": "class_primary"
+      },
+      "raid_single_target": [3, 3, 2, 2],
+      "mythic_plus": [3, 3, 1, 3],
+      "consumable_notes_zh_cn": "奥法使用圣光潜力。"
+    },
+    {
+      "spec": "mage.arcane",
+      "hero_talent": "spellslinger",
+      "is_top_recommended_raid": false,
+      "is_top_recommended_mythic_plus": false,
+      "recommendation_status": {
+        "raid": "alternative",
+        "mythic_plus": "alternative"
+      },
+      "raid_single_target": [2, 3, 3, 2],
+      "mythic_plus": [3, 3, 1, 3],
+      "consumable_notes_zh_cn": "奥法使用圣光潜力。"
+    },
+    {
+      "spec": "mage.fire",
+      "hero_talent": "sunfury",
+      "is_top_recommended_raid": false,
+      "is_top_recommended_mythic_plus": false,
+      "recommendation_status": {
+        "raid": "alternative",
+        "mythic_plus": "alternative"
+      },
+      "raid_single_target": [1, 4, 2, 3],
+      "mythic_plus": [1, 4, 2, 3],
+      "avoid_stats": ["critical_strike"],
+      "consumable_notes_zh_cn": "尽量不堆暴击；使用圣光潜力。"
+    },
+    {
+      "spec": "mage.fire",
+      "hero_talent": "frostfire",
+      "is_top_recommended_raid": false,
+      "is_top_recommended_mythic_plus": false,
+      "recommendation_status": {
+        "raid": "alternative",
+        "mythic_plus": "alternative"
+      },
+      "raid_single_target": [1, 4, 2, 3],
+      "mythic_plus": [1, 4, 2, 3],
+      "avoid_stats": ["critical_strike"],
+      "consumable_notes_zh_cn": "尽量不堆暴击；使用圣光潜力。"
+    },
+    {
+      "spec": "mage.frost",
+      "hero_talent": "spellslinger",
+      "is_top_recommended_raid": false,
+      "is_top_recommended_mythic_plus": false,
+      "recommendation_status": {
+        "raid": "alternative",
+        "mythic_plus": "alternative"
+      },
+      "raid_single_target": [4, 1, 4, 1],
+      "mythic_plus": [4, 2, 3, 1],
+      "avoid_stats": ["versatility"],
+      "consumable_notes_zh_cn": "尽量不堆全能；全能低于150使用鲁莽，全能高于150使用圣光潜力。"
+    },
+    {
+      "spec": "mage.frost",
+      "hero_talent": "frostfire",
+      "is_top_recommended_raid": false,
+      "is_top_recommended_mythic_plus": false,
+      "recommendation_status": {
+        "raid": "alternative",
+        "mythic_plus": "alternative"
+      },
+      "raid_single_target": [4, 2, 3, 1],
+      "mythic_plus": [4, 2, 3, 1],
+      "avoid_stats": ["versatility"],
+      "consumable_notes_zh_cn": "尽量不堆全能；全能低于150使用鲁莽，全能高于150使用圣光潜力。"
+    },
+    {
+      "spec": "warlock.destruction",
+      "hero_talent": "diabolist",
+      "hero_talent_zh_cn": "恶魔使徒",
+      "is_top_recommended_raid": true,
+      "is_top_recommended_mythic_plus": true,
+      "raid_single_target": [3, 2, 4, 1],
+      "mythic_plus": [4, 2, 3, 1],
+      "ratio_usage": "display_only_approximation",
+      "optimizer_mode": "reach_sheet_percent_thresholds_then_allocate_remainder",
+      "base_sheet_percent": {
+        "critical_strike": 5,
+        "haste": 0,
+        "mastery": 16,
+        "versatility": 0
+      },
+      "derived_rating_thresholds_before_consumable_source_split": {
+        "raid": {
+          "critical_strike": 1150,
+          "haste": 880
+        },
+        "mythic_plus": {
+          "critical_strike_minimum": 1380,
+          "critical_strike_maximum": 1533,
+          "haste": 880
+        }
+      },
+      "rating_threshold_notes_zh_cn": "已扣除毁灭术裸面板5%暴击、0%急速、16%精通、0%全能，并计入30%以上属性递减；阈值包含装备、宝石、附魔和合剂等全部静态来源，实际装备分配需扣除非装备来源。精通比例取决于总绿字预算，因此展示比例不是精确反解。",
+      "provided_format": "character_sheet_percent_after_consumables",
+      "raid_single_target_percent_targets": {
+        "haste": {
+          "target": 20,
+          "unit": "percent",
+          "approximate": true
+        },
+        "critical_strike": {
+          "target": 30,
+          "unit": "percent",
+          "approximate": true
+        },
+        "mastery": {
+          "allocation": "all_remaining_secondary_rating"
+        },
+        "versatility": {
+          "allocation": "minimize"
+        }
+      },
+      "mythic_plus_percent_targets": {
+        "haste": {
+          "target": 20,
+          "unit": "percent",
+          "approximate": true
+        },
+        "critical_strike": {
+          "minimum": 35,
+          "maximum": 38,
+          "unit": "percent"
+        },
+        "mastery": {
+          "allocation": "all_remaining_secondary_rating"
+        },
+        "versatility": {
+          "allocation": "minimize"
+        }
+      },
+      "measurement_context_zh_cn": "满附魔、宝石、武器油和合剂后的角色面板。",
+      "recommendation_status": {
+        "raid": "class_primary",
+        "mythic_plus": "class_primary"
+      },
+      "source": {
+        "type": "creator_curated_screenshot",
+        "image_path": "/var/folders/0t/32k1rgfj7rq3htfgm9q1gsj40000gn/T/codex-clipboard-b339bf91-188e-4c6d-b3c6-3beefa419df5.png",
+        "verified_by_user": true,
+        "captured_at": "2026-08-13"
+      }
+    },
+    {
+      "spec": "death_knight.unholy",
+      "hero_talent": null,
+      "is_top_recommended_raid": null,
+      "is_top_recommended_mythic_plus": null,
+      "recommendation_status": {
+        "raid": "class_priority_unconfirmed",
+        "mythic_plus": "class_priority_unconfirmed"
+      },
+      "provided_format": "priority_only",
+      "raid_priority": [
+        "critical_strike",
+        "mastery",
+        "haste",
+        "versatility"
+      ],
+      "mythic_plus_priority": [
+        "critical_strike",
+        "mastery",
+        "haste",
+        "versatility"
+      ],
+      "ratio_available": false,
+      "optimizer_policy": "do_not_invent_ratio_from_priority",
+      "notes_zh_cn": "暴击、精通和急速需要相对均衡，三者明显优于全能；来源未给出比例或目标面板百分比。",
+      "source": {
+        "type": "icy_veins",
+        "url": "https://www.icy-veins.com/wow/unholy-death-knight-pve-dps-stat-priority",
+        "patch": "12.1",
+        "last_updated": "2026-08-10"
+      }
+    }
+  ],
+  "source": {
+    "type": "creator_curated_screenshot",
+    "provided_format": "rating_ratio",
+    "image_path": "/var/folders/0t/32k1rgfj7rq3htfgm9q1gsj40000gn/T/codex-clipboard-6dba7f55-2360-4c56-ade4-1d3c6339324a.png",
+    "source_name": null,
+    "verified_by_user": true,
+    "captured_at": "2026-08-13"
+  }
+}

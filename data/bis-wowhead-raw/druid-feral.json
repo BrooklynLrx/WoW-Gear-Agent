@@ -1,0 +1,233 @@
+{
+  "class": "druid",
+  "spec": "feral",
+  "source_url": "https://www.wowhead.com/guide/classes/druid/feral/bis-gear#bis-gear",
+  "captured_at": "2026-08-13",
+  "patch": "Patch 12.1.0",
+  "tables": [
+    {
+      "rows": [
+        {
+          "cells": [
+            "Slot",
+            "Item",
+            "Source"
+          ],
+          "items": []
+        },
+        {
+          "cells": [
+            "Weapon",
+            "Abyssal Broodfiend's Bardiche",
+            "Ula'tek"
+          ],
+          "items": [
+            {
+              "id": 268215,
+              "name": "Abyssal Broodfiend's Bardiche",
+              "url": "https://www.wowhead.com/item=268215/abyssal-broodfiends-bardiche"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Head",
+            "Enigmatic Dreamwatcher's Somnolent Stare",
+            "Catalyst"
+          ],
+          "items": [
+            {
+              "id": 271528,
+              "name": "Enigmatic Dreamwatcher's Somnolent Stare",
+              "url": "https://www.wowhead.com/item=271528/enigmatic-dreamwatchers-somnolent-stare"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Neck",
+            "Aqirbane Reliquary",
+            "Ula'tek"
+          ],
+          "items": [
+            {
+              "id": 268265,
+              "name": "Aqirbane Reliquary",
+              "url": "https://www.wowhead.com/item=268265/aqirbane-reliquary"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Shoulders",
+            "Enigmatic Dreamwatcher's Plumage",
+            "Catalyst"
+          ],
+          "items": [
+            {
+              "id": 271526,
+              "name": "Enigmatic Dreamwatcher's Plumage",
+              "url": "https://www.wowhead.com/item=271526/enigmatic-dreamwatchers-plumage"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Cloak",
+            "Silken Voodoo Drape",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 268253,
+              "name": "Silken Voodoo Drape",
+              "url": "https://www.wowhead.com/item=268253/silken-voodoo-drape"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Chest",
+            "Enigmatic Dreamwatcher's Lunar Raiment",
+            "Vashnik the Malignant"
+          ],
+          "items": [
+            {
+              "id": 271531,
+              "name": "Enigmatic Dreamwatcher's Lunar Raiment",
+              "url": "https://www.wowhead.com/item=271531/enigmatic-dreamwatchers-lunar-raiment"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Wrist",
+            "Silvermoon Agent's Deflectors",
+            "Crafting/Misc"
+          ],
+          "items": [
+            {
+              "id": 244576,
+              "name": "Silvermoon Agent's Deflectors",
+              "url": "https://www.wowhead.com/item=244576/silvermoon-agents-deflectors"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Gloves",
+            "Silvermoon Agent's Handwraps",
+            "Crafting/Misc"
+          ],
+          "items": [
+            {
+              "id": 244575,
+              "name": "Silvermoon Agent's Handwraps",
+              "url": "https://www.wowhead.com/item=244575/silvermoon-agents-handwraps"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Belt",
+            "Sash of the Forlorn Vessel",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 268256,
+              "name": "Sash of the Forlorn Vessel",
+              "url": "https://www.wowhead.com/item=268256/sash-of-the-forlorn-vessel"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Legs",
+            "Enigmatic Dreamwatcher's Leggings",
+            "Catalyst"
+          ],
+          "items": [
+            {
+              "id": 271527,
+              "name": "Enigmatic Dreamwatcher's Leggings",
+              "url": "https://www.wowhead.com/item=271527/enigmatic-dreamwatchers-leggings"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Boots",
+            "Bespittled Slitherslippers",
+            "The Twin Fangs"
+          ],
+          "items": [
+            {
+              "id": 268261,
+              "name": "Bespittled Slitherslippers",
+              "url": "https://www.wowhead.com/item=268261/bespittled-slitherslippers"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Ring",
+            "Vile Alchemist's Band",
+            "Vashnik the Malignant"
+          ],
+          "items": [
+            {
+              "id": 268249,
+              "name": "Vile Alchemist's Band",
+              "url": "https://www.wowhead.com/item=268249/vile-alchemists-band"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Ring",
+            "Sickening Signet of Atroxus",
+            "Voidscar Arena"
+          ],
+          "items": [
+            {
+              "id": 252258,
+              "name": "Sickening Signet of Atroxus",
+              "url": "https://www.wowhead.com/item=252258/sickening-signet-of-atroxus"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Trinket",
+            "Zul'jin's Guillotine Technique",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 270173,
+              "name": "Zul'jin's Guillotine Technique",
+              "url": "https://www.wowhead.com/item=270173/zuljins-guillotine-technique"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Trinket",
+            "Voracious Heart of Ula'tek",
+            "Ula'tek"
+          ],
+          "items": [
+            {
+              "id": 270175,
+              "name": "Voracious Heart of Ula'tek",
+              "url": "https://www.wowhead.com/item=270175/voracious-heart-of-ulatek"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "title": "Feral Druid Gear and Best in Slot - Midnight - Wowhead",
+  "updated": "2026/08/12"
+}

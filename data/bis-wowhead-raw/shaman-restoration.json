@@ -1,0 +1,247 @@
+{
+  "class": "shaman",
+  "spec": "restoration",
+  "source_url": "https://www.wowhead.com/guide/classes/shaman/restoration/bis-gear#bis-gear",
+  "captured_at": "2026-08-13",
+  "patch": "Patch 12.1.0",
+  "tables": [
+    {
+      "rows": [
+        {
+          "cells": [
+            "Slot",
+            "Item",
+            "Source"
+          ],
+          "items": []
+        },
+        {
+          "cells": [
+            "Helm",
+            "Serpent Crown of the Ophidian Oracle",
+            "Voidscar Arena &  Catalyst"
+          ],
+          "items": [
+            {
+              "id": 271483,
+              "name": "Serpent Crown of the Ophidian Oracle",
+              "url": "https://www.wowhead.com/item=271483/serpent-crown-of-the-ophidian-oracle?original-item=251220"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Neck",
+            "Aqirbane Reliquary",
+            "Ula'tek (Raid)"
+          ],
+          "items": [
+            {
+              "id": 268265,
+              "name": "Aqirbane Reliquary",
+              "url": "https://www.wowhead.com/item=268265/aqirbane-reliquary"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Shoulders",
+            "Hissing Mantle of the Ophidian Oracle",
+            "The Coiled Alter (Raid) &  Catalyst"
+          ],
+          "items": [
+            {
+              "id": 271481,
+              "name": "Hissing Mantle of the Ophidian Oracle",
+              "url": "https://www.wowhead.com/item=271481/hissing-mantle-of-the-ophidian-oracle?original-item=268231"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Cape",
+            "Silken Voodoo Drape",
+            "The Coiled Alter (Raid)"
+          ],
+          "items": [
+            {
+              "id": 268253,
+              "name": "Silken Voodoo Drape",
+              "url": "https://www.wowhead.com/item=268253/silken-voodoo-drape"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Chest",
+            "Fanged Raiment of the Ophidian Oracle",
+            "Ula'tek (Raid) &  Catalyst"
+          ],
+          "items": [
+            {
+              "id": 271486,
+              "name": "Fanged Raiment of the Ophidian Oracle",
+              "url": "https://www.wowhead.com/item=271486/fanged-raiment-of-the-ophidian-oracle?original-item=271876"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Bracers",
+            "Saptorbane Guards",
+            "The Blinding Vale"
+          ],
+          "items": [
+            {
+              "id": 251200,
+              "name": "Saptorbane Guards",
+              "url": "https://www.wowhead.com/item=251200/saptorbane-guards"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Gloves",
+            "Hexing Grips of the Ophidian Oracle",
+            "Raid | Vault"
+          ],
+          "items": [
+            {
+              "id": 271484,
+              "name": "Hexing Grips of the Ophidian Oracle",
+              "url": "https://www.wowhead.com/item=271484/hexing-grips-of-the-ophidian-oracle"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Belt",
+            "Belt of the Consecrated Tomb",
+            "Kings Rest"
+          ],
+          "items": [
+            {
+              "id": 159369,
+              "name": "Belt of the Consecrated Tomb",
+              "url": "https://www.wowhead.com/item=159369/belt-of-the-consecrated-tomb"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Legs",
+            "Leggings of the Ophidian Oracle",
+            "The Coiled Alter (Raid) &  Catalyst"
+          ],
+          "items": [
+            {
+              "id": 271482,
+              "name": "Leggings of the Ophidian Oracle",
+              "url": "https://www.wowhead.com/item=271482/leggings-of-the-ophidian-oracle?original-item=268237"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Boots",
+            "Forgotten Tribe Footguards",
+            "Den of Nalorakk"
+          ],
+          "items": [
+            {
+              "id": 251145,
+              "name": "Forgotten Tribe Footguards",
+              "url": "https://www.wowhead.com/item=251145/forgotten-tribe-footguards"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Ring",
+            "Pilfered Precious Band",
+            "Den of Nalorakk"
+          ],
+          "items": [
+            {
+              "id": 251148,
+              "name": "Pilfered Precious Band",
+              "url": "https://www.wowhead.com/item=251148/pilfered-precious-band"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Ring",
+            "Band of the Amani Warlord",
+            "Alter of Fangs"
+          ],
+          "items": [
+            {
+              "id": 273792,
+              "name": "Band of the Amani Warlord",
+              "url": "https://www.wowhead.com/item=273792/band-of-the-amani-warlord"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Trinkets",
+            "Soulcoiler Ritual Vessel",
+            "Nek'zali the Soulcoiler (Raid)"
+          ],
+          "items": [
+            {
+              "id": 270162,
+              "name": "Soulcoiler Ritual Vessel",
+              "url": "https://www.wowhead.com/item=270162/soulcoiler-ritual-vessel"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Trinkets",
+            "Freightrunner's Flask",
+            "Murder Row"
+          ],
+          "items": [
+            {
+              "id": 250215,
+              "name": "Freightrunner's Flask",
+              "url": "https://www.wowhead.com/item=250215/freightrunners-flask"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "1h Weapon",
+            "Jan'thrazet, the Soul Fang",
+            "Ula'tek (Raid)"
+          ],
+          "items": [
+            {
+              "id": 271092,
+              "name": "Jan'thrazet, the Soul Fang",
+              "url": "https://www.wowhead.com/item=271092/janthrazet-the-soul-fang"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Shield",
+            "Venom-Slashed Scuteward",
+            "The Lost Explorers (Raid)"
+          ],
+          "items": [
+            {
+              "id": 268196,
+              "name": "Venom-Slashed Scuteward",
+              "url": "https://www.wowhead.com/item=268196/venom-slashed-scuteward"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "title": "Restoration Shaman Gear and Best in Slot - Midnight - Wowhead",
+  "updated": "2026/08/12"
+}

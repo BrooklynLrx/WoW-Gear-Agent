@@ -1,0 +1,247 @@
+{
+  "class": "warrior",
+  "spec": "protection",
+  "source_url": "https://www.wowhead.com/guide/classes/warrior/protection/bis-gear#bis-gear",
+  "captured_at": "2026-08-13",
+  "patch": "Patch 12.1.0",
+  "tables": [
+    {
+      "rows": [
+        {
+          "cells": [
+            "Slot",
+            "Item",
+            "Source"
+          ],
+          "items": []
+        },
+        {
+          "cells": [
+            "Weapon",
+            "Aman'muso, Warlord's Vengeance",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 268209,
+              "name": "Aman'muso, Warlord's Vengeance",
+              "url": "https://www.wowhead.com/item=268209/amanmuso-warlords-vengeance"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Shield",
+            "Venom-Slashed Scuteward",
+            "The Lost Explorers"
+          ],
+          "items": [
+            {
+              "id": 268196,
+              "name": "Venom-Slashed Scuteward",
+              "url": "https://www.wowhead.com/item=268196/venom-slashed-scuteward"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Head",
+            "Tempered Horns of the Jade Warlord",
+            "Tier Set"
+          ],
+          "items": [
+            {
+              "id": 271456,
+              "name": "Tempered Horns of the Jade Warlord",
+              "url": "https://www.wowhead.com/item=271456/tempered-horns-of-the-jade-warlord"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Neck",
+            "Aqirbane Reliquary",
+            "Ula'tek"
+          ],
+          "items": [
+            {
+              "id": 268265,
+              "name": "Aqirbane Reliquary",
+              "url": "https://www.wowhead.com/item=268265/aqirbane-reliquary"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Shoulders",
+            "Raging Pauldrons of the Jade Warlord",
+            "Tier Set"
+          ],
+          "items": [
+            {
+              "id": 271454,
+              "name": "Raging Pauldrons of the Jade Warlord",
+              "url": "https://www.wowhead.com/item=271454/raging-pauldrons-of-the-jade-warlord"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Cloak",
+            "Silken Voodoo Drape",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 268253,
+              "name": "Silken Voodoo Drape",
+              "url": "https://www.wowhead.com/item=268253/silken-voodoo-drape"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Chest",
+            "Cuirass of the Jade Warlord",
+            "Tier Set"
+          ],
+          "items": [
+            {
+              "id": 271459,
+              "name": "Cuirass of the Jade Warlord",
+              "url": "https://www.wowhead.com/item=271459/cuirass-of-the-jade-warlord"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Wrist",
+            "Spellbreaker's Bracers",
+            "Crafting Blacksmithing"
+          ],
+          "items": [
+            {
+              "id": 237834,
+              "name": "Spellbreaker's Bracers",
+              "url": "https://www.wowhead.com/item=237834/spellbreakers-bracers"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Gloves",
+            "Jeweled Gauntlets of the Jade Warlord",
+            "Tier Set"
+          ],
+          "items": [
+            {
+              "id": 271457,
+              "name": "Jeweled Gauntlets of the Jade Warlord",
+              "url": "https://www.wowhead.com/item=271457/jeweled-gauntlets-of-the-jade-warlord"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Belt",
+            "Girdle of Toxic Regret",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 268259,
+              "name": "Girdle of Toxic Regret",
+              "url": "https://www.wowhead.com/item=268259/girdle-of-toxic-regret"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Legs",
+            "Chausses of Unbound Rancor",
+            "Ula'tek"
+          ],
+          "items": [
+            {
+              "id": 271878,
+              "name": "Chausses of Unbound Rancor",
+              "url": "https://www.wowhead.com/item=271878/chausses-of-unbound-rancor"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Boots",
+            "Spellbreaker's March",
+            "Crafting Blacksmithing"
+          ],
+          "items": [
+            {
+              "id": 237828,
+              "name": "Spellbreaker's March",
+              "url": "https://www.wowhead.com/item=237828/spellbreakers-march"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Ring",
+            "Apex Brute's Claw Ring",
+            "Sszorak"
+          ],
+          "items": [
+            {
+              "id": 268252,
+              "name": "Apex Brute's Claw Ring",
+              "url": "https://www.wowhead.com/item=268252/apex-brutes-claw-ring"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Ring 2",
+            "Vile Alchemist's Band",
+            "Vashnik the Malignant"
+          ],
+          "items": [
+            {
+              "id": 268249,
+              "name": "Vile Alchemist's Band",
+              "url": "https://www.wowhead.com/item=268249/vile-alchemists-band"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Trinket",
+            "Zul'jin's Guillotine Technique",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 270173,
+              "name": "Zul'jin's Guillotine Technique",
+              "url": "https://www.wowhead.com/item=270173/zuljins-guillotine-technique"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Trinket 2",
+            "Voracious Heart of Ula'tek",
+            "Ula'tek"
+          ],
+          "items": [
+            {
+              "id": 270175,
+              "name": "Voracious Heart of Ula'tek",
+              "url": "https://www.wowhead.com/item=270175/voracious-heart-of-ulatek"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "title": "Protection Warrior Gear and Best in Slot - Midnight - Wowhead",
+  "updated": "2026/08/12"
+}

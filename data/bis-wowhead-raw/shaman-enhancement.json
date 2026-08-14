@@ -1,0 +1,349 @@
+{
+  "class": "shaman",
+  "spec": "enhancement",
+  "source_url": "https://www.wowhead.com/guide/classes/shaman/enhancement/bis-gear#bis-gear",
+  "captured_at": "2026-08-13",
+  "patch": "Patch 12.1.0",
+  "tables": [
+    {
+      "rows": [
+        {
+          "cells": [
+            "Slot",
+            "",
+            "Item",
+            "Source"
+          ],
+          "items": []
+        },
+        {
+          "cells": [
+            "Main Hand",
+            "",
+            "Aman'muso, Warlord's Vengeance",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 244031,
+              "name": "",
+              "url": "https://www.wowhead.com/ptr/item=244031"
+            },
+            {
+              "id": 268209,
+              "name": "Aman'muso, Warlord's Vengeance",
+              "url": "https://www.wowhead.com/ptr/item=268209/amanmuso-warlords-vengeance?bonus=13848"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Off Hand",
+            "",
+            "Farstrider's Chopper",
+            "Blacksmithing"
+          ],
+          "items": [
+            {
+              "id": 243973,
+              "name": "",
+              "url": "https://www.wowhead.com/ptr/item=243973"
+            },
+            {
+              "id": 237850,
+              "name": "Farstrider's Chopper",
+              "url": "https://www.wowhead.com/ptr/item=237850/farstriders-chopper?bonus=13751:12497:13836:13771:8793"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Head",
+            "",
+            "Serpent Crown of the Ophidian Oracle –",
+            "Catalyst – Voidscar Arena"
+          ],
+          "items": [
+            {
+              "id": 244007,
+              "name": "",
+              "url": "https://www.wowhead.com/ptr/item=244007"
+            },
+            {
+              "id": 275707,
+              "name": "",
+              "url": "https://www.wowhead.com/ptr/item=275707"
+            },
+            {
+              "id": 271483,
+              "name": "Serpent Crown of the Ophidian Oracle",
+              "url": "https://www.wowhead.com/ptr/item=271483/serpent-crown-of-the-ophidian-oracle?bonus=12854&original-item=251220"
+            },
+            {
+              "id": 251220,
+              "name": "",
+              "url": "https://www.wowhead.com/ptr/item=251220;12854"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Neck",
+            "",
+            "Aqirbane Reliquary",
+            "Ula'tek"
+          ],
+          "items": [
+            {
+              "id": 268265,
+              "name": "Aqirbane Reliquary",
+              "url": "https://www.wowhead.com/ptr/item=268265/aqirbane-reliquary?bonus=13848:13708:10835"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Shoulders",
+            "",
+            "Hissing Mantle of the Ophidian Oracle –",
+            "Catalyst – The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 243991,
+              "name": "",
+              "url": "https://www.wowhead.com/ptr/item=243991"
+            },
+            {
+              "id": 271481,
+              "name": "Hissing Mantle of the Ophidian Oracle",
+              "url": "https://www.wowhead.com/ptr/item=271481/hissing-mantle-of-the-ophidian-oracle?bonus=13848&original-item=268231"
+            },
+            {
+              "id": 268231,
+              "name": "",
+              "url": "https://www.wowhead.com/ptr/item=268231;13848"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Cloak",
+            "",
+            "Silken Voodoo Drape",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 268253,
+              "name": "Silken Voodoo Drape",
+              "url": "https://www.wowhead.com/ptr/item=268253/silken-voodoo-drape?bonus=13848"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Chest",
+            "",
+            "Fanged Raiment of the Ophidian Oracle –",
+            "Catalyst – Ula'tek"
+          ],
+          "items": [
+            {
+              "id": 243977,
+              "name": "",
+              "url": "https://www.wowhead.com/ptr/item=243977"
+            },
+            {
+              "id": 271486,
+              "name": "Fanged Raiment of the Ophidian Oracle",
+              "url": "https://www.wowhead.com/ptr/item=271486/fanged-raiment-of-the-ophidian-oracle?bonus=13848:13708&original-item=271876"
+            },
+            {
+              "id": 271876,
+              "name": "",
+              "url": "https://www.wowhead.com/ptr/item=271876;13848:13708"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Wrist",
+            "",
+            "Farstrider's Plated Bracers",
+            "Leatherworking"
+          ],
+          "items": [
+            {
+              "id": 275707,
+              "name": "",
+              "url": "https://www.wowhead.com/ptr/item=275707"
+            },
+            {
+              "id": 244584,
+              "name": "Farstrider's Plated Bracers",
+              "url": "https://www.wowhead.com/ptr/item=244584/farstriders-plated-bracers?bonus=13751:12497:13836:12384:8793"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Gloves",
+            "",
+            "Hexing Grips of the Ophidian Oracle –",
+            "Catalyst – King's Rest"
+          ],
+          "items": [
+            {
+              "id": 271484,
+              "name": "Hexing Grips of the Ophidian Oracle",
+              "url": "https://www.wowhead.com/ptr/item=271484/hexing-grips-of-the-ophidian-oracle?bonus=12854&original-item=160213"
+            },
+            {
+              "id": 160213,
+              "name": "",
+              "url": "https://www.wowhead.com/ptr/item=160213;12854"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Belt",
+            "",
+            "Serpentine Mixing Belt",
+            "Vashnik the Malignant"
+          ],
+          "items": [
+            {
+              "id": 275707,
+              "name": "",
+              "url": "https://www.wowhead.com/ptr/item=275707"
+            },
+            {
+              "id": 268254,
+              "name": "Serpentine Mixing Belt",
+              "url": "https://www.wowhead.com/ptr/item=268254/serpentine-mixing-belt?bonus=12854"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Legs",
+            "",
+            "Leggings of the Ophidian Oracle –",
+            "Catalyst – The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 244641,
+              "name": "",
+              "url": "https://www.wowhead.com/ptr/item=244641"
+            },
+            {
+              "id": 271482,
+              "name": "Leggings of the Ophidian Oracle",
+              "url": "https://www.wowhead.com/ptr/item=271482/leggings-of-the-ophidian-oracle?bonus=13848&original-item=268237"
+            },
+            {
+              "id": 268237,
+              "name": "",
+              "url": "https://www.wowhead.com/ptr/item=268237;13848"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Boots",
+            "",
+            "Ferocious Scaleboots",
+            "Sszorak"
+          ],
+          "items": [
+            {
+              "id": 243953,
+              "name": "",
+              "url": "https://www.wowhead.com/ptr/item=243953"
+            },
+            {
+              "id": 268233,
+              "name": "Ferocious Scaleboots",
+              "url": "https://www.wowhead.com/ptr/item=268233/ferocious-scaleboots?bonus=12854"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Ring 1",
+            "",
+            "Vile Alchemist's Band",
+            "Vashnik the Malignant"
+          ],
+          "items": [
+            {
+              "id": 243957,
+              "name": "",
+              "url": "https://www.wowhead.com/ptr/item=243957"
+            },
+            {
+              "id": 268249,
+              "name": "Vile Alchemist's Band",
+              "url": "https://www.wowhead.com/ptr/item=268249/vile-alchemists-band?bonus=12854:10835"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Ring 2",
+            "",
+            "Sickening Signet of Atroxus",
+            "Voidscar Arena"
+          ],
+          "items": [
+            {
+              "id": 243957,
+              "name": "",
+              "url": "https://www.wowhead.com/ptr/item=243957"
+            },
+            {
+              "id": 252258,
+              "name": "Sickening Signet of Atroxus",
+              "url": "https://www.wowhead.com/ptr/item=252258/sickening-signet-of-atroxus?bonus=12854:10835"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Trinket 1",
+            "",
+            "Voracious Heart of Ula'tek",
+            "Ula'tek"
+          ],
+          "items": [
+            {
+              "id": 270175,
+              "name": "Voracious Heart of Ula'tek",
+              "url": "https://www.wowhead.com/ptr/item=270175/voracious-heart-of-ulatek?bonus=13848"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Trinket 2",
+            "",
+            "Zul'jin's Guillotine Technique",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 270173,
+              "name": "Zul'jin's Guillotine Technique",
+              "url": "https://www.wowhead.com/ptr/item=270173/zuljins-guillotine-technique?bonus=13848"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "title": "Enhancement Shaman Gear and Best in Slot - Midnight - Wowhead",
+  "updated": "2026/08/12"
+}

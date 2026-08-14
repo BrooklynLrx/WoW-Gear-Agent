@@ -1,0 +1,104 @@
+{
+  "spec": "devastation-evoker",
+  "recommendation_context": "raid",
+  "set_kind": "final_bis",
+  "one_set_per_context": true,
+  "gear_source_policy": "unrestricted_final_bis",
+  "gear_source_policy_zh_cn": "最终毕业配装可混用团本、大秘境、制造、套装及转化装备，不按掉落来源拆分。",
+  "patch": "12.1",
+  "last_updated": "August 11, 2026",
+  "source_url": "https://maxroll.gg/wow/class-guides/devastation-evoker-raid-guide#gear-header",
+  "items": [
+    {
+      "slot": "Head",
+      "item_id": 271501,
+      "item_en": "Calamitous Echo's Magmashapers",
+      "location_en": "Tier / Catalyst"
+    },
+    {
+      "slot": "Neck",
+      "item_id": 268265,
+      "item_en": "Aqirbane Reliquary",
+      "location_en": "Ula'tek"
+    },
+    {
+      "slot": "Shoulder",
+      "item_id": 271499,
+      "item_en": "Catalyst Soulslither Spaulders → Calamitous Echo's Sundered Peaks",
+      "location_en": "Coiled Altar / Catalyst"
+    },
+    {
+      "slot": "Cloak",
+      "item_id": 268253,
+      "item_en": "Silken Voodoo Drape",
+      "location_en": "Coiled Altar"
+    },
+    {
+      "slot": "Chest",
+      "item_id": 271876,
+      "item_en": "Awoken Dreadfang Cuirass",
+      "location_en": "Ula'tek"
+    },
+    {
+      "slot": "Wrist",
+      "item_id": 244584,
+      "item_en": "Farstrider's Plated Bracers",
+      "location_en": "Crafting"
+    },
+    {
+      "slot": "Gloves",
+      "item_id": 271502,
+      "item_en": "Calamitous Echo's Ebon Greathorns",
+      "location_en": "Tier / Catalyst"
+    },
+    {
+      "slot": "Belt",
+      "item_id": 268254,
+      "item_en": "Serpentine Mixing Belt",
+      "location_en": "Vashnik"
+    },
+    {
+      "slot": "Legs",
+      "item_id": 271500,
+      "item_en": "Catalyst Cuisses of the Uncoiled Union → Earthen Pillars of Calamity",
+      "location_en": "Coiled Altar / Catalyst"
+    },
+    {
+      "slot": "Boots",
+      "item_id": 268233,
+      "item_en": "Ferocious Scaleboots",
+      "location_en": "Sszorak"
+    },
+    {
+      "slot": "Ring 1",
+      "item_id": 268249,
+      "item_en": "Vile Alchemist's Band",
+      "location_en": "Vashnik"
+    },
+    {
+      "slot": "Ring 2",
+      "item_id": 158366,
+      "item_en": "Charged Sandstone Band",
+      "location_en": "Temple of Sethraliss"
+    },
+    {
+      "slot": "Trinket 1",
+      "item_id": 270164,
+      "item_en": "Gebbo's Bottomless Bag",
+      "location_en": "Lost Explorers"
+    },
+    {
+      "slot": "Trinket 2",
+      "item_id": null,
+      "item_en": "Vile Vial of Volatile Venom Altar of Fangs Weapon Jan'thrazet, the Soul Fang",
+      "location_en": "Ula'tek"
+    },
+    {
+      "slot": "Off-hand",
+      "item_id": 245769,
+      "item_en": "Aln'hara Lantern",
+      "location_en": "Crafting"
+    }
+  ],
+  "fetched_at": "2026-08-13T05:30:15.960979+00:00"
+}

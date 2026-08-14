@@ -1,0 +1,247 @@
+{
+  "class": "mage",
+  "spec": "frost",
+  "source_url": "https://www.wowhead.com/guide/classes/mage/frost/bis-gear#bis-gear",
+  "captured_at": "2026-08-13",
+  "patch": "Patch 12.1.0",
+  "tables": [
+    {
+      "rows": [
+        {
+          "cells": [
+            "Slot",
+            "Item",
+            "Source"
+          ],
+          "items": []
+        },
+        {
+          "cells": [
+            "Weapon",
+            "Jan'thrazet, the Soul Fang",
+            "Ula'tek"
+          ],
+          "items": [
+            {
+              "id": 271092,
+              "name": "Jan'thrazet, the Soul Fang",
+              "url": "https://www.wowhead.com/item=271092/janthrazet-the-soul-fang"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Offhand",
+            "Frostscale's Mystic Frond",
+            "Nymrissa Wavecaller"
+          ],
+          "items": [
+            {
+              "id": 268263,
+              "name": "Frostscale's Mystic Frond",
+              "url": "https://www.wowhead.com/item=268263/frostscales-mystic-frond"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Head",
+            "Crown of the Primal Leywarden",
+            "Tier Set"
+          ],
+          "items": [
+            {
+              "id": 271564,
+              "name": "Crown of the Primal Leywarden",
+              "url": "https://www.wowhead.com/item=271564/crown-of-the-primal-leywarden?original-item=271874"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Neck",
+            "Aqirbane Reliquary",
+            "Ula'tek"
+          ],
+          "items": [
+            {
+              "id": 268265,
+              "name": "Aqirbane Reliquary",
+              "url": "https://www.wowhead.com/item=268265/aqirbane-reliquary"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Shoulders",
+            "Primal Leywarden's Manaflux",
+            "Tier Set"
+          ],
+          "items": [
+            {
+              "id": 271562,
+              "name": "Primal Leywarden's Manaflux",
+              "url": "https://www.wowhead.com/item=271562/primal-leywardens-manaflux?original-item=239031"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Cloak",
+            "Silken Voodoo Drape",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 268253,
+              "name": "Silken Voodoo Drape",
+              "url": "https://www.wowhead.com/item=268253/silken-voodoo-drape"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Chest",
+            "Crest of the Primal Leywarden",
+            "Tier Set"
+          ],
+          "items": [
+            {
+              "id": 271567,
+              "name": "Crest of the Primal Leywarden",
+              "url": "https://www.wowhead.com/item=271567/crest-of-the-primal-leywarden?original-item=273785"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Wrist",
+            "Martyr's Bindings",
+            "Crafting/Misc"
+          ],
+          "items": [
+            {
+              "id": 239648,
+              "name": "Martyr's Bindings",
+              "url": "https://www.wowhead.com/item=239648/martyrs-bindings?bonus=8791:8960:12214:12384:13668:13751"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Gloves",
+            "Primal Leywarden's Manashapers",
+            "Tier Set"
+          ],
+          "items": [
+            {
+              "id": 271565,
+              "name": "Primal Leywarden's Manashapers",
+              "url": "https://www.wowhead.com/item=271565/primal-leywardens-manashapers?original-item=268243"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Belt",
+            "Martyr's Waistwrap",
+            "Crafting/Misc"
+          ],
+          "items": [
+            {
+              "id": 239649,
+              "name": "Martyr's Waistwrap",
+              "url": "https://www.wowhead.com/item=239649/martyrs-waistwrap?bonus=8791:8960:12214:12384:13668:13751"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Legs",
+            "Primal Leywarden's Tailored Legwraps",
+            "Tier Set"
+          ],
+          "items": [
+            {
+              "id": 271563,
+              "name": "Primal Leywarden's Tailored Legwraps",
+              "url": "https://www.wowhead.com/item=271563/primal-leywardens-tailored-legwraps?original-item=159234"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Boots",
+            "Cackling Soultreads",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 268255,
+              "name": "Cackling Soultreads",
+              "url": "https://www.wowhead.com/item=268255/cackling-soultreads"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Ring",
+            "Vile Alchemist's Band",
+            "Vashnik the Malignant"
+          ],
+          "items": [
+            {
+              "id": 268249,
+              "name": "Vile Alchemist's Band",
+              "url": "https://www.wowhead.com/item=268249/vile-alchemists-band"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Ring",
+            "Charged Sandstone Band",
+            "Temple of Sethraliss"
+          ],
+          "items": [
+            {
+              "id": 158366,
+              "name": "Charged Sandstone Band",
+              "url": "https://www.wowhead.com/item=158366/charged-sandstone-band"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Trinket",
+            "Gebbo's Bottomless Bag",
+            "The Lost Explorers"
+          ],
+          "items": [
+            {
+              "id": 270164,
+              "name": "Gebbo's Bottomless Bag",
+              "url": "https://www.wowhead.com/item=270164/gebbos-bottomless-bag"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Trinket",
+            "Wavecaller's Seastone",
+            "Nymrissa Wavecaller"
+          ],
+          "items": [
+            {
+              "id": 270167,
+              "name": "Wavecaller's Seastone",
+              "url": "https://www.wowhead.com/item=270167/wavecallers-seastone"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "title": "Frost Mage Gear and Best in Slot - Midnight - Wowhead",
+  "updated": "2026/08/12"
+}

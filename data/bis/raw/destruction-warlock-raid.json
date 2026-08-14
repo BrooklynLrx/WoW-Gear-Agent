@@ -1,0 +1,98 @@
+{
+  "spec": "destruction-warlock",
+  "recommendation_context": "raid",
+  "set_kind": "final_bis",
+  "one_set_per_context": true,
+  "gear_source_policy": "unrestricted_final_bis",
+  "gear_source_policy_zh_cn": "最终毕业配装可混用团本、大秘境、制造、套装及转化装备，不按掉落来源拆分。",
+  "patch": "12.1",
+  "last_updated": "August 11, 2026",
+  "source_url": "https://maxroll.gg/wow/class-guides/destruction-warlock-raid-guide#gear-header",
+  "items": [
+    {
+      "slot": "Head",
+      "item_id": 271874,
+      "item_en": "Venomkeeper's Horrific Cowl",
+      "location_en": "Ula'tek"
+    },
+    {
+      "slot": "Neck",
+      "item_id": 268265,
+      "item_en": "Aqirbane Reliquary",
+      "location_en": "Ula'tek"
+    },
+    {
+      "slot": "Shoulder",
+      "item_id": 271544,
+      "item_en": "Brood Cleanser's Amice → Spires of the Damned Necrolyte",
+      "location_en": "Catalyst of Temple of Sethraliss"
+    },
+    {
+      "slot": "Cloak",
+      "item_id": 268253,
+      "item_en": "Silken Voodoo Drape",
+      "location_en": "The Coiled Altar"
+    },
+    {
+      "slot": "Chest",
+      "item_id": 271549,
+      "item_en": "Damned Necrolyte's Rattling Robes",
+      "location_en": "Vashnik"
+    },
+    {
+      "slot": "Wrist",
+      "item_id": 239648,
+      "item_en": "Martyr's Bindings",
+      "location_en": "Crafting"
+    },
+    {
+      "slot": "Gloves",
+      "item_id": 271547,
+      "item_en": "Grasps of the Eternal Shadow → Damned Necrolyte's Charred Grasps",
+      "location_en": "Catalyst of The Coiled Altar"
+    },
+    {
+      "slot": "Belt",
+      "item_id": 239649,
+      "item_en": "Martyr's Waistwrap",
+      "location_en": "Crafting"
+    },
+    {
+      "slot": "Legs",
+      "item_id": 271545,
+      "item_en": "Damned Necrolyte's Leg Bindings",
+      "location_en": "Sszorak"
+    },
+    {
+      "slot": "Boots",
+      "item_id": 268255,
+      "item_en": "Cackling Soultreads",
+      "location_en": "The Coiled Altar"
+    },
+    {
+      "slot": "Ring 1",
+      "item_id": 268252,
+      "item_en": "Apex Brute's Claw Ring",
+      "location_en": "Sszorak"
+    },
+    {
+      "slot": "Ring 2",
+      "item_id": 158366,
+      "item_en": "Charged Sandstone Band",
+      "location_en": "Temple of Sethraliss"
+    },
+    {
+      "slot": "Trinket 1",
+      "item_id": 250215,
+      "item_en": "Freightrunner's Flask",
+      "location_en": "Murder Row"
+    },
+    {
+      "slot": "Trinket 2",
+      "item_id": null,
+      "item_en": "Gebbo's Bottomless Bag The Lost Explorers Weapon Jan'thrazet, the Soul Fang Ula'tek Offhand Spine of the Hissing Abyss",
+      "location_en": "Entombed Sentinels"
+    }
+  ],
+  "fetched_at": "2026-08-13T05:32:29.453642+00:00"
+}

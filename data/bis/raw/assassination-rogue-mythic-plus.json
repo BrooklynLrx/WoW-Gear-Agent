@@ -1,0 +1,98 @@
+{
+  "spec": "assassination-rogue",
+  "recommendation_context": "mythic-plus",
+  "set_kind": "final_bis",
+  "one_set_per_context": true,
+  "gear_source_policy": "unrestricted_final_bis",
+  "gear_source_policy_zh_cn": "最终毕业配装可混用团本、大秘境、制造、套装及转化装备，不按掉落来源拆分。",
+  "patch": "12.1",
+  "last_updated": "August 12, 2026",
+  "source_url": "https://maxroll.gg/wow/class-guides/assassination-rogue-mythic-plus-guide#gear-header",
+  "items": [
+    {
+      "slot": "Head",
+      "item_id": 271875,
+      "item_en": "Gaze of the Coiled Watcher",
+      "location_en": "Ula'tek"
+    },
+    {
+      "slot": "Neck",
+      "item_id": 268265,
+      "item_en": "Aqirbane Reliquary",
+      "location_en": "Ula'tek"
+    },
+    {
+      "slot": "Shoulder",
+      "item_id": 271508,
+      "item_en": "Chosen Bloodslayer's Voodoo Guards",
+      "location_en": "The Lost Explorers / Catalyst"
+    },
+    {
+      "slot": "Cloak",
+      "item_id": 251190,
+      "item_en": "Bloodthorn Burnous",
+      "location_en": "The Blinding Vale"
+    },
+    {
+      "slot": "Chest",
+      "item_id": 271513,
+      "item_en": "Chosen Bloodslayer's Banded Poncho",
+      "location_en": "Vashnik the Malignant / Catalyst"
+    },
+    {
+      "slot": "Wrist",
+      "item_id": 244576,
+      "item_en": "Silvermoon Agent's Deflectors",
+      "location_en": "Crafting"
+    },
+    {
+      "slot": "Gloves",
+      "item_id": 271511,
+      "item_en": "Chosen Bloodslayer's Fanged Grips",
+      "location_en": "Entombed Sentinels / Catalyst"
+    },
+    {
+      "slot": "Belt",
+      "item_id": 268256,
+      "item_en": "Sash of the Forlorn Vessel",
+      "location_en": "The Coiled Altar"
+    },
+    {
+      "slot": "Legs",
+      "item_id": 271509,
+      "item_en": "Coiled Hex Legguards → Chosen Bloodslayer's Reinforced Pants",
+      "location_en": "Catalyst of The Coiled Altar"
+    },
+    {
+      "slot": "Boots",
+      "item_id": 268261,
+      "item_en": "Bespittled Slitherslippers",
+      "location_en": "The Twin Fangs"
+    },
+    {
+      "slot": "Ring 1",
+      "item_id": 268252,
+      "item_en": "Apex Brute's Claw Ring",
+      "location_en": "Sszorak"
+    },
+    {
+      "slot": "Ring 2",
+      "item_id": 268249,
+      "item_en": "Vile Alchemist's Band",
+      "location_en": "Vashnik the Malignant"
+    },
+    {
+      "slot": "Trinket 1",
+      "item_id": 270175,
+      "item_en": "Voracious Heart of Ula'tek",
+      "location_en": "Ula'tek"
+    },
+    {
+      "slot": "Trinket 2",
+      "item_id": null,
+      "item_en": "Font of Venomous Rage Ula'tek Weapon Zatha'tek, Breath of Corruption Ula'tek Weapon Farstrider's Mercy Crafting Assassination Rogue",
+      "location_en": "BiS list in Mythic+"
+    }
+  ],
+  "fetched_at": "2026-08-13T05:31:44.787340+00:00"
+}

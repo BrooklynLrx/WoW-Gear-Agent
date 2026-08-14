@@ -1,0 +1,107 @@
+{
+  "patch": "12.1.0",
+  "game_build": 69273,
+  "level": 90,
+  "rating_conversions_before_diminishing_returns": {
+    "haste_rating_per_1_percent": 44,
+    "critical_strike_rating_per_1_percent": 46,
+    "versatility_rating_per_1_percent_damage_healing": 54,
+    "mastery_rating_per_1_mastery_point": 46
+  },
+  "mastery_model": {
+    "base_mastery_percent_before_spec_coefficient": 8,
+    "forward_formula": "displayed_mastery_percent = (8 + DR(mastery_rating / 46)) * spec_mastery_coefficient",
+    "reverse_formula": "mastery_rating = reverse_DR(displayed_mastery_percent / spec_mastery_coefficient - 8) * 46",
+    "worked_example": "毁灭术面板40%精通、专精系数2：40 / 2 = 20；20 - 8 = 12；12 * 46 = 552精通绿字（未进入递减区间）。",
+    "warning": "必须先用面板精通除以专精系数，再减基础8%精通；不可直接用面板精通减8%。部分专精有多个效果，primary 只对应角色属性接口和 SimulationCraft 使用的主精通值。"
+  },
+  "sheet_percent_conversion_policy": {
+    "model_version": "simple_v1",
+    "mandatory_order": [
+      "identify_spec_and_its_mastery_coefficient",
+      "subtract_only_universal_base_5_percent_critical_strike",
+      "for_mastery_divide_displayed_effect_by_spec_coefficient_then_subtract_only_8_percent_base_mastery",
+      "reverse_secondary_stat_diminishing_returns",
+      "convert_percent_or_mastery_points_to_rating",
+      "subtract_static_rating_from_gems_enchants_flask_food_and_other_included_sources",
+      "only_then_generate_equipment_rating_targets_or_ratios"
+    ],
+    "base_defaults": {
+      "critical_strike_percent": 5,
+      "haste_percent": 0,
+      "mastery_percent_before_spec_coefficient": 8,
+      "versatility_percent": 0
+    },
+    "mastery_forward_formula": "displayed_mastery_effect_percent = (8 + DR(mastery_rating / 46)) * spec_mastery_coefficient",
+    "mastery_reverse_formula": "mastery_rating = reverse_DR(displayed_mastery_effect_percent / spec_mastery_coefficient - 8) * 46",
+    "excluded_from_v1": [
+      "class_and_spec_talent_percent_bonuses",
+      "hero_talent_percent_bonuses",
+      "racial_percent_bonuses",
+      "raid_buffs_and_temporary_combat_buffs"
+    ],
+    "simplification_zh_cn": "第一版仅考虑通用基础5%暴击、0%急速、基础8%精通、0%全能；不扣除天赋、英雄天赋、种族或团队增益。基础8%精通先与绿字精通%相加，再乘对应专精的精通系数，得到最终面板精通效果。",
+    "temporary_effect_policy": "Temporary combat buffs and triggered item effects are excluded unless the source recommendation explicitly measures them and labels that context.",
+    "ratio_policy": "Never treat character-sheet percentages as rating ratios. Derive rating targets first; if a remainder stat has no fixed target, keep a threshold-plus-remainder rule instead of inventing a unique ratio."
+  },
+  "diminishing_returns": {
+    "applies_to": "rating-derived value only",
+    "bands": [
+      { "from": 0, "to": 30, "multiplier": 1.0 },
+      { "from": 30, "to": 39, "multiplier": 0.9 },
+      { "from": 39, "to": 47, "multiplier": 0.8 },
+      { "from": 47, "to": 54, "multiplier": 0.7 },
+      { "from": 54, "to": 66, "multiplier": 0.6 },
+      { "from": 66, "to": 126, "multiplier": 0.5 }
+    ],
+    "mastery_note": "精通的区间单位是精通点，不是乘完专精系数后的面板效果百分比。"
+  },
+  "specs": [
+    { "id": 62, "class_zh_cn": "法师", "spec_zh_cn": "奥术", "mastery_spell_id": 190740, "mastery_en": "Savant", "primary_effect_percent_per_mastery_point": 1.32, "has_multiple_effect_coefficients": true },
+    { "id": 63, "class_zh_cn": "法师", "spec_zh_cn": "火焰", "mastery_spell_id": 12846, "mastery_en": "Ignite", "primary_effect_percent_per_mastery_point": 0.483, "has_multiple_effect_coefficients": false },
+    { "id": 64, "class_zh_cn": "法师", "spec_zh_cn": "冰霜", "mastery_spell_id": 1246752, "mastery_en": "Freeze and Shatter", "primary_effect_percent_per_mastery_point": 1.6, "has_multiple_effect_coefficients": false },
+    { "id": 65, "class_zh_cn": "圣骑士", "spec_zh_cn": "神圣", "mastery_spell_id": 183997, "mastery_en": "Lightbringer", "primary_effect_percent_per_mastery_point": 1.5, "has_multiple_effect_coefficients": false },
+    { "id": 66, "class_zh_cn": "圣骑士", "spec_zh_cn": "防护", "mastery_spell_id": 76671, "mastery_en": "Divine Bulwark", "primary_effect_percent_per_mastery_point": 1.0, "has_multiple_effect_coefficients": false },
+    { "id": 70, "class_zh_cn": "圣骑士", "spec_zh_cn": "惩戒", "mastery_spell_id": 267316, "mastery_en": "Highlord's Judgment", "primary_effect_percent_per_mastery_point": 1.35, "has_multiple_effect_coefficients": true },
+    { "id": 71, "class_zh_cn": "战士", "spec_zh_cn": "武器", "mastery_spell_id": 1258398, "mastery_en": "Master of Arms", "primary_effect_percent_per_mastery_point": 1.1, "has_multiple_effect_coefficients": false },
+    { "id": 72, "class_zh_cn": "战士", "spec_zh_cn": "狂怒", "mastery_spell_id": 76856, "mastery_en": "Unshackled Fury", "primary_effect_percent_per_mastery_point": 1.4, "has_multiple_effect_coefficients": false },
+    { "id": 73, "class_zh_cn": "战士", "spec_zh_cn": "防护", "mastery_spell_id": 76857, "mastery_en": "Critical Block", "primary_effect_percent_per_mastery_point": 1.5, "has_multiple_effect_coefficients": true },
+    { "id": 102, "class_zh_cn": "德鲁伊", "spec_zh_cn": "平衡", "mastery_spell_id": 393014, "mastery_en": "Astral Invocation", "primary_effect_percent_per_mastery_point": 0.75, "has_multiple_effect_coefficients": false },
+    { "id": 103, "class_zh_cn": "德鲁伊", "spec_zh_cn": "野性", "mastery_spell_id": 77493, "mastery_en": "Razor Claws", "primary_effect_percent_per_mastery_point": 2.0, "has_multiple_effect_coefficients": false },
+    { "id": 104, "class_zh_cn": "德鲁伊", "spec_zh_cn": "守护", "mastery_spell_id": 155783, "mastery_en": "Nature's Guardian", "primary_effect_percent_per_mastery_point": 0.7, "has_multiple_effect_coefficients": false },
+    { "id": 105, "class_zh_cn": "德鲁伊", "spec_zh_cn": "恢复", "mastery_spell_id": 77495, "mastery_en": "Harmony", "primary_effect_percent_per_mastery_point": 1.311, "has_multiple_effect_coefficients": false },
+    { "id": 250, "class_zh_cn": "死亡骑士", "spec_zh_cn": "鲜血", "mastery_spell_id": 77513, "mastery_en": "Blood Shield", "primary_effect_percent_per_mastery_point": 2.0, "has_multiple_effect_coefficients": true },
+    { "id": 251, "class_zh_cn": "死亡骑士", "spec_zh_cn": "冰霜", "mastery_spell_id": 77514, "mastery_en": "Frozen Heart", "primary_effect_percent_per_mastery_point": 2.0, "has_multiple_effect_coefficients": false },
+    { "id": 252, "class_zh_cn": "死亡骑士", "spec_zh_cn": "邪恶", "mastery_spell_id": 77515, "mastery_en": "Dreadblade", "primary_effect_percent_per_mastery_point": 1.8, "has_multiple_effect_coefficients": true },
+    { "id": 253, "class_zh_cn": "猎人", "spec_zh_cn": "野兽控制", "mastery_spell_id": 76657, "mastery_en": "Master of Beasts", "primary_effect_percent_per_mastery_point": 1.9, "has_multiple_effect_coefficients": true },
+    { "id": 254, "class_zh_cn": "猎人", "spec_zh_cn": "射击", "mastery_spell_id": 193468, "mastery_en": "Sniper Training", "primary_effect_percent_per_mastery_point": 0.625, "has_multiple_effect_coefficients": true },
+    { "id": 255, "class_zh_cn": "猎人", "spec_zh_cn": "生存", "mastery_spell_id": 263135, "mastery_en": "Spirit Bond", "primary_effect_percent_per_mastery_point": 0.85, "has_multiple_effect_coefficients": false },
+    { "id": 256, "class_zh_cn": "牧师", "spec_zh_cn": "戒律", "mastery_spell_id": 271534, "mastery_en": "Grace", "primary_effect_percent_per_mastery_point": 1.35, "has_multiple_effect_coefficients": false },
+    { "id": 257, "class_zh_cn": "牧师", "spec_zh_cn": "神圣", "mastery_spell_id": 77485, "mastery_en": "Echo of Light", "primary_effect_percent_per_mastery_point": 0.908437, "has_multiple_effect_coefficients": false },
+    { "id": 258, "class_zh_cn": "牧师", "spec_zh_cn": "暗影", "mastery_spell_id": 343690, "mastery_en": "Shadow Weaving", "primary_effect_percent_per_mastery_point": 0.5, "has_multiple_effect_coefficients": false },
+    { "id": 259, "class_zh_cn": "潜行者", "spec_zh_cn": "奇袭", "mastery_spell_id": 76803, "mastery_en": "Potent Assassin", "primary_effect_percent_per_mastery_point": 1.7, "has_multiple_effect_coefficients": false },
+    { "id": 260, "class_zh_cn": "潜行者", "spec_zh_cn": "狂徒", "mastery_spell_id": 76806, "mastery_en": "Main Gauche", "primary_effect_percent_per_mastery_point": 1.0, "has_multiple_effect_coefficients": true },
+    { "id": 261, "class_zh_cn": "潜行者", "spec_zh_cn": "敏锐", "mastery_spell_id": 76808, "mastery_en": "Executioner", "primary_effect_percent_per_mastery_point": 2.45, "has_multiple_effect_coefficients": false },
+    { "id": 262, "class_zh_cn": "萨满祭司", "spec_zh_cn": "元素", "mastery_spell_id": 168534, "mastery_en": "Elemental Overload", "primary_effect_percent_per_mastery_point": 1.875, "has_multiple_effect_coefficients": true },
+    { "id": 263, "class_zh_cn": "萨满祭司", "spec_zh_cn": "增强", "mastery_spell_id": 77223, "mastery_en": "Enhanced Elements", "primary_effect_percent_per_mastery_point": 2.0, "has_multiple_effect_coefficients": true },
+    { "id": 264, "class_zh_cn": "萨满祭司", "spec_zh_cn": "恢复", "mastery_spell_id": 77226, "mastery_en": "Deep Healing", "primary_effect_percent_per_mastery_point": 3.0, "has_multiple_effect_coefficients": false },
+    { "id": 265, "class_zh_cn": "术士", "spec_zh_cn": "痛苦", "mastery_spell_id": 77215, "mastery_en": "Potent Afflictions", "primary_effect_percent_per_mastery_point": 2.5, "has_multiple_effect_coefficients": false },
+    { "id": 266, "class_zh_cn": "术士", "spec_zh_cn": "恶魔学识", "mastery_spell_id": 77219, "mastery_en": "Master Demonologist", "primary_effect_percent_per_mastery_point": 1.45, "has_multiple_effect_coefficients": false },
+    { "id": 267, "class_zh_cn": "术士", "spec_zh_cn": "毁灭", "mastery_spell_id": 77220, "mastery_en": "Chaotic Energies", "primary_effect_percent_per_mastery_point": 2.0, "has_multiple_effect_coefficients": false },
+    { "id": 268, "class_zh_cn": "武僧", "spec_zh_cn": "酒仙", "mastery_spell_id": 117906, "mastery_en": "Elusive Brawler", "primary_effect_percent_per_mastery_point": 0.924, "has_multiple_effect_coefficients": true },
+    { "id": 269, "class_zh_cn": "武僧", "spec_zh_cn": "踏风", "mastery_spell_id": 115636, "mastery_en": "Combo Strikes", "primary_effect_percent_per_mastery_point": 2.32875, "has_multiple_effect_coefficients": false },
+    { "id": 270, "class_zh_cn": "武僧", "spec_zh_cn": "织雾", "mastery_spell_id": 117907, "mastery_en": "Gust of Mists", "primary_effect_percent_per_mastery_point": 31.184999, "primary_value_kind": "spell_power_scaled_heal", "has_multiple_effect_coefficients": true },
+    { "id": 577, "class_zh_cn": "恶魔猎手", "spec_zh_cn": "浩劫", "mastery_spell_id": 185164, "mastery_en": "Demonic Presence", "primary_effect_percent_per_mastery_point": 2.25, "has_multiple_effect_coefficients": false },
+    { "id": 581, "class_zh_cn": "恶魔猎手", "spec_zh_cn": "复仇", "mastery_spell_id": 203747, "mastery_en": "Fel Blood", "primary_effect_percent_per_mastery_point": 2.25, "has_multiple_effect_coefficients": false },
+    { "id": 1467, "class_zh_cn": "唤魔师", "spec_zh_cn": "湮灭", "mastery_spell_id": 362980, "mastery_en": "Giantkiller", "primary_effect_percent_per_mastery_point": 1.5, "has_multiple_effect_coefficients": false },
+    { "id": 1468, "class_zh_cn": "唤魔师", "spec_zh_cn": "恩护", "mastery_spell_id": 363510, "mastery_en": "Life-Binder", "primary_effect_percent_per_mastery_point": 1.8, "has_multiple_effect_coefficients": false },
+    { "id": 1473, "class_zh_cn": "唤魔师", "spec_zh_cn": "增辉", "mastery_spell_id": 406380, "mastery_en": "Timewalker", "primary_effect_percent_per_mastery_point": 0.272, "has_multiple_effect_coefficients": true },
+    { "id": 1480, "class_zh_cn": "恶魔猎手", "spec_zh_cn": "噬灭", "mastery_spell_id": 1238855, "mastery_en": "Monster Within", "primary_effect_percent_per_mastery_point": 1.0, "has_multiple_effect_coefficients": true }
+  ],
+  "sources": [
+    "https://github.com/simulationcraft/simc/blob/5f7961fc051a12b4f38b775d44837f3057e86e57/engine/dbc/generated/mastery_spells.inc",
+    "https://github.com/simulationcraft/simc/blob/5f7961fc051a12b4f38b775d44837f3057e86e57/engine/dbc/generated/sc_spell_data.inc",
+    "https://github.com/simulationcraft/simc/blob/5f7961fc051a12b4f38b775d44837f3057e86e57/engine/dbc/generated/sc_scale_data.inc",
+    "https://www.wowhead.com/guide/diminishing-returns-on-secondary-stats-in-world-of-warcraft"
+  ]
+}

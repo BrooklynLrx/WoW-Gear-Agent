@@ -1,0 +1,140 @@
+{
+  "spec": "outlaw-rogue",
+  "recommendation_context": "mythic-plus",
+  "set_kind": "final_bis",
+  "one_set_per_context": true,
+  "gear_source_policy": "unrestricted_final_bis",
+  "gear_source_policy_zh_cn": "最终毕业配装可混用团本、大秘境、制造、套装及转化装备，不按掉落来源拆分。",
+  "patch": "12.1",
+  "last_updated": "August 11, 2026",
+  "source_url": "https://maxroll.gg/wow/class-guides/outlaw-rogue-mythic-plus-guide#gear-header",
+  "items": [
+    {
+      "slot": "Head",
+      "item_id": 271875,
+      "item_en": "Gaze of the Coiled Watcher",
+      "location_en": "Ula'tek",
+      "name_zh_cn": "盘卷守望者的凝视",
+      "icon": "inv_helm_leather_raiddruidulatek_d_01",
+      "localization_status": "matched_by_item_id"
+    },
+    {
+      "slot": "Neck",
+      "item_id": 268265,
+      "item_en": "Aqirbane Reliquary",
+      "location_en": "Ula'tek",
+      "name_zh_cn": "亚基克星藏骨匣",
+      "icon": "inv_121_jewelry_neck03_green",
+      "localization_status": "matched_by_item_id"
+    },
+    {
+      "slot": "Shoulder",
+      "item_id": 271508,
+      "item_en": "Chosen Bloodslayer's Voodoo Guards",
+      "location_en": "The Lost Explorers / Catalyst",
+      "name_zh_cn": "天选屠血者巫毒护肩",
+      "icon": "inv_shoulder_leather_raidrogueulatek_d_01",
+      "localization_status": "matched_by_item_id"
+    },
+    {
+      "slot": "Cloak",
+      "item_id": 268248,
+      "item_en": "Amani Summoning Shawl",
+      "location_en": "Nez'Kali the Soulcoiler",
+      "name_zh_cn": "阿曼尼召唤披巾",
+      "icon": "inv_cape_leather_raidmonkulatek_d_01",
+      "localization_status": "matched_by_item_id"
+    },
+    {
+      "slot": "Chest",
+      "item_id": 271513,
+      "item_en": "Chosen Bloodslayer's Banded Poncho",
+      "location_en": "Vashnik the Malignant / Catalyst",
+      "name_zh_cn": "天选屠血者绑带罩衫",
+      "icon": "inv_chest_leather_raidrogueulatek_d_01",
+      "localization_status": "matched_by_item_id"
+    },
+    {
+      "slot": "Wrist",
+      "item_id": 244576,
+      "item_en": "Silvermoon Agent's Deflectors",
+      "location_en": "Crafting",
+      "name_zh_cn": "银月城特工的偏斜腕甲",
+      "icon": "inv_bracer_leather_questbloodelf_b_01",
+      "localization_status": "matched_by_item_id"
+    },
+    {
+      "slot": "Gloves",
+      "item_id": 271511,
+      "item_en": "Chosen Bloodslayer's Fanged Grips",
+      "location_en": "Entombed Sentinels / Catalyst",
+      "name_zh_cn": "天选屠血者尖牙护手",
+      "icon": "inv_glove_leather_raidrogueulatek_d_01",
+      "localization_status": "matched_by_item_id"
+    },
+    {
+      "slot": "Belt",
+      "item_id": 268256,
+      "item_en": "Sash of the Forlorn Vessel",
+      "location_en": "The Coiled Altar",
+      "name_zh_cn": "孤寂容器束带",
+      "icon": "inv_belt_leather_raiddruidulatek_d_01",
+      "localization_status": "matched_by_item_id"
+    },
+    {
+      "slot": "Legs",
+      "item_id": 271509,
+      "item_en": "Coiled Hex Legguards → Chosen Bloodslayer's Reinforced Pants",
+      "location_en": "Catalyst of The Coiled Altar",
+      "name_zh_cn": "天选屠血者加固长裤",
+      "icon": "inv_pant_leather_raidrogueulatek_d_01",
+      "localization_status": "matched_by_item_id"
+    },
+    {
+      "slot": "Boots",
+      "item_id": 268261,
+      "item_en": "Bespittled Slitherslippers",
+      "location_en": "The Twin Fangs",
+      "name_zh_cn": "沾涎游蛇便鞋",
+      "icon": "inv_boot_leather_raidmonkulatek_d_01",
+      "localization_status": "matched_by_item_id"
+    },
+    {
+      "slot": "Ring 1",
+      "item_id": 268252,
+      "item_en": "Apex Brute's Claw Ring",
+      "location_en": "Sszorak",
+      "name_zh_cn": "顶级蛮兵爪戒",
+      "icon": "inv_121_jewelry_ring03_red",
+      "localization_status": "matched_by_item_id"
+    },
+    {
+      "slot": "Ring 2",
+      "item_id": 268252,
+      "item_en": "Apex Brute's Claw Ring",
+      "location_en": "Altar of Fangs",
+      "name_zh_cn": "顶级蛮兵爪戒",
+      "icon": "inv_121_jewelry_ring03_red",
+      "localization_status": "matched_by_item_id"
+    },
+    {
+      "slot": "Trinket 1",
+      "item_id": 270175,
+      "item_en": "Voracious Heart of Ula'tek",
+      "location_en": "Ula'tek",
+      "name_zh_cn": "乌拉特克贪婪之心",
+      "icon": "inv_121_trinket_raid_ulatek_heart",
+      "localization_status": "matched_by_item_id"
+    },
+    {
+      "slot": "Trinket 2",
+      "item_id": null,
+      "item_en": "Zul'jin's Guillotine Technique Altar of Fangs Weapon Aman'muso, Warlord's Vengeance Altar of Fangs Weapon Farstrider's Mercy Crafting Outlaw Rogue",
+      "location_en": "BiS list in Mythic+",
+      "name_zh_cn": null,
+      "icon": null,
+      "localization_status": "unmatched"
+    }
+  ],
+  "fetched_at": "2026-08-13T05:31:49.898746+00:00"
+}

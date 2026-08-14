@@ -1,0 +1,247 @@
+{
+  "class": "rogue",
+  "spec": "subtlety",
+  "source_url": "https://www.wowhead.com/guide/classes/rogue/subtlety/bis-gear#bis-gear",
+  "captured_at": "2026-08-13",
+  "patch": "Patch 12.1.0",
+  "tables": [
+    {
+      "rows": [
+        {
+          "cells": [
+            "Slot",
+            "Item",
+            "Source"
+          ],
+          "items": []
+        },
+        {
+          "cells": [
+            "Main-Hand",
+            "Zatha'tek, Breath of Corruption",
+            "Ula'tek"
+          ],
+          "items": [
+            {
+              "id": 271093,
+              "name": "Zatha'tek, Breath of Corruption",
+              "url": "https://www.wowhead.com/ptr/item=271093/zathatek-breath-of-corruption"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Off-Hand",
+            "Farstrider's Mercy",
+            "Crafting/Misc"
+          ],
+          "items": [
+            {
+              "id": 237837,
+              "name": "Farstrider's Mercy",
+              "url": "https://www.wowhead.com/ptr/item=237837/farstriders-mercy"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Head",
+            "Chosen Bloodslayer's Spirit Shroud",
+            "Tier Set - Ula'tek"
+          ],
+          "items": [
+            {
+              "id": 271510,
+              "name": "Chosen Bloodslayer's Spirit Shroud",
+              "url": "https://www.wowhead.com/ptr/item=271510/chosen-bloodslayers-spirit-shroud?original-item=271875"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Neck",
+            "Aqirbane Reliquary",
+            "Ula'tek"
+          ],
+          "items": [
+            {
+              "id": 268265,
+              "name": "Aqirbane Reliquary",
+              "url": "https://www.wowhead.com/ptr/item=268265/aqirbane-reliquary"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Shoulders",
+            "Chosen Bloodslayer's Voodoo Guards",
+            "Tier Set - Vashnik the Malignant"
+          ],
+          "items": [
+            {
+              "id": 271508,
+              "name": "Chosen Bloodslayer's Voodoo Guards",
+              "url": "https://www.wowhead.com/ptr/item=271508/chosen-bloodslayers-voodoo-guards?original-item=268246"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Cloak",
+            "Silken Voodoo Drape",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 268253,
+              "name": "Silken Voodoo Drape",
+              "url": "https://www.wowhead.com/ptr/item=268253/silken-voodoo-drape"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Chest",
+            "Chosen Bloodslayer's Banded Poncho",
+            "Tier Set - Den of Nalorakk"
+          ],
+          "items": [
+            {
+              "id": 271513,
+              "name": "Chosen Bloodslayer's Banded Poncho",
+              "url": "https://www.wowhead.com/ptr/item=271513/chosen-bloodslayers-banded-poncho?original-item=251159"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Wrist",
+            "Chosen Bloodslayer's Wristguards",
+            "Crafting/Misc"
+          ],
+          "items": [
+            {
+              "id": 271506,
+              "name": "Chosen Bloodslayer's Wristguards",
+              "url": "https://www.wowhead.com/ptr/item=271506/chosen-bloodslayers-wristguards"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Gloves",
+            "Chosen Bloodslayer's Fanged Grips",
+            "Tier Set - Sszorak"
+          ],
+          "items": [
+            {
+              "id": 271511,
+              "name": "Chosen Bloodslayer's Fanged Grips",
+              "url": "https://www.wowhead.com/ptr/item=271511/chosen-bloodslayers-fanged-grips?original-item=268234"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Belt",
+            "Sash of the Forlorn Vessel",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 268256,
+              "name": "Sash of the Forlorn Vessel",
+              "url": "https://www.wowhead.com/ptr/item=268256/sash-of-the-forlorn-vessel"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Legs",
+            "Chosen Bloodslayer's Reinforced Pants",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 271509,
+              "name": "Chosen Bloodslayer's Reinforced Pants",
+              "url": "https://www.wowhead.com/ptr/item=271509/chosen-bloodslayers-reinforced-pants?original-item=268225"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Boots",
+            "Chosen Bloodslayer's Boots",
+            "Catalyst"
+          ],
+          "items": [
+            {
+              "id": 271512,
+              "name": "Chosen Bloodslayer's Boots",
+              "url": "https://www.wowhead.com/ptr/item=271512/chosen-bloodslayers-boots"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Ring",
+            "Sickening Signet of Atroxus",
+            "Voidscar Arena"
+          ],
+          "items": [
+            {
+              "id": 252258,
+              "name": "Sickening Signet of Atroxus",
+              "url": "https://www.wowhead.com/ptr/item=252258/sickening-signet-of-atroxus"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Ring",
+            "Lightwarden's Bind",
+            "Blinding Vale"
+          ],
+          "items": [
+            {
+              "id": 251194,
+              "name": "Lightwarden's Bind",
+              "url": "https://www.wowhead.com/ptr/item=251194/lightwardens-bind"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Trinket",
+            "Zul'jin's Guillotine Technique",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 270173,
+              "name": "Zul'jin's Guillotine Technique",
+              "url": "https://www.wowhead.com/ptr/item=270173/zuljins-guillotine-technique"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Trinket",
+            "Voracious Heart of Ula'tek",
+            "Ula'tek"
+          ],
+          "items": [
+            {
+              "id": 270175,
+              "name": "Voracious Heart of Ula'tek",
+              "url": "https://www.wowhead.com/ptr/item=270175/voracious-heart-of-ulatek"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "title": "Subtlety Rogue Gear and Best in Slot - Midnight - Wowhead",
+  "updated": "2026/08/12"
+}

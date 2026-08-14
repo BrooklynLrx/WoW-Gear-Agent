@@ -1,0 +1,233 @@
+{
+  "class": "monk",
+  "spec": "windwalker",
+  "source_url": "https://www.wowhead.com/guide/classes/monk/windwalker/bis-gear#bis-gear",
+  "captured_at": "2026-08-13",
+  "patch": "Patch 12.1.0",
+  "tables": [
+    {
+      "rows": [
+        {
+          "cells": [
+            "Slot",
+            "Item",
+            "Source"
+          ],
+          "items": []
+        },
+        {
+          "cells": [
+            "2H Weapon",
+            "Abyssal Broodfiend's Bardiche",
+            "Ula'tek"
+          ],
+          "items": [
+            {
+              "id": 268215,
+              "name": "Abyssal Broodfiend's Bardiche",
+              "url": "https://www.wowhead.com/item=268215/abyssal-broodfiends-bardiche"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Head",
+            "Gaze of the Coiled Watcher",
+            "Ula'tek"
+          ],
+          "items": [
+            {
+              "id": 271875,
+              "name": "Gaze of the Coiled Watcher",
+              "url": "https://www.wowhead.com/item=271875/gaze-of-the-coiled-watcher"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Neck",
+            "Aqirbane Reliquary",
+            "Ula'tek"
+          ],
+          "items": [
+            {
+              "id": 268265,
+              "name": "Aqirbane Reliquary",
+              "url": "https://www.wowhead.com/item=268265/aqirbane-reliquary"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Shoulder",
+            "Tassels of the Monkey King",
+            "Tier Set"
+          ],
+          "items": [
+            {
+              "id": 271517,
+              "name": "Tassels of the Monkey King",
+              "url": "https://www.wowhead.com/item=271517/tassels-of-the-monkey-king"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Cloak",
+            "Silken Voodoo Drape",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 268253,
+              "name": "Silken Voodoo Drape",
+              "url": "https://www.wowhead.com/item=268253/silken-voodoo-drape"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Chest",
+            "Vestment of the Awakening",
+            "Nek'zali the Soulcoiler"
+          ],
+          "items": [
+            {
+              "id": 268235,
+              "name": "Vestment of the Awakening",
+              "url": "https://www.wowhead.com/item=268235/vestment-of-the-awakening"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Wrist",
+            "Silvermoon Agent's Deflectors",
+            "Crafting"
+          ],
+          "items": [
+            {
+              "id": 244576,
+              "name": "Silvermoon Agent's Deflectors",
+              "url": "https://www.wowhead.com/item=244576/silvermoon-agents-deflectors"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Hands",
+            "Gauntlets of Fevered Defense",
+            "Murder Row"
+          ],
+          "items": [
+            {
+              "id": 251124,
+              "name": "Gauntlets of Fevered Defense",
+              "url": "https://www.wowhead.com/item=251124/gauntlets-of-fevered-defense"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Belt",
+            "Sash of the Forlorn Vessel",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 268256,
+              "name": "Sash of the Forlorn Vessel",
+              "url": "https://www.wowhead.com/item=268256/sash-of-the-forlorn-vessel"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Legs",
+            "Coiled Hex Legguards",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 268225,
+              "name": "Coiled Hex Legguards",
+              "url": "https://www.wowhead.com/item=268225/coiled-hex-legguards"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Feet",
+            "Silvermoon Agent's Sneakers",
+            "Crafting"
+          ],
+          "items": [
+            {
+              "id": 244569,
+              "name": "Silvermoon Agent's Sneakers",
+              "url": "https://www.wowhead.com/item=244569/silvermoon-agents-sneakers"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Ring",
+            "Charged Sandstone Band",
+            "Temple of Sethraliss"
+          ],
+          "items": [
+            {
+              "id": 158366,
+              "name": "Charged Sandstone Band",
+              "url": "https://www.wowhead.com/item=158366/charged-sandstone-band"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Ring",
+            "Sickening Signet of Atroxus",
+            "Voidscar Arena"
+          ],
+          "items": [
+            {
+              "id": 252258,
+              "name": "Sickening Signet of Atroxus",
+              "url": "https://www.wowhead.com/item=252258/sickening-signet-of-atroxus"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Trinket 1",
+            "Voracious Heart of Ula'tek",
+            "Ula'tek"
+          ],
+          "items": [
+            {
+              "id": 270175,
+              "name": "Voracious Heart of Ula'tek",
+              "url": "https://www.wowhead.com/item=270175/voracious-heart-of-ulatek"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Trinket 2",
+            "Zul'jin's Guillotine Technique",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 270173,
+              "name": "Zul'jin's Guillotine Technique",
+              "url": "https://www.wowhead.com/item=270173/zuljins-guillotine-technique"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "title": "Windwalker Monk Gear and Best in Slot - Midnight - Wowhead",
+  "updated": "2026/08/12"
+}

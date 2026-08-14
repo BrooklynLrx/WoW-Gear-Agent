@@ -1,0 +1,261 @@
+{
+  "class": "demon-hunter",
+  "spec": "vengeance",
+  "source_url": "https://www.wowhead.com/guide/classes/demon-hunter/vengeance/bis-gear#bis-gear",
+  "captured_at": "2026-08-13",
+  "patch": "Patch 12.1.0",
+  "tables": [
+    {
+      "rows": [
+        {
+          "cells": [
+            "Slot",
+            "Item",
+            "Source"
+          ],
+          "items": []
+        },
+        {
+          "cells": [
+            "Weapon",
+            "Aman'muso, Warlord's Vengeance",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 268209,
+              "name": "Aman'muso, Warlord's Vengeance",
+              "url": "https://www.wowhead.com/item=268209/amanmuso-warlords-vengeance"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Offhand",
+            "Spellbreaker's Warglaive",
+            "Crafted"
+          ],
+          "items": [
+            {
+              "id": 237840,
+              "name": "Spellbreaker's Warglaive",
+              "url": "https://www.wowhead.com/item=237840/spellbreakers-warglaive"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Head",
+            "Abyssal Doomhound's Relentless Stare",
+            "Ula'tek"
+          ],
+          "items": [
+            {
+              "id": 271537,
+              "name": "Abyssal Doomhound's Relentless Stare",
+              "url": "https://www.wowhead.com/item=271537/abyssal-doomhounds-relentless-stare?original-item=271875"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Neck",
+            "Aqirbane Reliquary",
+            "Ula'tek"
+          ],
+          "items": [
+            {
+              "id": 268265,
+              "name": "Aqirbane Reliquary",
+              "url": "https://www.wowhead.com/item=268265/aqirbane-reliquary"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Shoulders",
+            "Abyssal Doomhound's Jaws",
+            "Voidscar Arena"
+          ],
+          "items": [
+            {
+              "id": 271535,
+              "name": "Abyssal Doomhound's Jaws",
+              "url": "https://www.wowhead.com/item=271535/abyssal-doomhounds-jaws?original-item=251223"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Cloak",
+            "Silken Voodoo Drape",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 268253,
+              "name": "Silken Voodoo Drape",
+              "url": "https://www.wowhead.com/item=268253/silken-voodoo-drape"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Chest",
+            "Abyssal Doomhound's Coreguard",
+            "Vashnik the Malignant"
+          ],
+          "items": [
+            {
+              "id": 271540,
+              "name": "Abyssal Doomhound's Coreguard",
+              "url": "https://www.wowhead.com/item=271540/abyssal-doomhounds-coreguard"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Wrist",
+            "Silvermoon Agent's Deflectors",
+            "Crafted"
+          ],
+          "items": [
+            {
+              "id": 244576,
+              "name": "Silvermoon Agent's Deflectors",
+              "url": "https://www.wowhead.com/item=244576/silvermoon-agents-deflectors"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Gloves",
+            "Abyssal Doomhound's Studded Gauntlets",
+            "Murder Row"
+          ],
+          "items": [
+            {
+              "id": 271538,
+              "name": "Abyssal Doomhound's Studded Gauntlets",
+              "url": "https://www.wowhead.com/item=271538/abyssal-doomhounds-studded-gauntlets?original-item=251124"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Belt",
+            "Sash of the Forlorn Vessel",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 268256,
+              "name": "Sash of the Forlorn Vessel",
+              "url": "https://www.wowhead.com/item=268256/sash-of-the-forlorn-vessel"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Legs",
+            "Abyssal Doomhound's Legwraps",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 271536,
+              "name": "Abyssal Doomhound's Legwraps",
+              "url": "https://www.wowhead.com/item=271536/abyssal-doomhounds-legwraps?original-item=268225"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Boots",
+            "Arctic Explorer's Legwraps",
+            "Den of Nalorakk"
+          ],
+          "items": [
+            {
+              "id": 251153,
+              "name": "Arctic Explorer's Legwraps",
+              "url": "https://www.wowhead.com/item=251153/arctic-explorers-legwraps"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Ring",
+            "Apex Brute's Claw Ring",
+            "Sszorak"
+          ],
+          "items": [
+            {
+              "id": 268252,
+              "name": "Apex Brute's Claw Ring",
+              "url": "https://www.wowhead.com/item=268252/apex-brutes-claw-ring"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Ring",
+            "Ritual Binder's Ring",
+            "King's Rest"
+          ],
+          "items": [
+            {
+              "id": 159459,
+              "name": "Ritual Binder's Ring",
+              "url": "https://www.wowhead.com/item=159459/ritual-binders-ring"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Trinket",
+            "Gebbo's Bottomless Bag",
+            "The Lost Explorers"
+          ],
+          "items": [
+            {
+              "id": 270164,
+              "name": "Gebbo's Bottomless Bag",
+              "url": "https://www.wowhead.com/item=270164/gebbos-bottomless-bag"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Trinket",
+            "Voracious Heart of Ula'tek",
+            "Ula'tek"
+          ],
+          "items": [
+            {
+              "id": 270175,
+              "name": "Voracious Heart of Ula'tek",
+              "url": "https://www.wowhead.com/item=270175/voracious-heart-of-ulatek"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Trinket (Raw Damage)",
+            "Zul'jin's Guillotine Technique",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 270173,
+              "name": "Zul'jin's Guillotine Technique",
+              "url": "https://www.wowhead.com/item=270173/zuljins-guillotine-technique"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "title": "Vengeance Demon Hunter Gear and Best in Slot - Midnight - Wowhead",
+  "updated": "2026/08/12"
+}

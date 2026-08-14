@@ -1,0 +1,247 @@
+{
+  "class": "monk",
+  "spec": "mistweaver",
+  "source_url": "https://www.wowhead.com/guide/classes/monk/mistweaver/bis-gear#bis-gear",
+  "captured_at": "2026-08-13",
+  "patch": "Patch 12.1.0",
+  "tables": [
+    {
+      "rows": [
+        {
+          "cells": [
+            "Slot",
+            "Item",
+            "Source"
+          ],
+          "items": []
+        },
+        {
+          "cells": [
+            "Helm",
+            "Monkey King's Unyielding Visage",
+            "Ula'tek (Raid) &  Catalyst"
+          ],
+          "items": [
+            {
+              "id": 271519,
+              "name": "Monkey King's Unyielding Visage",
+              "url": "https://www.wowhead.com/item=271519/monkey-kings-unyielding-visage?original-item=271875"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Neck",
+            "Aqirbane Reliquary",
+            "Ula'tek (Raid)"
+          ],
+          "items": [
+            {
+              "id": 268265,
+              "name": "Aqirbane Reliquary",
+              "url": "https://www.wowhead.com/item=268265/aqirbane-reliquary"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Shoulders",
+            "Tassels of the Monkey King",
+            "Den of Nalorakk &  Catalyst"
+          ],
+          "items": [
+            {
+              "id": 271517,
+              "name": "Tassels of the Monkey King",
+              "url": "https://www.wowhead.com/item=271517/tassels-of-the-monkey-king?original-item=251146"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Cape",
+            "Fireproof Drape",
+            "Ruby Life Pools"
+          ],
+          "items": [
+            {
+              "id": 193763,
+              "name": "Fireproof Drape",
+              "url": "https://www.wowhead.com/item=193763/fireproof-drape"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Chest",
+            "Battle Gi of the Monkey King",
+            "Voidscar Arena &  Catalyst"
+          ],
+          "items": [
+            {
+              "id": 271522,
+              "name": "Battle Gi of the Monkey King",
+              "url": "https://www.wowhead.com/item=271522/battle-gi-of-the-monkey-king?original-item=251226"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Bracers",
+            "Fury-fletched Armlets",
+            "Murder Row"
+          ],
+          "items": [
+            {
+              "id": 251135,
+              "name": "Fury-fletched Armlets",
+              "url": "https://www.wowhead.com/item=251135/fury-fletched-armlets"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Gloves",
+            "Monkey King's Fighting Fists",
+            "Murder Row &  Catalyst"
+          ],
+          "items": [
+            {
+              "id": 271520,
+              "name": "Monkey King's Fighting Fists",
+              "url": "https://www.wowhead.com/item=271520/monkey-kings-fighting-fists?original-item=251124"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Belt",
+            "Rootwalker Harness",
+            "The Blinding Vale"
+          ],
+          "items": [
+            {
+              "id": 251189,
+              "name": "Rootwalker Harness",
+              "url": "https://www.wowhead.com/item=251189/rootwalker-harness"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Legs",
+            "Pantaloons of the Monkey King",
+            "Kings Rest &  Catalyst"
+          ],
+          "items": [
+            {
+              "id": 271518,
+              "name": "Pantaloons of the Monkey King",
+              "url": "https://www.wowhead.com/item=271518/pantaloons-of-the-monkey-king?original-item=159313"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Boots",
+            "Breakwater Boots",
+            "Nymrissa Wavebinder (Raid)"
+          ],
+          "items": [
+            {
+              "id": 268247,
+              "name": "Breakwater Boots",
+              "url": "https://www.wowhead.com/item=268247/breakwater-boots"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Ring",
+            "Alluring Bubbleband",
+            "Nymrissa Wavebinder (Raid)"
+          ],
+          "items": [
+            {
+              "id": 268266,
+              "name": "Alluring Bubbleband",
+              "url": "https://www.wowhead.com/item=268266/alluring-bubbleband"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Ring",
+            "Ritual Binder's Ring",
+            "Kings Rest"
+          ],
+          "items": [
+            {
+              "id": 159459,
+              "name": "Ritual Binder's Ring",
+              "url": "https://www.wowhead.com/item=159459/ritual-binders-ring"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Trinkets",
+            "Gebbo's Bottomless Bag",
+            "The Lost Explorers (Raid)"
+          ],
+          "items": [
+            {
+              "id": 270164,
+              "name": "Gebbo's Bottomless Bag",
+              "url": "https://www.wowhead.com/item=270164/gebbos-bottomless-bag"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Trinkets",
+            "Soulcoiler Ritual Vessel",
+            "Nek'zali the Soulcoiler (Raid)"
+          ],
+          "items": [
+            {
+              "id": 270162,
+              "name": "Soulcoiler Ritual Vessel",
+              "url": "https://www.wowhead.com/item=270162/soulcoiler-ritual-vessel"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "1h Weapon",
+            "Galvanized Stormcrusher",
+            "Temple of Sethraliss"
+          ],
+          "items": [
+            {
+              "id": 158369,
+              "name": "Galvanized Stormcrusher",
+              "url": "https://www.wowhead.com/item=158369/galvanized-stormcrusher"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Offhand",
+            "Vessel of Last Rites",
+            "Kings Rest"
+          ],
+          "items": [
+            {
+              "id": 159667,
+              "name": "Vessel of Last Rites",
+              "url": "https://www.wowhead.com/item=159667/vessel-of-last-rites"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "title": "Mistweaver Monk Gear and Best in Slot - Midnight - Wowhead",
+  "updated": "2026/08/12"
+}

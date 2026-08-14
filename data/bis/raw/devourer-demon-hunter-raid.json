@@ -1,0 +1,98 @@
+{
+  "spec": "devourer-demon-hunter",
+  "recommendation_context": "raid",
+  "set_kind": "final_bis",
+  "one_set_per_context": true,
+  "gear_source_policy": "unrestricted_final_bis",
+  "gear_source_policy_zh_cn": "最终毕业配装可混用团本、大秘境、制造、套装及转化装备，不按掉落来源拆分。",
+  "patch": "12.1",
+  "last_updated": "August 11, 2026",
+  "source_url": "https://maxroll.gg/wow/class-guides/devourer-demon-hunter-raid-guide#gear-header",
+  "items": [
+    {
+      "slot": "Head",
+      "item_id": 271875,
+      "item_en": "Gaze of the Coiled Watcher",
+      "location_en": "Ula'tek"
+    },
+    {
+      "slot": "Neck",
+      "item_id": 268265,
+      "item_en": "Aqirbane Reliquary",
+      "location_en": "Ula'tek"
+    },
+    {
+      "slot": "Shoulder",
+      "item_id": 271535,
+      "item_en": "Abyssal Doomhound's Jaws",
+      "location_en": "Tier"
+    },
+    {
+      "slot": "Cloak",
+      "item_id": 268253,
+      "item_en": "Silken Voodoo Drape",
+      "location_en": "The Coiled Altar"
+    },
+    {
+      "slot": "Chest",
+      "item_id": 271540,
+      "item_en": "Abyssal Doomhound's Coreguard",
+      "location_en": "Tier"
+    },
+    {
+      "slot": "Wrist",
+      "item_id": 244576,
+      "item_en": "Silvermoon Agent's Deflectors",
+      "location_en": "Crafting"
+    },
+    {
+      "slot": "Gloves",
+      "item_id": 271538,
+      "item_en": "Abyssal Doomhound's Studded Gauntlets",
+      "location_en": "Tier"
+    },
+    {
+      "slot": "Belt",
+      "item_id": 268256,
+      "item_en": "Sash of the Forlorn Vessel",
+      "location_en": "The Coiled Altar"
+    },
+    {
+      "slot": "Legs",
+      "item_id": 271536,
+      "item_en": "Abyssal Doomhound's Legwraps",
+      "location_en": "Tier"
+    },
+    {
+      "slot": "Boots",
+      "item_id": 244569,
+      "item_en": "Silvermoon Agent's Sneakers",
+      "location_en": "Crafting"
+    },
+    {
+      "slot": "Ring 1",
+      "item_id": 268249,
+      "item_en": "Vile Alchemist's Band",
+      "location_en": "Vashnik"
+    },
+    {
+      "slot": "Ring 2",
+      "item_id": 158366,
+      "item_en": "Charged Sandstone Band",
+      "location_en": "Temple of Sehtraliss"
+    },
+    {
+      "slot": "Trinket 1",
+      "item_id": 250215,
+      "item_en": "Freightrunner's Flask",
+      "location_en": "Murder Row"
+    },
+    {
+      "slot": "Trinket 2",
+      "item_id": null,
+      "item_en": "Gebbo's Bottomless Bag The Lost Explorers Weapon Jan'thrazet, the Soul Fang & Baleful Hexblade",
+      "location_en": "Ulatek & The Coiled Altar"
+    }
+  ],
+  "fetched_at": "2026-08-13T05:29:38.787209+00:00"
+}

@@ -1,0 +1,469 @@
+{
+  "class": "druid",
+  "spec": "restoration",
+  "source_url": "https://www.wowhead.com/guide/classes/druid/restoration/bis-gear#bis-gear",
+  "captured_at": "2026-08-13",
+  "patch": "Patch 12.1.0",
+  "tables": [
+    {
+      "rows": [
+        {
+          "cells": [
+            "Slot",
+            "Item",
+            "Source"
+          ],
+          "items": []
+        },
+        {
+          "cells": [
+            "Helm",
+            "Enigmatic Dreamwatcher's Somnolent Stare",
+            "Ula'tek (Raid) &  Catalyst"
+          ],
+          "items": [
+            {
+              "id": 271528,
+              "name": "Enigmatic Dreamwatcher's Somnolent Stare",
+              "url": "https://www.wowhead.com/item=271528/enigmatic-dreamwatchers-somnolent-stare?original-item=271875"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Neck",
+            "Amulet of the Twin Fangs",
+            "The Twin Fangs  (Raid)"
+          ],
+          "items": [
+            {
+              "id": 268251,
+              "name": "Amulet of the Twin Fangs",
+              "url": "https://www.wowhead.com/item=268251/amulet-of-the-twin-fangs"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Shoulders",
+            "Silvermoon Agent's Mantle",
+            "Leatherworking"
+          ],
+          "items": [
+            {
+              "id": 244572,
+              "name": "Silvermoon Agent's Mantle",
+              "url": "https://www.wowhead.com/item=244572/silvermoon-agents-mantle"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Cape",
+            "Silken Voodoo Drape",
+            "The Coiled Alter  (Raid)"
+          ],
+          "items": [
+            {
+              "id": 268253,
+              "name": "Silken Voodoo Drape",
+              "url": "https://www.wowhead.com/item=268253/silken-voodoo-drape"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Chest",
+            "Enigmatic Dreamwatcher's Lunar Raiment",
+            "Nek'zali the Soulcoiler (Raid) &  Catalyst"
+          ],
+          "items": [
+            {
+              "id": 271531,
+              "name": "Enigmatic Dreamwatcher's Lunar Raiment",
+              "url": "https://www.wowhead.com/item=271531/enigmatic-dreamwatchers-lunar-raiment?original-item=268235"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Bracers",
+            "Silvermoon Agent's Deflectors",
+            "Leatherworking"
+          ],
+          "items": [
+            {
+              "id": 244576,
+              "name": "Silvermoon Agent's Deflectors",
+              "url": "https://www.wowhead.com/item=244576/silvermoon-agents-deflectors"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Gloves",
+            "Enigmatic Dreamwatcher's Gauntlets",
+            "Entomed Sentinels (Raid)"
+          ],
+          "items": [
+            {
+              "id": 271529,
+              "name": "Enigmatic Dreamwatcher's Gauntlets",
+              "url": "https://www.wowhead.com/item=271529/enigmatic-dreamwatchers-gauntlets"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Belt",
+            "Sash of the Forlorn Vessel",
+            "The Coiled Alter  (Raid)"
+          ],
+          "items": [
+            {
+              "id": 268256,
+              "name": "Sash of the Forlorn Vessel",
+              "url": "https://www.wowhead.com/item=268256/sash-of-the-forlorn-vessel"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Legs",
+            "Enigmatic Dreamwatcher's Leggings",
+            "The Coiled Alter  (Raid) &  Catalyst"
+          ],
+          "items": [
+            {
+              "id": 271527,
+              "name": "Enigmatic Dreamwatcher's Leggings",
+              "url": "https://www.wowhead.com/item=271527/enigmatic-dreamwatchers-leggings?original-item=268225"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Boots",
+            "Silvermoon Agent's Sneakers",
+            "Leatherworking"
+          ],
+          "items": [
+            {
+              "id": 244569,
+              "name": "Silvermoon Agent's Sneakers",
+              "url": "https://www.wowhead.com/item=244569/silvermoon-agents-sneakers"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Ring",
+            "Alluring Bubbleband",
+            "Nymrissa Wavebinder (Raid)"
+          ],
+          "items": [
+            {
+              "id": 268266,
+              "name": "Alluring Bubbleband",
+              "url": "https://www.wowhead.com/item=268266/alluring-bubbleband"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Ring",
+            "Sickening Signet of Atroxus",
+            "Voidscar Arena"
+          ],
+          "items": [
+            {
+              "id": 252258,
+              "name": "Sickening Signet of Atroxus",
+              "url": "https://www.wowhead.com/item=252258/sickening-signet-of-atroxus"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Trinkets",
+            "Wavecaller's Seastone",
+            "Nymrissa Wavebinder (Raid)"
+          ],
+          "items": [
+            {
+              "id": 270167,
+              "name": "Wavecaller's Seastone",
+              "url": "https://www.wowhead.com/item=270167/wavecallers-seastone"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Trinkets",
+            "Soulcoiler Ritual Vessel",
+            "Nek'zali the Soulcoiler  (Raid)"
+          ],
+          "items": [
+            {
+              "id": 270162,
+              "name": "Soulcoiler Ritual Vessel",
+              "url": "https://www.wowhead.com/item=270162/soulcoiler-ritual-vessel"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "1h Weapon",
+            "Jan'thrazet, the Soul Fang",
+            "Ula'tek (Raid)"
+          ],
+          "items": [
+            {
+              "id": 271092,
+              "name": "Jan'thrazet, the Soul Fang",
+              "url": "https://www.wowhead.com/item=271092/janthrazet-the-soul-fang"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Offhand",
+            "Spine of the Hissing Abyss",
+            "Entomed Sentinels  (Raid)"
+          ],
+          "items": [
+            {
+              "id": 268197,
+              "name": "Spine of the Hissing Abyss",
+              "url": "https://www.wowhead.com/item=268197/spine-of-the-hissing-abyss"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rows": [
+        {
+          "cells": [
+            "Slot",
+            "Item",
+            "Source"
+          ],
+          "items": []
+        },
+        {
+          "cells": [
+            "Helm",
+            "Enigmatic Dreamwatcher's Somnolent Stare",
+            "Murder Row &  Catalyst"
+          ],
+          "items": [
+            {
+              "id": 271528,
+              "name": "Enigmatic Dreamwatcher's Somnolent Stare",
+              "url": "https://www.wowhead.com/item=271528/enigmatic-dreamwatchers-somnolent-stare?original-item=251140"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Neck",
+            "Pendant of Malefic Fury",
+            "Murder Row"
+          ],
+          "items": [
+            {
+              "id": 251142,
+              "name": "Pendant of Malefic Fury",
+              "url": "https://www.wowhead.com/item=251142/pendant-of-malefic-fury"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Shoulders",
+            "Silvermoon Agent's Mantle",
+            "Leatherworking"
+          ],
+          "items": [
+            {
+              "id": 244572,
+              "name": "Silvermoon Agent's Mantle",
+              "url": "https://www.wowhead.com/item=244572/silvermoon-agents-mantle"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Cape",
+            "Bloodthorn Burnous",
+            "The Blinding Vale"
+          ],
+          "items": [
+            {
+              "id": 251190,
+              "name": "Bloodthorn Burnous",
+              "url": "https://www.wowhead.com/item=251190/bloodthorn-burnous"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Chest",
+            "Enigmatic Dreamwatcher's Lunar Raiment",
+            "Den of Nalorakk &  Catalyst"
+          ],
+          "items": [
+            {
+              "id": 271531,
+              "name": "Enigmatic Dreamwatcher's Lunar Raiment",
+              "url": "https://www.wowhead.com/item=271531/enigmatic-dreamwatchers-lunar-raiment?original-item=251159"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Bracers",
+            "Silvermoon Agent's Deflectors",
+            "Leatherworking"
+          ],
+          "items": [
+            {
+              "id": 244576,
+              "name": "Silvermoon Agent's Deflectors",
+              "url": "https://www.wowhead.com/item=244576/silvermoon-agents-deflectors"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Gloves",
+            "Enigmatic Dreamwatcher's Gauntlets",
+            "Temple of Sethraliss &  Catalyst"
+          ],
+          "items": [
+            {
+              "id": 271529,
+              "name": "Enigmatic Dreamwatcher's Gauntlets",
+              "url": "https://www.wowhead.com/item=271529/enigmatic-dreamwatchers-gauntlets?original-item=159337"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Belt",
+            "Whirling Dervish Sash",
+            "Temple of Sethraliss"
+          ],
+          "items": [
+            {
+              "id": 159317,
+              "name": "Whirling Dervish Sash",
+              "url": "https://www.wowhead.com/item=159317/whirling-dervish-sash"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Legs",
+            "Enigmatic Dreamwatcher's Leggings",
+            "Kings Rest &  Catalyst"
+          ],
+          "items": [
+            {
+              "id": 271527,
+              "name": "Enigmatic Dreamwatcher's Leggings",
+              "url": "https://www.wowhead.com/item=271527/enigmatic-dreamwatchers-leggings?original-item=159313"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Boots",
+            "Arctic Explorer's Legwraps",
+            "Den of Nalorakk"
+          ],
+          "items": [
+            {
+              "id": 251153,
+              "name": "Arctic Explorer's Legwraps",
+              "url": "https://www.wowhead.com/item=251153/arctic-explorers-legwraps"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Ring",
+            "Ritual Binder's Ring",
+            "Kings Rest"
+          ],
+          "items": [
+            {
+              "id": 159459,
+              "name": "Ritual Binder's Ring",
+              "url": "https://www.wowhead.com/item=159459/ritual-binders-ring"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Ring",
+            "Sickening Signet of Atroxus",
+            "Voidscar Arena"
+          ],
+          "items": [
+            {
+              "id": 252258,
+              "name": "Sickening Signet of Atroxus",
+              "url": "https://www.wowhead.com/item=252258/sickening-signet-of-atroxus"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Trinkets",
+            "Lightspire Core",
+            "The Blinding Vale"
+          ],
+          "items": [
+            {
+              "id": 250214,
+              "name": "Lightspire Core",
+              "url": "https://www.wowhead.com/item=250214/lightspire-core"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Trinkets",
+            "Unstable Felheart Crystal",
+            "Murder Row"
+          ],
+          "items": [
+            {
+              "id": 250255,
+              "name": "Unstable Felheart Crystal",
+              "url": "https://www.wowhead.com/item=250255/unstable-felheart-crystal"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "2h Weapon",
+            "Staff of the Lightning Serpent",
+            "Temple of Sethraliss"
+          ],
+          "items": [
+            {
+              "id": 159636,
+              "name": "Staff of the Lightning Serpent",
+              "url": "https://www.wowhead.com/item=159636/staff-of-the-lightning-serpent"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "title": "Restoration Druid Gear and Best in Slot - Midnight - Wowhead",
+  "updated": "2026/08/12"
+}

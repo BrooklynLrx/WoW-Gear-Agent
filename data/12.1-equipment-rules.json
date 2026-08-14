@@ -1,0 +1,128 @@
+{
+  "patch": "12.1",
+  "purpose": "Deterministic armor and weapon legality rules for the gear optimizer.",
+  "socket_rules": {
+    "selection_policy": "user_managed_before_optimization",
+    "count_only_inserted_gems": true,
+    "eligible_slots": {
+      "neck": 1,
+      "ring": 1,
+      "head": 1,
+      "wrist": 1,
+      "waist": 1
+    },
+    "item_specific_max_sockets_override_slot_default": true,
+    "season_2_socket_item": {
+      "name_en": "Miasmic Jewelbinder",
+      "eligible_slots": [
+        "head",
+        "wrist",
+        "waist"
+      ],
+      "requires_unsocketed_item": true
+    },
+    "optimizer_behavior": "Do not auto-add sockets or gems. The user adds gems up to each equipped item's verified max_sockets, then the optimizer counts those selected gems."
+  },
+  "slot_rules": {
+    "single": ["head", "neck", "shoulder", "back", "chest", "wrist", "hands", "waist", "legs", "feet"],
+    "double": ["ring", "trinket"],
+    "weapon_sets_are_mutually_exclusive": true
+  },
+  "weapon_type_notes": {
+    "shield": "The loot catalog currently stores shields as weapon_type=off_hand; identify them from slot=Shield.",
+    "held_in_off_hand": "Identify caster off-hands from slot=Off-Hand Weapon.",
+    "one_hand": ["1h_axe", "1h_dagger", "1h_fist", "1h_mace", "1h_sword", "1h_warglaive", "ranged_wand"],
+    "two_hand": ["2h_axe", "2h_mace", "2h_polearm", "2h_staff", "2h_sword"],
+    "ranged": ["ranged_bow", "ranged_crossbow", "ranged_gun"]
+  },
+  "classes": {
+    "death_knight": { "name_zh_cn": "死亡骑士", "armor_type": "plate" },
+    "demon_hunter": { "name_zh_cn": "恶魔猎手", "armor_type": "leather" },
+    "druid": { "name_zh_cn": "德鲁伊", "armor_type": "leather" },
+    "evoker": { "name_zh_cn": "唤魔师", "armor_type": "mail" },
+    "hunter": { "name_zh_cn": "猎人", "armor_type": "mail" },
+    "mage": { "name_zh_cn": "法师", "armor_type": "cloth" },
+    "monk": { "name_zh_cn": "武僧", "armor_type": "leather" },
+    "paladin": { "name_zh_cn": "圣骑士", "armor_type": "plate" },
+    "priest": { "name_zh_cn": "牧师", "armor_type": "cloth" },
+    "rogue": { "name_zh_cn": "潜行者", "armor_type": "leather" },
+    "shaman": { "name_zh_cn": "萨满祭司", "armor_type": "mail" },
+    "warlock": { "name_zh_cn": "术士", "armor_type": "cloth" },
+    "warrior": { "name_zh_cn": "战士", "armor_type": "plate" }
+  },
+  "specs": {
+    "death_knight.blood": { "name_zh_cn": "鲜血", "weapon_loadouts": [{ "two_hand": ["2h_axe", "2h_mace", "2h_sword"] }] },
+    "death_knight.frost": { "name_zh_cn": "冰霜", "weapon_loadouts": [{ "two_hand": ["2h_axe", "2h_mace", "2h_sword"] }, { "dual_wield": { "main_hand": ["1h_axe", "1h_mace", "1h_sword"], "off_hand": ["1h_axe", "1h_mace", "1h_sword"] } }] },
+    "death_knight.unholy": { "name_zh_cn": "邪恶", "weapon_loadouts": [{ "two_hand": ["2h_axe", "2h_mace", "2h_sword"] }] },
+
+    "demon_hunter.devourer": { "name_zh_cn": "噬灭", "weapon_loadouts": [{ "dual_wield": { "main_hand": ["1h_axe", "1h_dagger", "1h_fist", "1h_sword", "1h_warglaive"], "off_hand": ["1h_axe", "1h_dagger", "1h_fist", "1h_sword", "1h_warglaive"] } }] },
+    "demon_hunter.havoc": { "name_zh_cn": "浩劫", "weapon_loadouts": [{ "dual_wield": { "main_hand": ["1h_axe", "1h_fist", "1h_sword", "1h_warglaive"], "off_hand": ["1h_axe", "1h_fist", "1h_sword", "1h_warglaive"] } }] },
+    "demon_hunter.vengeance": { "name_zh_cn": "复仇", "weapon_loadouts": [{ "dual_wield": { "main_hand": ["1h_axe", "1h_fist", "1h_sword", "1h_warglaive"], "off_hand": ["1h_axe", "1h_fist", "1h_sword", "1h_warglaive"] } }] },
+
+    "druid.balance": { "name_zh_cn": "平衡", "weapon_loadouts": [{ "two_hand": ["2h_staff"] }, { "main_plus_off_hand": { "main_hand": ["1h_dagger", "1h_mace"], "off_hand": ["held_in_off_hand"] } }] },
+    "druid.feral": { "name_zh_cn": "野性", "weapon_loadouts": [{ "two_hand": ["2h_polearm", "2h_staff"] }] },
+    "druid.guardian": { "name_zh_cn": "守护", "weapon_loadouts": [{ "two_hand": ["2h_polearm", "2h_staff"] }] },
+    "druid.restoration": { "name_zh_cn": "恢复", "weapon_loadouts": [{ "two_hand": ["2h_staff"] }, { "main_plus_off_hand": { "main_hand": ["1h_dagger", "1h_mace"], "off_hand": ["held_in_off_hand"] } }] },
+
+    "evoker.augmentation": { "name_zh_cn": "增辉", "weapon_loadouts": [{ "two_hand": ["2h_staff"] }, { "main_plus_off_hand": { "main_hand": ["1h_axe", "1h_dagger", "1h_fist", "1h_mace", "1h_sword"], "off_hand": ["held_in_off_hand"] } }] },
+    "evoker.devastation": { "name_zh_cn": "湮灭", "weapon_loadouts": [{ "two_hand": ["2h_staff"] }, { "main_plus_off_hand": { "main_hand": ["1h_axe", "1h_dagger", "1h_fist", "1h_mace", "1h_sword"], "off_hand": ["held_in_off_hand"] } }] },
+    "evoker.preservation": { "name_zh_cn": "恩护", "weapon_loadouts": [{ "two_hand": ["2h_staff"] }, { "main_plus_off_hand": { "main_hand": ["1h_axe", "1h_dagger", "1h_fist", "1h_mace", "1h_sword"], "off_hand": ["held_in_off_hand"] } }] },
+
+    "hunter.beast_mastery": { "name_zh_cn": "野兽控制", "weapon_loadouts": [{ "ranged": ["ranged_bow", "ranged_crossbow", "ranged_gun"] }] },
+    "hunter.marksmanship": { "name_zh_cn": "射击", "weapon_loadouts": [{ "ranged": ["ranged_bow", "ranged_crossbow", "ranged_gun"] }] },
+    "hunter.survival": { "name_zh_cn": "生存", "weapon_loadouts": [{ "two_hand": ["2h_polearm", "2h_staff"] }] },
+
+    "mage.arcane": { "name_zh_cn": "奥术", "weapon_loadouts": [{ "two_hand": ["2h_staff"] }, { "main_plus_off_hand": { "main_hand": ["1h_dagger", "1h_sword", "ranged_wand"], "off_hand": ["held_in_off_hand"] } }] },
+    "mage.fire": { "name_zh_cn": "火焰", "weapon_loadouts": [{ "two_hand": ["2h_staff"] }, { "main_plus_off_hand": { "main_hand": ["1h_dagger", "1h_sword", "ranged_wand"], "off_hand": ["held_in_off_hand"] } }] },
+    "mage.frost": { "name_zh_cn": "冰霜", "weapon_loadouts": [{ "two_hand": ["2h_staff"] }, { "main_plus_off_hand": { "main_hand": ["1h_dagger", "1h_sword", "ranged_wand"], "off_hand": ["held_in_off_hand"] } }] },
+
+    "monk.brewmaster": { "name_zh_cn": "酒仙", "weapon_loadouts": [{ "two_hand": ["2h_polearm", "2h_staff"] }, { "dual_wield": { "main_hand": ["1h_axe", "1h_fist", "1h_mace", "1h_sword"], "off_hand": ["1h_axe", "1h_fist", "1h_mace", "1h_sword"] } }] },
+    "monk.mistweaver": { "name_zh_cn": "织雾", "weapon_loadouts": [{ "two_hand": ["2h_staff"] }, { "main_plus_off_hand": { "main_hand": ["1h_axe", "1h_fist", "1h_mace", "1h_sword"], "off_hand": ["held_in_off_hand"] } }] },
+    "monk.windwalker": { "name_zh_cn": "踏风", "weapon_loadouts": [{ "two_hand": ["2h_polearm", "2h_staff"] }, { "dual_wield": { "main_hand": ["1h_axe", "1h_fist", "1h_mace", "1h_sword"], "off_hand": ["1h_axe", "1h_fist", "1h_mace", "1h_sword"] } }] },
+
+    "paladin.holy": { "name_zh_cn": "神圣", "weapon_loadouts": [{ "main_plus_off_hand": { "main_hand": ["1h_axe", "1h_mace", "1h_sword"], "off_hand": ["shield"] } }] },
+    "paladin.protection": { "name_zh_cn": "防护", "weapon_loadouts": [{ "main_plus_off_hand": { "main_hand": ["1h_axe", "1h_mace", "1h_sword"], "off_hand": ["shield"] } }] },
+    "paladin.retribution": { "name_zh_cn": "惩戒", "weapon_loadouts": [{ "two_hand": ["2h_axe", "2h_mace", "2h_polearm", "2h_sword"] }] },
+
+    "priest.discipline": { "name_zh_cn": "戒律", "weapon_loadouts": [{ "two_hand": ["2h_staff"] }, { "main_plus_off_hand": { "main_hand": ["1h_dagger", "1h_mace", "ranged_wand"], "off_hand": ["held_in_off_hand"] } }] },
+    "priest.holy": { "name_zh_cn": "神圣", "weapon_loadouts": [{ "two_hand": ["2h_staff"] }, { "main_plus_off_hand": { "main_hand": ["1h_dagger", "1h_mace", "ranged_wand"], "off_hand": ["held_in_off_hand"] } }] },
+    "priest.shadow": { "name_zh_cn": "暗影", "weapon_loadouts": [{ "two_hand": ["2h_staff"] }, { "main_plus_off_hand": { "main_hand": ["1h_dagger", "1h_mace", "ranged_wand"], "off_hand": ["held_in_off_hand"] } }] },
+
+    "rogue.assassination": { "name_zh_cn": "奇袭", "weapon_loadouts": [{ "dual_wield": { "main_hand": ["1h_dagger"], "off_hand": ["1h_axe", "1h_dagger", "1h_fist", "1h_mace", "1h_sword"] } }] },
+    "rogue.outlaw": { "name_zh_cn": "狂徒", "weapon_loadouts": [{ "dual_wield": { "main_hand": ["1h_axe", "1h_fist", "1h_mace", "1h_sword"], "off_hand": ["1h_axe", "1h_dagger", "1h_fist", "1h_mace", "1h_sword"] } }] },
+    "rogue.subtlety": { "name_zh_cn": "敏锐", "weapon_loadouts": [{ "dual_wield": { "main_hand": ["1h_dagger"], "off_hand": ["1h_axe", "1h_dagger", "1h_fist", "1h_mace", "1h_sword"] } }] },
+
+    "shaman.elemental": { "name_zh_cn": "元素", "weapon_loadouts": [{ "two_hand": ["2h_staff"] }, { "main_plus_off_hand": { "main_hand": ["1h_axe", "1h_dagger", "1h_fist", "1h_mace"], "off_hand": ["shield", "held_in_off_hand"] } }] },
+    "shaman.enhancement": { "name_zh_cn": "增强", "weapon_loadouts": [{ "dual_wield": { "main_hand": ["1h_axe", "1h_fist", "1h_mace"], "off_hand": ["1h_axe", "1h_fist", "1h_mace"] } }] },
+    "shaman.restoration": { "name_zh_cn": "恢复", "weapon_loadouts": [{ "two_hand": ["2h_staff"] }, { "main_plus_off_hand": { "main_hand": ["1h_axe", "1h_dagger", "1h_fist", "1h_mace"], "off_hand": ["shield", "held_in_off_hand"] } }] },
+
+    "warlock.affliction": { "name_zh_cn": "痛苦", "weapon_loadouts": [{ "two_hand": ["2h_staff"] }, { "main_plus_off_hand": { "main_hand": ["1h_dagger", "1h_sword", "ranged_wand"], "off_hand": ["held_in_off_hand"] } }] },
+    "warlock.demonology": { "name_zh_cn": "恶魔学识", "weapon_loadouts": [{ "two_hand": ["2h_staff"] }, { "main_plus_off_hand": { "main_hand": ["1h_dagger", "1h_sword", "ranged_wand"], "off_hand": ["held_in_off_hand"] } }] },
+    "warlock.destruction": { "name_zh_cn": "毁灭", "weapon_loadouts": [{ "two_hand": ["2h_staff"] }, { "main_plus_off_hand": { "main_hand": ["1h_dagger", "1h_sword", "ranged_wand"], "off_hand": ["held_in_off_hand"] } }] },
+
+    "warrior.arms": { "name_zh_cn": "武器", "weapon_loadouts": [{ "two_hand": ["2h_axe", "2h_mace", "2h_polearm", "2h_staff", "2h_sword"] }] },
+    "warrior.fury": { "name_zh_cn": "狂怒", "weapon_loadouts": [{ "dual_wield": { "main_hand": ["2h_axe", "2h_mace", "2h_sword"], "off_hand": ["2h_axe", "2h_mace", "2h_sword"] } }, { "dual_wield": { "main_hand": ["1h_axe", "1h_mace", "1h_sword"], "off_hand": ["1h_axe", "1h_mace", "1h_sword"] } }] },
+    "warrior.protection": { "name_zh_cn": "防护", "weapon_loadouts": [{ "main_plus_off_hand": { "main_hand": ["1h_axe", "1h_mace", "1h_sword"], "off_hand": ["shield"] } }] }
+  },
+  "optimizer_policy": {
+    "armor": "Require the class armor type for head, shoulder, chest, wrist, hands, waist, legs and feet. Cloaks, necks, rings and trinkets are armor-neutral.",
+    "weapons": "A candidate must complete one whole weapon_loadout. Never combine entries from different loadouts.",
+    "primary_stat": "After legality checks, reject weapons whose usable primary stat does not match the spec.",
+    "candidate_specs": "The loot catalog candidate_specs field is advisory only and must not override these rules."
+  },
+  "sources": [
+    "https://worldofwarcraft.blizzard.com/en-us/game/classes/death-knight",
+    "https://worldofwarcraft.blizzard.com/en-us/game/classes/demon-hunter",
+    "https://worldofwarcraft.blizzard.com/en-us/game/classes/druid",
+    "https://worldofwarcraft.blizzard.com/en-us/game/classes/evoker",
+    "https://worldofwarcraft.blizzard.com/en-us/game/classes/hunter",
+    "https://worldofwarcraft.blizzard.com/en-us/game/classes/mage",
+    "https://worldofwarcraft.blizzard.com/en-us/game/classes/monk",
+    "https://worldofwarcraft.blizzard.com/en-us/game/classes/paladin",
+    "https://worldofwarcraft.blizzard.com/en-us/game/classes/priest",
+    "https://worldofwarcraft.blizzard.com/en-us/game/classes/rogue",
+    "https://worldofwarcraft.blizzard.com/en-us/game/classes/shaman",
+    "https://worldofwarcraft.blizzard.com/en-us/game/classes/warlock",
+    "https://worldofwarcraft.blizzard.com/en-us/game/classes/warrior"
+  ]
+}

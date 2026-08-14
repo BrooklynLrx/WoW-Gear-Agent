@@ -1,0 +1,247 @@
+{
+  "class": "evoker",
+  "spec": "preservation",
+  "source_url": "https://www.wowhead.com/guide/classes/evoker/preservation/bis-gear#bis-gear",
+  "captured_at": "2026-08-13",
+  "patch": "Patch 12.1.0",
+  "tables": [
+    {
+      "rows": [
+        {
+          "cells": [
+            "Slot",
+            "Item",
+            "Source"
+          ],
+          "items": []
+        },
+        {
+          "cells": [
+            "Helm",
+            "Calamitous Echo's Magmashapers",
+            "Temple of Sethraliss &  Catalyst"
+          ],
+          "items": [
+            {
+              "id": 271501,
+              "name": "Calamitous Echo's Magmashapers",
+              "url": "https://www.wowhead.com/item=271501/calamitous-echos-magmashapers?original-item=239035"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Neck",
+            "Aqirbane Reliquary",
+            "Ula'tek (Raid)"
+          ],
+          "items": [
+            {
+              "id": 268265,
+              "name": "Aqirbane Reliquary",
+              "url": "https://www.wowhead.com/item=268265/aqirbane-reliquary"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Shoulders",
+            "Calamitous Echo's Sundered Peaks",
+            "The Coiled Altar (Raid) &  Catalyst"
+          ],
+          "items": [
+            {
+              "id": 271499,
+              "name": "Calamitous Echo's Sundered Peaks",
+              "url": "https://www.wowhead.com/item=271499/calamitous-echos-sundered-peaks?original-item=268231"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Cape",
+            "Silken Voodoo Drape",
+            "The Coiled Altar (Raid)"
+          ],
+          "items": [
+            {
+              "id": 268253,
+              "name": "Silken Voodoo Drape",
+              "url": "https://www.wowhead.com/item=268253/silken-voodoo-drape"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Chest",
+            "Searing Caldera of Calamity",
+            "Ula'tek (Raid) &  Catalyst"
+          ],
+          "items": [
+            {
+              "id": 271504,
+              "name": "Searing Caldera of Calamity",
+              "url": "https://www.wowhead.com/item=271504/searing-caldera-of-calamity?original-item=271876"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Bracers",
+            "Rising Tide Wristguards",
+            "Nymrissa Wavebinder (Raid)"
+          ],
+          "items": [
+            {
+              "id": 268217,
+              "name": "Rising Tide Wristguards",
+              "url": "https://www.wowhead.com/item=268217/rising-tide-wristguards"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Gloves",
+            "Calamitous Echo's Ebon Greathorns",
+            "Kings Rest &  Catalyst"
+          ],
+          "items": [
+            {
+              "id": 271502,
+              "name": "Calamitous Echo's Ebon Greathorns",
+              "url": "https://www.wowhead.com/item=271502/calamitous-echos-ebon-greathorns?original-item=160213"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Belt",
+            "Serpentine Mixing Belt",
+            "Vashnik the Malignant (Raid)"
+          ],
+          "items": [
+            {
+              "id": 268254,
+              "name": "Serpentine Mixing Belt",
+              "url": "https://www.wowhead.com/item=268254/serpentine-mixing-belt"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Legs",
+            "Earthen Pillars of Calamity",
+            "The Coiled Altar (Raid) &  Catalyst"
+          ],
+          "items": [
+            {
+              "id": 271500,
+              "name": "Earthen Pillars of Calamity",
+              "url": "https://www.wowhead.com/item=271500/earthen-pillars-of-calamity?original-item=268237"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Boots",
+            "Sabatons of Coruscating Energy",
+            "Temple of Sethraliss"
+          ],
+          "items": [
+            {
+              "id": 159388,
+              "name": "Sabatons of Coruscating Energy",
+              "url": "https://www.wowhead.com/item=159388/sabatons-of-coruscating-energy"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Ring",
+            "Vile Alchemist's Band",
+            "Vashnik the Malignant (Raid)"
+          ],
+          "items": [
+            {
+              "id": 268249,
+              "name": "Vile Alchemist's Band",
+              "url": "https://www.wowhead.com/item=268249/vile-alchemists-band"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Ring",
+            "Charged Sandstone Band",
+            "Temple of Sethraliss"
+          ],
+          "items": [
+            {
+              "id": 158366,
+              "name": "Charged Sandstone Band",
+              "url": "https://www.wowhead.com/item=158366/charged-sandstone-band"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Trinkets",
+            "Gebbo's Bottomless Bag",
+            "The Lost Explorers (Raid)"
+          ],
+          "items": [
+            {
+              "id": 270164,
+              "name": "Gebbo's Bottomless Bag",
+              "url": "https://www.wowhead.com/item=270164/gebbos-bottomless-bag"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Trinkets",
+            "Soulcoiler Ritual Vessel",
+            "Nek'zali the Soulcoiler (Raid)"
+          ],
+          "items": [
+            {
+              "id": 270162,
+              "name": "Soulcoiler Ritual Vessel",
+              "url": "https://www.wowhead.com/item=270162/soulcoiler-ritual-vessel"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "1h Weapon",
+            "Jan'thrazet, the Soul Fang",
+            "Ula'tek (Raid)"
+          ],
+          "items": [
+            {
+              "id": 271092,
+              "name": "Jan'thrazet, the Soul Fang",
+              "url": "https://www.wowhead.com/item=271092/janthrazet-the-soul-fang"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Offhand",
+            "Spine of the Hissing Abyss",
+            "Entomed Sentinels (Raid)"
+          ],
+          "items": [
+            {
+              "id": 268197,
+              "name": "Spine of the Hissing Abyss",
+              "url": "https://www.wowhead.com/item=268197/spine-of-the-hissing-abyss"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "title": "Preservation Evoker Gear and Best in Slot - Midnight - Wowhead",
+  "updated": "2026/08/12"
+}

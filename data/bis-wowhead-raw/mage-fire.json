@@ -1,0 +1,247 @@
+{
+  "class": "mage",
+  "spec": "fire",
+  "source_url": "https://www.wowhead.com/guide/classes/mage/fire/bis-gear#bis-gear",
+  "captured_at": "2026-08-13",
+  "patch": "Patch 12.1.0",
+  "tables": [
+    {
+      "rows": [
+        {
+          "cells": [
+            "Slot",
+            "Item",
+            "Source"
+          ],
+          "items": []
+        },
+        {
+          "cells": [
+            "Weapon",
+            "Jan'thrazet, the Soul Fang",
+            "Ula'tek"
+          ],
+          "items": [
+            {
+              "id": 271092,
+              "name": "Jan'thrazet, the Soul Fang",
+              "url": "https://www.wowhead.com/item=271092/janthrazet-the-soul-fang"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Offhand",
+            "Aln'hara Lantern",
+            "Crafting"
+          ],
+          "items": [
+            {
+              "id": 245769,
+              "name": "Aln'hara Lantern",
+              "url": "https://www.wowhead.com/item=245769/alnhara-lantern"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Head",
+            "Crown of the Primal Leywarden",
+            "Tier Set"
+          ],
+          "items": [
+            {
+              "id": 271564,
+              "name": "Crown of the Primal Leywarden",
+              "url": "https://www.wowhead.com/item=271564/crown-of-the-primal-leywarden?original-item=271874"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Neck",
+            "Pendant of Malefic Fury",
+            "Murder Row"
+          ],
+          "items": [
+            {
+              "id": 251142,
+              "name": "Pendant of Malefic Fury",
+              "url": "https://www.wowhead.com/item=251142/pendant-of-malefic-fury"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Shoulders",
+            "Primal Leywarden's Manaflux",
+            "Tier Set"
+          ],
+          "items": [
+            {
+              "id": 271562,
+              "name": "Primal Leywarden's Manaflux",
+              "url": "https://www.wowhead.com/item=271562/primal-leywardens-manaflux?original-item=268241"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Cloak",
+            "Silken Voodoo Drape",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 268253,
+              "name": "Silken Voodoo Drape",
+              "url": "https://www.wowhead.com/item=268253/silken-voodoo-drape"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Chest",
+            "Crest of the Primal Leywarden",
+            "Tier Set"
+          ],
+          "items": [
+            {
+              "id": 271567,
+              "name": "Crest of the Primal Leywarden",
+              "url": "https://www.wowhead.com/item=271567/crest-of-the-primal-leywarden?original-item=273785"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Wrist",
+            "Martyr's Bindings",
+            "Crafting/Misc"
+          ],
+          "items": [
+            {
+              "id": 239648,
+              "name": "Martyr's Bindings",
+              "url": "https://www.wowhead.com/item=239648/martyrs-bindings"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Gloves",
+            "Primal Leywarden's Manashapers",
+            "Tier Set"
+          ],
+          "items": [
+            {
+              "id": 271565,
+              "name": "Primal Leywarden's Manashapers",
+              "url": "https://www.wowhead.com/item=271565/primal-leywardens-manashapers?original-item=268243"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Belt",
+            "Caustic Chain-Wrapped Sash",
+            "Sszorak"
+          ],
+          "items": [
+            {
+              "id": 268257,
+              "name": "Caustic Chain-Wrapped Sash",
+              "url": "https://www.wowhead.com/item=268257/caustic-chain-wrapped-sash"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Legs",
+            "Primal Leywarden's Tailored Legwraps",
+            "Tier Set"
+          ],
+          "items": [
+            {
+              "id": 271563,
+              "name": "Primal Leywarden's Tailored Legwraps",
+              "url": "https://www.wowhead.com/item=271563/primal-leywardens-tailored-legwraps?original-item=268236"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Boots",
+            "Cackling Soultreads",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 268255,
+              "name": "Cackling Soultreads",
+              "url": "https://www.wowhead.com/item=268255/cackling-soultreads"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Ring",
+            "Alluring Bubbleband",
+            "Nymrissa Wavecaller"
+          ],
+          "items": [
+            {
+              "id": 268266,
+              "name": "Alluring Bubbleband",
+              "url": "https://www.wowhead.com/item=268266/alluring-bubbleband"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Ring",
+            "Ritual Binder's Ring",
+            "King's Rest"
+          ],
+          "items": [
+            {
+              "id": 159459,
+              "name": "Ritual Binder's Ring",
+              "url": "https://www.wowhead.com/item=159459/ritual-binders-ring"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Trinket",
+            "Vile Vial of Volatile Venom",
+            "Altar of Fangs"
+          ],
+          "items": [
+            {
+              "id": 273796,
+              "name": "Vile Vial of Volatile Venom",
+              "url": "https://www.wowhead.com/item=273796/vile-vial-of-volatile-venom"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Trinket",
+            "Gebbo's Bottomless Bag",
+            "The Lost Explorers"
+          ],
+          "items": [
+            {
+              "id": 270164,
+              "name": "Gebbo's Bottomless Bag",
+              "url": "https://www.wowhead.com/item=270164/gebbos-bottomless-bag"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "title": "Fire Mage Gear and Best in Slot - Midnight - Wowhead",
+  "updated": "2026/08/12"
+}

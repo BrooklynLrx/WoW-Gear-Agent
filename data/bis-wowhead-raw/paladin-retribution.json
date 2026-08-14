@@ -1,0 +1,233 @@
+{
+  "class": "paladin",
+  "spec": "retribution",
+  "source_url": "https://www.wowhead.com/guide/classes/paladin/retribution/bis-gear#bis-gear",
+  "captured_at": "2026-08-13",
+  "patch": "Patch 12.1.0",
+  "tables": [
+    {
+      "rows": [
+        {
+          "cells": [
+            "Slot",
+            "Item",
+            "Source"
+          ],
+          "items": []
+        },
+        {
+          "cells": [
+            "Weapon",
+            "Maze-roa, Warlord's Fury",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 268213,
+              "name": "Maze-roa, Warlord's Fury",
+              "url": "https://www.wowhead.com/item=268213/maze-roa-warlords-fury?bonus=13848"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Head",
+            "Warhelm of the Consecrated Flame",
+            "Tier Set"
+          ],
+          "items": [
+            {
+              "id": 271465,
+              "name": "Warhelm of the Consecrated Flame",
+              "url": "https://www.wowhead.com/item=271465/warhelm-of-the-consecrated-flame?bonus=12854&original-item=268229"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Neck",
+            "Aqirbane Reliquary",
+            "Ula'tek"
+          ],
+          "items": [
+            {
+              "id": 268265,
+              "name": "Aqirbane Reliquary",
+              "url": "https://www.wowhead.com/item=268265/aqirbane-reliquary?bonus=13848:13708"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Shoulders",
+            "Pauldrons of the Consecrated Flame",
+            "Tier Set"
+          ],
+          "items": [
+            {
+              "id": 271463,
+              "name": "Pauldrons of the Consecrated Flame",
+              "url": "https://www.wowhead.com/item=271463/pauldrons-of-the-consecrated-flame?bonus=12854&original-item=251138"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Cloak",
+            "Silken Voodoo Drape",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 268253,
+              "name": "Silken Voodoo Drape",
+              "url": "https://www.wowhead.com/item=268253/silken-voodoo-drape?bonus=13848"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Chest",
+            "Bulwark of the Consecrated Flame",
+            "Tier Set"
+          ],
+          "items": [
+            {
+              "id": 271468,
+              "name": "Bulwark of the Consecrated Flame",
+              "url": "https://www.wowhead.com/item=271468/bulwark-of-the-consecrated-flame?bonus=13848&original-item=268222"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Wrist",
+            "Spellbreaker's Bracers",
+            "Blacksmithing"
+          ],
+          "items": [
+            {
+              "id": 237834,
+              "name": "Spellbreaker's Bracers",
+              "url": "https://www.wowhead.com/item=237834/spellbreakers-bracers?bonus=13751:12497:13836:8790:13454"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Gloves",
+            "Gauntlets of the Consecrated Flame",
+            "Tier Set"
+          ],
+          "items": [
+            {
+              "id": 271466,
+              "name": "Gauntlets of the Consecrated Flame",
+              "url": "https://www.wowhead.com/item=271466/gauntlets-of-the-consecrated-flame?bonus=12854&original-item=251214"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Belt",
+            "Girdle of Toxic Regret",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 268259,
+              "name": "Girdle of Toxic Regret",
+              "url": "https://www.wowhead.com/item=268259/girdle-of-toxic-regret?bonus=13848"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Legs",
+            "Greaves of the Consecrated Flame",
+            "Ula'tek"
+          ],
+          "items": [
+            {
+              "id": 271464,
+              "name": "Greaves of the Consecrated Flame",
+              "url": "https://www.wowhead.com/item=271464/greaves-of-the-consecrated-flame?bonus=13848:13846&original-item=271878"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Boots",
+            "Scaled Fiend's Warboots",
+            "Vashnik the Malignant"
+          ],
+          "items": [
+            {
+              "id": 268260,
+              "name": "Scaled Fiend's Warboots",
+              "url": "https://www.wowhead.com/item=268260/scaled-fiends-warboots?bonus=12854"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Ring",
+            "Sickening Signet of Atroxus",
+            "Voidscar Arena"
+          ],
+          "items": [
+            {
+              "id": 252258,
+              "name": "Sickening Signet of Atroxus",
+              "url": "https://www.wowhead.com/item=252258/sickening-signet-of-atroxus?bonus=12854"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Ring",
+            "Loa Worshiper's Band",
+            "Jewelcrafting"
+          ],
+          "items": [
+            {
+              "id": 251513,
+              "name": "Loa Worshiper's Band",
+              "url": "https://www.wowhead.com/item=251513/loa-worshipers-band?bonus=13751:12497:13836"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Trinket",
+            "Zul'jin's Guillotine Technique",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 270173,
+              "name": "Zul'jin's Guillotine Technique",
+              "url": "https://www.wowhead.com/item=270173/zuljins-guillotine-technique?bonus=13848"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Trinket",
+            "Voracious Heart of Ula'tek",
+            "Ula'tek"
+          ],
+          "items": [
+            {
+              "id": 270175,
+              "name": "Voracious Heart of Ula'tek",
+              "url": "https://www.wowhead.com/item=270175/voracious-heart-of-ulatek?bonus=13848"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "title": "Retribution Paladin Gear and Best in Slot - Midnight - Wowhead",
+  "updated": "2026/08/12"
+}

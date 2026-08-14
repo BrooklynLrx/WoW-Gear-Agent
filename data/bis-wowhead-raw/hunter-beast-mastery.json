@@ -1,0 +1,247 @@
+{
+  "class": "hunter",
+  "spec": "beast-mastery",
+  "source_url": "https://www.wowhead.com/guide/classes/hunter/beast-mastery/bis-gear#bis-gear",
+  "captured_at": "2026-08-13",
+  "patch": "Patch 12.1.0",
+  "tables": [
+    {
+      "rows": [
+        {
+          "cells": [
+            "Slot",
+            "Item",
+            "Source"
+          ],
+          "items": []
+        },
+        {
+          "cells": [
+            "Weapon",
+            "Caustic Repose Greatbow",
+            "Ula'tek"
+          ],
+          "items": [
+            {
+              "id": 268207,
+              "name": "Caustic Repose Greatbow",
+              "url": "https://www.wowhead.com/item=268207/caustic-repose-greatbow?bonus=13848:13708"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Head",
+            "Skulking Viper's Weeping Fangs",
+            "The Twin Fangs"
+          ],
+          "items": [
+            {
+              "id": 271492,
+              "name": "Skulking Viper's Weeping Fangs",
+              "url": "https://www.wowhead.com/item=271492/skulking-vipers-weeping-fangs"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Neck",
+            "Aqirbane Reliquary",
+            "Ula'tek"
+          ],
+          "items": [
+            {
+              "id": 268265,
+              "name": "Aqirbane Reliquary",
+              "url": "https://www.wowhead.com/item=268265/aqirbane-reliquary?bonus=13848:13708"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Shoulders",
+            "Jaws of the Skulking Viper",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 271490,
+              "name": "Jaws of the Skulking Viper",
+              "url": "https://www.wowhead.com/item=271490/jaws-of-the-skulking-viper?original-item=268231"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Cloak",
+            "Silken Voodoo Drape",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 268253,
+              "name": "Silken Voodoo Drape",
+              "url": "https://www.wowhead.com/item=268253/silken-voodoo-drape"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Chest",
+            "Skulking Viper's Scuteplate",
+            "Ula'tek"
+          ],
+          "items": [
+            {
+              "id": 271495,
+              "name": "Skulking Viper's Scuteplate",
+              "url": "https://www.wowhead.com/item=271495/skulking-vipers-scuteplate?bonus=13848:13708&original-item=271876"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Wrist",
+            "Farstrider's Plated Bracers",
+            "Leatherworking"
+          ],
+          "items": [
+            {
+              "id": 244584,
+              "name": "Farstrider's Plated Bracers",
+              "url": "https://www.wowhead.com/item=244584/farstriders-plated-bracers?bonus=13751:12497:13836:12384:8793"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Gloves",
+            "Skulking Viper's Hidepiercers",
+            "King's Rest"
+          ],
+          "items": [
+            {
+              "id": 271493,
+              "name": "Skulking Viper's Hidepiercers",
+              "url": "https://www.wowhead.com/item=271493/skulking-vipers-hidepiercers?original-item=160213"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Belt",
+            "Farstrider's Trophy Belt",
+            "Leatherworking"
+          ],
+          "items": [
+            {
+              "id": 244581,
+              "name": "Farstrider's Trophy Belt",
+              "url": "https://www.wowhead.com/item=244581/farstriders-trophy-belt?bonus=13751:12497:13836:12384:8793"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Legs",
+            "Skulking Viper's Coiled Legwraps",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 271491,
+              "name": "Skulking Viper's Coiled Legwraps",
+              "url": "https://www.wowhead.com/item=271491/skulking-vipers-coiled-legwraps?original-item=268237"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Boots",
+            "Ferocious Scaleboots",
+            "Sszorak"
+          ],
+          "items": [
+            {
+              "id": 268233,
+              "name": "Ferocious Scaleboots",
+              "url": "https://www.wowhead.com/item=268233/ferocious-scaleboots"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Ring",
+            "Vile Alchemist's Band",
+            "Vashnik the Malignant"
+          ],
+          "items": [
+            {
+              "id": 268249,
+              "name": "Vile Alchemist's Band",
+              "url": "https://www.wowhead.com/item=268249/vile-alchemists-band"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Ring",
+            "Sickening Signet of Atroxus",
+            "Voidscar Arena"
+          ],
+          "items": [
+            {
+              "id": 252258,
+              "name": "Sickening Signet of Atroxus",
+              "url": "https://www.wowhead.com/item=252258/sickening-signet-of-atroxus"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Trinket (Raid only)",
+            "Zul'jin's Guillotine Technique",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 270173,
+              "name": "Zul'jin's Guillotine Technique",
+              "url": "https://www.wowhead.com/item=270173/zuljins-guillotine-technique"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Trinket (Alternative)",
+            "Voracious Heart of Ula'tek",
+            "Ula'tek"
+          ],
+          "items": [
+            {
+              "id": 270175,
+              "name": "Voracious Heart of Ula'tek",
+              "url": "https://www.wowhead.com/item=270175/voracious-heart-of-ulatek"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Trinket (Alternative)",
+            "Gebbo's Bottomless Bag",
+            "The Lost Explorers"
+          ],
+          "items": [
+            {
+              "id": 270164,
+              "name": "Gebbo's Bottomless Bag",
+              "url": "https://www.wowhead.com/item=270164/gebbos-bottomless-bag"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "title": "Beast Mastery Hunter Gear and Best in Slot - Midnight - Wowhead",
+  "updated": "2026/08/12"
+}

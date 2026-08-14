@@ -1,0 +1,247 @@
+{
+  "class": "death-knight",
+  "spec": "frost",
+  "source_url": "https://www.wowhead.com/guide/classes/death-knight/frost/bis-gear#bis-gear",
+  "captured_at": "2026-08-13",
+  "patch": "Patch 12.1.0",
+  "tables": [
+    {
+      "rows": [
+        {
+          "cells": [
+            "Slot",
+            "Item",
+            "Source"
+          ],
+          "items": []
+        },
+        {
+          "cells": [
+            "Weapon",
+            "Jaw of the Shackled Goddess",
+            "Ula'tek"
+          ],
+          "items": [
+            {
+              "id": 268202,
+              "name": "Jaw of the Shackled Goddess",
+              "url": "https://www.wowhead.com/item=268202/jaw-of-the-shackled-goddess"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Offhand",
+            "Jaw of the Shackled Goddess",
+            "Ula'tek"
+          ],
+          "items": [
+            {
+              "id": 268202,
+              "name": "Jaw of the Shackled Goddess",
+              "url": "https://www.wowhead.com/item=268202/jaw-of-the-shackled-goddess"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Head",
+            "Baleful Grave-Knight's Casque",
+            "Tier Set"
+          ],
+          "items": [
+            {
+              "id": 271474,
+              "name": "Baleful Grave-Knight's Casque",
+              "url": "https://www.wowhead.com/item=271474/baleful-grave-knights-casque"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Neck",
+            "Aqirbane Reliquary",
+            "Ula'tek"
+          ],
+          "items": [
+            {
+              "id": 268265,
+              "name": "Aqirbane Reliquary",
+              "url": "https://www.wowhead.com/item=268265/aqirbane-reliquary"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Shoulders",
+            "Baleful Grave-Knight's Gibbets",
+            "Tier Set"
+          ],
+          "items": [
+            {
+              "id": 271472,
+              "name": "Baleful Grave-Knight's Gibbets",
+              "url": "https://www.wowhead.com/item=271472/baleful-grave-knights-gibbets"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Cloak",
+            "Silken Voodoo Drape",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 268253,
+              "name": "Silken Voodoo Drape",
+              "url": "https://www.wowhead.com/item=268253/silken-voodoo-drape"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Chest",
+            "Reckless Spirit Breastplate",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 268222,
+              "name": "Reckless Spirit Breastplate",
+              "url": "https://www.wowhead.com/item=268222/reckless-spirit-breastplate"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Wrist",
+            "Spellbreaker's Bracers",
+            "Crafting/Misc"
+          ],
+          "items": [
+            {
+              "id": 237834,
+              "name": "Spellbreaker's Bracers",
+              "url": "https://www.wowhead.com/item=237834/spellbreakers-bracers?bonus=8793:8960:12214:13454:13750:13751:13836:12497"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Gloves",
+            "Baleful Grave-Knight's Deathgrips",
+            "Tier Set"
+          ],
+          "items": [
+            {
+              "id": 271475,
+              "name": "Baleful Grave-Knight's Deathgrips",
+              "url": "https://www.wowhead.com/item=271475/baleful-grave-knights-deathgrips"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Belt",
+            "Girdle of Toxic Regret",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 268259,
+              "name": "Girdle of Toxic Regret",
+              "url": "https://www.wowhead.com/item=268259/girdle-of-toxic-regret"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Legs",
+            "Chausses of Unbound Rancor",
+            "Ula'tek"
+          ],
+          "items": [
+            {
+              "id": 271878,
+              "name": "Chausses of Unbound Rancor",
+              "url": "https://www.wowhead.com/item=271878/chausses-of-unbound-rancor"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Boots",
+            "Scaled Fiend's Warboots",
+            "Vashnik the Malignant"
+          ],
+          "items": [
+            {
+              "id": 268260,
+              "name": "Scaled Fiend's Warboots",
+              "url": "https://www.wowhead.com/item=268260/scaled-fiends-warboots"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Ring",
+            "Vile Alchemist's Band",
+            "Vashnik the Malignant"
+          ],
+          "items": [
+            {
+              "id": 268249,
+              "name": "Vile Alchemist's Band",
+              "url": "https://www.wowhead.com/item=268249/vile-alchemists-band"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Ring",
+            "Loa Worshiper's Band",
+            "Crafting/Misc"
+          ],
+          "items": [
+            {
+              "id": 251513,
+              "name": "Loa Worshiper's Band",
+              "url": "https://www.wowhead.com/item=251513/loa-worshipers-band"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Trinket",
+            "Zul'jin's Guillotine Technique",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 270173,
+              "name": "Zul'jin's Guillotine Technique",
+              "url": "https://www.wowhead.com/item=270173/zuljins-guillotine-technique"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Trinket",
+            "Voracious Heart of Ula'tek",
+            "Ula'tek"
+          ],
+          "items": [
+            {
+              "id": 270175,
+              "name": "Voracious Heart of Ula'tek",
+              "url": "https://www.wowhead.com/item=270175/voracious-heart-of-ulatek"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "title": "Frost Death Knight Gear and Best in Slot - Midnight - Wowhead",
+  "updated": "2026/08/12"
+}

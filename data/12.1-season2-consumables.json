@@ -1,0 +1,537 @@
+{
+  "patch": "12.1",
+  "season": "Midnight Season 2",
+  "quality_scope": "Highest quality only",
+  "calculation_policy": {
+    "include": [
+      "flask secondary ratings",
+      "socketed gem secondary ratings",
+      "permanent ring-enchant secondary ratings"
+    ],
+    "exclude": [
+      "weapon-enchant effects",
+      "temporary or proc secondary ratings",
+      "non-rating diamond effects"
+    ]
+  },
+  "sources": [
+    "https://www.wowhead.com/guide/midnight/professions/jewelcrafting-overview-trainer-locations-recipes-tools",
+    "https://www.wow-professions.com/midnight/alchemy-guide",
+    "https://www.wow-professions.com/midnight/enchanting-guide"
+  ],
+  "items": [
+    {
+      "id": 241326,
+      "name_en": "Flask of the Shattered Sun",
+      "name_zh_cn": "破碎残阳合剂",
+      "category": "flask",
+      "quality": "gold",
+      "secondary_stats": {
+        "critical_strike": 165
+      },
+      "stat_calculation_included": true,
+      "wowhead_url": "https://www.wowhead.com/item=241326",
+      "icon": "inv_12_profession_alchemy_flask_sindoreipotion_red"
+    },
+    {
+      "id": 241324,
+      "name_en": "Flask of the Blood Knights",
+      "name_zh_cn": "血骑士合剂",
+      "category": "flask",
+      "quality": "gold",
+      "secondary_stats": {
+        "haste": 165
+      },
+      "stat_calculation_included": true,
+      "wowhead_url": "https://www.wowhead.com/item=241324",
+      "icon": "inv_12_profession_alchemy_flask_sindoreipotion_white"
+    },
+    {
+      "id": 241322,
+      "name_en": "Flask of the Magisters",
+      "name_zh_cn": "魔导师合剂",
+      "category": "flask",
+      "quality": "gold",
+      "secondary_stats": {
+        "mastery": 165
+      },
+      "stat_calculation_included": true,
+      "wowhead_url": "https://www.wowhead.com/item=241322",
+      "icon": "inv_12_profession_alchemy_flask_sindoreipotion_black"
+    },
+    {
+      "id": 241320,
+      "name_en": "Flask of Thalassian Resistance",
+      "name_zh_cn": "萨拉斯抗性合剂",
+      "category": "flask",
+      "quality": "gold",
+      "secondary_stats": {
+        "versatility": 165
+      },
+      "stat_calculation_included": true,
+      "wowhead_url": "https://www.wowhead.com/item=241320",
+      "icon": "inv_12_profession_alchemy_flask_sindoreipotion_yellow"
+    },
+    {
+      "id": 240904,
+      "name_en": "Flawless Deadly Garnet",
+      "name_zh_cn": "无瑕致命榴石",
+      "category": "gem",
+      "quality": "gold",
+      "secondary_stats": {
+        "critical_strike": 17
+      },
+      "stat_calculation_included": true,
+      "wowhead_url": "https://www.wowhead.com/item=240904",
+      "color": "garnet",
+      "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_red"
+    },
+    {
+      "id": 240906,
+      "name_en": "Flawless Quick Garnet",
+      "name_zh_cn": "无瑕迅捷榴石",
+      "category": "gem",
+      "quality": "gold",
+      "secondary_stats": {
+        "critical_strike": 16,
+        "haste": 7
+      },
+      "stat_calculation_included": true,
+      "wowhead_url": "https://www.wowhead.com/item=240906",
+      "color": "garnet",
+      "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_red"
+    },
+    {
+      "id": 240908,
+      "name_en": "Flawless Masterful Garnet",
+      "name_zh_cn": "无瑕精湛榴石",
+      "category": "gem",
+      "quality": "gold",
+      "secondary_stats": {
+        "critical_strike": 16,
+        "mastery": 7
+      },
+      "stat_calculation_included": true,
+      "wowhead_url": "https://www.wowhead.com/item=240908",
+      "color": "garnet",
+      "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_void_red"
+    },
+    {
+      "id": 240910,
+      "name_en": "Flawless Versatile Garnet",
+      "name_zh_cn": "无瑕万能榴石",
+      "category": "gem",
+      "quality": "gold",
+      "secondary_stats": {
+        "critical_strike": 16,
+        "versatility": 7
+      },
+      "stat_calculation_included": true,
+      "wowhead_url": "https://www.wowhead.com/item=240910",
+      "color": "garnet",
+      "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_frost_red"
+    },
+    {
+      "id": 240888,
+      "name_en": "Flawless Quick Peridot",
+      "name_zh_cn": "无瑕迅捷榄石",
+      "category": "gem",
+      "quality": "gold",
+      "secondary_stats": {
+        "haste": 17
+      },
+      "stat_calculation_included": true,
+      "wowhead_url": "https://www.wowhead.com/item=240888",
+      "color": "peridot",
+      "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_green"
+    },
+    {
+      "id": 240890,
+      "name_en": "Flawless Deadly Peridot",
+      "name_zh_cn": "无瑕致命榄石",
+      "category": "gem",
+      "quality": "gold",
+      "secondary_stats": {
+        "haste": 16,
+        "critical_strike": 7
+      },
+      "stat_calculation_included": true,
+      "wowhead_url": "https://www.wowhead.com/item=240890",
+      "color": "peridot",
+      "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_green"
+    },
+    {
+      "id": 240892,
+      "name_en": "Flawless Masterful Peridot",
+      "name_zh_cn": "无瑕精湛榄石",
+      "category": "gem",
+      "quality": "gold",
+      "secondary_stats": {
+        "haste": 16,
+        "mastery": 7
+      },
+      "stat_calculation_included": true,
+      "wowhead_url": "https://www.wowhead.com/item=240892",
+      "color": "peridot",
+      "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_void_green"
+    },
+    {
+      "id": 240894,
+      "name_en": "Flawless Versatile Peridot",
+      "name_zh_cn": "无瑕万能榄石",
+      "category": "gem",
+      "quality": "gold",
+      "secondary_stats": {
+        "haste": 16,
+        "versatility": 7
+      },
+      "stat_calculation_included": true,
+      "wowhead_url": "https://www.wowhead.com/item=240894",
+      "color": "peridot",
+      "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_frost_green"
+    },
+    {
+      "id": 240896,
+      "name_en": "Flawless Masterful Amethyst",
+      "name_zh_cn": "无瑕精湛紫晶",
+      "category": "gem",
+      "quality": "gold",
+      "secondary_stats": {
+        "mastery": 17
+      },
+      "stat_calculation_included": true,
+      "wowhead_url": "https://www.wowhead.com/item=240896",
+      "color": "amethyst",
+      "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_void_purple"
+    },
+    {
+      "id": 240898,
+      "name_en": "Flawless Deadly Amethyst",
+      "name_zh_cn": "无瑕致命紫晶",
+      "category": "gem",
+      "quality": "gold",
+      "secondary_stats": {
+        "mastery": 16,
+        "critical_strike": 7
+      },
+      "stat_calculation_included": true,
+      "wowhead_url": "https://www.wowhead.com/item=240898",
+      "color": "amethyst",
+      "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple"
+    },
+    {
+      "id": 240900,
+      "name_en": "Flawless Quick Amethyst",
+      "name_zh_cn": "无瑕迅捷紫晶",
+      "category": "gem",
+      "quality": "gold",
+      "secondary_stats": {
+        "mastery": 16,
+        "haste": 7
+      },
+      "stat_calculation_included": true,
+      "wowhead_url": "https://www.wowhead.com/item=240900",
+      "color": "amethyst",
+      "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_purple"
+    },
+    {
+      "id": 240902,
+      "name_en": "Flawless Versatile Amethyst",
+      "name_zh_cn": "无瑕万能紫晶",
+      "category": "gem",
+      "quality": "gold",
+      "secondary_stats": {
+        "mastery": 16,
+        "versatility": 7
+      },
+      "stat_calculation_included": true,
+      "wowhead_url": "https://www.wowhead.com/item=240902",
+      "color": "amethyst",
+      "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_frost_purple"
+    },
+    {
+      "id": 240912,
+      "name_en": "Flawless Versatile Lapis",
+      "name_zh_cn": "无瑕万能青金石",
+      "category": "gem",
+      "quality": "gold",
+      "secondary_stats": {
+        "versatility": 17
+      },
+      "stat_calculation_included": true,
+      "wowhead_url": "https://www.wowhead.com/item=240912",
+      "color": "lapis",
+      "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_frost_blue"
+    },
+    {
+      "id": 240914,
+      "name_en": "Flawless Deadly Lapis",
+      "name_zh_cn": "无瑕致命青金石",
+      "category": "gem",
+      "quality": "gold",
+      "secondary_stats": {
+        "versatility": 16,
+        "critical_strike": 7
+      },
+      "stat_calculation_included": true,
+      "wowhead_url": "https://www.wowhead.com/item=240914",
+      "color": "lapis",
+      "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_blue"
+    },
+    {
+      "id": 240916,
+      "name_en": "Flawless Quick Lapis",
+      "name_zh_cn": "无瑕迅捷青金石",
+      "category": "gem",
+      "quality": "gold",
+      "secondary_stats": {
+        "versatility": 16,
+        "haste": 7
+      },
+      "stat_calculation_included": true,
+      "wowhead_url": "https://www.wowhead.com/item=240916",
+      "color": "lapis",
+      "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_blue"
+    },
+    {
+      "id": 240918,
+      "name_en": "Flawless Masterful Lapis",
+      "name_zh_cn": "无瑕精湛青金石",
+      "category": "gem",
+      "quality": "gold",
+      "secondary_stats": {
+        "versatility": 16,
+        "mastery": 7
+      },
+      "stat_calculation_included": true,
+      "wowhead_url": "https://www.wowhead.com/item=240918",
+      "color": "lapis",
+      "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_void_blue"
+    },
+    {
+      "id": 240983,
+      "name_en": "Indecipherable Eversong Diamond",
+      "name_zh_cn": "费解之永歌钻石",
+      "category": "unique_diamond",
+      "quality": "gold",
+      "secondary_stats": {},
+      "stat_calculation_included": false,
+      "wowhead_url": "https://www.wowhead.com/item=240983",
+      "unique_equipped_group": "thalassian_diamond",
+      "effect": "+32 primary stat",
+      "icon": "inv_12_profession_jewelcrafting_epic_gem_cut_green"
+    },
+    {
+      "id": 240967,
+      "name_en": "Powerful Eversong Diamond",
+      "name_zh_cn": "强能之永歌钻石",
+      "category": "unique_diamond",
+      "quality": "gold",
+      "secondary_stats": {},
+      "stat_calculation_included": false,
+      "wowhead_url": "https://www.wowhead.com/item=240967",
+      "unique_equipped_group": "thalassian_diamond",
+      "effect": "+23 primary stat; critical-strike effectiveness per unique gem color",
+      "icon": "inv_12_profession_jewelcrafting_epic_gem_cut_orange"
+    },
+    {
+      "id": 240971,
+      "name_en": "Stoic Eversong Diamond",
+      "name_zh_cn": "坚韧之永歌钻石",
+      "category": "unique_diamond",
+      "quality": "gold",
+      "secondary_stats": {},
+      "stat_calculation_included": false,
+      "wowhead_url": "https://www.wowhead.com/item=240971",
+      "unique_equipped_group": "thalassian_diamond",
+      "effect": "+23 primary stat and armor",
+      "icon": "inv_12_profession_jewelcrafting_epic_gem_cut_pink"
+    },
+    {
+      "id": 240969,
+      "name_en": "Telluric Eversong Diamond",
+      "name_zh_cn": "御土之永歌钻石",
+      "category": "unique_diamond",
+      "quality": "gold",
+      "secondary_stats": {},
+      "stat_calculation_included": false,
+      "wowhead_url": "https://www.wowhead.com/item=240969",
+      "unique_equipped_group": "thalassian_diamond",
+      "effect": "+23 primary stat; maximum mana per unique gem color",
+      "icon": "inv_12_profession_jewelcrafting_epic_gem_cut_blue"
+    },
+    {
+      "id": 243987,
+      "name_en": "Enchant Ring - Nature's Fury",
+      "name_zh_cn": "附魔戒指 - 自然之怒",
+      "category": "ring_enchant",
+      "quality": "gold",
+      "secondary_stats": {
+        "critical_strike": 29
+      },
+      "stat_calculation_included": true,
+      "wowhead_url": "https://www.wowhead.com/item=243987",
+      "max_equipped": 2,
+      "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+    },
+    {
+      "id": 244015,
+      "name_en": "Enchant Ring - Silvermoon's Alacrity",
+      "name_zh_cn": "附魔戒指 - 银月城之捷",
+      "category": "ring_enchant",
+      "quality": "gold",
+      "secondary_stats": {
+        "haste": 29
+      },
+      "stat_calculation_included": true,
+      "wowhead_url": "https://www.wowhead.com/item=244015",
+      "max_equipped": 2,
+      "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+    },
+    {
+      "id": 243959,
+      "name_en": "Enchant Ring - Zul'jin's Mastery",
+      "name_zh_cn": "附魔戒指 - 祖尔金的精通",
+      "category": "ring_enchant",
+      "quality": "gold",
+      "secondary_stats": {
+        "mastery": 29
+      },
+      "stat_calculation_included": true,
+      "wowhead_url": "https://www.wowhead.com/item=243959",
+      "max_equipped": 2,
+      "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+    },
+    {
+      "id": 244017,
+      "name_en": "Enchant Ring - Silvermoon's Tenacity",
+      "name_zh_cn": "附魔戒指 - 银月城之韧",
+      "category": "ring_enchant",
+      "quality": "gold",
+      "secondary_stats": {
+        "versatility": 29
+      },
+      "stat_calculation_included": true,
+      "wowhead_url": "https://www.wowhead.com/item=244017",
+      "max_equipped": 2,
+      "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+    },
+    {
+      "id": 243973,
+      "name_en": "Enchant Weapon - Berserker's Rage",
+      "name_zh_cn": "附魔武器 - 狂战士之怒",
+      "category": "weapon_enchant",
+      "quality": "gold",
+      "secondary_stats": {},
+      "stat_calculation_included": false,
+      "wowhead_url": "https://www.wowhead.com/item=243973",
+      "spell_id": 1236067,
+      "effect_type": "proc_haste",
+      "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
+    },
+    {
+      "id": 243971,
+      "name_en": "Enchant Weapon - Jan'alai's Precision",
+      "name_zh_cn": "附魔武器 - 加亚莱的精准",
+      "category": "weapon_enchant",
+      "quality": "gold",
+      "secondary_stats": {},
+      "stat_calculation_included": false,
+      "wowhead_url": "https://www.wowhead.com/item=243971",
+      "spell_id": 1236066,
+      "effect_type": "proc_critical_strike",
+      "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
+    },
+    {
+      "id": 244031,
+      "name_en": "Enchant Weapon - Arcane Mastery",
+      "name_zh_cn": "附魔武器 - 奥术精通",
+      "category": "weapon_enchant",
+      "quality": "gold",
+      "secondary_stats": {},
+      "stat_calculation_included": false,
+      "wowhead_url": "https://www.wowhead.com/item=244031",
+      "spell_id": 1236097,
+      "effect_type": "proc_mastery",
+      "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
+    },
+    {
+      "id": 244029,
+      "name_en": "Enchant Weapon - Acuity of the Ren'dorei",
+      "name_zh_cn": "附魔武器 - 朗多雷之锐",
+      "category": "weapon_enchant",
+      "quality": "gold",
+      "secondary_stats": {},
+      "stat_calculation_included": false,
+      "wowhead_url": "https://www.wowhead.com/item=244029",
+      "spell_id": 1236095,
+      "effect_type": "proc_primary_stat",
+      "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
+    },
+    {
+      "id": 243969,
+      "name_en": "Enchant Weapon - Strength of Halazzi",
+      "name_zh_cn": "附魔武器 - 哈尔拉兹之力",
+      "category": "weapon_enchant",
+      "quality": "gold",
+      "secondary_stats": {},
+      "stat_calculation_included": false,
+      "wowhead_url": "https://www.wowhead.com/item=243969",
+      "spell_id": 1236065,
+      "effect_type": "proc_bleed_damage",
+      "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
+    },
+    {
+      "id": 244027,
+      "name_en": "Enchant Weapon - Flames of the Sin'dorei",
+      "name_zh_cn": "附魔武器 - 辛多雷之焰",
+      "category": "weapon_enchant",
+      "quality": "gold",
+      "secondary_stats": {},
+      "stat_calculation_included": false,
+      "wowhead_url": "https://www.wowhead.com/item=244027",
+      "spell_id": 1236094,
+      "effect_type": "proc_fire_damage",
+      "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
+    },
+    {
+      "id": 243999,
+      "name_en": "Enchant Weapon - Worldsoul Aegis",
+      "name_zh_cn": "附魔武器 - 世界之魂的庇护",
+      "category": "weapon_enchant",
+      "quality": "gold",
+      "secondary_stats": {},
+      "stat_calculation_included": false,
+      "wowhead_url": "https://www.wowhead.com/item=243999",
+      "spell_id": 1236080,
+      "effect_type": "proc_absorb_and_damage",
+      "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
+    },
+    {
+      "id": 244001,
+      "name_en": "Enchant Weapon - Worldsoul Tenacity",
+      "name_zh_cn": "附魔武器 - 世界之魂的坚韧",
+      "category": "weapon_enchant",
+      "quality": "gold",
+      "secondary_stats": {},
+      "stat_calculation_included": false,
+      "wowhead_url": "https://www.wowhead.com/item=244001",
+      "spell_id": 1236081,
+      "effect_type": "proc_versatility_and_absorb",
+      "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
+    },
+    {
+      "id": 243997,
+      "name_en": "Enchant Weapon - Worldsoul Cradle",
+      "name_zh_cn": "附魔武器 - 世界之魂的摇篮",
+      "category": "weapon_enchant",
+      "quality": "gold",
+      "secondary_stats": {},
+      "stat_calculation_included": false,
+      "wowhead_url": "https://www.wowhead.com/item=243997",
+      "spell_id": 1236079,
+      "effect_type": "proc_healing_absorb",
+      "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
+    }
+  ]
+}

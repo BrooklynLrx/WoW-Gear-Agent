@@ -1,0 +1,247 @@
+{
+  "class": "demon-hunter",
+  "spec": "havoc",
+  "source_url": "https://www.wowhead.com/guide/classes/demon-hunter/havoc/bis-gear#bis-gear",
+  "captured_at": "2026-08-13",
+  "patch": "Patch 12.1.0",
+  "tables": [
+    {
+      "rows": [
+        {
+          "cells": [
+            "Slot",
+            "Item",
+            "Source"
+          ],
+          "items": []
+        },
+        {
+          "cells": [
+            "Weapon",
+            "Aman'muso, Warlord's Vengeance",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 268209,
+              "name": "Aman'muso, Warlord's Vengeance",
+              "url": "https://www.wowhead.com/item=268209/amanmuso-warlords-vengeance"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Offhand",
+            "Spellbreaker's Warglaive",
+            "Crafting/Misc"
+          ],
+          "items": [
+            {
+              "id": 237840,
+              "name": "Spellbreaker's Warglaive",
+              "url": "https://www.wowhead.com/item=237840/spellbreakers-warglaive"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Head",
+            "Gaze of the Coiled Watcher",
+            "Ula'tek"
+          ],
+          "items": [
+            {
+              "id": 271875,
+              "name": "Gaze of the Coiled Watcher",
+              "url": "https://www.wowhead.com/item=271875/gaze-of-the-coiled-watcher"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Neck",
+            "Aqirbane Reliquary",
+            "Ula'tek"
+          ],
+          "items": [
+            {
+              "id": 268265,
+              "name": "Aqirbane Reliquary",
+              "url": "https://www.wowhead.com/item=268265/aqirbane-reliquary"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Shoulders",
+            "Abyssal Doomhound's Jaws",
+            "Vashnik the Malignant"
+          ],
+          "items": [
+            {
+              "id": 271535,
+              "name": "Abyssal Doomhound's Jaws",
+              "url": "https://www.wowhead.com/item=271535/abyssal-doomhounds-jaws?original-item=268246"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Cloak",
+            "Silken Voodoo Drape",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 268253,
+              "name": "Silken Voodoo Drape",
+              "url": "https://www.wowhead.com/item=268253/silken-voodoo-drape"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Chest",
+            "Abyssal Doomhound's Coreguard",
+            "King's Rest"
+          ],
+          "items": [
+            {
+              "id": 271540,
+              "name": "Abyssal Doomhound's Coreguard",
+              "url": "https://www.wowhead.com/item=271540/abyssal-doomhounds-coreguard?original-item=239048"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Wrist",
+            "Silvermoon Agent's Deflectors",
+            "Crafting/Misc"
+          ],
+          "items": [
+            {
+              "id": 244576,
+              "name": "Silvermoon Agent's Deflectors",
+              "url": "https://www.wowhead.com/item=244576/silvermoon-agents-deflectors"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Gloves",
+            "Abyssal Doomhound's Studded Gauntlets",
+            "Entombed Sentinels"
+          ],
+          "items": [
+            {
+              "id": 271538,
+              "name": "Abyssal Doomhound's Studded Gauntlets",
+              "url": "https://www.wowhead.com/item=271538/abyssal-doomhounds-studded-gauntlets"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Belt",
+            "Sash of the Forlorn Vessel",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 268256,
+              "name": "Sash of the Forlorn Vessel",
+              "url": "https://www.wowhead.com/item=268256/sash-of-the-forlorn-vessel"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Legs",
+            "Abyssal Doomhound's Legwraps",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 271536,
+              "name": "Abyssal Doomhound's Legwraps",
+              "url": "https://www.wowhead.com/item=271536/abyssal-doomhounds-legwraps?original-item=268225"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Boots",
+            "Sand-Shined Snakeskin Sandals",
+            "Temple of Sethraliss"
+          ],
+          "items": [
+            {
+              "id": 159327,
+              "name": "Sand-Shined Snakeskin Sandals",
+              "url": "https://www.wowhead.com/item=159327/sand-shined-snakeskin-sandals"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Ring",
+            "Vile Alchemist's Band",
+            "Vashnik the Malignant"
+          ],
+          "items": [
+            {
+              "id": 268249,
+              "name": "Vile Alchemist's Band",
+              "url": "https://www.wowhead.com/item=268249/vile-alchemists-band"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Ring",
+            "Charged Sandstone Band",
+            "Temple of Sethraliss"
+          ],
+          "items": [
+            {
+              "id": 158366,
+              "name": "Charged Sandstone Band",
+              "url": "https://www.wowhead.com/item=158366/charged-sandstone-band"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Trinket",
+            "Zul'jin's Guillotine Technique",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 270173,
+              "name": "Zul'jin's Guillotine Technique",
+              "url": "https://www.wowhead.com/item=270173/zuljins-guillotine-technique"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Trinket",
+            "Voracious Heart of Ula'tek",
+            "Ula'tek"
+          ],
+          "items": [
+            {
+              "id": 270175,
+              "name": "Voracious Heart of Ula'tek",
+              "url": "https://www.wowhead.com/item=270175/voracious-heart-of-ulatek"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "title": "Havoc Demon Hunter Gear and Best in Slot - Midnight - Wowhead",
+  "updated": "2026/08/12"
+}

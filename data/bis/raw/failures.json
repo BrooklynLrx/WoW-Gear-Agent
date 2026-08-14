@@ -1,0 +1,167 @@
+[
+  {
+    "spec": "blood-death-knight",
+    "context": "raid",
+    "error": "BIS table not found: https://maxroll.gg/wow/class-guides/blood-death-knight-raid-guide#gear-header"
+  },
+  {
+    "spec": "blood-death-knight",
+    "context": "mythic-plus",
+    "error": "BIS table not found: https://maxroll.gg/wow/class-guides/blood-death-knight-mythic-plus-guide#gear-header"
+  },
+  {
+    "spec": "frost-death-knight",
+    "context": "raid",
+    "error": "BIS table not found: https://maxroll.gg/wow/class-guides/frost-death-knight-raid-guide#gear-header"
+  },
+  {
+    "spec": "frost-death-knight",
+    "context": "mythic-plus",
+    "error": "BIS table not found: https://maxroll.gg/wow/class-guides/frost-death-knight-mythic-plus-guide#gear-header"
+  },
+  {
+    "spec": "unholy-death-knight",
+    "context": "raid",
+    "error": "BIS table not found: https://maxroll.gg/wow/class-guides/unholy-death-knight-raid-guide#gear-header"
+  },
+  {
+    "spec": "unholy-death-knight",
+    "context": "mythic-plus",
+    "error": "BIS table not found: https://maxroll.gg/wow/class-guides/unholy-death-knight-mythic-plus-guide#gear-header"
+  },
+  {
+    "spec": "devourer-demon-hunter",
+    "context": "mythic-plus",
+    "error": "BIS table not found: https://maxroll.gg/wow/class-guides/devourer-demon-hunter-mythic-plus-guide#gear-header"
+  },
+  {
+    "spec": "restoration-druid",
+    "context": "raid",
+    "error": "BIS table not found: https://maxroll.gg/wow/class-guides/restoration-druid-raid-guide#gear-header"
+  },
+  {
+    "spec": "restoration-druid",
+    "context": "mythic-plus",
+    "error": "BIS table not found: https://maxroll.gg/wow/class-guides/restoration-druid-mythic-plus-guide#gear-header"
+  },
+  {
+    "spec": "beast-mastery-hunter",
+    "context": "raid",
+    "error": "BIS table not found: https://maxroll.gg/wow/class-guides/beast-mastery-hunter-raid-guide#gear-header"
+  },
+  {
+    "spec": "beast-mastery-hunter",
+    "context": "mythic-plus",
+    "error": "BIS table not found: https://maxroll.gg/wow/class-guides/beast-mastery-hunter-mythic-plus-guide#gear-header"
+  },
+  {
+    "spec": "survival-hunter",
+    "context": "raid",
+    "error": "BIS table not found: https://maxroll.gg/wow/class-guides/survival-hunter-raid-guide#gear-header"
+  },
+  {
+    "spec": "survival-hunter",
+    "context": "mythic-plus",
+    "error": "BIS table not found: https://maxroll.gg/wow/class-guides/survival-hunter-mythic-plus-guide#gear-header"
+  },
+  {
+    "spec": "brewmaster-monk",
+    "context": "raid",
+    "error": "BIS table not found: https://maxroll.gg/wow/class-guides/brewmaster-monk-raid-guide#gear-header"
+  },
+  {
+    "spec": "brewmaster-monk",
+    "context": "mythic-plus",
+    "error": "BIS table not found: https://maxroll.gg/wow/class-guides/brewmaster-monk-mythic-plus-guide#gear-header"
+  },
+  {
+    "spec": "mistweaver-monk",
+    "context": "raid",
+    "error": "BIS table not found: https://maxroll.gg/wow/class-guides/mistweaver-monk-raid-guide#gear-header"
+  },
+  {
+    "spec": "mistweaver-monk",
+    "context": "mythic-plus",
+    "error": "BIS table not found: https://maxroll.gg/wow/class-guides/mistweaver-monk-mythic-plus-guide#gear-header"
+  },
+  {
+    "spec": "holy-paladin",
+    "context": "raid",
+    "error": "BIS table not found: https://maxroll.gg/wow/class-guides/holy-paladin-raid-guide#gear-header"
+  },
+  {
+    "spec": "holy-paladin",
+    "context": "mythic-plus",
+    "error": "BIS table not found: https://maxroll.gg/wow/class-guides/holy-paladin-mythic-plus-guide#gear-header"
+  },
+  {
+    "spec": "protection-paladin",
+    "context": "raid",
+    "error": "BIS table not found: https://maxroll.gg/wow/class-guides/protection-paladin-raid-guide#gear-header"
+  },
+  {
+    "spec": "protection-paladin",
+    "context": "mythic-plus",
+    "error": "BIS table not found: https://maxroll.gg/wow/class-guides/protection-paladin-mythic-plus-guide#gear-header"
+  },
+  {
+    "spec": "retribution-paladin",
+    "context": "raid",
+    "error": "BIS table not found: https://maxroll.gg/wow/class-guides/retribution-paladin-raid-guide#gear-header"
+  },
+  {
+    "spec": "retribution-paladin",
+    "context": "mythic-plus",
+    "error": "BIS table not found: https://maxroll.gg/wow/class-guides/retribution-paladin-mythic-plus-guide#gear-header"
+  },
+  {
+    "spec": "discipline-priest",
+    "context": "raid",
+    "error": "BIS table not found: https://maxroll.gg/wow/class-guides/discipline-priest-raid-guide#gear-header"
+  },
+  {
+    "spec": "discipline-priest",
+    "context": "mythic-plus",
+    "error": "BIS table not found: https://maxroll.gg/wow/class-guides/discipline-priest-mythic-plus-guide#gear-header"
+  },
+  {
+    "spec": "holy-priest",
+    "context": "raid",
+    "error": "BIS table not found: https://maxroll.gg/wow/class-guides/holy-priest-raid-guide#gear-header"
+  },
+  {
+    "spec": "holy-priest",
+    "context": "mythic-plus",
+    "error": "BIS table not found: https://maxroll.gg/wow/class-guides/holy-priest-mythic-plus-guide#gear-header"
+  },
+  {
+    "spec": "elemental-shaman",
+    "context": "raid",
+    "error": "BIS table not found: https://maxroll.gg/wow/class-guides/elemental-shaman-raid-guide#gear-header"
+  },
+  {
+    "spec": "elemental-shaman",
+    "context": "mythic-plus",
+    "error": "BIS table not found: https://maxroll.gg/wow/class-guides/elemental-shaman-mythic-plus-guide#gear-header"
+  },
+  {
+    "spec": "enhancement-shaman",
+    "context": "raid",
+    "error": "BIS table not found: https://maxroll.gg/wow/class-guides/enhancement-shaman-raid-guide#gear-header"
+  },
+  {
+    "spec": "enhancement-shaman",
+    "context": "mythic-plus",
+    "error": "BIS table not found: https://maxroll.gg/wow/class-guides/enhancement-shaman-mythic-plus-guide#gear-header"
+  },
+  {
+    "spec": "protection-warrior",
+    "context": "raid",
+    "error": "BIS table not found: https://maxroll.gg/wow/class-guides/protection-warrior-raid-guide#gear-header"
+  },
+  {
+    "spec": "protection-warrior",
+    "context": "mythic-plus",
+    "error": "BIS table not found: https://maxroll.gg/wow/class-guides/protection-warrior-mythic-plus-guide#gear-header"
+  }
+]

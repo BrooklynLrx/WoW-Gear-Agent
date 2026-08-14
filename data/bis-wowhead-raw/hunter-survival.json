@@ -1,0 +1,253 @@
+{
+  "class": "hunter",
+  "spec": "survival",
+  "source_url": "https://www.wowhead.com/guide/classes/hunter/survival/bis-gear#bis-gear",
+  "captured_at": "2026-08-13",
+  "patch": "Patch 12.1.0",
+  "tables": [
+    {
+      "rows": [
+        {
+          "cells": [
+            "Slot",
+            "Item",
+            "Source"
+          ],
+          "items": []
+        },
+        {
+          "cells": [
+            "Weapon",
+            "Abyssal Broodfiend's Bardiche",
+            "Ula'tek"
+          ],
+          "items": [
+            {
+              "id": 268215,
+              "name": "Abyssal Broodfiend's Bardiche",
+              "url": "https://www.wowhead.com/item=268215/abyssal-broodfiends-bardiche"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Head",
+            "Skulking Viper's Weeping Fangs (Catalyzed from  Voidscarred Crown)",
+            "Tier Set|Voidscar Arena"
+          ],
+          "items": [
+            {
+              "id": 271492,
+              "name": "Skulking Viper's Weeping Fangs",
+              "url": "https://www.wowhead.com/item=271492/skulking-vipers-weeping-fangs?original-item=251220"
+            },
+            {
+              "id": 251220,
+              "name": "Voidscarred Crown",
+              "url": "https://www.wowhead.com/item=251220/voidscarred-crown"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Neck",
+            "Aqirbane Reliquary",
+            "Ula'tek"
+          ],
+          "items": [
+            {
+              "id": 268265,
+              "name": "Aqirbane Reliquary",
+              "url": "https://www.wowhead.com/item=268265/aqirbane-reliquary"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Shoulders",
+            "Jaws of the Skulking Viper (Catalyzed from  Soulslither Spaulders)",
+            "Tier Set|The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 271490,
+              "name": "Jaws of the Skulking Viper",
+              "url": "https://www.wowhead.com/item=271490/jaws-of-the-skulking-viper?original-item=268231"
+            },
+            {
+              "id": 268231,
+              "name": "Soulslither Spaulders",
+              "url": "https://www.wowhead.com/item=268231/soulslither-spaulders"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Cloak",
+            "Silken Voodoo Drape",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 268253,
+              "name": "Silken Voodoo Drape",
+              "url": "https://www.wowhead.com/item=268253/silken-voodoo-drape"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Chest",
+            "Awoken Dreadfang Cuirass",
+            "Ula'tek"
+          ],
+          "items": [
+            {
+              "id": 271876,
+              "name": "Awoken Dreadfang Cuirass",
+              "url": "https://www.wowhead.com/item=271876/awoken-dreadfang-cuirass"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Wrist",
+            "Farstrider's Plated Bracers",
+            "Crafting"
+          ],
+          "items": [
+            {
+              "id": 244584,
+              "name": "Farstrider's Plated Bracers",
+              "url": "https://www.wowhead.com/item=244584/farstriders-plated-bracers?bonus=13836:13751:9627:13750:8793:8960:12384"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Gloves",
+            "Skulking Viper's Hidepiercers (Catalyzed from  Sepulchral Construct's Gloves)",
+            "Tier Set|King's Rest"
+          ],
+          "items": [
+            {
+              "id": 271493,
+              "name": "Skulking Viper's Hidepiercers",
+              "url": "https://www.wowhead.com/item=271493/skulking-vipers-hidepiercers?original-item=160213"
+            },
+            {
+              "id": 160213,
+              "name": "Sepulchral Construct's Gloves",
+              "url": "https://www.wowhead.com/item=160213/sepulchral-constructs-gloves"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Belt",
+            "Farstrider's Trophy Belt",
+            "Crafting"
+          ],
+          "items": [
+            {
+              "id": 244581,
+              "name": "Farstrider's Trophy Belt",
+              "url": "https://www.wowhead.com/item=244581/farstriders-trophy-belt?bonus=13836:13751:9627:13750:8793:8960:12384"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Legs",
+            "Skulking Viper's Coiled Legwraps (Catalysed from  Cuisses of the Uncoiled Union)",
+            "Tier Set|The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 271491,
+              "name": "Skulking Viper's Coiled Legwraps",
+              "url": "https://www.wowhead.com/item=271491/skulking-vipers-coiled-legwraps?original-item=268237"
+            },
+            {
+              "id": 268237,
+              "name": "Cuisses of the Uncoiled Union",
+              "url": "https://www.wowhead.com/item=268237/cuisses-of-the-uncoiled-union"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Boots",
+            "Ferocious Scaleboots",
+            "Sszorak"
+          ],
+          "items": [
+            {
+              "id": 268233,
+              "name": "Ferocious Scaleboots",
+              "url": "https://www.wowhead.com/item=268233/ferocious-scaleboots"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Ring",
+            "Band of the Amani Warlord",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 273792,
+              "name": "Band of the Amani Warlord",
+              "url": "https://www.wowhead.com/item=273792/band-of-the-amani-warlord"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Ring",
+            "Sickening Signet of Atroxus",
+            "Voidscar Arena"
+          ],
+          "items": [
+            {
+              "id": 252258,
+              "name": "Sickening Signet of Atroxus",
+              "url": "https://www.wowhead.com/item=252258/sickening-signet-of-atroxus"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Trinket",
+            "Voracious Heart of Ula'tek",
+            "Ula'tek"
+          ],
+          "items": [
+            {
+              "id": 270175,
+              "name": "Voracious Heart of Ula'tek",
+              "url": "https://www.wowhead.com/item=270175/voracious-heart-of-ulatek"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Trinket",
+            "Zul'jin's Guillotine Technique",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 270173,
+              "name": "Zul'jin's Guillotine Technique",
+              "url": "https://www.wowhead.com/item=270173/zuljins-guillotine-technique"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "title": "Survival Hunter Gear and Best in Slot - Midnight - Wowhead",
+  "updated": "2026/08/12"
+}

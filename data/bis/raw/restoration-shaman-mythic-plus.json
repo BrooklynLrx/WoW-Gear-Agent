@@ -1,0 +1,98 @@
+{
+  "spec": "restoration-shaman",
+  "recommendation_context": "mythic-plus",
+  "set_kind": "final_bis",
+  "one_set_per_context": true,
+  "gear_source_policy": "unrestricted_final_bis",
+  "gear_source_policy_zh_cn": "最终毕业配装可混用团本、大秘境、制造、套装及转化装备，不按掉落来源拆分。",
+  "patch": "12.1",
+  "last_updated": "August 11, 2026",
+  "source_url": "https://maxroll.gg/wow/class-guides/restoration-shaman-mythic-plus-guide#gear-header",
+  "items": [
+    {
+      "slot": "Head",
+      "item_id": 271483,
+      "item_en": "Catalyze Crown of the Eternal Fang → Serpent Crown of the Ophidian Oracle",
+      "location_en": "Nek'Zali + Catalyst"
+    },
+    {
+      "slot": "Neck",
+      "item_id": 268265,
+      "item_en": "Aqirbane Reliquary",
+      "location_en": "Ula'tek"
+    },
+    {
+      "slot": "Shoulder",
+      "item_id": 271481,
+      "item_en": "Catalyze Soulslither Spaulders → Hissing Mantle of the Ophidian Oracle",
+      "location_en": "Coiled Altar + Catalyst"
+    },
+    {
+      "slot": "Cloak",
+      "item_id": 239656,
+      "item_en": "Adherent's Silken Shroud",
+      "location_en": "Crafted"
+    },
+    {
+      "slot": "Chest",
+      "item_id": 271876,
+      "item_en": "Awoken Dreadfang Cuirass",
+      "location_en": "Ula'tek"
+    },
+    {
+      "slot": "Wrist",
+      "item_id": 244584,
+      "item_en": "Farstrider's Plated Bracers",
+      "location_en": "Crafted"
+    },
+    {
+      "slot": "Gloves",
+      "item_id": 271484,
+      "item_en": "Hexing Grips of the Ophidian Oracle",
+      "location_en": "Entombed Sentinels / Catalyst"
+    },
+    {
+      "slot": "Belt",
+      "item_id": 249303,
+      "item_en": "Waistcord of the Judged",
+      "location_en": "Lightblinded Vanguard"
+    },
+    {
+      "slot": "Legs",
+      "item_id": 271482,
+      "item_en": "Catalyze Cuisses of the Uncoiled Union → Leggings of the Ophidian Oracle",
+      "location_en": "Coiled Altar + Catalyst"
+    },
+    {
+      "slot": "Boots",
+      "item_id": 268258,
+      "item_en": "Boots of the Reckless Wayfarer",
+      "location_en": "Lost Explorers"
+    },
+    {
+      "slot": "Ring 1",
+      "item_id": 268252,
+      "item_en": "Apex Brute's Claw Ring",
+      "location_en": "Sszorak"
+    },
+    {
+      "slot": "Ring 2",
+      "item_id": 251148,
+      "item_en": "Pilfered Precious Band",
+      "location_en": "Den of Nalorakk"
+    },
+    {
+      "slot": "Trinket 1",
+      "item_id": 270162,
+      "item_en": "Soulcoiler Ritual Vessel",
+      "location_en": "Nek'Zali"
+    },
+    {
+      "slot": "Trinket 2",
+      "item_id": null,
+      "item_en": "Gebbo's Bottomless Bag Lost Explorers Weapon Jan'thrazet, the Soul Fang Ula'tek Shield Teldrassil's Sacrifice",
+      "location_en": "The Blinding Vale"
+    }
+  ],
+  "fetched_at": "2026-08-13T05:32:11.888173+00:00"
+}

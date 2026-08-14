@@ -1,0 +1,110 @@
+{
+  "spec": "frost-mage",
+  "recommendation_context": "mythic-plus",
+  "set_kind": "final_bis",
+  "one_set_per_context": true,
+  "gear_source_policy": "unrestricted_final_bis",
+  "gear_source_policy_zh_cn": "最终毕业配装可混用团本、大秘境、制造、套装及转化装备，不按掉落来源拆分。",
+  "patch": "12.1",
+  "last_updated": "August 11, 2026",
+  "source_url": "https://maxroll.gg/wow/class-guides/frost-mage-mythic-plus-guide#gear-header",
+  "items": [
+    {
+      "slot": "Head",
+      "item_id": 271874,
+      "item_en": "Venomkeeper's Horrific Cowl",
+      "location_en": "Ula'tek"
+    },
+    {
+      "slot": "Neck",
+      "item_id": 268265,
+      "item_en": "Aqirbane Reliquary",
+      "location_en": "Ula'tek"
+    },
+    {
+      "slot": "Shoulder",
+      "item_id": 271562,
+      "item_en": "Primal Leywarden's Manaflux",
+      "location_en": "Tier / Catalyst"
+    },
+    {
+      "slot": "Cloak",
+      "item_id": 268253,
+      "item_en": "Silken Voodoo Drape",
+      "location_en": "The Coiled Altar"
+    },
+    {
+      "slot": "Chest",
+      "item_id": 271567,
+      "item_en": "Crest of the Primal Leywarden",
+      "location_en": "Tier / Catalyst"
+    },
+    {
+      "slot": "Wrist",
+      "item_id": 239648,
+      "item_en": "Martyr's Bindings",
+      "location_en": "Crafting"
+    },
+    {
+      "slot": "Gloves",
+      "item_id": 271565,
+      "item_en": "Grasps of the Eternal Shadow → Primal Leywarden's Manashapers",
+      "location_en": "Catalyst of The Coiled Altar"
+    },
+    {
+      "slot": "Belt",
+      "item_id": 271561,
+      "item_en": "Primal Leywarden's Bejeweled Buckle",
+      "location_en": "Catalyst"
+    },
+    {
+      "slot": "Legs",
+      "item_id": 271563,
+      "item_en": "Primal Leywarden's Tailored Legwraps",
+      "location_en": "Tier / Catalyst"
+    },
+    {
+      "slot": "Boots",
+      "item_id": 268255,
+      "item_en": "Cackling Soultreads",
+      "location_en": "The Coiled Altar"
+    },
+    {
+      "slot": "Ring 1",
+      "item_id": 268249,
+      "item_en": "Vile Alchemist's Band",
+      "location_en": "Vashnik the Malignant"
+    },
+    {
+      "slot": "Ring 2",
+      "item_id": 158366,
+      "item_en": "Charged Sandstone Band",
+      "location_en": "Temple of Sethraliss"
+    },
+    {
+      "slot": "Trinket 1",
+      "item_id": 270164,
+      "item_en": "Gebbo's Bottomless Bag",
+      "location_en": "The Lost Explorers"
+    },
+    {
+      "slot": "Trinket 2",
+      "item_id": 250215,
+      "item_en": "Freightrunner's Flask",
+      "location_en": "Murder Row"
+    },
+    {
+      "slot": "Main-hand",
+      "item_id": 271092,
+      "item_en": "Jan'thrazet, the Soul Fang",
+      "location_en": "Ula'tek"
+    },
+    {
+      "slot": "Off-hand",
+      "item_id": 245769,
+      "item_en": "Aln'hara Lantern",
+      "location_en": "Crafting"
+    }
+  ],
+  "fetched_at": "2026-08-13T05:30:56.012872+00:00"
+}

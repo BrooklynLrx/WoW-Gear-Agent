@@ -1,0 +1,247 @@
+{
+  "class": "priest",
+  "spec": "discipline",
+  "source_url": "https://www.wowhead.com/guide/classes/priest/discipline/bis-gear#bis-gear",
+  "captured_at": "2026-08-13",
+  "patch": "Patch 12.1.0",
+  "tables": [
+    {
+      "rows": [
+        {
+          "cells": [
+            "Slot",
+            "Item",
+            "Source"
+          ],
+          "items": []
+        },
+        {
+          "cells": [
+            "Weapon",
+            "Jan'thrazet, the Soul Fang",
+            "Ula'tek"
+          ],
+          "items": [
+            {
+              "id": 271092,
+              "name": "Jan'thrazet, the Soul Fang",
+              "url": "https://www.wowhead.com/item=271092/janthrazet-the-soul-fang"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Offhand",
+            "Vessel of Last Rites",
+            "Kings' Rest"
+          ],
+          "items": [
+            {
+              "id": 159667,
+              "name": "Vessel of Last Rites",
+              "url": "https://www.wowhead.com/item=159667/vessel-of-last-rites"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Head",
+            "Venomkeeper's Horrific Cowl",
+            "Ula'tek"
+          ],
+          "items": [
+            {
+              "id": 271874,
+              "name": "Venomkeeper's Horrific Cowl",
+              "url": "https://www.wowhead.com/item=271874/venomkeepers-horrific-cowl"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Neck",
+            "Aqirbane Reliquary",
+            "Ula'tek"
+          ],
+          "items": [
+            {
+              "id": 268265,
+              "name": "Aqirbane Reliquary",
+              "url": "https://www.wowhead.com/item=268265/aqirbane-reliquary"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Shoulders",
+            "Cosmic Penitent's Echoing Screams",
+            "Vexhul"
+          ],
+          "items": [
+            {
+              "id": 271553,
+              "name": "Cosmic Penitent's Echoing Screams",
+              "url": "https://www.wowhead.com/item=271553/cosmic-penitents-echoing-screams?bonus=13848&original-item=268241"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Cloak",
+            "Silken Voodoo Drape",
+            "Hex Lord Malacrass"
+          ],
+          "items": [
+            {
+              "id": 268253,
+              "name": "Silken Voodoo Drape",
+              "url": "https://www.wowhead.com/item=268253/silken-voodoo-drape"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Chest",
+            "Cosmic Penitent's Eclipsing Robes",
+            "Murder Row"
+          ],
+          "items": [
+            {
+              "id": 271558,
+              "name": "Cosmic Penitent's Eclipsing Robes",
+              "url": "https://www.wowhead.com/item=271558/cosmic-penitents-eclipsing-robes?bonus=13848&original-item=251139"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Wrist",
+            "Martyr's Bindings",
+            "Crafting"
+          ],
+          "items": [
+            {
+              "id": 239648,
+              "name": "Martyr's Bindings",
+              "url": "https://www.wowhead.com/item=239648/martyrs-bindings"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Gloves",
+            "Cosmic Penitent's Celestial Grips",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 271556,
+              "name": "Cosmic Penitent's Celestial Grips",
+              "url": "https://www.wowhead.com/item=271556/cosmic-penitents-celestial-grips?bonus=13848&original-item=268243"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Belt",
+            "Martyr's Waistwrap",
+            "Crafting"
+          ],
+          "items": [
+            {
+              "id": 239649,
+              "name": "Martyr's Waistwrap",
+              "url": "https://www.wowhead.com/item=239649/martyrs-waistwrap"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Legs",
+            "Enveloping Legwraps of the Cosmic Penitent",
+            "Sszorak"
+          ],
+          "items": [
+            {
+              "id": 271554,
+              "name": "Enveloping Legwraps of the Cosmic Penitent",
+              "url": "https://www.wowhead.com/item=271554/enveloping-legwraps-of-the-cosmic-penitent"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Boots",
+            "Cackling Soultreads",
+            "Hex Lord Malacrass"
+          ],
+          "items": [
+            {
+              "id": 268255,
+              "name": "Cackling Soultreads",
+              "url": "https://www.wowhead.com/item=268255/cackling-soultreads"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Ring",
+            "Alluring Bubbleband",
+            "Nymrissa Wavecaller"
+          ],
+          "items": [
+            {
+              "id": 268266,
+              "name": "Alluring Bubbleband",
+              "url": "https://www.wowhead.com/item=268266/alluring-bubbleband"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Ring",
+            "Sickening Signet of Atroxus",
+            "Voidscar Arena"
+          ],
+          "items": [
+            {
+              "id": 252258,
+              "name": "Sickening Signet of Atroxus",
+              "url": "https://www.wowhead.com/item=252258/sickening-signet-of-atroxus"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Trinket",
+            "Wavecaller's Seastone",
+            "Nymrissa Wavecaller"
+          ],
+          "items": [
+            {
+              "id": 270167,
+              "name": "Wavecaller's Seastone",
+              "url": "https://www.wowhead.com/item=270167/wavecallers-seastone"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Trinket",
+            "Soulcoiler Ritual Vessel",
+            "Nek'zali the Soulcoiler"
+          ],
+          "items": [
+            {
+              "id": 270162,
+              "name": "Soulcoiler Ritual Vessel",
+              "url": "https://www.wowhead.com/item=270162/soulcoiler-ritual-vessel"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "title": "Discipline Priest Gear and Best in Slot - Midnight - Wowhead",
+  "updated": "2026/08/12"
+}

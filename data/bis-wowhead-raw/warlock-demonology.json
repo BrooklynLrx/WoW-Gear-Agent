@@ -1,0 +1,247 @@
+{
+  "class": "warlock",
+  "spec": "demonology",
+  "source_url": "https://www.wowhead.com/guide/classes/warlock/demonology/bis-gear#bis-gear",
+  "captured_at": "2026-08-13",
+  "patch": "Patch 12.1.0",
+  "tables": [
+    {
+      "rows": [
+        {
+          "cells": [
+            "Slot",
+            "Item",
+            "Source"
+          ],
+          "items": []
+        },
+        {
+          "cells": [
+            "Weapon",
+            "Jan'thrazet, the Soul Fang",
+            "Ula'tek"
+          ],
+          "items": [
+            {
+              "id": 271092,
+              "name": "Jan'thrazet, the Soul Fang",
+              "url": "https://www.wowhead.com/item=271092/janthrazet-the-soul-fang"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Offhand",
+            "Spine of the Hissing Abyss",
+            "Entombed Sentinels"
+          ],
+          "items": [
+            {
+              "id": 268197,
+              "name": "Spine of the Hissing Abyss",
+              "url": "https://www.wowhead.com/item=268197/spine-of-the-hissing-abyss"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Head",
+            "Venomkeeper's Horrific Cowl",
+            "Ula'tek"
+          ],
+          "items": [
+            {
+              "id": 271874,
+              "name": "Venomkeeper's Horrific Cowl",
+              "url": "https://www.wowhead.com/item=271874/venomkeepers-horrific-cowl?original-item=34252"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Neck",
+            "Aqirbane Reliquary",
+            "Ula'tek"
+          ],
+          "items": [
+            {
+              "id": 268265,
+              "name": "Aqirbane Reliquary",
+              "url": "https://www.wowhead.com/item=268265/aqirbane-reliquary"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Shoulders",
+            "Spires of the Damned Necrolyte",
+            "The Lost Explorers"
+          ],
+          "items": [
+            {
+              "id": 271544,
+              "name": "Spires of the Damned Necrolyte",
+              "url": "https://www.wowhead.com/item=271544/spires-of-the-damned-necrolyte?original-item=34262"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Cloak",
+            "Silken Voodoo Drape",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 268253,
+              "name": "Silken Voodoo Drape",
+              "url": "https://www.wowhead.com/item=268253/silken-voodoo-drape"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Chest",
+            "Damned Necrolyte's Rattling Robes",
+            "Vashnik the Malignant"
+          ],
+          "items": [
+            {
+              "id": 271549,
+              "name": "Damned Necrolyte's Rattling Robes",
+              "url": "https://www.wowhead.com/item=271549/damned-necrolytes-rattling-robes?original-item=34264"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Wrist",
+            "Martyr's Bindings",
+            "Crafting"
+          ],
+          "items": [
+            {
+              "id": 239648,
+              "name": "Martyr's Bindings",
+              "url": "https://www.wowhead.com/item=239648/martyrs-bindings"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Gloves",
+            "Damned Necrolyte's Charred Grasps",
+            "Entombed Sentinels"
+          ],
+          "items": [
+            {
+              "id": 271547,
+              "name": "Damned Necrolyte's Charred Grasps",
+              "url": "https://www.wowhead.com/item=271547/damned-necrolytes-charred-grasps?original-item=34251"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Belt",
+            "Martyr's Waistwrap",
+            "Crafting"
+          ],
+          "items": [
+            {
+              "id": 239649,
+              "name": "Martyr's Waistwrap",
+              "url": "https://www.wowhead.com/item=239649/martyrs-waistwrap"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Legs",
+            "Damned Necrolyte's Leg Bindings",
+            "Sszorak"
+          ],
+          "items": [
+            {
+              "id": 271545,
+              "name": "Damned Necrolyte's Leg Bindings",
+              "url": "https://www.wowhead.com/item=271545/damned-necrolytes-leg-bindings?original-item=34264"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Boots",
+            "Cackling Soultreads",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 268255,
+              "name": "Cackling Soultreads",
+              "url": "https://www.wowhead.com/item=268255/cackling-soultreads"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Ring",
+            "Apex Brute's Claw Ring",
+            "Sszorak"
+          ],
+          "items": [
+            {
+              "id": 268252,
+              "name": "Apex Brute's Claw Ring",
+              "url": "https://www.wowhead.com/item=268252/apex-brutes-claw-ring"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Ring",
+            "Charged Sandstone Band",
+            "Galvazzt"
+          ],
+          "items": [
+            {
+              "id": 158366,
+              "name": "Charged Sandstone Band",
+              "url": "https://www.wowhead.com/item=158366/charged-sandstone-band"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Trinket",
+            "Gebbo's Bottomless Bag",
+            "The Lost Explorers"
+          ],
+          "items": [
+            {
+              "id": 270164,
+              "name": "Gebbo's Bottomless Bag",
+              "url": "https://www.wowhead.com/item=270164/gebbos-bottomless-bag"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Trinket",
+            "Freightrunner's Flask",
+            "Zaen Bladesorrow"
+          ],
+          "items": [
+            {
+              "id": 250215,
+              "name": "Freightrunner's Flask",
+              "url": "https://www.wowhead.com/item=250215/freightrunners-flask"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "title": "Demonology Warlock Gear and Best in Slot - Midnight - Wowhead",
+  "updated": "2026/08/12"
+}

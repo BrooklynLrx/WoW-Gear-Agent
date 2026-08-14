@@ -1,0 +1,247 @@
+{
+  "class": "priest",
+  "spec": "shadow",
+  "source_url": "https://www.wowhead.com/guide/classes/priest/shadow/bis-gear#bis-gear",
+  "captured_at": "2026-08-13",
+  "patch": "Patch 12.1.0",
+  "tables": [
+    {
+      "rows": [
+        {
+          "cells": [
+            "Slot",
+            "Item",
+            "Source"
+          ],
+          "items": []
+        },
+        {
+          "cells": [
+            "Weapon",
+            "Jan'thrazet, the Soul Fang",
+            "Ula'tek"
+          ],
+          "items": [
+            {
+              "id": 271092,
+              "name": "Jan'thrazet, the Soul Fang",
+              "url": "https://www.wowhead.com/item=271092/janthrazet-the-soul-fang?bonus=13848"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Offhand",
+            "Aln'hara Lantern",
+            "Crafting/Misc"
+          ],
+          "items": [
+            {
+              "id": 245769,
+              "name": "Aln'hara Lantern",
+              "url": "https://www.wowhead.com/item=245769/alnhara-lantern?bonus=8793:13751:12497:13836:13771:8960"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Head",
+            "Cosmic Penitent's Truesight",
+            "Ula'tek"
+          ],
+          "items": [
+            {
+              "id": 271555,
+              "name": "Cosmic Penitent's Truesight",
+              "url": "https://www.wowhead.com/item=271555/cosmic-penitents-truesight?bonus=13848:13846:10835&original-item=271874"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Neck",
+            "Aqirbane Reliquary",
+            "Ula'tek"
+          ],
+          "items": [
+            {
+              "id": 268265,
+              "name": "Aqirbane Reliquary",
+              "url": "https://www.wowhead.com/item=268265/aqirbane-reliquary?bonus=13708:13750:13848"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Shoulders",
+            "Mantle of Ceremonial Ascension",
+            "King's Rest"
+          ],
+          "items": [
+            {
+              "id": 239045,
+              "name": "Mantle of Ceremonial Ascension",
+              "url": "https://www.wowhead.com/item=239045/mantle-of-ceremonial-ascension?bonus=12854&spec=258&spec=258"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Cloak",
+            "Silken Voodoo Drape",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 268253,
+              "name": "Silken Voodoo Drape",
+              "url": "https://www.wowhead.com/item=268253/silken-voodoo-drape?bonus=13848"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Chest",
+            "Cosmic Penitent's Eclipsing Robes",
+            "Vashnik the Malignant"
+          ],
+          "items": [
+            {
+              "id": 271558,
+              "name": "Cosmic Penitent's Eclipsing Robes",
+              "url": "https://www.wowhead.com/item=271558/cosmic-penitents-eclipsing-robes"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Wrist",
+            "Martyr's Bindings",
+            "Crafting/Misc"
+          ],
+          "items": [
+            {
+              "id": 239648,
+              "name": "Martyr's Bindings",
+              "url": "https://www.wowhead.com/item=239648/martyrs-bindings?bonus=8793:12384:8960:13750:13751:12497:13836&spec=258&spec=258"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Gloves",
+            "Cosmic Penitent's Celestial Grips",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 271556,
+              "name": "Cosmic Penitent's Celestial Grips",
+              "url": "https://www.wowhead.com/item=271556/cosmic-penitents-celestial-grips?bonus=13848&original-item=268243"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Belt",
+            "Caustic Chain-Wrapped Sash",
+            "Sszorak"
+          ],
+          "items": [
+            {
+              "id": 268257,
+              "name": "Caustic Chain-Wrapped Sash",
+              "url": "https://www.wowhead.com/item=268257/caustic-chain-wrapped-sash?bonus=10835:12854"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Legs",
+            "Enveloping Legwraps of the Cosmic Penitent",
+            "Den of Nalorakk"
+          ],
+          "items": [
+            {
+              "id": 271554,
+              "name": "Enveloping Legwraps of the Cosmic Penitent",
+              "url": "https://www.wowhead.com/item=271554/enveloping-legwraps-of-the-cosmic-penitent?original-item=251160"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Boots",
+            "Cackling Soultreads",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 268255,
+              "name": "Cackling Soultreads",
+              "url": "https://www.wowhead.com/item=268255/cackling-soultreads?bonus=13848"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Ring",
+            "Sickening Signet of Atroxus",
+            "Voidscar Arena"
+          ],
+          "items": [
+            {
+              "id": 252258,
+              "name": "Sickening Signet of Atroxus",
+              "url": "https://www.wowhead.com/item=252258/sickening-signet-of-atroxus?bonus=10835:12854"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Ring",
+            "Apex Brute's Claw Ring",
+            "Sszorak"
+          ],
+          "items": [
+            {
+              "id": 268252,
+              "name": "Apex Brute's Claw Ring",
+              "url": "https://www.wowhead.com/item=268252/apex-brutes-claw-ring?bonus=10835:12854"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Trinket",
+            "Gebbo's Bottomless Bag",
+            "The Lost Explorers"
+          ],
+          "items": [
+            {
+              "id": 270164,
+              "name": "Gebbo's Bottomless Bag",
+              "url": "https://www.wowhead.com/item=270164/gebbos-bottomless-bag"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Trinket",
+            "Freightrunner's Flask",
+            "Murder Row"
+          ],
+          "items": [
+            {
+              "id": 250215,
+              "name": "Freightrunner's Flask",
+              "url": "https://www.wowhead.com/item=250215/freightrunners-flask?bonus=12854"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "title": "Shadow Priest Gear and Best in Slot - Midnight - Wowhead",
+  "updated": "2026/08/12"
+}

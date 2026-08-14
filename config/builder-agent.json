@@ -1,0 +1,15 @@
+{
+  "framework": "agentscope",
+  "framework_version": "2.0.6",
+  "agent": "Agent",
+  "reasoning_loop": "ReActConfig",
+  "model_provider": "deepseek",
+  "model": "deepseek-v4-flash",
+  "base_url_env": "DEEPSEEK_BASE_URL",
+  "api_key_env": "DEEPSEEK_API_KEY",
+  "stream": true,
+  "max_iterations": 8,
+  "parallel_tool_calls": false,
+  "default_item_level": 334,
+  "default_upgrade_track": "myth_6_of_6"
+}

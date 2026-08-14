@@ -1,0 +1,247 @@
+{
+  "class": "paladin",
+  "spec": "holy",
+  "source_url": "https://www.wowhead.com/guide/classes/paladin/holy/bis-gear#bis-gear",
+  "captured_at": "2026-08-13",
+  "patch": "Patch 12.1.0",
+  "tables": [
+    {
+      "rows": [
+        {
+          "cells": [
+            "Slot",
+            "Item",
+            "Source"
+          ],
+          "items": []
+        },
+        {
+          "cells": [
+            "Weapon",
+            "Baleful Hexblade",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 268211,
+              "name": "Baleful Hexblade",
+              "url": "https://www.wowhead.com/item=268211/baleful-hexblade"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Shield",
+            "Bubblefin Splash Guard",
+            "Nymrissa Wavecaller"
+          ],
+          "items": [
+            {
+              "id": 268262,
+              "name": "Bubblefin Splash Guard",
+              "url": "https://www.wowhead.com/item=268262/bubblefin-splash-guard"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Head",
+            "Warhelm of the Consecrated Flame",
+            "Nek'zali the Soulcoiler"
+          ],
+          "items": [
+            {
+              "id": 271465,
+              "name": "Warhelm of the Consecrated Flame",
+              "url": "https://www.wowhead.com/item=271465/warhelm-of-the-consecrated-flame?original-item=268229"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Neck",
+            "Aqirbane Reliquary",
+            "Ula'tek"
+          ],
+          "items": [
+            {
+              "id": 268265,
+              "name": "Aqirbane Reliquary",
+              "url": "https://www.wowhead.com/item=268265/aqirbane-reliquary"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Shoulders",
+            "Pauldrons of the Consecrated Flame",
+            "Murder Row"
+          ],
+          "items": [
+            {
+              "id": 271463,
+              "name": "Pauldrons of the Consecrated Flame",
+              "url": "https://www.wowhead.com/item=271463/pauldrons-of-the-consecrated-flame?original-item=251138"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Cloak",
+            "Silken Voodoo Drape",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 268253,
+              "name": "Silken Voodoo Drape",
+              "url": "https://www.wowhead.com/item=268253/silken-voodoo-drape"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Chest",
+            "Bulwark of the Consecrated Flame",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 271468,
+              "name": "Bulwark of the Consecrated Flame",
+              "url": "https://www.wowhead.com/item=271468/bulwark-of-the-consecrated-flame?original-item=268222"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Wrist",
+            "Shellbound Bracers",
+            "The Lost Explorers"
+          ],
+          "items": [
+            {
+              "id": 268239,
+              "name": "Shellbound Bracers",
+              "url": "https://www.wowhead.com/item=268239/shellbound-bracers"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Gloves",
+            "Gauntlets of the Consecrated Flame",
+            "Entombed Sentinels"
+          ],
+          "items": [
+            {
+              "id": 271466,
+              "name": "Gauntlets of the Consecrated Flame",
+              "url": "https://www.wowhead.com/item=271466/gauntlets-of-the-consecrated-flame"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Belt",
+            "Girdle of Toxic Regret",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 268259,
+              "name": "Girdle of Toxic Regret",
+              "url": "https://www.wowhead.com/item=268259/girdle-of-toxic-regret"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Legs",
+            "Greaves of the Consecrated Flame",
+            "Ula'tek"
+          ],
+          "items": [
+            {
+              "id": 271464,
+              "name": "Greaves of the Consecrated Flame",
+              "url": "https://www.wowhead.com/item=271464/greaves-of-the-consecrated-flame?original-item=271878"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Boots",
+            "Scaled Fiend's Warboots",
+            "Vashnik the Malignant"
+          ],
+          "items": [
+            {
+              "id": 268260,
+              "name": "Scaled Fiend's Warboots",
+              "url": "https://www.wowhead.com/item=268260/scaled-fiends-warboots"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Ring",
+            "Vile Alchemist's Band",
+            "Vashnik the Malignant"
+          ],
+          "items": [
+            {
+              "id": 268249,
+              "name": "Vile Alchemist's Band",
+              "url": "https://www.wowhead.com/item=268249/vile-alchemists-band"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Ring",
+            "Sickening Signet of Atroxus",
+            "Voidscar Arena"
+          ],
+          "items": [
+            {
+              "id": 252258,
+              "name": "Sickening Signet of Atroxus",
+              "url": "https://www.wowhead.com/item=252258/sickening-signet-of-atroxus"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Trinket",
+            "Soulcoiler Ritual Vessel",
+            "Nek'zali the Soulcoiler"
+          ],
+          "items": [
+            {
+              "id": 270162,
+              "name": "Soulcoiler Ritual Vessel",
+              "url": "https://www.wowhead.com/item=270162/soulcoiler-ritual-vessel"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Trinket",
+            "Gebbo's Bottomless Bag",
+            "The Lost Explorers"
+          ],
+          "items": [
+            {
+              "id": 270164,
+              "name": "Gebbo's Bottomless Bag",
+              "url": "https://www.wowhead.com/item=270164/gebbos-bottomless-bag"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "title": "Holy Paladin Gear and Best in Slot - Midnight - Wowhead",
+  "updated": "2026/08/12"
+}

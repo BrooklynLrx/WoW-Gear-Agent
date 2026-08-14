@@ -1,0 +1,98 @@
+{
+  "spec": "arms-warrior",
+  "recommendation_context": "raid",
+  "set_kind": "final_bis",
+  "one_set_per_context": true,
+  "gear_source_policy": "unrestricted_final_bis",
+  "gear_source_policy_zh_cn": "最终毕业配装可混用团本、大秘境、制造、套装及转化装备，不按掉落来源拆分。",
+  "patch": "12.1",
+  "last_updated": "August 11, 2026",
+  "source_url": "https://maxroll.gg/wow/class-guides/arms-warrior-raid-guide#gear-header",
+  "items": [
+    {
+      "slot": "Head",
+      "item_id": 271456,
+      "item_en": "Tempered Horns of the Jade Warlord",
+      "location_en": "The Twin Fangs"
+    },
+    {
+      "slot": "Neck",
+      "item_id": 268265,
+      "item_en": "Aqirbane Reliquary",
+      "location_en": "Ula'tek"
+    },
+    {
+      "slot": "Shoulder",
+      "item_id": 271454,
+      "item_en": "Raging Pauldrons of the Jade Warlord",
+      "location_en": "The Lost Explorers"
+    },
+    {
+      "slot": "Cloak",
+      "item_id": 268253,
+      "item_en": "Silken Voodoo Drape",
+      "location_en": "The Coiled Altar"
+    },
+    {
+      "slot": "Chest",
+      "item_id": 271459,
+      "item_en": "Cuirass of the Jade Warlord",
+      "location_en": "The Coiled Altar + Catalyst"
+    },
+    {
+      "slot": "Wrist",
+      "item_id": 237834,
+      "item_en": "Spellbreaker's Bracers",
+      "location_en": "Blacksmithing"
+    },
+    {
+      "slot": "Gloves",
+      "item_id": 271457,
+      "item_en": "Jeweled Gauntlets of the Jade Warlord",
+      "location_en": "Den of Nalorakk + Catalyst"
+    },
+    {
+      "slot": "Belt",
+      "item_id": 268259,
+      "item_en": "Girdle of Toxic Regret",
+      "location_en": "The Coiled Altar"
+    },
+    {
+      "slot": "Legs",
+      "item_id": 271878,
+      "item_en": "Chausses of Unbound Rancor",
+      "location_en": "Ula'tek"
+    },
+    {
+      "slot": "Boots",
+      "item_id": 237828,
+      "item_en": "Spellbreaker's March",
+      "location_en": "Blacksmithing"
+    },
+    {
+      "slot": "Ring 1",
+      "item_id": 252258,
+      "item_en": "Sickening Signet of Atroxus",
+      "location_en": "Voidscar Arena"
+    },
+    {
+      "slot": "Ring 2",
+      "item_id": 273792,
+      "item_en": "Band of the Amani Warlord",
+      "location_en": "Altar of Fangs"
+    },
+    {
+      "slot": "Trinket 1",
+      "item_id": 270175,
+      "item_en": "Voracious Heart of Ula'tek",
+      "location_en": "Ula'tek"
+    },
+    {
+      "slot": "Trinket 2",
+      "item_id": null,
+      "item_en": "Zul'jin's Guillotine Technique The Coiled Altar Weapon Maze-roa, Warlord's Fury",
+      "location_en": "The Coiled Altar"
+    }
+  ],
+  "fetched_at": "2026-08-13T05:32:36.698297+00:00"
+}

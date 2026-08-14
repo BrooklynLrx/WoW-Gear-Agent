@@ -1,0 +1,280 @@
+{
+  "class": "monk",
+  "spec": "brewmaster",
+  "source_url": "https://www.wowhead.com/guide/classes/monk/brewmaster/bis-gear#bis-gear",
+  "captured_at": "2026-08-13",
+  "patch": "Patch 12.1.0",
+  "tables": [
+    {
+      "rows": [
+        {
+          "cells": [
+            "Slot",
+            "Item",
+            "Source"
+          ],
+          "items": []
+        },
+        {
+          "cells": [
+            "Weapon (2h)",
+            "Abyssal Broodfiend's Bardiche",
+            "Ula'tek"
+          ],
+          "items": [
+            {
+              "id": 268215,
+              "name": "Abyssal Broodfiend's Bardiche",
+              "url": "https://www.wowhead.com/item=268215/abyssal-broodfiends-bardiche?bonus=13848:13846"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Weapons (1h)",
+            "Aman'muso, Warlord's Vengeance     Slithering Savage's Gavel",
+            "The Coiled Altar    Sszorak"
+          ],
+          "items": [
+            {
+              "id": 268209,
+              "name": "Aman'muso, Warlord's Vengeance",
+              "url": "https://www.wowhead.com/item=268209/amanmuso-warlords-vengeance?bonus=13848"
+            },
+            {
+              "id": 268206,
+              "name": "Slithering Savage's Gavel",
+              "url": "https://www.wowhead.com/item=268206/slithering-savages-gavel"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Head",
+            "Monkey King's Unyielding Visage",
+            "Catalyst|Raid|Vault"
+          ],
+          "items": [
+            {
+              "id": 271519,
+              "name": "Monkey King's Unyielding Visage",
+              "url": "https://www.wowhead.com/item=271519/monkey-kings-unyielding-visage?bonus=13848:13847:10835&original-item=271875"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Neck",
+            "Aqirbane Reliquary",
+            "Ula'tek"
+          ],
+          "items": [
+            {
+              "id": 268265,
+              "name": "Aqirbane Reliquary",
+              "url": "https://www.wowhead.com/item=268265/aqirbane-reliquary?bonus=13848:13708:10835"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Shoulders",
+            "Tassels of the Monkey King",
+            "Catalyst|Mythic+|Vault"
+          ],
+          "items": [
+            {
+              "id": 271517,
+              "name": "Tassels of the Monkey King",
+              "url": "https://www.wowhead.com/item=271517/tassels-of-the-monkey-king?original-item=273774"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Cloak",
+            "Silken Voodoo Drape",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 268253,
+              "name": "Silken Voodoo Drape",
+              "url": "https://www.wowhead.com/item=268253/silken-voodoo-drape?bonus=13848"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Chest",
+            "Battle Gi of the Monkey King",
+            "Catalyst|Mythic+|Vault"
+          ],
+          "items": [
+            {
+              "id": 271522,
+              "name": "Battle Gi of the Monkey King",
+              "url": "https://www.wowhead.com/item=271522/battle-gi-of-the-monkey-king?original-item=251226"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Wrist",
+            "Silvermoon Agent's Deflectors",
+            "Leatherworking"
+          ],
+          "items": [
+            {
+              "id": 244576,
+              "name": "Silvermoon Agent's Deflectors",
+              "url": "https://www.wowhead.com/item=244576/silvermoon-agents-deflectors?bonus=13751:12497:13836:10835:8795:13454"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Gloves",
+            "Monkey King's Fighting Fists",
+            "Catalyst|Mythic+|Vault"
+          ],
+          "items": [
+            {
+              "id": 271520,
+              "name": "Monkey King's Fighting Fists",
+              "url": "https://www.wowhead.com/item=271520/monkey-kings-fighting-fists?original-item=193758"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Belt",
+            "Sash of the Forlorn Vessel",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 268256,
+              "name": "Sash of the Forlorn Vessel",
+              "url": "https://www.wowhead.com/item=268256/sash-of-the-forlorn-vessel?bonus=13848"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Legs",
+            "Pantaloons of the Monkey King",
+            "Catalyst|Raid|Vault"
+          ],
+          "items": [
+            {
+              "id": 271518,
+              "name": "Pantaloons of the Monkey King",
+              "url": "https://www.wowhead.com/item=271518/pantaloons-of-the-monkey-king?bonus=13848&original-item=268225"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Boots",
+            "Goldfeather Boots",
+            "Kings' Rest"
+          ],
+          "items": [
+            {
+              "id": 159304,
+              "name": "Goldfeather Boots",
+              "url": "https://www.wowhead.com/item=159304/goldfeather-boots"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Ring",
+            "Pilfered Precious Band",
+            "Den of Nalorakk"
+          ],
+          "items": [
+            {
+              "id": 251148,
+              "name": "Pilfered Precious Band",
+              "url": "https://www.wowhead.com/item=251148/pilfered-precious-band"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Ring",
+            "Loa Worshiper's Band",
+            "Jewelcrafting"
+          ],
+          "items": [
+            {
+              "id": 251513,
+              "name": "Loa Worshiper's Band",
+              "url": "https://www.wowhead.com/item=251513/loa-worshipers-band?bonus=13751:12497:13836"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Trinket (Damage)",
+            "Voracious Heart of Ula'tek",
+            "Ula'tek"
+          ],
+          "items": [
+            {
+              "id": 270175,
+              "name": "Voracious Heart of Ula'tek",
+              "url": "https://www.wowhead.com/item=270175/voracious-heart-of-ulatek?bonus=13848"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Trinket (Damage)",
+            "Zul'jin's Guillotine Technique",
+            "The Coiled Altar"
+          ],
+          "items": [
+            {
+              "id": 270173,
+              "name": "Zul'jin's Guillotine Technique",
+              "url": "https://www.wowhead.com/item=270173/zuljins-guillotine-technique?bonus=13848"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Trinket (Defense)",
+            "First Mate's Shellward",
+            "The Lost Explorers"
+          ],
+          "items": [
+            {
+              "id": 270160,
+              "name": "First Mate's Shellward",
+              "url": "https://www.wowhead.com/item=270160/first-mates-shellward"
+            }
+          ]
+        },
+        {
+          "cells": [
+            "Trinket (Defense)",
+            "Lustrous Golden Plumage",
+            "Kings' Rest"
+          ],
+          "items": [
+            {
+              "id": 159617,
+              "name": "Lustrous Golden Plumage",
+              "url": "https://www.wowhead.com/item=159617/lustrous-golden-plumage"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "title": "Brewmaster Monk Gear and Best in Slot - Midnight - Wowhead",
+  "updated": "2026/08/12"
+}
