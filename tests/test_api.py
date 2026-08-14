@@ -1,3 +1,6 @@
+from datetime import datetime
+from types import SimpleNamespace
+
 from fastapi.testclient import TestClient
 
 import backend.main as api
@@ -63,3 +66,33 @@ def test_builder_http_flow(monkeypatch):
     assert "event: text_delta" in stream.text
     assert "event: proposal" in stream.text
     assert "event: done" in stream.text
+
+
+def test_loadout_snapshot_round_trip():
+    builder = FakeBuilder("paladin.holy")
+    builder.update_build_state(
+        objectives=[{"rule": "minimize", "stat": "mastery"}],
+        constraints={"minimum_tier_pieces": 4},
+    )
+    now = datetime.now()
+    loadout = SimpleNamespace(
+        id=7,
+        name="奶骑四件套",
+        creator_name="Lrx",
+        class_key=None,
+        spec_key=None,
+        target_stats_json={},
+        constraints_json={},
+        state_json=None,
+        is_favorite=False,
+        created_at=now,
+        updated_at=now,
+    )
+
+    api.snapshot_loadout(loadout, builder.build_state)
+    detail = api.loadout_detail(loadout)
+
+    assert detail.creator_name == "Lrx"
+    assert detail.state.spec_key == "holy"
+    assert detail.state.constraints.minimum_tier_pieces == 4
+    assert detail.state.objectives[0].stat == "mastery"

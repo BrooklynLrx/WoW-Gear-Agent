@@ -77,6 +77,12 @@ PATCH  /api/v1/builder/sessions/{session_id}
 POST   /api/v1/builder/sessions/{session_id}/messages
 POST   /api/v1/builder/sessions/{session_id}/messages/stream
 DELETE /api/v1/builder/sessions/{session_id}
+POST   /api/v1/loadouts
+GET    /api/v1/loadouts?creator_name={name}
+GET    /api/v1/loadouts/{loadout_id}
+PATCH  /api/v1/loadouts/{loadout_id}
+DELETE /api/v1/loadouts/{loadout_id}
+POST   /api/v1/loadouts/{loadout_id}/open
 ```
 
 创建奶骑会话：
@@ -105,6 +111,21 @@ response.proposal.solutions[0].equipment
 `text_delta`、`proposal`、`state`、`done`；异常返回 `error`。前端逐段展示
 `text_delta`，收到完整的 `proposal` 事件后再更新装备栏。
 
+保存当前 Builder 方案：
+
+```json
+{
+  "name": "奶骑团本毕业装",
+  "creator_name": "Lrx",
+  "builder_session_id": "..."
+}
+```
+
+`POST /loadouts/{id}/open` 会从数据库快照创建新的 Builder 会话。之后继续调用
+`/messages` 或 `/messages/stream`，Agent 会读取恢复后的装备、目标和限制。工作台
+修改不会自动覆盖原方案；用 `PATCH /loadouts/{id}` 保存更改，用 `POST /loadouts`
+另存为新方案。
+
 ## 测试
 
 ```bash
@@ -112,12 +133,12 @@ PYTHONPATH=. PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 pytest -q
 PYTHONPATH=. python scripts/audit_all_specs.py
 ```
 
-当前基础测试为 20 项，另有 40 专精批量配装审计脚本。
+当前基础测试为 21 项，另有 40 专精批量配装审计脚本。
 
 ## 当前限制
 
 - FastAPI Builder 会话暂存在进程内存中，服务重启后清空。
-- 用户注册、登录和已保存配装尚未接入接口。
+- 当前是可信小团队共享方案库，`creator_name` 只用于标记和筛选，不提供权限隔离。
 - SimC 导入接口尚未完成。
 - 宝石由用户选择，不自动填充。
 - 未实现 DPS 模拟；属性目标完全来自用户或后续维护的数据源。

@@ -30,3 +30,6 @@ alembic check
 - 执行迁移前先备份；MySQL DDL 不保证事务回滚。
 
 初始迁移同时包含游戏目录、用户、角色、配装、手动宝石、消耗品和配装对话表。
+
+当前产品阶段不启用用户认证。共享方案使用 `loadouts.creator_name` 标记创建人，
+并用 `state_json` 保存完整 `BuildSessionState` 快照；`user_id` 因此允许为空。

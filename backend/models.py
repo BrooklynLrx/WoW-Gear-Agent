@@ -147,15 +147,19 @@ class Character(Timestamps, Base):
 class Loadout(Timestamps, Base):
     __tablename__ = "loadouts"
     id: Mapped[int] = mapped_column(BigInteger, primary_key=True)
-    user_id: Mapped[int] = mapped_column(ForeignKey("users.id", ondelete="CASCADE"))
+    user_id: Mapped[int | None] = mapped_column(ForeignKey("users.id", ondelete="CASCADE"))
     character_id: Mapped[int | None] = mapped_column(ForeignKey("characters.id", ondelete="SET NULL"))
     name: Mapped[str] = mapped_column(String(120))
+    creator_name: Mapped[str] = mapped_column(String(64), default="unknown", index=True)
+    class_key: Mapped[str | None] = mapped_column(String(40))
+    spec_key: Mapped[str | None] = mapped_column(String(40))
     patch: Mapped[str] = mapped_column(String(16))
     content_type: Mapped[str] = mapped_column(String(24))
     target_type: Mapped[str] = mapped_column(String(24))
     target_stats_json: Mapped[dict] = mapped_column(JSON)
     constraints_json: Mapped[dict | None] = mapped_column(JSON)
     calculated_stats_json: Mapped[dict | None] = mapped_column(JSON)
+    state_json: Mapped[dict | None] = mapped_column(JSON)
     is_favorite: Mapped[bool] = mapped_column(Boolean, default=False)
 
 
