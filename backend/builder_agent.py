@@ -1,5 +1,6 @@
 """One stateful AgentScope agent for the equipment Builder."""
 
+import asyncio
 import os
 from typing import Literal
 
@@ -145,11 +146,11 @@ class BuilderAgentSession:
         self.tool_trace = []
         self.last_optimization_result = None
         toolkit = Toolkit(tools=[
-            AllowedFunctionTool(self.update_build_state, is_read_only=False),
+            AllowedFunctionTool(self._update_build_state_tool, name="update_build_state", is_read_only=False),
             AllowedFunctionTool(self.get_build_state, is_read_only=True),
-            AllowedFunctionTool(self.calculate_current_stats, is_read_only=True),
-            AllowedFunctionTool(self.search_items, is_read_only=True),
-            AllowedFunctionTool(self.optimize_current_loadout, is_read_only=True),
+            AllowedFunctionTool(self._calculate_current_stats_tool, name="calculate_current_stats", is_read_only=True),
+            AllowedFunctionTool(self._search_items_tool, name="search_items", is_read_only=True),
+            AllowedFunctionTool(self._optimize_current_loadout_tool, name="optimize_current_loadout", is_read_only=True),
         ])
 
         load_local_env()
@@ -303,6 +304,39 @@ class BuilderAgentSession:
         if hasattr(self, "tool_trace"):
             self.tool_trace.append({"tool": "optimize_current_loadout", "success": result.get("success", False), "solution_count": len(result.get("solutions", []))})
         return result
+
+    async def _update_build_state_tool(
+        self,
+        equipment: list[EquippedItem] | None = None,
+        consumable_ids: list[int] | None = None,
+        objectives: list[BuildObjective] | None = None,
+        constraints: BuildConstraintsPatch | None = None,
+    ) -> dict:
+        """Update the current Builder state without blocking other conversations."""
+        return await asyncio.to_thread(
+            self.update_build_state,
+            equipment,
+            consumable_ids,
+            objectives,
+            constraints,
+        )
+
+    async def _calculate_current_stats_tool(self) -> dict:
+        """Calculate the current equipment without blocking other conversations."""
+        return await asyncio.to_thread(self.calculate_current_stats)
+
+    async def _search_items_tool(
+        self,
+        slot_key: str | None = None,
+        name: str | None = None,
+        limit: int = 20,
+    ) -> dict:
+        """Search usable items without blocking other conversations."""
+        return await asyncio.to_thread(self.search_items, slot_key, name, limit)
+
+    async def _optimize_current_loadout_tool(self, solution_count: int = 3) -> dict:
+        """Optimize a loadout without blocking other conversations."""
+        return await asyncio.to_thread(self.optimize_current_loadout, solution_count)
 
     async def reply(self, text: str) -> Msg:
         return await self.agent.reply(

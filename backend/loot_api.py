@@ -74,7 +74,17 @@ def search_loot(
             if wanted_ids and item.game_item_id not in wanted_ids:
                 continue
             display_slot = display_slot_key(slot, item)
-            if wanted_slot and (display_slot if wanted_slot == "off_hand" else slot) != wanted_slot:
+            if wanted_slot == "weapon" and (
+                slot != "weapon" or not class_key or not spec_key or
+                not weapon_kind_available_in_position(f"{class_key}.{spec_key}", item, "main_hand")
+            ):
+                continue
+            if wanted_slot == "off_hand" and (
+                slot != "weapon" or not class_key or not spec_key or
+                not weapon_kind_available_in_position(f"{class_key}.{spec_key}", item, "off_hand")
+            ):
+                continue
+            if wanted_slot not in {None, "weapon", "off_hand"} and slot != wanted_slot:
                 continue
             if source_type and not any(value["source_type"] == source_type for value in item_sources):
                 continue

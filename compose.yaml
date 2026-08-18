@@ -1,6 +1,6 @@
 services:
   mysql:
-    image: mysql:8.4
+    image: swr.cn-north-4.myhuaweicloud.com/ddn-k8s/docker.io/mysql:9.0.0
     restart: unless-stopped
     environment:
       MYSQL_DATABASE: ${MYSQL_DATABASE}
@@ -39,7 +39,7 @@ services:
       target: frontend
     restart: unless-stopped
     ports:
-      - "80:80"
+      - "8001:80"
     depends_on:
       - backend
 

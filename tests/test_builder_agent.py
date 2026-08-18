@@ -1,4 +1,5 @@
 import asyncio
+import threading
 
 import pytest
 from agentscope.message import Msg, TextBlock
@@ -58,3 +59,11 @@ def test_reply_payload_only_returns_current_turn_trace(monkeypatch):
     monkeypatch.setattr(session, "reply", fake_reply)
     payload = asyncio.run(session.reply_payload("test"))
     assert payload["tool_trace"] == [{"tool": "get_build_state", "success": True}]
+
+
+def test_blocking_optimizer_runs_off_event_loop(monkeypatch):
+    session = object.__new__(BuilderAgentSession)
+    main_thread = threading.get_ident()
+    monkeypatch.setattr(session, "optimize_current_loadout", lambda _count=3: threading.get_ident())
+    worker_thread = asyncio.run(session._optimize_current_loadout_tool())
+    assert worker_thread != main_thread
