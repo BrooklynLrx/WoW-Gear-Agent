@@ -68,6 +68,20 @@ def test_builder_http_flow(monkeypatch):
     assert "event: done" in stream.text
 
 
+def test_invalid_state_patch_returns_422(monkeypatch):
+    api.sessions.clear()
+    builder = FakeBuilder("mage.arcane")
+    builder.update_build_state = lambda **_: {"success": False, "error": "invalid_build_state", "validation": {"errors": ["bad weapon"]}}
+    api.sessions["invalid"] = api.SessionEntry(builder)
+    response = TestClient(api.app).patch("/api/v1/builder/sessions/invalid", json={"equipment": [{"item_id": 1, "item_level": 334}]})
+    assert response.status_code == 422
+
+
+def test_gem_catalog_exposes_icons():
+    gems = TestClient(api.app).get("/api/v1/catalog/gems").json()
+    assert gems and all(gem["icon"] for gem in gems)
+
+
 def test_loadout_snapshot_round_trip():
     builder = FakeBuilder("paladin.holy")
     builder.update_build_state(

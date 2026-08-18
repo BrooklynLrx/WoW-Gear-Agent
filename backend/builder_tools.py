@@ -3,7 +3,10 @@
 from sqlalchemy import select
 
 from backend.db import SessionLocal
-from backend.loadout_validator import canonical_slot, rules, validate_loadout, weapon_kind
+from backend.loadout_validator import (
+    canonical_slot, item_is_available_for_spec, rules, validate_loadout,
+    weapon_kind, weapon_kind_available, weapon_kind_available_in_position,
+)
 from backend.models import GameVersion, Item, ItemSource, ItemVariant, Spec
 from backend.stat_calculator import calculate_equipment
 
@@ -14,6 +17,11 @@ M7_M8_SPECIAL_EFFECT_ITEM_IDS = {
     268202, 268207, 268215, 268265,
     271092, 271093, 271874, 271875, 271876, 271878,
 }
+
+
+def display_slot_key(slot, item):
+    """Keep weapon legality grouped while exposing off-hands to the UI."""
+    return "off_hand" if slot == "weapon" and weapon_kind(item) in {"held_in_off_hand", "shield"} else slot
 
 
 def calculate_stats(
@@ -61,14 +69,7 @@ def calculate_stats(
 
 
 def _weapon_is_available(full_spec_key, item):
-    kind = weapon_kind(item)
-    for option in rules()["specs"][full_spec_key]["weapon_loadouts"]:
-        for value in option.values():
-            if isinstance(value, list) and kind in value:
-                return True
-            if isinstance(value, dict) and any(kind in kinds for kinds in value.values()):
-                return True
-    return False
+    return weapon_kind_available(full_spec_key, item)
 
 
 def search_items_for_spec(
@@ -92,7 +93,6 @@ def search_items_for_spec(
         ))
         if spec is None:
             return {"success": False, "error": "unknown_spec"}
-        class_armor = rules()["classes"][class_key]["armor_type"]
         rows = session.execute(
             select(Item, ItemVariant)
             .join(ItemVariant, ItemVariant.item_id == Item.id)
@@ -120,19 +120,16 @@ def search_items_for_spec(
                 continue
             if game_item_id is not None and item.game_item_id != int(game_item_id):
                 continue
-            if slot in {"unknown", "tier_token"} or (wanted_slot and slot != wanted_slot):
+            if slot in {"unknown", "tier_token"}:
                 continue
             if name and name.lower() not in (item.name_en or "").lower() and name not in (item.name_zh_cn or ""):
                 continue
-            if raw.get("candidate_classes") and class_key not in raw["candidate_classes"]:
+            display_slot = display_slot_key(slot, item)
+            if wanted_slot == "off_hand" and not weapon_kind_available_in_position(full_spec_key, item, "off_hand"):
                 continue
-            if raw.get("candidate_specs") and full_spec_key not in raw["candidate_specs"]:
+            if wanted_slot and wanted_slot != "off_hand" and slot != wanted_slot:
                 continue
-            if item.is_tier and raw.get("class_key") != class_key:
-                continue
-            if item.armor_type and slot != "back" and item.armor_type != class_armor:
-                continue
-            if slot == "weapon" and not _weapon_is_available(full_spec_key, item):
+            if not item_is_available_for_spec(class_key, spec_key, item):
                 continue
 
             requested_level = item_level
@@ -151,12 +148,18 @@ def search_items_for_spec(
             encounters = {source.get("encounter_name_zh_cn") for source in sources}
             is_final_boss_drop = "乌拉特克" in encounters
             is_penultimate_boss_drop = "盘卷祭坛" in encounters
-            is_late_raid_special_effect = item.game_item_id in M7_M8_SPECIAL_EFFECT_ITEM_IDS
+            is_late_raid_special_effect = slot != "trinket" and item.game_item_id in M7_M8_SPECIAL_EFFECT_ITEM_IDS
+            is_raid_boe = bool(raw.get("bind_on_equip") and any(source.get("source_type") == "raid" for source in sources))
             results.append({
                 "item_id": item.game_item_id,
                 "name_zh_cn": item.name_zh_cn,
                 "name_en": item.name_en,
+                "icon": item.icon,
+                "icon_url": f"https://wow.zamimg.com/images/wow/icons/large/{item.icon}.jpg" if item.icon else None,
+                "wowhead_url": f"https://www.wowhead.com/cn/item={item.game_item_id}&ilvl={variant.item_level}",
+                "wowhead_data": f"item={item.game_item_id}&domain=cn&ilvl={variant.item_level}",
                 "slot_key": slot,
+                "display_slot_key": display_slot,
                 "item_level": variant.item_level,
                 "stats": stats,
                 "current_sockets": variant.sockets,
@@ -169,6 +172,7 @@ def search_items_for_spec(
                 "is_embellished": bool(raw.get("embellished")),
                 "has_special_effect": item.has_special_effect or is_late_raid_special_effect,
                 "is_late_raid_special_effect": is_late_raid_special_effect,
+                "is_raid_boe": is_raid_boe,
                 "is_penultimate_boss_drop": is_penultimate_boss_drop,
                 "is_final_boss_drop": is_final_boss_drop,
                 "acquisition_difficulty_zh_cn": (

@@ -1,4 +1,5 @@
 import backend.builder_tools as tools
+from types import SimpleNamespace
 
 
 class Session:
@@ -7,6 +8,11 @@ class Session:
 
     def __exit__(self, *_):
         pass
+
+
+def test_off_hand_weapon_has_separate_display_slot():
+    item = SimpleNamespace(raw_json={"slot": "Off-Hand Weapon", "weapon_type": "off_hand"}, weapon_type="off_hand")
+    assert tools.display_slot_key("weapon", item) == "off_hand"
 
 
 def test_invalid_loadout_stops_before_calculation(monkeypatch):

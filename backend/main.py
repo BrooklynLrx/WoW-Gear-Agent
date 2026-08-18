@@ -8,11 +8,11 @@ from datetime import datetime
 from typing import Any
 from uuid import uuid4
 
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse
 from pydantic import BaseModel, Field, field_validator
-from sqlalchemy import select
+from sqlalchemy import delete, select
 
 from backend.builder_agent import (
     BuildConstraintsPatch,
@@ -22,7 +22,9 @@ from backend.builder_agent import (
     EquippedItem,
 )
 from backend.db import SessionLocal
-from backend.models import Loadout
+from backend.models import ChatMessage, ChatSession, Loadout
+from backend.loot_api import list_instances, list_specs, search_loot
+from backend.loadout_optimizer import supplement_catalog
 
 
 logger = logging.getLogger(__name__)
@@ -30,6 +32,24 @@ logger = logging.getLogger(__name__)
 
 class CreateSessionRequest(BaseModel):
     spec: str = Field(examples=["paladin.holy"])
+
+
+class CreateConversationRequest(BaseModel):
+    spec: str | None = Field(default=None, examples=["paladin.holy"])
+    title: str | None = Field(default=None, max_length=160)
+    loadout_id: int | None = None
+
+
+class UpdateConversationRequest(BaseModel):
+    title: str = Field(min_length=1, max_length=160)
+
+    @field_validator("title")
+    @classmethod
+    def strip_title(cls, value: str) -> str:
+        value = value.strip()
+        if not value:
+            raise ValueError("must not be blank")
+        return value
 
 
 class ChatRequest(BaseModel):
@@ -47,6 +67,32 @@ class SessionResponse(BaseModel):
     session_id: str
     state: BuildSessionState
     source_loadout_id: int | None = None
+
+
+class ConversationMessage(BaseModel):
+    id: int
+    role: str
+    content: str
+    proposal: dict[str, Any] | None = None
+    created_at: datetime
+
+
+class ConversationSummary(BaseModel):
+    id: int
+    title: str
+    class_key: str
+    spec_key: str
+    message_count: int
+    has_compressed_context: bool
+    created_at: datetime
+    updated_at: datetime
+
+
+class ConversationDetail(ConversationSummary):
+    session_id: str
+    state: BuildSessionState
+    source_loadout_id: int | None = None
+    messages: list[ConversationMessage]
 
 
 class BuilderReply(BaseModel):
@@ -107,6 +153,7 @@ class SessionEntry:
     builder: BuilderAgentSession
     lock: asyncio.Lock = field(default_factory=asyncio.Lock)
     source_loadout_id: int | None = None
+    conversation_id: int | None = None
 
 
 # ponytail: active chats stay in memory; saved loadout snapshots survive in MySQL.
@@ -123,8 +170,8 @@ app.add_middleware(
 )
 
 
-def create_builder_session(spec: str) -> BuilderAgentSession:
-    return BuilderAgentSession(spec)
+def create_builder_session(spec: str, agent_state: dict | None = None) -> BuilderAgentSession:
+    return BuilderAgentSession(spec, agent_state) if agent_state else BuilderAgentSession(spec)
 
 
 def get_session(session_id: str) -> SessionEntry:
@@ -132,6 +179,69 @@ def get_session(session_id: str) -> SessionEntry:
     if entry is None:
         raise HTTPException(status_code=404, detail="builder_session_not_found")
     return entry
+
+
+def conversation_session_id(conversation_id: int) -> str:
+    return f"chat-{conversation_id}"
+
+
+def persist_conversation(entry: SessionEntry) -> None:
+    if entry.conversation_id is None:
+        return
+    with SessionLocal.begin() as db:
+        conversation = db.get(ChatSession, entry.conversation_id)
+        if conversation is None:
+            return
+        conversation.state_json = entry.builder.build_state.model_dump(mode="json")
+        conversation.agent_state_json = entry.builder.export_agent_state()
+
+
+def ensure_conversation_entry(conversation: ChatSession) -> tuple[str, SessionEntry]:
+    if not conversation.class_key or not conversation.spec_key or not conversation.state_json:
+        raise HTTPException(status_code=409, detail="conversation_missing_state")
+    session_id = conversation_session_id(conversation.id)
+    entry = sessions.get(session_id)
+    if entry is None:
+        builder = create_builder_session(
+            f"{conversation.class_key}.{conversation.spec_key}",
+            conversation.agent_state_json,
+        )
+        builder.build_state = BuildSessionState.model_validate(conversation.state_json)
+        entry = SessionEntry(
+            builder,
+            source_loadout_id=conversation.loadout_id,
+            conversation_id=conversation.id,
+        )
+        sessions[session_id] = entry
+    return session_id, entry
+
+
+def conversation_payload(db, conversation: ChatSession) -> ConversationDetail:
+    session_id, entry = ensure_conversation_entry(conversation)
+    rows = db.scalars(
+        select(ChatMessage).where(ChatMessage.session_id == conversation.id)
+        .order_by(ChatMessage.id)
+    ).all()
+    return ConversationDetail(
+        id=conversation.id,
+        title=conversation.title,
+        class_key=conversation.class_key,
+        spec_key=conversation.spec_key,
+        message_count=len(rows),
+        has_compressed_context=bool(entry.builder.agent.state.summary),
+        created_at=conversation.created_at,
+        updated_at=conversation.updated_at,
+        session_id=session_id,
+        state=entry.builder.build_state,
+        source_loadout_id=conversation.loadout_id,
+        messages=[ConversationMessage(
+            id=value.id,
+            role=value.role,
+            content=value.content,
+            proposal=(value.tool_result_json or {}).get("proposal"),
+            created_at=value.created_at,
+        ) for value in rows],
+    )
 
 
 def loadout_summary(loadout: Loadout) -> LoadoutSummary:
@@ -178,6 +288,168 @@ def health() -> dict:
     return {"status": "ok"}
 
 
+@app.get("/api/v1/catalog/specs")
+def catalog_specs() -> list[dict]:
+    return list_specs()
+
+
+@app.get("/api/v1/catalog/gems")
+def catalog_gems() -> list[dict]:
+    return [value for value in supplement_catalog().values() if value.get("category") in {"gem", "unique_diamond"}]
+
+
+@app.get("/api/v1/loot/instances")
+def loot_instances() -> list[dict]:
+    return list_instances()
+
+
+@app.get("/api/v1/loot/items")
+def loot_items(
+    item_level: int = 334,
+    class_key: str | None = None,
+    spec_key: str | None = None,
+    slot_key: str | None = None,
+    source_type: str | None = None,
+    instance_name: str | None = None,
+    secondary_stats: list[str] = Query(default=[]),
+    secondary_match: str = "all",
+    has_special_effect: bool | None = None,
+    item_ids: list[int] = Query(default=[]),
+    q: str | None = None,
+    limit: int = Query(default=100, ge=1, le=500),
+    offset: int = Query(default=0, ge=0),
+) -> dict:
+    if secondary_match not in {"all", "any"}:
+        raise HTTPException(status_code=422, detail="secondary_match_must_be_all_or_any")
+    return search_loot(
+        item_level=item_level, class_key=class_key, spec_key=spec_key,
+        slot_key=slot_key, source_type=source_type, instance_name=instance_name,
+        secondary_stats=secondary_stats, secondary_match=secondary_match,
+        has_special_effect=has_special_effect, q=q, item_ids=item_ids, limit=limit, offset=offset,
+    )
+
+
+@app.post("/api/v1/conversations", response_model=ConversationDetail, status_code=201)
+def create_conversation(body: CreateConversationRequest) -> ConversationDetail:
+    if body.loadout_id is not None:
+        with SessionLocal() as db:
+            loadout = loadout_detail(get_loadout(db, body.loadout_id))
+        spec = f"{loadout.class_key}.{loadout.spec_key}"
+        title = body.title or loadout.name
+        state = loadout.state
+    else:
+        if not body.spec:
+            raise HTTPException(status_code=422, detail="spec_required")
+        spec = body.spec
+        title = body.title or "新对话"
+        state = None
+    try:
+        builder = create_builder_session(spec)
+    except ValueError as exc:
+        raise HTTPException(status_code=422, detail=str(exc)) from exc
+    except RuntimeError as exc:
+        raise HTTPException(status_code=503, detail=str(exc)) from exc
+    if state is not None:
+        builder.build_state = state.model_copy(deep=True)
+    with SessionLocal.begin() as db:
+        conversation = ChatSession(
+            user_id=None,
+            loadout_id=body.loadout_id,
+            title=title.strip() or "新对话",
+            class_key=builder.build_state.class_key,
+            spec_key=builder.build_state.spec_key,
+            state_json=builder.build_state.model_dump(mode="json"),
+            agent_state_json=builder.export_agent_state(),
+        )
+        db.add(conversation)
+        db.flush()
+        session_id = conversation_session_id(conversation.id)
+        sessions[session_id] = SessionEntry(
+            builder,
+            source_loadout_id=body.loadout_id,
+            conversation_id=conversation.id,
+        )
+        db.refresh(conversation)
+        return conversation_payload(db, conversation)
+
+
+@app.get("/api/v1/conversations", response_model=list[ConversationSummary])
+def list_conversations() -> list[ConversationSummary]:
+    with SessionLocal() as db:
+        rows = db.scalars(select(ChatSession).order_by(ChatSession.updated_at.desc(), ChatSession.id.desc())).all()
+        result = []
+        for conversation in rows:
+            if not conversation.class_key or not conversation.spec_key or not conversation.state_json:
+                continue
+            message_count = len(db.scalars(
+                select(ChatMessage.id).where(ChatMessage.session_id == conversation.id)
+            ).all())
+            result.append(ConversationSummary(
+                id=conversation.id,
+                title=conversation.title,
+                class_key=conversation.class_key,
+                spec_key=conversation.spec_key,
+                message_count=message_count,
+                has_compressed_context=bool((conversation.agent_state_json or {}).get("summary")),
+                created_at=conversation.created_at,
+                updated_at=conversation.updated_at,
+            ))
+        return result
+
+
+@app.get("/api/v1/conversations/{conversation_id}", response_model=ConversationDetail)
+def read_conversation(conversation_id: int) -> ConversationDetail:
+    with SessionLocal() as db:
+        conversation = db.get(ChatSession, conversation_id)
+        if conversation is None:
+            raise HTTPException(status_code=404, detail="conversation_not_found")
+        return conversation_payload(db, conversation)
+
+
+@app.patch("/api/v1/conversations/{conversation_id}", response_model=ConversationSummary)
+def update_conversation(conversation_id: int, body: UpdateConversationRequest) -> ConversationSummary:
+    with SessionLocal.begin() as db:
+        conversation = db.get(ChatSession, conversation_id)
+        if conversation is None:
+            raise HTTPException(status_code=404, detail="conversation_not_found")
+        conversation.title = body.title
+        db.flush()
+        db.refresh(conversation)
+        detail = conversation_payload(db, conversation)
+        return ConversationSummary(**detail.model_dump(exclude={"session_id", "state", "messages"}))
+
+
+@app.post("/api/v1/conversations/{conversation_id}/clear", response_model=ConversationDetail)
+def clear_conversation(conversation_id: int) -> ConversationDetail:
+    with SessionLocal.begin() as db:
+        conversation = db.get(ChatSession, conversation_id)
+        if conversation is None or not conversation.class_key or not conversation.spec_key or not conversation.state_json:
+            raise HTTPException(status_code=404, detail="conversation_not_found")
+        builder = create_builder_session(f"{conversation.class_key}.{conversation.spec_key}")
+        builder.build_state = BuildSessionState.model_validate(conversation.state_json)
+        session_id = conversation_session_id(conversation.id)
+        sessions[session_id] = SessionEntry(
+            builder,
+            source_loadout_id=conversation.loadout_id,
+            conversation_id=conversation.id,
+        )
+        db.execute(delete(ChatMessage).where(ChatMessage.session_id == conversation.id))
+        conversation.agent_state_json = builder.export_agent_state()
+        db.flush()
+        db.refresh(conversation)
+        return conversation_payload(db, conversation)
+
+
+@app.delete("/api/v1/conversations/{conversation_id}", status_code=204)
+def delete_conversation(conversation_id: int) -> None:
+    with SessionLocal.begin() as db:
+        conversation = db.get(ChatSession, conversation_id)
+        if conversation is None:
+            raise HTTPException(status_code=404, detail="conversation_not_found")
+        db.delete(conversation)
+    sessions.pop(conversation_session_id(conversation_id), None)
+
+
 @app.post("/api/v1/builder/sessions", response_model=SessionResponse, status_code=201)
 def create_session(body: CreateSessionRequest) -> SessionResponse:
     try:
@@ -201,11 +473,21 @@ def read_session(session_id: str) -> SessionResponse:
     )
 
 
+@app.get("/api/v1/builder/sessions/{session_id}/stats")
+async def session_stats(session_id: str) -> dict:
+    entry = get_session(session_id)
+    async with entry.lock:
+        return entry.builder.calculate_current_stats()
+
+
 @app.patch("/api/v1/builder/sessions/{session_id}", response_model=SessionResponse)
 async def update_session(session_id: str, body: StatePatch) -> SessionResponse:
     entry = get_session(session_id)
     async with entry.lock:
         result = entry.builder.update_build_state(**body.model_dump(exclude_none=True))
+        if not result["success"]:
+            raise HTTPException(status_code=422, detail=result.get("validation") or result.get("error"))
+        persist_conversation(entry)
     return SessionResponse(
         session_id=session_id,
         state=result["state"],
@@ -239,6 +521,11 @@ async def save_loadout(body: SaveLoadoutRequest) -> LoadoutDetail:
         db.refresh(loadout)
         result = loadout_detail(loadout)
     entry.source_loadout_id = result.id
+    if entry.conversation_id is not None:
+        with SessionLocal.begin() as db:
+            conversation = db.get(ChatSession, entry.conversation_id)
+            if conversation:
+                conversation.loadout_id = result.id
     return result
 
 
@@ -282,6 +569,11 @@ async def update_loadout(loadout_id: int, body: UpdateLoadoutRequest) -> Loadout
         result = loadout_detail(loadout)
     if entry is not None:
         entry.source_loadout_id = loadout_id
+        if entry.conversation_id is not None:
+            with SessionLocal.begin() as db:
+                conversation = db.get(ChatSession, entry.conversation_id)
+                if conversation:
+                    conversation.loadout_id = loadout_id
     return result
 
 
@@ -310,8 +602,23 @@ def open_loadout(loadout_id: int) -> SessionResponse:
 async def chat(session_id: str, body: ChatRequest) -> BuilderReply:
     entry = get_session(session_id)
     try:
+        if entry.conversation_id is not None:
+            with SessionLocal.begin() as db:
+                conversation = db.get(ChatSession, entry.conversation_id)
+                if conversation and conversation.title == "新对话":
+                    conversation.title = body.message.strip()[:36]
+                db.add(ChatMessage(session_id=entry.conversation_id, role="user", content=body.message))
         async with entry.lock:
             payload = await entry.builder.reply_payload(body.message)
+            persist_conversation(entry)
+        if entry.conversation_id is not None:
+            with SessionLocal.begin() as db:
+                db.add(ChatMessage(
+                    session_id=entry.conversation_id,
+                    role="assistant",
+                    content=payload["message"],
+                    tool_result_json={"proposal": payload.get("proposal"), "tool_trace": payload.get("tool_trace", [])},
+                ))
         return BuilderReply.model_validate(payload)
     except Exception as exc:
         logger.exception("builder agent failed")
@@ -327,10 +634,33 @@ async def chat_stream(session_id: str, body: ChatRequest) -> StreamingResponse:
     entry = get_session(session_id)
 
     async def events():
+        assistant_message = ""
+        proposal = None
+        tool_trace = []
         try:
+            if entry.conversation_id is not None:
+                with SessionLocal.begin() as db:
+                    conversation = db.get(ChatSession, entry.conversation_id)
+                    if conversation and conversation.title == "新对话":
+                        conversation.title = body.message.strip()[:36]
+                    db.add(ChatMessage(session_id=entry.conversation_id, role="user", content=body.message))
             async with entry.lock:
                 async for chunk in entry.builder.stream_reply_payload(body.message):
+                    if chunk["event"] == "proposal":
+                        proposal = chunk["data"]
+                    elif chunk["event"] == "done":
+                        assistant_message = chunk["data"].get("message", "")
+                        tool_trace = chunk["data"].get("tool_trace", [])
                     yield sse(chunk["event"], chunk["data"])
+                persist_conversation(entry)
+            if entry.conversation_id is not None:
+                with SessionLocal.begin() as db:
+                    db.add(ChatMessage(
+                        session_id=entry.conversation_id,
+                        role="assistant",
+                        content=assistant_message,
+                        tool_result_json={"proposal": proposal, "tool_trace": tool_trace},
+                    ))
         except Exception:
             logger.exception("streaming builder agent failed")
             yield sse("error", {"code": "builder_agent_failed"})

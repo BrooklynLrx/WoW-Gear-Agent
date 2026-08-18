@@ -14,6 +14,7 @@ RULES_PATH = Path(__file__).resolve().parents[1] / "data" / "12.1-equipment-rule
 SINGLE_SLOTS = {"head", "neck", "shoulders", "back", "chest", "wrist", "gloves", "waist", "legs", "feet"}
 DOUBLE_SLOTS = {"finger": 2, "trinket": 2}
 SLOT_ALIASES = {"shoulder": "shoulders", "hands": "gloves", "ring": "finger"}
+CLASS_ARMOR_SLOTS = {"head", "shoulders", "chest", "wrist", "gloves", "waist", "legs", "feet"}
 
 
 @lru_cache(maxsize=1)
@@ -45,13 +46,62 @@ def valid_weapon_kinds(spec_key, kinds):
             return True
         if "dual_wield" in option and len(kinds) == 2:
             allowed = option["dual_wield"]
-            if kinds[0] in allowed["main_hand"] and kinds[1] in allowed["off_hand"]:
+            if any(
+                pair[0] in allowed["main_hand"] and pair[1] in allowed["off_hand"]
+                for pair in (kinds, kinds[::-1])
+            ):
                 return True
         if "main_plus_off_hand" in option and len(kinds) == 2:
             allowed = option["main_plus_off_hand"]
-            if kinds[0] in allowed["main_hand"] and kinds[1] in allowed["off_hand"]:
+            if any(
+                pair[0] in allowed["main_hand"] and pair[1] in allowed["off_hand"]
+                for pair in (kinds, kinds[::-1])
+            ):
                 return True
     return False
+
+
+def weapon_kind_available(spec_key, item):
+    kind = weapon_kind(item)
+    return any(
+        kind in kinds
+        for option in rules()["specs"][spec_key]["weapon_loadouts"]
+        for value in option.values()
+        for kinds in (value.values() if isinstance(value, dict) else [value])
+    )
+
+
+def weapon_kind_available_in_position(spec_key, item, position):
+    kind = weapon_kind(item)
+    for option in rules()["specs"][spec_key]["weapon_loadouts"]:
+        if position == "main_hand" and any(kind in option.get(key, []) for key in ("two_hand", "ranged")):
+            return True
+        for key in ("dual_wield", "main_plus_off_hand"):
+            if kind in option.get(key, {}).get(position, []):
+                return True
+    return False
+
+
+def item_is_available_for_spec(class_key, spec_key, item):
+    """Single source of truth for catalog and final loadout eligibility."""
+    full_spec_key = f"{class_key}.{spec_key}"
+    raw = item.raw_json or {}
+    slot = canonical_slot(item.slot_key)
+    candidate_classes = raw.get("candidate_classes")
+    candidate_specs = raw.get("candidate_specs")
+    if candidate_classes and class_key not in candidate_classes:
+        return False
+    if candidate_specs and full_spec_key not in candidate_specs:
+        return False
+    if slot == "trinket" and not candidate_specs:
+        return False
+    if slot in CLASS_ARMOR_SLOTS and item.armor_type != rules()["classes"][class_key]["armor_type"]:
+        return False
+    if item.is_tier and raw.get("class_key") != class_key:
+        return False
+    if slot == "weapon" and not weapon_kind_available(full_spec_key, item):
+        return False
+    return True
 
 
 def validate_loadout(session, class_key, spec_key, equipment, consumable_ids=(), require_complete=True):
@@ -66,9 +116,9 @@ def validate_loadout(session, class_key, spec_key, equipment, consumable_ids=(),
     if spec is None or full_spec_key not in rules()["specs"]:
         return {"valid": False, "errors": [f"未知职业专精：{full_spec_key}"], "warnings": []}
 
-    class_armor = rules()["classes"][class_key]["armor_type"]
     slot_counts = Counter()
     item_counts = Counter()
+    weapon_positions = Counter()
     weapons = []
     tier_count = 0
     embellishment_count = 0
@@ -116,16 +166,14 @@ def validate_loadout(session, class_key, spec_key, equipment, consumable_ids=(),
         embellishment_count += int(bool(raw.get("embellished")))
         if slot == "weapon":
             weapons.append(item)
-        if item.armor_type and slot not in {"back"} and item.armor_type != class_armor:
-            errors.append(f"{item.name_zh_cn or item.name_en}不是{class_armor}护甲")
-        candidate_classes = raw.get("candidate_classes")
-        candidate_specs = raw.get("candidate_specs")
-        if candidate_classes and class_key not in candidate_classes:
-            errors.append(f"{item.name_zh_cn or item.name_en}不适合法师职业" if class_key == "mage" else f"{item.name_zh_cn or item.name_en}不适合{class_key}")
-        if candidate_specs and full_spec_key not in candidate_specs:
+            equipped_slot = selected.get("equipped_slot")
+            if equipped_slot:
+                position = "off_hand" if equipped_slot == "off_hand" else "main_hand"
+                weapon_positions[equipped_slot] += 1
+                if not weapon_kind_available_in_position(full_spec_key, item, position):
+                    errors.append(f"{item.name_zh_cn or item.name_en}不能装备在{equipped_slot}")
+        if not item_is_available_for_spec(class_key, spec_key, item):
             errors.append(f"{item.name_zh_cn or item.name_en}不适合{full_spec_key}")
-        if item.is_tier and raw.get("class_key") and raw["class_key"] != class_key:
-            errors.append(f"{item.name_zh_cn or item.name_en}是其他职业套装")
         unique = bool(raw.get("unique_equipped")) or any(
             "装备唯一" in (v.get("tooltip_zh_cn") or "") for v in raw.get("variants", [])
         )
@@ -168,8 +216,13 @@ def validate_loadout(session, class_key, spec_key, equipment, consumable_ids=(),
     for slot, maximum in DOUBLE_SLOTS.items():
         if slot_counts[slot] > maximum:
             errors.append(f"{slot}部位超过{maximum}件")
-    if weapons and not valid_weapon_set(full_spec_key, weapons):
-        errors.append("武器组合不符合该专精规则")
+    if weapons:
+        if any(count > 1 for count in weapon_positions.values()):
+            errors.append("主手或副手栏位重复")
+        if len(weapons) > 2 or (len(weapons) == 2 and not valid_weapon_set(full_spec_key, weapons)):
+            errors.append("武器组合不符合该专精规则")
+        elif len(weapons) == 1 and require_complete and not valid_weapon_set(full_spec_key, weapons):
+            errors.append("武器组合不符合该专精规则")
     if embellishment_count > 2:
         errors.append(f"美化装备超过2件：当前{embellishment_count}件")
     if unique_diamonds > 1:

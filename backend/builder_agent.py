@@ -13,6 +13,7 @@ from agentscope.event import (
 from agentscope.message import Msg, TextBlock
 from agentscope.model import OpenAIChatModel
 from agentscope.permission import PermissionBehavior, PermissionDecision
+from agentscope.state import AgentState
 from agentscope.tool import FunctionTool, Toolkit
 from pydantic import BaseModel, Field, model_validator
 
@@ -42,6 +43,7 @@ class EquippedItem(BaseModel):
     gems: list[int] = Field(default_factory=list)
     crafted_secondary_stats: dict[StatKey, int] = Field(default_factory=dict)
     catalyst_tier_item_id: int | None = None
+    equipped_slot: Literal["weapon", "off_hand"] | None = None
 
 
 class BuildObjective(BaseModel):
@@ -122,7 +124,7 @@ SYSTEM_PROMPT = """你是魔兽世界12.1装备 Builder Agent。你的职责是�
 11. current_sockets 才是当前孔数；maximum_user_selected_sockets 只是用户可手动选择的上限，绝不能说成装备自带孔。
 12. 用户要求自动配装时必须调用 optimize_current_loadout。它返回前不得自行挑选、替换或排序装备。
 13. 自动配装候选固定为普通/M7/M8装备334和制造331，不使用9/6装等。套装不是另一件候选装备，而是选装完成后给四件可催化装备添加的身份；转化不改变属性、装等或特效。
-14. 尾王特效装备是最高装备优先级。331制造装备不设固定件数上限，但每多一件都会因亏装等和主属性损失受到递增惩罚；解释方案时应说明制造件数与代价。展示 is_final_boss_drop 时必须注明“尾王掉落，获取难度高”。
+14. 老七/老八的非饰品特效装备是最高优先级；饰品只走专精BIS。其后依次为普通团本/大秘境装备、最多两件带美化的制造装备、昂贵的团本小怪装绑。制造装备优先披风、护腕、腰带等小部位；解释方案时说明331装等代价。展示 is_final_boss_drop 时必须注明“尾王掉落，获取难度高”。
 15. 用户未指定合剂时，优化器应自动选择一瓶最高品质单绿字合剂并计入属性；宝石不自动选择。
 16. 套装必须说明 tier_acquisition_method；转化套装仍展示原装备名称和来源，并注明催化后的套装名称，不能把它说成属性不同的新装备。
 17. optimize_current_loadout 返回的是前端配装提案。不得把提案再次调用 update_build_state 写入当前装备；前端负责应用用户选择的方案。
@@ -132,11 +134,13 @@ SYSTEM_PROMPT = """你是魔兽世界12.1装备 Builder Agent。你的职责是�
 
 
 class BuilderAgentSession:
-    def __init__(self, full_spec_key: str):
+    def __init__(self, full_spec_key: str, agent_state=None):
         from backend.loadout_validator import rules
         if full_spec_key not in rules()["specs"]:
             raise ValueError(f"unknown spec: {full_spec_key}")
         class_key, spec_key = full_spec_key.split(".", 1)
+        if isinstance(agent_state, dict):
+            agent_state = AgentState.model_validate(agent_state)
         self.build_state = BuildSessionState(class_key=class_key, spec_key=spec_key)
         self.tool_trace = []
         self.last_optimization_result = None
@@ -169,8 +173,13 @@ class BuilderAgentSession:
             system_prompt=SYSTEM_PROMPT,
             model=model,
             toolkit=toolkit,
+            state=agent_state,
             react_config=ReActConfig(max_iters=8),
         )
+
+    def export_agent_state(self) -> dict:
+        """Serialize conversation context, including AgentScope summaries."""
+        return self.agent.state.model_dump(mode="json")
 
     def update_build_state(
         self,
@@ -197,7 +206,25 @@ class BuilderAgentSession:
         if constraints is not None:
             constraint_patch = constraints.model_dump(exclude_none=True) if isinstance(constraints, BaseModel) else constraints
             current["constraints"] = {**current["constraints"], **constraint_patch}
-        self.build_state = BuildSessionState.model_validate(current)
+        candidate = BuildSessionState.model_validate(current)
+        if candidate.equipment:
+            validation = calculate_stats(
+                candidate.class_key,
+                candidate.spec_key,
+                [item.model_dump() for item in candidate.equipment],
+                candidate.consumable_ids,
+                require_complete=False,
+            )
+            if not validation["success"]:
+                result = {
+                    "success": False,
+                    "error": "invalid_build_state",
+                    "validation": validation.get("validation"),
+                }
+                if hasattr(self, "tool_trace"):
+                    self.tool_trace.append({"tool": "update_build_state", "success": False})
+                return result
+        self.build_state = candidate
         result = {"success": True, "state": self.build_state.model_dump()}
         if hasattr(self, "tool_trace"):
             self.tool_trace.append({"tool": "update_build_state", "success": True})

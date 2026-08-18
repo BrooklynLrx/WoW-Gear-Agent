@@ -20,6 +20,7 @@ INSTANCES = {
     "Ruby Life Pools": "红玉新生法池",
     "Temple of Sethraliss": "塞塔里斯神庙",
     "The Venomous Abyss": "烈毒之渊",
+    "Tidebound Grotto": "潮缚石窟",
 }
 
 ENCOUNTERS = {
@@ -55,6 +56,7 @@ ENCOUNTERS = {
     "The Twin Fangs": "双子毒牙",
     "The Coiled Altar": "盘卷祭坛",
     "Ula'tek": "乌拉特克",
+    "Nymrissa Wavecaller": "尼姆瑞莎·唤波者",
 }
 
 CLASSES = {
@@ -95,10 +97,12 @@ WEAPON_CLASSES = {
 SLOT_WORDS = {"Helm": "head", "Shoulder": "shoulder", "Shoulders": "shoulder", "Chest": "chest", "Wrist": "wrist", "Hands": "hands", "Waist": "waist", "Legs": "legs", "Feet": "feet"}
 WEAPON_WORDS = {"1H Axe": "1h_axe", "2H Axe": "2h_axe", "1H Mace": "1h_mace", "2H Mace": "2h_mace", "1H Sword": "1h_sword", "2H Sword": "2h_sword", "1H Dagger": "1h_dagger", "1H Fist Weapon": "1h_fist", "2H Polearm": "2h_polearm", "2H Staff": "2h_staff", "1H Warglaive": "1h_warglaive", "Ranged Wand": "ranged_wand", "Ranged Bow": "ranged_bow", "Ranged Crossbow": "ranged_crossbow", "Ranged Gun": "ranged_gun", "Shield": "shield", "Off-Hand Weapon": "off_hand"}
 ROLE_HINTS = {"Soulcoiler Ritual Vessel": "healer", "Mycolic Medicine": "healer", "Seed of Radiant Hope": "healer", "Preternatural Antivenom": "healer", "First Mate's Shellward": "tank", "Manaheart's Binding Flame": "tank", "Permafrost Essence": "tank"}
+TIDEBOUND_GROTTO_ITEM_IDS = {268262, 268263, 268266, 270167}
 
 
 def normalize_slot(item: dict) -> tuple[str, str | None, str | None]:
     slot = item["slot"]
+    if slot == "Shield": return "weapon", None, "shield"
     text = item["variants"][-1]["tooltip_zh_cn"]
     if "\n饰品\n" in text: return "trinket", None, None
     armor = next((value for label, value in (("布甲", "cloth"), ("皮甲", "leather"), ("锁甲", "mail"), ("板甲", "plate")) if f"\n{label}\n" in text), None)
@@ -149,9 +153,15 @@ def main() -> None:
     source_overrides = {
         251123: ("Kystia Manaheart", "https://www.wowhead.com/guide/midnight/murder-row-dungeon-overview-location-rewards"),
         268231: ("Nek'zali the Soulcoiler", "https://www.wowhead.com/ptr/guide/midnight/raids/venomous-abyss-nekzali-the-soulcoiler-boss-strategy-abilities"),
+        268262: ("Nymrissa Wavecaller", "https://worldofwarcraft.blizzard.com/en-us/news/24295085/step-into-lairs-and-face-the-foes-inside"),
+        268263: ("Nymrissa Wavecaller", "https://worldofwarcraft.blizzard.com/en-us/news/24295085/step-into-lairs-and-face-the-foes-inside"),
+        268266: ("Nymrissa Wavecaller", "https://worldofwarcraft.blizzard.com/en-us/news/24295085/step-into-lairs-and-face-the-foes-inside"),
     }
 
     for item in data["items"]:
+        if item["id"] in TIDEBOUND_GROTTO_ITEM_IDS:
+            item["instance"] = "Tidebound Grotto"
+            item["instance_type"] = "world_boss"
         item["instance_zh_cn"] = INSTANCES[item["instance"]]
         text = item["variants"][-1]["tooltip_zh_cn"]
         dropped = re.search(r"掉落于:\s*([^\n]+)", text)

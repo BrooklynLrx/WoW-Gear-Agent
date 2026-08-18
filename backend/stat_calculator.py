@@ -28,6 +28,22 @@ DR_BANDS = (
     (Decimal("126"), Decimal("0.5")),
 )
 STATS = tuple(RATING_PER_PERCENT)
+def item_static_stats(variant, primary_stat):
+    """Return the stats shown on the item for this spec, including hybrid primaries."""
+    raw = (variant.raw_json or {}).get("stats") or {}
+    primary = int(raw.get(primary_stat, getattr(variant, primary_stat, 0)) or 0)
+    primary += sum(
+        int(value or 0)
+        for key, value in raw.items()
+        if "_or_" in key and primary_stat in key.split("_or_")
+    )
+    return {
+        "primary_stat": primary_stat,
+        "primary_stat_value": primary,
+        "stamina": int(raw.get("stamina", variant.stamina) or 0),
+        # ponytail: armor is null until the source catalog contains an exact value.
+        "armor": int(raw["armor"]) if raw.get("armor") is not None else None,
+    }
 
 
 def _round(value):
@@ -112,7 +128,15 @@ def calculate_equipment(session, class_key, spec_key, equipment, consumable_ids=
     if spec.mastery_coefficient is None:
         raise ValueError(f"missing mastery coefficient: {class_key}.{spec_key}")
 
+    primary_stat = (spec.rules_json or {}).get("primary_stat") or "intellect"
     totals = {stat: 0 for stat in STATS}
+    primary_totals = {
+        "primary_stat": primary_stat,
+        "primary_stat_value": 0,
+        "stamina": 0,
+        "armor": 0,
+        "armor_complete": True,
+    }
     resolved = []
     for selected in equipment:
         row = session.execute(
@@ -127,6 +151,14 @@ def calculate_equipment(session, class_key, spec_key, equipment, consumable_ids=
         if row is None:
             raise ValueError(f"item variant not found: {selected['item_id']}@{selected['item_level']}")
         item, variant = row
+        static_stats = item_static_stats(variant, primary_stat)
+        primary_totals["primary_stat_value"] += static_stats["primary_stat_value"]
+        primary_totals["stamina"] += static_stats["stamina"]
+        if static_stats["armor"] is None:
+            if item.armor_type:
+                primary_totals["armor_complete"] = False
+        else:
+            primary_totals["armor"] += static_stats["armor"]
         crafted_stats = selected.get("crafted_secondary_stats") or {}
         stats = {stat: int(getattr(variant, stat)) + int(crafted_stats.get(stat, 0)) for stat in STATS}
         for stat, value in stats.items():
@@ -137,6 +169,7 @@ def calculate_equipment(session, class_key, spec_key, equipment, consumable_ids=
             "name_zh_cn": item.name_zh_cn,
             "slot_key": item.slot_key,
             "stats": stats,
+            "static_stats": static_stats,
             "crafted_secondary_stats": crafted_stats,
             "catalyst_tier_item_id": selected.get("catalyst_tier_item_id"),
         })
@@ -180,5 +213,6 @@ def calculate_equipment(session, class_key, spec_key, equipment, consumable_ids=
         "spec_name_zh_cn": f"{spec.class_name_zh_cn}·{spec.spec_name_zh_cn}",
         "equipment": resolved,
         "supplements": supplements,
+        "equipment_totals": primary_totals,
     })
     return result

@@ -16,3 +16,6 @@ __pycache__/
 *.sqlite3
 *.pem
 *.key
+node_modules/
+dist/
+*.tsbuildinfo

@@ -1,6 +1,13 @@
 from backend.loadout_optimizer import optimize_loadout, preference_key, score_stats, supplement_stats
 
 
+def test_acquisition_preference_order():
+    ordinary = preference_key(4, 4, 0, 0, 0, embellished=2)
+    late_effect = preference_key(4, 4, 1, 0, 999, embellished=2)
+    boe = preference_key(4, 4, 0, 0, 0, embellished=2, boe=1)
+    assert late_effect < ordinary < boe
+
+
 def test_ratio_score_prefers_matching_distribution():
     objective = [{
         "rule": "rating_ratio",

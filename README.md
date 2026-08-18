@@ -68,11 +68,22 @@ PYTHONPATH=. uvicorn backend.main:app --reload --port 8008
 - Swagger UI: <http://127.0.0.1:8008/docs>
 - 健康检查: <http://127.0.0.1:8008/health>
 
+启动前端：
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+- Web UI: <http://127.0.0.1:5173/builder>
+
 ## Builder API
 
 ```text
 POST   /api/v1/builder/sessions
 GET    /api/v1/builder/sessions/{session_id}
+GET    /api/v1/builder/sessions/{session_id}/stats
 PATCH  /api/v1/builder/sessions/{session_id}
 POST   /api/v1/builder/sessions/{session_id}/messages
 POST   /api/v1/builder/sessions/{session_id}/messages/stream
@@ -83,6 +94,9 @@ GET    /api/v1/loadouts/{loadout_id}
 PATCH  /api/v1/loadouts/{loadout_id}
 DELETE /api/v1/loadouts/{loadout_id}
 POST   /api/v1/loadouts/{loadout_id}/open
+GET    /api/v1/catalog/specs
+GET    /api/v1/loot/instances
+GET    /api/v1/loot/items
 ```
 
 创建奶骑会话：
@@ -133,7 +147,21 @@ PYTHONPATH=. PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 pytest -q
 PYTHONPATH=. python scripts/audit_all_specs.py
 ```
 
-当前基础测试为 21 项，另有 40 专精批量配装审计脚本。
+当前基础测试为 30 项，另有 40 专精批量配装审计脚本。
+
+## Docker 与 Jenkins
+
+生产环境由 `compose.yaml` 启动 MySQL、FastAPI 和 Nginx：
+
+```bash
+docker compose --env-file /opt/wow/.env.production build
+docker compose --env-file /opt/wow/.env.production up -d --wait mysql
+docker compose --env-file /opt/wow/.env.production run --rm backend alembic upgrade head
+docker compose --env-file /opt/wow/.env.production run --rm backend python scripts/import_data.py
+docker compose --env-file /opt/wow/.env.production up -d backend frontend
+```
+
+`Jenkinsfile` 默认构建当前任务检出的分支；Jenkins 任务应配置为从 `develop` 分支读取该文件。
 
 ## 当前限制
 
@@ -141,6 +169,7 @@ PYTHONPATH=. python scripts/audit_all_specs.py
 - 当前是可信小团队共享方案库，`creator_name` 只用于标记和筛选，不提供权限隔离。
 - SimC 导入接口尚未完成。
 - 宝石由用户选择，不自动填充。
+- 当前装备源尚未包含精确护甲值，前端会明确显示“待补齐”，不会估算。
 - 未实现 DPS 模拟；属性目标完全来自用户或后续维护的数据源。
 
 ## 安全

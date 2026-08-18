@@ -199,9 +199,13 @@ class LoadoutConsumable(Base):
 class ChatSession(Timestamps, Base):
     __tablename__ = "chat_sessions"
     id: Mapped[int] = mapped_column(BigInteger, primary_key=True)
-    user_id: Mapped[int] = mapped_column(ForeignKey("users.id", ondelete="CASCADE"))
+    user_id: Mapped[int | None] = mapped_column(ForeignKey("users.id", ondelete="CASCADE"))
     loadout_id: Mapped[int | None] = mapped_column(ForeignKey("loadouts.id", ondelete="SET NULL"))
     title: Mapped[str] = mapped_column(String(160))
+    class_key: Mapped[str | None] = mapped_column(String(40))
+    spec_key: Mapped[str | None] = mapped_column(String(40))
+    state_json: Mapped[dict | None] = mapped_column(JSON)
+    agent_state_json: Mapped[dict | None] = mapped_column(JSON)
 
 
 class ChatMessage(Base):

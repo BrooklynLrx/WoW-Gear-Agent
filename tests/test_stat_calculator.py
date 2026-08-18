@@ -1,8 +1,25 @@
+from types import SimpleNamespace
+
 from backend.stat_calculator import (
     apply_diminishing_returns,
     calculate_percentages,
+    item_static_stats,
     rating_for_percentage,
 )
+
+
+def test_hybrid_primary_stat_is_included_in_equipment_total():
+    variant = SimpleNamespace(
+        raw_json={"stats": {"intellect": 455, "agility_or_intellect": 94, "stamina": 1955}},
+        intellect=0,
+        stamina=0,
+    )
+    assert item_static_stats(variant, "intellect") == {
+        "primary_stat": "intellect",
+        "primary_stat_value": 549,
+        "stamina": 1955,
+        "armor": None,
+    }
 
 
 def test_arcane_mastery_uses_base_before_coefficient():

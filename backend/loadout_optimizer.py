@@ -22,10 +22,17 @@ AUTO_FLASK_IDS = (241326, 241324, 241322, 241320)
 CRAFTED_PRIMARY_STAT_PENALTY = 6.0
 
 
-def preference_key(tier, minimum_tier, late_raid_special, crafted, stat_score):
-    """Meet tier, prefer final-boss effects, then trade stat fit against crafted ilvl loss."""
+def preference_key(tier, minimum_tier, late_raid_special, crafted, stat_score, embellished=0, boe=0, crafted_large=0):
+    """Apply the acquisition policy before comparing secondary-stat fit."""
     crafted_loss = CRAFTED_PRIMARY_STAT_PENALTY * crafted * crafted
-    return (max(minimum_tier - tier, 0), -late_raid_special, stat_score + crafted_loss)
+    return (
+        max(minimum_tier - tier, 0),
+        -late_raid_special,
+        abs(2 - embellished),
+        boe,
+        crafted_large,
+        stat_score + crafted_loss,
+    )
 
 
 @lru_cache(maxsize=1)
@@ -118,6 +125,8 @@ def expand_candidate(item, selected=None):
             "embellished": int(item["is_embellished"]),
             "crafted": int(item["is_crafted"]),
             "late_raid_special": int(item.get("is_late_raid_special_effect", False)),
+            "boe": int(item.get("is_raid_boe", False)),
+            "crafted_large": int(item["is_crafted"] and item["slot_key"] not in {"back", "wrist", "waist"}),
             "unique": bool(item["is_unique_equipped"]),
             "weapon_kind": item.get("weapon_kind"),
             "detail": detail,
@@ -137,6 +146,8 @@ def package(candidates):
         "embellished": sum(value["embellished"] for value in candidates),
         "crafted": sum(value["crafted"] for value in candidates),
         "late_raid_special": sum(value["late_raid_special"] for value in candidates),
+        "boe": sum(value["boe"] for value in candidates),
+        "crafted_large": sum(value["crafted_large"] for value in candidates),
         "item_ids": [value["item_id"] for value in candidates],
         "unique_ids": {value["item_id"] for value in candidates if value["unique"]},
     }
@@ -225,7 +236,8 @@ def optimize_loadout(
             .order_by(BisItem.position)
         ))
 
-    slots = list(sorted(SINGLE_SLOTS)) + ["finger", "trinket", "weapon"]
+    # ponytail: search small crafted slots first; widen the beam only if this heuristic ever misses a valid build.
+    slots = ["back", "wrist", "waist"] + sorted(SINGLE_SLOTS - {"back", "wrist", "waist"}) + ["finger", "trinket", "weapon"]
     candidates = {}
     tier_targets = {}
     bis_trinkets_applied = False
@@ -329,7 +341,7 @@ def optimize_loadout(
 
     beam = [{
         "ratings": ratings, "tier": 0, "tier_capable": 0, "embellished": 0,
-        "crafted": 0, "late_raid_special": 0,
+        "crafted": 0, "late_raid_special": 0, "boe": 0, "crafted_large": 0,
         "consumable_ids": selected_consumables,
         "item_ids": [], "unique_ids": set(), "candidates": [],
     } for selected_consumables, ratings in initial_states]
@@ -337,6 +349,7 @@ def optimize_loadout(
         options.sort(key=lambda option: preference_key(
             option["tier_capable"], minimum_tier, option["late_raid_special"], option["crafted"],
             score_stats(add_stats(baseline, option["stats"]), coefficient, objectives, current_ratings),
+            2, option["boe"], option["crafted_large"],
         ))
         options = options[:MAX_GROUP_OPTIONS]
         expanded = []
@@ -355,6 +368,8 @@ def optimize_loadout(
                     "embellished": state["embellished"] + option["embellished"],
                     "crafted": state["crafted"] + option["crafted"],
                     "late_raid_special": state["late_raid_special"] + option["late_raid_special"],
+                    "boe": state["boe"] + option["boe"],
+                    "crafted_large": state["crafted_large"] + option["crafted_large"],
                     "consumable_ids": state["consumable_ids"],
                     "item_ids": state["item_ids"] + option["item_ids"],
                     "unique_ids": state["unique_ids"] | option["unique_ids"],
@@ -365,6 +380,7 @@ def optimize_loadout(
         expanded.sort(key=lambda state: preference_key(
             state["tier_capable"], minimum_tier, state["late_raid_special"], state["crafted"],
             score_stats(state["ratings"], coefficient, objectives, current_ratings),
+            state["embellished"], state["boe"], state["crafted_large"],
         ))
         beam = expanded[:BEAM_WIDTH]
 
@@ -399,7 +415,9 @@ def optimize_loadout(
             "tier_count": tier_count,
             "embellishment_count": state["embellished"],
             "crafted_item_count": state["crafted"],
+            "crafted_large_slot_count": state["crafted_large"],
             "late_raid_special_effect_count": state["late_raid_special"],
+            "raid_boe_count": state["boe"],
             "changed_item_count": changes,
             "consumable_ids": state["consumable_ids"],
             "selected_flask": next((supplement_catalog()[item_id] for item_id in state["consumable_ids"] if supplement_catalog().get(item_id, {}).get("category") == "flask"), None),
@@ -408,7 +426,8 @@ def optimize_loadout(
             break
     solutions.sort(key=lambda value: preference_key(
         value["tier_count"], minimum_tier, value["late_raid_special_effect_count"],
-        value["crafted_item_count"], value["score"],
+        value["crafted_item_count"], value["score"], value["embellishment_count"],
+        value["raid_boe_count"], value["crafted_large_slot_count"],
     ))
     return {
         "success": bool(solutions),
@@ -428,8 +447,9 @@ def optimize_loadout(
             "新选择的装备不会自动添加宝石。",
             "用户未指定合剂时，自动从四种最高品质单绿字合剂中选择一瓶并计入165点绿字。",
             "套装不作为重复候选参与绿字搜索；选装后从已穿的可催化部位标记四件，属性和特效不变。",
-            "制造装备按331装等并展开可选双绿字；不设件数硬上限，但每多一件都会因主属性损失受到递增惩罚。",
-            "尾王特效装备按最高装备优先级处理；M8尾王装备额外标注获取难度高。",
+            "默认优先凑齐两件美化制造装，并优先披风、护腕、腰带等小部位；游戏规则最多同时装备两件美化。",
+            "老七/老八的非饰品特效装备按最高优先级处理；饰品只按专精BIS选择。",
+            "团本小怪装绑因价格高置于普通副本装和制造装之后；其随机双绿字仍可参与目标计算。",
             "毕业候选池固定为普通/套装334与制造331；更低装等只用于比较当前装备。",
         ],
     }
