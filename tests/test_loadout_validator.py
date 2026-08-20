@@ -1,6 +1,7 @@
 from types import SimpleNamespace
 
 from backend.loadout_validator import item_is_available_for_spec, valid_weapon_set, weapon_kind_available_in_position
+from scripts.build_crafted_gear import build
 
 
 def item(weapon_type, slot=""):
@@ -43,3 +44,16 @@ def test_single_item_eligibility_is_strict_for_armor_weapons_and_trinkets():
     assert item_is_available_for_spec("mage", "arcane", gear("trinket", specs=["mage.arcane"]))
     assert not item_is_available_for_spec("mage", "arcane", gear("trinket", specs=["paladin.holy"]))
     assert not item_is_available_for_spec("mage", "arcane", gear("trinket"))
+    assert not item_is_available_for_spec("mage", "arcane", gear("weapon", weapon="2h_staff", specs=[]))
+
+
+def test_crafted_weapons_match_spec_primary_stat():
+    items = {item["id"]: item for item in build()["items"]}
+    intellect_staff = items[245770]
+    agility_staff = items[245771]
+
+    assert "mage.arcane" in intellect_staff["candidate_specs"]
+    assert "mage.arcane" not in agility_staff["candidate_specs"]
+    assert "druid.feral" in agility_staff["candidate_specs"]
+    assert "druid.feral" not in intellect_staff["candidate_specs"]
+    assert all(item["candidate_specs"] for item in items.values() if item["weapon_type"])

@@ -12,7 +12,7 @@ from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse
 from pydantic import BaseModel, Field, field_validator
-from sqlalchemy import delete, select
+from sqlalchemy import delete, func, select
 
 from backend.builder_agent import (
     BuildConstraintsPatch,
@@ -376,25 +376,29 @@ def create_conversation(body: CreateConversationRequest) -> ConversationDetail:
 @app.get("/api/v1/conversations", response_model=list[ConversationSummary])
 def list_conversations() -> list[ConversationSummary]:
     with SessionLocal() as db:
-        rows = db.scalars(select(ChatSession).order_by(ChatSession.updated_at.desc(), ChatSession.id.desc())).all()
-        result = []
-        for conversation in rows:
-            if not conversation.class_key or not conversation.spec_key or not conversation.state_json:
-                continue
-            message_count = len(db.scalars(
-                select(ChatMessage.id).where(ChatMessage.session_id == conversation.id)
-            ).all())
-            result.append(ConversationSummary(
-                id=conversation.id,
-                title=conversation.title,
-                class_key=conversation.class_key,
-                spec_key=conversation.spec_key,
-                message_count=message_count,
-                has_compressed_context=bool((conversation.agent_state_json or {}).get("summary")),
-                created_at=conversation.created_at,
-                updated_at=conversation.updated_at,
-            ))
-        return result
+        message_count = select(func.count(ChatMessage.id)).where(
+            ChatMessage.session_id == ChatSession.id
+        ).correlate(ChatSession).scalar_subquery()
+        statement = select(
+            ChatSession.id,
+            ChatSession.title,
+            ChatSession.class_key,
+            ChatSession.spec_key,
+            ChatSession.created_at,
+            ChatSession.updated_at,
+            message_count.label("message_count"),
+            func.json_extract(ChatSession.agent_state_json, "$.summary").is_not(None).label("has_compressed_context"),
+        ).where(
+            ChatSession.class_key.is_not(None),
+            ChatSession.spec_key.is_not(None),
+            ChatSession.state_json.is_not(None),
+        ).order_by(
+            ChatSession.updated_at.desc(), ChatSession.id.desc()
+        ).with_hint(
+            ChatSession, "FORCE INDEX (ix_chat_sessions_updated_at_id)", dialect_name="mysql"
+        )
+        rows = db.execute(statement).all()
+        return [ConversationSummary(**row._mapping) for row in rows]
 
 
 @app.get("/api/v1/conversations/{conversation_id}", response_model=ConversationDetail)

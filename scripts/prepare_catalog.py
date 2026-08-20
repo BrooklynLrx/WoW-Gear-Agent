@@ -100,6 +100,42 @@ ROLE_HINTS = {"Soulcoiler Ritual Vessel": "healer", "Mycolic Medicine": "healer"
 TIDEBOUND_GROTTO_ITEM_IDS = {268262, 268263, 268266, 270167}
 
 
+def apply_known_item_corrections(item: dict) -> None:
+    """Keep confirmed live hotfixes from being reverted by stale tooltip data."""
+    if item["id"] in {271092, 271093}:
+        item["unique_equipped"] = True
+
+    for variant in item.get("variants", []):
+        stats = variant.get("stats", {})
+        tooltip = variant.get("tooltip_zh_cn", "")
+        if item["id"] == 268265 and "critical_strike" in stats and not {"haste", "mastery", "versatility"}.intersection(stats):
+            value = (int(stats.pop("critical_strike")) + 2) // 4
+            stats.update({key: value for key in ("critical_strike", "haste", "mastery", "versatility")})
+            variant["sockets"] = 2
+            tooltip = re.sub(
+                r"\+\n\d+暴击\n棱彩插槽",
+                f"+\n{value}暴击\n+\n{value}急速\n+\n{value}精通\n+\n{value}全能\n棱彩插槽\n棱彩插槽",
+                tooltip,
+                count=1,
+            )
+            tooltip = re.sub(
+                r"你的法术和技能有几率使你的(?:爆击|急速|精通|全能)提高",
+                "你的法术和技能有几率使你的一项随机次要属性提高",
+                tooltip,
+                count=1,
+            )
+            item["effect_stat_policy"] = "count_static_item_stats_only"
+        elif item["id"] == 271876 and "critical_strike" in stats:
+            value = stats.pop("critical_strike")
+            stats["mastery"] = value
+            tooltip = tooltip.replace(f"{value}暴击", f"{value}精通", 1).replace("使你的爆击提高", "使你的精通提高", 1)
+        elif item["id"] == 271878 and "mastery" in stats:
+            value = stats.pop("mastery")
+            stats["critical_strike"] = value
+            tooltip = tooltip.replace(f"{value}精通", f"{value}暴击", 1).replace("使你的精通提高", "使你的爆击提高", 1)
+        variant["tooltip_zh_cn"] = tooltip
+
+
 def normalize_slot(item: dict) -> tuple[str, str | None, str | None]:
     slot = item["slot"]
     if slot == "Shield": return "weapon", None, "shield"
@@ -159,6 +195,7 @@ def main() -> None:
     }
 
     for item in data["items"]:
+        apply_known_item_corrections(item)
         if item["id"] in TIDEBOUND_GROTTO_ITEM_IDS:
             item["instance"] = "Tidebound Grotto"
             item["instance_type"] = "world_boss"

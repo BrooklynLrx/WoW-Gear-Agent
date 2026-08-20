@@ -1805,7 +1805,30 @@
       "unique_equipped": false,
       "effect_stat_policy": "count_static_item_stats_only",
       "static_secondary_stats_included": true,
-      "triggered_secondary_stats_included": false
+      "triggered_secondary_stats_included": false,
+      "candidate_specs": [
+        "death_knight.frost",
+        "demon_hunter.havoc",
+        "demon_hunter.vengeance",
+        "monk.brewmaster",
+        "monk.windwalker",
+        "paladin.protection",
+        "rogue.assassination",
+        "rogue.outlaw",
+        "rogue.subtlety",
+        "shaman.enhancement",
+        "warrior.fury",
+        "warrior.protection"
+      ],
+      "candidate_classes": [
+        "death_knight",
+        "demon_hunter",
+        "monk",
+        "paladin",
+        "rogue",
+        "shaman",
+        "warrior"
+      ]
     },
     {
       "id": 237837,
@@ -1985,7 +2008,15 @@
       "unique_equipped": false,
       "effect_stat_policy": "count_static_item_stats_only",
       "static_secondary_stats_included": true,
-      "triggered_secondary_stats_included": false
+      "triggered_secondary_stats_included": false,
+      "candidate_specs": [
+        "rogue.assassination",
+        "rogue.outlaw",
+        "rogue.subtlety"
+      ],
+      "candidate_classes": [
+        "rogue"
+      ]
     },
     {
       "id": 244472,
@@ -2175,7 +2206,19 @@
           ]
         }
       ],
-      "secondary_stat_mode": "customizable"
+      "secondary_stat_mode": "customizable",
+      "candidate_specs": [
+        "paladin.holy",
+        "paladin.protection",
+        "shaman.elemental",
+        "shaman.restoration",
+        "warrior.protection"
+      ],
+      "candidate_classes": [
+        "paladin",
+        "shaman",
+        "warrior"
+      ]
     },
     {
       "id": 244679,
@@ -2356,7 +2399,15 @@
           ]
         }
       ],
-      "secondary_stat_mode": "customizable"
+      "secondary_stat_mode": "customizable",
+      "candidate_specs": [
+        "rogue.assassination",
+        "rogue.outlaw",
+        "rogue.subtlety"
+      ],
+      "candidate_classes": [
+        "rogue"
+      ]
     },
     {
       "id": 237839,
@@ -2536,7 +2587,28 @@
       "unique_equipped": false,
       "effect_stat_policy": "count_static_item_stats_only",
       "static_secondary_stats_included": true,
-      "triggered_secondary_stats_included": false
+      "triggered_secondary_stats_included": false,
+      "candidate_specs": [
+        "death_knight.frost",
+        "demon_hunter.havoc",
+        "demon_hunter.vengeance",
+        "monk.brewmaster",
+        "monk.windwalker",
+        "paladin.protection",
+        "rogue.assassination",
+        "rogue.outlaw",
+        "rogue.subtlety",
+        "warrior.fury",
+        "warrior.protection"
+      ],
+      "candidate_classes": [
+        "death_knight",
+        "demon_hunter",
+        "monk",
+        "paladin",
+        "rogue",
+        "warrior"
+      ]
     },
     {
       "id": 237831,
@@ -2725,7 +2797,19 @@
       "unique_equipped": false,
       "effect_stat_policy": "count_static_item_stats_only",
       "static_secondary_stats_included": true,
-      "triggered_secondary_stats_included": false
+      "triggered_secondary_stats_included": false,
+      "candidate_specs": [
+        "paladin.holy",
+        "paladin.protection",
+        "shaman.elemental",
+        "shaman.restoration",
+        "warrior.protection"
+      ],
+      "candidate_classes": [
+        "paladin",
+        "shaman",
+        "warrior"
+      ]
     },
     {
       "id": 237841,
@@ -2905,7 +2989,27 @@
       "unique_equipped": false,
       "effect_stat_policy": "count_static_item_stats_only",
       "static_secondary_stats_included": true,
-      "triggered_secondary_stats_included": false
+      "triggered_secondary_stats_included": false,
+      "candidate_specs": [
+        "death_knight.frost",
+        "monk.brewmaster",
+        "monk.windwalker",
+        "paladin.protection",
+        "rogue.assassination",
+        "rogue.outlaw",
+        "rogue.subtlety",
+        "shaman.enhancement",
+        "warrior.fury",
+        "warrior.protection"
+      ],
+      "candidate_classes": [
+        "death_knight",
+        "monk",
+        "paladin",
+        "rogue",
+        "shaman",
+        "warrior"
+      ]
     },
     {
       "id": 237840,
@@ -3094,7 +3198,15 @@
       "unique_equipped": false,
       "effect_stat_policy": "count_static_item_stats_only",
       "static_secondary_stats_included": true,
-      "triggered_secondary_stats_included": false
+      "triggered_secondary_stats_included": false,
+      "candidate_specs": [
+        "demon_hunter.devourer",
+        "demon_hunter.havoc",
+        "demon_hunter.vengeance"
+      ],
+      "candidate_classes": [
+        "demon_hunter"
+      ]
     },
     {
       "id": 237834,
@@ -3978,7 +4090,35 @@
       "unique_equipped": false,
       "effect_stat_policy": "count_static_item_stats_only",
       "static_secondary_stats_included": true,
-      "triggered_secondary_stats_included": false
+      "triggered_secondary_stats_included": false,
+      "candidate_specs": [
+        "druid.balance",
+        "druid.restoration",
+        "evoker.augmentation",
+        "evoker.devastation",
+        "evoker.preservation",
+        "mage.arcane",
+        "mage.fire",
+        "mage.frost",
+        "monk.mistweaver",
+        "priest.discipline",
+        "priest.holy",
+        "priest.shadow",
+        "shaman.elemental",
+        "shaman.restoration",
+        "warlock.affliction",
+        "warlock.demonology",
+        "warlock.destruction"
+      ],
+      "candidate_classes": [
+        "druid",
+        "evoker",
+        "mage",
+        "monk",
+        "priest",
+        "shaman",
+        "warlock"
+      ]
     },
     {
       "id": 245769,
@@ -4158,7 +4298,35 @@
       "unique_equipped": false,
       "effect_stat_policy": "count_static_item_stats_only",
       "static_secondary_stats_included": true,
-      "triggered_secondary_stats_included": false
+      "triggered_secondary_stats_included": false,
+      "candidate_specs": [
+        "druid.balance",
+        "druid.restoration",
+        "evoker.augmentation",
+        "evoker.devastation",
+        "evoker.preservation",
+        "mage.arcane",
+        "mage.fire",
+        "mage.frost",
+        "monk.mistweaver",
+        "priest.discipline",
+        "priest.holy",
+        "priest.shadow",
+        "shaman.elemental",
+        "shaman.restoration",
+        "warlock.affliction",
+        "warlock.demonology",
+        "warlock.destruction"
+      ],
+      "candidate_classes": [
+        "druid",
+        "evoker",
+        "mage",
+        "monk",
+        "priest",
+        "shaman",
+        "warlock"
+      ]
     },
     {
       "id": 245771,
@@ -4338,7 +4506,19 @@
       "unique_equipped": false,
       "effect_stat_policy": "count_static_item_stats_only",
       "static_secondary_stats_included": true,
-      "triggered_secondary_stats_included": false
+      "triggered_secondary_stats_included": false,
+      "candidate_specs": [
+        "druid.feral",
+        "druid.guardian",
+        "hunter.survival",
+        "monk.brewmaster",
+        "monk.windwalker"
+      ],
+      "candidate_classes": [
+        "druid",
+        "hunter",
+        "monk"
+      ]
     },
     {
       "id": 265337,
@@ -4518,7 +4698,14 @@
       "unique_equipped": false,
       "effect_stat_policy": "count_static_item_stats_only",
       "static_secondary_stats_included": true,
-      "triggered_secondary_stats_included": false
+      "triggered_secondary_stats_included": false,
+      "candidate_specs": [
+        "hunter.beast_mastery",
+        "hunter.marksmanship"
+      ],
+      "candidate_classes": [
+        "hunter"
+      ]
     },
     {
       "id": 240950,

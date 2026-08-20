@@ -91,7 +91,7 @@ def item_is_available_for_spec(class_key, spec_key, item):
     candidate_specs = raw.get("candidate_specs")
     if candidate_classes and class_key not in candidate_classes:
         return False
-    if candidate_specs and full_spec_key not in candidate_specs:
+    if candidate_specs is not None and full_spec_key not in candidate_specs:
         return False
     if slot == "trinket" and not candidate_specs:
         return False

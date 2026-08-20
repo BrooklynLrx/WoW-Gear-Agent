@@ -18,6 +18,7 @@ from backend.stat_calculator import STATS, calculate_percentages
 DATA = Path(__file__).resolve().parents[1] / "data" / "12.1-season2-consumables.json"
 BEAM_WIDTH = 1200
 MAX_GROUP_OPTIONS = 300
+MAX_CRAFTED_ITEMS = 2
 AUTO_FLASK_IDS = (241326, 241324, 241322, 241320)
 CRAFTED_PRIMARY_STAT_PENALTY = 6.0
 
@@ -42,6 +43,10 @@ def supplement_catalog():
 
 def add_stats(left, right):
     return {stat: int(left.get(stat, 0)) + int(right.get(stat, 0)) for stat in STATS}
+
+
+def crafted_budget_allows(state, option):
+    return state["crafted"] + option["crafted"] <= MAX_CRAFTED_ITEMS
 
 
 def supplement_stats(item_ids):
@@ -236,8 +241,7 @@ def optimize_loadout(
             .order_by(BisItem.position)
         ))
 
-    # ponytail: search small crafted slots first; widen the beam only if this heuristic ever misses a valid build.
-    slots = ["back", "wrist", "waist"] + sorted(SINGLE_SLOTS - {"back", "wrist", "waist"}) + ["finger", "trinket", "weapon"]
+    slots = ["head", "neck", "shoulders", "back", "chest", "wrist", "gloves", "waist", "legs", "feet", "finger", "trinket", "weapon"]
     candidates = {}
     tier_targets = {}
     bis_trinkets_applied = False
@@ -303,8 +307,12 @@ def optimize_loadout(
             if key not in existing:
                 candidates[slot].insert(0, value)
 
+    required_slots = locked_slots | {
+        slot for slot, values in current_by_slot.items()
+        if any(value["item_id"] in locked_ids for value in values)
+    }
     groups = []
-    for slot in slots:
+    for slot in sorted(slots, key=lambda value: value not in required_slots):
         values = candidates[slot]
         if slot in locked_slots:
             values = current_by_slot[slot]
@@ -356,6 +364,8 @@ def optimize_loadout(
         for state in beam:
             for option in options:
                 if state["embellished"] + option["embellished"] > 2:
+                    continue
+                if not crafted_budget_allows(state, option):
                     continue
                 if option["unique_ids"] & set(state["item_ids"]):
                     continue
@@ -447,7 +457,7 @@ def optimize_loadout(
             "新选择的装备不会自动添加宝石。",
             "用户未指定合剂时，自动从四种最高品质单绿字合剂中选择一瓶并计入165点绿字。",
             "套装不作为重复候选参与绿字搜索；选装后从已穿的可催化部位标记四件，属性和特效不变。",
-            "默认优先凑齐两件美化制造装，并优先披风、护腕、腰带等小部位；游戏规则最多同时装备两件美化。",
+            "毕业方案整套最多选择两件制造装备，制造武器也计入；其中美化装备同样不得超过两件。",
             "老七/老八的非饰品特效装备按最高优先级处理；饰品只按专精BIS选择。",
             "团本小怪装绑因价格高置于普通副本装和制造装之后；其随机双绿字仍可参与目标计算。",
             "毕业候选池固定为普通/套装334与制造331；更低装等只用于比较当前装备。",

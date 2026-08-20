@@ -1,4 +1,4 @@
-from backend.loadout_optimizer import optimize_loadout, preference_key, score_stats, supplement_stats
+from backend.loadout_optimizer import crafted_budget_allows, optimize_loadout, preference_key, score_stats, supplement_stats
 
 
 def test_acquisition_preference_order():
@@ -40,3 +40,8 @@ def test_optimizer_uses_hard_acquisition_priorities_before_stats():
 
 def test_highest_quality_flask_rating_is_counted():
     assert supplement_stats([241326])["critical_strike"] == 165
+
+
+def test_crafted_weapon_uses_the_same_two_item_budget():
+    assert crafted_budget_allows({"crafted": 1}, {"crafted": 1})
+    assert not crafted_budget_allows({"crafted": 1}, {"crafted": 2})

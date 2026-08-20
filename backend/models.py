@@ -2,7 +2,7 @@ from datetime import datetime
 from decimal import Decimal
 
 from sqlalchemy import (
-    BigInteger, Boolean, DateTime, ForeignKey, Integer, JSON, Numeric, String,
+    BigInteger, Boolean, DateTime, ForeignKey, Index, Integer, JSON, Numeric, String,
     Text, UniqueConstraint, func,
 )
 from sqlalchemy.orm import Mapped, mapped_column
@@ -198,6 +198,7 @@ class LoadoutConsumable(Base):
 
 class ChatSession(Timestamps, Base):
     __tablename__ = "chat_sessions"
+    __table_args__ = (Index("ix_chat_sessions_updated_at_id", "updated_at", "id"),)
     id: Mapped[int] = mapped_column(BigInteger, primary_key=True)
     user_id: Mapped[int | None] = mapped_column(ForeignKey("users.id", ondelete="CASCADE"))
     loadout_id: Mapped[int | None] = mapped_column(ForeignKey("loadouts.id", ondelete="SET NULL"))

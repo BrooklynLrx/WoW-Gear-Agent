@@ -112,6 +112,8 @@ EMBELLISHED = {
 
 
 def build():
+    spec_catalog = json.loads((OUT.parent / "12.1-season2-loot.json").read_text())["spec_catalog"]
+    equipment_specs = json.loads((OUT.parent / "12.1-equipment-rules.json").read_text())["specs"]
     tracks = {
         "spark_of_tides": {"quality_1": 292, "quality_2": 296, "quality_3": 299, "quality_4": 302, "quality_5": 305},
         "hero_mistcrest": {"quality_1": 305, "quality_2": 309, "quality_3": 312, "quality_4": 315, "quality_5": 318},
@@ -180,6 +182,28 @@ def build():
                 if old.get(item_id, {}).get(key) is not None:
                     item[key] = old[item_id][key]
             items.append(item)
+    for item in items:
+        if not item["weapon_type"]:
+            continue
+        stats = item["variants"][-1]["stats"]
+        primaries = {
+            value
+            for key in stats
+            for value in key.split("_or_")
+            if value in {"strength", "agility", "intellect"}
+        }
+        weapon_kind = "held_in_off_hand" if item["weapon_type"] == "off_hand" else item["weapon_type"]
+        item["candidate_specs"] = [
+            spec_key
+            for spec_key, spec in spec_catalog.items()
+            if spec["primary_stat"] in primaries and any(
+                weapon_kind in kinds
+                for option in equipment_specs[spec_key]["weapon_loadouts"]
+                for rule in option.values()
+                for kinds in (rule.values() if isinstance(rule, dict) else [rule])
+            )
+        ]
+        item["candidate_classes"] = sorted({spec_catalog[key]["class"] for key in item["candidate_specs"]})
     return {
         "patch": "12.1",
         "season": "Midnight Season 2",

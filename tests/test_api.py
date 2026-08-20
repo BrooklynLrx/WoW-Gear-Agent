@@ -5,6 +5,7 @@ from fastapi.testclient import TestClient
 
 import backend.main as api
 from backend.builder_agent import BuildSessionState
+from backend.models import ChatSession
 
 
 class FakeBuilder:
@@ -33,6 +34,11 @@ class FakeBuilder:
         yield {"event": "proposal", "data": {"success": True, "solutions": []}}
         yield {"event": "state", "data": self.build_state.model_dump()}
         yield {"event": "done", "data": {"message": message, "tool_trace": []}}
+
+
+def test_chat_sessions_index_matches_recent_conversation_order():
+    index = next(value for value in ChatSession.__table__.indexes if value.name == "ix_chat_sessions_updated_at_id")
+    assert [column.name for column in index.columns] == ["updated_at", "id"]
 
 
 def test_builder_http_flow(monkeypatch):
