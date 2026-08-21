@@ -1,4 +1,5 @@
 from backend.loadout_optimizer import choose_auto_flask, crafted_budget_allows, optimize_loadout, preference_key, remainder_score, score_stats, supplement_stats
+from backend.loadout_optimizer import expand_candidate
 
 
 def test_acquisition_preference_order():
@@ -77,3 +78,21 @@ def test_auto_flask_uses_current_ratings_for_increase_objective():
 def test_crafted_weapon_uses_the_same_two_item_budget():
     assert crafted_budget_allows({"crafted": 1}, {"crafted": 1})
     assert not crafted_budget_allows({"crafted": 1}, {"crafted": 2})
+
+
+def test_engineering_cogwheel_expands_one_selected_stat():
+    item = {
+        "item_id": 1, "item_level": 331, "stats": {}, "customizable_secondaries": True,
+        "customizable_secondary_amounts": [198],
+        "secondary_stat_choices": ["critical_strike", "haste", "mastery", "versatility"],
+        "is_tier": False, "is_embellished": False, "is_crafted": True,
+        "is_late_raid_special_effect": False, "is_raid_boe": False,
+        "is_penultimate_boss_drop": False, "is_final_boss_drop": False,
+        "is_unique_equipped": False,
+        "slot_key": "head",
+    }
+
+    variants = expand_candidate(item)
+
+    assert len(variants) == 4
+    assert all(list(value["equipment"]["crafted_secondary_stats"].values()) == [198] for value in variants)

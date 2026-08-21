@@ -7,8 +7,8 @@
     "crafted_items_use_standard_upgrade_tracks": false,
     "optimizer_default": "myth_mistcrest quality_5 (331)",
     "crafted_max_is_below_myth_6_6_by_item_levels": 3,
-    "secondary_stats": "Choose one of six two-stat pairs with a Thalassian combat missive.",
-    "custom_secondary_distribution": "The two selected ratings receive the two values in variants[].customizable_secondary_amounts; current recipes split them equally.",
+    "secondary_stats": "Most recipes choose a two-stat pair with a Thalassian combat missive; Engineering cogwheel gear chooses one stat.",
+    "custom_secondary_distribution": "Selected ratings receive the values in variants[].customizable_secondary_amounts; most recipes select two, Engineering cogwheel gear selects one.",
     "recrafting": "Can change quality/item level, chosen secondary pair, and optional reagents.",
     "catalyst": "Crafted gear is not eligible for tier conversion.",
     "effect_items": "Always include item level, primary stats, secondary stats and sockets; effect value is currently zero/unknown."
@@ -50,6 +50,14 @@
   },
   "sources": [
     "https://www.wowhead.com/guide/professions/overview",
+    "https://www.wow-professions.com/midnight/alchemy-guide",
+    "https://www.wow-professions.com/midnight/blacksmithing-guide",
+    "https://www.wow-professions.com/midnight/enchanting-guide",
+    "https://www.wow-professions.com/midnight/engineering-guide",
+    "https://www.wow-professions.com/midnight/inscription-guide",
+    "https://www.wow-professions.com/midnight/jewelcrafting-guide",
+    "https://www.wow-professions.com/midnight/leatherworking-guide",
+    "https://www.wow-professions.com/midnight/tailoring-guide",
     "https://www.wowhead.com/ptr/currency=3445/hero-mistcrest",
     "https://www.wowhead.com/ptr/currency=3446/myth-mistcrest",
     "https://www.wowhead.com/news/full-patch-12-1-curse-of-ulatek-ptr-development-notes-381914"
@@ -1628,6 +1636,977 @@
       "triggered_secondary_stats_included": false
     },
     {
+      "id": 237847,
+      "name_en": "Blood Knight's Impetus",
+      "name_zh_cn": "血骑士的强击矛",
+      "profession": "blacksmithing",
+      "slot_key": "weapon",
+      "armor_type": null,
+      "weapon_type": "2h_polearm",
+      "customizable_secondaries": true,
+      "secondary_stat_choices": [
+        "critical_strike",
+        "haste",
+        "mastery",
+        "versatility"
+      ],
+      "secondary_stats_selected": 2,
+      "embellished": false,
+      "catalyst_eligible": false,
+      "item_levels": {
+        "spark_of_tides": {
+          "quality_1": 292,
+          "quality_2": 296,
+          "quality_3": 299,
+          "quality_4": 302,
+          "quality_5": 305
+        },
+        "hero_mistcrest": {
+          "quality_1": 305,
+          "quality_2": 309,
+          "quality_3": 312,
+          "quality_4": 315,
+          "quality_5": 318
+        },
+        "myth_mistcrest": {
+          "quality_1": 318,
+          "quality_2": 322,
+          "quality_3": 325,
+          "quality_4": 328,
+          "quality_5": 331
+        }
+      },
+      "default_optimizer_item_level": 331,
+      "spark_of_tides_cost": 4,
+      "wowhead_url": "https://www.wowhead.com/item=237847",
+      "icon": "inv_polearm_2h_questbloodelf_b_01",
+      "variants": [
+        {
+          "item_level": 305,
+          "quality": 4,
+          "stats": {
+            "stamina": 2794,
+            "agility_or_strength": 144
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "血骑士的强击矛\n物品等级：\n305\n拾取后绑定\n双手\n长柄武器\n272 - 507点伤害\n速度\n3.60\n（每秒伤害108.2点）\n+144 [敏捷 or 力量]\n+2,794 耐力\n+\n89 随机属性1\n+\n89 随机属性2\n耐久: 120 / 120\n需要等级\n90\n售价:\n173\n69\n21",
+          "customizable_secondary_amounts": [
+            89,
+            89
+          ]
+        },
+        {
+          "item_level": 309,
+          "quality": 4,
+          "stats": {
+            "stamina": 2931,
+            "agility_or_strength": 149
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "血骑士的强击矛\n物品等级：\n309\n拾取后绑定\n双手\n长柄武器\n283 - 526点伤害\n速度\n3.60\n（每秒伤害112.4点）\n+149 [敏捷 or 力量]\n+2,931 耐力\n+\n90 随机属性1\n+\n90 随机属性2\n耐久: 120 / 120\n需要等级\n90\n售价:\n173\n69\n21",
+          "customizable_secondary_amounts": [
+            90,
+            90
+          ]
+        },
+        {
+          "item_level": 312,
+          "quality": 4,
+          "stats": {
+            "stamina": 3037,
+            "agility_or_strength": 154
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "血骑士的强击矛\n物品等级：\n312\n拾取后绑定\n双手\n长柄武器\n291 - 541点伤害\n速度\n3.60\n（每秒伤害115.6点）\n+154 [敏捷 or 力量]\n+3,037 耐力\n+\n92 随机属性1\n+\n92 随机属性2\n耐久: 120 / 120\n需要等级\n90\n售价:\n173\n69\n21",
+          "customizable_secondary_amounts": [
+            92,
+            92
+          ]
+        },
+        {
+          "item_level": 315,
+          "quality": 4,
+          "stats": {
+            "stamina": 3143,
+            "agility_or_strength": 158
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "血骑士的强击矛\n物品等级：\n315\n拾取后绑定\n双手\n长柄武器\n299 - 556点伤害\n速度\n3.60\n（每秒伤害118.8点）\n+158 [敏捷 or 力量]\n+3,143 耐力\n+\n93 随机属性1\n+\n93 随机属性2\n耐久: 120 / 120\n需要等级\n90\n售价:\n173\n69\n21",
+          "customizable_secondary_amounts": [
+            93,
+            93
+          ]
+        },
+        {
+          "item_level": 318,
+          "quality": 4,
+          "stats": {
+            "stamina": 3254,
+            "agility_or_strength": 162
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "血骑士的强击矛\n物品等级：\n318\n拾取后绑定\n双手\n长柄武器\n308 - 572点伤害\n速度\n3.60\n（每秒伤害122.2点）\n+162 [敏捷 or 力量]\n+3,254 耐力\n+\n94 随机属性1\n+\n94 随机属性2\n耐久: 120 / 120\n需要等级\n90\n售价:\n173\n69\n21",
+          "customizable_secondary_amounts": [
+            94,
+            94
+          ]
+        },
+        {
+          "item_level": 322,
+          "quality": 4,
+          "stats": {
+            "stamina": 3408,
+            "agility_or_strength": 169
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "血骑士的强击矛\n物品等级：\n322\n拾取后绑定\n双手\n长柄武器\n319 - 594点伤害\n速度\n3.60\n（每秒伤害126.8点）\n+169 [敏捷 or 力量]\n+3,408 耐力\n+\n96 随机属性1\n+\n96 随机属性2\n耐久: 120 / 120\n需要等级\n90\n售价:\n173\n69\n21",
+          "customizable_secondary_amounts": [
+            96,
+            96
+          ]
+        },
+        {
+          "item_level": 325,
+          "quality": 4,
+          "stats": {
+            "stamina": 3527,
+            "agility_or_strength": 173
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "血骑士的强击矛\n物品等级：\n325\n拾取后绑定\n双手\n长柄武器\n328 - 611点伤害\n速度\n3.60\n（每秒伤害130.4点）\n+173 [敏捷 or 力量]\n+3,527 耐力\n+\n97 随机属性1\n+\n97 随机属性2\n耐久: 120 / 120\n需要等级\n90\n售价:\n173\n69\n21",
+          "customizable_secondary_amounts": [
+            97,
+            97
+          ]
+        },
+        {
+          "item_level": 328,
+          "quality": 4,
+          "stats": {
+            "stamina": 3649,
+            "agility_or_strength": 178
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "血骑士的强击矛\n物品等级：\n328\n拾取后绑定\n双手\n长柄武器\n338 - 628点伤害\n速度\n3.60\n（每秒伤害134.2点）\n+178 [敏捷 or 力量]\n+3,649 耐力\n+\n98 随机属性1\n+\n98 随机属性2\n耐久: 120 / 120\n需要等级\n90\n售价:\n173\n69\n21",
+          "customizable_secondary_amounts": [
+            98,
+            98
+          ]
+        },
+        {
+          "item_level": 331,
+          "quality": 4,
+          "stats": {
+            "stamina": 3777,
+            "agility_or_strength": 183
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "血骑士的强击矛\n物品等级：\n331\n拾取后绑定\n双手\n长柄武器\n347 - 646点伤害\n速度\n3.60\n（每秒伤害137.9点）\n+183 [敏捷 or 力量]\n+3,777 耐力\n+\n99 随机属性1\n+\n99 随机属性2\n耐久: 120 / 120\n需要等级\n90\n售价:\n173\n69\n21",
+          "customizable_secondary_amounts": [
+            99,
+            99
+          ]
+        }
+      ],
+      "secondary_stat_mode": "customizable",
+      "sockets": 0,
+      "unique_equipped": false,
+      "effect_stat_policy": "count_static_item_stats_only",
+      "static_secondary_stats_included": true,
+      "triggered_secondary_stats_included": false,
+      "candidate_specs": [
+        "druid.feral",
+        "druid.guardian",
+        "hunter.survival",
+        "monk.brewmaster",
+        "monk.windwalker",
+        "paladin.retribution",
+        "warrior.arms"
+      ],
+      "candidate_classes": [
+        "druid",
+        "hunter",
+        "monk",
+        "paladin",
+        "warrior"
+      ]
+    },
+    {
+      "id": 237848,
+      "name_en": "Blood Knight's Mercy",
+      "name_zh_cn": "血骑士的慈悲",
+      "profession": "blacksmithing",
+      "slot_key": "weapon",
+      "armor_type": null,
+      "weapon_type": "2h_mace",
+      "customizable_secondaries": true,
+      "secondary_stat_choices": [
+        "critical_strike",
+        "haste",
+        "mastery",
+        "versatility"
+      ],
+      "secondary_stats_selected": 2,
+      "embellished": false,
+      "catalyst_eligible": false,
+      "item_levels": {
+        "spark_of_tides": {
+          "quality_1": 292,
+          "quality_2": 296,
+          "quality_3": 299,
+          "quality_4": 302,
+          "quality_5": 305
+        },
+        "hero_mistcrest": {
+          "quality_1": 305,
+          "quality_2": 309,
+          "quality_3": 312,
+          "quality_4": 315,
+          "quality_5": 318
+        },
+        "myth_mistcrest": {
+          "quality_1": 318,
+          "quality_2": 322,
+          "quality_3": 325,
+          "quality_4": 328,
+          "quality_5": 331
+        }
+      },
+      "default_optimizer_item_level": 331,
+      "spark_of_tides_cost": 4,
+      "wowhead_url": "https://www.wowhead.com/item=237848",
+      "icon": "mace_2h_blacksmithing_d_04_icon",
+      "variants": [
+        {
+          "item_level": 305,
+          "quality": 4,
+          "stats": {
+            "stamina": 2794,
+            "agility_or_strength": 144
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "血骑士的慈悲\n物品等级：\n305\n拾取后绑定\n双手\n权杖\n341 - 439点伤害\n速度\n3.60\n（每秒伤害108.3点）\n+144 [敏捷 or 力量]\n+2,794 耐力\n+\n89 随机属性1\n+\n89 随机属性2\n耐久: 120 / 120\n需要等级\n90\n售价:\n174\n36\n62",
+          "customizable_secondary_amounts": [
+            89,
+            89
+          ]
+        },
+        {
+          "item_level": 309,
+          "quality": 4,
+          "stats": {
+            "stamina": 2931,
+            "agility_or_strength": 149
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "血骑士的慈悲\n物品等级：\n309\n拾取后绑定\n双手\n权杖\n354 - 455点伤害\n速度\n3.60\n（每秒伤害112.4点）\n+149 [敏捷 or 力量]\n+2,931 耐力\n+\n90 随机属性1\n+\n90 随机属性2\n耐久: 120 / 120\n需要等级\n90\n售价:\n174\n36\n62",
+          "customizable_secondary_amounts": [
+            90,
+            90
+          ]
+        },
+        {
+          "item_level": 312,
+          "quality": 4,
+          "stats": {
+            "stamina": 3037,
+            "agility_or_strength": 154
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "血骑士的慈悲\n物品等级：\n312\n拾取后绑定\n双手\n权杖\n364 - 468点伤害\n速度\n3.60\n（每秒伤害115.6点）\n+154 [敏捷 or 力量]\n+3,037 耐力\n+\n92 随机属性1\n+\n92 随机属性2\n耐久: 120 / 120\n需要等级\n90\n售价:\n174\n36\n62",
+          "customizable_secondary_amounts": [
+            92,
+            92
+          ]
+        },
+        {
+          "item_level": 315,
+          "quality": 4,
+          "stats": {
+            "stamina": 3143,
+            "agility_or_strength": 158
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "血骑士的慈悲\n物品等级：\n315\n拾取后绑定\n双手\n权杖\n374 - 482点伤害\n速度\n3.60\n（每秒伤害118.9点）\n+158 [敏捷 or 力量]\n+3,143 耐力\n+\n93 随机属性1\n+\n93 随机属性2\n耐久: 120 / 120\n需要等级\n90\n售价:\n174\n36\n62",
+          "customizable_secondary_amounts": [
+            93,
+            93
+          ]
+        },
+        {
+          "item_level": 318,
+          "quality": 4,
+          "stats": {
+            "stamina": 3254,
+            "agility_or_strength": 162
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "血骑士的慈悲\n物品等级：\n318\n拾取后绑定\n双手\n权杖\n385 - 495点伤害\n速度\n3.60\n（每秒伤害122.2点）\n+162 [敏捷 or 力量]\n+3,254 耐力\n+\n94 随机属性1\n+\n94 随机属性2\n耐久: 120 / 120\n需要等级\n90\n售价:\n174\n36\n62",
+          "customizable_secondary_amounts": [
+            94,
+            94
+          ]
+        },
+        {
+          "item_level": 322,
+          "quality": 4,
+          "stats": {
+            "stamina": 3408,
+            "agility_or_strength": 169
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "血骑士的慈悲\n物品等级：\n322\n拾取后绑定\n双手\n权杖\n399 - 514点伤害\n速度\n3.60\n（每秒伤害126.8点）\n+169 [敏捷 or 力量]\n+3,408 耐力\n+\n96 随机属性1\n+\n96 随机属性2\n耐久: 120 / 120\n需要等级\n90\n售价:\n174\n36\n62",
+          "customizable_secondary_amounts": [
+            96,
+            96
+          ]
+        },
+        {
+          "item_level": 325,
+          "quality": 4,
+          "stats": {
+            "stamina": 3527,
+            "agility_or_strength": 173
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "血骑士的慈悲\n物品等级：\n325\n拾取后绑定\n双手\n权杖\n411 - 529点伤害\n速度\n3.60\n（每秒伤害130.6点）\n+173 [敏捷 or 力量]\n+3,527 耐力\n+\n97 随机属性1\n+\n97 随机属性2\n耐久: 120 / 120\n需要等级\n90\n售价:\n174\n36\n62",
+          "customizable_secondary_amounts": [
+            97,
+            97
+          ]
+        },
+        {
+          "item_level": 328,
+          "quality": 4,
+          "stats": {
+            "stamina": 3649,
+            "agility_or_strength": 178
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "血骑士的慈悲\n物品等级：\n328\n拾取后绑定\n双手\n权杖\n422 - 544点伤害\n速度\n3.60\n（每秒伤害134.2点）\n+178 [敏捷 or 力量]\n+3,649 耐力\n+\n98 随机属性1\n+\n98 随机属性2\n耐久: 120 / 120\n需要等级\n90\n售价:\n174\n36\n62",
+          "customizable_secondary_amounts": [
+            98,
+            98
+          ]
+        },
+        {
+          "item_level": 331,
+          "quality": 4,
+          "stats": {
+            "stamina": 3777,
+            "agility_or_strength": 183
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "血骑士的慈悲\n物品等级：\n331\n拾取后绑定\n双手\n权杖\n434 - 559点伤害\n速度\n3.60\n（每秒伤害137.9点）\n+183 [敏捷 or 力量]\n+3,777 耐力\n+\n99 随机属性1\n+\n99 随机属性2\n耐久: 120 / 120\n需要等级\n90\n售价:\n174\n36\n62",
+          "customizable_secondary_amounts": [
+            99,
+            99
+          ]
+        }
+      ],
+      "secondary_stat_mode": "customizable",
+      "sockets": 0,
+      "unique_equipped": false,
+      "effect_stat_policy": "count_static_item_stats_only",
+      "static_secondary_stats_included": true,
+      "triggered_secondary_stats_included": false,
+      "candidate_specs": [
+        "death_knight.blood",
+        "death_knight.frost",
+        "death_knight.unholy",
+        "paladin.retribution",
+        "warrior.arms",
+        "warrior.fury"
+      ],
+      "candidate_classes": [
+        "death_knight",
+        "paladin",
+        "warrior"
+      ]
+    },
+    {
+      "id": 237846,
+      "name_en": "Blood Knight's Warblade",
+      "name_zh_cn": "血骑士的战剑",
+      "profession": "blacksmithing",
+      "slot_key": "weapon",
+      "armor_type": null,
+      "weapon_type": "2h_sword",
+      "customizable_secondaries": true,
+      "secondary_stat_choices": [
+        "critical_strike",
+        "haste",
+        "mastery",
+        "versatility"
+      ],
+      "secondary_stats_selected": 2,
+      "embellished": false,
+      "catalyst_eligible": false,
+      "item_levels": {
+        "spark_of_tides": {
+          "quality_1": 292,
+          "quality_2": 296,
+          "quality_3": 299,
+          "quality_4": 302,
+          "quality_5": 305
+        },
+        "hero_mistcrest": {
+          "quality_1": 305,
+          "quality_2": 309,
+          "quality_3": 312,
+          "quality_4": 315,
+          "quality_5": 318
+        },
+        "myth_mistcrest": {
+          "quality_1": 318,
+          "quality_2": 322,
+          "quality_3": 325,
+          "quality_4": 328,
+          "quality_5": 331
+        }
+      },
+      "default_optimizer_item_level": 331,
+      "spark_of_tides_cost": 4,
+      "wowhead_url": "https://www.wowhead.com/item=237846",
+      "icon": "inv_sword_2h_questbloodelf_b_01",
+      "variants": [
+        {
+          "item_level": 305,
+          "quality": 4,
+          "stats": {
+            "strength": 144,
+            "stamina": 2794
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "血骑士的战剑\n物品等级：\n305\n拾取后绑定\n双手\n剑\n292 - 487点伤害\n速度\n3.60\n（每秒伤害108.2点）\n+144 力量\n+2,794 耐力\n+\n89 随机属性1\n+\n89 随机属性2\n耐久: 120 / 120\n需要等级\n90\n售价:\n191\n25\n44",
+          "customizable_secondary_amounts": [
+            89,
+            89
+          ]
+        },
+        {
+          "item_level": 309,
+          "quality": 4,
+          "stats": {
+            "strength": 149,
+            "stamina": 2931
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "血骑士的战剑\n物品等级：\n309\n拾取后绑定\n双手\n剑\n303 - 506点伤害\n速度\n3.60\n（每秒伤害112.4点）\n+149 力量\n+2,931 耐力\n+\n90 随机属性1\n+\n90 随机属性2\n耐久: 120 / 120\n需要等级\n90\n售价:\n191\n25\n44",
+          "customizable_secondary_amounts": [
+            90,
+            90
+          ]
+        },
+        {
+          "item_level": 312,
+          "quality": 4,
+          "stats": {
+            "strength": 154,
+            "stamina": 3037
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "血骑士的战剑\n物品等级：\n312\n拾取后绑定\n双手\n剑\n312 - 520点伤害\n速度\n3.60\n（每秒伤害115.6点）\n+154 力量\n+3,037 耐力\n+\n92 随机属性1\n+\n92 随机属性2\n耐久: 120 / 120\n需要等级\n90\n售价:\n191\n25\n44",
+          "customizable_secondary_amounts": [
+            92,
+            92
+          ]
+        },
+        {
+          "item_level": 315,
+          "quality": 4,
+          "stats": {
+            "strength": 158,
+            "stamina": 3143
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "血骑士的战剑\n物品等级：\n315\n拾取后绑定\n双手\n剑\n321 - 535点伤害\n速度\n3.60\n（每秒伤害118.9点）\n+158 力量\n+3,143 耐力\n+\n93 随机属性1\n+\n93 随机属性2\n耐久: 120 / 120\n需要等级\n90\n售价:\n191\n25\n44",
+          "customizable_secondary_amounts": [
+            93,
+            93
+          ]
+        },
+        {
+          "item_level": 318,
+          "quality": 4,
+          "stats": {
+            "strength": 162,
+            "stamina": 3254
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "血骑士的战剑\n物品等级：\n318\n拾取后绑定\n双手\n剑\n330 - 550点伤害\n速度\n3.60\n（每秒伤害122.2点）\n+162 力量\n+3,254 耐力\n+\n94 随机属性1\n+\n94 随机属性2\n耐久: 120 / 120\n需要等级\n90\n售价:\n191\n25\n44",
+          "customizable_secondary_amounts": [
+            94,
+            94
+          ]
+        },
+        {
+          "item_level": 322,
+          "quality": 4,
+          "stats": {
+            "strength": 169,
+            "stamina": 3408
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "血骑士的战剑\n物品等级：\n322\n拾取后绑定\n双手\n剑\n342 - 571点伤害\n速度\n3.60\n（每秒伤害126.8点）\n+169 力量\n+3,408 耐力\n+\n96 随机属性1\n+\n96 随机属性2\n耐久: 120 / 120\n需要等级\n90\n售价:\n191\n25\n44",
+          "customizable_secondary_amounts": [
+            96,
+            96
+          ]
+        },
+        {
+          "item_level": 325,
+          "quality": 4,
+          "stats": {
+            "strength": 173,
+            "stamina": 3527
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "血骑士的战剑\n物品等级：\n325\n拾取后绑定\n双手\n剑\n352 - 587点伤害\n速度\n3.60\n（每秒伤害130.4点）\n+173 力量\n+3,527 耐力\n+\n97 随机属性1\n+\n97 随机属性2\n耐久: 120 / 120\n需要等级\n90\n售价:\n191\n25\n44",
+          "customizable_secondary_amounts": [
+            97,
+            97
+          ]
+        },
+        {
+          "item_level": 328,
+          "quality": 4,
+          "stats": {
+            "strength": 178,
+            "stamina": 3649
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "血骑士的战剑\n物品等级：\n328\n拾取后绑定\n双手\n剑\n362 - 604点伤害\n速度\n3.60\n（每秒伤害134.2点）\n+178 力量\n+3,649 耐力\n+\n98 随机属性1\n+\n98 随机属性2\n耐久: 120 / 120\n需要等级\n90\n售价:\n191\n25\n44",
+          "customizable_secondary_amounts": [
+            98,
+            98
+          ]
+        },
+        {
+          "item_level": 331,
+          "quality": 4,
+          "stats": {
+            "strength": 183,
+            "stamina": 3777
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "血骑士的战剑\n物品等级：\n331\n拾取后绑定\n双手\n剑\n372 - 621点伤害\n速度\n3.60\n（每秒伤害137.9点）\n+183 力量\n+3,777 耐力\n+\n99 随机属性1\n+\n99 随机属性2\n耐久: 120 / 120\n需要等级\n90\n售价:\n191\n25\n44",
+          "customizable_secondary_amounts": [
+            99,
+            99
+          ]
+        }
+      ],
+      "secondary_stat_mode": "customizable",
+      "sockets": 0,
+      "unique_equipped": false,
+      "effect_stat_policy": "count_static_item_stats_only",
+      "static_secondary_stats_included": true,
+      "triggered_secondary_stats_included": false,
+      "candidate_specs": [
+        "death_knight.blood",
+        "death_knight.frost",
+        "death_knight.unholy",
+        "paladin.retribution",
+        "warrior.arms",
+        "warrior.fury"
+      ],
+      "candidate_classes": [
+        "death_knight",
+        "paladin",
+        "warrior"
+      ]
+    },
+    {
+      "id": 237845,
+      "name_en": "Bloomforged Claw",
+      "name_zh_cn": "绽铸之爪",
+      "profession": "blacksmithing",
+      "slot_key": "weapon",
+      "armor_type": null,
+      "weapon_type": "1h_fist",
+      "customizable_secondaries": true,
+      "secondary_stat_choices": [
+        "critical_strike",
+        "haste",
+        "mastery",
+        "versatility"
+      ],
+      "secondary_stats_selected": 2,
+      "embellished": false,
+      "catalyst_eligible": false,
+      "item_levels": {
+        "spark_of_tides": {
+          "quality_1": 292,
+          "quality_2": 296,
+          "quality_3": 299,
+          "quality_4": 302,
+          "quality_5": 305
+        },
+        "hero_mistcrest": {
+          "quality_1": 305,
+          "quality_2": 309,
+          "quality_3": 312,
+          "quality_4": 315,
+          "quality_5": 318
+        },
+        "myth_mistcrest": {
+          "quality_1": 318,
+          "quality_2": 322,
+          "quality_3": 325,
+          "quality_4": 328,
+          "quality_5": 331
+        }
+      },
+      "default_optimizer_item_level": 331,
+      "spark_of_tides_cost": 2,
+      "wowhead_url": "https://www.wowhead.com/item=237845",
+      "icon": "inv_hand_1h_dungeonharronir_c_01",
+      "variants": [
+        {
+          "item_level": 305,
+          "quality": 4,
+          "stats": {
+            "stamina": 1397,
+            "agility_or_strength": 72
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "绽铸之爪\n物品等级：\n305\n拾取后绑定\n单手\n拳套\n175 - 250点伤害\n速度\n2.60\n（每秒伤害81.7点）\n+72 [敏捷 or 力量]\n+1,397 耐力\n+\n44 随机属性1\n+\n44 随机属性2\n耐久: 80 / 80\n需要等级\n90\n售价:\n152\n46\n43",
+          "customizable_secondary_amounts": [
+            44,
+            44
+          ]
+        },
+        {
+          "item_level": 309,
+          "quality": 4,
+          "stats": {
+            "stamina": 1465,
+            "agility_or_strength": 75
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "绽铸之爪\n物品等级：\n309\n拾取后绑定\n单手\n拳套\n182 - 259点伤害\n速度\n2.60\n（每秒伤害84.8点）\n+75 [敏捷 or 力量]\n+1,465 耐力\n+\n45 随机属性1\n+\n45 随机属性2\n耐久: 80 / 80\n需要等级\n90\n售价:\n152\n46\n43",
+          "customizable_secondary_amounts": [
+            45,
+            45
+          ]
+        },
+        {
+          "item_level": 312,
+          "quality": 4,
+          "stats": {
+            "stamina": 1519,
+            "agility_or_strength": 77
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "绽铸之爪\n物品等级：\n312\n拾取后绑定\n单手\n拳套\n187 - 267点伤害\n速度\n2.60\n（每秒伤害87.3点）\n+77 [敏捷 or 力量]\n+1,519 耐力\n+\n46 随机属性1\n+\n46 随机属性2\n耐久: 80 / 80\n需要等级\n90\n售价:\n152\n46\n43",
+          "customizable_secondary_amounts": [
+            46,
+            46
+          ]
+        },
+        {
+          "item_level": 315,
+          "quality": 4,
+          "stats": {
+            "stamina": 1572,
+            "agility_or_strength": 79
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "绽铸之爪\n物品等级：\n315\n拾取后绑定\n单手\n拳套\n192 - 274点伤害\n速度\n2.60\n（每秒伤害89.6点）\n+79 [敏捷 or 力量]\n+1,572 耐力\n+\n46 随机属性1\n+\n46 随机属性2\n耐久: 80 / 80\n需要等级\n90\n售价:\n152\n46\n43",
+          "customizable_secondary_amounts": [
+            46,
+            46
+          ]
+        },
+        {
+          "item_level": 318,
+          "quality": 4,
+          "stats": {
+            "stamina": 1627,
+            "agility_or_strength": 81
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "绽铸之爪\n物品等级：\n318\n拾取后绑定\n单手\n拳套\n198 - 282点伤害\n速度\n2.60\n（每秒伤害92.3点）\n+81 [敏捷 or 力量]\n+1,627 耐力\n+\n47 随机属性1\n+\n47 随机属性2\n耐久: 80 / 80\n需要等级\n90\n售价:\n152\n46\n43",
+          "customizable_secondary_amounts": [
+            47,
+            47
+          ]
+        },
+        {
+          "item_level": 322,
+          "quality": 4,
+          "stats": {
+            "stamina": 1704,
+            "agility_or_strength": 84
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "绽铸之爪\n物品等级：\n322\n拾取后绑定\n单手\n拳套\n205 - 293点伤害\n速度\n2.60\n（每秒伤害95.8点）\n+84 [敏捷 or 力量]\n+1,704 耐力\n+\n48 随机属性1\n+\n48 随机属性2\n耐久: 80 / 80\n需要等级\n90\n售价:\n152\n46\n43",
+          "customizable_secondary_amounts": [
+            48,
+            48
+          ]
+        },
+        {
+          "item_level": 325,
+          "quality": 4,
+          "stats": {
+            "stamina": 1763,
+            "agility_or_strength": 87
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "绽铸之爪\n物品等级：\n325\n拾取后绑定\n单手\n拳套\n211 - 301点伤害\n速度\n2.60\n（每秒伤害98.5点）\n+87 [敏捷 or 力量]\n+1,763 耐力\n+\n48 随机属性1\n+\n48 随机属性2\n耐久: 80 / 80\n需要等级\n90\n售价:\n152\n46\n43",
+          "customizable_secondary_amounts": [
+            48,
+            48
+          ]
+        },
+        {
+          "item_level": 328,
+          "quality": 4,
+          "stats": {
+            "stamina": 1824,
+            "agility_or_strength": 89
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "绽铸之爪\n物品等级：\n328\n拾取后绑定\n单手\n拳套\n217 - 310点伤害\n速度\n2.60\n（每秒伤害101.3点）\n+89 [敏捷 or 力量]\n+1,824 耐力\n+\n49 随机属性1\n+\n49 随机属性2\n耐久: 80 / 80\n需要等级\n90\n售价:\n152\n46\n43",
+          "customizable_secondary_amounts": [
+            49,
+            49
+          ]
+        },
+        {
+          "item_level": 331,
+          "quality": 4,
+          "stats": {
+            "stamina": 1888,
+            "agility_or_strength": 92
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "绽铸之爪\n物品等级：\n331\n拾取后绑定\n单手\n拳套\n223 - 318点伤害\n速度\n2.60\n（每秒伤害104.0点）\n+92 [敏捷 or 力量]\n+1,888 耐力\n+\n50 随机属性1\n+\n50 随机属性2\n耐久: 80 / 80\n需要等级\n90\n售价:\n152\n46\n43",
+          "customizable_secondary_amounts": [
+            50,
+            50
+          ]
+        }
+      ],
+      "secondary_stat_mode": "customizable",
+      "sockets": 0,
+      "unique_equipped": false,
+      "effect_stat_policy": "count_static_item_stats_only",
+      "static_secondary_stats_included": true,
+      "triggered_secondary_stats_included": false,
+      "candidate_specs": [
+        "demon_hunter.havoc",
+        "demon_hunter.vengeance",
+        "monk.brewmaster",
+        "monk.windwalker",
+        "rogue.assassination",
+        "rogue.outlaw",
+        "rogue.subtlety",
+        "shaman.enhancement"
+      ],
+      "candidate_classes": [
+        "demon_hunter",
+        "monk",
+        "rogue",
+        "shaman"
+      ]
+    },
+    {
+      "id": 237842,
+      "name_en": "Bloomforged Greataxe",
+      "name_zh_cn": "绽铸大斧",
+      "profession": "blacksmithing",
+      "slot_key": "weapon",
+      "armor_type": null,
+      "weapon_type": "2h_axe",
+      "customizable_secondaries": true,
+      "secondary_stat_choices": [
+        "critical_strike",
+        "haste",
+        "mastery",
+        "versatility"
+      ],
+      "secondary_stats_selected": 2,
+      "embellished": false,
+      "catalyst_eligible": false,
+      "item_levels": {
+        "spark_of_tides": {
+          "quality_1": 292,
+          "quality_2": 296,
+          "quality_3": 299,
+          "quality_4": 302,
+          "quality_5": 305
+        },
+        "hero_mistcrest": {
+          "quality_1": 305,
+          "quality_2": 309,
+          "quality_3": 312,
+          "quality_4": 315,
+          "quality_5": 318
+        },
+        "myth_mistcrest": {
+          "quality_1": 318,
+          "quality_2": 322,
+          "quality_3": 325,
+          "quality_4": 328,
+          "quality_5": 331
+        }
+      },
+      "default_optimizer_item_level": 331,
+      "spark_of_tides_cost": 4,
+      "wowhead_url": "https://www.wowhead.com/item=237842",
+      "icon": "inv_axe_2h_dungeonharronir_c_01",
+      "variants": [
+        {
+          "item_level": 305,
+          "quality": 4,
+          "stats": {
+            "stamina": 2794,
+            "agility_or_strength": 144
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "绽铸大斧\n物品等级：\n305\n拾取后绑定\n双手\n斧\n253 - 526点伤害\n速度\n3.60\n（每秒伤害108.2点）\n+144 [敏捷 or 力量]\n+2,794 耐力\n+\n89 随机属性1\n+\n89 随机属性2\n耐久: 120 / 120\n需要等级\n90\n售价:\n183\n74\n85",
+          "customizable_secondary_amounts": [
+            89,
+            89
+          ]
+        },
+        {
+          "item_level": 309,
+          "quality": 4,
+          "stats": {
+            "stamina": 2931,
+            "agility_or_strength": 149
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "绽铸大斧\n物品等级：\n309\n拾取后绑定\n双手\n斧\n263 - 546点伤害\n速度\n3.60\n（每秒伤害112.4点）\n+149 [敏捷 or 力量]\n+2,931 耐力\n+\n90 随机属性1\n+\n90 随机属性2\n耐久: 120 / 120\n需要等级\n90\n售价:\n183\n74\n85",
+          "customizable_secondary_amounts": [
+            90,
+            90
+          ]
+        },
+        {
+          "item_level": 312,
+          "quality": 4,
+          "stats": {
+            "stamina": 3037,
+            "agility_or_strength": 154
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "绽铸大斧\n物品等级：\n312\n拾取后绑定\n双手\n斧\n270 - 562点伤害\n速度\n3.60\n（每秒伤害115.6点）\n+154 [敏捷 or 力量]\n+3,037 耐力\n+\n92 随机属性1\n+\n92 随机属性2\n耐久: 120 / 120\n需要等级\n90\n售价:\n183\n74\n85",
+          "customizable_secondary_amounts": [
+            92,
+            92
+          ]
+        },
+        {
+          "item_level": 315,
+          "quality": 4,
+          "stats": {
+            "stamina": 3143,
+            "agility_or_strength": 158
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "绽铸大斧\n物品等级：\n315\n拾取后绑定\n双手\n斧\n278 - 578点伤害\n速度\n3.60\n（每秒伤害118.9点）\n+158 [敏捷 or 力量]\n+3,143 耐力\n+\n93 随机属性1\n+\n93 随机属性2\n耐久: 120 / 120\n需要等级\n90\n售价:\n183\n74\n85",
+          "customizable_secondary_amounts": [
+            93,
+            93
+          ]
+        },
+        {
+          "item_level": 318,
+          "quality": 4,
+          "stats": {
+            "stamina": 3254,
+            "agility_or_strength": 162
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "绽铸大斧\n物品等级：\n318\n拾取后绑定\n双手\n斧\n286 - 594点伤害\n速度\n3.60\n（每秒伤害122.2点）\n+162 [敏捷 or 力量]\n+3,254 耐力\n+\n94 随机属性1\n+\n94 随机属性2\n耐久: 120 / 120\n需要等级\n90\n售价:\n183\n74\n85",
+          "customizable_secondary_amounts": [
+            94,
+            94
+          ]
+        },
+        {
+          "item_level": 322,
+          "quality": 4,
+          "stats": {
+            "stamina": 3408,
+            "agility_or_strength": 169
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "绽铸大斧\n物品等级：\n322\n拾取后绑定\n双手\n斧\n296 - 617点伤害\n速度\n3.60\n（每秒伤害126.8点）\n+169 [敏捷 or 力量]\n+3,408 耐力\n+\n96 随机属性1\n+\n96 随机属性2\n耐久: 120 / 120\n需要等级\n90\n售价:\n183\n74\n85",
+          "customizable_secondary_amounts": [
+            96,
+            96
+          ]
+        },
+        {
+          "item_level": 325,
+          "quality": 4,
+          "stats": {
+            "stamina": 3527,
+            "agility_or_strength": 173
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "绽铸大斧\n物品等级：\n325\n拾取后绑定\n双手\n斧\n305 - 634点伤害\n速度\n3.60\n（每秒伤害130.4点）\n+173 [敏捷 or 力量]\n+3,527 耐力\n+\n97 随机属性1\n+\n97 随机属性2\n耐久: 120 / 120\n需要等级\n90\n售价:\n183\n74\n85",
+          "customizable_secondary_amounts": [
+            97,
+            97
+          ]
+        },
+        {
+          "item_level": 328,
+          "quality": 4,
+          "stats": {
+            "stamina": 3649,
+            "agility_or_strength": 178
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "绽铸大斧\n物品等级：\n328\n拾取后绑定\n双手\n斧\n314 - 652点伤害\n速度\n3.60\n（每秒伤害134.2点）\n+178 [敏捷 or 力量]\n+3,649 耐力\n+\n98 随机属性1\n+\n98 随机属性2\n耐久: 120 / 120\n需要等级\n90\n售价:\n183\n74\n85",
+          "customizable_secondary_amounts": [
+            98,
+            98
+          ]
+        },
+        {
+          "item_level": 331,
+          "quality": 4,
+          "stats": {
+            "stamina": 3777,
+            "agility_or_strength": 183
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "绽铸大斧\n物品等级：\n331\n拾取后绑定\n双手\n斧\n322 - 671点伤害\n速度\n3.60\n（每秒伤害137.9点）\n+183 [敏捷 or 力量]\n+3,777 耐力\n+\n99 随机属性1\n+\n99 随机属性2\n耐久: 120 / 120\n需要等级\n90\n售价:\n183\n74\n85",
+          "customizable_secondary_amounts": [
+            99,
+            99
+          ]
+        }
+      ],
+      "secondary_stat_mode": "customizable",
+      "sockets": 0,
+      "unique_equipped": false,
+      "effect_stat_policy": "count_static_item_stats_only",
+      "static_secondary_stats_included": true,
+      "triggered_secondary_stats_included": false,
+      "candidate_specs": [
+        "death_knight.blood",
+        "death_knight.frost",
+        "death_knight.unholy",
+        "paladin.retribution",
+        "warrior.arms",
+        "warrior.fury"
+      ],
+      "candidate_classes": [
+        "death_knight",
+        "paladin",
+        "warrior"
+      ]
+    },
+    {
       "id": 237850,
       "name_en": "Farstrider's Chopper",
       "name_zh_cn": "远行者的劈斧",
@@ -2218,6 +3197,805 @@
         "paladin",
         "shaman",
         "warrior"
+      ]
+    },
+    {
+      "id": 237844,
+      "name_en": "Magister's Cleaver",
+      "name_zh_cn": "魔导师的砍斧",
+      "profession": "blacksmithing",
+      "slot_key": "weapon",
+      "armor_type": null,
+      "weapon_type": "1h_axe",
+      "customizable_secondaries": true,
+      "secondary_stat_choices": [
+        "critical_strike",
+        "haste",
+        "mastery",
+        "versatility"
+      ],
+      "secondary_stats_selected": 2,
+      "embellished": false,
+      "catalyst_eligible": false,
+      "item_levels": {
+        "spark_of_tides": {
+          "quality_1": 292,
+          "quality_2": 296,
+          "quality_3": 299,
+          "quality_4": 302,
+          "quality_5": 305
+        },
+        "hero_mistcrest": {
+          "quality_1": 305,
+          "quality_2": 309,
+          "quality_3": 312,
+          "quality_4": 315,
+          "quality_5": 318
+        },
+        "myth_mistcrest": {
+          "quality_1": 318,
+          "quality_2": 322,
+          "quality_3": 325,
+          "quality_4": 328,
+          "quality_5": 331
+        }
+      },
+      "default_optimizer_item_level": 331,
+      "spark_of_tides_cost": 2,
+      "wowhead_url": "https://www.wowhead.com/item=237844",
+      "icon": "inv_axe_1h_questbloodelf_b_01",
+      "variants": [
+        {
+          "item_level": 305,
+          "quality": 4,
+          "stats": {
+            "intellect": 419,
+            "stamina": 1397
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "魔导师的砍斧\n物品等级：\n305\n拾取后绑定\n单手\n斧\n69 - 144点伤害\n速度\n2.60\n（每秒伤害41.0点）\n+419 智力\n+1,397 耐力\n+\n44 随机属性1\n+\n44 随机属性2\n耐久: 110 / 110\n需要等级\n90\n售价:\n148\n7\n73",
+          "customizable_secondary_amounts": [
+            44,
+            44
+          ]
+        },
+        {
+          "item_level": 309,
+          "quality": 4,
+          "stats": {
+            "intellect": 435,
+            "stamina": 1465
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "魔导师的砍斧\n物品等级：\n309\n拾取后绑定\n单手\n斧\n71 - 149点伤害\n速度\n2.60\n（每秒伤害42.3点）\n+435 智力\n+1,465 耐力\n+\n45 随机属性1\n+\n45 随机属性2\n耐久: 110 / 110\n需要等级\n90\n售价:\n148\n7\n73",
+          "customizable_secondary_amounts": [
+            45,
+            45
+          ]
+        },
+        {
+          "item_level": 312,
+          "quality": 4,
+          "stats": {
+            "intellect": 447,
+            "stamina": 1519
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "魔导师的砍斧\n物品等级：\n312\n拾取后绑定\n单手\n斧\n73 - 153点伤害\n速度\n2.60\n（每秒伤害43.5点）\n+447 智力\n+1,519 耐力\n+\n46 随机属性1\n+\n46 随机属性2\n耐久: 110 / 110\n需要等级\n90\n售价:\n148\n7\n73",
+          "customizable_secondary_amounts": [
+            46,
+            46
+          ]
+        },
+        {
+          "item_level": 315,
+          "quality": 4,
+          "stats": {
+            "intellect": 460,
+            "stamina": 1572
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "魔导师的砍斧\n物品等级：\n315\n拾取后绑定\n单手\n斧\n75 - 158点伤害\n速度\n2.60\n（每秒伤害44.8点）\n+460 智力\n+1,572 耐力\n+\n46 随机属性1\n+\n46 随机属性2\n耐久: 110 / 110\n需要等级\n90\n售价:\n148\n7\n73",
+          "customizable_secondary_amounts": [
+            46,
+            46
+          ]
+        },
+        {
+          "item_level": 318,
+          "quality": 4,
+          "stats": {
+            "intellect": 473,
+            "stamina": 1627
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "魔导师的砍斧\n物品等级：\n318\n拾取后绑定\n单手\n斧\n78 - 162点伤害\n速度\n2.60\n（每秒伤害46.2点）\n+473 智力\n+1,627 耐力\n+\n47 随机属性1\n+\n47 随机属性2\n耐久: 110 / 110\n需要等级\n90\n售价:\n148\n7\n73",
+          "customizable_secondary_amounts": [
+            47,
+            47
+          ]
+        },
+        {
+          "item_level": 322,
+          "quality": 4,
+          "stats": {
+            "intellect": 491,
+            "stamina": 1704
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "魔导师的砍斧\n物品等级：\n322\n拾取后绑定\n单手\n斧\n80 - 168点伤害\n速度\n2.60\n（每秒伤害47.7点）\n+491 智力\n+1,704 耐力\n+\n48 随机属性1\n+\n48 随机属性2\n耐久: 110 / 110\n需要等级\n90\n售价:\n148\n7\n73",
+          "customizable_secondary_amounts": [
+            48,
+            48
+          ]
+        },
+        {
+          "item_level": 325,
+          "quality": 4,
+          "stats": {
+            "intellect": 505,
+            "stamina": 1763
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "魔导师的砍斧\n物品等级：\n325\n拾取后绑定\n单手\n斧\n83 - 173点伤害\n速度\n2.60\n（每秒伤害49.2点）\n+505 智力\n+1,763 耐力\n+\n48 随机属性1\n+\n48 随机属性2\n耐久: 110 / 110\n需要等级\n90\n售价:\n148\n7\n73",
+          "customizable_secondary_amounts": [
+            48,
+            48
+          ]
+        },
+        {
+          "item_level": 328,
+          "quality": 4,
+          "stats": {
+            "intellect": 519,
+            "stamina": 1824
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "魔导师的砍斧\n物品等级：\n328\n拾取后绑定\n单手\n斧\n85 - 178点伤害\n速度\n2.60\n（每秒伤害50.6点）\n+519 智力\n+1,824 耐力\n+\n49 随机属性1\n+\n49 随机属性2\n耐久: 110 / 110\n需要等级\n90\n售价:\n148\n7\n73",
+          "customizable_secondary_amounts": [
+            49,
+            49
+          ]
+        },
+        {
+          "item_level": 331,
+          "quality": 4,
+          "stats": {
+            "intellect": 534,
+            "stamina": 1888
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "魔导师的砍斧\n物品等级：\n331\n拾取后绑定\n单手\n斧\n88 - 183点伤害\n速度\n2.60\n（每秒伤害52.1点）\n+534 智力\n+1,888 耐力\n+\n50 随机属性1\n+\n50 随机属性2\n耐久: 110 / 110\n需要等级\n90\n售价:\n148\n7\n73",
+          "customizable_secondary_amounts": [
+            50,
+            50
+          ]
+        }
+      ],
+      "secondary_stat_mode": "customizable",
+      "sockets": 0,
+      "unique_equipped": false,
+      "effect_stat_policy": "count_static_item_stats_only",
+      "static_secondary_stats_included": true,
+      "triggered_secondary_stats_included": false,
+      "candidate_specs": [
+        "demon_hunter.devourer",
+        "evoker.augmentation",
+        "evoker.devastation",
+        "evoker.preservation",
+        "monk.mistweaver",
+        "paladin.holy",
+        "shaman.elemental",
+        "shaman.restoration"
+      ],
+      "candidate_classes": [
+        "demon_hunter",
+        "evoker",
+        "monk",
+        "paladin",
+        "shaman"
+      ]
+    },
+    {
+      "id": 237843,
+      "name_en": "Magister's Mana Sword",
+      "name_zh_cn": "魔导师的法力之剑",
+      "profession": "blacksmithing",
+      "slot_key": "weapon",
+      "armor_type": null,
+      "weapon_type": "1h_sword",
+      "customizable_secondaries": true,
+      "secondary_stat_choices": [
+        "critical_strike",
+        "haste",
+        "mastery",
+        "versatility"
+      ],
+      "secondary_stats_selected": 2,
+      "embellished": false,
+      "catalyst_eligible": false,
+      "item_levels": {
+        "spark_of_tides": {
+          "quality_1": 292,
+          "quality_2": 296,
+          "quality_3": 299,
+          "quality_4": 302,
+          "quality_5": 305
+        },
+        "hero_mistcrest": {
+          "quality_1": 305,
+          "quality_2": 309,
+          "quality_3": 312,
+          "quality_4": 315,
+          "quality_5": 318
+        },
+        "myth_mistcrest": {
+          "quality_1": 318,
+          "quality_2": 322,
+          "quality_3": 325,
+          "quality_4": 328,
+          "quality_5": 331
+        }
+      },
+      "default_optimizer_item_level": 331,
+      "spark_of_tides_cost": 2,
+      "wowhead_url": "https://www.wowhead.com/item=237843",
+      "icon": "inv_sword_1h_questbloodelf_b_01",
+      "variants": [
+        {
+          "item_level": 305,
+          "quality": 4,
+          "stats": {
+            "intellect": 419,
+            "stamina": 1397
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "魔导师的法力之剑\n物品等级：\n305\n拾取后绑定\n单手\n剑\n79 - 133点伤害\n速度\n2.60\n（每秒伤害40.8点）\n+419 智力\n+1,397 耐力\n+\n44 随机属性1\n+\n44 随机属性2\n耐久: 110 / 110\n需要等级\n90\n售价:\n147\n53\n81",
+          "customizable_secondary_amounts": [
+            44,
+            44
+          ]
+        },
+        {
+          "item_level": 309,
+          "quality": 4,
+          "stats": {
+            "intellect": 435,
+            "stamina": 1465
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "魔导师的法力之剑\n物品等级：\n309\n拾取后绑定\n单手\n剑\n82 - 138点伤害\n速度\n2.60\n（每秒伤害42.3点）\n+435 智力\n+1,465 耐力\n+\n45 随机属性1\n+\n45 随机属性2\n耐久: 110 / 110\n需要等级\n90\n售价:\n147\n53\n81",
+          "customizable_secondary_amounts": [
+            45,
+            45
+          ]
+        },
+        {
+          "item_level": 312,
+          "quality": 4,
+          "stats": {
+            "intellect": 447,
+            "stamina": 1519
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "魔导师的法力之剑\n物品等级：\n312\n拾取后绑定\n单手\n剑\n85 - 142点伤害\n速度\n2.60\n（每秒伤害43.7点）\n+447 智力\n+1,519 耐力\n+\n46 随机属性1\n+\n46 随机属性2\n耐久: 110 / 110\n需要等级\n90\n售价:\n147\n53\n81",
+          "customizable_secondary_amounts": [
+            46,
+            46
+          ]
+        },
+        {
+          "item_level": 315,
+          "quality": 4,
+          "stats": {
+            "intellect": 460,
+            "stamina": 1572
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "魔导师的法力之剑\n物品等级：\n315\n拾取后绑定\n单手\n剑\n87 - 146点伤害\n速度\n2.60\n（每秒伤害44.8点）\n+460 智力\n+1,572 耐力\n+\n46 随机属性1\n+\n46 随机属性2\n耐久: 110 / 110\n需要等级\n90\n售价:\n147\n53\n81",
+          "customizable_secondary_amounts": [
+            46,
+            46
+          ]
+        },
+        {
+          "item_level": 318,
+          "quality": 4,
+          "stats": {
+            "intellect": 473,
+            "stamina": 1627
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "魔导师的法力之剑\n物品等级：\n318\n拾取后绑定\n单手\n剑\n90 - 150点伤害\n速度\n2.60\n（每秒伤害46.2点）\n+473 智力\n+1,627 耐力\n+\n47 随机属性1\n+\n47 随机属性2\n耐久: 110 / 110\n需要等级\n90\n售价:\n147\n53\n81",
+          "customizable_secondary_amounts": [
+            47,
+            47
+          ]
+        },
+        {
+          "item_level": 322,
+          "quality": 4,
+          "stats": {
+            "intellect": 491,
+            "stamina": 1704
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "魔导师的法力之剑\n物品等级：\n322\n拾取后绑定\n单手\n剑\n93 - 156点伤害\n速度\n2.60\n（每秒伤害47.9点）\n+491 智力\n+1,704 耐力\n+\n48 随机属性1\n+\n48 随机属性2\n耐久: 110 / 110\n需要等级\n90\n售价:\n147\n53\n81",
+          "customizable_secondary_amounts": [
+            48,
+            48
+          ]
+        },
+        {
+          "item_level": 325,
+          "quality": 4,
+          "stats": {
+            "intellect": 505,
+            "stamina": 1763
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "魔导师的法力之剑\n物品等级：\n325\n拾取后绑定\n单手\n剑\n96 - 160点伤害\n速度\n2.60\n（每秒伤害49.2点）\n+505 智力\n+1,763 耐力\n+\n48 随机属性1\n+\n48 随机属性2\n耐久: 110 / 110\n需要等级\n90\n售价:\n147\n53\n81",
+          "customizable_secondary_amounts": [
+            48,
+            48
+          ]
+        },
+        {
+          "item_level": 328,
+          "quality": 4,
+          "stats": {
+            "intellect": 519,
+            "stamina": 1824
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "魔导师的法力之剑\n物品等级：\n328\n拾取后绑定\n单手\n剑\n98 - 165点伤害\n速度\n2.60\n（每秒伤害50.6点）\n+519 智力\n+1,824 耐力\n+\n49 随机属性1\n+\n49 随机属性2\n耐久: 110 / 110\n需要等级\n90\n售价:\n147\n53\n81",
+          "customizable_secondary_amounts": [
+            49,
+            49
+          ]
+        },
+        {
+          "item_level": 331,
+          "quality": 4,
+          "stats": {
+            "intellect": 534,
+            "stamina": 1888
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "魔导师的法力之剑\n物品等级：\n331\n拾取后绑定\n单手\n剑\n101 - 169点伤害\n速度\n2.60\n（每秒伤害51.9点）\n+534 智力\n+1,888 耐力\n+\n50 随机属性1\n+\n50 随机属性2\n耐久: 110 / 110\n需要等级\n90\n售价:\n147\n53\n81",
+          "customizable_secondary_amounts": [
+            50,
+            50
+          ]
+        }
+      ],
+      "secondary_stat_mode": "customizable",
+      "sockets": 0,
+      "unique_equipped": false,
+      "effect_stat_policy": "count_static_item_stats_only",
+      "static_secondary_stats_included": true,
+      "triggered_secondary_stats_included": false,
+      "candidate_specs": [
+        "demon_hunter.devourer",
+        "evoker.augmentation",
+        "evoker.devastation",
+        "evoker.preservation",
+        "mage.arcane",
+        "mage.fire",
+        "mage.frost",
+        "monk.mistweaver",
+        "paladin.holy",
+        "warlock.affliction",
+        "warlock.demonology",
+        "warlock.destruction"
+      ],
+      "candidate_classes": [
+        "demon_hunter",
+        "evoker",
+        "mage",
+        "monk",
+        "paladin",
+        "warlock"
+      ]
+    },
+    {
+      "id": 237838,
+      "name_en": "Magister's Ritual Knife",
+      "name_zh_cn": "魔导师的仪式之匕",
+      "profession": "blacksmithing",
+      "slot_key": "weapon",
+      "armor_type": null,
+      "weapon_type": "1h_dagger",
+      "customizable_secondaries": true,
+      "secondary_stat_choices": [
+        "critical_strike",
+        "haste",
+        "mastery",
+        "versatility"
+      ],
+      "secondary_stats_selected": 2,
+      "embellished": false,
+      "catalyst_eligible": false,
+      "item_levels": {
+        "spark_of_tides": {
+          "quality_1": 292,
+          "quality_2": 296,
+          "quality_3": 299,
+          "quality_4": 302,
+          "quality_5": 305
+        },
+        "hero_mistcrest": {
+          "quality_1": 305,
+          "quality_2": 309,
+          "quality_3": 312,
+          "quality_4": 315,
+          "quality_5": 318
+        },
+        "myth_mistcrest": {
+          "quality_1": 318,
+          "quality_2": 322,
+          "quality_3": 325,
+          "quality_4": 328,
+          "quality_5": 331
+        }
+      },
+      "default_optimizer_item_level": 331,
+      "spark_of_tides_cost": 2,
+      "wowhead_url": "https://www.wowhead.com/item=237838",
+      "icon": "inv_knife_1h_questbloodelf_b_01",
+      "variants": [
+        {
+          "item_level": 305,
+          "quality": 4,
+          "stats": {
+            "intellect": 419,
+            "stamina": 1397
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "魔导师的仪式之匕\n物品等级：\n305\n拾取后绑定\n单手\n匕首\n55 - 92点伤害\n速度\n1.80\n（每秒伤害40.8点）\n+419 智力\n+1,397 耐力\n+\n44 随机属性1\n+\n44 随机属性2\n耐久: 80 / 80\n需要等级\n90\n售价:\n144\n85\n63",
+          "customizable_secondary_amounts": [
+            44,
+            44
+          ]
+        },
+        {
+          "item_level": 309,
+          "quality": 4,
+          "stats": {
+            "intellect": 435,
+            "stamina": 1465
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "魔导师的仪式之匕\n物品等级：\n309\n拾取后绑定\n单手\n匕首\n57 - 96点伤害\n速度\n1.80\n（每秒伤害42.5点）\n+435 智力\n+1,465 耐力\n+\n45 随机属性1\n+\n45 随机属性2\n耐久: 80 / 80\n需要等级\n90\n售价:\n144\n85\n63",
+          "customizable_secondary_amounts": [
+            45,
+            45
+          ]
+        },
+        {
+          "item_level": 312,
+          "quality": 4,
+          "stats": {
+            "intellect": 447,
+            "stamina": 1519
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "魔导师的仪式之匕\n物品等级：\n312\n拾取后绑定\n单手\n匕首\n58 - 98点伤害\n速度\n1.80\n（每秒伤害43.3点）\n+447 智力\n+1,519 耐力\n+\n46 随机属性1\n+\n46 随机属性2\n耐久: 80 / 80\n需要等级\n90\n售价:\n144\n85\n63",
+          "customizable_secondary_amounts": [
+            46,
+            46
+          ]
+        },
+        {
+          "item_level": 315,
+          "quality": 4,
+          "stats": {
+            "intellect": 460,
+            "stamina": 1572
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "魔导师的仪式之匕\n物品等级：\n315\n拾取后绑定\n单手\n匕首\n60 - 101点伤害\n速度\n1.80\n（每秒伤害44.7点）\n+460 智力\n+1,572 耐力\n+\n46 随机属性1\n+\n46 随机属性2\n耐久: 80 / 80\n需要等级\n90\n售价:\n144\n85\n63",
+          "customizable_secondary_amounts": [
+            46,
+            46
+          ]
+        },
+        {
+          "item_level": 318,
+          "quality": 4,
+          "stats": {
+            "intellect": 473,
+            "stamina": 1627
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "魔导师的仪式之匕\n物品等级：\n318\n拾取后绑定\n单手\n匕首\n62 - 104点伤害\n速度\n1.80\n（每秒伤害46.1点）\n+473 智力\n+1,627 耐力\n+\n47 随机属性1\n+\n47 随机属性2\n耐久: 80 / 80\n需要等级\n90\n售价:\n144\n85\n63",
+          "customizable_secondary_amounts": [
+            47,
+            47
+          ]
+        },
+        {
+          "item_level": 322,
+          "quality": 4,
+          "stats": {
+            "intellect": 491,
+            "stamina": 1704
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "魔导师的仪式之匕\n物品等级：\n322\n拾取后绑定\n单手\n匕首\n64 - 108点伤害\n速度\n1.80\n（每秒伤害47.8点）\n+491 智力\n+1,704 耐力\n+\n48 随机属性1\n+\n48 随机属性2\n耐久: 80 / 80\n需要等级\n90\n售价:\n144\n85\n63",
+          "customizable_secondary_amounts": [
+            48,
+            48
+          ]
+        },
+        {
+          "item_level": 325,
+          "quality": 4,
+          "stats": {
+            "intellect": 505,
+            "stamina": 1763
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "魔导师的仪式之匕\n物品等级：\n325\n拾取后绑定\n单手\n匕首\n66 - 111点伤害\n速度\n1.80\n（每秒伤害49.2点）\n+505 智力\n+1,763 耐力\n+\n48 随机属性1\n+\n48 随机属性2\n耐久: 80 / 80\n需要等级\n90\n售价:\n144\n85\n63",
+          "customizable_secondary_amounts": [
+            48,
+            48
+          ]
+        },
+        {
+          "item_level": 328,
+          "quality": 4,
+          "stats": {
+            "intellect": 519,
+            "stamina": 1824
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "魔导师的仪式之匕\n物品等级：\n328\n拾取后绑定\n单手\n匕首\n68 - 114点伤害\n速度\n1.80\n（每秒伤害50.6点）\n+519 智力\n+1,824 耐力\n+\n49 随机属性1\n+\n49 随机属性2\n耐久: 80 / 80\n需要等级\n90\n售价:\n144\n85\n63",
+          "customizable_secondary_amounts": [
+            49,
+            49
+          ]
+        },
+        {
+          "item_level": 331,
+          "quality": 4,
+          "stats": {
+            "intellect": 534,
+            "stamina": 1888
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "魔导师的仪式之匕\n物品等级：\n331\n拾取后绑定\n单手\n匕首\n70 - 117点伤害\n速度\n1.80\n（每秒伤害51.9点）\n+534 智力\n+1,888 耐力\n+\n50 随机属性1\n+\n50 随机属性2\n耐久: 80 / 80\n需要等级\n90\n售价:\n144\n85\n63",
+          "customizable_secondary_amounts": [
+            50,
+            50
+          ]
+        }
+      ],
+      "secondary_stat_mode": "customizable",
+      "sockets": 0,
+      "unique_equipped": false,
+      "effect_stat_policy": "count_static_item_stats_only",
+      "static_secondary_stats_included": true,
+      "triggered_secondary_stats_included": false,
+      "candidate_specs": [
+        "demon_hunter.devourer",
+        "druid.balance",
+        "druid.restoration",
+        "evoker.augmentation",
+        "evoker.devastation",
+        "evoker.preservation",
+        "mage.arcane",
+        "mage.fire",
+        "mage.frost",
+        "priest.discipline",
+        "priest.holy",
+        "priest.shadow",
+        "shaman.elemental",
+        "shaman.restoration",
+        "warlock.affliction",
+        "warlock.demonology",
+        "warlock.destruction"
+      ],
+      "candidate_classes": [
+        "demon_hunter",
+        "druid",
+        "evoker",
+        "mage",
+        "priest",
+        "shaman",
+        "warlock"
+      ]
+    },
+    {
+      "id": 237849,
+      "name_en": "Magister's Valediction",
+      "name_zh_cn": "魔导师的送别",
+      "profession": "blacksmithing",
+      "slot_key": "weapon",
+      "armor_type": null,
+      "weapon_type": "2h_mace",
+      "customizable_secondaries": true,
+      "secondary_stat_choices": [
+        "critical_strike",
+        "haste",
+        "mastery",
+        "versatility"
+      ],
+      "secondary_stats_selected": 2,
+      "embellished": false,
+      "catalyst_eligible": false,
+      "item_levels": {
+        "spark_of_tides": {
+          "quality_1": 292,
+          "quality_2": 296,
+          "quality_3": 299,
+          "quality_4": 302,
+          "quality_5": 305
+        },
+        "hero_mistcrest": {
+          "quality_1": 305,
+          "quality_2": 309,
+          "quality_3": 312,
+          "quality_4": 315,
+          "quality_5": 318
+        },
+        "myth_mistcrest": {
+          "quality_1": 318,
+          "quality_2": 322,
+          "quality_3": 325,
+          "quality_4": 328,
+          "quality_5": 331
+        }
+      },
+      "default_optimizer_item_level": 331,
+      "spark_of_tides_cost": 4,
+      "wowhead_url": "https://www.wowhead.com/item=237849",
+      "icon": "mace_2h_blacksmithing_d_04_icon",
+      "variants": [
+        {
+          "item_level": 305,
+          "quality": 4,
+          "stats": {
+            "intellect": 640,
+            "stamina": 2794
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "魔导师的送别\n物品等级：\n305\n拾取后绑定\n双手\n权杖\n170 - 219点伤害\n速度\n3.60\n（每秒伤害54.0点）\n+640 智力\n+2,794 耐力\n+\n89 随机属性1\n+\n89 随机属性2\n耐久: 120 / 120\n需要等级\n90\n售价:\n175\n2\n20",
+          "customizable_secondary_amounts": [
+            89,
+            89
+          ]
+        },
+        {
+          "item_level": 309,
+          "quality": 4,
+          "stats": {
+            "intellect": 664,
+            "stamina": 2931
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "魔导师的送别\n物品等级：\n309\n拾取后绑定\n双手\n权杖\n177 - 228点伤害\n速度\n3.60\n（每秒伤害56.3点）\n+664 智力\n+2,931 耐力\n+\n90 随机属性1\n+\n90 随机属性2\n耐久: 120 / 120\n需要等级\n90\n售价:\n175\n2\n20",
+          "customizable_secondary_amounts": [
+            90,
+            90
+          ]
+        },
+        {
+          "item_level": 312,
+          "quality": 4,
+          "stats": {
+            "intellect": 683,
+            "stamina": 3037
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "魔导师的送别\n物品等级：\n312\n拾取后绑定\n双手\n权杖\n182 - 234点伤害\n速度\n3.60\n（每秒伤害57.8点）\n+683 智力\n+3,037 耐力\n+\n92 随机属性1\n+\n92 随机属性2\n耐久: 120 / 120\n需要等级\n90\n售价:\n175\n2\n20",
+          "customizable_secondary_amounts": [
+            92,
+            92
+          ]
+        },
+        {
+          "item_level": 315,
+          "quality": 4,
+          "stats": {
+            "intellect": 702,
+            "stamina": 3143
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "魔导师的送别\n物品等级：\n315\n拾取后绑定\n双手\n权杖\n187 - 241点伤害\n速度\n3.60\n（每秒伤害59.4点）\n+702 智力\n+3,143 耐力\n+\n93 随机属性1\n+\n93 随机属性2\n耐久: 120 / 120\n需要等级\n90\n售价:\n175\n2\n20",
+          "customizable_secondary_amounts": [
+            93,
+            93
+          ]
+        },
+        {
+          "item_level": 318,
+          "quality": 4,
+          "stats": {
+            "intellect": 722,
+            "stamina": 3254
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "魔导师的送别\n物品等级：\n318\n拾取后绑定\n双手\n权杖\n192 - 248点伤害\n速度\n3.60\n（每秒伤害61.1点）\n+722 智力\n+3,254 耐力\n+\n94 随机属性1\n+\n94 随机属性2\n耐久: 120 / 120\n需要等级\n90\n售价:\n175\n2\n20",
+          "customizable_secondary_amounts": [
+            94,
+            94
+          ]
+        },
+        {
+          "item_level": 322,
+          "quality": 4,
+          "stats": {
+            "intellect": 750,
+            "stamina": 3408
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "魔导师的送别\n物品等级：\n322\n拾取后绑定\n双手\n权杖\n199 - 257点伤害\n速度\n3.60\n（每秒伤害63.3点）\n+750 智力\n+3,408 耐力\n+\n96 随机属性1\n+\n96 随机属性2\n耐久: 120 / 120\n需要等级\n90\n售价:\n175\n2\n20",
+          "customizable_secondary_amounts": [
+            96,
+            96
+          ]
+        },
+        {
+          "item_level": 325,
+          "quality": 4,
+          "stats": {
+            "intellect": 771,
+            "stamina": 3527
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "魔导师的送别\n物品等级：\n325\n拾取后绑定\n双手\n权杖\n205 - 264点伤害\n速度\n3.60\n（每秒伤害65.1点）\n+771 智力\n+3,527 耐力\n+\n97 随机属性1\n+\n97 随机属性2\n耐久: 120 / 120\n需要等级\n90\n售价:\n175\n2\n20",
+          "customizable_secondary_amounts": [
+            97,
+            97
+          ]
+        },
+        {
+          "item_level": 328,
+          "quality": 4,
+          "stats": {
+            "intellect": 793,
+            "stamina": 3649
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "魔导师的送别\n物品等级：\n328\n拾取后绑定\n双手\n权杖\n211 - 272点伤害\n速度\n3.60\n（每秒伤害67.1点）\n+793 智力\n+3,649 耐力\n+\n98 随机属性1\n+\n98 随机属性2\n耐久: 120 / 120\n需要等级\n90\n售价:\n175\n2\n20",
+          "customizable_secondary_amounts": [
+            98,
+            98
+          ]
+        },
+        {
+          "item_level": 331,
+          "quality": 4,
+          "stats": {
+            "intellect": 815,
+            "stamina": 3777
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "魔导师的送别\n物品等级：\n331\n拾取后绑定\n双手\n权杖\n217 - 279点伤害\n速度\n3.60\n（每秒伤害68.9点）\n+815 智力\n+3,777 耐力\n+\n99 随机属性1\n+\n99 随机属性2\n耐久: 120 / 120\n需要等级\n90\n售价:\n175\n2\n20",
+          "customizable_secondary_amounts": [
+            99,
+            99
+          ]
+        }
+      ],
+      "secondary_stat_mode": "customizable",
+      "sockets": 0,
+      "unique_equipped": false,
+      "effect_stat_policy": "count_static_item_stats_only",
+      "static_secondary_stats_included": true,
+      "triggered_secondary_stats_included": false,
+      "candidate_specs": [
+        "druid.balance",
+        "druid.restoration",
+        "paladin.holy",
+        "shaman.elemental",
+        "shaman.restoration"
+      ],
+      "candidate_classes": [
+        "druid",
+        "paladin",
+        "shaman"
       ]
     },
     {
@@ -3378,6 +5156,2432 @@
           "customizable_secondary_amounts": [
             56,
             56
+          ]
+        }
+      ],
+      "secondary_stat_mode": "customizable",
+      "sockets": 0,
+      "unique_equipped": false,
+      "effect_stat_policy": "count_static_item_stats_only",
+      "static_secondary_stats_included": true,
+      "triggered_secondary_stats_included": false
+    },
+    {
+      "id": 244179,
+      "name_en": "Magister's Grand Focus",
+      "name_zh_cn": "魔导师的华丽法器",
+      "profession": "enchanting",
+      "slot_key": "weapon",
+      "armor_type": null,
+      "weapon_type": "ranged_wand",
+      "customizable_secondaries": true,
+      "secondary_stat_choices": [
+        "critical_strike",
+        "haste",
+        "mastery",
+        "versatility"
+      ],
+      "secondary_stats_selected": 2,
+      "embellished": false,
+      "catalyst_eligible": false,
+      "item_levels": {
+        "spark_of_tides": {
+          "quality_1": 292,
+          "quality_2": 296,
+          "quality_3": 299,
+          "quality_4": 302,
+          "quality_5": 305
+        },
+        "hero_mistcrest": {
+          "quality_1": 305,
+          "quality_2": 309,
+          "quality_3": 312,
+          "quality_4": 315,
+          "quality_5": 318
+        },
+        "myth_mistcrest": {
+          "quality_1": 318,
+          "quality_2": 322,
+          "quality_3": 325,
+          "quality_4": 328,
+          "quality_5": 331
+        }
+      },
+      "default_optimizer_item_level": 331,
+      "spark_of_tides_cost": 4,
+      "wowhead_url": "https://www.wowhead.com/item=244179",
+      "icon": "inv_wand_24",
+      "variants": [
+        {
+          "item_level": 305,
+          "quality": 4,
+          "stats": {
+            "intellect": 419,
+            "stamina": 1397
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "魔导师的华丽法器\n物品等级：\n305\n拾取后绑定\n远程\n魔杖\n61 - 102点火焰伤害\n速度\n2.00\n（每秒伤害40.8点）\n+419 智力\n+1,397 耐力\n+\n44 随机属性1\n+\n44 随机属性2\n耐久: 110 / 110\n需要等级\n90\n售价:\n177\n39\n4",
+          "customizable_secondary_amounts": [
+            44,
+            44
+          ]
+        },
+        {
+          "item_level": 309,
+          "quality": 4,
+          "stats": {
+            "intellect": 435,
+            "stamina": 1465
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "魔导师的华丽法器\n物品等级：\n309\n拾取后绑定\n远程\n魔杖\n63 - 106点火焰伤害\n速度\n2.00\n（每秒伤害42.3点）\n+435 智力\n+1,465 耐力\n+\n45 随机属性1\n+\n45 随机属性2\n耐久: 110 / 110\n需要等级\n90\n售价:\n177\n39\n4",
+          "customizable_secondary_amounts": [
+            45,
+            45
+          ]
+        },
+        {
+          "item_level": 312,
+          "quality": 4,
+          "stats": {
+            "intellect": 447,
+            "stamina": 1519
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "魔导师的华丽法器\n物品等级：\n312\n拾取后绑定\n远程\n魔杖\n65 - 109点火焰伤害\n速度\n2.00\n（每秒伤害43.5点）\n+447 智力\n+1,519 耐力\n+\n46 随机属性1\n+\n46 随机属性2\n耐久: 110 / 110\n需要等级\n90\n售价:\n177\n39\n4",
+          "customizable_secondary_amounts": [
+            46,
+            46
+          ]
+        },
+        {
+          "item_level": 315,
+          "quality": 4,
+          "stats": {
+            "intellect": 460,
+            "stamina": 1572
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "魔导师的华丽法器\n物品等级：\n315\n拾取后绑定\n远程\n魔杖\n67 - 112点火焰伤害\n速度\n2.00\n（每秒伤害44.8点）\n+460 智力\n+1,572 耐力\n+\n46 随机属性1\n+\n46 随机属性2\n耐久: 110 / 110\n需要等级\n90\n售价:\n177\n39\n4",
+          "customizable_secondary_amounts": [
+            46,
+            46
+          ]
+        },
+        {
+          "item_level": 318,
+          "quality": 4,
+          "stats": {
+            "intellect": 473,
+            "stamina": 1627
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "魔导师的华丽法器\n物品等级：\n318\n拾取后绑定\n远程\n魔杖\n69 - 115点火焰伤害\n速度\n2.00\n（每秒伤害46.0点）\n+473 智力\n+1,627 耐力\n+\n47 随机属性1\n+\n47 随机属性2\n耐久: 110 / 110\n需要等级\n90\n售价:\n177\n39\n4",
+          "customizable_secondary_amounts": [
+            47,
+            47
+          ]
+        },
+        {
+          "item_level": 322,
+          "quality": 4,
+          "stats": {
+            "intellect": 491,
+            "stamina": 1704
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "魔导师的华丽法器\n物品等级：\n322\n拾取后绑定\n远程\n魔杖\n71 - 120点火焰伤害\n速度\n2.00\n（每秒伤害47.8点）\n+491 智力\n+1,704 耐力\n+\n48 随机属性1\n+\n48 随机属性2\n耐久: 110 / 110\n需要等级\n90\n售价:\n177\n39\n4",
+          "customizable_secondary_amounts": [
+            48,
+            48
+          ]
+        },
+        {
+          "item_level": 325,
+          "quality": 4,
+          "stats": {
+            "intellect": 505,
+            "stamina": 1763
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "魔导师的华丽法器\n物品等级：\n325\n拾取后绑定\n远程\n魔杖\n73 - 123点火焰伤害\n速度\n2.00\n（每秒伤害49.0点）\n+505 智力\n+1,763 耐力\n+\n48 随机属性1\n+\n48 随机属性2\n耐久: 110 / 110\n需要等级\n90\n售价:\n177\n39\n4",
+          "customizable_secondary_amounts": [
+            48,
+            48
+          ]
+        },
+        {
+          "item_level": 328,
+          "quality": 4,
+          "stats": {
+            "intellect": 519,
+            "stamina": 1824
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "魔导师的华丽法器\n物品等级：\n328\n拾取后绑定\n远程\n魔杖\n76 - 127点火焰伤害\n速度\n2.00\n（每秒伤害50.8点）\n+519 智力\n+1,824 耐力\n+\n49 随机属性1\n+\n49 随机属性2\n耐久: 110 / 110\n需要等级\n90\n售价:\n177\n39\n4",
+          "customizable_secondary_amounts": [
+            49,
+            49
+          ]
+        },
+        {
+          "item_level": 331,
+          "quality": 4,
+          "stats": {
+            "intellect": 534,
+            "stamina": 1888
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "魔导师的华丽法器\n物品等级：\n331\n拾取后绑定\n远程\n魔杖\n78 - 130点火焰伤害\n速度\n2.00\n（每秒伤害52.0点）\n+534 智力\n+1,888 耐力\n+\n50 随机属性1\n+\n50 随机属性2\n耐久: 110 / 110\n需要等级\n90\n售价:\n177\n39\n4",
+          "customizable_secondary_amounts": [
+            50,
+            50
+          ]
+        }
+      ],
+      "secondary_stat_mode": "customizable",
+      "sockets": 0,
+      "unique_equipped": false,
+      "effect_stat_policy": "count_static_item_stats_only",
+      "static_secondary_stats_included": true,
+      "triggered_secondary_stats_included": false,
+      "candidate_specs": [
+        "mage.arcane",
+        "mage.fire",
+        "mage.frost",
+        "priest.discipline",
+        "priest.holy",
+        "priest.shadow",
+        "warlock.affliction",
+        "warlock.demonology",
+        "warlock.destruction"
+      ],
+      "candidate_classes": [
+        "mage",
+        "priest",
+        "warlock"
+      ]
+    },
+    {
+      "id": 244773,
+      "name_en": "Aetherlume Clonkers",
+      "name_zh_cn": "以太流明套靴",
+      "profession": "engineering",
+      "slot_key": "feet",
+      "armor_type": "mail",
+      "weapon_type": null,
+      "customizable_secondaries": true,
+      "secondary_stat_choices": [
+        "critical_strike",
+        "haste",
+        "mastery",
+        "versatility"
+      ],
+      "secondary_stats_selected": 1,
+      "embellished": false,
+      "catalyst_eligible": false,
+      "item_levels": {
+        "spark_of_tides": {
+          "quality_1": 292,
+          "quality_2": 296,
+          "quality_3": 299,
+          "quality_4": 302,
+          "quality_5": 305
+        },
+        "hero_mistcrest": {
+          "quality_1": 305,
+          "quality_2": 309,
+          "quality_3": 312,
+          "quality_4": 315,
+          "quality_5": 318
+        },
+        "myth_mistcrest": {
+          "quality_1": 318,
+          "quality_2": 322,
+          "quality_3": 325,
+          "quality_4": 328,
+          "quality_5": 331
+        }
+      },
+      "default_optimizer_item_level": 331,
+      "spark_of_tides_cost": 2,
+      "wowhead_url": "https://www.wowhead.com/item=244773",
+      "icon": "inv_boot_mail_questbloodelf_b_01",
+      "variants": [
+        {
+          "item_level": 305,
+          "quality": 4,
+          "stats": {
+            "stamina": 2096,
+            "agility_or_intellect": 108
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明套靴\n物品等级：\n305\n拾取后绑定\n脚部\n锁甲\n149护甲\n+108 [敏捷 or 智力]\n+2,096 耐力\n+\n133 随机属性1\n耐久: 80 / 80\n需要等级\n90\n售价:\n71\n39\n77",
+          "customizable_secondary_amounts": [
+            133
+          ]
+        },
+        {
+          "item_level": 309,
+          "quality": 4,
+          "stats": {
+            "stamina": 2198,
+            "agility_or_intellect": 112
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明套靴\n物品等级：\n309\n拾取后绑定\n脚部\n锁甲\n153护甲\n+112 [敏捷 or 智力]\n+2,198 耐力\n+\n136 随机属性1\n耐久: 80 / 80\n需要等级\n90\n售价:\n71\n39\n77",
+          "customizable_secondary_amounts": [
+            136
+          ]
+        },
+        {
+          "item_level": 312,
+          "quality": 4,
+          "stats": {
+            "stamina": 2278,
+            "agility_or_intellect": 115
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明套靴\n物品等级：\n312\n拾取后绑定\n脚部\n锁甲\n156护甲\n+115 [敏捷 or 智力]\n+2,278 耐力\n+\n137 随机属性1\n耐久: 80 / 80\n需要等级\n90\n售价:\n71\n39\n77",
+          "customizable_secondary_amounts": [
+            137
+          ]
+        },
+        {
+          "item_level": 315,
+          "quality": 4,
+          "stats": {
+            "stamina": 2358,
+            "agility_or_intellect": 118
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明套靴\n物品等级：\n315\n拾取后绑定\n脚部\n锁甲\n159护甲\n+118 [敏捷 or 智力]\n+2,358 耐力\n+\n139 随机属性1\n耐久: 80 / 80\n需要等级\n90\n售价:\n71\n39\n77",
+          "customizable_secondary_amounts": [
+            139
+          ]
+        },
+        {
+          "item_level": 318,
+          "quality": 4,
+          "stats": {
+            "stamina": 2440,
+            "agility_or_intellect": 122
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明套靴\n物品等级：\n318\n拾取后绑定\n脚部\n锁甲\n162护甲\n+122 [敏捷 or 智力]\n+2,440 耐力\n+\n141 随机属性1\n耐久: 80 / 80\n需要等级\n90\n售价:\n71\n39\n77",
+          "customizable_secondary_amounts": [
+            141
+          ]
+        },
+        {
+          "item_level": 322,
+          "quality": 4,
+          "stats": {
+            "stamina": 2556,
+            "agility_or_intellect": 126
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明套靴\n物品等级：\n322\n拾取后绑定\n脚部\n锁甲\n167护甲\n+126 [敏捷 or 智力]\n+2,556 耐力\n+\n143 随机属性1\n耐久: 80 / 80\n需要等级\n90\n售价:\n71\n39\n77",
+          "customizable_secondary_amounts": [
+            143
+          ]
+        },
+        {
+          "item_level": 325,
+          "quality": 4,
+          "stats": {
+            "stamina": 2645,
+            "agility_or_intellect": 130
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明套靴\n物品等级：\n325\n拾取后绑定\n脚部\n锁甲\n170护甲\n+130 [敏捷 or 智力]\n+2,645 耐力\n+\n145 随机属性1\n耐久: 80 / 80\n需要等级\n90\n售价:\n71\n39\n77",
+          "customizable_secondary_amounts": [
+            145
+          ]
+        },
+        {
+          "item_level": 328,
+          "quality": 4,
+          "stats": {
+            "stamina": 2737,
+            "agility_or_intellect": 134
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明套靴\n物品等级：\n328\n拾取后绑定\n脚部\n锁甲\n173护甲\n+134 [敏捷 or 智力]\n+2,737 耐力\n+\n147 随机属性1\n耐久: 80 / 80\n需要等级\n90\n售价:\n71\n39\n77",
+          "customizable_secondary_amounts": [
+            147
+          ]
+        },
+        {
+          "item_level": 331,
+          "quality": 4,
+          "stats": {
+            "stamina": 2832,
+            "agility_or_intellect": 138
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明套靴\n物品等级：\n331\n拾取后绑定\n脚部\n锁甲\n177护甲\n+138 [敏捷 or 智力]\n+2,832 耐力\n+\n149 随机属性1\n耐久: 80 / 80\n需要等级\n90\n售价:\n71\n39\n77",
+          "customizable_secondary_amounts": [
+            149
+          ]
+        }
+      ],
+      "secondary_stat_mode": "customizable",
+      "sockets": 0,
+      "unique_equipped": false,
+      "effect_stat_policy": "count_static_item_stats_only",
+      "static_secondary_stats_included": true,
+      "triggered_secondary_stats_included": false
+    },
+    {
+      "id": 244772,
+      "name_en": "Aetherlume Runners",
+      "name_zh_cn": "以太流明奔行靴",
+      "profession": "engineering",
+      "slot_key": "feet",
+      "armor_type": "leather",
+      "weapon_type": null,
+      "customizable_secondaries": true,
+      "secondary_stat_choices": [
+        "critical_strike",
+        "haste",
+        "mastery",
+        "versatility"
+      ],
+      "secondary_stats_selected": 1,
+      "embellished": false,
+      "catalyst_eligible": false,
+      "item_levels": {
+        "spark_of_tides": {
+          "quality_1": 292,
+          "quality_2": 296,
+          "quality_3": 299,
+          "quality_4": 302,
+          "quality_5": 305
+        },
+        "hero_mistcrest": {
+          "quality_1": 305,
+          "quality_2": 309,
+          "quality_3": 312,
+          "quality_4": 315,
+          "quality_5": 318
+        },
+        "myth_mistcrest": {
+          "quality_1": 318,
+          "quality_2": 322,
+          "quality_3": 325,
+          "quality_4": 328,
+          "quality_5": 331
+        }
+      },
+      "default_optimizer_item_level": 331,
+      "spark_of_tides_cost": 2,
+      "wowhead_url": "https://www.wowhead.com/item=244772",
+      "icon": "inv_boot_leather_questbloodelf_b_01",
+      "variants": [
+        {
+          "item_level": 305,
+          "quality": 4,
+          "stats": {
+            "stamina": 2096,
+            "agility_or_intellect": 108
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明奔行靴\n物品等级：\n305\n拾取后绑定\n脚部\n皮甲\n101护甲\n+108 [敏捷 or 智力]\n+2,096 耐力\n+\n133 随机属性1\n耐久: 80 / 80\n需要等级\n90\n售价:\n71\n13\n55",
+          "customizable_secondary_amounts": [
+            133
+          ]
+        },
+        {
+          "item_level": 309,
+          "quality": 4,
+          "stats": {
+            "stamina": 2198,
+            "agility_or_intellect": 112
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明奔行靴\n物品等级：\n309\n拾取后绑定\n脚部\n皮甲\n104护甲\n+112 [敏捷 or 智力]\n+2,198 耐力\n+\n136 随机属性1\n耐久: 80 / 80\n需要等级\n90\n售价:\n71\n13\n55",
+          "customizable_secondary_amounts": [
+            136
+          ]
+        },
+        {
+          "item_level": 312,
+          "quality": 4,
+          "stats": {
+            "stamina": 2278,
+            "agility_or_intellect": 115
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明奔行靴\n物品等级：\n312\n拾取后绑定\n脚部\n皮甲\n106护甲\n+115 [敏捷 or 智力]\n+2,278 耐力\n+\n137 随机属性1\n耐久: 80 / 80\n需要等级\n90\n售价:\n71\n13\n55",
+          "customizable_secondary_amounts": [
+            137
+          ]
+        },
+        {
+          "item_level": 315,
+          "quality": 4,
+          "stats": {
+            "stamina": 2358,
+            "agility_or_intellect": 118
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明奔行靴\n物品等级：\n315\n拾取后绑定\n脚部\n皮甲\n108护甲\n+118 [敏捷 or 智力]\n+2,358 耐力\n+\n139 随机属性1\n耐久: 80 / 80\n需要等级\n90\n售价:\n71\n13\n55",
+          "customizable_secondary_amounts": [
+            139
+          ]
+        },
+        {
+          "item_level": 318,
+          "quality": 4,
+          "stats": {
+            "stamina": 2440,
+            "agility_or_intellect": 122
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明奔行靴\n物品等级：\n318\n拾取后绑定\n脚部\n皮甲\n110护甲\n+122 [敏捷 or 智力]\n+2,440 耐力\n+\n141 随机属性1\n耐久: 80 / 80\n需要等级\n90\n售价:\n71\n13\n55",
+          "customizable_secondary_amounts": [
+            141
+          ]
+        },
+        {
+          "item_level": 322,
+          "quality": 4,
+          "stats": {
+            "stamina": 2556,
+            "agility_or_intellect": 126
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明奔行靴\n物品等级：\n322\n拾取后绑定\n脚部\n皮甲\n113护甲\n+126 [敏捷 or 智力]\n+2,556 耐力\n+\n143 随机属性1\n耐久: 80 / 80\n需要等级\n90\n售价:\n71\n13\n55",
+          "customizable_secondary_amounts": [
+            143
+          ]
+        },
+        {
+          "item_level": 325,
+          "quality": 4,
+          "stats": {
+            "stamina": 2645,
+            "agility_or_intellect": 130
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明奔行靴\n物品等级：\n325\n拾取后绑定\n脚部\n皮甲\n115护甲\n+130 [敏捷 or 智力]\n+2,645 耐力\n+\n145 随机属性1\n耐久: 80 / 80\n需要等级\n90\n售价:\n71\n13\n55",
+          "customizable_secondary_amounts": [
+            145
+          ]
+        },
+        {
+          "item_level": 328,
+          "quality": 4,
+          "stats": {
+            "stamina": 2737,
+            "agility_or_intellect": 134
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明奔行靴\n物品等级：\n328\n拾取后绑定\n脚部\n皮甲\n118护甲\n+134 [敏捷 or 智力]\n+2,737 耐力\n+\n147 随机属性1\n耐久: 80 / 80\n需要等级\n90\n售价:\n71\n13\n55",
+          "customizable_secondary_amounts": [
+            147
+          ]
+        },
+        {
+          "item_level": 331,
+          "quality": 4,
+          "stats": {
+            "stamina": 2832,
+            "agility_or_intellect": 138
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明奔行靴\n物品等级：\n331\n拾取后绑定\n脚部\n皮甲\n120护甲\n+138 [敏捷 or 智力]\n+2,832 耐力\n+\n149 随机属性1\n耐久: 80 / 80\n需要等级\n90\n售价:\n71\n13\n55",
+          "customizable_secondary_amounts": [
+            149
+          ]
+        }
+      ],
+      "secondary_stat_mode": "customizable",
+      "sockets": 0,
+      "unique_equipped": false,
+      "effect_stat_policy": "count_static_item_stats_only",
+      "static_secondary_stats_included": true,
+      "triggered_secondary_stats_included": false
+    },
+    {
+      "id": 244771,
+      "name_en": "Aetherlume Softsteppers",
+      "name_zh_cn": "以太流明软鞋",
+      "profession": "engineering",
+      "slot_key": "feet",
+      "armor_type": "cloth",
+      "weapon_type": null,
+      "customizable_secondaries": true,
+      "secondary_stat_choices": [
+        "critical_strike",
+        "haste",
+        "mastery",
+        "versatility"
+      ],
+      "secondary_stats_selected": 1,
+      "embellished": false,
+      "catalyst_eligible": false,
+      "item_levels": {
+        "spark_of_tides": {
+          "quality_1": 292,
+          "quality_2": 296,
+          "quality_3": 299,
+          "quality_4": 302,
+          "quality_5": 305
+        },
+        "hero_mistcrest": {
+          "quality_1": 305,
+          "quality_2": 309,
+          "quality_3": 312,
+          "quality_4": 315,
+          "quality_5": 318
+        },
+        "myth_mistcrest": {
+          "quality_1": 318,
+          "quality_2": 322,
+          "quality_3": 325,
+          "quality_4": 328,
+          "quality_5": 331
+        }
+      },
+      "default_optimizer_item_level": 331,
+      "spark_of_tides_cost": 2,
+      "wowhead_url": "https://www.wowhead.com/item=244771",
+      "icon": "inv_boot_cloth_questbloodelf_b_01",
+      "variants": [
+        {
+          "item_level": 305,
+          "quality": 4,
+          "stats": {
+            "intellect": 108,
+            "stamina": 2096
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明软鞋\n物品等级：\n305\n拾取后绑定\n脚部\n布甲\n59护甲\n+108 智力\n+2,096 耐力\n+\n133 随机属性1\n耐久: 80 / 80\n需要等级\n90\n售价:\n76\n22\n65",
+          "customizable_secondary_amounts": [
+            133
+          ]
+        },
+        {
+          "item_level": 309,
+          "quality": 4,
+          "stats": {
+            "intellect": 112,
+            "stamina": 2198
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明软鞋\n物品等级：\n309\n拾取后绑定\n脚部\n布甲\n60护甲\n+112 智力\n+2,198 耐力\n+\n136 随机属性1\n耐久: 80 / 80\n需要等级\n90\n售价:\n76\n22\n65",
+          "customizable_secondary_amounts": [
+            136
+          ]
+        },
+        {
+          "item_level": 312,
+          "quality": 4,
+          "stats": {
+            "intellect": 115,
+            "stamina": 2278
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明软鞋\n物品等级：\n312\n拾取后绑定\n脚部\n布甲\n62护甲\n+115 智力\n+2,278 耐力\n+\n137 随机属性1\n耐久: 80 / 80\n需要等级\n90\n售价:\n76\n22\n65",
+          "customizable_secondary_amounts": [
+            137
+          ]
+        },
+        {
+          "item_level": 315,
+          "quality": 4,
+          "stats": {
+            "intellect": 118,
+            "stamina": 2358
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明软鞋\n物品等级：\n315\n拾取后绑定\n脚部\n布甲\n63护甲\n+118 智力\n+2,358 耐力\n+\n139 随机属性1\n耐久: 80 / 80\n需要等级\n90\n售价:\n76\n22\n65",
+          "customizable_secondary_amounts": [
+            139
+          ]
+        },
+        {
+          "item_level": 318,
+          "quality": 4,
+          "stats": {
+            "intellect": 122,
+            "stamina": 2440
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明软鞋\n物品等级：\n318\n拾取后绑定\n脚部\n布甲\n64护甲\n+122 智力\n+2,440 耐力\n+\n141 随机属性1\n耐久: 80 / 80\n需要等级\n90\n售价:\n76\n22\n65",
+          "customizable_secondary_amounts": [
+            141
+          ]
+        },
+        {
+          "item_level": 322,
+          "quality": 4,
+          "stats": {
+            "intellect": 126,
+            "stamina": 2556
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明软鞋\n物品等级：\n322\n拾取后绑定\n脚部\n布甲\n66护甲\n+126 智力\n+2,556 耐力\n+\n143 随机属性1\n耐久: 80 / 80\n需要等级\n90\n售价:\n76\n22\n65",
+          "customizable_secondary_amounts": [
+            143
+          ]
+        },
+        {
+          "item_level": 325,
+          "quality": 4,
+          "stats": {
+            "intellect": 130,
+            "stamina": 2645
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明软鞋\n物品等级：\n325\n拾取后绑定\n脚部\n布甲\n67护甲\n+130 智力\n+2,645 耐力\n+\n145 随机属性1\n耐久: 80 / 80\n需要等级\n90\n售价:\n76\n22\n65",
+          "customizable_secondary_amounts": [
+            145
+          ]
+        },
+        {
+          "item_level": 328,
+          "quality": 4,
+          "stats": {
+            "intellect": 134,
+            "stamina": 2737
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明软鞋\n物品等级：\n328\n拾取后绑定\n脚部\n布甲\n68护甲\n+134 智力\n+2,737 耐力\n+\n147 随机属性1\n耐久: 80 / 80\n需要等级\n90\n售价:\n76\n22\n65",
+          "customizable_secondary_amounts": [
+            147
+          ]
+        },
+        {
+          "item_level": 331,
+          "quality": 4,
+          "stats": {
+            "intellect": 138,
+            "stamina": 2832
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明软鞋\n物品等级：\n331\n拾取后绑定\n脚部\n布甲\n70护甲\n+138 智力\n+2,832 耐力\n+\n149 随机属性1\n耐久: 80 / 80\n需要等级\n90\n售价:\n76\n22\n65",
+          "customizable_secondary_amounts": [
+            149
+          ]
+        }
+      ],
+      "secondary_stat_mode": "customizable",
+      "sockets": 0,
+      "unique_equipped": false,
+      "effect_stat_policy": "count_static_item_stats_only",
+      "static_secondary_stats_included": true,
+      "triggered_secondary_stats_included": false
+    },
+    {
+      "id": 244774,
+      "name_en": "Aetherlume Stompers",
+      "name_zh_cn": "以太流明践踏靴",
+      "profession": "engineering",
+      "slot_key": "feet",
+      "armor_type": "plate",
+      "weapon_type": null,
+      "customizable_secondaries": true,
+      "secondary_stat_choices": [
+        "critical_strike",
+        "haste",
+        "mastery",
+        "versatility"
+      ],
+      "secondary_stats_selected": 1,
+      "embellished": false,
+      "catalyst_eligible": false,
+      "item_levels": {
+        "spark_of_tides": {
+          "quality_1": 292,
+          "quality_2": 296,
+          "quality_3": 299,
+          "quality_4": 302,
+          "quality_5": 305
+        },
+        "hero_mistcrest": {
+          "quality_1": 305,
+          "quality_2": 309,
+          "quality_3": 312,
+          "quality_4": 315,
+          "quality_5": 318
+        },
+        "myth_mistcrest": {
+          "quality_1": 318,
+          "quality_2": 322,
+          "quality_3": 325,
+          "quality_4": 328,
+          "quality_5": 331
+        }
+      },
+      "default_optimizer_item_level": 331,
+      "spark_of_tides_cost": 2,
+      "wowhead_url": "https://www.wowhead.com/item=244774",
+      "icon": "inv_plate_questbloodelf_b_01_boot",
+      "variants": [
+        {
+          "item_level": 305,
+          "quality": 4,
+          "stats": {
+            "stamina": 2096,
+            "strength_or_intellect": 108
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明践踏靴\n物品等级：\n305\n拾取后绑定\n脚部\n板甲\n224护甲\n+108 [力量 or 智力]\n+2,096 耐力\n+\n133 随机属性1\n耐久: 80 / 80\n需要等级\n90\n售价:\n71\n66\n72",
+          "customizable_secondary_amounts": [
+            133
+          ]
+        },
+        {
+          "item_level": 309,
+          "quality": 4,
+          "stats": {
+            "stamina": 2198,
+            "strength_or_intellect": 112
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明践踏靴\n物品等级：\n309\n拾取后绑定\n脚部\n板甲\n230护甲\n+112 [力量 or 智力]\n+2,198 耐力\n+\n136 随机属性1\n耐久: 80 / 80\n需要等级\n90\n售价:\n71\n66\n72",
+          "customizable_secondary_amounts": [
+            136
+          ]
+        },
+        {
+          "item_level": 312,
+          "quality": 4,
+          "stats": {
+            "stamina": 2278,
+            "strength_or_intellect": 115
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明践踏靴\n物品等级：\n312\n拾取后绑定\n脚部\n板甲\n235护甲\n+115 [力量 or 智力]\n+2,278 耐力\n+\n137 随机属性1\n耐久: 80 / 80\n需要等级\n90\n售价:\n71\n66\n72",
+          "customizable_secondary_amounts": [
+            137
+          ]
+        },
+        {
+          "item_level": 315,
+          "quality": 4,
+          "stats": {
+            "stamina": 2358,
+            "strength_or_intellect": 118
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明践踏靴\n物品等级：\n315\n拾取后绑定\n脚部\n板甲\n239护甲\n+118 [力量 or 智力]\n+2,358 耐力\n+\n139 随机属性1\n耐久: 80 / 80\n需要等级\n90\n售价:\n71\n66\n72",
+          "customizable_secondary_amounts": [
+            139
+          ]
+        },
+        {
+          "item_level": 318,
+          "quality": 4,
+          "stats": {
+            "stamina": 2440,
+            "strength_or_intellect": 122
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明践踏靴\n物品等级：\n318\n拾取后绑定\n脚部\n板甲\n244护甲\n+122 [力量 or 智力]\n+2,440 耐力\n+\n141 随机属性1\n耐久: 80 / 80\n需要等级\n90\n售价:\n71\n66\n72",
+          "customizable_secondary_amounts": [
+            141
+          ]
+        },
+        {
+          "item_level": 322,
+          "quality": 4,
+          "stats": {
+            "stamina": 2556,
+            "strength_or_intellect": 126
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明践踏靴\n物品等级：\n322\n拾取后绑定\n脚部\n板甲\n251护甲\n+126 [力量 or 智力]\n+2,556 耐力\n+\n143 随机属性1\n耐久: 80 / 80\n需要等级\n90\n售价:\n71\n66\n72",
+          "customizable_secondary_amounts": [
+            143
+          ]
+        },
+        {
+          "item_level": 325,
+          "quality": 4,
+          "stats": {
+            "stamina": 2645,
+            "strength_or_intellect": 130
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明践踏靴\n物品等级：\n325\n拾取后绑定\n脚部\n板甲\n256护甲\n+130 [力量 or 智力]\n+2,645 耐力\n+\n145 随机属性1\n耐久: 80 / 80\n需要等级\n90\n售价:\n71\n66\n72",
+          "customizable_secondary_amounts": [
+            145
+          ]
+        },
+        {
+          "item_level": 328,
+          "quality": 4,
+          "stats": {
+            "stamina": 2737,
+            "strength_or_intellect": 134
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明践踏靴\n物品等级：\n328\n拾取后绑定\n脚部\n板甲\n261护甲\n+134 [力量 or 智力]\n+2,737 耐力\n+\n147 随机属性1\n耐久: 80 / 80\n需要等级\n90\n售价:\n71\n66\n72",
+          "customizable_secondary_amounts": [
+            147
+          ]
+        },
+        {
+          "item_level": 331,
+          "quality": 4,
+          "stats": {
+            "stamina": 2832,
+            "strength_or_intellect": 138
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明践踏靴\n物品等级：\n331\n拾取后绑定\n脚部\n板甲\n266护甲\n+138 [力量 or 智力]\n+2,832 耐力\n+\n149 随机属性1\n耐久: 80 / 80\n需要等级\n90\n售价:\n71\n66\n72",
+          "customizable_secondary_amounts": [
+            149
+          ]
+        }
+      ],
+      "secondary_stat_mode": "customizable",
+      "sockets": 0,
+      "unique_equipped": false,
+      "effect_stat_policy": "count_static_item_stats_only",
+      "static_secondary_stats_included": true,
+      "triggered_secondary_stats_included": false
+    },
+    {
+      "id": 244743,
+      "name_en": "Aetherlume Eye Wrap",
+      "name_zh_cn": "以太流明遮目镜",
+      "profession": "engineering",
+      "slot_key": "head",
+      "armor_type": "cloth",
+      "weapon_type": null,
+      "customizable_secondaries": true,
+      "secondary_stat_choices": [
+        "critical_strike",
+        "haste",
+        "mastery",
+        "versatility"
+      ],
+      "secondary_stats_selected": 1,
+      "embellished": false,
+      "catalyst_eligible": false,
+      "item_levels": {
+        "spark_of_tides": {
+          "quality_1": 292,
+          "quality_2": 296,
+          "quality_3": 299,
+          "quality_4": 302,
+          "quality_5": 305
+        },
+        "hero_mistcrest": {
+          "quality_1": 305,
+          "quality_2": 309,
+          "quality_3": 312,
+          "quality_4": 315,
+          "quality_5": 318
+        },
+        "myth_mistcrest": {
+          "quality_1": 318,
+          "quality_2": 322,
+          "quality_3": 325,
+          "quality_4": 328,
+          "quality_5": 331
+        }
+      },
+      "default_optimizer_item_level": 331,
+      "spark_of_tides_cost": 2,
+      "wowhead_url": "https://www.wowhead.com/item=244743",
+      "icon": "inv_helmet_47",
+      "variants": [
+        {
+          "item_level": 305,
+          "quality": 4,
+          "stats": {
+            "intellect": 144,
+            "stamina": 2794
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明遮目镜\n物品等级：\n305\n拾取后绑定\n头部\n布甲\n71护甲\n+144 智力\n+2,794 耐力\n+\n177 随机属性1\n耐久: 100 / 100\n需要等级\n90\n需要\n至暗之夜工程学\n(1)\n售价:\n74\n9\n25",
+          "customizable_secondary_amounts": [
+            177
+          ]
+        },
+        {
+          "item_level": 309,
+          "quality": 4,
+          "stats": {
+            "intellect": 149,
+            "stamina": 2931
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明遮目镜\n物品等级：\n309\n拾取后绑定\n头部\n布甲\n73护甲\n+149 智力\n+2,931 耐力\n+\n181 随机属性1\n耐久: 100 / 100\n需要等级\n90\n需要\n至暗之夜工程学\n(1)\n售价:\n74\n9\n25",
+          "customizable_secondary_amounts": [
+            181
+          ]
+        },
+        {
+          "item_level": 312,
+          "quality": 4,
+          "stats": {
+            "intellect": 154,
+            "stamina": 3037
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明遮目镜\n物品等级：\n312\n拾取后绑定\n头部\n布甲\n74护甲\n+154 智力\n+3,037 耐力\n+\n183 随机属性1\n耐久: 100 / 100\n需要等级\n90\n需要\n至暗之夜工程学\n(1)\n售价:\n74\n9\n25",
+          "customizable_secondary_amounts": [
+            183
+          ]
+        },
+        {
+          "item_level": 315,
+          "quality": 4,
+          "stats": {
+            "intellect": 158,
+            "stamina": 3143
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明遮目镜\n物品等级：\n315\n拾取后绑定\n头部\n布甲\n75护甲\n+158 智力\n+3,143 耐力\n+\n186 随机属性1\n耐久: 100 / 100\n需要等级\n90\n需要\n至暗之夜工程学\n(1)\n售价:\n74\n9\n25",
+          "customizable_secondary_amounts": [
+            186
+          ]
+        },
+        {
+          "item_level": 318,
+          "quality": 4,
+          "stats": {
+            "intellect": 162,
+            "stamina": 3254
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明遮目镜\n物品等级：\n318\n拾取后绑定\n头部\n布甲\n77护甲\n+162 智力\n+3,254 耐力\n+\n188 随机属性1\n耐久: 100 / 100\n需要等级\n90\n需要\n至暗之夜工程学\n(1)\n售价:\n74\n9\n25",
+          "customizable_secondary_amounts": [
+            188
+          ]
+        },
+        {
+          "item_level": 322,
+          "quality": 4,
+          "stats": {
+            "intellect": 169,
+            "stamina": 3408
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明遮目镜\n物品等级：\n322\n拾取后绑定\n头部\n布甲\n79护甲\n+169 智力\n+3,408 耐力\n+\n191 随机属性1\n耐久: 100 / 100\n需要等级\n90\n需要\n至暗之夜工程学\n(1)\n售价:\n74\n9\n25",
+          "customizable_secondary_amounts": [
+            191
+          ]
+        },
+        {
+          "item_level": 325,
+          "quality": 4,
+          "stats": {
+            "intellect": 173,
+            "stamina": 3527
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明遮目镜\n物品等级：\n325\n拾取后绑定\n头部\n布甲\n81护甲\n+173 智力\n+3,527 耐力\n+\n194 随机属性1\n耐久: 100 / 100\n需要等级\n90\n需要\n至暗之夜工程学\n(1)\n售价:\n74\n9\n25",
+          "customizable_secondary_amounts": [
+            194
+          ]
+        },
+        {
+          "item_level": 328,
+          "quality": 4,
+          "stats": {
+            "intellect": 178,
+            "stamina": 3649
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明遮目镜\n物品等级：\n328\n拾取后绑定\n头部\n布甲\n82护甲\n+178 智力\n+3,649 耐力\n+\n196 随机属性1\n耐久: 100 / 100\n需要等级\n90\n需要\n至暗之夜工程学\n(1)\n售价:\n74\n9\n25",
+          "customizable_secondary_amounts": [
+            196
+          ]
+        },
+        {
+          "item_level": 331,
+          "quality": 4,
+          "stats": {
+            "intellect": 183,
+            "stamina": 3777
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明遮目镜\n物品等级：\n331\n拾取后绑定\n头部\n布甲\n84护甲\n+183 智力\n+3,777 耐力\n+\n198 随机属性1\n耐久: 100 / 100\n需要等级\n90\n需要\n至暗之夜工程学\n(1)\n售价:\n74\n9\n25",
+          "customizable_secondary_amounts": [
+            198
+          ]
+        }
+      ],
+      "secondary_stat_mode": "customizable",
+      "sockets": 0,
+      "unique_equipped": false,
+      "effect_stat_policy": "count_static_item_stats_only",
+      "static_secondary_stats_included": true,
+      "triggered_secondary_stats_included": false
+    },
+    {
+      "id": 244744,
+      "name_en": "Aetherlume Optics",
+      "name_zh_cn": "以太流明光学目镜",
+      "profession": "engineering",
+      "slot_key": "head",
+      "armor_type": "leather",
+      "weapon_type": null,
+      "customizable_secondaries": true,
+      "secondary_stat_choices": [
+        "critical_strike",
+        "haste",
+        "mastery",
+        "versatility"
+      ],
+      "secondary_stats_selected": 1,
+      "embellished": false,
+      "catalyst_eligible": false,
+      "item_levels": {
+        "spark_of_tides": {
+          "quality_1": 292,
+          "quality_2": 296,
+          "quality_3": 299,
+          "quality_4": 302,
+          "quality_5": 305
+        },
+        "hero_mistcrest": {
+          "quality_1": 305,
+          "quality_2": 309,
+          "quality_3": 312,
+          "quality_4": 315,
+          "quality_5": 318
+        },
+        "myth_mistcrest": {
+          "quality_1": 318,
+          "quality_2": 322,
+          "quality_3": 325,
+          "quality_4": 328,
+          "quality_5": 331
+        }
+      },
+      "default_optimizer_item_level": 331,
+      "spark_of_tides_cost": 2,
+      "wowhead_url": "https://www.wowhead.com/item=244744",
+      "icon": "inv_helmet_47",
+      "variants": [
+        {
+          "item_level": 305,
+          "quality": 4,
+          "stats": {
+            "stamina": 2794,
+            "agility_or_intellect": 144
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明光学目镜\n物品等级：\n305\n拾取后绑定\n头部\n皮甲\n121护甲\n+144 [敏捷 or 智力]\n+2,794 耐力\n+\n177 随机属性1\n耐久: 100 / 100\n需要等级\n90\n需要\n至暗之夜工程学\n(1)\n售价:\n74\n36\n20",
+          "customizable_secondary_amounts": [
+            177
+          ]
+        },
+        {
+          "item_level": 309,
+          "quality": 4,
+          "stats": {
+            "stamina": 2931,
+            "agility_or_intellect": 149
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明光学目镜\n物品等级：\n309\n拾取后绑定\n头部\n皮甲\n125护甲\n+149 [敏捷 or 智力]\n+2,931 耐力\n+\n181 随机属性1\n耐久: 100 / 100\n需要等级\n90\n需要\n至暗之夜工程学\n(1)\n售价:\n74\n36\n20",
+          "customizable_secondary_amounts": [
+            181
+          ]
+        },
+        {
+          "item_level": 312,
+          "quality": 4,
+          "stats": {
+            "stamina": 3037,
+            "agility_or_intellect": 154
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明光学目镜\n物品等级：\n312\n拾取后绑定\n头部\n皮甲\n127护甲\n+154 [敏捷 or 智力]\n+3,037 耐力\n+\n183 随机属性1\n耐久: 100 / 100\n需要等级\n90\n需要\n至暗之夜工程学\n(1)\n售价:\n74\n36\n20",
+          "customizable_secondary_amounts": [
+            183
+          ]
+        },
+        {
+          "item_level": 315,
+          "quality": 4,
+          "stats": {
+            "stamina": 3143,
+            "agility_or_intellect": 158
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明光学目镜\n物品等级：\n315\n拾取后绑定\n头部\n皮甲\n129护甲\n+158 [敏捷 or 智力]\n+3,143 耐力\n+\n186 随机属性1\n耐久: 100 / 100\n需要等级\n90\n需要\n至暗之夜工程学\n(1)\n售价:\n74\n36\n20",
+          "customizable_secondary_amounts": [
+            186
+          ]
+        },
+        {
+          "item_level": 318,
+          "quality": 4,
+          "stats": {
+            "stamina": 3254,
+            "agility_or_intellect": 162
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明光学目镜\n物品等级：\n318\n拾取后绑定\n头部\n皮甲\n132护甲\n+162 [敏捷 or 智力]\n+3,254 耐力\n+\n188 随机属性1\n耐久: 100 / 100\n需要等级\n90\n需要\n至暗之夜工程学\n(1)\n售价:\n74\n36\n20",
+          "customizable_secondary_amounts": [
+            188
+          ]
+        },
+        {
+          "item_level": 322,
+          "quality": 4,
+          "stats": {
+            "stamina": 3408,
+            "agility_or_intellect": 169
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明光学目镜\n物品等级：\n322\n拾取后绑定\n头部\n皮甲\n136护甲\n+169 [敏捷 or 智力]\n+3,408 耐力\n+\n191 随机属性1\n耐久: 100 / 100\n需要等级\n90\n需要\n至暗之夜工程学\n(1)\n售价:\n74\n36\n20",
+          "customizable_secondary_amounts": [
+            191
+          ]
+        },
+        {
+          "item_level": 325,
+          "quality": 4,
+          "stats": {
+            "stamina": 3527,
+            "agility_or_intellect": 173
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明光学目镜\n物品等级：\n325\n拾取后绑定\n头部\n皮甲\n138护甲\n+173 [敏捷 or 智力]\n+3,527 耐力\n+\n194 随机属性1\n耐久: 100 / 100\n需要等级\n90\n需要\n至暗之夜工程学\n(1)\n售价:\n74\n36\n20",
+          "customizable_secondary_amounts": [
+            194
+          ]
+        },
+        {
+          "item_level": 328,
+          "quality": 4,
+          "stats": {
+            "stamina": 3649,
+            "agility_or_intellect": 178
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明光学目镜\n物品等级：\n328\n拾取后绑定\n头部\n皮甲\n141护甲\n+178 [敏捷 or 智力]\n+3,649 耐力\n+\n196 随机属性1\n耐久: 100 / 100\n需要等级\n90\n需要\n至暗之夜工程学\n(1)\n售价:\n74\n36\n20",
+          "customizable_secondary_amounts": [
+            196
+          ]
+        },
+        {
+          "item_level": 331,
+          "quality": 4,
+          "stats": {
+            "stamina": 3777,
+            "agility_or_intellect": 183
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明光学目镜\n物品等级：\n331\n拾取后绑定\n头部\n皮甲\n144护甲\n+183 [敏捷 or 智力]\n+3,777 耐力\n+\n198 随机属性1\n耐久: 100 / 100\n需要等级\n90\n需要\n至暗之夜工程学\n(1)\n售价:\n74\n36\n20",
+          "customizable_secondary_amounts": [
+            198
+          ]
+        }
+      ],
+      "secondary_stat_mode": "customizable",
+      "sockets": 0,
+      "unique_equipped": false,
+      "effect_stat_policy": "count_static_item_stats_only",
+      "static_secondary_stats_included": true,
+      "triggered_secondary_stats_included": false
+    },
+    {
+      "id": 244746,
+      "name_en": "Aetherlume Sun Guard",
+      "name_zh_cn": "以太流明遮阳目镜",
+      "profession": "engineering",
+      "slot_key": "head",
+      "armor_type": "plate",
+      "weapon_type": null,
+      "customizable_secondaries": true,
+      "secondary_stat_choices": [
+        "critical_strike",
+        "haste",
+        "mastery",
+        "versatility"
+      ],
+      "secondary_stats_selected": 1,
+      "embellished": false,
+      "catalyst_eligible": false,
+      "item_levels": {
+        "spark_of_tides": {
+          "quality_1": 292,
+          "quality_2": 296,
+          "quality_3": 299,
+          "quality_4": 302,
+          "quality_5": 305
+        },
+        "hero_mistcrest": {
+          "quality_1": 305,
+          "quality_2": 309,
+          "quality_3": 312,
+          "quality_4": 315,
+          "quality_5": 318
+        },
+        "myth_mistcrest": {
+          "quality_1": 318,
+          "quality_2": 322,
+          "quality_3": 325,
+          "quality_4": 328,
+          "quality_5": 331
+        }
+      },
+      "default_optimizer_item_level": 331,
+      "spark_of_tides_cost": 2,
+      "wowhead_url": "https://www.wowhead.com/item=244746",
+      "icon": "inv_helmet_47",
+      "variants": [
+        {
+          "item_level": 305,
+          "quality": 4,
+          "stats": {
+            "stamina": 2794,
+            "strength_or_intellect": 144
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明遮阳目镜\n物品等级：\n305\n拾取后绑定\n头部\n板甲\n269护甲\n+144 [力量 or 智力]\n+2,794 耐力\n+\n177 随机属性1\n耐久: 100 / 100\n需要等级\n90\n需要\n至暗之夜工程学\n(1)\n售价:\n74\n90\n9",
+          "customizable_secondary_amounts": [
+            177
+          ]
+        },
+        {
+          "item_level": 309,
+          "quality": 4,
+          "stats": {
+            "stamina": 2931,
+            "strength_or_intellect": 149
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明遮阳目镜\n物品等级：\n309\n拾取后绑定\n头部\n板甲\n276护甲\n+149 [力量 or 智力]\n+2,931 耐力\n+\n181 随机属性1\n耐久: 100 / 100\n需要等级\n90\n需要\n至暗之夜工程学\n(1)\n售价:\n74\n90\n9",
+          "customizable_secondary_amounts": [
+            181
+          ]
+        },
+        {
+          "item_level": 312,
+          "quality": 4,
+          "stats": {
+            "stamina": 3037,
+            "strength_or_intellect": 154
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明遮阳目镜\n物品等级：\n312\n拾取后绑定\n头部\n板甲\n282护甲\n+154 [力量 or 智力]\n+3,037 耐力\n+\n183 随机属性1\n耐久: 100 / 100\n需要等级\n90\n需要\n至暗之夜工程学\n(1)\n售价:\n74\n90\n9",
+          "customizable_secondary_amounts": [
+            183
+          ]
+        },
+        {
+          "item_level": 315,
+          "quality": 4,
+          "stats": {
+            "stamina": 3143,
+            "strength_or_intellect": 158
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明遮阳目镜\n物品等级：\n315\n拾取后绑定\n头部\n板甲\n287护甲\n+158 [力量 or 智力]\n+3,143 耐力\n+\n186 随机属性1\n耐久: 100 / 100\n需要等级\n90\n需要\n至暗之夜工程学\n(1)\n售价:\n74\n90\n9",
+          "customizable_secondary_amounts": [
+            186
+          ]
+        },
+        {
+          "item_level": 318,
+          "quality": 4,
+          "stats": {
+            "stamina": 3254,
+            "strength_or_intellect": 162
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明遮阳目镜\n物品等级：\n318\n拾取后绑定\n头部\n板甲\n293护甲\n+162 [力量 or 智力]\n+3,254 耐力\n+\n188 随机属性1\n耐久: 100 / 100\n需要等级\n90\n需要\n至暗之夜工程学\n(1)\n售价:\n74\n90\n9",
+          "customizable_secondary_amounts": [
+            188
+          ]
+        },
+        {
+          "item_level": 322,
+          "quality": 4,
+          "stats": {
+            "stamina": 3408,
+            "strength_or_intellect": 169
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明遮阳目镜\n物品等级：\n322\n拾取后绑定\n头部\n板甲\n301护甲\n+169 [力量 or 智力]\n+3,408 耐力\n+\n191 随机属性1\n耐久: 100 / 100\n需要等级\n90\n需要\n至暗之夜工程学\n(1)\n售价:\n74\n90\n9",
+          "customizable_secondary_amounts": [
+            191
+          ]
+        },
+        {
+          "item_level": 325,
+          "quality": 4,
+          "stats": {
+            "stamina": 3527,
+            "strength_or_intellect": 173
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明遮阳目镜\n物品等级：\n325\n拾取后绑定\n头部\n板甲\n307护甲\n+173 [力量 or 智力]\n+3,527 耐力\n+\n194 随机属性1\n耐久: 100 / 100\n需要等级\n90\n需要\n至暗之夜工程学\n(1)\n售价:\n74\n90\n9",
+          "customizable_secondary_amounts": [
+            194
+          ]
+        },
+        {
+          "item_level": 328,
+          "quality": 4,
+          "stats": {
+            "stamina": 3649,
+            "strength_or_intellect": 178
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明遮阳目镜\n物品等级：\n328\n拾取后绑定\n头部\n板甲\n313护甲\n+178 [力量 or 智力]\n+3,649 耐力\n+\n196 随机属性1\n耐久: 100 / 100\n需要等级\n90\n需要\n至暗之夜工程学\n(1)\n售价:\n74\n90\n9",
+          "customizable_secondary_amounts": [
+            196
+          ]
+        },
+        {
+          "item_level": 331,
+          "quality": 4,
+          "stats": {
+            "stamina": 3777,
+            "strength_or_intellect": 183
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明遮阳目镜\n物品等级：\n331\n拾取后绑定\n头部\n板甲\n319护甲\n+183 [力量 or 智力]\n+3,777 耐力\n+\n198 随机属性1\n耐久: 100 / 100\n需要等级\n90\n需要\n至暗之夜工程学\n(1)\n售价:\n74\n90\n9",
+          "customizable_secondary_amounts": [
+            198
+          ]
+        }
+      ],
+      "secondary_stat_mode": "customizable",
+      "sockets": 0,
+      "unique_equipped": false,
+      "effect_stat_policy": "count_static_item_stats_only",
+      "static_secondary_stats_included": true,
+      "triggered_secondary_stats_included": false
+    },
+    {
+      "id": 244745,
+      "name_en": "Aetherlume Vision Shroud",
+      "name_zh_cn": "以太流明成像目镜",
+      "profession": "engineering",
+      "slot_key": "head",
+      "armor_type": "mail",
+      "weapon_type": null,
+      "customizable_secondaries": true,
+      "secondary_stat_choices": [
+        "critical_strike",
+        "haste",
+        "mastery",
+        "versatility"
+      ],
+      "secondary_stats_selected": 1,
+      "embellished": false,
+      "catalyst_eligible": false,
+      "item_levels": {
+        "spark_of_tides": {
+          "quality_1": 292,
+          "quality_2": 296,
+          "quality_3": 299,
+          "quality_4": 302,
+          "quality_5": 305
+        },
+        "hero_mistcrest": {
+          "quality_1": 305,
+          "quality_2": 309,
+          "quality_3": 312,
+          "quality_4": 315,
+          "quality_5": 318
+        },
+        "myth_mistcrest": {
+          "quality_1": 318,
+          "quality_2": 322,
+          "quality_3": 325,
+          "quality_4": 328,
+          "quality_5": 331
+        }
+      },
+      "default_optimizer_item_level": 331,
+      "spark_of_tides_cost": 2,
+      "wowhead_url": "https://www.wowhead.com/item=244745",
+      "icon": "inv_helmet_47",
+      "variants": [
+        {
+          "item_level": 305,
+          "quality": 4,
+          "stats": {
+            "stamina": 2794,
+            "agility_or_intellect": 144
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明成像目镜\n物品等级：\n305\n拾取后绑定\n头部\n锁甲\n179护甲\n+144 [敏捷 or 智力]\n+2,794 耐力\n+\n177 随机属性1\n耐久: 100 / 100\n需要等级\n90\n需要\n至暗之夜工程学\n(1)\n售价:\n74\n63\n15",
+          "customizable_secondary_amounts": [
+            177
+          ]
+        },
+        {
+          "item_level": 309,
+          "quality": 4,
+          "stats": {
+            "stamina": 2931,
+            "agility_or_intellect": 149
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明成像目镜\n物品等级：\n309\n拾取后绑定\n头部\n锁甲\n184护甲\n+149 [敏捷 or 智力]\n+2,931 耐力\n+\n181 随机属性1\n耐久: 100 / 100\n需要等级\n90\n需要\n至暗之夜工程学\n(1)\n售价:\n74\n63\n15",
+          "customizable_secondary_amounts": [
+            181
+          ]
+        },
+        {
+          "item_level": 312,
+          "quality": 4,
+          "stats": {
+            "stamina": 3037,
+            "agility_or_intellect": 154
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明成像目镜\n物品等级：\n312\n拾取后绑定\n头部\n锁甲\n187护甲\n+154 [敏捷 or 智力]\n+3,037 耐力\n+\n183 随机属性1\n耐久: 100 / 100\n需要等级\n90\n需要\n至暗之夜工程学\n(1)\n售价:\n74\n63\n15",
+          "customizable_secondary_amounts": [
+            183
+          ]
+        },
+        {
+          "item_level": 315,
+          "quality": 4,
+          "stats": {
+            "stamina": 3143,
+            "agility_or_intellect": 158
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明成像目镜\n物品等级：\n315\n拾取后绑定\n头部\n锁甲\n191护甲\n+158 [敏捷 or 智力]\n+3,143 耐力\n+\n186 随机属性1\n耐久: 100 / 100\n需要等级\n90\n需要\n至暗之夜工程学\n(1)\n售价:\n74\n63\n15",
+          "customizable_secondary_amounts": [
+            186
+          ]
+        },
+        {
+          "item_level": 318,
+          "quality": 4,
+          "stats": {
+            "stamina": 3254,
+            "agility_or_intellect": 162
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明成像目镜\n物品等级：\n318\n拾取后绑定\n头部\n锁甲\n195护甲\n+162 [敏捷 or 智力]\n+3,254 耐力\n+\n188 随机属性1\n耐久: 100 / 100\n需要等级\n90\n需要\n至暗之夜工程学\n(1)\n售价:\n74\n63\n15",
+          "customizable_secondary_amounts": [
+            188
+          ]
+        },
+        {
+          "item_level": 322,
+          "quality": 4,
+          "stats": {
+            "stamina": 3408,
+            "agility_or_intellect": 169
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明成像目镜\n物品等级：\n322\n拾取后绑定\n头部\n锁甲\n200护甲\n+169 [敏捷 or 智力]\n+3,408 耐力\n+\n191 随机属性1\n耐久: 100 / 100\n需要等级\n90\n需要\n至暗之夜工程学\n(1)\n售价:\n74\n63\n15",
+          "customizable_secondary_amounts": [
+            191
+          ]
+        },
+        {
+          "item_level": 325,
+          "quality": 4,
+          "stats": {
+            "stamina": 3527,
+            "agility_or_intellect": 173
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明成像目镜\n物品等级：\n325\n拾取后绑定\n头部\n锁甲\n204护甲\n+173 [敏捷 or 智力]\n+3,527 耐力\n+\n194 随机属性1\n耐久: 100 / 100\n需要等级\n90\n需要\n至暗之夜工程学\n(1)\n售价:\n74\n63\n15",
+          "customizable_secondary_amounts": [
+            194
+          ]
+        },
+        {
+          "item_level": 328,
+          "quality": 4,
+          "stats": {
+            "stamina": 3649,
+            "agility_or_intellect": 178
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明成像目镜\n物品等级：\n328\n拾取后绑定\n头部\n锁甲\n208护甲\n+178 [敏捷 or 智力]\n+3,649 耐力\n+\n196 随机属性1\n耐久: 100 / 100\n需要等级\n90\n需要\n至暗之夜工程学\n(1)\n售价:\n74\n63\n15",
+          "customizable_secondary_amounts": [
+            196
+          ]
+        },
+        {
+          "item_level": 331,
+          "quality": 4,
+          "stats": {
+            "stamina": 3777,
+            "agility_or_intellect": 183
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明成像目镜\n物品等级：\n331\n拾取后绑定\n头部\n锁甲\n212护甲\n+183 [敏捷 or 智力]\n+3,777 耐力\n+\n198 随机属性1\n耐久: 100 / 100\n需要等级\n90\n需要\n至暗之夜工程学\n(1)\n售价:\n74\n63\n15",
+          "customizable_secondary_amounts": [
+            198
+          ]
+        }
+      ],
+      "secondary_stat_mode": "customizable",
+      "sockets": 0,
+      "unique_equipped": false,
+      "effect_stat_policy": "count_static_item_stats_only",
+      "static_secondary_stats_included": true,
+      "triggered_secondary_stats_included": false
+    },
+    {
+      "id": 268477,
+      "name_en": "P.O.W. x3",
+      "name_zh_cn": "P.O.W. x3",
+      "profession": "engineering",
+      "slot_key": "weapon",
+      "armor_type": null,
+      "weapon_type": "ranged_gun",
+      "customizable_secondaries": true,
+      "secondary_stat_choices": [
+        "critical_strike",
+        "haste",
+        "mastery",
+        "versatility"
+      ],
+      "secondary_stats_selected": 1,
+      "embellished": false,
+      "catalyst_eligible": false,
+      "item_levels": {
+        "spark_of_tides": {
+          "quality_1": 292,
+          "quality_2": 296,
+          "quality_3": 299,
+          "quality_4": 302,
+          "quality_5": 305
+        },
+        "hero_mistcrest": {
+          "quality_1": 305,
+          "quality_2": 309,
+          "quality_3": 312,
+          "quality_4": 315,
+          "quality_5": 318
+        },
+        "myth_mistcrest": {
+          "quality_1": 318,
+          "quality_2": 322,
+          "quality_3": 325,
+          "quality_4": 328,
+          "quality_5": 331
+        }
+      },
+      "default_optimizer_item_level": 331,
+      "spark_of_tides_cost": 4,
+      "wowhead_url": "https://www.wowhead.com/item=268477",
+      "icon": "inv_firearm_2h_raidmidnight_d_01",
+      "variants": [
+        {
+          "item_level": 305,
+          "quality": 4,
+          "stats": {
+            "agility": 144,
+            "stamina": 2794
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "P.O.W. x3\n物品等级：\n305\n拾取后绑定\n远程\n枪\n227 - 422点伤害\n速度\n3.00\n（每秒伤害108.2点）\n+144 敏捷\n+2,794 耐力\n+\n177 随机属性1\n耐久: 120 / 120\n需要等级\n90\n\"再快点，火力全开！\"\n售价:\n172\n10\n86",
+          "customizable_secondary_amounts": [
+            177
+          ]
+        },
+        {
+          "item_level": 309,
+          "quality": 4,
+          "stats": {
+            "agility": 149,
+            "stamina": 2931
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "P.O.W. x3\n物品等级：\n309\n拾取后绑定\n远程\n枪\n236 - 439点伤害\n速度\n3.00\n（每秒伤害112.5点）\n+149 敏捷\n+2,931 耐力\n+\n181 随机属性1\n耐久: 120 / 120\n需要等级\n90\n\"再快点，火力全开！\"\n售价:\n172\n10\n86",
+          "customizable_secondary_amounts": [
+            181
+          ]
+        },
+        {
+          "item_level": 312,
+          "quality": 4,
+          "stats": {
+            "agility": 154,
+            "stamina": 3037
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "P.O.W. x3\n物品等级：\n312\n拾取后绑定\n远程\n枪\n242 - 451点伤害\n速度\n3.00\n（每秒伤害115.5点）\n+154 敏捷\n+3,037 耐力\n+\n183 随机属性1\n耐久: 120 / 120\n需要等级\n90\n\"再快点，火力全开！\"\n售价:\n172\n10\n86",
+          "customizable_secondary_amounts": [
+            183
+          ]
+        },
+        {
+          "item_level": 315,
+          "quality": 4,
+          "stats": {
+            "agility": 158,
+            "stamina": 3143
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "P.O.W. x3\n物品等级：\n315\n拾取后绑定\n远程\n枪\n249 - 464点伤害\n速度\n3.00\n（每秒伤害118.8点）\n+158 敏捷\n+3,143 耐力\n+\n186 随机属性1\n耐久: 120 / 120\n需要等级\n90\n\"再快点，火力全开！\"\n售价:\n172\n10\n86",
+          "customizable_secondary_amounts": [
+            186
+          ]
+        },
+        {
+          "item_level": 318,
+          "quality": 4,
+          "stats": {
+            "agility": 162,
+            "stamina": 3254
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "P.O.W. x3\n物品等级：\n318\n拾取后绑定\n远程\n枪\n256 - 477点伤害\n速度\n3.00\n（每秒伤害122.2点）\n+162 敏捷\n+3,254 耐力\n+\n188 随机属性1\n耐久: 120 / 120\n需要等级\n90\n\"再快点，火力全开！\"\n售价:\n172\n10\n86",
+          "customizable_secondary_amounts": [
+            188
+          ]
+        },
+        {
+          "item_level": 322,
+          "quality": 4,
+          "stats": {
+            "agility": 169,
+            "stamina": 3408
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "P.O.W. x3\n物品等级：\n322\n拾取后绑定\n远程\n枪\n266 - 495点伤害\n速度\n3.00\n（每秒伤害126.8点）\n+169 敏捷\n+3,408 耐力\n+\n191 随机属性1\n耐久: 120 / 120\n需要等级\n90\n\"再快点，火力全开！\"\n售价:\n172\n10\n86",
+          "customizable_secondary_amounts": [
+            191
+          ]
+        },
+        {
+          "item_level": 325,
+          "quality": 4,
+          "stats": {
+            "agility": 173,
+            "stamina": 3527
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "P.O.W. x3\n物品等级：\n325\n拾取后绑定\n远程\n枪\n274 - 509点伤害\n速度\n3.00\n（每秒伤害130.5点）\n+173 敏捷\n+3,527 耐力\n+\n194 随机属性1\n耐久: 120 / 120\n需要等级\n90\n\"再快点，火力全开！\"\n售价:\n172\n10\n86",
+          "customizable_secondary_amounts": [
+            194
+          ]
+        },
+        {
+          "item_level": 328,
+          "quality": 4,
+          "stats": {
+            "agility": 178,
+            "stamina": 3649
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "P.O.W. x3\n物品等级：\n328\n拾取后绑定\n远程\n枪\n281 - 523点伤害\n速度\n3.00\n（每秒伤害134.0点）\n+178 敏捷\n+3,649 耐力\n+\n196 随机属性1\n耐久: 120 / 120\n需要等级\n90\n\"再快点，火力全开！\"\n售价:\n172\n10\n86",
+          "customizable_secondary_amounts": [
+            196
+          ]
+        },
+        {
+          "item_level": 331,
+          "quality": 4,
+          "stats": {
+            "agility": 183,
+            "stamina": 3777
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "P.O.W. x3\n物品等级：\n331\n拾取后绑定\n远程\n枪\n289 - 538点伤害\n速度\n3.00\n（每秒伤害137.8点）\n+183 敏捷\n+3,777 耐力\n+\n198 随机属性1\n耐久: 120 / 120\n需要等级\n90\n\"再快点，火力全开！\"\n售价:\n172\n10\n86",
+          "customizable_secondary_amounts": [
+            198
+          ]
+        }
+      ],
+      "secondary_stat_mode": "customizable",
+      "sockets": 0,
+      "unique_equipped": false,
+      "effect_stat_policy": "count_static_item_stats_only",
+      "static_secondary_stats_included": true,
+      "triggered_secondary_stats_included": false,
+      "candidate_specs": [
+        "hunter.beast_mastery",
+        "hunter.marksmanship"
+      ],
+      "candidate_classes": [
+        "hunter"
+      ]
+    },
+    {
+      "id": 244748,
+      "name_en": "Aetherlume Bands",
+      "name_zh_cn": "以太流明腕带",
+      "profession": "engineering",
+      "slot_key": "wrist",
+      "armor_type": "leather",
+      "weapon_type": null,
+      "customizable_secondaries": true,
+      "secondary_stat_choices": [
+        "critical_strike",
+        "haste",
+        "mastery",
+        "versatility"
+      ],
+      "secondary_stats_selected": 1,
+      "embellished": false,
+      "catalyst_eligible": false,
+      "item_levels": {
+        "spark_of_tides": {
+          "quality_1": 292,
+          "quality_2": 296,
+          "quality_3": 299,
+          "quality_4": 302,
+          "quality_5": 305
+        },
+        "hero_mistcrest": {
+          "quality_1": 305,
+          "quality_2": 309,
+          "quality_3": 312,
+          "quality_4": 315,
+          "quality_5": 318
+        },
+        "myth_mistcrest": {
+          "quality_1": 318,
+          "quality_2": 322,
+          "quality_3": 325,
+          "quality_4": 328,
+          "quality_5": 331
+        }
+      },
+      "default_optimizer_item_level": 331,
+      "spark_of_tides_cost": 2,
+      "wowhead_url": "https://www.wowhead.com/item=244748",
+      "icon": "inv_bracer_leather_questbloodelf_b_01",
+      "variants": [
+        {
+          "item_level": 305,
+          "quality": 4,
+          "stats": {
+            "stamina": 1572,
+            "agility_or_intellect": 81
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明腕带\n物品等级：\n305\n拾取后绑定\n腕部\n皮甲\n81护甲\n+81 [敏捷 or 智力]\n+1,572 耐力\n+\n100 随机属性1\n耐久: 55 / 55\n需要等级\n90\n售价:\n50\n67\n23",
+          "customizable_secondary_amounts": [
+            100
+          ]
+        },
+        {
+          "item_level": 309,
+          "quality": 4,
+          "stats": {
+            "stamina": 1649,
+            "agility_or_intellect": 84
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明腕带\n物品等级：\n309\n拾取后绑定\n腕部\n皮甲\n83护甲\n+84 [敏捷 or 智力]\n+1,649 耐力\n+\n102 随机属性1\n耐久: 55 / 55\n需要等级\n90\n售价:\n50\n67\n23",
+          "customizable_secondary_amounts": [
+            102
+          ]
+        },
+        {
+          "item_level": 312,
+          "quality": 4,
+          "stats": {
+            "stamina": 1709,
+            "agility_or_intellect": 86
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明腕带\n物品等级：\n312\n拾取后绑定\n腕部\n皮甲\n85护甲\n+86 [敏捷 or 智力]\n+1,709 耐力\n+\n103 随机属性1\n耐久: 55 / 55\n需要等级\n90\n售价:\n50\n67\n23",
+          "customizable_secondary_amounts": [
+            103
+          ]
+        },
+        {
+          "item_level": 315,
+          "quality": 4,
+          "stats": {
+            "stamina": 1768,
+            "agility_or_intellect": 89
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明腕带\n物品等级：\n315\n拾取后绑定\n腕部\n皮甲\n86护甲\n+89 [敏捷 or 智力]\n+1,768 耐力\n+\n104 随机属性1\n耐久: 55 / 55\n需要等级\n90\n售价:\n50\n67\n23",
+          "customizable_secondary_amounts": [
+            104
+          ]
+        },
+        {
+          "item_level": 318,
+          "quality": 4,
+          "stats": {
+            "stamina": 1830,
+            "agility_or_intellect": 91
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明腕带\n物品等级：\n318\n拾取后绑定\n腕部\n皮甲\n88护甲\n+91 [敏捷 or 智力]\n+1,830 耐力\n+\n106 随机属性1\n耐久: 55 / 55\n需要等级\n90\n售价:\n50\n67\n23",
+          "customizable_secondary_amounts": [
+            106
+          ]
+        },
+        {
+          "item_level": 322,
+          "quality": 4,
+          "stats": {
+            "stamina": 1917,
+            "agility_or_intellect": 95
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明腕带\n物品等级：\n322\n拾取后绑定\n腕部\n皮甲\n90护甲\n+95 [敏捷 or 智力]\n+1,917 耐力\n+\n108 随机属性1\n耐久: 55 / 55\n需要等级\n90\n售价:\n50\n67\n23",
+          "customizable_secondary_amounts": [
+            108
+          ]
+        },
+        {
+          "item_level": 325,
+          "quality": 4,
+          "stats": {
+            "stamina": 1984,
+            "agility_or_intellect": 98
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明腕带\n物品等级：\n325\n拾取后绑定\n腕部\n皮甲\n92护甲\n+98 [敏捷 or 智力]\n+1,984 耐力\n+\n109 随机属性1\n耐久: 55 / 55\n需要等级\n90\n售价:\n50\n67\n23",
+          "customizable_secondary_amounts": [
+            109
+          ]
+        },
+        {
+          "item_level": 328,
+          "quality": 4,
+          "stats": {
+            "stamina": 2053,
+            "agility_or_intellect": 100
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明腕带\n物品等级：\n328\n拾取后绑定\n腕部\n皮甲\n94护甲\n+100 [敏捷 or 智力]\n+2,053 耐力\n+\n110 随机属性1\n耐久: 55 / 55\n需要等级\n90\n售价:\n50\n67\n23",
+          "customizable_secondary_amounts": [
+            110
+          ]
+        },
+        {
+          "item_level": 331,
+          "quality": 4,
+          "stats": {
+            "stamina": 2124,
+            "agility_or_intellect": 103
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明腕带\n物品等级：\n331\n拾取后绑定\n腕部\n皮甲\n96护甲\n+103 [敏捷 or 智力]\n+2,124 耐力\n+\n112 随机属性1\n耐久: 55 / 55\n需要等级\n90\n售价:\n50\n67\n23",
+          "customizable_secondary_amounts": [
+            112
+          ]
+        }
+      ],
+      "secondary_stat_mode": "customizable",
+      "sockets": 0,
+      "unique_equipped": false,
+      "effect_stat_policy": "count_static_item_stats_only",
+      "static_secondary_stats_included": true,
+      "triggered_secondary_stats_included": false
+    },
+    {
+      "id": 244749,
+      "name_en": "Aetherlume Bracelets",
+      "name_zh_cn": "以太流明腕甲",
+      "profession": "engineering",
+      "slot_key": "wrist",
+      "armor_type": "mail",
+      "weapon_type": null,
+      "customizable_secondaries": true,
+      "secondary_stat_choices": [
+        "critical_strike",
+        "haste",
+        "mastery",
+        "versatility"
+      ],
+      "secondary_stats_selected": 1,
+      "embellished": false,
+      "catalyst_eligible": false,
+      "item_levels": {
+        "spark_of_tides": {
+          "quality_1": 292,
+          "quality_2": 296,
+          "quality_3": 299,
+          "quality_4": 302,
+          "quality_5": 305
+        },
+        "hero_mistcrest": {
+          "quality_1": 305,
+          "quality_2": 309,
+          "quality_3": 312,
+          "quality_4": 315,
+          "quality_5": 318
+        },
+        "myth_mistcrest": {
+          "quality_1": 318,
+          "quality_2": 322,
+          "quality_3": 325,
+          "quality_4": 328,
+          "quality_5": 331
+        }
+      },
+      "default_optimizer_item_level": 331,
+      "spark_of_tides_cost": 2,
+      "wowhead_url": "https://www.wowhead.com/item=244749",
+      "icon": "inv_bracer_mail_questbloodelf_b_01",
+      "variants": [
+        {
+          "item_level": 305,
+          "quality": 4,
+          "stats": {
+            "stamina": 1572,
+            "agility_or_intellect": 81
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明腕甲\n物品等级：\n305\n拾取后绑定\n腕部\n锁甲\n119护甲\n+81 [敏捷 or 智力]\n+1,572 耐力\n+\n100 随机属性1\n耐久: 55 / 55\n需要等级\n90\n售价:\n50\n85\n33",
+          "customizable_secondary_amounts": [
+            100
+          ]
+        },
+        {
+          "item_level": 309,
+          "quality": 4,
+          "stats": {
+            "stamina": 1649,
+            "agility_or_intellect": 84
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明腕甲\n物品等级：\n309\n拾取后绑定\n腕部\n锁甲\n122护甲\n+84 [敏捷 or 智力]\n+1,649 耐力\n+\n102 随机属性1\n耐久: 55 / 55\n需要等级\n90\n售价:\n50\n85\n33",
+          "customizable_secondary_amounts": [
+            102
+          ]
+        },
+        {
+          "item_level": 312,
+          "quality": 4,
+          "stats": {
+            "stamina": 1709,
+            "agility_or_intellect": 86
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明腕甲\n物品等级：\n312\n拾取后绑定\n腕部\n锁甲\n125护甲\n+86 [敏捷 or 智力]\n+1,709 耐力\n+\n103 随机属性1\n耐久: 55 / 55\n需要等级\n90\n售价:\n50\n85\n33",
+          "customizable_secondary_amounts": [
+            103
+          ]
+        },
+        {
+          "item_level": 315,
+          "quality": 4,
+          "stats": {
+            "stamina": 1768,
+            "agility_or_intellect": 89
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明腕甲\n物品等级：\n315\n拾取后绑定\n腕部\n锁甲\n127护甲\n+89 [敏捷 or 智力]\n+1,768 耐力\n+\n104 随机属性1\n耐久: 55 / 55\n需要等级\n90\n售价:\n50\n85\n33",
+          "customizable_secondary_amounts": [
+            104
+          ]
+        },
+        {
+          "item_level": 318,
+          "quality": 4,
+          "stats": {
+            "stamina": 1830,
+            "agility_or_intellect": 91
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明腕甲\n物品等级：\n318\n拾取后绑定\n腕部\n锁甲\n130护甲\n+91 [敏捷 or 智力]\n+1,830 耐力\n+\n106 随机属性1\n耐久: 55 / 55\n需要等级\n90\n售价:\n50\n85\n33",
+          "customizable_secondary_amounts": [
+            106
+          ]
+        },
+        {
+          "item_level": 322,
+          "quality": 4,
+          "stats": {
+            "stamina": 1917,
+            "agility_or_intellect": 95
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明腕甲\n物品等级：\n322\n拾取后绑定\n腕部\n锁甲\n133护甲\n+95 [敏捷 or 智力]\n+1,917 耐力\n+\n108 随机属性1\n耐久: 55 / 55\n需要等级\n90\n售价:\n50\n85\n33",
+          "customizable_secondary_amounts": [
+            108
+          ]
+        },
+        {
+          "item_level": 325,
+          "quality": 4,
+          "stats": {
+            "stamina": 1984,
+            "agility_or_intellect": 98
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明腕甲\n物品等级：\n325\n拾取后绑定\n腕部\n锁甲\n136护甲\n+98 [敏捷 or 智力]\n+1,984 耐力\n+\n109 随机属性1\n耐久: 55 / 55\n需要等级\n90\n售价:\n50\n85\n33",
+          "customizable_secondary_amounts": [
+            109
+          ]
+        },
+        {
+          "item_level": 328,
+          "quality": 4,
+          "stats": {
+            "stamina": 2053,
+            "agility_or_intellect": 100
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明腕甲\n物品等级：\n328\n拾取后绑定\n腕部\n锁甲\n139护甲\n+100 [敏捷 or 智力]\n+2,053 耐力\n+\n110 随机属性1\n耐久: 55 / 55\n需要等级\n90\n售价:\n50\n85\n33",
+          "customizable_secondary_amounts": [
+            110
+          ]
+        },
+        {
+          "item_level": 331,
+          "quality": 4,
+          "stats": {
+            "stamina": 2124,
+            "agility_or_intellect": 103
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明腕甲\n物品等级：\n331\n拾取后绑定\n腕部\n锁甲\n142护甲\n+103 [敏捷 or 智力]\n+2,124 耐力\n+\n112 随机属性1\n耐久: 55 / 55\n需要等级\n90\n售价:\n50\n85\n33",
+          "customizable_secondary_amounts": [
+            112
+          ]
+        }
+      ],
+      "secondary_stat_mode": "customizable",
+      "sockets": 0,
+      "unique_equipped": false,
+      "effect_stat_policy": "count_static_item_stats_only",
+      "static_secondary_stats_included": true,
+      "triggered_secondary_stats_included": false
+    },
+    {
+      "id": 244750,
+      "name_en": "Aetherlume Guards",
+      "name_zh_cn": "以太流明腕铠",
+      "profession": "engineering",
+      "slot_key": "wrist",
+      "armor_type": "plate",
+      "weapon_type": null,
+      "customizable_secondaries": true,
+      "secondary_stat_choices": [
+        "critical_strike",
+        "haste",
+        "mastery",
+        "versatility"
+      ],
+      "secondary_stats_selected": 1,
+      "embellished": false,
+      "catalyst_eligible": false,
+      "item_levels": {
+        "spark_of_tides": {
+          "quality_1": 292,
+          "quality_2": 296,
+          "quality_3": 299,
+          "quality_4": 302,
+          "quality_5": 305
+        },
+        "hero_mistcrest": {
+          "quality_1": 305,
+          "quality_2": 309,
+          "quality_3": 312,
+          "quality_4": 315,
+          "quality_5": 318
+        },
+        "myth_mistcrest": {
+          "quality_1": 318,
+          "quality_2": 322,
+          "quality_3": 325,
+          "quality_4": 328,
+          "quality_5": 331
+        }
+      },
+      "default_optimizer_item_level": 331,
+      "spark_of_tides_cost": 2,
+      "wowhead_url": "https://www.wowhead.com/item=244750",
+      "icon": "inv_plate_questbloodelf_b_01_bracer",
+      "variants": [
+        {
+          "item_level": 305,
+          "quality": 4,
+          "stats": {
+            "stamina": 1572,
+            "strength_or_intellect": 81
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明腕铠\n物品等级：\n305\n拾取后绑定\n腕部\n板甲\n180护甲\n+81 [力量 or 智力]\n+1,572 耐力\n+\n100 随机属性1\n耐久: 55 / 55\n需要等级\n90\n售价:\n51\n3\n43",
+          "customizable_secondary_amounts": [
+            100
+          ]
+        },
+        {
+          "item_level": 309,
+          "quality": 4,
+          "stats": {
+            "stamina": 1649,
+            "strength_or_intellect": 84
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明腕铠\n物品等级：\n309\n拾取后绑定\n腕部\n板甲\n184护甲\n+84 [力量 or 智力]\n+1,649 耐力\n+\n102 随机属性1\n耐久: 55 / 55\n需要等级\n90\n售价:\n51\n3\n43",
+          "customizable_secondary_amounts": [
+            102
+          ]
+        },
+        {
+          "item_level": 312,
+          "quality": 4,
+          "stats": {
+            "stamina": 1709,
+            "strength_or_intellect": 86
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明腕铠\n物品等级：\n312\n拾取后绑定\n腕部\n板甲\n188护甲\n+86 [力量 or 智力]\n+1,709 耐力\n+\n103 随机属性1\n耐久: 55 / 55\n需要等级\n90\n售价:\n51\n3\n43",
+          "customizable_secondary_amounts": [
+            103
+          ]
+        },
+        {
+          "item_level": 315,
+          "quality": 4,
+          "stats": {
+            "stamina": 1768,
+            "strength_or_intellect": 89
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明腕铠\n物品等级：\n315\n拾取后绑定\n腕部\n板甲\n191护甲\n+89 [力量 or 智力]\n+1,768 耐力\n+\n104 随机属性1\n耐久: 55 / 55\n需要等级\n90\n售价:\n51\n3\n43",
+          "customizable_secondary_amounts": [
+            104
+          ]
+        },
+        {
+          "item_level": 318,
+          "quality": 4,
+          "stats": {
+            "stamina": 1830,
+            "strength_or_intellect": 91
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明腕铠\n物品等级：\n318\n拾取后绑定\n腕部\n板甲\n195护甲\n+91 [力量 or 智力]\n+1,830 耐力\n+\n106 随机属性1\n耐久: 55 / 55\n需要等级\n90\n售价:\n51\n3\n43",
+          "customizable_secondary_amounts": [
+            106
+          ]
+        },
+        {
+          "item_level": 322,
+          "quality": 4,
+          "stats": {
+            "stamina": 1917,
+            "strength_or_intellect": 95
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明腕铠\n物品等级：\n322\n拾取后绑定\n腕部\n板甲\n200护甲\n+95 [力量 or 智力]\n+1,917 耐力\n+\n108 随机属性1\n耐久: 55 / 55\n需要等级\n90\n售价:\n51\n3\n43",
+          "customizable_secondary_amounts": [
+            108
+          ]
+        },
+        {
+          "item_level": 325,
+          "quality": 4,
+          "stats": {
+            "stamina": 1984,
+            "strength_or_intellect": 98
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明腕铠\n物品等级：\n325\n拾取后绑定\n腕部\n板甲\n205护甲\n+98 [力量 or 智力]\n+1,984 耐力\n+\n109 随机属性1\n耐久: 55 / 55\n需要等级\n90\n售价:\n51\n3\n43",
+          "customizable_secondary_amounts": [
+            109
+          ]
+        },
+        {
+          "item_level": 328,
+          "quality": 4,
+          "stats": {
+            "stamina": 2053,
+            "strength_or_intellect": 100
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明腕铠\n物品等级：\n328\n拾取后绑定\n腕部\n板甲\n209护甲\n+100 [力量 or 智力]\n+2,053 耐力\n+\n110 随机属性1\n耐久: 55 / 55\n需要等级\n90\n售价:\n51\n3\n43",
+          "customizable_secondary_amounts": [
+            110
+          ]
+        },
+        {
+          "item_level": 331,
+          "quality": 4,
+          "stats": {
+            "stamina": 2124,
+            "strength_or_intellect": 103
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明腕铠\n物品等级：\n331\n拾取后绑定\n腕部\n板甲\n213护甲\n+103 [力量 or 智力]\n+2,124 耐力\n+\n112 随机属性1\n耐久: 55 / 55\n需要等级\n90\n售价:\n51\n3\n43",
+          "customizable_secondary_amounts": [
+            112
+          ]
+        }
+      ],
+      "secondary_stat_mode": "customizable",
+      "sockets": 0,
+      "unique_equipped": false,
+      "effect_stat_policy": "count_static_item_stats_only",
+      "static_secondary_stats_included": true,
+      "triggered_secondary_stats_included": false
+    },
+    {
+      "id": 244747,
+      "name_en": "Aetherlume Silken Cuffs",
+      "name_zh_cn": "以太流明丝质腕扣",
+      "profession": "engineering",
+      "slot_key": "wrist",
+      "armor_type": "cloth",
+      "weapon_type": null,
+      "customizable_secondaries": true,
+      "secondary_stat_choices": [
+        "critical_strike",
+        "haste",
+        "mastery",
+        "versatility"
+      ],
+      "secondary_stats_selected": 1,
+      "embellished": false,
+      "catalyst_eligible": false,
+      "item_levels": {
+        "spark_of_tides": {
+          "quality_1": 292,
+          "quality_2": 296,
+          "quality_3": 299,
+          "quality_4": 302,
+          "quality_5": 305
+        },
+        "hero_mistcrest": {
+          "quality_1": 305,
+          "quality_2": 309,
+          "quality_3": 312,
+          "quality_4": 315,
+          "quality_5": 318
+        },
+        "myth_mistcrest": {
+          "quality_1": 318,
+          "quality_2": 322,
+          "quality_3": 325,
+          "quality_4": 328,
+          "quality_5": 331
+        }
+      },
+      "default_optimizer_item_level": 331,
+      "spark_of_tides_cost": 2,
+      "wowhead_url": "https://www.wowhead.com/item=244747",
+      "icon": "inv_bracer_cloth_questbloodelf_b_01",
+      "variants": [
+        {
+          "item_level": 305,
+          "quality": 4,
+          "stats": {
+            "intellect": 81,
+            "stamina": 1572
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明丝质腕扣\n物品等级：\n305\n拾取后绑定\n腕部\n布甲\n47护甲\n+81 智力\n+1,572 耐力\n+\n100 随机属性1\n耐久: 55 / 55\n需要等级\n90\n售价:\n50\n49\n12",
+          "customizable_secondary_amounts": [
+            100
+          ]
+        },
+        {
+          "item_level": 309,
+          "quality": 4,
+          "stats": {
+            "intellect": 84,
+            "stamina": 1649
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明丝质腕扣\n物品等级：\n309\n拾取后绑定\n腕部\n布甲\n48护甲\n+84 智力\n+1,649 耐力\n+\n102 随机属性1\n耐久: 55 / 55\n需要等级\n90\n售价:\n50\n49\n12",
+          "customizable_secondary_amounts": [
+            102
+          ]
+        },
+        {
+          "item_level": 312,
+          "quality": 4,
+          "stats": {
+            "intellect": 86,
+            "stamina": 1709
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明丝质腕扣\n物品等级：\n312\n拾取后绑定\n腕部\n布甲\n49护甲\n+86 智力\n+1,709 耐力\n+\n103 随机属性1\n耐久: 55 / 55\n需要等级\n90\n售价:\n50\n49\n12",
+          "customizable_secondary_amounts": [
+            103
+          ]
+        },
+        {
+          "item_level": 315,
+          "quality": 4,
+          "stats": {
+            "intellect": 89,
+            "stamina": 1768
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明丝质腕扣\n物品等级：\n315\n拾取后绑定\n腕部\n布甲\n50护甲\n+89 智力\n+1,768 耐力\n+\n104 随机属性1\n耐久: 55 / 55\n需要等级\n90\n售价:\n50\n49\n12",
+          "customizable_secondary_amounts": [
+            104
+          ]
+        },
+        {
+          "item_level": 318,
+          "quality": 4,
+          "stats": {
+            "intellect": 91,
+            "stamina": 1830
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明丝质腕扣\n物品等级：\n318\n拾取后绑定\n腕部\n布甲\n51护甲\n+91 智力\n+1,830 耐力\n+\n106 随机属性1\n耐久: 55 / 55\n需要等级\n90\n售价:\n50\n49\n12",
+          "customizable_secondary_amounts": [
+            106
+          ]
+        },
+        {
+          "item_level": 322,
+          "quality": 4,
+          "stats": {
+            "intellect": 95,
+            "stamina": 1917
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明丝质腕扣\n物品等级：\n322\n拾取后绑定\n腕部\n布甲\n53护甲\n+95 智力\n+1,917 耐力\n+\n108 随机属性1\n耐久: 55 / 55\n需要等级\n90\n售价:\n50\n49\n12",
+          "customizable_secondary_amounts": [
+            108
+          ]
+        },
+        {
+          "item_level": 325,
+          "quality": 4,
+          "stats": {
+            "intellect": 98,
+            "stamina": 1984
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明丝质腕扣\n物品等级：\n325\n拾取后绑定\n腕部\n布甲\n54护甲\n+98 智力\n+1,984 耐力\n+\n109 随机属性1\n耐久: 55 / 55\n需要等级\n90\n售价:\n50\n49\n12",
+          "customizable_secondary_amounts": [
+            109
+          ]
+        },
+        {
+          "item_level": 328,
+          "quality": 4,
+          "stats": {
+            "intellect": 100,
+            "stamina": 2053
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明丝质腕扣\n物品等级：\n328\n拾取后绑定\n腕部\n布甲\n55护甲\n+100 智力\n+2,053 耐力\n+\n110 随机属性1\n耐久: 55 / 55\n需要等级\n90\n售价:\n50\n49\n12",
+          "customizable_secondary_amounts": [
+            110
+          ]
+        },
+        {
+          "item_level": 331,
+          "quality": 4,
+          "stats": {
+            "intellect": 103,
+            "stamina": 2124
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "以太流明丝质腕扣\n物品等级：\n331\n拾取后绑定\n腕部\n布甲\n56护甲\n+103 智力\n+2,124 耐力\n+\n112 随机属性1\n耐久: 55 / 55\n需要等级\n90\n售价:\n50\n49\n12",
+          "customizable_secondary_amounts": [
+            112
           ]
         }
       ],

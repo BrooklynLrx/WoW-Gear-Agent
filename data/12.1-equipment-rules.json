@@ -59,10 +59,10 @@
     "demon_hunter.havoc": { "name_zh_cn": "浩劫", "weapon_loadouts": [{ "dual_wield": { "main_hand": ["1h_axe", "1h_fist", "1h_sword", "1h_warglaive"], "off_hand": ["1h_axe", "1h_fist", "1h_sword", "1h_warglaive"] } }] },
     "demon_hunter.vengeance": { "name_zh_cn": "复仇", "weapon_loadouts": [{ "dual_wield": { "main_hand": ["1h_axe", "1h_fist", "1h_sword", "1h_warglaive"], "off_hand": ["1h_axe", "1h_fist", "1h_sword", "1h_warglaive"] } }] },
 
-    "druid.balance": { "name_zh_cn": "平衡", "weapon_loadouts": [{ "two_hand": ["2h_staff"] }, { "main_plus_off_hand": { "main_hand": ["1h_dagger", "1h_mace"], "off_hand": ["held_in_off_hand"] } }] },
+    "druid.balance": { "name_zh_cn": "平衡", "weapon_loadouts": [{ "two_hand": ["2h_staff", "2h_mace"] }, { "main_plus_off_hand": { "main_hand": ["1h_dagger", "1h_mace"], "off_hand": ["held_in_off_hand"] } }] },
     "druid.feral": { "name_zh_cn": "野性", "weapon_loadouts": [{ "two_hand": ["2h_polearm", "2h_staff"] }] },
     "druid.guardian": { "name_zh_cn": "守护", "weapon_loadouts": [{ "two_hand": ["2h_polearm", "2h_staff"] }] },
-    "druid.restoration": { "name_zh_cn": "恢复", "weapon_loadouts": [{ "two_hand": ["2h_staff"] }, { "main_plus_off_hand": { "main_hand": ["1h_dagger", "1h_mace"], "off_hand": ["held_in_off_hand"] } }] },
+    "druid.restoration": { "name_zh_cn": "恢复", "weapon_loadouts": [{ "two_hand": ["2h_staff", "2h_mace"] }, { "main_plus_off_hand": { "main_hand": ["1h_dagger", "1h_mace"], "off_hand": ["held_in_off_hand"] } }] },
 
     "evoker.augmentation": { "name_zh_cn": "增辉", "weapon_loadouts": [{ "two_hand": ["2h_staff"] }, { "main_plus_off_hand": { "main_hand": ["1h_axe", "1h_dagger", "1h_fist", "1h_mace", "1h_sword"], "off_hand": ["held_in_off_hand"] } }] },
     "evoker.devastation": { "name_zh_cn": "湮灭", "weapon_loadouts": [{ "two_hand": ["2h_staff"] }, { "main_plus_off_hand": { "main_hand": ["1h_axe", "1h_dagger", "1h_fist", "1h_mace", "1h_sword"], "off_hand": ["held_in_off_hand"] } }] },
@@ -80,7 +80,7 @@
     "monk.mistweaver": { "name_zh_cn": "织雾", "weapon_loadouts": [{ "two_hand": ["2h_staff"] }, { "main_plus_off_hand": { "main_hand": ["1h_axe", "1h_fist", "1h_mace", "1h_sword"], "off_hand": ["held_in_off_hand"] } }] },
     "monk.windwalker": { "name_zh_cn": "踏风", "weapon_loadouts": [{ "two_hand": ["2h_polearm", "2h_staff"] }, { "dual_wield": { "main_hand": ["1h_axe", "1h_fist", "1h_mace", "1h_sword"], "off_hand": ["1h_axe", "1h_fist", "1h_mace", "1h_sword"] } }] },
 
-    "paladin.holy": { "name_zh_cn": "神圣", "weapon_loadouts": [{ "main_plus_off_hand": { "main_hand": ["1h_axe", "1h_mace", "1h_sword"], "off_hand": ["shield"] } }] },
+    "paladin.holy": { "name_zh_cn": "神圣", "weapon_loadouts": [{ "two_hand": ["2h_mace"] }, { "main_plus_off_hand": { "main_hand": ["1h_axe", "1h_mace", "1h_sword"], "off_hand": ["shield"] } }] },
     "paladin.protection": { "name_zh_cn": "防护", "weapon_loadouts": [{ "main_plus_off_hand": { "main_hand": ["1h_axe", "1h_mace", "1h_sword"], "off_hand": ["shield"] } }] },
     "paladin.retribution": { "name_zh_cn": "惩戒", "weapon_loadouts": [{ "two_hand": ["2h_axe", "2h_mace", "2h_polearm", "2h_sword"] }] },
 
@@ -92,9 +92,9 @@
     "rogue.outlaw": { "name_zh_cn": "狂徒", "weapon_loadouts": [{ "dual_wield": { "main_hand": ["1h_axe", "1h_fist", "1h_mace", "1h_sword"], "off_hand": ["1h_axe", "1h_dagger", "1h_fist", "1h_mace", "1h_sword"] } }] },
     "rogue.subtlety": { "name_zh_cn": "敏锐", "weapon_loadouts": [{ "dual_wield": { "main_hand": ["1h_dagger"], "off_hand": ["1h_axe", "1h_dagger", "1h_fist", "1h_mace", "1h_sword"] } }] },
 
-    "shaman.elemental": { "name_zh_cn": "元素", "weapon_loadouts": [{ "two_hand": ["2h_staff"] }, { "main_plus_off_hand": { "main_hand": ["1h_axe", "1h_dagger", "1h_fist", "1h_mace"], "off_hand": ["shield", "held_in_off_hand"] } }] },
+    "shaman.elemental": { "name_zh_cn": "元素", "weapon_loadouts": [{ "two_hand": ["2h_staff", "2h_mace"] }, { "main_plus_off_hand": { "main_hand": ["1h_axe", "1h_dagger", "1h_fist", "1h_mace"], "off_hand": ["shield", "held_in_off_hand"] } }] },
     "shaman.enhancement": { "name_zh_cn": "增强", "weapon_loadouts": [{ "dual_wield": { "main_hand": ["1h_axe", "1h_fist", "1h_mace"], "off_hand": ["1h_axe", "1h_fist", "1h_mace"] } }] },
-    "shaman.restoration": { "name_zh_cn": "恢复", "weapon_loadouts": [{ "two_hand": ["2h_staff"] }, { "main_plus_off_hand": { "main_hand": ["1h_axe", "1h_dagger", "1h_fist", "1h_mace"], "off_hand": ["shield", "held_in_off_hand"] } }] },
+    "shaman.restoration": { "name_zh_cn": "恢复", "weapon_loadouts": [{ "two_hand": ["2h_staff", "2h_mace"] }, { "main_plus_off_hand": { "main_hand": ["1h_axe", "1h_dagger", "1h_fist", "1h_mace"], "off_hand": ["shield", "held_in_off_hand"] } }] },
 
     "warlock.affliction": { "name_zh_cn": "痛苦", "weapon_loadouts": [{ "two_hand": ["2h_staff"] }, { "main_plus_off_hand": { "main_hand": ["1h_dagger", "1h_sword", "ranged_wand"], "off_hand": ["held_in_off_hand"] } }] },
     "warlock.demonology": { "name_zh_cn": "恶魔学识", "weapon_loadouts": [{ "two_hand": ["2h_staff"] }, { "main_plus_off_hand": { "main_hand": ["1h_dagger", "1h_sword", "ranged_wand"], "off_hand": ["held_in_off_hand"] } }] },

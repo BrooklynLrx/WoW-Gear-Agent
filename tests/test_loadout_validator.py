@@ -57,3 +57,12 @@ def test_crafted_weapons_match_spec_primary_stat():
     assert "druid.feral" in agility_staff["candidate_specs"]
     assert "druid.feral" not in intellect_staff["candidate_specs"]
     assert all(item["candidate_specs"] for item in items.values() if item["weapon_type"])
+
+
+def test_holy_paladin_has_intellect_crafted_one_handers():
+    items = {item["id"]: item for item in build()["items"]}
+
+    assert "paladin.holy" in items[237843]["candidate_specs"]
+    assert "paladin.holy" in items[237844]["candidate_specs"]
+    assert "paladin.holy" not in items[237839]["candidate_specs"]
+    assert valid_weapon_set("paladin.holy", [item("2h_mace")])

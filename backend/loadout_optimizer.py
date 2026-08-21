@@ -107,7 +107,7 @@ def choose_auto_flask(ratings, mastery_coefficient, objectives, current_ratings=
 
 
 def expand_candidate(item, selected=None):
-    """Expand one crafted item into its six possible two-stat choices."""
+    """Expand one crafted item into its allowed custom-stat choices."""
     selected = selected or {}
     base = {stat: int(item["stats"].get(stat, 0)) for stat in STATS}
     gems = selected.get("gems") or []
@@ -118,7 +118,7 @@ def expand_candidate(item, selected=None):
     elif item["customizable_secondaries"]:
         amounts = item.get("customizable_secondary_amounts") or []
         choices = item.get("secondary_stat_choices") or []
-        variants = [dict(zip(pair, amounts)) for pair in combinations(choices, 2)]
+        variants = [dict(zip(pair, amounts)) for pair in combinations(choices, len(amounts))]
     else:
         variants = [{}]
 

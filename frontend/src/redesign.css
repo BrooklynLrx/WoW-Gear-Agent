@@ -207,6 +207,11 @@ select:focus, input:focus, textarea:focus { border-color: #8f55dd; box-shadow: 0
 .proposal-bars > div { display: grid; grid-template-columns: 32px 1fr 42px; gap: 8px; align-items: center; font-size: 10px; }
 .proposal-meta { display: grid; gap: 5px; color: var(--muted); font-size: 9px; }
 .proposal-meta b { color: #bf74fb; }
+.proposal-items { margin-top: 10px; font-size: 10px; }
+.proposal-items summary { color: #bf74fb; cursor: pointer; }
+.proposal-items button { display: grid; grid-template-columns: 34px 1fr 28px; width: 100%; min-height: 30px; margin-top: 4px; padding: 4px 6px; text-align: left; align-items: center; }
+.proposal-items button span { color: var(--muted); }
+.proposal-items button em { color: var(--green); font-style: normal; }
 .proposal-card > button { width: 100%; margin-top: 10px; font-size: 10px; }
 .quick-prompts { display: grid; grid-template-columns: repeat(4,1fr); gap: 6px; padding: 8px 12px 0; }
 .quick-prompts button { padding: 7px 4px; font-size: 9px; }

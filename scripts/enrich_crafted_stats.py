@@ -53,10 +53,11 @@ def main():
 
     for item in data["items"]:
         successful = [v for v in item.get("variants", []) if "error" not in v]
-        item["customizable_secondaries"] = any(v.get("customizable_secondary_amounts") for v in successful)
+        selected_count = max((len(v.get("customizable_secondary_amounts") or []) for v in successful), default=0)
+        item["customizable_secondaries"] = bool(selected_count)
         item["secondary_stat_mode"] = "customizable" if item["customizable_secondaries"] else "fixed"
         item["secondary_stat_choices"] = ["critical_strike", "haste", "mastery", "versatility"] if item["customizable_secondaries"] else []
-        item["secondary_stats_selected"] = 2 if item["customizable_secondaries"] else 0
+        item["secondary_stats_selected"] = selected_count
     save(args.data, data)
     print(f"items {len(data['items'])}; levels {levels}; failures {failures}")
     return 1 if failures else 0

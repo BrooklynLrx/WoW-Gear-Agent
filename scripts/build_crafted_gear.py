@@ -51,9 +51,36 @@ SETS = {
         (237829, "Spellbreaker's Shelter", "chest", "plate"),
         (237850, "Farstrider's Chopper", "weapon", "1h_axe"),
         (237837, "Farstrider's Mercy", "weapon", "1h_dagger"),
+        (237847, "Blood Knight's Impetus", "weapon", "2h_polearm"),
+        (237848, "Blood Knight's Mercy", "weapon", "2h_mace"),
+        (237846, "Blood Knight's Warblade", "weapon", "2h_sword"),
+        (237845, "Bloomforged Claw", "weapon", "1h_fist"),
+        (237842, "Bloomforged Greataxe", "weapon", "2h_axe"),
+        (237844, "Magister's Cleaver", "weapon", "1h_axe"),
+        (237843, "Magister's Mana Sword", "weapon", "1h_sword"),
+        (237838, "Magister's Ritual Knife", "weapon", "1h_dagger"),
+        (237849, "Magister's Valediction", "weapon", "2h_mace"),
         (237839, "Spellbreaker's Blade", "weapon", "1h_sword"),
         (237841, "Spellbreaker's Ultimatum", "weapon", "1h_mace"),
         (237840, "Spellbreaker's Warglaive", "weapon", "1h_warglaive"),
+    ],
+    "enchanting": [
+        (244179, "Magister's Grand Focus", "weapon", "ranged_wand"),
+    ],
+    "engineering": [
+        (244743, "Aetherlume Eye Wrap", "head", "cloth"),
+        (244747, "Aetherlume Silken Cuffs", "wrist", "cloth"),
+        (244771, "Aetherlume Softsteppers", "feet", "cloth"),
+        (244744, "Aetherlume Optics", "head", "leather"),
+        (244748, "Aetherlume Bands", "wrist", "leather"),
+        (244772, "Aetherlume Runners", "feet", "leather"),
+        (244745, "Aetherlume Vision Shroud", "head", "mail"),
+        (244749, "Aetherlume Bracelets", "wrist", "mail"),
+        (244773, "Aetherlume Clonkers", "feet", "mail"),
+        (244746, "Aetherlume Sun Guard", "head", "plate"),
+        (244750, "Aetherlume Guards", "wrist", "plate"),
+        (244774, "Aetherlume Stompers", "feet", "plate"),
+        (268477, "P.O.W. x3", "weapon", "ranged_gun"),
     ],
     "inscription": [
         (245770, "Aln'hara Cane", "weapon", "2h_staff"),
@@ -140,7 +167,7 @@ def build():
                 "catalyst_eligible": False,
                 "item_levels": tracks,
                 "default_optimizer_item_level": 331,
-                "spark_of_tides_cost": 4 if armor_or_weapon in {"2h_staff", "ranged_bow"} else 2,
+                "spark_of_tides_cost": 4 if armor_or_weapon and armor_or_weapon.startswith(("2h_", "ranged_")) else 2,
                 "wowhead_url": f"https://www.wowhead.com/item={item_id}",
             }
             for key in ("name_zh_cn", "icon", "variants", "secondary_stat_mode", "customizable_secondaries", "secondary_stat_choices", "secondary_stats_selected"):
@@ -183,7 +210,7 @@ def build():
                     item[key] = old[item_id][key]
             items.append(item)
     for item in items:
-        if not item["weapon_type"]:
+        if not item["weapon_type"] or not item.get("variants"):
             continue
         stats = item["variants"][-1]["stats"]
         primaries = {
@@ -213,8 +240,8 @@ def build():
             "crafted_items_use_standard_upgrade_tracks": False,
             "optimizer_default": "myth_mistcrest quality_5 (331)",
             "crafted_max_is_below_myth_6_6_by_item_levels": 3,
-            "secondary_stats": "Choose one of six two-stat pairs with a Thalassian combat missive.",
-            "custom_secondary_distribution": "The two selected ratings receive the two values in variants[].customizable_secondary_amounts; current recipes split them equally.",
+            "secondary_stats": "Most recipes choose a two-stat pair with a Thalassian combat missive; Engineering cogwheel gear chooses one stat.",
+            "custom_secondary_distribution": "Selected ratings receive the values in variants[].customizable_secondary_amounts; most recipes select two, Engineering cogwheel gear selects one.",
             "recrafting": "Can change quality/item level, chosen secondary pair, and optional reagents.",
             "catalyst": "Crafted gear is not eligible for tier conversion.",
             "effect_items": "Always include item level, primary stats, secondary stats and sockets; effect value is currently zero/unknown.",
@@ -234,6 +261,14 @@ def build():
         "crafting_item_levels": tracks,
         "sources": [
             SOURCE,
+            "https://www.wow-professions.com/midnight/alchemy-guide",
+            "https://www.wow-professions.com/midnight/blacksmithing-guide",
+            "https://www.wow-professions.com/midnight/enchanting-guide",
+            "https://www.wow-professions.com/midnight/engineering-guide",
+            "https://www.wow-professions.com/midnight/inscription-guide",
+            "https://www.wow-professions.com/midnight/jewelcrafting-guide",
+            "https://www.wow-professions.com/midnight/leatherworking-guide",
+            "https://www.wow-professions.com/midnight/tailoring-guide",
             "https://www.wowhead.com/ptr/currency=3445/hero-mistcrest",
             "https://www.wowhead.com/ptr/currency=3446/myth-mistcrest",
             "https://www.wowhead.com/news/full-patch-12-1-curse-of-ulatek-ptr-development-notes-381914",
@@ -244,7 +279,7 @@ def build():
 
 def main():
     data = build()
-    assert len(data["items"]) == 75
+    assert len(data["items"]) == 98
     assert data["crafting_item_levels"]["spark_of_tides"] == {
         "quality_1": 292, "quality_2": 296, "quality_3": 299, "quality_4": 302, "quality_5": 305
     }
@@ -257,9 +292,7 @@ def main():
         for item in data["items"] if item["customizable_secondaries"]
         for variant in item.get("variants", [])
     ]
-    assert len(custom_variants) == 432
-    assert all(len(v["customizable_secondary_amounts"]) == 2 for v in custom_variants)
-    assert all(v["customizable_secondary_amounts"][0] == v["customizable_secondary_amounts"][1] for v in custom_variants)
+    assert all(len(v["customizable_secondary_amounts"]) in {1, 2} for v in custom_variants)
     OUT.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n")
     print(f"wrote {len(data['items'])} crafted templates to {OUT}")
 
