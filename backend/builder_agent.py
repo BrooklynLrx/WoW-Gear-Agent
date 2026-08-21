@@ -118,6 +118,10 @@ def safe_reply_text(message: Msg | None, proposal: dict | None) -> str:
     return "".join(block.text for block in message.content if hasattr(block, "text"))
 
 
+def requests_optimization(text: str) -> bool:
+    return any(marker in text for marker in ("配一套", "帮我配", "配装方案", "生成方案", "自动配装"))
+
+
 SYSTEM_PROMPT = """你是魔兽世界12.1装备 Builder Agent。你的职责是维护用户给出的配装状态，调用工具计算，并用中文解释结果。
 
 严格规则：
@@ -186,7 +190,7 @@ class BuilderAgentSession:
             model=model,
             toolkit=toolkit,
             state=agent_state,
-            react_config=ReActConfig(max_iters=8),
+            react_config=ReActConfig(max_iters=12),
         )
 
     def export_agent_state(self) -> dict:
@@ -359,8 +363,10 @@ class BuilderAgentSession:
         self.last_optimization_result = None
         trace_start = len(self.tool_trace)
         message = await self.reply(text)
+        if self.last_optimization_result is None and self.build_state.objectives and requests_optimization(text):
+            await self._optimize_current_loadout_tool()
         return {
-            "message": "".join(block.text for block in message.content if hasattr(block, "text")),
+            "message": safe_reply_text(message, self.last_optimization_result),
             "proposal": self.last_optimization_result,
             "state": self.build_state.model_dump(),
             "tool_trace": list(self.tool_trace[trace_start:]),
@@ -396,6 +402,12 @@ class BuilderAgentSession:
                 }
             elif isinstance(chunk, Msg):
                 final_message = chunk
+
+        if self.last_optimization_result is None and self.build_state.objectives and requests_optimization(text):
+            yield {"event": "status", "data": {"message": "正在运行确定性配装优化器"}}
+            yield {"event": "tool_start", "data": {"tool": "optimize_current_loadout"}}
+            result = await self._optimize_current_loadout_tool()
+            yield {"event": "tool_result", "data": {"tool": "optimize_current_loadout", "success": result.get("success", False)}}
 
         message = safe_reply_text(final_message, self.last_optimization_result)
         yield {"event": "proposal", "data": self.last_optimization_result}

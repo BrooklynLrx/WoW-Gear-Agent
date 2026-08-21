@@ -198,6 +198,15 @@ select:focus, input:focus, textarea:focus { border-color: #8f55dd; box-shadow: 0
 .message.user { align-self: flex-end; background: #111e3b; border-color: #243b68; }
 .message.assistant { align-self: flex-start; }
 .typing { color: var(--purple); letter-spacing: 3px; }
+.agent-progress { width: min(88%,360px); display: grid; grid-template-columns: 18px 1fr; gap: 9px 10px; align-items: center; padding: 11px 13px; border: 1px solid #68409b; border-radius: 7px; background: #10162a; }
+.agent-progress div { display: grid; gap: 2px; }
+.agent-progress b { color: #dfc5ff; font-size: 11px; }
+.agent-progress small { color: #7f94aa; font-size: 9px; }
+.agent-spinner { width: 16px; height: 16px; border: 2px solid #513071; border-top-color: #c978ff; border-radius: 50%; animation: agent-spin .8s linear infinite; }
+.agent-progress > i { grid-column: 1 / -1; height: 3px; overflow: hidden; border-radius: 3px; background: #1b2940; }
+.agent-progress > i::after { content: ""; display: block; width: 42%; height: 100%; border-radius: inherit; background: linear-gradient(90deg,#7040bd,#c66dff); animation: agent-progress 1.5s ease-in-out infinite; }
+@keyframes agent-spin { to { transform: rotate(360deg); } }
+@keyframes agent-progress { from { transform: translateX(-110%); } to { transform: translateX(250%); } }
 .proposal-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
 .proposal-card { border: 1px solid var(--line); background: #091725; border-radius: 6px; padding: 11px; }
 .proposal-card.recommended { border-color: #9e55ef; box-shadow: 0 0 0 1px rgba(158,85,239,.18); }
@@ -367,4 +376,9 @@ select:focus, input:focus, textarea:focus { border-color: #8f55dd; box-shadow: 0
   .filter-panel { display: block; }
   .loot-list { overflow-x: auto; }.loot-head,.loot-row { min-width: 840px; }
   .stat-detail { grid-template-columns: 1fr; }.ratio-card { border-left:0;border-top:1px solid var(--line);padding:12px 0 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .agent-spinner, .agent-progress > i::after { animation: none; }
+  .agent-spinner { border-color: #c978ff; }
+  .agent-progress > i::after { width: 100%; opacity: .65; }
 }

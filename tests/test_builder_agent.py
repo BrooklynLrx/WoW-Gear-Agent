@@ -77,3 +77,58 @@ def test_max_iterations_keeps_finished_proposal_usable():
         finished_reason=ReplyFinishedReason.EXCEED_MAX_ITERS,
     )
     assert safe_reply_text(message, {"solutions": [{}]}) == "配装方案已生成，请在下方选择。"
+
+
+def test_reply_payload_runs_optimizer_when_model_only_promises_it(monkeypatch):
+    from backend.builder_agent import BuildSessionState
+    session = object.__new__(BuilderAgentSession)
+    session.build_state = BuildSessionState(
+        class_key="mage",
+        spec_key="arcane",
+        objectives=[BuildObjective(rule="maximize", stat="haste")],
+    )
+    session.last_optimization_result = None
+    session.tool_trace = []
+
+    async def fake_reply(_text):
+        return Msg(name="wow_builder", role="assistant", content=[TextBlock(text="现在运行优化器。")])
+
+    async def fake_optimize():
+        session.last_optimization_result = {"success": True, "solutions": [{}]}
+
+    monkeypatch.setattr(session, "reply", fake_reply)
+    monkeypatch.setattr(session, "_optimize_current_loadout_tool", fake_optimize)
+
+    payload = asyncio.run(session.reply_payload("帮我配一套装备"))
+    assert payload["proposal"]["solutions"] == [{}]
+
+
+def test_stream_reply_payload_emits_fallback_optimizer_proposal(monkeypatch):
+    from backend.builder_agent import BuildSessionState
+    session = object.__new__(BuilderAgentSession)
+    session.build_state = BuildSessionState(
+        class_key="mage",
+        spec_key="arcane",
+        objectives=[BuildObjective(rule="maximize", stat="haste")],
+    )
+    session.last_optimization_result = None
+    session.tool_trace = []
+
+    class FakeAgent:
+        async def reply_stream(self, *_args, **_kwargs):
+            yield Msg(name="wow_builder", role="assistant", content=[TextBlock(text="现在运行优化器。")])
+
+    async def fake_optimize():
+        result = {"success": True, "solutions": [{}]}
+        session.last_optimization_result = result
+        return result
+
+    session.agent = FakeAgent()
+    monkeypatch.setattr(session, "_optimize_current_loadout_tool", fake_optimize)
+
+    async def collect():
+        return [event async for event in session.stream_reply_payload("帮我配一套装备")]
+
+    events = asyncio.run(collect())
+    assert any(event["event"] == "tool_start" and event["data"]["tool"] == "optimize_current_loadout" for event in events)
+    assert next(event["data"] for event in events if event["event"] == "proposal")["solutions"] == [{}]
