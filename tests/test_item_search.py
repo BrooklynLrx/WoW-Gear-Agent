@@ -38,3 +38,12 @@ def test_agent_can_filter_the_exact_mage_crafted_staff():
     )["items"]
     assert [item["item_id"] for item in items] == [245770]
     assert items[0]["item_level"] == 331
+
+
+def test_curio_tier_is_not_crafted_even_without_a_drop_source():
+    item = tools.search_items_for_spec(
+        "mage", "arcane", game_item_id=271562, item_level=334, limit=1,
+    )["items"][0]
+    assert item["is_tier"]
+    assert not item["is_crafted"]
+    assert item["sources"] == []
