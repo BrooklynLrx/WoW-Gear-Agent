@@ -302,6 +302,11 @@ select:focus, input:focus, textarea:focus { border-color: #8f55dd; box-shadow: 0
 .picker-item strong { color: #c474ff; font-size: 11px; }
 .picker-item small { color: #7890a7; font-size: 9px; }
 .picker-item em { color: var(--amber); font-style: normal; font-size: 9px; }
+.craft-picker { padding: 22px; }
+.craft-picker p { margin: 0 0 16px; color: var(--muted); font-size: 11px; }
+.craft-picker > div { display: grid; grid-template-columns: repeat(2,1fr); gap: 9px; }
+.craft-picker > div button.active { border-color: var(--purple); color: #e0a8ff; background: #32154c; }
+.craft-picker footer { display: flex; justify-content: flex-end; gap: 8px; margin-top: 20px; }
 .saved-list { grid-template-columns: 1fr; }
 .saved-list article { display: flex; align-items: center; justify-content: space-between; gap: 14px; padding: 12px; border: 1px solid var(--line); border-radius: 6px; background: #081a29; }
 .saved-list article > div { min-width: 0; display: grid; gap: 4px; }
