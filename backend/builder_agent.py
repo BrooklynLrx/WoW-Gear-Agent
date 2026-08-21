@@ -75,8 +75,11 @@ class BuildConstraints(BaseModel):
     minimum_tier_pieces: int = Field(default=0, ge=0, le=5)
     locked_slots: list[str] = Field(default_factory=list)
     locked_item_ids: list[int] = Field(default_factory=list)
+    optimization_mode: Literal["auto", "fill_empty", "optimize_unlocked", "rebuild_all"] = "auto"
+    maximum_crafted_items: int = Field(default=2, ge=0, le=2)
     allow_crafted: bool = True
     excluded_instances: list[str] = Field(default_factory=list)
+    excluded_source_types: list[Literal["dungeon", "raid", "world_boss", "delve"]] = Field(default_factory=list)
     require_complete: bool = True
     use_bis_trinkets: bool = True
 
@@ -85,8 +88,11 @@ class BuildConstraintsPatch(BaseModel):
     minimum_tier_pieces: int | None = Field(default=None, ge=0, le=5)
     locked_slots: list[str] | None = None
     locked_item_ids: list[int] | None = None
+    optimization_mode: Literal["auto", "fill_empty", "optimize_unlocked", "rebuild_all"] | None = None
+    maximum_crafted_items: int | None = Field(default=None, ge=0, le=2)
     allow_crafted: bool | None = None
     excluded_instances: list[str] | None = None
+    excluded_source_types: list[Literal["dungeon", "raid", "world_boss", "delve"]] | None = None
     require_complete: bool | None = None
     use_bis_trinkets: bool | None = None
 
@@ -138,13 +144,15 @@ SYSTEM_PROMPT = """你是魔兽世界12.1装备 Builder Agent。你的职责是�
 11. current_sockets 才是当前孔数；maximum_user_selected_sockets 只是用户可手动选择的上限，绝不能说成装备自带孔。
 12. 用户要求自动配装时必须调用 optimize_current_loadout。它返回前不得自行挑选、替换或排序装备。
 13. 自动配装候选固定为普通/M7/M8装备334和制造331，不使用9/6装等。套装不是另一件候选装备，而是选装完成后给四件可催化装备添加的身份；转化不改变属性、装等或特效。
-14. 老七/老八的非饰品特效装备是最高优先级；饰品只走专精BIS。其后依次为普通团本/大秘境装备、最多两件带美化的制造装备、昂贵的团本小怪装绑。制造装备优先披风、护腕、腰带等小部位；解释方案时说明331装等代价。展示 is_final_boss_drop 时必须注明“尾王掉落，获取难度高”。
+14. 老七/老八的非饰品特效装备是最高优先级；饰品只走专精BIS。所有制造装备合计最多两件，制造武器也计入，不能为了凑满两件而额外选择制造装备。制造装备优先披风、护腕、腰带等小部位；解释方案时说明331装等代价。展示 is_final_boss_drop 时必须注明“尾王掉落，获取难度高”。
 15. 用户未指定合剂时，优化器应自动选择一瓶最高品质单绿字合剂并计入属性；宝石不自动选择。
 16. 套装必须说明 tier_acquisition_method；转化套装仍展示原装备名称和来源，并注明催化后的套装名称，不能把它说成属性不同的新装备。
 17. optimize_current_loadout 返回的是前端配装提案。不得把提案再次调用 update_build_state 写入当前装备；前端负责应用用户选择的方案。
 18. 用户询问当前装备是否完整、是否合法或当前面板属性时，必须调用 calculate_current_stats；仅调用 get_build_state 不足以声称校验通过，也不得沿用上一份提案的数值。
 19. solutions 数组顺序就是最终推荐顺序。不得自行计算、改名或展示综合评分；score 只供程序内部比较属性偏差。
 20. optimize_current_loadout 返回后直接解释并结束回复；不要重复调用任何工具，也不要重新验证同一份方案。
+21. 每次自动配装都要根据用户本次措辞设置 optimization_mode：“根据现有装备、补齐、剩余部位”用 fill_empty；“保留指定装备、其他可换”用 optimize_unlocked 并设置锁定项；“全部重配、整套替换”用 rebuild_all。表述不明确时用 auto，它会在当前装备不完整时保留符合本次来源/制造限制的已有装备并补空位。不得只在回复中承诺保留而不更新约束。
+22. “不使用团本/世界首领/地下堡/大秘境”必须写入 excluded_source_types，不要猜具体副本名称；只排除某个指定副本时才使用 excluded_instances。
 """
 
 

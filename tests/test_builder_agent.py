@@ -6,7 +6,7 @@ from agentscope.message import Msg, TextBlock
 from agentscope.types import ReplyFinishedReason
 from pydantic import ValidationError
 
-from backend.builder_agent import BuildObjective, BuilderAgentSession, safe_reply_text
+from backend.builder_agent import BuildConstraints, BuildObjective, BuilderAgentSession, safe_reply_text
 
 
 def test_objectives_support_mixed_constraints():
@@ -31,6 +31,13 @@ def test_state_update_merges_constraints_without_model(monkeypatch):
     )
     assert result["state"]["class_key"] == "mage"
     assert result["state"]["constraints"]["minimum_tier_pieces"] == 4
+
+
+def test_build_constraints_cap_all_crafted_items_at_two():
+    constraints = BuildConstraints(optimization_mode="fill_empty", maximum_crafted_items=2)
+    assert constraints.optimization_mode == "fill_empty"
+    with pytest.raises(ValidationError):
+        BuildConstraints(maximum_crafted_items=3)
 
 
 def test_session_is_created_from_one_spec_key():

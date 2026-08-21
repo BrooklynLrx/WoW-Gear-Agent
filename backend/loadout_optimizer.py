@@ -29,10 +29,11 @@ def preference_key(tier, minimum_tier, late_raid_special, crafted, stat_score, e
     return (
         max(minimum_tier - tier, 0),
         -late_raid_special,
-        abs(2 - embellished),
         boe,
         crafted_large,
         stat_score + crafted_loss,
+        crafted,
+        embellished,
     )
 
 
@@ -45,8 +46,25 @@ def add_stats(left, right):
     return {stat: int(left.get(stat, 0)) + int(right.get(stat, 0)) for stat in STATS}
 
 
-def crafted_budget_allows(state, option):
-    return state["crafted"] + option["crafted"] <= MAX_CRAFTED_ITEMS
+def crafted_budget_allows(state, option, maximum=MAX_CRAFTED_ITEMS):
+    return state["crafted"] + option["crafted"] <= maximum
+
+
+def resolve_optimization_mode(mode, current_equipment):
+    if mode != "auto":
+        return mode
+    if not current_equipment:
+        return "rebuild_all"
+    return "fill_empty" if len(current_equipment) < 15 else "optimize_unlocked"
+
+
+def source_allowed(item, excluded_instances, excluded_source_types):
+    sources = item.get("sources") or []
+    return not sources or any(
+        source.get("instance_name_zh_cn") not in excluded_instances
+        and source.get("source_type") not in excluded_source_types
+        for source in sources
+    )
 
 
 def supplement_stats(item_ids):
@@ -231,8 +249,17 @@ def optimize_loadout(
     if int(default_item_level) != 334:
         return {"success": False, "error": "optimizer_only_supports_graduation_levels", "drop_item_level": 334, "crafted_item_level": 331}
     full_spec_key = f"{class_key}.{spec_key}"
-    locked_slots = {canonical_slot(value.split("_", 1)[0]) for value in constraints.get("locked_slots", [])}
+    locked_slots = {
+        "weapon" if value in {"main_hand", "off_hand"} else canonical_slot(value)
+        for value in constraints.get("locked_slots", [])
+    }
+    optimization_mode = resolve_optimization_mode(
+        constraints.get("optimization_mode", "auto"), current_equipment
+    )
     locked_ids = set(constraints.get("locked_item_ids") or [])
+    maximum_crafted_items = min(int(constraints.get("maximum_crafted_items", MAX_CRAFTED_ITEMS)), MAX_CRAFTED_ITEMS)
+    excluded_instances = set(constraints.get("excluded_instances") or [])
+    excluded_source_types = set(constraints.get("excluded_source_types") or [])
     with SessionLocal() as session:
         spec = session.scalar(select(Spec).join(GameVersion).where(
             Spec.class_key == class_key,
@@ -273,8 +300,7 @@ def optimize_loadout(
                 continue
             if item["is_crafted"] and not constraints.get("allow_crafted", True):
                 continue
-            excluded = set(constraints.get("excluded_instances") or [])
-            if excluded and any(source.get("instance_name_zh_cn") in excluded for source in item["sources"]):
+            if not source_allowed(item, excluded_instances, excluded_source_types):
                 continue
             values.extend(expand_candidate(item))
         if slot == "trinket" and constraints.get("use_bis_trinkets", True) and slot not in locked_slots:
@@ -297,15 +323,18 @@ def optimize_loadout(
         values = expand_candidate(item, selected)
         current_by_slot[slot].extend(values)
         graduation_level = 331 if item["is_crafted"] else 334
+        auto_preserve = (
+            optimization_mode == "fill_empty"
+            and source_allowed(item, excluded_instances, excluded_source_types)
+            and (constraints.get("allow_crafted", True) or not item["is_crafted"])
+        )
+        if auto_preserve:
+            locked_ids.add(item["item_id"])
+        required_current = slot in locked_slots or item["item_id"] in locked_ids
         if item["item_level"] != graduation_level:
-            if slot in locked_slots or item["item_id"] in locked_ids:
-                return {
-                    "success": False,
-                    "error": "locked_item_below_graduation_level",
-                    "item_id": item["item_id"],
-                    "item_level": item["item_level"],
-                    "required_item_level": graduation_level,
-                }
+            if not required_current:
+                continue
+        elif not required_current and not source_allowed(item, excluded_instances, excluded_source_types):
             continue
         existing = {
             (
@@ -320,8 +349,20 @@ def optimize_loadout(
             if key not in existing:
                 candidates[slot].insert(0, value)
 
+    current_item_ids = {
+        value["item_id"] for values in current_by_slot.values() for value in values
+    }
+    for item_id in locked_ids - current_item_ids:
+        result = search_items_for_spec(
+            class_key, spec_key, item_level=334, game_item_id=item_id, limit=1,
+        )
+        if not result.get("items"):
+            return {"success": False, "error": "locked_item_not_found", "item_id": item_id}
+        item = result["items"][0]
+        candidates[item["slot_key"]] = expand_candidate(item) + candidates[item["slot_key"]]
+
     required_slots = locked_slots | {
-        slot for slot, values in current_by_slot.items()
+        slot for slot, values in candidates.items()
         if any(value["item_id"] in locked_ids for value in values)
     }
     groups = []
@@ -375,7 +416,7 @@ def optimize_loadout(
             for option in options:
                 if state["embellished"] + option["embellished"] > 2:
                     continue
-                if not crafted_budget_allows(state, option):
+                if not crafted_budget_allows(state, option, maximum_crafted_items):
                     continue
                 if option["unique_ids"] & set(state["item_ids"]):
                     continue
@@ -469,6 +510,7 @@ def optimize_loadout(
     return {
         "success": bool(solutions),
         "spec": full_spec_key,
+        "optimization_mode": optimization_mode,
         "objective_source": "user_only",
         "trinket_policy": {
             "mode": (
@@ -484,10 +526,10 @@ def optimize_loadout(
             "新选择的装备不会自动添加宝石。",
             "用户未指定合剂时，自动从四种最高品质单绿字合剂中选择一瓶并计入165点绿字。",
             "套装不作为重复候选参与绿字搜索；选装后从已穿的可催化部位标记四件，属性和特效不变。",
-            "毕业方案整套最多选择两件制造装备，制造武器也计入；其中美化装备同样不得超过两件。",
+            f"本次方案最多选择{maximum_crafted_items}件制造装备，制造武器也计入；不会为了凑满制造数量而额外选择。",
             "老七/老八的非饰品特效装备按最高优先级处理；饰品只按专精BIS选择。",
             "团本小怪装绑因价格高置于普通副本装和制造装之后；其随机双绿字仍可参与目标计算。",
-            "毕业候选池固定为普通/套装334与制造331；更低装等只用于比较当前装备。",
+            "毕业候选池固定为普通/套装334与制造331；用户保留或锁定的当前装备允许使用原装等。",
         ],
     }
 

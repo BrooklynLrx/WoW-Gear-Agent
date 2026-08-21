@@ -1,4 +1,4 @@
-from backend.loadout_optimizer import choose_auto_flask, crafted_budget_allows, optimize_loadout, preference_key, remainder_score, score_stats, supplement_stats
+from backend.loadout_optimizer import choose_auto_flask, crafted_budget_allows, optimize_loadout, preference_key, remainder_score, resolve_optimization_mode, score_stats, source_allowed, supplement_stats
 from backend.loadout_optimizer import expand_candidate
 
 
@@ -7,6 +7,10 @@ def test_acquisition_preference_order():
     late_effect = preference_key(4, 4, 1, 0, 999, embellished=2)
     boe = preference_key(4, 4, 0, 0, 0, embellished=2, boe=1)
     assert late_effect < ordinary < boe
+
+
+def test_optimizer_does_not_prefer_filling_two_embellishments():
+    assert preference_key(4, 4, 0, 0, 0, embellished=0) < preference_key(4, 4, 0, 0, 0, embellished=2)
 
 
 def test_ratio_score_prefers_matching_distribution():
@@ -78,6 +82,22 @@ def test_auto_flask_uses_current_ratings_for_increase_objective():
 def test_crafted_weapon_uses_the_same_two_item_budget():
     assert crafted_budget_allows({"crafted": 1}, {"crafted": 1})
     assert not crafted_budget_allows({"crafted": 1}, {"crafted": 2})
+    assert not crafted_budget_allows({"crafted": 1}, {"crafted": 1}, maximum=1)
+
+
+def test_auto_mode_preserves_incomplete_current_equipment():
+    assert resolve_optimization_mode("auto", [{"item_id": 1}]) == "fill_empty"
+    assert resolve_optimization_mode("auto", []) == "rebuild_all"
+    assert resolve_optimization_mode("auto", [{"item_id": value} for value in range(15)]) == "optimize_unlocked"
+
+
+def test_source_filter_keeps_items_with_an_allowed_route():
+    item = {"sources": [
+        {"source_type": "raid", "instance_name_zh_cn": "团本"},
+        {"source_type": "dungeon", "instance_name_zh_cn": "地下城"},
+    ]}
+    assert source_allowed(item, set(), {"raid"})
+    assert not source_allowed(item, {"团本", "地下城"}, set())
 
 
 def test_engineering_cogwheel_expands_one_selected_stat():
