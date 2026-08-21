@@ -121,7 +121,10 @@ def safe_reply_text(message: Msg | None, proposal: dict | None) -> str:
         return ""
     if message.finished_reason == ReplyFinishedReason.EXCEED_MAX_ITERS:
         return "配装方案已生成，请在下方选择。" if proposal else "这次请求包含的步骤过多，请拆成两条消息重试。"
-    return "".join(block.text for block in message.content if hasattr(block, "text"))
+    text = "".join(block.text for block in message.content if hasattr(block, "text"))
+    if proposal and len(text) > 2000:
+        return "配装方案已生成，请在下方选择。"
+    return text
 
 
 def requests_optimization(text: str) -> bool:
@@ -153,6 +156,7 @@ SYSTEM_PROMPT = """你是魔兽世界12.1装备 Builder Agent。你的职责是�
 20. optimize_current_loadout 返回后直接解释并结束回复；不要重复调用任何工具，也不要重新验证同一份方案。
 21. 每次自动配装都要根据用户本次措辞设置 optimization_mode：“根据现有装备、补齐、剩余部位”用 fill_empty；“保留指定装备、其他可换”用 optimize_unlocked 并设置锁定项；“全部重配、整套替换”用 rebuild_all。表述不明确时用 auto，它会在当前装备不完整时保留符合本次来源/制造限制的已有装备并补空位。不得只在回复中承诺保留而不更新约束。
 22. “不使用团本/世界首领/地下堡/大秘境”必须写入 excluded_source_types，不要猜具体副本名称；只排除某个指定副本时才使用 excluded_instances。
+23. 用户指定制造武器类型时，只调用一次 search_items，并同时传 slot_key="weapon"、crafted_only=true 和对应 weapon_kind_key；例如制造法杖使用 weapon_kind_key="2h_staff"。从结果取得 item_id 后写入 locked_item_ids，再调用优化器。不得用不同关键词重复同一搜索，也不得在没有锁定指定物品时声称满足要求。
 """
 
 
@@ -285,6 +289,8 @@ class BuilderAgentSession:
         slot_key: str | None = None,
         name: str | None = None,
         limit: int = 20,
+        crafted_only: bool = False,
+        weapon_kind_key: str | None = None,
     ) -> dict:
         """Search equippable items for the specialization fixed by the frontend.
 
@@ -292,6 +298,8 @@ class BuilderAgentSession:
             slot_key: Canonical slot such as head, chest, finger, trinket or weapon.
             name: Optional Chinese or English item-name substring.
             limit: Maximum number of results, from 1 to 50.
+            crafted_only: Return only crafted items.
+            weapon_kind_key: Exact weapon kind such as 2h_staff or 1h_sword.
         """
         state = self.build_state
         return search_items_for_spec(
@@ -301,6 +309,8 @@ class BuilderAgentSession:
             item_level=334,
             name=name,
             limit=limit,
+            crafted_only=crafted_only,
+            weapon_kind_key=weapon_kind_key,
         )
 
     def optimize_current_loadout(
@@ -353,9 +363,13 @@ class BuilderAgentSession:
         slot_key: str | None = None,
         name: str | None = None,
         limit: int = 20,
+        crafted_only: bool = False,
+        weapon_kind_key: str | None = None,
     ) -> dict:
         """Search usable items without blocking other conversations."""
-        return await asyncio.to_thread(self.search_items, slot_key, name, limit)
+        return await asyncio.to_thread(
+            self.search_items, slot_key, name, limit, crafted_only, weapon_kind_key,
+        )
 
     async def _optimize_current_loadout_tool(self, solution_count: int = 3) -> dict:
         """Optimize a loadout without blocking other conversations."""
@@ -392,7 +406,7 @@ class BuilderAgentSession:
             yield_final_msg=True,
         ):
             if isinstance(chunk, TextBlockDeltaEvent):
-                yield {"event": "text_delta", "data": {"text": chunk.delta}}
+                continue
             elif isinstance(chunk, ToolCallStartEvent):
                 tool_names[chunk.tool_call_id] = chunk.tool_call_name
                 yield {

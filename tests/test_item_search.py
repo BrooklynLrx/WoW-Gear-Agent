@@ -29,3 +29,12 @@ def test_picker_exposes_mage_crafted_offhand_stats():
         "critical_strike", "haste", "mastery", "versatility",
     }
     assert lantern["customizable_secondary_amounts"] == [50, 50]
+
+
+def test_agent_can_filter_the_exact_mage_crafted_staff():
+    items = tools.search_items_for_spec(
+        "mage", "arcane", slot_key="weapon", crafted_only=True,
+        weapon_kind_key="2h_staff", limit=20,
+    )["items"]
+    assert [item["item_id"] for item in items] == [245770]
+    assert items[0]["item_level"] == 331

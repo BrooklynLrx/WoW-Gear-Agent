@@ -3,6 +3,7 @@ import threading
 
 import pytest
 from agentscope.message import Msg, TextBlock
+from agentscope.event import TextBlockDeltaEvent
 from agentscope.types import ReplyFinishedReason
 from pydantic import ValidationError
 
@@ -86,6 +87,14 @@ def test_max_iterations_keeps_finished_proposal_usable():
     assert safe_reply_text(message, {"solutions": [{}]}) == "配装方案已生成，请在下方选择。"
 
 
+def test_long_repeated_agent_text_is_hidden_when_proposal_exists():
+    message = Msg(
+        name="wow_builder", role="assistant",
+        content=[TextBlock(text="让我重复搜索制造法杖。" * 300)],
+    )
+    assert safe_reply_text(message, {"solutions": [{}]}) == "配装方案已生成，请在下方选择。"
+
+
 def test_reply_payload_runs_optimizer_when_model_only_promises_it(monkeypatch):
     from backend.builder_agent import BuildSessionState
     session = object.__new__(BuilderAgentSession)
@@ -123,6 +132,7 @@ def test_stream_reply_payload_emits_fallback_optimizer_proposal(monkeypatch):
 
     class FakeAgent:
         async def reply_stream(self, *_args, **_kwargs):
+            yield TextBlockDeltaEvent(reply_id="reply", block_id="text", delta="这段中间思考不应显示")
             yield Msg(name="wow_builder", role="assistant", content=[TextBlock(text="现在运行优化器。")])
 
     async def fake_optimize():
@@ -137,5 +147,6 @@ def test_stream_reply_payload_emits_fallback_optimizer_proposal(monkeypatch):
         return [event async for event in session.stream_reply_payload("帮我配一套装备")]
 
     events = asyncio.run(collect())
+    assert not any(event["event"] == "text_delta" for event in events)
     assert any(event["event"] == "tool_start" and event["data"]["tool"] == "optimize_current_loadout" for event in events)
     assert next(event["data"] for event in events if event["event"] == "proposal")["solutions"] == [{}]

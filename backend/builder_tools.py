@@ -80,6 +80,8 @@ def search_items_for_spec(
     name: str | None = None,
     game_item_id: int | None = None,
     limit: int = 20,
+    crafted_only: bool = False,
+    weapon_kind_key: str | None = None,
 ) -> dict:
     """Search only items equippable by one fixed specialization."""
     full_spec_key = f"{class_key}.{spec_key}"
@@ -118,6 +120,8 @@ def search_items_for_spec(
             slot = canonical_slot(item.slot_key)
             if item.id in seen or catalog_kind in {"consumable", "bis_placeholder"}:
                 continue
+            if crafted_only and not item.is_crafted:
+                continue
             if game_item_id is not None and item.game_item_id != int(game_item_id):
                 continue
             if slot in {"unknown", "tier_token"}:
@@ -130,6 +134,8 @@ def search_items_for_spec(
             if wanted_slot and wanted_slot != "off_hand" and slot != wanted_slot:
                 continue
             if not item_is_available_for_spec(class_key, spec_key, item):
+                continue
+            if weapon_kind_key and weapon_kind(item) != weapon_kind_key:
                 continue
 
             requested_level = item_level
