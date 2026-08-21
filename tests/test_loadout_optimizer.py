@@ -1,4 +1,4 @@
-from backend.loadout_optimizer import choose_auto_flask, crafted_budget_allows, optimize_loadout, preference_key, score_stats, supplement_stats
+from backend.loadout_optimizer import choose_auto_flask, crafted_budget_allows, optimize_loadout, preference_key, remainder_score, score_stats, supplement_stats
 
 
 def test_acquisition_preference_order():
@@ -49,6 +49,29 @@ def test_auto_flask_fills_the_final_gear_ratio_gap():
     }]
     ratings = {"critical_strike": 100, "haste": 100, "mastery": 0, "versatility": 100}
     assert choose_auto_flask(ratings, 1.0, objectives) == 241322
+
+
+def test_remainder_only_breaks_equal_primary_objective_scores():
+    objectives = [
+        {"rule": "sheet_percent_range", "stat": "haste", "minimum": 19, "maximum": 21},
+        {"rule": "remainder", "stat": "mastery"},
+    ]
+    lower = {"critical_strike": 0, "haste": 880, "mastery": 100, "versatility": 0}
+    higher = {"critical_strike": 0, "haste": 880, "mastery": 200, "versatility": 0}
+
+    assert score_stats(lower, 1.0, objectives) == score_stats(higher, 1.0, objectives) == 0
+    assert remainder_score(higher, objectives) < remainder_score(lower, objectives)
+
+
+def test_auto_flask_respects_remainder_tiebreaker():
+    ratings = {"critical_strike": 100, "haste": 100, "mastery": 100, "versatility": 100}
+    assert choose_auto_flask(ratings, 1.0, [{"rule": "remainder", "stat": "versatility"}]) == 241320
+
+
+def test_auto_flask_uses_current_ratings_for_increase_objective():
+    ratings = {"critical_strike": 100, "haste": 100, "mastery": 100, "versatility": 100}
+    current = {**ratings, "haste": 200}
+    assert choose_auto_flask(ratings, 1.0, [{"rule": "increase", "stat": "haste"}], current) == 241324
 
 
 def test_crafted_weapon_uses_the_same_two_item_budget():

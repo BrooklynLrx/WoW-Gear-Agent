@@ -93,10 +93,16 @@ def score_stats(ratings, mastery_coefficient, objectives, current_ratings=None):
     return score
 
 
-def choose_auto_flask(ratings, mastery_coefficient, objectives):
+def remainder_score(ratings, objectives):
+    """Break otherwise-equal objective scores by filling the requested remainder stats."""
+    return -sum(ratings[objective["stat"]] for objective in objectives if objective["rule"] == "remainder")
+
+
+def choose_auto_flask(ratings, mastery_coefficient, objectives, current_ratings=None):
     """Choose the flask that best fills the finished gear set's objective gap."""
-    return min(AUTO_FLASK_IDS, key=lambda item_id: score_stats(
-        add_stats(ratings, supplement_stats([item_id])), mastery_coefficient, objectives,
+    return min(AUTO_FLASK_IDS, key=lambda item_id: (
+        score_stats(add_stats(ratings, supplement_stats([item_id])), mastery_coefficient, objectives, current_ratings),
+        remainder_score(add_stats(ratings, supplement_stats([item_id])), objectives),
     ))
 
 
@@ -357,12 +363,12 @@ def optimize_loadout(
         "consumable_ids": selected_consumables,
         "item_ids": [], "unique_ids": set(), "candidates": [],
     }]
-    for slot, options in groups:
+    for group_index, (slot, options) in enumerate(groups):
         options.sort(key=lambda option: preference_key(
             option["tier_capable"], minimum_tier, option["late_raid_special"], option["crafted"],
             score_stats(add_stats(baseline, option["stats"]), coefficient, objectives, current_ratings),
             2, option["boe"], option["crafted_large"],
-        ))
+        ) + (remainder_score(add_stats(baseline, option["stats"]), objectives),))
         options = options[:MAX_GROUP_OPTIONS]
         expanded = []
         for state in beam:
@@ -391,34 +397,53 @@ def optimize_loadout(
                 })
         if not expanded:
             return {"success": False, "error": "search_exhausted", "slot_key": slot}
-        expanded.sort(key=lambda state: preference_key(
-            state["tier_capable"], minimum_tier, state["late_raid_special"], state["crafted"],
-            score_stats(state["ratings"], coefficient, objectives, current_ratings),
-            state["embellished"], state["boe"], state["crafted_large"],
-        ))
+        def beam_key(state):
+            ratings = state["ratings"]
+            if auto_flask and group_index == len(groups) - 1:
+                ratings = add_stats(ratings, supplement_stats([
+                    choose_auto_flask(ratings, coefficient, objectives, current_ratings)
+                ]))
+            return preference_key(
+                state["tier_capable"], minimum_tier, state["late_raid_special"], state["crafted"],
+                score_stats(ratings, coefficient, objectives, current_ratings),
+                state["embellished"], state["boe"], state["crafted_large"],
+            ) + (remainder_score(ratings, objectives),)
+
+        expanded.sort(key=beam_key)
         beam = expanded[:BEAM_WIDTH]
 
-    solutions = []
-    for state in beam:
+    ranked_states = []
+    for index, state in enumerate(beam):
         if state["tier_capable"] < minimum_tier:
             continue
         marked_candidates, tier_count = apply_tier_marks(state["candidates"], minimum_tier, tier_targets)
-        equipment = [value["equipment"] for value in marked_candidates]
         selected_consumables = list(state["consumable_ids"])
+        final_ratings = state["ratings"]
         if auto_flask:
-            selected_consumables.append(choose_auto_flask(state["ratings"], coefficient, objectives))
+            flask_id = choose_auto_flask(final_ratings, coefficient, objectives, current_ratings)
+            selected_consumables.append(flask_id)
+            final_ratings = add_stats(final_ratings, supplement_stats([flask_id]))
+        proposed_ids = Counter(state["item_ids"])
+        changes = sum((current_ids - proposed_ids).values()) + sum((proposed_ids - current_ids).values())
+        objective_score = score_stats(final_ratings, coefficient, objectives, current_ratings)
+        score = objective_score + changes * 0.001
+        key = preference_key(
+            tier_count, minimum_tier, state["late_raid_special"], state["crafted"], objective_score,
+            state["embellished"], state["boe"], state["crafted_large"],
+        ) + (remainder_score(final_ratings, objectives), changes, index)
+        ranked_states.append((key, state, marked_candidates, tier_count, selected_consumables, changes, score))
+    ranked_states.sort(key=lambda value: value[0])
+
+    solutions = []
+    for _, state, marked_candidates, tier_count, selected_consumables, changes, score in ranked_states:
+        equipment = [value["equipment"] for value in marked_candidates]
         calculated = calculate_stats(
             class_key, spec_key, equipment, selected_consumables, require_complete=True
         )
         if not calculated["success"]:
             continue
-        proposed_ids = Counter(state["item_ids"])
-        changes = sum((current_ids - proposed_ids).values()) + sum((proposed_ids - current_ids).values())
-        ratio_score = score_stats(
-            calculated["calculation"]["ratings"], coefficient, objectives, current_ratings
-        ) + changes * 0.001
         solutions.append({
-            "score": round(ratio_score, 6),
+            "score": round(score, 6),
             "equipment": [
                 {
                     key: data
@@ -441,11 +466,6 @@ def optimize_loadout(
         })
         if len(solutions) >= max(solution_count * 5, 15):
             break
-    solutions.sort(key=lambda value: preference_key(
-        value["tier_count"], minimum_tier, value["late_raid_special_effect_count"],
-        value["crafted_item_count"], value["score"], value["embellishment_count"],
-        value["raid_boe_count"], value["crafted_large_slot_count"],
-    ))
     return {
         "success": bool(solutions),
         "spec": full_spec_key,
