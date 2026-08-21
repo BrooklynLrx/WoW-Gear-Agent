@@ -9,8 +9,12 @@ def test_acquisition_preference_order():
     assert late_effect < ordinary < boe
 
 
-def test_optimizer_does_not_prefer_filling_two_embellishments():
-    assert preference_key(4, 4, 0, 0, 0, embellished=0) < preference_key(4, 4, 0, 0, 0, embellished=2)
+def test_optimizer_targets_two_total_crafted_items():
+    two = preference_key(4, 4, 0, 2, 0)
+    one = preference_key(4, 4, 0, 1, 0)
+    zero = preference_key(4, 4, 0, 0, 0)
+    assert two < one < zero
+    assert preference_key(4, 4, 0, 1, 0, crafted_target=1) < preference_key(4, 4, 0, 0, 0, crafted_target=1)
 
 
 def test_ratio_score_prefers_matching_distribution():
@@ -39,8 +43,8 @@ def test_optimizer_rejects_non_graduation_target_before_database():
 
 def test_optimizer_uses_hard_acquisition_priorities_before_stats():
     assert preference_key(4, 4, 1, 0, 10) < preference_key(4, 4, 0, 0, 0)
-    assert preference_key(4, 4, 0, 0, 5) < preference_key(4, 4, 0, 1, 0)
-    assert preference_key(4, 4, 0, 1, 0) < preference_key(4, 4, 0, 2, 0)
+    assert preference_key(4, 4, 0, 2, 0) < preference_key(4, 4, 0, 1, 0)
+    assert preference_key(4, 4, 0, 1, 0) < preference_key(4, 4, 0, 0, 5)
 
 
 def test_highest_quality_flask_rating_is_counted():

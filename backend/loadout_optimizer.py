@@ -19,20 +19,24 @@ DATA = Path(__file__).resolve().parents[1] / "data" / "12.1-season2-consumables.
 BEAM_WIDTH = 1200
 MAX_GROUP_OPTIONS = 300
 MAX_CRAFTED_ITEMS = 2
+CRAFTED_SMALL_SLOT_ORDER = {"back": 0, "wrist": 1, "waist": 2}
 AUTO_FLASK_IDS = (241326, 241324, 241322, 241320)
 CRAFTED_PRIMARY_STAT_PENALTY = 6.0
 
 
-def preference_key(tier, minimum_tier, late_raid_special, crafted, stat_score, embellished=0, boe=0, crafted_large=0):
+def preference_key(
+    tier, minimum_tier, late_raid_special, crafted, stat_score,
+    embellished=0, boe=0, crafted_large=0, crafted_target=MAX_CRAFTED_ITEMS,
+):
     """Apply the acquisition policy before comparing secondary-stat fit."""
     crafted_loss = CRAFTED_PRIMARY_STAT_PENALTY * crafted * crafted
     return (
         max(minimum_tier - tier, 0),
         -late_raid_special,
+        abs(crafted_target - crafted) if crafted_target is not None else 0,
         boe,
         crafted_large,
         stat_score + crafted_loss,
-        crafted,
         embellished,
     )
 
@@ -366,7 +370,10 @@ def optimize_loadout(
         if any(value["item_id"] in locked_ids for value in values)
     }
     groups = []
-    for slot in sorted(slots, key=lambda value: value not in required_slots):
+    for slot in sorted(slots, key=lambda value: (
+        value not in required_slots,
+        CRAFTED_SMALL_SLOT_ORDER.get(value, len(CRAFTED_SMALL_SLOT_ORDER)),
+    )):
         values = candidates[slot]
         if slot in locked_slots:
             values = current_by_slot[slot]
@@ -408,7 +415,7 @@ def optimize_loadout(
         options.sort(key=lambda option: preference_key(
             option["tier_capable"], minimum_tier, option["late_raid_special"], option["crafted"],
             score_stats(add_stats(baseline, option["stats"]), coefficient, objectives, current_ratings),
-            2, option["boe"], option["crafted_large"],
+            2, option["boe"], option["crafted_large"], crafted_target=None,
         ) + (remainder_score(add_stats(baseline, option["stats"]), objectives),))
         options = options[:MAX_GROUP_OPTIONS]
         expanded = []
@@ -447,7 +454,7 @@ def optimize_loadout(
             return preference_key(
                 state["tier_capable"], minimum_tier, state["late_raid_special"], state["crafted"],
                 score_stats(ratings, coefficient, objectives, current_ratings),
-                state["embellished"], state["boe"], state["crafted_large"],
+                state["embellished"], state["boe"], state["crafted_large"], maximum_crafted_items,
             ) + (remainder_score(ratings, objectives),)
 
         expanded.sort(key=beam_key)
@@ -470,7 +477,7 @@ def optimize_loadout(
         score = objective_score + changes * 0.001
         key = preference_key(
             tier_count, minimum_tier, state["late_raid_special"], state["crafted"], objective_score,
-            state["embellished"], state["boe"], state["crafted_large"],
+            state["embellished"], state["boe"], state["crafted_large"], maximum_crafted_items,
         ) + (remainder_score(final_ratings, objectives), changes, index)
         ranked_states.append((key, state, marked_candidates, tier_count, selected_consumables, changes, score))
     ranked_states.sort(key=lambda value: value[0])
@@ -526,7 +533,7 @@ def optimize_loadout(
             "新选择的装备不会自动添加宝石。",
             "用户未指定合剂时，自动从四种最高品质单绿字合剂中选择一瓶并计入165点绿字。",
             "套装不作为重复候选参与绿字搜索；选装后从已穿的可催化部位标记四件，属性和特效不变。",
-            f"本次方案最多选择{maximum_crafted_items}件制造装备，制造武器也计入；不会为了凑满制造数量而额外选择。",
+            f"本次方案目标为{maximum_crafted_items}件制造装备，制造武器也计入总数；指定一件制造武器后只再选择{max(maximum_crafted_items - 1, 0)}件制造装备。",
             "老七/老八的非饰品特效装备按最高优先级处理；饰品只按专精BIS选择。",
             "团本小怪装绑因价格高置于普通副本装和制造装之后；其随机双绿字仍可参与目标计算。",
             "毕业候选池固定为普通/套装334与制造331；用户保留或锁定的当前装备允许使用原装等。",
