@@ -21,6 +21,7 @@ INSTANCES = {
     "Temple of Sethraliss": "塞塔里斯神庙",
     "The Venomous Abyss": "烈毒之渊",
     "Tidebound Grotto": "潮缚石窟",
+    "Midnight Delves": "地下堡",
 }
 
 ENCOUNTERS = {
@@ -141,16 +142,18 @@ def normalize_slot(item: dict) -> tuple[str, str | None, str | None]:
     if slot == "Shield": return "weapon", None, "shield"
     text = item["variants"][-1]["tooltip_zh_cn"]
     if "\n饰品\n" in text: return "trinket", None, None
+    for label, value in (("颈部", "neck"), ("手指", "ring"), ("背部", "back")):
+        if f"\n{label}\n" in text: return value, None, None
     armor = next((value for label, value in (("布甲", "cloth"), ("皮甲", "leather"), ("锁甲", "mail"), ("板甲", "plate")) if f"\n{label}\n" in text), None)
-    zh_slot = next((value for label, value in (("头部", "head"), ("肩部", "shoulder"), ("胸部", "chest"), ("手腕", "wrist"), ("手", "hands"), ("腰部", "waist"), ("腿部", "legs"), ("脚", "feet")) if f"\n{label}\n" in text), None)
+    zh_slot = next((value for label, value in (("头部", "head"), ("肩部", "shoulder"), ("胸部", "chest"), ("手腕", "wrist"), ("腕部", "wrist"), ("手", "hands"), ("手部", "hands"), ("腰部", "waist"), ("腿部", "legs"), ("脚", "feet"), ("脚部", "feet")) if f"\n{label}\n" in text), None)
     if armor and zh_slot: return zh_slot, armor, None
-    hand_match = re.search(r"\n(单手|主手|双手|远程)\n(战刃|匕首|拳套|长柄武器|法杖|魔杖|弓|弩|枪|斧|锤|剑)\n", text)
+    hand_match = re.search(r"\n(单手|主手|双手|远程)\n(战刃|匕首|拳套|长柄武器|法杖|魔杖|弓|弩|枪|斧|锤|权杖|剑)\n", text)
     if hand_match:
         hand_zh, weapon_zh = hand_match.groups()
-        weapon_name = {"战刃": "warglaive", "匕首": "dagger", "拳套": "fist", "长柄武器": "polearm", "法杖": "staff", "魔杖": "wand", "弓": "bow", "弩": "crossbow", "枪": "gun", "斧": "axe", "锤": "mace", "剑": "sword"}[weapon_zh]
+        weapon_name = {"战刃": "warglaive", "匕首": "dagger", "拳套": "fist", "长柄武器": "polearm", "法杖": "staff", "魔杖": "wand", "弓": "bow", "弩": "crossbow", "枪": "gun", "斧": "axe", "锤": "mace", "权杖": "mace", "剑": "sword"}[weapon_zh]
         prefix = "ranged_" if hand_zh == "远程" else ("2h_" if hand_zh == "双手" else "1h_")
         return "weapon", None, prefix + weapon_name
-    if "\n副手\n" in text: return "weapon", None, "off_hand"
+    if "\n副手\n" in text or "\n副手物品\n" in text: return "weapon", None, "off_hand"
     if "\n盾牌\n" in text: return "weapon", None, "shield"
     for armor in ("Cloth", "Leather", "Mail", "Plate"):
         if slot.startswith(armor + " "):

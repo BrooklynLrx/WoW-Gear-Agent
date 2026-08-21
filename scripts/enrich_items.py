@@ -47,8 +47,11 @@ def clean_tooltip(raw: str) -> str:
     return "\n".join(parser.parts).replace("\x08", "")
 
 
-def fetch(item_id: int, ilvl: int) -> dict:
-    request = urllib.request.Request(ENDPOINT.format(item_id=item_id, ilvl=ilvl), headers={"User-Agent": "wow-gear-data/0.1"})
+def fetch(item_id: int, ilvl: int, bonus_ids: tuple[str, ...] = ()) -> dict:
+    url = ENDPOINT.format(item_id=item_id, ilvl=ilvl)
+    if bonus_ids:
+        url += "&bonus=" + ":".join(bonus_ids)
+    request = urllib.request.Request(url, headers={"User-Agent": "wow-gear-data/0.1"})
     for attempt in range(5):
         try:
             with urllib.request.urlopen(request, timeout=30) as response:

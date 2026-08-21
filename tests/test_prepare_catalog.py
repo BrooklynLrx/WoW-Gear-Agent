@@ -6,6 +6,13 @@ def test_shield_is_not_classified_as_a_caster_off_hand():
     assert normalize_slot(item) == ("weapon", None, "shield")
 
 
+def test_delve_chinese_slot_names_are_normalized():
+    assert normalize_slot({"slot": "Unknown", "variants": [{"tooltip_zh_cn": "\n腕部\n锁甲\n"}]}) == ("wrist", "mail", None)
+    assert normalize_slot({"slot": "Unknown", "variants": [{"tooltip_zh_cn": "\n手指\n"}]}) == ("ring", None, None)
+    assert normalize_slot({"slot": "Unknown", "variants": [{"tooltip_zh_cn": "\n副手物品\n"}]}) == ("weapon", None, "off_hand")
+    assert normalize_slot({"slot": "Unknown", "variants": [{"tooltip_zh_cn": "\n单手\n权杖\n"}]}) == ("weapon", None, "1h_mace")
+
+
 def test_known_tidebound_grotto_items_include_alluring_bubbleband():
     assert 268266 in TIDEBOUND_GROTTO_ITEM_IDS
 
