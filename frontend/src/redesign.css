@@ -146,7 +146,7 @@ select:focus, input:focus, textarea:focus { border-color: #8f55dd; box-shadow: 0
 .gear-slot { color: #b3c3d5; font-size: 12px; }
 .gear-icon, .empty-icon { width: 40px; height: 40px; display: grid; place-items: center; border: 1px solid #7c39b5; background: #0b111d; overflow: hidden; }
 .gear-icon img { width: 100%; height: 100%; object-fit: cover; }
-.empty-icon { border-color: #26394c; color: #486079; font-size: 20px; }
+.empty-icon { width: 44px; height: 44px; min-width: 44px; min-height: 44px; padding: 0; border-color: #26394c; color: #486079; font-size: 20px; }
 .gear-main { min-width: 0; display: grid; gap: 3px; }
 .gear-main > div { display: flex; min-width: 0; gap: 8px; align-items: center; }
 .gear-main a { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 12px; font-weight: 600; }
@@ -165,9 +165,9 @@ select:focus, input:focus, textarea:focus { border-color: #8f55dd; box-shadow: 0
 .replace-button { padding: 5px 6px; font-size: 10px; }
 .remove-button { padding: 3px; color: #8093a8; font-size: 15px; border-color: transparent; }
 .empty-text { color: #5d7288; font-size: 11px; }
-.gear-entry.empty { grid-template-columns: 38px 42px 1fr 49px; }
-.gear-entry.empty.left { grid-template-areas: "slot icon main replace"; }
-.gear-entry.empty.right { grid-template-areas: "replace main icon slot"; }
+.gear-entry.empty { grid-template-columns: 38px 44px 1fr; }
+.gear-entry.empty.left { grid-template-areas: "slot icon main"; }
+.gear-entry.empty.right { grid-template-areas: "main icon slot"; }
 
 .stat-summary { border-top: 1px solid var(--line); background: #061422; }
 .stat-summary > header small { color: #68829c; font-size: 10px; }
@@ -337,10 +337,10 @@ select:focus, input:focus, textarea:focus { border-color: #8f55dd; box-shadow: 0
   .gear-entry.left { grid-template-areas: "slot icon main replace remove"; }
   .gear-entry.right { grid-template-areas: "remove replace main icon slot"; }
   .gear-tags { display: none; }
-  .gear-icon, .empty-icon { width: 36px; height: 36px; }
-  .gear-entry.empty { grid-template-columns: 34px 38px 1fr 44px; }
-  .gear-entry.empty.left { grid-template-areas: "slot icon main replace"; }
-  .gear-entry.empty.right { grid-template-areas: "replace main icon slot"; }
+  .gear-icon { width: 36px; height: 36px; }
+  .gear-entry.empty { grid-template-columns: 34px 44px 1fr; }
+  .gear-entry.empty.left { grid-template-areas: "slot icon main"; }
+  .gear-entry.empty.right { grid-template-areas: "main icon slot"; }
   .loot-layout { grid-template-columns: 225px minmax(640px,1fr); }
 }
 @media (max-width: 1040px) {
