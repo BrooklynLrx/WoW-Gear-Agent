@@ -155,6 +155,7 @@ select:focus, input:focus, textarea:focus { border-color: #8f55dd; box-shadow: 0
 .gear-stats { display: flex; align-items: center; gap: 4px; font-size: 10px; font-weight: 700; }
 .gear-stats span.purple { color: #c071ff; }.gear-stats span.cyan { color: #42c9f5; }.gear-stats span.green { color: #48d99b; }.gear-stats span.amber { color: #f2ad39; }
 .gear-stats i { color: #d8e2ed; font-style: normal; margin-right: 4px; }
+.crafted-stats { color: #5ce1ad; font-size: 9px; font-weight: 700; }
 .socket-row { display: flex!important; gap: 3px!important; align-items: center; }
 .socket-row img, .socket-row i { width: 17px; height: 17px; border: 1px solid #7538a9; background: #130d21; object-fit: cover; display: grid; place-items: center; color: #c66cff; font-style: normal; font-size: 13px; }
 .gear-tags { display: grid; gap: 2px; justify-items: end; }
