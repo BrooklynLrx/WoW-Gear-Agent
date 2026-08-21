@@ -177,6 +177,7 @@ class BuilderAgentSession:
                 temperature=0,
                 parallel_tool_calls=False,
             ),
+            extra_body={"thinking": {"type": "disabled"}},
             stream=True,
         )
         self.agent = Agent(
