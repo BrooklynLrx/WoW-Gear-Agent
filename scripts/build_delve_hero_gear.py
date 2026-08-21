@@ -19,13 +19,17 @@ from scripts.enrich_items import fetch as fetch_tooltip, save  # noqa: E402
 
 DATA = ROOT / "data" / "12.1-season2-loot.json"
 VENDOR_URL = "https://www.wowhead.com/npc=256670/zahran"
+CHEST_URLS = (
+    "https://www.wowhead.com/object=581922/hidden-trove",
+    "https://www.wowhead.com/object=584519/heavy-trunk",
+)
 HERO_CURRENCY_ID = 3356
 HERO_BONUS_START = 12793
 UPGRADE_BONUS_IDS = {str(value) for value in range(12785, 12799)}
 
 
-def fetch_vendor_page() -> str:
-    request = urllib.request.Request(VENDOR_URL, headers={"User-Agent": "Mozilla/5.0 wow-gear-data/0.1"})
+def fetch_vendor_page(url: str = VENDOR_URL) -> str:
+    request = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 wow-gear-data/0.1"})
     with urllib.request.urlopen(request, timeout=60) as response:
         return response.read().decode("utf-8")
 
@@ -45,20 +49,35 @@ def parse_hero_items(page: str) -> list[dict]:
     )
 
 
+def parse_chest_items(page: str) -> list[dict]:
+    contains = page.index("id: 'contains'")
+    data = page.index("data:", contains) + len("data:")
+    rows, _ = json.JSONDecoder().raw_decode(page[data:])
+    # ponytail: level-1 epic entries are cosmetics, not equippable Delve gear.
+    return [row for row in rows if row.get("quality") == 4 and row.get("slot", 0) > 0 and row.get("level", 0) > 1]
+
+
 def hero_bonus_ids(row: dict, rank: int) -> tuple[str, ...]:
-    return (str(HERO_BONUS_START + rank - 1), *(bonus for bonus in row.get("bonuses", ()) if bonus not in UPGRADE_BONUS_IDS))
+    return (str(HERO_BONUS_START + rank - 1), *(str(bonus) for bonus in row.get("bonuses", ()) if str(bonus) not in UPGRADE_BONUS_IDS))
 
 
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--data", type=Path, default=DATA)
     parser.add_argument("--page", type=Path, help="use a saved Zah'ran page instead of downloading it")
+    parser.add_argument("--chest-page", action="append", type=Path, help="use saved Delve chest pages instead of downloading them")
     parser.add_argument("--workers", type=int, default=4)
     args = parser.parse_args()
 
     loot = json.loads(args.data.read_text())
-    rows = parse_hero_items(args.page.read_text() if args.page else fetch_vendor_page())
-    levels = sorted(loot["upgrade_tracks"]["hero"].values())
+    vendor_rows = parse_hero_items(args.page.read_text() if args.page else fetch_vendor_page())
+    chest_pages = [page.read_text() for page in args.chest_page] if args.chest_page else [fetch_vendor_page(url) for url in CHEST_URLS]
+    chest_rows = [row for page in chest_pages for row in parse_chest_items(page)]
+    rows_by_id = {row["id"]: row for row in chest_rows}
+    rows_by_id.update({row["id"]: row for row in vendor_rows})
+    rows = sorted(rows_by_id.values(), key=lambda row: row["id"])
+    vendor_ids = {row["id"] for row in vendor_rows}
+    levels = [max(loot["upgrade_tracks"]["hero"].values())]
     existing_ids = {item["id"] for item in loot["items"] if item.get("instance_type") != "delve"}
     overlap = existing_ids.intersection(row["id"] for row in rows)
     if overlap:
@@ -73,7 +92,7 @@ def main() -> int:
         "instance_type": "delve",
         "wowhead_url": f"https://www.wowhead.com/item={row['id']}",
         "wowhead_url_zh_cn": f"https://www.wowhead.com/cn/item={row['id']}",
-        "source_url": VENDOR_URL,
+        "source_url": VENDOR_URL if row["id"] in vendor_ids else CHEST_URLS[0],
         "variants": [],
     } for row in rows]
 
@@ -83,7 +102,7 @@ def main() -> int:
     with ThreadPoolExecutor(max_workers=max(1, args.workers)) as pool:
         futures = {
             pool.submit(fetch_tooltip, item["id"], level, hero_bonus_ids(bonuses[item["id"]], rank)): (item["id"], level)
-            for item in items for rank, level in enumerate(levels, 1)
+            for item in items for rank, level in ((6, levels[0]),)
         }
         for index, future in enumerate(as_completed(futures), 1):
             item_id, level = futures[future]
@@ -104,9 +123,9 @@ def main() -> int:
         [item for item in loot["items"] if item.get("instance_type") != "delve"] + items,
         key=lambda row: (row["instance_type"], row["instance"], row.get("encounter") or "", row["slot"], row["name_en"]),
     )
-    loot["scope"] = "Hero 1/6-6/6 and Myth 1/6-6/6; Delves Hero only; optimizer default Myth 6/6"
+    loot["scope"] = "Hero 1/6-6/6 and Myth 1/6-6/6; Delves Hero 6/6 only; optimizer default Myth 6/6"
     loot["sources"] = [source for source in loot["sources"] if source.get("type") != "delve"] + [{
-        "name": "Midnight Delves Hero gear",
+        "name": "Midnight Delves Hero gear (vendor and chests)",
         "type": "delve",
         "url": VENDOR_URL,
     }]
