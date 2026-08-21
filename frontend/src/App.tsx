@@ -178,7 +178,7 @@ function BuilderPage({specs}:{specs:Spec[]}) {
   }
   async function openConversation(id:number) {
     const detail=await json<Conversation>(`${API}/conversations/${id}`);
-    localStorage.setItem("wow-conversation",String(id));localStorage.setItem("wow-spec",`${detail.class_key}.${detail.spec_key}`);
+    sessionStorage.setItem("wow-conversation",String(id));localStorage.setItem("wow-spec",`${detail.class_key}.${detail.spec_key}`);
     setConversationId(id);setMessages(detail.messages.length?detail.messages.map(value=>({role:value.role,text:value.content})):[{role:"assistant",text:"告诉我你的属性比例或面板百分比目标，我会调用装备搜索和确定性计算工具生成方案。"}]);
     const previous=[...detail.messages].reverse().find(value=>value.proposal?.solutions?.length);setSolutions(previous?.proposal?.solutions||[]);
     return hydrate({session_id:detail.session_id,state:detail.state,source_loadout_id:detail.source_loadout_id||null});
@@ -191,7 +191,7 @@ function BuilderPage({specs}:{specs:Spec[]}) {
     const next=await json<Session>(`${API}/builder/sessions/${current.session_id}`,{method:"PATCH",body:JSON.stringify({equipment})});
     setSession(next);setItems(displayItems||await fetchItems(next.state));refreshWowhead();await fetchStats(next.session_id);return next;
   }
-  useEffect(()=>{(async()=>{let current:Session;const values=await refreshConversations();const saved=Number(localStorage.getItem("wow-conversation"));const target=values.find(value=>value.id===saved)||values[0];current=target?await openConversation(target.id):await createConversation();const raw=localStorage.getItem("wow-pending-item");if(raw){localStorage.removeItem("wow-pending-item");const pending=JSON.parse(raw) as Item;const currentItems=await fetchItems(current.state);const existing=currentItems.find(value=>itemSlot(value)===itemSlot(pending));const equipment=current.state.equipment.filter(value=>value.item_id!==existing?.item_id);equipment.push({item_id:pending.item_id,item_level:pending.item_level,gems:[],crafted_secondary_stats:{}});await patchEquipment(current,equipment,[...currentItems.filter(value=>value.item_id!==existing?.item_id),pending])}})().catch(()=>{})},[]); // eslint-disable-line react-hooks/exhaustive-deps
+  useEffect(()=>{(async()=>{let current:Session;const values=await refreshConversations();const saved=Number(sessionStorage.getItem("wow-conversation"));const target=values.find(value=>value.id===saved);current=target?await openConversation(target.id):await createConversation();const raw=localStorage.getItem("wow-pending-item");if(raw){localStorage.removeItem("wow-pending-item");const pending=JSON.parse(raw) as Item;const currentItems=await fetchItems(current.state);const existing=currentItems.find(value=>itemSlot(value)===itemSlot(pending));const equipment=current.state.equipment.filter(value=>value.item_id!==existing?.item_id);equipment.push({item_id:pending.item_id,item_level:pending.item_level,gems:[],crafted_secondary_stats:{}});await patchEquipment(current,equipment,[...currentItems.filter(value=>value.item_id!==existing?.item_id),pending])}})().catch(()=>{})},[]); // eslint-disable-line react-hooks/exhaustive-deps
   useEffect(()=>{const timer=window.setInterval(()=>refreshConversations().catch(()=>{}),5000);return()=>window.clearInterval(timer)},[]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const grouped=useMemo(()=>{const map:Record<string,Item[]>={};items.forEach(item=>(map[itemSlot(item)]??=[]).push(item));return map},[items]);

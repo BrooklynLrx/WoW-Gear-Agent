@@ -93,6 +93,13 @@ def score_stats(ratings, mastery_coefficient, objectives, current_ratings=None):
     return score
 
 
+def choose_auto_flask(ratings, mastery_coefficient, objectives):
+    """Choose the flask that best fills the finished gear set's objective gap."""
+    return min(AUTO_FLASK_IDS, key=lambda item_id: score_stats(
+        add_stats(ratings, supplement_stats([item_id])), mastery_coefficient, objectives,
+    ))
+
+
 def expand_candidate(item, selected=None):
     """Expand one crafted item into its six possible two-stat choices."""
     selected = selected or {}
@@ -334,12 +341,9 @@ def optimize_loadout(
     selected_categories = {
         supplement_catalog().get(int(item_id), {}).get("category") for item_id in consumable_ids
     }
-    flask_choices = [None] if "flask" in selected_categories else list(AUTO_FLASK_IDS)
-    initial_states = []
-    for flask_id in flask_choices:
-        selected_consumables = list(consumable_ids) + ([flask_id] if flask_id else [])
-        initial_states.append((selected_consumables, supplement_stats(selected_consumables)))
-    baseline = initial_states[0][1]
+    auto_flask = "flask" not in selected_categories
+    selected_consumables = list(consumable_ids)
+    baseline = supplement_stats(selected_consumables)
     current_ratings = dict(baseline)
     for values in current_by_slot.values():
         for value in values:
@@ -348,11 +352,11 @@ def optimize_loadout(
     current_ids = Counter(int(item["item_id"]) for item in current_equipment)
 
     beam = [{
-        "ratings": ratings, "tier": 0, "tier_capable": 0, "embellished": 0,
+        "ratings": baseline, "tier": 0, "tier_capable": 0, "embellished": 0,
         "crafted": 0, "late_raid_special": 0, "boe": 0, "crafted_large": 0,
         "consumable_ids": selected_consumables,
         "item_ids": [], "unique_ids": set(), "candidates": [],
-    } for selected_consumables, ratings in initial_states]
+    }]
     for slot, options in groups:
         options.sort(key=lambda option: preference_key(
             option["tier_capable"], minimum_tier, option["late_raid_special"], option["crafted"],
@@ -400,8 +404,11 @@ def optimize_loadout(
             continue
         marked_candidates, tier_count = apply_tier_marks(state["candidates"], minimum_tier, tier_targets)
         equipment = [value["equipment"] for value in marked_candidates]
+        selected_consumables = list(state["consumable_ids"])
+        if auto_flask:
+            selected_consumables.append(choose_auto_flask(state["ratings"], coefficient, objectives))
         calculated = calculate_stats(
-            class_key, spec_key, equipment, state["consumable_ids"], require_complete=True
+            class_key, spec_key, equipment, selected_consumables, require_complete=True
         )
         if not calculated["success"]:
             continue
@@ -429,8 +436,8 @@ def optimize_loadout(
             "late_raid_special_effect_count": state["late_raid_special"],
             "raid_boe_count": state["boe"],
             "changed_item_count": changes,
-            "consumable_ids": state["consumable_ids"],
-            "selected_flask": next((supplement_catalog()[item_id] for item_id in state["consumable_ids"] if supplement_catalog().get(item_id, {}).get("category") == "flask"), None),
+            "consumable_ids": selected_consumables,
+            "selected_flask": next((supplement_catalog()[item_id] for item_id in selected_consumables if supplement_catalog().get(item_id, {}).get("category") == "flask"), None),
         })
         if len(solutions) >= max(solution_count * 5, 15):
             break

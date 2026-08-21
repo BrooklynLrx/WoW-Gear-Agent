@@ -3,9 +3,10 @@ import threading
 
 import pytest
 from agentscope.message import Msg, TextBlock
+from agentscope.types import ReplyFinishedReason
 from pydantic import ValidationError
 
-from backend.builder_agent import BuildObjective, BuilderAgentSession
+from backend.builder_agent import BuildObjective, BuilderAgentSession, safe_reply_text
 
 
 def test_objectives_support_mixed_constraints():
@@ -67,3 +68,12 @@ def test_blocking_optimizer_runs_off_event_loop(monkeypatch):
     monkeypatch.setattr(session, "optimize_current_loadout", lambda _count=3: threading.get_ident())
     worker_thread = asyncio.run(session._optimize_current_loadout_tool())
     assert worker_thread != main_thread
+
+
+def test_max_iterations_keeps_finished_proposal_usable():
+    message = Msg(
+        name="wow_builder", role="assistant",
+        content=[TextBlock(text="The maximum reasoning-acting iterations are exceeded.")],
+        finished_reason=ReplyFinishedReason.EXCEED_MAX_ITERS,
+    )
+    assert safe_reply_text(message, {"solutions": [{}]}) == "配装方案已生成，请在下方选择。"

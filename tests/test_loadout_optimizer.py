@@ -1,4 +1,4 @@
-from backend.loadout_optimizer import crafted_budget_allows, optimize_loadout, preference_key, score_stats, supplement_stats
+from backend.loadout_optimizer import choose_auto_flask, crafted_budget_allows, optimize_loadout, preference_key, score_stats, supplement_stats
 
 
 def test_acquisition_preference_order():
@@ -40,6 +40,15 @@ def test_optimizer_uses_hard_acquisition_priorities_before_stats():
 
 def test_highest_quality_flask_rating_is_counted():
     assert supplement_stats([241326])["critical_strike"] == 165
+
+
+def test_auto_flask_fills_the_final_gear_ratio_gap():
+    objectives = [{
+        "rule": "rating_ratio",
+        "weights": {"critical_strike": 1, "haste": 1, "mastery": 1, "versatility": 1},
+    }]
+    ratings = {"critical_strike": 100, "haste": 100, "mastery": 0, "versatility": 100}
+    assert choose_auto_flask(ratings, 1.0, objectives) == 241322
 
 
 def test_crafted_weapon_uses_the_same_two_item_budget():

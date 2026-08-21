@@ -16,6 +16,7 @@ from agentscope.model import OpenAIChatModel
 from agentscope.permission import PermissionBehavior, PermissionDecision
 from agentscope.state import AgentState
 from agentscope.tool import FunctionTool, Toolkit
+from agentscope.types import ReplyFinishedReason
 from pydantic import BaseModel, Field, model_validator
 
 from backend.builder_tools import calculate_stats, search_items_for_spec
@@ -109,6 +110,14 @@ class AllowedFunctionTool(FunctionTool):
         )
 
 
+def safe_reply_text(message: Msg | None, proposal: dict | None) -> str:
+    if message is None:
+        return ""
+    if message.finished_reason == ReplyFinishedReason.EXCEED_MAX_ITERS:
+        return "配装方案已生成，请在下方选择。" if proposal else "这次请求包含的步骤过多，请拆成两条消息重试。"
+    return "".join(block.text for block in message.content if hasattr(block, "text"))
+
+
 SYSTEM_PROMPT = """你是魔兽世界12.1装备 Builder Agent。你的职责是维护用户给出的配装状态，调用工具计算，并用中文解释结果。
 
 严格规则：
@@ -131,6 +140,7 @@ SYSTEM_PROMPT = """你是魔兽世界12.1装备 Builder Agent。你的职责是�
 17. optimize_current_loadout 返回的是前端配装提案。不得把提案再次调用 update_build_state 写入当前装备；前端负责应用用户选择的方案。
 18. 用户询问当前装备是否完整、是否合法或当前面板属性时，必须调用 calculate_current_stats；仅调用 get_build_state 不足以声称校验通过，也不得沿用上一份提案的数值。
 19. solutions 数组顺序就是最终推荐顺序。不得自行计算、改名或展示综合评分；score 只供程序内部比较属性偏差。
+20. optimize_current_loadout 返回后直接解释并结束回复；不要重复调用任何工具，也不要重新验证同一份方案。
 """
 
 
@@ -386,9 +396,7 @@ class BuilderAgentSession:
             elif isinstance(chunk, Msg):
                 final_message = chunk
 
-        message = "" if final_message is None else "".join(
-            block.text for block in final_message.content if hasattr(block, "text")
-        )
+        message = safe_reply_text(final_message, self.last_optimization_result)
         yield {"event": "proposal", "data": self.last_optimization_result}
         yield {"event": "state", "data": self.build_state.model_dump()}
         yield {
