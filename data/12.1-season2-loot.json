@@ -63056,9 +63056,17 @@
           "encounter": "Nymrissa Wavecaller",
           "encounter_zh_cn": "尼姆瑞莎·唤波者",
           "source_url": "https://worldofwarcraft.blizzard.com/en-us/news/24295085/step-into-lairs-and-face-the-foes-inside"
+        },
+        {
+          "instance": "The Venomous Abyss",
+          "instance_zh_cn": "烈毒之渊",
+          "encounter": "The Coiled Altar",
+          "encounter_zh_cn": "盘卷祭坛",
+          "source_url": "https://www.wowhead.com/ptr/guide/midnight/raids/venomous-abyss-coiled-altar-boss-strategy-abilities",
+          "source_type": "raid"
         }
       ],
-      "multiple_drop_sources": false,
+      "multiple_drop_sources": true,
       "catalyst_eligible": true,
       "catalyst_tier_bonus_slot": true
     },

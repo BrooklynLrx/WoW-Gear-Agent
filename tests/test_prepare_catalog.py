@@ -1,4 +1,6 @@
-from scripts.prepare_catalog import TIDEBOUND_GROTTO_ITEM_IDS, apply_known_item_corrections, normalize_slot
+import json
+
+from scripts.prepare_catalog import DATA, TIDEBOUND_GROTTO_ITEM_IDS, apply_known_item_corrections, normalize_slot
 
 
 def test_shield_is_not_classified_as_a_caster_off_hand():
@@ -18,6 +20,11 @@ def test_known_tidebound_grotto_items_match_blizzards_complete_loot_table():
         268199, 268217, 268221, 268225, 268226, 268232, 268238,
         268244, 268247, 268262, 268263, 268266, 270167,
     }
+
+
+def test_coiled_hex_legguards_keeps_both_drop_sources():
+    item = next(item for item in json.loads(DATA.read_text())["items"] if item["id"] == 268225)
+    assert {source.get("source_type", item["instance_type"]) for source in item["drop_sources"]} == {"raid", "world_boss"}
 
 
 def test_current_ulatek_item_corrections():

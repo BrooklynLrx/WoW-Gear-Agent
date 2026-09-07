@@ -228,6 +228,11 @@ def main() -> None:
             conflicts.append({"item_id": item["id"], "source_encounter_en": item["encounter_source_en"], "canonical_encounter_en": canonical_encounter, "tooltip_zh_cn": tooltip_name})
 
         raw_sources = duplicate_sources.get(item["id"], [item])
+        if item["id"] == 268225:
+            raw_sources = [
+                {**item, "instance": "Tidebound Grotto", "instance_type": "world_boss", "encounter": "Nymrissa Wavecaller", "source_url": source_overrides[268262][1]},
+                {**item, "instance": "The Venomous Abyss", "instance_type": "raid", "encounter": "The Coiled Altar", "source_url": "https://www.wowhead.com/ptr/guide/midnight/raids/venomous-abyss-coiled-altar-boss-strategy-abilities"},
+            ]
         if item["id"] in source_overrides:
             encounter, source_url = source_overrides[item["id"]]
             raw_sources = [{**item, "encounter": encounter, "source_url": source_url}]
@@ -240,7 +245,10 @@ def main() -> None:
             key = (source.get("instance"), source_encounter)
             if key in seen_sources: continue
             seen_sources.add(key)
-            item["drop_sources"].append({"instance": source.get("instance"), "instance_zh_cn": INSTANCES.get(source.get("instance")), "encounter": source_encounter, "encounter_zh_cn": ENCOUNTERS.get(source_encounter), "source_url": source.get("source_url")})
+            drop_source = {"instance": source.get("instance"), "instance_zh_cn": INSTANCES.get(source.get("instance")), "encounter": source_encounter, "encounter_zh_cn": ENCOUNTERS.get(source_encounter), "source_url": source.get("source_url")}
+            if source.get("instance_type") != item.get("instance_type"):
+                drop_source["source_type"] = source.get("instance_type")
+            item["drop_sources"].append(drop_source)
         if not item["drop_sources"]:
             item["drop_sources"] = [{"instance": item["instance"], "instance_zh_cn": item["instance_zh_cn"], "encounter": canonical_encounter, "encounter_zh_cn": item["encounter_zh_cn"], "source_url": item["source_url"]}]
         item["multiple_drop_sources"] = len(item["drop_sources"]) > 1

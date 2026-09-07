@@ -212,7 +212,7 @@ def import_all(session):
         for source in sources:
             session.add(ItemSource(
                 item_id=item.id,
-                source_type=data.get("instance_type") or "drop",
+                source_type=source.get("source_type") or data.get("instance_type") or "drop",
                 instance_name_en=source.get("instance"),
                 instance_name_zh_cn=source.get("instance_zh_cn"),
                 encounter_name_en=source.get("encounter"),
