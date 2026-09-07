@@ -107,6 +107,11 @@
       "name": "Midnight Delves Hero gear (vendor and chests)",
       "type": "delve",
       "url": "https://www.wowhead.com/npc=256670/zahran"
+    },
+    {
+      "name": "Nymrissa Wavecaller",
+      "type": "world_boss",
+      "url": "https://worldofwarcraft.blizzard.com/en-us/news/24295085/step-into-lairs-and-face-the-foes-inside"
     }
   ],
   "items": [
@@ -52751,183 +52756,6 @@
       "catalyst_tier_bonus_slot": true
     },
     {
-      "id": 268225,
-      "name_en": "Coiled Hex Legguards",
-      "slot": "Leather Legs",
-      "encounter": "The Coiled Altar",
-      "instance": "The Venomous Abyss",
-      "instance_type": "raid",
-      "wowhead_url": "https://www.wowhead.com/ptr/item=268225",
-      "source_url": "https://www.wowhead.com/ptr/guide/midnight/raids/venomous-abyss-coiled-altar-boss-strategy-abilities",
-      "name_zh_cn": "盘卷妖术护腿",
-      "icon": "inv_pant_leather_raidmonkulatek_d_01",
-      "variants": [
-        {
-          "item_level": 305,
-          "quality": 4,
-          "stats": {
-            "stamina": 2794,
-            "agility_or_intellect": 144,
-            "haste": 56,
-            "mastery": 122
-          },
-          "sockets": 0,
-          "tooltip_zh_cn": "盘卷妖术护腿\n史诗\n物品等级：\n305\n拾取后绑定\n腿部\n皮甲\n142护甲\n+144 [敏捷 or 智力]\n+2,794 耐力\n+\n56急速\n+\n122精通\n需要等级\n90\n售价:\n57\n34\n89"
-        },
-        {
-          "item_level": 308,
-          "quality": 4,
-          "stats": {
-            "stamina": 2896,
-            "agility_or_intellect": 148,
-            "haste": 57,
-            "mastery": 123
-          },
-          "sockets": 0,
-          "tooltip_zh_cn": "盘卷妖术护腿\n史诗\n物品等级：\n308\n拾取后绑定\n腿部\n皮甲\n144护甲\n+148 [敏捷 or 智力]\n+2,896 耐力\n+\n57急速\n+\n123精通\n需要等级\n90\n售价:\n57\n43\n49"
-        },
-        {
-          "item_level": 311,
-          "quality": 4,
-          "stats": {
-            "stamina": 3002,
-            "agility_or_intellect": 152,
-            "haste": 57,
-            "mastery": 125
-          },
-          "sockets": 0,
-          "tooltip_zh_cn": "盘卷妖术护腿\n史诗\n物品等级：\n311\n拾取后绑定\n腿部\n皮甲\n147护甲\n+152 [敏捷 or 智力]\n+3,002 耐力\n+\n57急速\n+\n125精通\n需要等级\n90\n售价:\n57\n52\n11"
-        },
-        {
-          "item_level": 315,
-          "quality": 4,
-          "stats": {
-            "stamina": 3143,
-            "agility_or_intellect": 158,
-            "haste": 58,
-            "mastery": 127
-          },
-          "sockets": 0,
-          "tooltip_zh_cn": "盘卷妖术护腿\n史诗\n物品等级：\n315\n拾取后绑定\n腿部\n皮甲\n151护甲\n+158 [敏捷 or 智力]\n+3,143 耐力\n+\n58急速\n+\n127精通\n需要等级\n90\n售价:\n57\n63\n62"
-        },
-        {
-          "item_level": 318,
-          "quality": 4,
-          "stats": {
-            "stamina": 3254,
-            "agility_or_intellect": 162,
-            "haste": 59,
-            "mastery": 129
-          },
-          "sockets": 0,
-          "tooltip_zh_cn": "盘卷妖术护腿\n史诗\n物品等级：\n318\n拾取后绑定\n腿部\n皮甲\n154护甲\n+162 [敏捷 or 智力]\n+3,254 耐力\n+\n59急速\n+\n129精通\n需要等级\n90\n售价:\n57\n72\n28"
-        },
-        {
-          "item_level": 321,
-          "quality": 4,
-          "stats": {
-            "stamina": 3369,
-            "agility_or_intellect": 167,
-            "haste": 60,
-            "mastery": 131
-          },
-          "sockets": 0,
-          "tooltip_zh_cn": "盘卷妖术护腿\n史诗\n物品等级：\n321\n拾取后绑定\n腿部\n皮甲\n157护甲\n+167 [敏捷 or 智力]\n+3,369 耐力\n+\n60急速\n+\n131精通\n需要等级\n90\n售价:\n57\n80\n94"
-        },
-        {
-          "item_level": 324,
-          "quality": 4,
-          "stats": {
-            "stamina": 3487,
-            "agility_or_intellect": 172,
-            "haste": 61,
-            "mastery": 132
-          },
-          "sockets": 0,
-          "tooltip_zh_cn": "盘卷妖术护腿\n史诗\n物品等级：\n324\n拾取后绑定\n腿部\n皮甲\n160护甲\n+172 [敏捷 or 智力]\n+3,487 耐力\n+\n61急速\n+\n132精通\n需要等级\n90\n售价:\n57\n89\n62"
-        },
-        {
-          "item_level": 328,
-          "quality": 4,
-          "stats": {
-            "stamina": 3649,
-            "agility_or_intellect": 178,
-            "haste": 62,
-            "mastery": 134
-          },
-          "sockets": 0,
-          "tooltip_zh_cn": "盘卷妖术护腿\n史诗\n物品等级：\n328\n拾取后绑定\n腿部\n皮甲\n165护甲\n+178 [敏捷 or 智力]\n+3,649 耐力\n+\n62急速\n+\n134精通\n需要等级\n90\n售价:\n58\n1\n20"
-        },
-        {
-          "item_level": 331,
-          "quality": 4,
-          "stats": {
-            "stamina": 3777,
-            "agility_or_intellect": 183,
-            "haste": 62,
-            "mastery": 136
-          },
-          "sockets": 0,
-          "tooltip_zh_cn": "盘卷妖术护腿\n史诗\n物品等级：\n331\n拾取后绑定\n腿部\n皮甲\n168护甲\n+183 [敏捷 or 智力]\n+3,777 耐力\n+\n62急速\n+\n136精通\n需要等级\n90\n售价:\n58\n9\n90"
-        },
-        {
-          "item_level": 334,
-          "quality": 4,
-          "stats": {
-            "stamina": 3910,
-            "agility_or_intellect": 189,
-            "haste": 63,
-            "mastery": 138
-          },
-          "sockets": 0,
-          "tooltip_zh_cn": "盘卷妖术护腿\n史诗\n物品等级：\n334\n拾取后绑定\n腿部\n皮甲\n171护甲\n+189 [敏捷 or 智力]\n+3,910 耐力\n+\n63急速\n+\n138精通\n需要等级\n90\n售价:\n58\n18\n62"
-        }
-      ],
-      "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=268225",
-      "instance_zh_cn": "烈毒之渊",
-      "encounter_zh_cn": "盘卷祭坛",
-      "encounter_localization_source": "official_mapping",
-      "slot_key": "legs",
-      "armor_type": "leather",
-      "weapon_type": null,
-      "loot_role": "all",
-      "candidate_classes": [
-        "demon_hunter",
-        "druid",
-        "monk",
-        "rogue"
-      ],
-      "candidate_specs": [
-        "demon_hunter.devourer",
-        "demon_hunter.havoc",
-        "demon_hunter.vengeance",
-        "druid.balance",
-        "druid.feral",
-        "druid.guardian",
-        "druid.restoration",
-        "monk.brewmaster",
-        "monk.mistweaver",
-        "monk.windwalker",
-        "rogue.assassination",
-        "rogue.outlaw",
-        "rogue.subtlety"
-      ],
-      "eligibility_status": "broad_rule_v1",
-      "encounter_source_en": "The Coiled Altar",
-      "drop_sources": [
-        {
-          "instance": "The Venomous Abyss",
-          "instance_zh_cn": "烈毒之渊",
-          "encounter": "The Coiled Altar",
-          "encounter_zh_cn": "盘卷祭坛",
-          "source_url": "https://www.wowhead.com/ptr/guide/midnight/raids/venomous-abyss-coiled-altar-boss-strategy-abilities"
-        }
-      ],
-      "multiple_drop_sources": false,
-      "catalyst_eligible": true,
-      "catalyst_tier_bonus_slot": true
-    },
-    {
       "id": 268256,
       "name_en": "Sash of the Forlorn Vessel",
       "slot": "Leather Waist",
@@ -62373,13 +62201,1213 @@
       "catalyst_tier_bonus_slot": false
     },
     {
+      "id": 268199,
+      "name_en": "Tidepiercer's Bubble Popper",
+      "slot": "2H Staff",
+      "encounter": "Nymrissa Wavecaller",
+      "instance": "Tidebound Grotto",
+      "instance_type": "world_boss",
+      "wowhead_url": "https://www.wowhead.com/item=268199",
+      "source_url": "https://worldofwarcraft.blizzard.com/en-us/news/24295085/step-into-lairs-and-face-the-foes-inside",
+      "variants": [
+        {
+          "item_level": 305,
+          "quality": 4,
+          "stats": {
+            "agility": 144,
+            "stamina": 2794,
+            "critical_strike": 120,
+            "versatility": 57
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "穿潮者的击泡长杖\n史诗\n物品等级：\n305\n升级：神话\n6/6\n拾取后绑定\n双手\n法杖\n331 - 448点伤害\n速度\n3.60\n（每秒伤害108.2点）\n+144 敏捷\n+2,794 耐力\n+\n120暴击\n+\n57全能\n耐久: 120 / 120\n需要等级\n90\n\"啵！啵！啵！\"\n售价:\n107\n87\n45\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 308,
+          "quality": 4,
+          "stats": {
+            "agility": 148,
+            "stamina": 2896,
+            "critical_strike": 122,
+            "versatility": 58
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "穿潮者的击泡长杖\n史诗\n物品等级：\n308\n升级：神话\n6/6\n拾取后绑定\n双手\n法杖\n340 - 461点伤害\n速度\n3.60\n（每秒伤害111.3点）\n+148 敏捷\n+2,896 耐力\n+\n122暴击\n+\n58全能\n耐久: 120 / 120\n需要等级\n90\n\"啵！啵！啵！\"\n售价:\n108\n3\n62\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 311,
+          "quality": 4,
+          "stats": {
+            "agility": 152,
+            "stamina": 3002,
+            "critical_strike": 124,
+            "versatility": 59
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "穿潮者的击泡长杖\n史诗\n物品等级：\n311\n升级：神话\n6/6\n拾取后绑定\n双手\n法杖\n350 - 474点伤害\n速度\n3.60\n（每秒伤害114.4点）\n+152 敏捷\n+3,002 耐力\n+\n124暴击\n+\n59全能\n耐久: 120 / 120\n需要等级\n90\n\"啵！啵！啵！\"\n售价:\n108\n19\n84\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 315,
+          "quality": 4,
+          "stats": {
+            "agility": 158,
+            "stamina": 3143,
+            "critical_strike": 126,
+            "versatility": 60
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "穿潮者的击泡长杖\n史诗\n物品等级：\n315\n升级：神话\n6/6\n拾取后绑定\n双手\n法杖\n363 - 492点伤害\n速度\n3.60\n（每秒伤害118.8点）\n+158 敏捷\n+3,143 耐力\n+\n126暴击\n+\n60全能\n耐久: 120 / 120\n需要等级\n90\n\"啵！啵！啵！\"\n售价:\n108\n41\n48\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 318,
+          "quality": 4,
+          "stats": {
+            "agility": 162,
+            "stamina": 3254,
+            "critical_strike": 128,
+            "versatility": 60
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "穿潮者的击泡长杖\n史诗\n物品等级：\n318\n升级：神话\n6/6\n拾取后绑定\n双手\n法杖\n374 - 506点伤害\n速度\n3.60\n（每秒伤害122.2点）\n+162 敏捷\n+3,254 耐力\n+\n128暴击\n+\n60全能\n耐久: 120 / 120\n需要等级\n90\n\"啵！啵！啵！\"\n售价:\n108\n57\n75\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 321,
+          "quality": 4,
+          "stats": {
+            "agility": 167,
+            "stamina": 3369,
+            "critical_strike": 129,
+            "versatility": 61
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "穿潮者的击泡长杖\n史诗\n物品等级：\n321\n升级：神话\n6/6\n拾取后绑定\n双手\n法杖\n384 - 521点伤害\n速度\n3.60\n（每秒伤害125.7点）\n+167 敏捷\n+3,369 耐力\n+\n129暴击\n+\n61全能\n耐久: 120 / 120\n需要等级\n90\n\"啵！啵！啵！\"\n售价:\n108\n74\n8\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 324,
+          "quality": 4,
+          "stats": {
+            "agility": 172,
+            "stamina": 3487,
+            "critical_strike": 131,
+            "versatility": 62
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "穿潮者的击泡长杖\n史诗\n物品等级：\n324\n升级：神话\n6/6\n拾取后绑定\n双手\n法杖\n395 - 535点伤害\n速度\n3.60\n（每秒伤害129.2点）\n+172 敏捷\n+3,487 耐力\n+\n131暴击\n+\n62全能\n耐久: 120 / 120\n需要等级\n90\n\"啵！啵！啵！\"\n售价:\n108\n90\n40\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 328,
+          "quality": 4,
+          "stats": {
+            "agility": 178,
+            "stamina": 3649,
+            "critical_strike": 133,
+            "versatility": 63
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "穿潮者的击泡长杖\n史诗\n物品等级：\n328\n升级：神话\n6/6\n拾取后绑定\n双手\n法杖\n410 - 556点伤害\n速度\n3.60\n（每秒伤害134.2点）\n+178 敏捷\n+3,649 耐力\n+\n133暴击\n+\n63全能\n耐久: 120 / 120\n需要等级\n90\n\"啵！啵！啵！\"\n售价:\n109\n12\n19\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 331,
+          "quality": 4,
+          "stats": {
+            "agility": 183,
+            "stamina": 3777,
+            "critical_strike": 135,
+            "versatility": 64
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "穿潮者的击泡长杖\n史诗\n物品等级：\n331\n升级：神话\n6/6\n拾取后绑定\n双手\n法杖\n422 - 571点伤害\n速度\n3.60\n（每秒伤害137.9点）\n+183 敏捷\n+3,777 耐力\n+\n135暴击\n+\n64全能\n耐久: 120 / 120\n需要等级\n90\n\"啵！啵！啵！\"\n售价:\n109\n28\n57\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 334,
+          "quality": 4,
+          "stats": {
+            "agility": 189,
+            "stamina": 3910,
+            "critical_strike": 136,
+            "versatility": 65
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "穿潮者的击泡长杖\n史诗\n物品等级：\n334\n升级：神话\n6/6\n拾取后绑定\n双手\n法杖\n434 - 588点伤害\n速度\n3.60\n（每秒伤害141.9点）\n+189 敏捷\n+3,910 耐力\n+\n136暴击\n+\n65全能\n耐久: 120 / 120\n需要等级\n90\n\"啵！啵！啵！\"\n售价:\n109\n44\n94\n掉落于: 尼姆瑞莎·唤波者"
+        }
+      ],
+      "name_zh_cn": "穿潮者的击泡长杖",
+      "icon": "inv_staff_2h_ulatek_d_01",
+      "instance_zh_cn": "潮缚石窟",
+      "encounter_source_en": "Nymrissa Wavecaller",
+      "encounter_zh_cn": "尼姆瑞莎·唤波者",
+      "encounter_localization_source": "item_tooltip",
+      "drop_sources": [
+        {
+          "instance": "Tidebound Grotto",
+          "instance_zh_cn": "潮缚石窟",
+          "encounter": "Nymrissa Wavecaller",
+          "encounter_zh_cn": "尼姆瑞莎·唤波者",
+          "source_url": "https://worldofwarcraft.blizzard.com/en-us/news/24295085/step-into-lairs-and-face-the-foes-inside"
+        }
+      ],
+      "multiple_drop_sources": false,
+      "slot_key": "weapon",
+      "armor_type": null,
+      "weapon_type": "2h_staff",
+      "loot_role": "all",
+      "candidate_classes": [
+        "druid",
+        "hunter",
+        "mage",
+        "monk",
+        "priest",
+        "shaman",
+        "warlock",
+        "evoker"
+      ],
+      "candidate_specs": [
+        "druid.feral",
+        "druid.guardian",
+        "hunter.beast_mastery",
+        "hunter.marksmanship",
+        "hunter.survival",
+        "monk.brewmaster",
+        "monk.windwalker",
+        "shaman.enhancement"
+      ],
+      "eligibility_status": "broad_rule_v1"
+    },
+    {
+      "id": 268221,
+      "name_en": "Tidebound Sorcereress's Robes",
+      "slot": "Cloth Chest",
+      "encounter": "Nymrissa Wavecaller",
+      "instance": "Tidebound Grotto",
+      "instance_type": "world_boss",
+      "wowhead_url": "https://www.wowhead.com/item=268221",
+      "source_url": "https://worldofwarcraft.blizzard.com/en-us/news/24295085/step-into-lairs-and-face-the-foes-inside",
+      "variants": [
+        {
+          "item_level": 305,
+          "quality": 4,
+          "stats": {
+            "intellect": 144,
+            "stamina": 2794,
+            "critical_strike": 119,
+            "mastery": 59
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "潮缚女巫法袍\n史诗\n物品等级：\n305\n升级：神话\n6/6\n拾取后绑定\n胸部\n布甲\n94护甲\n+144 智力\n+2,794 耐力\n+\n119暴击\n+\n59精通\n耐久: 165 / 165\n需要等级\n90\n售价:\n60\n83\n59\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 308,
+          "quality": 4,
+          "stats": {
+            "intellect": 148,
+            "stamina": 2896,
+            "critical_strike": 120,
+            "mastery": 60
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "潮缚女巫法袍\n史诗\n物品等级：\n308\n升级：神话\n6/6\n拾取后绑定\n胸部\n布甲\n96护甲\n+148 智力\n+2,896 耐力\n+\n120暴击\n+\n60精通\n耐久: 165 / 165\n需要等级\n90\n售价:\n60\n92\n71\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 311,
+          "quality": 4,
+          "stats": {
+            "intellect": 152,
+            "stamina": 3002,
+            "critical_strike": 122,
+            "mastery": 60
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "潮缚女巫法袍\n史诗\n物品等级：\n311\n升级：神话\n6/6\n拾取后绑定\n胸部\n布甲\n98护甲\n+152 智力\n+3,002 耐力\n+\n122暴击\n+\n60精通\n耐久: 165 / 165\n需要等级\n90\n售价:\n61\n1\n86\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 315,
+          "quality": 4,
+          "stats": {
+            "intellect": 158,
+            "stamina": 3143,
+            "critical_strike": 124,
+            "mastery": 62
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "潮缚女巫法袍\n史诗\n物品等级：\n315\n升级：神话\n6/6\n拾取后绑定\n胸部\n布甲\n101护甲\n+158 智力\n+3,143 耐力\n+\n124暴击\n+\n62精通\n耐久: 165 / 165\n需要等级\n90\n售价:\n61\n14\n7\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 318,
+          "quality": 4,
+          "stats": {
+            "intellect": 162,
+            "stamina": 3254,
+            "critical_strike": 126,
+            "mastery": 62
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "潮缚女巫法袍\n史诗\n物品等级：\n318\n升级：神话\n6/6\n拾取后绑定\n胸部\n布甲\n103护甲\n+162 智力\n+3,254 耐力\n+\n126暴击\n+\n62精通\n耐久: 165 / 165\n需要等级\n90\n售价:\n61\n23\n25\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 321,
+          "quality": 4,
+          "stats": {
+            "intellect": 167,
+            "stamina": 3369,
+            "critical_strike": 127,
+            "mastery": 63
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "潮缚女巫法袍\n史诗\n物品等级：\n321\n升级：神话\n6/6\n拾取后绑定\n胸部\n布甲\n105护甲\n+167 智力\n+3,369 耐力\n+\n127暴击\n+\n63精通\n耐久: 165 / 165\n需要等级\n90\n售价:\n61\n32\n43\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 324,
+          "quality": 4,
+          "stats": {
+            "intellect": 172,
+            "stamina": 3487,
+            "critical_strike": 129,
+            "mastery": 64
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "潮缚女巫法袍\n史诗\n物品等级：\n324\n升级：神话\n6/6\n拾取后绑定\n胸部\n布甲\n107护甲\n+172 智力\n+3,487 耐力\n+\n129暴击\n+\n64精通\n耐久: 165 / 165\n需要等级\n90\n售价:\n61\n41\n64\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 328,
+          "quality": 4,
+          "stats": {
+            "intellect": 178,
+            "stamina": 3649,
+            "critical_strike": 131,
+            "mastery": 65
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "潮缚女巫法袍\n史诗\n物品等级：\n328\n升级：神话\n6/6\n拾取后绑定\n胸部\n布甲\n110护甲\n+178 智力\n+3,649 耐力\n+\n131暴击\n+\n65精通\n耐久: 165 / 165\n需要等级\n90\n售价:\n61\n53\n93\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 331,
+          "quality": 4,
+          "stats": {
+            "intellect": 183,
+            "stamina": 3777,
+            "critical_strike": 133,
+            "mastery": 66
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "潮缚女巫法袍\n史诗\n物品等级：\n331\n升级：神话\n6/6\n拾取后绑定\n胸部\n布甲\n112护甲\n+183 智力\n+3,777 耐力\n+\n133暴击\n+\n66精通\n耐久: 165 / 165\n需要等级\n90\n售价:\n61\n63\n16\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 334,
+          "quality": 4,
+          "stats": {
+            "intellect": 189,
+            "stamina": 3910,
+            "critical_strike": 134,
+            "mastery": 67
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "潮缚女巫法袍\n史诗\n物品等级：\n334\n升级：神话\n6/6\n拾取后绑定\n胸部\n布甲\n114护甲\n+189 智力\n+3,910 耐力\n+\n134暴击\n+\n67精通\n耐久: 165 / 165\n需要等级\n90\n售价:\n61\n72\n41\n掉落于: 尼姆瑞莎·唤波者"
+        }
+      ],
+      "name_zh_cn": "潮缚女巫法袍",
+      "icon": "inv_robe_cloth_raidwarlockulatek_d_01",
+      "instance_zh_cn": "潮缚石窟",
+      "encounter_source_en": "Nymrissa Wavecaller",
+      "encounter_zh_cn": "尼姆瑞莎·唤波者",
+      "encounter_localization_source": "item_tooltip",
+      "drop_sources": [
+        {
+          "instance": "Tidebound Grotto",
+          "instance_zh_cn": "潮缚石窟",
+          "encounter": "Nymrissa Wavecaller",
+          "encounter_zh_cn": "尼姆瑞莎·唤波者",
+          "source_url": "https://worldofwarcraft.blizzard.com/en-us/news/24295085/step-into-lairs-and-face-the-foes-inside"
+        }
+      ],
+      "multiple_drop_sources": false,
+      "slot_key": "chest",
+      "armor_type": "cloth",
+      "weapon_type": null,
+      "loot_role": "all",
+      "candidate_classes": [
+        "mage",
+        "priest",
+        "warlock"
+      ],
+      "candidate_specs": [
+        "mage.arcane",
+        "mage.fire",
+        "mage.frost",
+        "priest.discipline",
+        "priest.holy",
+        "priest.shadow",
+        "warlock.affliction",
+        "warlock.demonology",
+        "warlock.destruction"
+      ],
+      "eligibility_status": "broad_rule_v1"
+    },
+    {
+      "id": 268232,
+      "name_en": "Cincture of the Abyssal Grotto",
+      "slot": "Cloth Waist",
+      "encounter": "Nymrissa Wavecaller",
+      "instance": "Tidebound Grotto",
+      "instance_type": "world_boss",
+      "wowhead_url": "https://www.wowhead.com/item=268232",
+      "source_url": "https://worldofwarcraft.blizzard.com/en-us/news/24295085/step-into-lairs-and-face-the-foes-inside",
+      "variants": [
+        {
+          "item_level": 305,
+          "quality": 4,
+          "stats": {
+            "intellect": 108,
+            "stamina": 2096,
+            "critical_strike": 94,
+            "versatility": 39
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "深渊海窟束带\n史诗\n物品等级：\n305\n升级：神话\n6/6\n拾取后绑定\n腰部\n布甲\n53护甲\n+108 智力\n+2,096 耐力\n+\n94暴击\n+\n39全能\n耐久: 55 / 55\n需要等级\n90\n售价:\n29\n60\n34\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 308,
+          "quality": 4,
+          "stats": {
+            "intellect": 111,
+            "stamina": 2172,
+            "critical_strike": 95,
+            "versatility": 39
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "深渊海窟束带\n史诗\n物品等级：\n308\n升级：神话\n6/6\n拾取后绑定\n腰部\n布甲\n54护甲\n+111 智力\n+2,172 耐力\n+\n95暴击\n+\n39全能\n耐久: 55 / 55\n需要等级\n90\n售价:\n29\n64\n78\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 311,
+          "quality": 4,
+          "stats": {
+            "intellect": 114,
+            "stamina": 2252,
+            "critical_strike": 97,
+            "versatility": 40
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "深渊海窟束带\n史诗\n物品等级：\n311\n升级：神话\n6/6\n拾取后绑定\n腰部\n布甲\n55护甲\n+114 智力\n+2,252 耐力\n+\n97暴击\n+\n40全能\n耐久: 55 / 55\n需要等级\n90\n售价:\n29\n69\n23\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 315,
+          "quality": 4,
+          "stats": {
+            "intellect": 118,
+            "stamina": 2358,
+            "critical_strike": 98,
+            "versatility": 41
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "深渊海窟束带\n史诗\n物品等级：\n315\n升级：神话\n6/6\n拾取后绑定\n腰部\n布甲\n57护甲\n+118 智力\n+2,358 耐力\n+\n98暴击\n+\n41全能\n耐久: 55 / 55\n需要等级\n90\n售价:\n29\n75\n17\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 318,
+          "quality": 4,
+          "stats": {
+            "intellect": 122,
+            "stamina": 2440,
+            "critical_strike": 100,
+            "versatility": 41
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "深渊海窟束带\n史诗\n物品等级：\n318\n升级：神话\n6/6\n拾取后绑定\n腰部\n布甲\n58护甲\n+122 智力\n+2,440 耐力\n+\n100暴击\n+\n41全能\n耐久: 55 / 55\n需要等级\n90\n售价:\n29\n79\n64\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 321,
+          "quality": 4,
+          "stats": {
+            "intellect": 125,
+            "stamina": 2527,
+            "critical_strike": 101,
+            "versatility": 42
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "深渊海窟束带\n史诗\n物品等级：\n321\n升级：神话\n6/6\n拾取后绑定\n腰部\n布甲\n59护甲\n+125 智力\n+2,527 耐力\n+\n101暴击\n+\n42全能\n耐久: 55 / 55\n需要等级\n90\n售价:\n29\n84\n11\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 324,
+          "quality": 4,
+          "stats": {
+            "intellect": 129,
+            "stamina": 2615,
+            "critical_strike": 102,
+            "versatility": 42
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "深渊海窟束带\n史诗\n物品等级：\n324\n升级：神话\n6/6\n拾取后绑定\n腰部\n布甲\n60护甲\n+129 智力\n+2,615 耐力\n+\n102暴击\n+\n42全能\n耐久: 55 / 55\n需要等级\n90\n售价:\n29\n88\n59\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 328,
+          "quality": 4,
+          "stats": {
+            "intellect": 134,
+            "stamina": 2737,
+            "critical_strike": 104,
+            "versatility": 43
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "深渊海窟束带\n史诗\n物品等级：\n328\n升级：神话\n6/6\n拾取后绑定\n腰部\n布甲\n62护甲\n+134 智力\n+2,737 耐力\n+\n104暴击\n+\n43全能\n耐久: 55 / 55\n需要等级\n90\n售价:\n29\n94\n56\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 331,
+          "quality": 4,
+          "stats": {
+            "intellect": 138,
+            "stamina": 2832,
+            "critical_strike": 105,
+            "versatility": 44
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "深渊海窟束带\n史诗\n物品等级：\n331\n升级：神话\n6/6\n拾取后绑定\n腰部\n布甲\n63护甲\n+138 智力\n+2,832 耐力\n+\n105暴击\n+\n44全能\n耐久: 55 / 55\n需要等级\n90\n售价:\n29\n99\n6\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 334,
+          "quality": 4,
+          "stats": {
+            "intellect": 141,
+            "stamina": 2932,
+            "critical_strike": 107,
+            "versatility": 44
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "深渊海窟束带\n史诗\n物品等级：\n334\n升级：神话\n6/6\n拾取后绑定\n腰部\n布甲\n64护甲\n+141 智力\n+2,932 耐力\n+\n107暴击\n+\n44全能\n耐久: 55 / 55\n需要等级\n90\n售价:\n30\n3\n56\n掉落于: 尼姆瑞莎·唤波者"
+        }
+      ],
+      "name_zh_cn": "深渊海窟束带",
+      "icon": "inv_belt_cloth_raidmageulatek_d_01",
+      "instance_zh_cn": "潮缚石窟",
+      "encounter_source_en": "Nymrissa Wavecaller",
+      "encounter_zh_cn": "尼姆瑞莎·唤波者",
+      "encounter_localization_source": "item_tooltip",
+      "drop_sources": [
+        {
+          "instance": "Tidebound Grotto",
+          "instance_zh_cn": "潮缚石窟",
+          "encounter": "Nymrissa Wavecaller",
+          "encounter_zh_cn": "尼姆瑞莎·唤波者",
+          "source_url": "https://worldofwarcraft.blizzard.com/en-us/news/24295085/step-into-lairs-and-face-the-foes-inside"
+        }
+      ],
+      "multiple_drop_sources": false,
+      "slot_key": "waist",
+      "armor_type": "cloth",
+      "weapon_type": null,
+      "loot_role": "all",
+      "candidate_classes": [
+        "mage",
+        "priest",
+        "warlock"
+      ],
+      "candidate_specs": [
+        "mage.arcane",
+        "mage.fire",
+        "mage.frost",
+        "priest.discipline",
+        "priest.holy",
+        "priest.shadow",
+        "warlock.affliction",
+        "warlock.demonology",
+        "warlock.destruction"
+      ],
+      "eligibility_status": "broad_rule_v1"
+    },
+    {
+      "id": 268247,
+      "name_en": "Breakwater Boots",
+      "slot": "Leather Feet",
+      "encounter": "Nymrissa Wavecaller",
+      "instance": "Tidebound Grotto",
+      "instance_type": "world_boss",
+      "wowhead_url": "https://www.wowhead.com/item=268247",
+      "source_url": "https://worldofwarcraft.blizzard.com/en-us/news/24295085/step-into-lairs-and-face-the-foes-inside",
+      "variants": [
+        {
+          "item_level": 305,
+          "quality": 4,
+          "stats": {
+            "stamina": 2096,
+            "agility_or_intellect": 108,
+            "haste": 87,
+            "versatility": 46
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "破浪皮靴\n史诗\n物品等级：\n305\n升级：神话\n6/6\n拾取后绑定\n脚部\n皮甲\n101护甲\n+108 [敏捷 or 智力]\n+2,096 耐力\n+\n87急速\n+\n46全能\n耐久: 80 / 80\n需要等级\n90\n售价:\n43\n24\n88\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 308,
+          "quality": 4,
+          "stats": {
+            "stamina": 2172,
+            "agility_or_intellect": 111,
+            "haste": 89,
+            "versatility": 46
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "破浪皮靴\n史诗\n物品等级：\n308\n升级：神话\n6/6\n拾取后绑定\n脚部\n皮甲\n103护甲\n+111 [敏捷 or 智力]\n+2,172 耐力\n+\n89急速\n+\n46全能\n耐久: 80 / 80\n需要等级\n90\n售价:\n43\n31\n37\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 311,
+          "quality": 4,
+          "stats": {
+            "stamina": 2252,
+            "agility_or_intellect": 114,
+            "haste": 90,
+            "versatility": 47
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "破浪皮靴\n史诗\n物品等级：\n311\n升级：神话\n6/6\n拾取后绑定\n脚部\n皮甲\n105护甲\n+114 [敏捷 or 智力]\n+2,252 耐力\n+\n90急速\n+\n47全能\n耐久: 80 / 80\n需要等级\n90\n售价:\n43\n37\n87\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 315,
+          "quality": 4,
+          "stats": {
+            "stamina": 2358,
+            "agility_or_intellect": 118,
+            "haste": 91,
+            "versatility": 48
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "破浪皮靴\n史诗\n物品等级：\n315\n升级：神话\n6/6\n拾取后绑定\n脚部\n皮甲\n108护甲\n+118 [敏捷 or 智力]\n+2,358 耐力\n+\n91急速\n+\n48全能\n耐久: 80 / 80\n需要等级\n90\n售价:\n43\n46\n55\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 318,
+          "quality": 4,
+          "stats": {
+            "stamina": 2440,
+            "agility_or_intellect": 122,
+            "haste": 93,
+            "versatility": 48
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "破浪皮靴\n史诗\n物品等级：\n318\n升级：神话\n6/6\n拾取后绑定\n脚部\n皮甲\n110护甲\n+122 [敏捷 or 智力]\n+2,440 耐力\n+\n93急速\n+\n48全能\n耐久: 80 / 80\n需要等级\n90\n售价:\n43\n53\n8\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 321,
+          "quality": 4,
+          "stats": {
+            "stamina": 2527,
+            "agility_or_intellect": 125,
+            "haste": 94,
+            "versatility": 49
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "破浪皮靴\n史诗\n物品等级：\n321\n升级：神话\n6/6\n拾取后绑定\n脚部\n皮甲\n112护甲\n+125 [敏捷 or 智力]\n+2,527 耐力\n+\n94急速\n+\n49全能\n耐久: 80 / 80\n需要等级\n90\n售价:\n43\n59\n61\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 324,
+          "quality": 4,
+          "stats": {
+            "stamina": 2615,
+            "agility_or_intellect": 129,
+            "haste": 95,
+            "versatility": 50
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "破浪皮靴\n史诗\n物品等级：\n324\n升级：神话\n6/6\n拾取后绑定\n脚部\n皮甲\n114护甲\n+129 [敏捷 or 智力]\n+2,615 耐力\n+\n95急速\n+\n50全能\n耐久: 80 / 80\n需要等级\n90\n售价:\n43\n66\n15\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 328,
+          "quality": 4,
+          "stats": {
+            "stamina": 2737,
+            "agility_or_intellect": 134,
+            "haste": 97,
+            "versatility": 50
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "破浪皮靴\n史诗\n物品等级：\n328\n升级：神话\n6/6\n拾取后绑定\n脚部\n皮甲\n118护甲\n+134 [敏捷 or 智力]\n+2,737 耐力\n+\n97急速\n+\n50全能\n耐久: 80 / 80\n需要等级\n90\n售价:\n43\n74\n89\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 331,
+          "quality": 4,
+          "stats": {
+            "stamina": 2832,
+            "agility_or_intellect": 138,
+            "haste": 98,
+            "versatility": 51
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "破浪皮靴\n史诗\n物品等级：\n331\n升级：神话\n6/6\n拾取后绑定\n脚部\n皮甲\n120护甲\n+138 [敏捷 or 智力]\n+2,832 耐力\n+\n98急速\n+\n51全能\n耐久: 80 / 80\n需要等级\n90\n售价:\n43\n81\n45\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 334,
+          "quality": 4,
+          "stats": {
+            "stamina": 2932,
+            "agility_or_intellect": 141,
+            "haste": 99,
+            "versatility": 52
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "破浪皮靴\n史诗\n物品等级：\n334\n升级：神话\n6/6\n拾取后绑定\n脚部\n皮甲\n122护甲\n+141 [敏捷 or 智力]\n+2,932 耐力\n+\n99急速\n+\n52全能\n耐久: 80 / 80\n需要等级\n90\n售价:\n43\n88\n3\n掉落于: 尼姆瑞莎·唤波者"
+        }
+      ],
+      "name_zh_cn": "破浪皮靴",
+      "icon": "inv_boot_leather_raiddemonhunterulatek_d_01",
+      "instance_zh_cn": "潮缚石窟",
+      "encounter_source_en": "Nymrissa Wavecaller",
+      "encounter_zh_cn": "尼姆瑞莎·唤波者",
+      "encounter_localization_source": "item_tooltip",
+      "drop_sources": [
+        {
+          "instance": "Tidebound Grotto",
+          "instance_zh_cn": "潮缚石窟",
+          "encounter": "Nymrissa Wavecaller",
+          "encounter_zh_cn": "尼姆瑞莎·唤波者",
+          "source_url": "https://worldofwarcraft.blizzard.com/en-us/news/24295085/step-into-lairs-and-face-the-foes-inside"
+        }
+      ],
+      "multiple_drop_sources": false,
+      "slot_key": "feet",
+      "armor_type": "leather",
+      "weapon_type": null,
+      "loot_role": "all",
+      "candidate_classes": [
+        "demon_hunter",
+        "druid",
+        "monk",
+        "rogue"
+      ],
+      "candidate_specs": [
+        "demon_hunter.devourer",
+        "demon_hunter.havoc",
+        "demon_hunter.vengeance",
+        "druid.balance",
+        "druid.feral",
+        "druid.guardian",
+        "druid.restoration",
+        "monk.brewmaster",
+        "monk.mistweaver",
+        "monk.windwalker",
+        "rogue.assassination",
+        "rogue.outlaw",
+        "rogue.subtlety"
+      ],
+      "eligibility_status": "broad_rule_v1"
+    },
+    {
+      "id": 268225,
+      "name_en": "Coiled Hex Legguards",
+      "slot": "Leather Legs",
+      "encounter": "Nymrissa Wavecaller",
+      "instance": "Tidebound Grotto",
+      "instance_type": "world_boss",
+      "wowhead_url": "https://www.wowhead.com/item=268225",
+      "source_url": "https://worldofwarcraft.blizzard.com/en-us/news/24295085/step-into-lairs-and-face-the-foes-inside",
+      "name_zh_cn": "盘卷妖术护腿",
+      "icon": "inv_pant_leather_raidmonkulatek_d_01",
+      "variants": [
+        {
+          "item_level": 305,
+          "quality": 4,
+          "stats": {
+            "stamina": 2794,
+            "agility_or_intellect": 144,
+            "haste": 56,
+            "mastery": 122
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "盘卷妖术护腿\n史诗\n物品等级：\n305\n拾取后绑定\n腿部\n皮甲\n142护甲\n+144 [敏捷 or 智力]\n+2,794 耐力\n+\n56急速\n+\n122精通\n需要等级\n90\n售价:\n57\n34\n89"
+        },
+        {
+          "item_level": 308,
+          "quality": 4,
+          "stats": {
+            "stamina": 2896,
+            "agility_or_intellect": 148,
+            "haste": 57,
+            "mastery": 123
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "盘卷妖术护腿\n史诗\n物品等级：\n308\n拾取后绑定\n腿部\n皮甲\n144护甲\n+148 [敏捷 or 智力]\n+2,896 耐力\n+\n57急速\n+\n123精通\n需要等级\n90\n售价:\n57\n43\n49"
+        },
+        {
+          "item_level": 311,
+          "quality": 4,
+          "stats": {
+            "stamina": 3002,
+            "agility_or_intellect": 152,
+            "haste": 57,
+            "mastery": 125
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "盘卷妖术护腿\n史诗\n物品等级：\n311\n拾取后绑定\n腿部\n皮甲\n147护甲\n+152 [敏捷 or 智力]\n+3,002 耐力\n+\n57急速\n+\n125精通\n需要等级\n90\n售价:\n57\n52\n11"
+        },
+        {
+          "item_level": 315,
+          "quality": 4,
+          "stats": {
+            "stamina": 3143,
+            "agility_or_intellect": 158,
+            "haste": 58,
+            "mastery": 127
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "盘卷妖术护腿\n史诗\n物品等级：\n315\n拾取后绑定\n腿部\n皮甲\n151护甲\n+158 [敏捷 or 智力]\n+3,143 耐力\n+\n58急速\n+\n127精通\n需要等级\n90\n售价:\n57\n63\n62"
+        },
+        {
+          "item_level": 318,
+          "quality": 4,
+          "stats": {
+            "stamina": 3254,
+            "agility_or_intellect": 162,
+            "haste": 59,
+            "mastery": 129
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "盘卷妖术护腿\n史诗\n物品等级：\n318\n拾取后绑定\n腿部\n皮甲\n154护甲\n+162 [敏捷 or 智力]\n+3,254 耐力\n+\n59急速\n+\n129精通\n需要等级\n90\n售价:\n57\n72\n28"
+        },
+        {
+          "item_level": 321,
+          "quality": 4,
+          "stats": {
+            "stamina": 3369,
+            "agility_or_intellect": 167,
+            "haste": 60,
+            "mastery": 131
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "盘卷妖术护腿\n史诗\n物品等级：\n321\n拾取后绑定\n腿部\n皮甲\n157护甲\n+167 [敏捷 or 智力]\n+3,369 耐力\n+\n60急速\n+\n131精通\n需要等级\n90\n售价:\n57\n80\n94"
+        },
+        {
+          "item_level": 324,
+          "quality": 4,
+          "stats": {
+            "stamina": 3487,
+            "agility_or_intellect": 172,
+            "haste": 61,
+            "mastery": 132
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "盘卷妖术护腿\n史诗\n物品等级：\n324\n拾取后绑定\n腿部\n皮甲\n160护甲\n+172 [敏捷 or 智力]\n+3,487 耐力\n+\n61急速\n+\n132精通\n需要等级\n90\n售价:\n57\n89\n62"
+        },
+        {
+          "item_level": 328,
+          "quality": 4,
+          "stats": {
+            "stamina": 3649,
+            "agility_or_intellect": 178,
+            "haste": 62,
+            "mastery": 134
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "盘卷妖术护腿\n史诗\n物品等级：\n328\n拾取后绑定\n腿部\n皮甲\n165护甲\n+178 [敏捷 or 智力]\n+3,649 耐力\n+\n62急速\n+\n134精通\n需要等级\n90\n售价:\n58\n1\n20"
+        },
+        {
+          "item_level": 331,
+          "quality": 4,
+          "stats": {
+            "stamina": 3777,
+            "agility_or_intellect": 183,
+            "haste": 62,
+            "mastery": 136
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "盘卷妖术护腿\n史诗\n物品等级：\n331\n拾取后绑定\n腿部\n皮甲\n168护甲\n+183 [敏捷 or 智力]\n+3,777 耐力\n+\n62急速\n+\n136精通\n需要等级\n90\n售价:\n58\n9\n90"
+        },
+        {
+          "item_level": 334,
+          "quality": 4,
+          "stats": {
+            "stamina": 3910,
+            "agility_or_intellect": 189,
+            "haste": 63,
+            "mastery": 138
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "盘卷妖术护腿\n史诗\n物品等级：\n334\n拾取后绑定\n腿部\n皮甲\n171护甲\n+189 [敏捷 or 智力]\n+3,910 耐力\n+\n63急速\n+\n138精通\n需要等级\n90\n售价:\n58\n18\n62"
+        }
+      ],
+      "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=268225",
+      "instance_zh_cn": "潮缚石窟",
+      "encounter_zh_cn": "尼姆瑞莎·唤波者",
+      "encounter_localization_source": "official_mapping",
+      "slot_key": "legs",
+      "armor_type": "leather",
+      "weapon_type": null,
+      "loot_role": "all",
+      "candidate_classes": [
+        "demon_hunter",
+        "druid",
+        "monk",
+        "rogue"
+      ],
+      "candidate_specs": [
+        "demon_hunter.devourer",
+        "demon_hunter.havoc",
+        "demon_hunter.vengeance",
+        "druid.balance",
+        "druid.feral",
+        "druid.guardian",
+        "druid.restoration",
+        "monk.brewmaster",
+        "monk.mistweaver",
+        "monk.windwalker",
+        "rogue.assassination",
+        "rogue.outlaw",
+        "rogue.subtlety"
+      ],
+      "eligibility_status": "broad_rule_v1",
+      "encounter_source_en": "The Coiled Altar",
+      "drop_sources": [
+        {
+          "instance": "Tidebound Grotto",
+          "instance_zh_cn": "潮缚石窟",
+          "encounter": "Nymrissa Wavecaller",
+          "encounter_zh_cn": "尼姆瑞莎·唤波者",
+          "source_url": "https://worldofwarcraft.blizzard.com/en-us/news/24295085/step-into-lairs-and-face-the-foes-inside"
+        }
+      ],
+      "multiple_drop_sources": false,
+      "catalyst_eligible": true,
+      "catalyst_tier_bonus_slot": true
+    },
+    {
+      "id": 268238,
+      "name_en": "Grips of Swirling Fury",
+      "slot": "Mail Hands",
+      "encounter": "Nymrissa Wavecaller",
+      "instance": "Tidebound Grotto",
+      "instance_type": "world_boss",
+      "wowhead_url": "https://www.wowhead.com/item=268238",
+      "source_url": "https://worldofwarcraft.blizzard.com/en-us/news/24295085/step-into-lairs-and-face-the-foes-inside",
+      "variants": [
+        {
+          "item_level": 305,
+          "quality": 4,
+          "stats": {
+            "stamina": 2096,
+            "agility_or_intellect": 108,
+            "critical_strike": 87,
+            "haste": 46
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "涡流之怒护手\n史诗\n物品等级：\n305\n升级：神话\n6/6\n拾取后绑定\n手部\n锁甲\n134护甲\n+108 [敏捷 or 智力]\n+2,096 耐力\n+\n87暴击\n+\n46急速\n耐久: 55 / 55\n需要等级\n90\n售价:\n31\n5\n2\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 308,
+          "quality": 4,
+          "stats": {
+            "stamina": 2172,
+            "agility_or_intellect": 111,
+            "critical_strike": 88,
+            "haste": 47
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "涡流之怒护手\n史诗\n物品等级：\n308\n升级：神话\n6/6\n拾取后绑定\n手部\n锁甲\n137护甲\n+111 [敏捷 or 智力]\n+2,172 耐力\n+\n88暴击\n+\n47急速\n耐久: 55 / 55\n需要等级\n90\n售价:\n31\n9\n68\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 311,
+          "quality": 4,
+          "stats": {
+            "stamina": 2252,
+            "agility_or_intellect": 114,
+            "critical_strike": 89,
+            "haste": 48
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "涡流之怒护手\n史诗\n物品等级：\n311\n升级：神话\n6/6\n拾取后绑定\n手部\n锁甲\n140护甲\n+114 [敏捷 or 智力]\n+2,252 耐力\n+\n89暴击\n+\n48急速\n耐久: 55 / 55\n需要等级\n90\n售价:\n31\n14\n34\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 315,
+          "quality": 4,
+          "stats": {
+            "stamina": 2358,
+            "agility_or_intellect": 118,
+            "critical_strike": 91,
+            "haste": 49
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "涡流之怒护手\n史诗\n物品等级：\n315\n升级：神话\n6/6\n拾取后绑定\n手部\n锁甲\n143护甲\n+118 [敏捷 or 智力]\n+2,358 耐力\n+\n91暴击\n+\n49急速\n耐久: 55 / 55\n需要等级\n90\n售价:\n31\n20\n58\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 318,
+          "quality": 4,
+          "stats": {
+            "stamina": 2440,
+            "agility_or_intellect": 122,
+            "critical_strike": 92,
+            "haste": 49
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "涡流之怒护手\n史诗\n物品等级：\n318\n升级：神话\n6/6\n拾取后绑定\n手部\n锁甲\n146护甲\n+122 [敏捷 or 智力]\n+2,440 耐力\n+\n92暴击\n+\n49急速\n耐久: 55 / 55\n需要等级\n90\n售价:\n31\n25\n26\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 321,
+          "quality": 4,
+          "stats": {
+            "stamina": 2527,
+            "agility_or_intellect": 125,
+            "critical_strike": 93,
+            "haste": 50
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "涡流之怒护手\n史诗\n物品等级：\n321\n升级：神话\n6/6\n拾取后绑定\n手部\n锁甲\n149护甲\n+125 [敏捷 or 智力]\n+2,527 耐力\n+\n93暴击\n+\n50急速\n耐久: 55 / 55\n需要等级\n90\n售价:\n31\n29\n95\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 324,
+          "quality": 4,
+          "stats": {
+            "stamina": 2615,
+            "agility_or_intellect": 129,
+            "critical_strike": 94,
+            "haste": 50
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "涡流之怒护手\n史诗\n物品等级：\n324\n升级：神话\n6/6\n拾取后绑定\n手部\n锁甲\n152护甲\n+129 [敏捷 or 智力]\n+2,615 耐力\n+\n94暴击\n+\n50急速\n耐久: 55 / 55\n需要等级\n90\n售价:\n31\n34\n65\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 328,
+          "quality": 4,
+          "stats": {
+            "stamina": 2737,
+            "agility_or_intellect": 134,
+            "critical_strike": 96,
+            "haste": 51
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "涡流之怒护手\n史诗\n物品等级：\n328\n升级：神话\n6/6\n拾取后绑定\n手部\n锁甲\n156护甲\n+134 [敏捷 or 智力]\n+2,737 耐力\n+\n96暴击\n+\n51急速\n耐久: 55 / 55\n需要等级\n90\n售价:\n31\n40\n92\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 331,
+          "quality": 4,
+          "stats": {
+            "stamina": 2832,
+            "agility_or_intellect": 138,
+            "critical_strike": 97,
+            "haste": 52
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "涡流之怒护手\n史诗\n物品等级：\n331\n升级：神话\n6/6\n拾取后绑定\n手部\n锁甲\n159护甲\n+138 [敏捷 or 智力]\n+2,832 耐力\n+\n97暴击\n+\n52急速\n耐久: 55 / 55\n需要等级\n90\n售价:\n31\n45\n63\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 334,
+          "quality": 4,
+          "stats": {
+            "stamina": 2932,
+            "agility_or_intellect": 141,
+            "critical_strike": 98,
+            "haste": 53
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "涡流之怒护手\n史诗\n物品等级：\n334\n升级：神话\n6/6\n拾取后绑定\n手部\n锁甲\n163护甲\n+141 [敏捷 or 智力]\n+2,932 耐力\n+\n98暴击\n+\n53急速\n耐久: 55 / 55\n需要等级\n90\n售价:\n31\n50\n36\n掉落于: 尼姆瑞莎·唤波者"
+        }
+      ],
+      "name_zh_cn": "涡流之怒护手",
+      "icon": "inv_glove_mail_raidevokerulatek_d_01",
+      "instance_zh_cn": "潮缚石窟",
+      "encounter_source_en": "Nymrissa Wavecaller",
+      "encounter_zh_cn": "尼姆瑞莎·唤波者",
+      "encounter_localization_source": "item_tooltip",
+      "drop_sources": [
+        {
+          "instance": "Tidebound Grotto",
+          "instance_zh_cn": "潮缚石窟",
+          "encounter": "Nymrissa Wavecaller",
+          "encounter_zh_cn": "尼姆瑞莎·唤波者",
+          "source_url": "https://worldofwarcraft.blizzard.com/en-us/news/24295085/step-into-lairs-and-face-the-foes-inside"
+        }
+      ],
+      "multiple_drop_sources": false,
+      "slot_key": "hands",
+      "armor_type": "mail",
+      "weapon_type": null,
+      "loot_role": "all",
+      "candidate_classes": [
+        "evoker",
+        "hunter",
+        "shaman"
+      ],
+      "candidate_specs": [
+        "evoker.augmentation",
+        "evoker.devastation",
+        "evoker.preservation",
+        "hunter.beast_mastery",
+        "hunter.marksmanship",
+        "hunter.survival",
+        "shaman.elemental",
+        "shaman.enhancement",
+        "shaman.restoration"
+      ],
+      "eligibility_status": "broad_rule_v1"
+    },
+    {
+      "id": 268217,
+      "name_en": "Rising Tide Wristguards",
+      "slot": "Mail Wrist",
+      "encounter": "Nymrissa Wavecaller",
+      "instance": "Tidebound Grotto",
+      "instance_type": "world_boss",
+      "wowhead_url": "https://www.wowhead.com/item=268217",
+      "source_url": "https://worldofwarcraft.blizzard.com/en-us/news/24295085/step-into-lairs-and-face-the-foes-inside",
+      "variants": [
+        {
+          "item_level": 305,
+          "quality": 4,
+          "stats": {
+            "stamina": 1572,
+            "agility_or_intellect": 81,
+            "critical_strike": 31,
+            "mastery": 69
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "怒潮护腕\n史诗\n物品等级：\n305\n升级：神话\n6/6\n拾取后绑定\n腕部\n锁甲\n119护甲\n+81 [敏捷 or 智力]\n+1,572 耐力\n+\n31暴击\n+\n69精通\n耐久: 55 / 55\n需要等级\n90\n售价:\n30\n15\n41\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 308,
+          "quality": 4,
+          "stats": {
+            "stamina": 1629,
+            "agility_or_intellect": 83,
+            "critical_strike": 31,
+            "mastery": 70
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "怒潮护腕\n史诗\n物品等级：\n308\n升级：神话\n6/6\n拾取后绑定\n腕部\n锁甲\n122护甲\n+83 [敏捷 or 智力]\n+1,629 耐力\n+\n31暴击\n+\n70精通\n耐久: 55 / 55\n需要等级\n90\n售价:\n30\n19\n93\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 311,
+          "quality": 4,
+          "stats": {
+            "stamina": 1689,
+            "agility_or_intellect": 86,
+            "critical_strike": 32,
+            "mastery": 71
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "怒潮护腕\n史诗\n物品等级：\n311\n升级：神话\n6/6\n拾取后绑定\n腕部\n锁甲\n124护甲\n+86 [敏捷 or 智力]\n+1,689 耐力\n+\n32暴击\n+\n71精通\n耐久: 55 / 55\n需要等级\n90\n售价:\n30\n24\n47\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 315,
+          "quality": 4,
+          "stats": {
+            "stamina": 1768,
+            "agility_or_intellect": 89,
+            "critical_strike": 32,
+            "mastery": 72
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "怒潮护腕\n史诗\n物品等级：\n315\n升级：神话\n6/6\n拾取后绑定\n腕部\n锁甲\n127护甲\n+89 [敏捷 or 智力]\n+1,768 耐力\n+\n32暴击\n+\n72精通\n耐久: 55 / 55\n需要等级\n90\n售价:\n30\n30\n52\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 318,
+          "quality": 4,
+          "stats": {
+            "stamina": 1830,
+            "agility_or_intellect": 91,
+            "critical_strike": 33,
+            "mastery": 73
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "怒潮护腕\n史诗\n物品等级：\n318\n升级：神话\n6/6\n拾取后绑定\n腕部\n锁甲\n130护甲\n+91 [敏捷 or 智力]\n+1,830 耐力\n+\n33暴击\n+\n73精通\n耐久: 55 / 55\n需要等级\n90\n售价:\n30\n35\n7\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 321,
+          "quality": 4,
+          "stats": {
+            "stamina": 1895,
+            "agility_or_intellect": 94,
+            "critical_strike": 33,
+            "mastery": 74
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "怒潮护腕\n史诗\n物品等级：\n321\n升级：神话\n6/6\n拾取后绑定\n腕部\n锁甲\n132护甲\n+94 [敏捷 or 智力]\n+1,895 耐力\n+\n33暴击\n+\n74精通\n耐久: 55 / 55\n需要等级\n90\n售价:\n30\n39\n62\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 324,
+          "quality": 4,
+          "stats": {
+            "stamina": 1962,
+            "agility_or_intellect": 97,
+            "critical_strike": 33,
+            "mastery": 75
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "怒潮护腕\n史诗\n物品等级：\n324\n升级：神话\n6/6\n拾取后绑定\n腕部\n锁甲\n135护甲\n+97 [敏捷 or 智力]\n+1,962 耐力\n+\n33暴击\n+\n75精通\n耐久: 55 / 55\n需要等级\n90\n售价:\n30\n44\n19\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 328,
+          "quality": 4,
+          "stats": {
+            "stamina": 2053,
+            "agility_or_intellect": 100,
+            "critical_strike": 34,
+            "mastery": 76
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "怒潮护腕\n史诗\n物品等级：\n328\n升级：神话\n6/6\n拾取后绑定\n腕部\n锁甲\n139护甲\n+100 [敏捷 or 智力]\n+2,053 耐力\n+\n34暴击\n+\n76精通\n耐久: 55 / 55\n需要等级\n90\n售价:\n30\n50\n28\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 331,
+          "quality": 4,
+          "stats": {
+            "stamina": 2124,
+            "agility_or_intellect": 103,
+            "critical_strike": 34,
+            "mastery": 77
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "怒潮护腕\n史诗\n物品等级：\n331\n升级：神话\n6/6\n拾取后绑定\n腕部\n锁甲\n142护甲\n+103 [敏捷 or 智力]\n+2,124 耐力\n+\n34暴击\n+\n77精通\n耐久: 55 / 55\n需要等级\n90\n售价:\n30\n54\n85\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 334,
+          "quality": 4,
+          "stats": {
+            "stamina": 2199,
+            "agility_or_intellect": 106,
+            "critical_strike": 35,
+            "mastery": 78
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "怒潮护腕\n史诗\n物品等级：\n334\n升级：神话\n6/6\n拾取后绑定\n腕部\n锁甲\n144护甲\n+106 [敏捷 or 智力]\n+2,199 耐力\n+\n35暴击\n+\n78精通\n耐久: 55 / 55\n需要等级\n90\n售价:\n30\n59\n44\n掉落于: 尼姆瑞莎·唤波者"
+        }
+      ],
+      "name_zh_cn": "怒潮护腕",
+      "icon": "inv_bracer_mail_raidhunterulatek_d_01",
+      "instance_zh_cn": "潮缚石窟",
+      "encounter_source_en": "Nymrissa Wavecaller",
+      "encounter_zh_cn": "尼姆瑞莎·唤波者",
+      "encounter_localization_source": "item_tooltip",
+      "drop_sources": [
+        {
+          "instance": "Tidebound Grotto",
+          "instance_zh_cn": "潮缚石窟",
+          "encounter": "Nymrissa Wavecaller",
+          "encounter_zh_cn": "尼姆瑞莎·唤波者",
+          "source_url": "https://worldofwarcraft.blizzard.com/en-us/news/24295085/step-into-lairs-and-face-the-foes-inside"
+        }
+      ],
+      "multiple_drop_sources": false,
+      "slot_key": "wrist",
+      "armor_type": "mail",
+      "weapon_type": null,
+      "loot_role": "all",
+      "candidate_classes": [
+        "evoker",
+        "hunter",
+        "shaman"
+      ],
+      "candidate_specs": [
+        "evoker.augmentation",
+        "evoker.devastation",
+        "evoker.preservation",
+        "hunter.beast_mastery",
+        "hunter.marksmanship",
+        "hunter.survival",
+        "shaman.elemental",
+        "shaman.enhancement",
+        "shaman.restoration"
+      ],
+      "eligibility_status": "broad_rule_v1"
+    },
+    {
       "id": 268263,
       "name_en": "Frostscale's Mystic Frond",
       "slot": "Off-Hand Weapon",
       "encounter": "Nymrissa Wavecaller",
       "instance": "Tidebound Grotto",
       "instance_type": "world_boss",
-      "wowhead_url": "https://www.wowhead.com/ptr/item=268263",
+      "wowhead_url": "https://www.wowhead.com/item=268263",
       "source_url": "https://worldofwarcraft.blizzard.com/en-us/news/24295085/step-into-lairs-and-face-the-foes-inside",
       "name_zh_cn": "霜鳞的秘法蕨叶",
       "icon": "inv_offhand_1h_ulatek_d_01",
@@ -62555,13 +63583,351 @@
       "catalyst_tier_bonus_slot": false
     },
     {
+      "id": 268226,
+      "name_en": "Swelling Sea Spaulders",
+      "slot": "Plate Shoulders",
+      "encounter": "Nymrissa Wavecaller",
+      "instance": "Tidebound Grotto",
+      "instance_type": "world_boss",
+      "wowhead_url": "https://www.wowhead.com/item=268226",
+      "source_url": "https://worldofwarcraft.blizzard.com/en-us/news/24295085/step-into-lairs-and-face-the-foes-inside",
+      "variants": [
+        {
+          "item_level": 305,
+          "quality": 4,
+          "stats": {
+            "stamina": 2096,
+            "strength_or_intellect": 108,
+            "critical_strike": 94,
+            "mastery": 39
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "涌潮之海护肩\n史诗\n物品等级：\n305\n升级：神话\n6/6\n拾取后绑定\n肩部\n板甲\n247护甲\n+108 [力量 or 智力]\n+2,096 耐力\n+\n94暴击\n+\n39精通\n耐久: 100 / 100\n需要等级\n90\n售价:\n43\n9\n37\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 308,
+          "quality": 4,
+          "stats": {
+            "stamina": 2172,
+            "strength_or_intellect": 111,
+            "critical_strike": 95,
+            "mastery": 40
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "涌潮之海护肩\n史诗\n物品等级：\n308\n升级：神话\n6/6\n拾取后绑定\n肩部\n板甲\n252护甲\n+111 [力量 or 智力]\n+2,172 耐力\n+\n95暴击\n+\n40精通\n耐久: 100 / 100\n需要等级\n90\n售价:\n43\n15\n83\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 311,
+          "quality": 4,
+          "stats": {
+            "stamina": 2252,
+            "strength_or_intellect": 114,
+            "critical_strike": 97,
+            "mastery": 40
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "涌潮之海护肩\n史诗\n物品等级：\n311\n升级：神话\n6/6\n拾取后绑定\n肩部\n板甲\n257护甲\n+114 [力量 or 智力]\n+2,252 耐力\n+\n97暴击\n+\n40精通\n耐久: 100 / 100\n需要等级\n90\n售价:\n43\n22\n31\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 315,
+          "quality": 4,
+          "stats": {
+            "stamina": 2358,
+            "strength_or_intellect": 118,
+            "critical_strike": 98,
+            "mastery": 41
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "涌潮之海护肩\n史诗\n物品等级：\n315\n升级：神话\n6/6\n拾取后绑定\n肩部\n板甲\n263护甲\n+118 [力量 or 智力]\n+2,358 耐力\n+\n98暴击\n+\n41精通\n耐久: 100 / 100\n需要等级\n90\n售价:\n43\n30\n96\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 318,
+          "quality": 4,
+          "stats": {
+            "stamina": 2440,
+            "strength_or_intellect": 122,
+            "critical_strike": 100,
+            "mastery": 41
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "涌潮之海护肩\n史诗\n物品等级：\n318\n升级：神话\n6/6\n拾取后绑定\n肩部\n板甲\n268护甲\n+122 [力量 or 智力]\n+2,440 耐力\n+\n100暴击\n+\n41精通\n耐久: 100 / 100\n需要等级\n90\n售价:\n43\n37\n46\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 321,
+          "quality": 4,
+          "stats": {
+            "stamina": 2527,
+            "strength_or_intellect": 125,
+            "critical_strike": 101,
+            "mastery": 42
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "涌潮之海护肩\n史诗\n物品等级：\n321\n升级：神话\n6/6\n拾取后绑定\n肩部\n板甲\n274护甲\n+125 [力量 or 智力]\n+2,527 耐力\n+\n101暴击\n+\n42精通\n耐久: 100 / 100\n需要等级\n90\n售价:\n43\n43\n97\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 324,
+          "quality": 4,
+          "stats": {
+            "stamina": 2615,
+            "strength_or_intellect": 129,
+            "critical_strike": 102,
+            "mastery": 42
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "涌潮之海护肩\n史诗\n物品等级：\n324\n升级：神话\n6/6\n拾取后绑定\n肩部\n板甲\n279护甲\n+129 [力量 or 智力]\n+2,615 耐力\n+\n102暴击\n+\n42精通\n耐久: 100 / 100\n需要等级\n90\n售价:\n43\n50\n49\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 328,
+          "quality": 4,
+          "stats": {
+            "stamina": 2737,
+            "strength_or_intellect": 134,
+            "critical_strike": 104,
+            "mastery": 43
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "涌潮之海护肩\n史诗\n物品等级：\n328\n升级：神话\n6/6\n拾取后绑定\n肩部\n板甲\n287护甲\n+134 [力量 or 智力]\n+2,737 耐力\n+\n104暴击\n+\n43精通\n耐久: 100 / 100\n需要等级\n90\n售价:\n43\n59\n20\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 331,
+          "quality": 4,
+          "stats": {
+            "stamina": 2832,
+            "strength_or_intellect": 138,
+            "critical_strike": 105,
+            "mastery": 44
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "涌潮之海护肩\n史诗\n物品等级：\n331\n升级：神话\n6/6\n拾取后绑定\n肩部\n板甲\n293护甲\n+138 [力量 or 智力]\n+2,832 耐力\n+\n105暴击\n+\n44精通\n耐久: 100 / 100\n需要等级\n90\n售价:\n43\n65\n74\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 334,
+          "quality": 4,
+          "stats": {
+            "stamina": 2932,
+            "strength_or_intellect": 141,
+            "critical_strike": 107,
+            "mastery": 44
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "涌潮之海护肩\n史诗\n物品等级：\n334\n升级：神话\n6/6\n拾取后绑定\n肩部\n板甲\n299护甲\n+141 [力量 or 智力]\n+2,932 耐力\n+\n107暴击\n+\n44精通\n耐久: 100 / 100\n需要等级\n90\n售价:\n43\n72\n29\n掉落于: 尼姆瑞莎·唤波者"
+        }
+      ],
+      "name_zh_cn": "涌潮之海护肩",
+      "icon": "inv_shoulder_plate_raidpaladinulatek_d_01",
+      "instance_zh_cn": "潮缚石窟",
+      "encounter_source_en": "Nymrissa Wavecaller",
+      "encounter_zh_cn": "尼姆瑞莎·唤波者",
+      "encounter_localization_source": "item_tooltip",
+      "drop_sources": [
+        {
+          "instance": "Tidebound Grotto",
+          "instance_zh_cn": "潮缚石窟",
+          "encounter": "Nymrissa Wavecaller",
+          "encounter_zh_cn": "尼姆瑞莎·唤波者",
+          "source_url": "https://worldofwarcraft.blizzard.com/en-us/news/24295085/step-into-lairs-and-face-the-foes-inside"
+        }
+      ],
+      "multiple_drop_sources": false,
+      "slot_key": "shoulder",
+      "armor_type": "plate",
+      "weapon_type": null,
+      "loot_role": "all",
+      "candidate_classes": [
+        "death_knight",
+        "paladin",
+        "warrior"
+      ],
+      "candidate_specs": [
+        "death_knight.blood",
+        "death_knight.frost",
+        "death_knight.unholy",
+        "paladin.holy",
+        "paladin.protection",
+        "paladin.retribution",
+        "warrior.arms",
+        "warrior.fury",
+        "warrior.protection"
+      ],
+      "eligibility_status": "broad_rule_v1"
+    },
+    {
+      "id": 268244,
+      "name_en": "Forgotten Grotto Girdle",
+      "slot": "Plate Waist",
+      "encounter": "Nymrissa Wavecaller",
+      "instance": "Tidebound Grotto",
+      "instance_type": "world_boss",
+      "wowhead_url": "https://www.wowhead.com/item=268244",
+      "source_url": "https://worldofwarcraft.blizzard.com/en-us/news/24295085/step-into-lairs-and-face-the-foes-inside",
+      "variants": [
+        {
+          "item_level": 305,
+          "quality": 4,
+          "stats": {
+            "stamina": 2096,
+            "strength_or_intellect": 108,
+            "haste": 94,
+            "versatility": 39
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "遗忘石窟束带\n史诗\n物品等级：\n305\n升级：神话\n6/6\n拾取后绑定\n腰部\n板甲\n202护甲\n+108 [力量 or 智力]\n+2,096 耐力\n+\n94急速\n+\n39全能\n耐久: 55 / 55\n需要等级\n90\n售价:\n28\n72\n51\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 308,
+          "quality": 4,
+          "stats": {
+            "stamina": 2172,
+            "strength_or_intellect": 111,
+            "haste": 95,
+            "versatility": 40
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "遗忘石窟束带\n史诗\n物品等级：\n308\n升级：神话\n6/6\n拾取后绑定\n腰部\n板甲\n206护甲\n+111 [力量 or 智力]\n+2,172 耐力\n+\n95急速\n+\n40全能\n耐久: 55 / 55\n需要等级\n90\n售价:\n28\n76\n82\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 311,
+          "quality": 4,
+          "stats": {
+            "stamina": 2252,
+            "strength_or_intellect": 114,
+            "haste": 97,
+            "versatility": 40
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "遗忘石窟束带\n史诗\n物品等级：\n311\n升级：神话\n6/6\n拾取后绑定\n腰部\n板甲\n210护甲\n+114 [力量 or 智力]\n+2,252 耐力\n+\n97急速\n+\n40全能\n耐久: 55 / 55\n需要等级\n90\n售价:\n28\n81\n14\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 315,
+          "quality": 4,
+          "stats": {
+            "stamina": 2358,
+            "strength_or_intellect": 118,
+            "haste": 98,
+            "versatility": 41
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "遗忘石窟束带\n史诗\n物品等级：\n315\n升级：神话\n6/6\n拾取后绑定\n腰部\n板甲\n215护甲\n+118 [力量 or 智力]\n+2,358 耐力\n+\n98急速\n+\n41全能\n耐久: 55 / 55\n需要等级\n90\n售价:\n28\n86\n91\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 318,
+          "quality": 4,
+          "stats": {
+            "stamina": 2440,
+            "strength_or_intellect": 122,
+            "haste": 100,
+            "versatility": 41
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "遗忘石窟束带\n史诗\n物品等级：\n318\n升级：神话\n6/6\n拾取后绑定\n腰部\n板甲\n220护甲\n+122 [力量 or 智力]\n+2,440 耐力\n+\n100急速\n+\n41全能\n耐久: 55 / 55\n需要等级\n90\n售价:\n28\n91\n24\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 321,
+          "quality": 4,
+          "stats": {
+            "stamina": 2527,
+            "strength_or_intellect": 125,
+            "haste": 101,
+            "versatility": 42
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "遗忘石窟束带\n史诗\n物品等级：\n321\n升级：神话\n6/6\n拾取后绑定\n腰部\n板甲\n224护甲\n+125 [力量 or 智力]\n+2,527 耐力\n+\n101急速\n+\n42全能\n耐久: 55 / 55\n需要等级\n90\n售价:\n28\n95\n58\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 324,
+          "quality": 4,
+          "stats": {
+            "stamina": 2615,
+            "strength_or_intellect": 129,
+            "haste": 102,
+            "versatility": 43
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "遗忘石窟束带\n史诗\n物品等级：\n324\n升级：神话\n6/6\n拾取后绑定\n腰部\n板甲\n229护甲\n+129 [力量 or 智力]\n+2,615 耐力\n+\n102急速\n+\n43全能\n耐久: 55 / 55\n需要等级\n90\n售价:\n28\n99\n93\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 328,
+          "quality": 4,
+          "stats": {
+            "stamina": 2737,
+            "strength_or_intellect": 134,
+            "haste": 104,
+            "versatility": 43
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "遗忘石窟束带\n史诗\n物品等级：\n328\n升级：神话\n6/6\n拾取后绑定\n腰部\n板甲\n235护甲\n+134 [力量 or 智力]\n+2,737 耐力\n+\n104急速\n+\n43全能\n耐久: 55 / 55\n需要等级\n90\n售价:\n29\n5\n73\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 331,
+          "quality": 4,
+          "stats": {
+            "stamina": 2832,
+            "strength_or_intellect": 138,
+            "haste": 105,
+            "versatility": 44
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "遗忘石窟束带\n史诗\n物品等级：\n331\n升级：神话\n6/6\n拾取后绑定\n腰部\n板甲\n240护甲\n+138 [力量 or 智力]\n+2,832 耐力\n+\n105急速\n+\n44全能\n耐久: 55 / 55\n需要等级\n90\n售价:\n29\n10\n9\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 334,
+          "quality": 4,
+          "stats": {
+            "stamina": 2932,
+            "strength_or_intellect": 141,
+            "haste": 106,
+            "versatility": 44
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "遗忘石窟束带\n史诗\n物品等级：\n334\n升级：神话\n6/6\n拾取后绑定\n腰部\n板甲\n245护甲\n+141 [力量 or 智力]\n+2,932 耐力\n+\n106急速\n+\n44全能\n耐久: 55 / 55\n需要等级\n90\n售价:\n29\n14\n46\n掉落于: 尼姆瑞莎·唤波者"
+        }
+      ],
+      "name_zh_cn": "遗忘石窟束带",
+      "icon": "inv_belt_plate_raiddeathknightulatek_d_01",
+      "instance_zh_cn": "潮缚石窟",
+      "encounter_source_en": "Nymrissa Wavecaller",
+      "encounter_zh_cn": "尼姆瑞莎·唤波者",
+      "encounter_localization_source": "item_tooltip",
+      "drop_sources": [
+        {
+          "instance": "Tidebound Grotto",
+          "instance_zh_cn": "潮缚石窟",
+          "encounter": "Nymrissa Wavecaller",
+          "encounter_zh_cn": "尼姆瑞莎·唤波者",
+          "source_url": "https://worldofwarcraft.blizzard.com/en-us/news/24295085/step-into-lairs-and-face-the-foes-inside"
+        }
+      ],
+      "multiple_drop_sources": false,
+      "slot_key": "waist",
+      "armor_type": "plate",
+      "weapon_type": null,
+      "loot_role": "all",
+      "candidate_classes": [
+        "death_knight",
+        "paladin",
+        "warrior"
+      ],
+      "candidate_specs": [
+        "death_knight.blood",
+        "death_knight.frost",
+        "death_knight.unholy",
+        "paladin.holy",
+        "paladin.protection",
+        "paladin.retribution",
+        "warrior.arms",
+        "warrior.fury",
+        "warrior.protection"
+      ],
+      "eligibility_status": "broad_rule_v1"
+    },
+    {
       "id": 268266,
       "name_en": "Alluring Bubbleband",
       "slot": "Ring",
       "encounter": "Nymrissa Wavecaller",
       "instance": "Tidebound Grotto",
       "instance_type": "world_boss",
-      "wowhead_url": "https://www.wowhead.com/ptr/item=268266",
+      "wowhead_url": "https://www.wowhead.com/item=268266",
       "source_url": "https://worldofwarcraft.blizzard.com/en-us/news/24295085/step-into-lairs-and-face-the-foes-inside",
       "name_zh_cn": "诱人水泡指环",
       "icon": "inv_70_raid_ring8c",
@@ -62764,7 +64130,7 @@
       "encounter": "Nymrissa Wavecaller",
       "instance": "Tidebound Grotto",
       "instance_type": "world_boss",
-      "wowhead_url": "https://www.wowhead.com/ptr/item=268262",
+      "wowhead_url": "https://www.wowhead.com/item=268262",
       "source_url": "https://worldofwarcraft.blizzard.com/en-us/news/24295085/step-into-lairs-and-face-the-foes-inside",
       "name_zh_cn": "泡鳍挡水盾",
       "icon": "inv_shield_1h_ulatek_d_01",
@@ -62949,10 +64315,91 @@
       "instance": "Tidebound Grotto",
       "instance_zh_cn": "潮缚石窟",
       "instance_type": "world_boss",
-      "wowhead_url": "https://www.wowhead.com/item=270167/wavecallers-seastone",
-      "source_url": "https://www.wowhead.com/item=270167/wavecallers-seastone",
+      "wowhead_url": "https://www.wowhead.com/item=270167",
+      "source_url": "https://worldofwarcraft.blizzard.com/en-us/news/24295085/step-into-lairs-and-face-the-foes-inside",
       "icon": "inv_tradeskillitem_sorcererswater",
       "variants": [
+        {
+          "item_level": 305,
+          "quality": 4,
+          "stats": {
+            "haste": 127
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "唤波者的海石\n史诗\n物品等级：\n305\n升级：神话\n6/6\n拾取后绑定\n装备唯一\n饰品\n+\n127急速\n装备：\n你的法术有很高的几率呼唤海洋，赋予潮汐洞察，使你的智力提高\n49\n，最多叠加6次。达到巅峰后，你的法术转而会削弱潮汐洞察，然后重新开始循环。\n需要等级\n90\n售价:\n50\n67\n85\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 308,
+          "quality": 4,
+          "stats": {
+            "haste": 128
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "唤波者的海石\n史诗\n物品等级：\n308\n升级：神话\n6/6\n拾取后绑定\n装备唯一\n饰品\n+\n128急速\n装备：\n你的法术有很高的几率呼唤海洋，赋予潮汐洞察，使你的智力提高\n51\n，最多叠加6次。达到巅峰后，你的法术转而会削弱潮汐洞察，然后重新开始循环。\n需要等级\n90\n售价:\n50\n75\n45\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 311,
+          "quality": 4,
+          "stats": {
+            "haste": 130
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "唤波者的海石\n史诗\n物品等级：\n311\n升级：神话\n6/6\n拾取后绑定\n装备唯一\n饰品\n+\n130急速\n装备：\n你的法术有很高的几率呼唤海洋，赋予潮汐洞察，使你的智力提高\n52\n，最多叠加6次。达到巅峰后，你的法术转而会削弱潮汐洞察，然后重新开始循环。\n需要等级\n90\n售价:\n50\n83\n7\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 315,
+          "quality": 4,
+          "stats": {
+            "haste": 133
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "唤波者的海石\n史诗\n物品等级：\n315\n升级：神话\n6/6\n拾取后绑定\n装备唯一\n饰品\n+\n133急速\n装备：\n你的法术有很高的几率呼唤海洋，赋予潮汐洞察，使你的智力提高\n54\n，最多叠加6次。达到巅峰后，你的法术转而会削弱潮汐洞察，然后重新开始循环。\n需要等级\n90\n售价:\n50\n93\n24\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 318,
+          "quality": 4,
+          "stats": {
+            "haste": 134
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "唤波者的海石\n史诗\n物品等级：\n318\n升级：神话\n6/6\n拾取后绑定\n装备唯一\n饰品\n+\n134急速\n装备：\n你的法术有很高的几率呼唤海洋，赋予潮汐洞察，使你的智力提高\n56\n，最多叠加6次。达到巅峰后，你的法术转而会削弱潮汐洞察，然后重新开始循环。\n需要等级\n90\n售价:\n51\n89\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 321,
+          "quality": 4,
+          "stats": {
+            "haste": 136
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "唤波者的海石\n史诗\n物品等级：\n321\n升级：神话\n6/6\n拾取后绑定\n装备唯一\n饰品\n+\n136急速\n装备：\n你的法术有很高的几率呼唤海洋，赋予潮汐洞察，使你的智力提高\n57\n，最多叠加6次。达到巅峰后，你的法术转而会削弱潮汐洞察，然后重新开始循环。\n需要等级\n90\n售价:\n51\n8\n54\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 324,
+          "quality": 4,
+          "stats": {
+            "haste": 138
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "唤波者的海石\n史诗\n物品等级：\n324\n升级：神话\n6/6\n拾取后绑定\n装备唯一\n饰品\n+\n138急速\n装备：\n你的法术有很高的几率呼唤海洋，赋予潮汐洞察，使你的智力提高\n59\n，最多叠加6次。达到巅峰后，你的法术转而会削弱潮汐洞察，然后重新开始循环。\n需要等级\n90\n售价:\n51\n16\n21\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 328,
+          "quality": 4,
+          "stats": {
+            "haste": 140
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "唤波者的海石\n史诗\n物品等级：\n328\n升级：神话\n6/6\n拾取后绑定\n装备唯一\n饰品\n+\n140急速\n装备：\n你的法术有很高的几率呼唤海洋，赋予潮汐洞察，使你的智力提高\n61\n，最多叠加6次。达到巅峰后，你的法术转而会削弱潮汐洞察，然后重新开始循环。\n需要等级\n90\n售价:\n51\n26\n45\n掉落于: 尼姆瑞莎·唤波者"
+        },
+        {
+          "item_level": 331,
+          "quality": 4,
+          "stats": {
+            "haste": 142
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "唤波者的海石\n史诗\n物品等级：\n331\n升级：神话\n6/6\n拾取后绑定\n装备唯一\n饰品\n+\n142急速\n装备：\n你的法术有很高的几率呼唤海洋，赋予潮汐洞察，使你的智力提高\n63\n，最多叠加6次。达到巅峰后，你的法术转而会削弱潮汐洞察，然后重新开始循环。\n需要等级\n90\n售价:\n51\n34\n14\n掉落于: 尼姆瑞莎·唤波者"
+        },
         {
           "item_level": 334,
           "quality": 4,
@@ -63028,7 +64475,7 @@
           "instance_zh_cn": "潮缚石窟",
           "encounter": "Nymrissa Wavecaller",
           "encounter_zh_cn": "尼姆瑞莎·唤波者",
-          "source_url": "https://www.wowhead.com/item=270167/wavecallers-seastone"
+          "source_url": "https://worldofwarcraft.blizzard.com/en-us/news/24295085/step-into-lairs-and-face-the-foes-inside"
         }
       ],
       "catalyst_eligible": false,
@@ -63115,6 +64562,12 @@
         "item_id": 268231,
         "source_encounter_en": "The Coiled Altar",
         "canonical_encounter_en": "Nek'zali the Soulcoiler",
+        "tooltip_zh_cn": null
+      },
+      {
+        "item_id": 268225,
+        "source_encounter_en": "The Coiled Altar",
+        "canonical_encounter_en": "Nymrissa Wavecaller",
         "tooltip_zh_cn": null
       },
       {

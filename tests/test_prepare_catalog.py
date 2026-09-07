@@ -13,8 +13,11 @@ def test_delve_chinese_slot_names_are_normalized():
     assert normalize_slot({"slot": "Unknown", "variants": [{"tooltip_zh_cn": "\n单手\n权杖\n"}]}) == ("weapon", None, "1h_mace")
 
 
-def test_known_tidebound_grotto_items_include_alluring_bubbleband():
-    assert 268266 in TIDEBOUND_GROTTO_ITEM_IDS
+def test_known_tidebound_grotto_items_match_blizzards_complete_loot_table():
+    assert TIDEBOUND_GROTTO_ITEM_IDS == {
+        268199, 268217, 268221, 268225, 268226, 268232, 268238,
+        268244, 268247, 268262, 268263, 268266, 270167,
+    }
 
 
 def test_current_ulatek_item_corrections():
