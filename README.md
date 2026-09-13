@@ -25,14 +25,17 @@ flowchart LR
 ## 已实现
 
 - 40 个职业专精的装备合法性与精通系数。
-- 12.1 第二赛季副本、团本、制造、套装、消耗品与 BIS 数据。
+- 12.1 第二赛季副本、团本、世界首领、地下堡、制造、套装、消耗品与 BIS 数据。
 - 334 神话 6/6 掉落装备与 331 制造装备候选池。
+- 地下堡英雄 6/6（321）装备，包含商人和宝箱来源。
+- 潮缚石窟 13 件世界首领装备，包含英雄与神话属性变体；交叉掉落保留各自来源类型。
 - 绿字比例和面板百分比两类目标。
 - 四件套后置催化标记，保留原装备属性、来源与特效。
-- 尾王特效装备优先、制造装备递增代价。
+- 默认优先尾王特效装备；默认目标两件制造装备，制造武器也计入总数，未指定部位时优先小部位。
+- 自动识别保留现有装备并补齐空位的需求，支持排除团本、世界首领等来源类型。
 - 固定专精 BIS 饰品、自动合剂、手动宝石接口。
 - AgentScope + DeepSeek 对话式 Builder Agent。
-- FastAPI 会话、对话、状态更新和结构化提案接口。
+- FastAPI 会话、对话、状态更新和结构化提案接口；独立上下文、自动压缩与 MySQL 会话持久化。
 
 ## 技术栈
 
@@ -123,7 +126,8 @@ response.proposal.solutions[0].equipment
 
 流式接口使用 SSE，按顺序返回 `status`、`tool_start`、`tool_result`、
 `text_delta`、`proposal`、`state`、`done`；异常返回 `error`。前端逐段展示
-`text_delta`，收到完整的 `proposal` 事件后再更新装备栏。
+流程状态，最终展示 `done.message`，避免把中间工具搜索文字当作最终答复；收到
+完整的 `proposal` 事件后展示可选方案。
 
 保存当前 Builder 方案：
 
@@ -147,25 +151,68 @@ PYTHONPATH=. PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 pytest -q
 PYTHONPATH=. python scripts/audit_all_specs.py
 ```
 
-当前基础测试为 30 项，另有 40 专精批量配装审计脚本。
+当前基础测试为 59 项（部分用例需要可连接的 MySQL），另有 40 专精批量配装审计脚本。
 
-## Docker 与 Jenkins
+## Docker 手动部署与更新
 
-生产环境由 `compose.yaml` 启动 MySQL、FastAPI 和 Nginx：
+生产环境由 `compose.yaml` 启动 MySQL、FastAPI 和 Nginx。以下以服务器仓库
+`/opt/wow-app`、分支 `develop` 为例；所有命令都在同一个仓库目录执行，不依赖 Jenkins。
+
+### 环境配置
+
+Docker Compose 默认读取仓库目录下的 `.env`，不要求存在 `.env.production`。
+首次部署复制 `.env.example` 为 `.env`，填写真实配置；已有数据库必须沿用原来的
+数据库名、用户名和密码，不要重新生成密码。`.env` 不会提交到 Git 或复制进镜像。
+如果已经使用其他环境文件，在每条 `docker compose` 命令中增加
+`--env-file /实际存在的文件路径`，不要使用不存在的路径。
+
+首次部署：
 
 ```bash
-docker compose --env-file /opt/wow/.env.production build
-docker compose --env-file /opt/wow/.env.production up -d --wait mysql
-docker compose --env-file /opt/wow/.env.production run --rm backend alembic upgrade head
-docker compose --env-file /opt/wow/.env.production run --rm backend python scripts/import_data.py
-docker compose --env-file /opt/wow/.env.production up -d backend frontend
+cd /opt/wow-app
+docker compose build backend frontend
+docker compose up -d --wait mysql
+docker compose run --rm --no-deps backend alembic upgrade head
+docker compose run --rm --no-deps backend python scripts/import_data.py
+docker compose up -d --no-deps backend frontend
 ```
 
-`Jenkinsfile` 默认构建当前任务检出的分支；Jenkins 任务应配置为从 `develop` 分支读取该文件。
+### 更新已有服务
+
+仅后端或装备数据有变化时：
+
+```bash
+cd /opt/wow-app
+git pull --ff-only origin develop
+docker compose build backend
+docker compose run --rm --no-deps backend alembic upgrade head
+docker compose run --rm --no-deps backend python scripts/import_data.py
+docker compose up -d --no-deps backend
+docker compose ps
+docker compose logs --tail=100 backend
+```
+
+如果前端也有变化，把构建与启动两条命令改为：
+
+```bash
+docker compose build backend frontend
+docker compose up -d --no-deps backend frontend
+```
+
+拉取 Git 或构建镜像不会自动更新数据库：仓库包含 `data/` 装备 JSON 和
+`scripts/import_data.py`，必须执行导入命令才能更新数据库里的装备。
+导入会新增或更新目录数据，不清空已有对话和配装方案；Alembic 负责数据库结构迁移。
+`--no-deps` 避免更新应用时重建 MySQL。不要执行 `docker compose down -v`，它会删除数据库卷。
+无需停止 MySQL，也无需重新运行联网抓取装备的脚本；提交的 JSON 已包含更新后的数据。
+
+若拉取提示本地 `Dockerfile` 或 `compose.yaml` 有冲突，先备份并检查本地修改，
+不要用 `git reset --hard` 覆盖服务器配置。
+
+仓库保留 `Jenkinsfile` 供可选流水线使用，手动部署不需要它。
 
 ## 当前限制
 
-- FastAPI Builder 会话暂存在进程内存中，服务重启后清空。
+- 运行中的 Agent 使用进程内缓存，已持久化的对话与状态可在服务重启后从 MySQL 恢复；运行中请求会被重启中断。
 - 当前是可信小团队共享方案库，`creator_name` 只用于标记和筛选，不提供权限隔离。
 - SimC 导入接口尚未完成。
 - 宝石由用户选择，不自动填充。
