@@ -117,10 +117,10 @@ function DungeonRoutes({items}:{items:Item[]}) {
 }
 
 function GearEntry({slot,item,side,equipment,gems,onReplace,onRemove}:{slot:string;item?:Item;side:"left"|"right";equipment?:EquipmentState;gems:Map<number,Gem>;onReplace:()=>void;onRemove:()=>void}) {
-  if (!item) return <div className={`gear-entry empty ${side}`}>
-    <span className="gear-slot">{slotNames[slot]}</span><button className="empty-icon" onClick={onReplace} aria-label={`选择${slotNames[slot]}装备`}>＋</button>
+  if (!item) return <button type="button" className={`gear-entry empty ${side}`} onClick={onReplace} aria-label={`选择${slotNames[slot]}装备`}>
+    <span className="gear-slot">{slotNames[slot]}</span><span className="empty-icon">＋</span>
     <span className="empty-text">尚未选择装备</span>
-  </div>;
+  </button>;
   const source=item.sources?.[0];
   const inserted=equipment?.gems||[];
   const sockets=Math.max(item.current_sockets||0,inserted.length);

@@ -166,6 +166,8 @@ select:focus, input:focus, textarea:focus { border-color: #8f55dd; box-shadow: 0
 .remove-button { padding: 3px; color: #8093a8; font-size: 15px; border-color: transparent; }
 .empty-text { color: #5d7288; font-size: 11px; }
 .gear-entry.empty { grid-template-columns: 38px 44px 1fr; }
+button.gear-entry.empty { width: 100%; padding: 0; border: 0; border-radius: 0; background: none; text-align: left; font-weight: 400; }
+button.gear-entry.empty:hover, button.gear-entry.empty:focus-visible { background: linear-gradient(90deg, rgba(121,64,194,.14), transparent); }
 .gear-entry.empty.left { grid-template-areas: "slot icon main"; }
 .gear-entry.empty.right { grid-template-areas: "main icon slot"; }
 
