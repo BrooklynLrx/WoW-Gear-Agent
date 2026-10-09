@@ -20,6 +20,13 @@ def test_hunter_ranged_weapon_set():
     assert valid_weapon_set("hunter.beast_mastery", [item("ranged_bow")])
 
 
+def test_only_devourer_demon_hunter_can_dual_wield_daggers():
+    daggers = [item("1h_dagger"), item("1h_dagger")]
+    assert valid_weapon_set("demon_hunter.devourer", daggers)
+    assert not valid_weapon_set("demon_hunter.havoc", daggers)
+    assert not valid_weapon_set("demon_hunter.vengeance", daggers)
+
+
 def test_dual_wield_position_rules():
     assert weapon_kind_available_in_position("death_knight.frost", item("1h_sword"), "main_hand")
     assert weapon_kind_available_in_position("death_knight.frost", item("1h_sword"), "off_hand")

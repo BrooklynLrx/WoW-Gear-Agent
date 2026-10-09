@@ -2168,6 +2168,7 @@
       "weapon_type": "1h_dagger",
       "loot_role": "all",
       "candidate_classes": [
+        "demon_hunter",
         "druid",
         "mage",
         "priest",
@@ -2177,6 +2178,7 @@
         "evoker"
       ],
       "candidate_specs": [
+        "demon_hunter.devourer",
         "druid.balance",
         "druid.restoration",
         "evoker.augmentation",
@@ -7056,6 +7058,7 @@
       "weapon_type": "1h_dagger",
       "loot_role": "all",
       "candidate_classes": [
+        "demon_hunter",
         "druid",
         "mage",
         "priest",
@@ -7065,6 +7068,7 @@
         "evoker"
       ],
       "candidate_specs": [
+        "demon_hunter.devourer",
         "druid.balance",
         "druid.restoration",
         "evoker.augmentation",
@@ -9621,6 +9625,7 @@
       "weapon_type": "1h_dagger",
       "loot_role": "all",
       "candidate_classes": [
+        "demon_hunter",
         "druid",
         "mage",
         "priest",
@@ -12568,6 +12573,7 @@
       "weapon_type": "1h_dagger",
       "loot_role": "all",
       "candidate_classes": [
+        "demon_hunter",
         "druid",
         "mage",
         "priest",
@@ -12577,6 +12583,7 @@
         "evoker"
       ],
       "candidate_specs": [
+        "demon_hunter.devourer",
         "druid.balance",
         "druid.restoration",
         "evoker.augmentation",
@@ -12751,6 +12758,7 @@
       "weapon_type": "1h_dagger",
       "loot_role": "all",
       "candidate_classes": [
+        "demon_hunter",
         "druid",
         "mage",
         "priest",
@@ -21290,6 +21298,7 @@
       "weapon_type": "1h_dagger",
       "loot_role": "all",
       "candidate_classes": [
+        "demon_hunter",
         "druid",
         "mage",
         "priest",
@@ -22715,6 +22724,7 @@
       "weapon_type": "1h_dagger",
       "loot_role": "all",
       "candidate_classes": [
+        "demon_hunter",
         "druid",
         "mage",
         "priest",
@@ -22724,6 +22734,7 @@
         "evoker"
       ],
       "candidate_specs": [
+        "demon_hunter.devourer",
         "druid.balance",
         "druid.restoration",
         "evoker.augmentation",
@@ -26889,6 +26900,7 @@
       "weapon_type": "1h_dagger",
       "loot_role": "all",
       "candidate_classes": [
+        "demon_hunter",
         "druid",
         "mage",
         "priest",
@@ -29247,6 +29259,7 @@
       "weapon_type": "1h_dagger",
       "loot_role": "all",
       "candidate_classes": [
+        "demon_hunter",
         "druid",
         "mage",
         "priest",
@@ -38695,6 +38708,7 @@
       "weapon_type": "1h_dagger",
       "loot_role": "all",
       "candidate_classes": [
+        "demon_hunter",
         "druid",
         "mage",
         "priest",
@@ -42380,6 +42394,7 @@
       "weapon_type": "1h_dagger",
       "loot_role": "all",
       "candidate_classes": [
+        "demon_hunter",
         "druid",
         "mage",
         "priest",
@@ -42389,6 +42404,7 @@
         "evoker"
       ],
       "candidate_specs": [
+        "demon_hunter.devourer",
         "druid.balance",
         "druid.restoration",
         "evoker.augmentation",
@@ -45885,6 +45901,7 @@
       "weapon_type": "1h_dagger",
       "loot_role": "all",
       "candidate_classes": [
+        "demon_hunter",
         "druid",
         "mage",
         "priest",
@@ -47971,6 +47988,7 @@
       "weapon_type": "1h_dagger",
       "loot_role": "all",
       "candidate_classes": [
+        "demon_hunter",
         "druid",
         "mage",
         "priest",
@@ -47980,6 +47998,7 @@
         "evoker"
       ],
       "candidate_specs": [
+        "demon_hunter.devourer",
         "druid.balance",
         "druid.restoration",
         "evoker.augmentation",
@@ -56346,6 +56365,7 @@
       "weapon_type": "1h_dagger",
       "loot_role": "all",
       "candidate_classes": [
+        "demon_hunter",
         "druid",
         "mage",
         "priest",
@@ -59939,6 +59959,7 @@
       "weapon_type": "1h_dagger",
       "loot_role": "all",
       "candidate_classes": [
+        "demon_hunter",
         "druid",
         "mage",
         "priest",
@@ -59948,6 +59969,7 @@
         "evoker"
       ],
       "candidate_specs": [
+        "demon_hunter.devourer",
         "druid.balance",
         "druid.restoration",
         "evoker.augmentation",
@@ -60275,6 +60297,7 @@
       "weapon_type": "1h_dagger",
       "loot_role": "all",
       "candidate_classes": [
+        "demon_hunter",
         "druid",
         "mage",
         "priest",

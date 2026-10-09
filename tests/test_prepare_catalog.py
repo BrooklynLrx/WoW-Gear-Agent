@@ -1,6 +1,6 @@
 import json
 
-from scripts.prepare_catalog import DATA, TIDEBOUND_GROTTO_ITEM_IDS, apply_known_item_corrections, normalize_slot
+from scripts.prepare_catalog import CLASSES, DATA, TIDEBOUND_GROTTO_ITEM_IDS, WEAPON_CLASSES, apply_known_item_corrections, normalize_slot
 
 
 def test_shield_is_not_classified_as_a_caster_off_hand():
@@ -13,6 +13,17 @@ def test_delve_chinese_slot_names_are_normalized():
     assert normalize_slot({"slot": "Unknown", "variants": [{"tooltip_zh_cn": "\n手指\n"}]}) == ("ring", None, None)
     assert normalize_slot({"slot": "Unknown", "variants": [{"tooltip_zh_cn": "\n副手物品\n"}]}) == ("weapon", None, "off_hand")
     assert normalize_slot({"slot": "Unknown", "variants": [{"tooltip_zh_cn": "\n单手\n权杖\n"}]}) == ("weapon", None, "1h_mace")
+
+
+def test_devourer_is_an_intellect_dagger_spec():
+    specs = {key: primary for key, _, _, primary in CLASSES["demon_hunter"][2]}
+    assert specs["devourer"] == "intellect"
+    assert "demon_hunter" in WEAPON_CLASSES["1h_dagger"]
+    daggers = [item for item in json.loads(DATA.read_text())["items"] if item.get("weapon_type") == "1h_dagger"]
+    assert all(
+        {spec for spec in item["candidate_specs"] if spec.startswith("demon_hunter.")} == ({"demon_hunter.devourer"} if "intellect" in item["variants"][-1]["stats"] else set())
+        for item in daggers
+    )
 
 
 def test_known_tidebound_grotto_items_match_blizzards_complete_loot_table():

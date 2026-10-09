@@ -84,7 +84,7 @@ WEAPON_CLASSES = {
     "2h_mace": ["death_knight", "druid", "paladin", "shaman", "warrior"],
     "1h_sword": ["death_knight", "demon_hunter", "hunter", "mage", "monk", "paladin", "rogue", "warlock", "warrior", "evoker"],
     "2h_sword": ["death_knight", "hunter", "paladin", "warrior", "evoker"],
-    "1h_dagger": ["druid", "mage", "priest", "rogue", "shaman", "warlock", "evoker"],
+    "1h_dagger": ["demon_hunter", "druid", "mage", "priest", "rogue", "shaman", "warlock", "evoker"],
     "1h_fist": ["demon_hunter", "druid", "hunter", "monk", "rogue", "shaman", "warrior", "evoker"],
     "2h_polearm": ["death_knight", "druid", "hunter", "monk", "paladin", "warrior"],
     "2h_staff": ["druid", "hunter", "mage", "monk", "priest", "shaman", "warlock", "evoker"],
@@ -268,7 +268,7 @@ def main() -> None:
         else:
             candidate_classes = []
         item["candidate_classes"] = candidate_classes
-        item["candidate_specs"] = [key for key, spec in specs.items() if spec["class"] in candidate_classes and (not primaries or spec["primary_stat"] in primaries) and (item["loot_role"] == "all" or spec["role"] == item["loot_role"])]
+        item["candidate_specs"] = [key for key, spec in specs.items() if spec["class"] in candidate_classes and (not primaries or spec["primary_stat"] in primaries) and (item["loot_role"] == "all" or spec["role"] == item["loot_role"]) and not (weapon == "1h_dagger" and spec["class"] == "demon_hunter" and key != "demon_hunter.devourer")]
         item["eligibility_status"] = "broad_rule_v1" if candidate_classes else "needs_review"
 
     data["validation"]["catalog_conflicts"] = conflicts
