@@ -82,6 +82,7 @@ class BuildConstraints(BaseModel):
     excluded_source_types: list[Literal["dungeon", "raid", "world_boss", "delve"]] = Field(default_factory=list)
     require_complete: bool = True
     use_bis_trinkets: bool = True
+    auto_select_flask: bool = True
 
 
 class BuildConstraintsPatch(BaseModel):
@@ -95,6 +96,7 @@ class BuildConstraintsPatch(BaseModel):
     excluded_source_types: list[Literal["dungeon", "raid", "world_boss", "delve"]] | None = None
     require_complete: bool | None = None
     use_bis_trinkets: bool | None = None
+    auto_select_flask: bool | None = None
 
 
 class BuildSessionState(BaseModel):
@@ -148,7 +150,7 @@ SYSTEM_PROMPT = """你是魔兽世界12.1装备 Builder Agent。你的职责是�
 12. 用户要求自动配装时必须调用 optimize_current_loadout。它返回前不得自行挑选、替换或排序装备。
 13. 12.1.5自动配装按目录毕业装等取候选：神话武器/项链/饰品强化340，制造对应部位强化338，其余神话334、制造331，不使用9/6装等。晋升毒液石国服10月22日开放，默认按强化后的目标方案规划。地下堡神话奖励只对已核实的护甲开放，不能假设武器或饰品有神话版本。套装是选装后给四件可催化装备添加的身份；转化不改变属性、装等或特效。
 14. 用户没有明确排除团本或尾王装备时，老七/老八的非饰品特效装备是最高优先级，不得自行排除；饰品只走专精BIS。用户未另行指定时固定选择两件制造装备，优先披风、护腕、腰带等小部位；制造武器计入这两件总数，指定一件制造武器后只能再选一件制造装备。解释方案时按实际部位说明制造装等代价。展示 is_final_boss_drop 时必须注明“尾王掉落，获取难度高”。
-15. 用户未指定合剂时，优化器应自动选择一瓶最高品质单绿字合剂并计入属性；宝石不自动选择。
+15. 用户手选合剂时保持该合剂并计入属性；auto_select_flask=false且未选合剂表示不使用合剂，不得擅自补选。仅自动模式且用户未指定合剂时，在选装完成后按最终缺口选择最高品质合剂；宝石不自动选择。
 16. 套装必须说明 tier_acquisition_method；转化套装仍展示原装备名称和来源，并注明催化后的套装名称，不能把它说成属性不同的新装备。
 17. optimize_current_loadout 返回的是前端配装提案。不得把提案再次调用 update_build_state 写入当前装备；前端负责应用用户选择的方案。
 18. 用户询问当前装备是否完整、是否合法或当前面板属性时，必须调用 calculate_current_stats；仅调用 get_build_state 不足以声称校验通过，也不得沿用上一份提案的数值。
@@ -235,7 +237,7 @@ class BuilderAgentSession:
             constraint_patch = constraints.model_dump(exclude_none=True) if isinstance(constraints, BaseModel) else constraints
             current["constraints"] = {**current["constraints"], **constraint_patch}
         candidate = BuildSessionState.model_validate(current)
-        if candidate.equipment:
+        if candidate.equipment or candidate.consumable_ids:
             validation = calculate_stats(
                 candidate.class_key,
                 candidate.spec_key,
@@ -264,11 +266,12 @@ class BuilderAgentSession:
             self.tool_trace.append({"tool": "get_build_state", "success": True})
         return self.build_state.model_dump()
 
-    def calculate_current_stats(self) -> dict:
+    def calculate_current_stats(self, require_complete: bool | None = None) -> dict:
         """Validate and calculate the equipment stored in the current Builder session."""
         state = self.build_state
+        complete = state.constraints.require_complete if require_complete is None else require_complete
         missing = [name for name in ("class_key", "spec_key") if not getattr(state, name)]
-        if not state.equipment:
+        if complete and not state.equipment:
             missing.append("equipment")
         if missing:
             result = {"success": False, "error": "missing_state", "missing": missing}
@@ -278,7 +281,7 @@ class BuilderAgentSession:
                 state.spec_key,
                 [item.model_dump() for item in state.equipment],
                 state.consumable_ids,
-                state.constraints.require_complete,
+                complete,
             )
         if hasattr(self, "tool_trace"):
             self.tool_trace.append({"tool": "calculate_current_stats", "success": result.get("success", False)})

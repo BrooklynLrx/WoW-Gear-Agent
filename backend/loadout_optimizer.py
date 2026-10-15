@@ -397,7 +397,7 @@ def optimize_loadout(
     selected_categories = {
         supplement_catalog().get(int(item_id), {}).get("category") for item_id in consumable_ids
     }
-    auto_flask = "flask" not in selected_categories
+    auto_flask = constraints.get("auto_select_flask", True) and "flask" not in selected_categories
     selected_consumables = list(consumable_ids)
     baseline = supplement_stats(selected_consumables)
     current_ratings = dict(baseline)

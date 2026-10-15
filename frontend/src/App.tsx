@@ -18,6 +18,7 @@ type Item = {
   current_sockets?:number; maximum_user_selected_sockets?:number;
 };
 type Gem = { id:number; name_zh_cn:string; icon:string; category:string };
+type Flask = Gem & {secondary_stats:Partial<Stats>};
 type EquipmentState = { item_id:number; item_level:number; gems?:number[]; crafted_secondary_stats?:Partial<Stats>; catalyst_tier_item_id?:number|null; equipped_slot?:"weapon"|"off_hand"|null };
 type Objective = { rule:string; weights?:Partial<Stats>; stat?:StatKey; target?:number; minimum?:number; maximum?:number };
 type BuildState = { class_key:string; spec_key:string; equipment:EquipmentState[]; consumable_ids:number[]; objectives:Objective[]; constraints:Record<string,unknown> };
@@ -141,8 +142,8 @@ function StatSummary({calculation,state}:{calculation:Calculation|null;state:Bui
   const currentRatio=calculation?ratios(calculation.ratings):[];
   const maxRating=calculation?Math.max(...Object.values(calculation.ratings),1):1;
   return <section className="stat-summary">
-    <header><div><h2>属性合计</h2><span>静态属性实时计算</span></div><small>合剂计入 · 宝石暂不计</small></header>
-    {!calculation?<div className="summary-empty">完成整套配装后显示精确属性与面板百分比</div>:<>
+    <header><div><h2>属性合计</h2><span>当前已选 {state?.equipment.length||0} 件 · 实时累加</span></div><small>已选合剂计入 · 宝石暂不计</small></header>
+    {!calculation?<div className="summary-empty">正在读取当前装备属性…</div>:<>
       <div className="primary-cards"><div><span>{primaryNames[calculation.equipment_totals.primary_stat]||"主属性"}</span><b>{calculation.equipment_totals.primary_stat_value.toLocaleString()}</b></div><div><span>耐力</span><b>{calculation.equipment_totals.stamina.toLocaleString()}</b></div><div><span>护甲</span><b>{calculation.equipment_totals.armor_complete?calculation.equipment_totals.armor.toLocaleString():"待补数据"}</b></div></div>
       <div className="stat-detail"><div className="stat-bars">{(Object.keys(statNames) as StatKey[]).map((key,index)=><div className={`stat-line ${statColors[key]}`} key={key}><span>{statNames[key]}</span><i><u style={{width:`${calculation.ratings[key]/maxRating*100}%`}}/></i><b>{calculation.ratings[key].toLocaleString()}</b><em>{calculation.percentages[key].toFixed(1)}%</em><small>{currentRatio[index]}</small></div>)}</div><div className="ratio-card"><span>实际比例</span><b>{currentRatio.join(" : ")}</b><span>目标比例</span><b>{target?(Object.keys(statNames) as StatKey[]).map(key=>target[key]||0).join(" : "):"未设置"}</b></div></div>
       <div className="supplements">{calculation.supplements.filter(value=>value.included_in_secondary_stats).map(value=><span key={value.name_zh_cn}>✓ 已计入 {value.name_zh_cn}</span>)}</div>
@@ -178,8 +179,25 @@ function BuilderPage({specs}:{specs:Spec[]}) {
   const [pickerBusy,setPickerBusy] = useState(false);
   const [crafting,setCrafting] = useState<{item:Item;selected:StatKey[]}|null>(null);
   const [gems,setGems] = useState<Gem[]>([]);
+  const [flasks,setFlasks] = useState<Flask[]>([]);
+  const [flaskBusy,setFlaskBusy] = useState(false);
+  const [flaskError,setFlaskError] = useState("");
 
   useEffect(()=>{json<Gem[]>(`${API}/catalog/gems`).then(setGems).catch(()=>setGems([]))},[]);
+  useEffect(()=>{json<Flask[]>(`${API}/catalog/flasks`).then(setFlasks).catch(()=>setFlaskError("合剂列表加载失败，请刷新重试"))},[]);
+
+  const selectedFlask = flasks.find(value=>session?.state.consumable_ids.includes(value.id));
+  const flaskValue = selectedFlask?String(selectedFlask.id):session?.state.constraints.auto_select_flask===false?"none":"auto";
+  async function changeFlask(value:string) {
+    if(!session)return;
+    setFlaskBusy(true);setFlaskError("");
+    try {
+      const consumable_ids=session.state.consumable_ids.filter(id=>!flasks.some(flask=>flask.id===id));
+      if(value!=="auto"&&value!=="none")consumable_ids.push(Number(value));
+      const next=await json<Session>(`${API}/builder/sessions/${session.session_id}`,{method:"PATCH",body:JSON.stringify({consumable_ids,constraints:{auto_select_flask:value==="auto"}})});
+      setSession(next);await fetchStats(next.session_id);
+    } catch {setFlaskError("合剂保存失败，请重试")} finally {setFlaskBusy(false)}
+  }
 
   async function fetchItems(state:BuildState) {
     if (!state.equipment.length) return [];
@@ -245,7 +263,7 @@ function BuilderPage({specs}:{specs:Spec[]}) {
       <div className="conversation-main">
       <section className="scheme-bar"><span>方案名称</span><b>{conversations.find(value=>value.id===conversationId)?.title||`${specs.find(value=>value.key===spec)?.spec_name_zh_cn||"当前"}配装`}</b><span>12.1.5 · 毕业装等</span>{session?.source_loadout_id&&<span>已关联保存方案 #{session.source_loadout_id}</span>}<em>{items.length}/16 已选择</em></section>
       <div className="builder-layout">
-      <section className="equipment-panel app-panel"><header><div><h2>当前装备</h2><span>装备名称可查看中文 Wowhead 详情</span></div><em className={items.length===16?"complete":""}>{items.length}/16 {items.length===16?"完整":"配装中"}</em></header><div className="gear-columns"><div>{leftSlots.map((slot,index)=>{const item=take(slot,occurrence(leftSlots,index));return <GearEntry key={`${slot}-${index}`} slot={slot} side="left" item={item} equipment={selected(item)} gems={gemMap} onReplace={()=>openPicker(slot,item)} onRemove={()=>removeItem(item)}/>})}</div><div>{rightSlots.map((slot,index)=>{const item=take(slot,occurrence(rightSlots,index));return <GearEntry key={`${slot}-${index}`} slot={slot} side="right" item={item} equipment={selected(item)} gems={gemMap} onReplace={()=>openPicker(slot,item)} onRemove={()=>removeItem(item)}/>})}</div></div><StatSummary calculation={calculation} state={session?.state||null}/><DungeonRoutes items={items}/></section>
+      <section className="equipment-panel app-panel"><header><div><h2>当前装备</h2><span>装备名称可查看中文 Wowhead 详情</span></div><em className={items.length===16?"complete":""}>{items.length}/16 {items.length===16?"完整":"配装中"}</em></header><div className="gear-columns"><div>{leftSlots.map((slot,index)=>{const item=take(slot,occurrence(leftSlots,index));return <GearEntry key={`${slot}-${index}`} slot={slot} side="left" item={item} equipment={selected(item)} gems={gemMap} onReplace={()=>openPicker(slot,item)} onRemove={()=>removeItem(item)}/>})}</div><div>{rightSlots.map((slot,index)=>{const item=take(slot,occurrence(rightSlots,index));return <GearEntry key={`${slot}-${index}`} slot={slot} side="right" item={item} equipment={selected(item)} gems={gemMap} onReplace={()=>openPicker(slot,item)} onRemove={()=>removeItem(item)}/>})}</div></div><section className="flask-slot" aria-label="合剂栏位"><div className="flask-heading">{selectedFlask&&<img src={`https://wow.zamimg.com/images/wow/icons/large/${selectedFlask.icon}.jpg`} alt=""/>}<div><b>合剂</b><small>{selectedFlask?Object.entries(selectedFlask.secondary_stats).map(([key,value])=>`${statNames[key as StatKey]} +${value}`).join(" / "):flaskValue==="auto"?"生成方案时按最终缺口补属性":"未使用合剂"}</small></div></div><label><span className="sr-only">合剂槽位</span><select aria-label="合剂槽位" value={flaskValue} disabled={!session||busy||flaskBusy||!flasks.length} onChange={event=>changeFlask(event.target.value)}><option value="auto">自动补缺（生成方案时）</option><option value="none">不使用合剂</option>{flasks.map(flask=><option key={flask.id} value={flask.id}>{flask.name_zh_cn} · {Object.entries(flask.secondary_stats).map(([key,value])=>`${statNames[key as StatKey]} +${value}`).join(" / ")}</option>)}</select></label>{flaskBusy&&<small role="status">正在更新属性…</small>}{flaskError&&<small role="alert">{flaskError}</small>}</section><StatSummary calculation={calculation} state={session?.state||null}/><DungeonRoutes items={items}/></section>
       <section className="chat-panel app-panel"><header><div><h2>AI 配装对话</h2><span>✓ 独立上下文 · 自动压缩</span></div><button onClick={clearChat}>清空对话</button></header><div className="messages">{messages.map((message,index)=>message.text?<div className={`message ${message.role}`} key={index}>{message.role==="assistant"?<ReactMarkdown remarkPlugins={[remarkGfm]}>{message.text}</ReactMarkdown>:message.text}</div>:null)}{busy&&progress&&<div className="agent-progress" role="status" aria-live="polite"><span className="agent-spinner" aria-hidden="true"/><div><b>{progress}</b><small>AI 正在处理，请稍候</small></div><i aria-hidden="true"/></div>}{solutions.length>0&&<div className="proposal-grid">{solutions.map((solution,index)=><ProposalCard key={index} solution={solution} index={index} onApply={()=>applySolution(solution)} onApplyItem={item=>chooseItem(item,item.selected_crafted_secondary_stats||{},itemSlot(item))}/>)}</div>}</div><div className="quick-prompts"><button onClick={()=>setInput("把急速提高到20%左右")}>急速提高到20%</button><button onClick={()=>setInput("少用一件制造装备")}>少用一件制造装</button><button onClick={()=>setInput("保留当前两个饰品")}>保留两个饰品</button><button onClick={()=>setInput("优先选择尾王特效装备")}>优先尾王特效</button></div><form onSubmit={send}><textarea rows={3} value={input} onChange={event=>setInput(event.target.value)} placeholder="描述你的属性目标或想保留的装备…"/><button className="send-button" disabled={busy||!input.trim()}>{busy?"计算中":"发送"}</button></form></section>
       </div>
       </div>

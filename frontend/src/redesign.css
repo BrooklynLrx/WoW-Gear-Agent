@@ -120,6 +120,15 @@ select:focus, input:focus, textarea:focus { border-color: #8f55dd; box-shadow: 0
 .equipment-panel > header em { color: #f0bf6c; font-style: normal; font-size: 12px; }
 .equipment-panel > header em.complete { color: var(--green); }
 .gear-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 0 10px; padding: 7px 9px 8px; }
+.flask-slot { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; padding: 16px; border-top: 1px solid var(--line-soft); }
+.flask-heading { display: flex; align-items: center; gap: 10px; flex: 1; }
+.flask-heading img { width: 42px; height: 42px; border: 1px solid var(--line-soft); border-radius: 5px; }
+.flask-heading b, .flask-heading small { display: block; }
+.flask-slot small { color: var(--muted); font-size: 12px; }
+.flask-slot select { max-width: 100%; padding: 10px; }
+.flask-slot label { max-width: 100%; }
+.flask-slot .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; }
+.flask-slot [role="alert"] { color: #ff9090; width: 100%; }
 .gear-columns > div:first-child { border-right: 1px solid var(--line-soft); padding-right: 10px; }
 .gear-entry {
   min-height: 62px;

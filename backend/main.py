@@ -298,6 +298,11 @@ def catalog_gems() -> list[dict]:
     return [value for value in supplement_catalog().values() if value.get("category") in {"gem", "unique_diamond"}]
 
 
+@app.get("/api/v1/catalog/flasks")
+def catalog_flasks() -> list[dict]:
+    return [value for value in supplement_catalog().values() if value.get("category") == "flask"]
+
+
 @app.get("/api/v1/loot/instances")
 def loot_instances() -> list[dict]:
     return list_instances()
@@ -481,7 +486,7 @@ def read_session(session_id: str) -> SessionResponse:
 async def session_stats(session_id: str) -> dict:
     entry = get_session(session_id)
     async with entry.lock:
-        return entry.builder.calculate_current_stats()
+        return entry.builder.calculate_current_stats(require_complete=False)
 
 
 @app.patch("/api/v1/builder/sessions/{session_id}", response_model=SessionResponse)
