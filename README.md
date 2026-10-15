@@ -179,6 +179,32 @@ docker compose up -d --no-deps backend frontend
 
 ### 更新已有服务
 
+12.1.5 目录加入「基希克斯破封」10 件掉落和地下堡护甲神话 6/6 变体。
+默认毕业装等按部位选择：掉落武器/项链/饰品 340、制造对应部位 338，其他神话护甲 334、制造 331。
+地下堡已确认的八个护甲部位默认使用神话 334，其他部位保留英雄 321；旧英雄变体仍可读取。
+晋升毒液石在国服 2026-10-22 开放，默认方案按强化完成后的目标规划；戒指和普通护甲不能用毒液石强化。
+新团本按正式掉落轨道满级 334 收录，不使用早期 PTR 已取消的 344 版本。
+原有对话和已保存装备继续按原装等读取，不会被自动升级。
+
+本次前后端及装备目录均有变更。已有 `wow-app` 部署执行（沿用服务器 `.env`）：
+
+```bash
+cd /opt/wow-app
+git pull --ff-only origin develop
+docker compose -p wow-app build backend frontend
+docker compose -p wow-app run --rm --no-deps backend alembic upgrade head
+docker compose -p wow-app run --rm --no-deps backend python scripts/import_data.py
+docker compose -p wow-app up -d --no-deps --force-recreate backend frontend
+```
+
+维护目录时运行 `python3 scripts/update_patch_1215.py`，再运行 `python3 scripts/prepare_catalog.py`；
+该脚本从 Wowhead 获取指定装等的真实属性，不按比例估算绿字。服务器使用已提交的 JSON，无需重新联网抓取。
+
+数据依据：[官方更新说明](https://wow.blizzard.cn/news/24304162/)、
+[新团本正式掉落表](https://www.wowhead.com/guide/midnight/raids/the-unbinding-of-kithix-boss-strategy-abilities-rewards)、
+[晋升装等规则](https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades)、
+[迷宫神话护甲奖励](https://www.wowhead.com/item=285044/venerated-loa-armament)。
+
 仅后端或装备数据有变化时：
 
 ```bash

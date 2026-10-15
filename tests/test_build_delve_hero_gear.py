@@ -40,6 +40,8 @@ def test_catalog_contains_only_complete_delve_hero_variants():
 
     assert len(items) == 131
     assert any(item["id"] == 272226 for item in items)
-    assert all({variant["item_level"] for variant in item["variants"]} == {321} for item in items)
+    assert all(321 in {variant["item_level"] for variant in item["variants"]} for item in items)
+    assert all({variant["item_level"] for variant in item["variants"]} == {321, 334} for item in items if item.get("armor_type"))
     assert all(item["slot_key"] != "unknown" and item["candidate_specs"] for item in items)
     assert all("升级：英雄\n6/6" in item["variants"][0]["tooltip_zh_cn"] for item in items)
+    assert all("升级：神话\n6/6" in item["variants"][-1]["tooltip_zh_cn"] for item in items if item.get("armor_type"))

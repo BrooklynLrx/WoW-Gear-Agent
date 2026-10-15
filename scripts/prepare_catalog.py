@@ -22,9 +22,11 @@ INSTANCES = {
     "The Venomous Abyss": "烈毒之渊",
     "Tidebound Grotto": "潮缚石窟",
     "Midnight Delves": "地下堡",
+    "The Unbinding of Kith'ix": "基希克斯破封",
 }
 
 ENCOUNTERS = {
+    "Kith'ix": "基希克斯",
     "Atroxus": "阿特洛苏斯",
     "Avatar of Sethraliss": "塞塔里斯的化身",
     "Charonus": "煞戎努斯",
@@ -98,6 +100,7 @@ WEAPON_CLASSES = {
 SLOT_WORDS = {"Helm": "head", "Shoulder": "shoulder", "Shoulders": "shoulder", "Chest": "chest", "Wrist": "wrist", "Hands": "hands", "Waist": "waist", "Legs": "legs", "Feet": "feet"}
 WEAPON_WORDS = {"1H Axe": "1h_axe", "2H Axe": "2h_axe", "1H Mace": "1h_mace", "2H Mace": "2h_mace", "1H Sword": "1h_sword", "2H Sword": "2h_sword", "1H Dagger": "1h_dagger", "1H Fist Weapon": "1h_fist", "2H Polearm": "2h_polearm", "2H Staff": "2h_staff", "1H Warglaive": "1h_warglaive", "Ranged Wand": "ranged_wand", "Ranged Bow": "ranged_bow", "Ranged Crossbow": "ranged_crossbow", "Ranged Gun": "ranged_gun", "Shield": "shield", "Off-Hand Weapon": "off_hand"}
 ROLE_HINTS = {"Soulcoiler Ritual Vessel": "healer", "Mycolic Medicine": "healer", "Seed of Radiant Hope": "healer", "Preternatural Antivenom": "healer", "First Mate's Shellward": "tank", "Manaheart's Binding Flame": "tank", "Permafrost Essence": "tank"}
+ROLE_HINTS.update({"Lightbearer's Shield Fragment": "tank", "Sigil of the Impending Eclipse": "healer"})
 TIDEBOUND_GROTTO_ITEM_IDS = {
     268199, 268217, 268221, 268225, 268226, 268232, 268238,
     268244, 268247, 268262, 268263, 268266, 270167,

@@ -3,6 +3,7 @@
 from sqlalchemy import select
 
 from backend.db import SessionLocal
+from backend.catalog_levels import graduation_level
 from backend.loadout_validator import (
     canonical_slot, item_is_available_for_spec, rules, validate_loadout,
     weapon_kind, weapon_kind_available, weapon_kind_available_in_position,
@@ -139,8 +140,10 @@ def search_items_for_spec(
                 continue
 
             requested_level = item_level
-            if item.is_crafted and item_level == 334:
-                requested_level = int(raw.get("default_optimizer_item_level", 331))
+            if item_level == 0:
+                requested_level = graduation_level(raw, is_crafted=item.is_crafted)
+            elif item.is_crafted and item_level == 334:
+                requested_level = 331
             if variant.item_level != requested_level:
                 continue
             seen.add(item.id)
@@ -158,6 +161,7 @@ def search_items_for_spec(
             is_raid_boe = bool(raw.get("bind_on_equip") and any(source.get("source_type") == "raid" for source in sources))
             results.append({
                 "item_id": item.game_item_id,
+                "graduation_item_level": graduation_level(raw, is_crafted=item.is_crafted),
                 "name_zh_cn": item.name_zh_cn,
                 "name_en": item.name_en,
                 "icon": item.icon,

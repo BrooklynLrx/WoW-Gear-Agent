@@ -4,6 +4,7 @@ from sqlalchemy import select
 
 from backend.builder_tools import M7_M8_SPECIAL_EFFECT_ITEM_IDS, display_slot_key
 from backend.db import SessionLocal
+from backend.catalog_levels import graduation_level
 from backend.loadout_validator import canonical_slot, item_is_available_for_spec, rules, weapon_kind_available_in_position
 from backend.models import GameVersion, Item, ItemSource, ItemVariant, Spec
 
@@ -49,7 +50,7 @@ def search_loot(
         rows = db.execute(
             select(Item, ItemVariant).join(ItemVariant).where(
                 Item.version_id == version.id,
-                ItemVariant.item_level == item_level,
+                ItemVariant.item_level.in_([321, 331, 334, 338, 340]) if item_level == 0 else ItemVariant.item_level == item_level,
             ).order_by(Item.name_zh_cn, Item.game_item_id)
         ).all()
         sources = db.scalars(select(ItemSource).join(Item).where(Item.version_id == version.id)).all()
@@ -67,6 +68,8 @@ def search_loot(
         results = []
         for item, variant in rows:
             raw = item.raw_json or {}
+            if item_level == 0 and variant.item_level != graduation_level(raw, is_crafted=item.is_crafted):
+                continue
             slot = canonical_slot(item.slot_key)
             item_sources = source_map.get(item.id, [])
             if raw.get("catalog_kind") in {"consumable", "bis_placeholder"} or slot in {"unknown", "tier_token"}:

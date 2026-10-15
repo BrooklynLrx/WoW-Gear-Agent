@@ -291,7 +291,7 @@ def optimize_loadout(
     bis_trinkets_applied = False
     for slot in slots:
         result = search_items_for_spec(
-            class_key, spec_key, slot_key=slot, item_level=334, limit=500,
+            class_key, spec_key, slot_key=slot, item_level=0, limit=500,
         )
         values = []
         items = result.get("items", [])
@@ -299,6 +299,8 @@ def optimize_loadout(
         if tier_target:
             tier_targets[slot] = tier_target
         for item in items:
+            if item["item_level"] < (331 if item["is_crafted"] else 334):
+                continue
             # Tier identity is applied after optimization; do not duplicate every item as a tier variant.
             if item["is_tier"]:
                 continue
@@ -326,7 +328,7 @@ def optimize_loadout(
         slot = item["slot_key"]
         values = expand_candidate(item, selected)
         current_by_slot[slot].extend(values)
-        graduation_level = 331 if item["is_crafted"] else 334
+        graduation_level = item["graduation_item_level"]
         auto_preserve = (
             optimization_mode == "fill_empty"
             and source_allowed(item, excluded_instances, excluded_source_types)
@@ -358,7 +360,7 @@ def optimize_loadout(
     }
     for item_id in locked_ids - current_item_ids:
         result = search_items_for_spec(
-            class_key, spec_key, item_level=334, game_item_id=item_id, limit=1,
+            class_key, spec_key, item_level=0, game_item_id=item_id, limit=1,
         )
         if not result.get("items"):
             return {"success": False, "error": "locked_item_not_found", "item_id": item_id}
@@ -536,7 +538,7 @@ def optimize_loadout(
             f"本次方案目标为{maximum_crafted_items}件制造装备，制造武器也计入总数；指定一件制造武器后只再选择{max(maximum_crafted_items - 1, 0)}件制造装备。",
             "老七/老八的非饰品特效装备按最高优先级处理；饰品只按专精BIS选择。",
             "团本小怪装绑因价格高置于普通副本装和制造装之后；其随机双绿字仍可参与目标计算。",
-            "毕业候选池固定为普通/套装334与制造331；用户保留或锁定的当前装备允许使用原装等。",
+            "12.1.5毕业候选按部位取满级：掉落武器/项链/饰品340，制造对应部位338，其他神话334/制造331；保留或锁定的当前装备允许使用原装等。",
         ],
     }
 
