@@ -2,7 +2,7 @@
   "patch": "12.1",
   "season": "Midnight Season 2",
   "generated_at": "2026-08-12T11:52:10.802585+00:00",
-  "scope": "Hero 1/6-6/6 and Myth 1/6-6/6; Delves Hero 6/6 only; optimizer default Myth 6/6",
+  "scope": "Hero/Myth tracks; Delve armor, cloak and ring default Myth 6/6 334; Delve neck default Ascendant Myth 340; Delve weapons/trinkets remain Hero 6/6 321",
   "upgrade_tracks": {
     "hero": {
       "1/6": 305,
@@ -136,6 +136,17 @@
           },
           "sockets": 1,
           "tooltip_zh_cn": "长蛇绕环\n物品等级：\n321\n升级：英雄\n6/6\n拾取后绑定\n装备唯一\n手指\n+1,895 耐力\n+\n242暴击\n+\n134全能\n棱彩插槽\n需要等级\n90\n售价:\n38\n44\n17"
+        },
+        {
+          "item_level": 334,
+          "quality": 4,
+          "stats": {
+            "stamina": 2199,
+            "critical_strike": 261,
+            "versatility": 145
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "长蛇绕环\n物品等级：\n334\n升级：神话\n6/6\n拾取后绑定\n装备唯一\n手指\n+2,199 耐力\n+\n261暴击\n+\n145全能\n需要等级\n90\n售价:\n38\n69\n23"
         }
       ],
       "name_zh_cn": "长蛇绕环",
@@ -216,7 +227,8 @@
         "warrior.protection"
       ],
       "eligibility_status": "broad_rule_v1",
-      "default_optimizer_item_level": 321
+      "default_optimizer_item_level": 334,
+      "myth_reward_source": "https://www.wowhead.com/item=285044/venerated-loa-armament"
     },
     {
       "id": 249627,
@@ -239,6 +251,28 @@
           },
           "sockets": 1,
           "tooltip_zh_cn": "树生藤条项圈\n物品等级：\n321\n升级：英雄\n6/6\n拾取后绑定\n颈部\n+1,895 耐力\n+\n220暴击\n+\n156全能\n棱彩插槽\n需要等级\n90\n在达到地下堡行者的旅程等级9后，只能在难度11的地下堡内获得。\n售价:\n25\n27\n93"
+        },
+        {
+          "item_level": 334,
+          "quality": 4,
+          "stats": {
+            "stamina": 2199,
+            "critical_strike": 237,
+            "versatility": 168
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "树生藤条项圈\n物品等级：\n334\n升级：神话\n6/6\n拾取后绑定\n颈部\n+2,199 耐力\n+\n237暴击\n+\n168全能\n需要等级\n90\n在达到地下堡行者的旅程等级9后，只能在难度11的地下堡内获得。\n售价:\n25\n44\n41"
+        },
+        {
+          "item_level": 340,
+          "quality": 4,
+          "stats": {
+            "stamina": 2355,
+            "critical_strike": 245,
+            "versatility": 174
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "树生藤条项圈\n物品等级：\n340\n升级：神话\n1/6\n拾取后绑定\n颈部\n+2,355 耐力\n+\n245暴击\n+\n174全能\n需要等级\n90\n在达到地下堡行者的旅程等级9后，只能在难度11的地下堡内获得。\n售价:\n25\n52\n5"
         }
       ],
       "name_zh_cn": "树生藤条项圈",
@@ -319,7 +353,9 @@
         "warrior.protection"
       ],
       "eligibility_status": "broad_rule_v1",
-      "default_optimizer_item_level": 321
+      "default_optimizer_item_level": 340,
+      "myth_reward_source": "https://www.wowhead.com/item=285044/venerated-loa-armament",
+      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
     },
     {
       "id": 249667,
@@ -405,6 +441,17 @@
           },
           "sockets": 1,
           "tooltip_zh_cn": "盛放盘叶指环\n物品等级：\n321\n升级：英雄\n6/6\n拾取后绑定\n装备唯一\n手指\n+1,895 耐力\n+\n252急速\n+\n123精通\n棱彩插槽\n需要等级\n90\n在达到地下堡行者的旅程等级9后，只能在难度11的地下堡内获得。\n售价:\n39\n28\n57"
+        },
+        {
+          "item_level": 334,
+          "quality": 4,
+          "stats": {
+            "stamina": 2199,
+            "haste": 272,
+            "mastery": 133
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "盛放盘叶指环\n物品等级：\n334\n升级：神话\n6/6\n拾取后绑定\n装备唯一\n手指\n+2,199 耐力\n+\n272急速\n+\n133精通\n需要等级\n90\n在达到地下堡行者的旅程等级9后，只能在难度11的地下堡内获得。\n售价:\n39\n54\n18"
         }
       ],
       "name_zh_cn": "盛放盘叶指环",
@@ -485,7 +532,8 @@
         "warrior.protection"
       ],
       "eligibility_status": "broad_rule_v1",
-      "default_optimizer_item_level": 321
+      "default_optimizer_item_level": 334,
+      "myth_reward_source": "https://www.wowhead.com/item=285044/venerated-loa-armament"
     },
     {
       "id": 249665,
@@ -726,6 +774,17 @@
           },
           "sockets": 1,
           "tooltip_zh_cn": "游蛇之环\n物品等级：\n321\n升级：英雄\n6/6\n拾取后绑定\n装备唯一\n手指\n+1,895 耐力\n+\n258急速\n+\n118精通\n棱彩插槽\n需要等级\n90\n售价:\n38\n30\n66"
+        },
+        {
+          "item_level": 334,
+          "quality": 4,
+          "stats": {
+            "stamina": 2199,
+            "haste": 278,
+            "mastery": 127
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "游蛇之环\n物品等级：\n334\n升级：神话\n6/6\n拾取后绑定\n装备唯一\n手指\n+2,199 耐力\n+\n278急速\n+\n127精通\n需要等级\n90\n售价:\n38\n55\n64"
         }
       ],
       "name_zh_cn": "游蛇之环",
@@ -806,7 +865,8 @@
         "warrior.protection"
       ],
       "eligibility_status": "broad_rule_v1",
-      "default_optimizer_item_level": 321
+      "default_optimizer_item_level": 334,
+      "myth_reward_source": "https://www.wowhead.com/item=285044/venerated-loa-armament"
     },
     {
       "id": 251789,
@@ -1650,6 +1710,18 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "长老的苔藓帷布\n物品等级：\n321\n升级：英雄\n6/6\n拾取后绑定\n背部\n72护甲\n+94 [敏捷 or 力量 or 智力]\n+1,895 耐力\n+\n67急速\n+\n40全能\n需要等级\n90\n在达到地下堡行者的旅程等级9后，只能在难度11的地下堡内获得。\n售价:\n42\n64\n45"
+        },
+        {
+          "item_level": 334,
+          "quality": 4,
+          "stats": {
+            "stamina": 2199,
+            "agility_or_strength_or_intellect": 106,
+            "haste": 71,
+            "versatility": 42
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "长老的苔藓帷布\n物品等级：\n334\n升级：神话\n6/6\n拾取后绑定\n背部\n78护甲\n+106 [敏捷 or 力量 or 智力]\n+2,199 耐力\n+\n71急速\n+\n42全能\n需要等级\n90\n在达到地下堡行者的旅程等级9后，只能在难度11的地下堡内获得。\n售价:\n42\n92\n26"
         }
       ],
       "name_zh_cn": "长老的苔藓帷布",
@@ -1730,7 +1802,8 @@
         "warrior.protection"
       ],
       "eligibility_status": "broad_rule_v1",
-      "default_optimizer_item_level": 321
+      "default_optimizer_item_level": 334,
+      "myth_reward_source": "https://www.wowhead.com/item=285044/venerated-loa-armament"
     },
     {
       "id": 249649,
@@ -2959,9 +3032,21 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "驭风者面纱\n物品等级：\n321\n升级：英雄\n6/6\n拾取后绑定\n背部\n72护甲\n+94 [敏捷 or 力量 or 智力]\n+1,895 耐力\n+\n67暴击\n+\n40全能\n需要等级\n90\n售价:\n46\n77\n68"
+        },
+        {
+          "item_level": 334,
+          "quality": 4,
+          "stats": {
+            "stamina": 2199,
+            "agility_or_strength_or_intellect": 106,
+            "critical_strike": 71,
+            "versatility": 42
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "驭风者的披纱\n物品等级：\n334\n升级：神话\n6/6\n拾取后绑定\n背部\n78护甲\n+106 [敏捷 or 力量 or 智力]\n+2,199 耐力\n+\n71暴击\n+\n42全能\n需要等级\n90\n售价:\n47\n8\n17"
         }
       ],
-      "name_zh_cn": "驭风者面纱",
+      "name_zh_cn": "驭风者的披纱",
       "icon": "inv_cape_mail_outdooramaniloa_c_01",
       "instance_zh_cn": "地下堡",
       "encounter_source_en": null,
@@ -3039,7 +3124,8 @@
         "warrior.protection"
       ],
       "eligibility_status": "broad_rule_v1",
-      "default_optimizer_item_level": 321
+      "default_optimizer_item_level": 334,
+      "myth_reward_source": "https://www.wowhead.com/item=285044/venerated-loa-armament"
     },
     {
       "id": 251788,
@@ -3498,6 +3584,17 @@
           },
           "sockets": 1,
           "tooltip_zh_cn": "妖术指环\n物品等级：\n321\n升级：英雄\n6/6\n拾取后绑定\n装备唯一\n手指\n+1,895 耐力\n+\n113暴击\n+\n263精通\n棱彩插槽\n需要等级\n90\n售价:\n38\n58\n5"
+        },
+        {
+          "item_level": 334,
+          "quality": 4,
+          "stats": {
+            "stamina": 2199,
+            "critical_strike": 122,
+            "mastery": 284
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "妖术指环\n物品等级：\n334\n升级：神话\n6/6\n拾取后绑定\n装备唯一\n手指\n+2,199 耐力\n+\n122暴击\n+\n284精通\n需要等级\n90\n售价:\n38\n83\n20"
         }
       ],
       "name_zh_cn": "妖术指环",
@@ -3578,7 +3675,8 @@
         "warrior.protection"
       ],
       "eligibility_status": "broad_rule_v1",
-      "default_optimizer_item_level": 321
+      "default_optimizer_item_level": 334,
+      "myth_reward_source": "https://www.wowhead.com/item=285044/venerated-loa-armament"
     },
     {
       "id": 251791,
@@ -4188,9 +4286,21 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "雾猎者罩衫\n物品等级：\n321\n升级：英雄\n6/6\n拾取后绑定\n背部\n72护甲\n+94 [敏捷 or 力量 or 智力]\n+1,895 耐力\n+\n67暴击\n+\n40全能\n需要等级\n90\n售价:\n46\n61\n59"
+        },
+        {
+          "item_level": 334,
+          "quality": 4,
+          "stats": {
+            "stamina": 2199,
+            "agility_or_strength_or_intellect": 106,
+            "critical_strike": 71,
+            "versatility": 42
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "雾猎者的斗篷\n物品等级：\n334\n升级：神话\n6/6\n拾取后绑定\n背部\n78护甲\n+106 [敏捷 or 力量 or 智力]\n+2,199 耐力\n+\n71暴击\n+\n42全能\n需要等级\n90\n售价:\n46\n91\n98"
         }
       ],
-      "name_zh_cn": "雾猎者罩衫",
+      "name_zh_cn": "雾猎者的斗篷",
       "icon": "inv_cape_leather_outdooramaniloa_c_01",
       "instance_zh_cn": "地下堡",
       "encounter_source_en": null,
@@ -4268,7 +4378,8 @@
         "warrior.protection"
       ],
       "eligibility_status": "broad_rule_v1",
-      "default_optimizer_item_level": 321
+      "default_optimizer_item_level": 334,
+      "myth_reward_source": "https://www.wowhead.com/item=285044/venerated-loa-armament"
     },
     {
       "id": 272244,
@@ -4534,6 +4645,28 @@
           },
           "sockets": 1,
           "tooltip_zh_cn": "夜行棘刺护符\n物品等级：\n321\n升级：英雄\n6/6\n拾取后绑定\n颈部\n+1,895 耐力\n+\n220暴击\n+\n156急速\n棱彩插槽\n需要等级\n90\n在达到地下堡行者的旅程等级9后，只能在难度11的地下堡内获得。\n售价:\n25\n18\n72"
+        },
+        {
+          "item_level": 334,
+          "quality": 4,
+          "stats": {
+            "stamina": 2199,
+            "critical_strike": 237,
+            "haste": 168
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "夜行棘刺护符\n物品等级：\n334\n升级：神话\n6/6\n拾取后绑定\n颈部\n+2,199 耐力\n+\n237暴击\n+\n168急速\n需要等级\n90\n在达到地下堡行者的旅程等级9后，只能在难度11的地下堡内获得。\n售价:\n25\n35\n14"
+        },
+        {
+          "item_level": 340,
+          "quality": 4,
+          "stats": {
+            "stamina": 2355,
+            "critical_strike": 245,
+            "haste": 174
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "夜行棘刺护符\n物品等级：\n340\n升级：神话\n1/6\n拾取后绑定\n颈部\n+2,355 耐力\n+\n245暴击\n+\n174急速\n需要等级\n90\n在达到地下堡行者的旅程等级9后，只能在难度11的地下堡内获得。\n售价:\n25\n42\n76"
         }
       ],
       "name_zh_cn": "夜行棘刺护符",
@@ -4614,7 +4747,9 @@
         "warrior.protection"
       ],
       "eligibility_status": "broad_rule_v1",
-      "default_optimizer_item_level": 321
+      "default_optimizer_item_level": 340,
+      "myth_reward_source": "https://www.wowhead.com/item=285044/venerated-loa-armament",
+      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
     },
     {
       "id": 274496,
@@ -5127,6 +5262,18 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "骨覆苍白披风\n物品等级：\n321\n升级：英雄\n6/6\n拾取后绑定\n背部\n72护甲\n+94 [敏捷 or 力量 or 智力]\n+1,895 耐力\n+\n40暴击\n+\n67全能\n需要等级\n90\n在达到地下堡行者的旅程等级9后，只能在难度11的地下堡内获得。\n售价:\n42\n47\n92"
+        },
+        {
+          "item_level": 334,
+          "quality": 4,
+          "stats": {
+            "stamina": 2199,
+            "agility_or_strength_or_intellect": 106,
+            "critical_strike": 42,
+            "versatility": 71
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "骨覆苍白披风\n物品等级：\n334\n升级：神话\n6/6\n拾取后绑定\n背部\n78护甲\n+106 [敏捷 or 力量 or 智力]\n+2,199 耐力\n+\n42暴击\n+\n71全能\n需要等级\n90\n在达到地下堡行者的旅程等级9后，只能在难度11的地下堡内获得。\n售价:\n42\n75\n62"
         }
       ],
       "name_zh_cn": "骨覆苍白披风",
@@ -5207,7 +5354,8 @@
         "warrior.protection"
       ],
       "eligibility_status": "broad_rule_v1",
-      "default_optimizer_item_level": 321
+      "default_optimizer_item_level": 334,
+      "myth_reward_source": "https://www.wowhead.com/item=285044/venerated-loa-armament"
     },
     {
       "id": 249642,
@@ -5554,6 +5702,17 @@
           },
           "sockets": 1,
           "tooltip_zh_cn": "衔尾蛇印玺\n物品等级：\n321\n升级：英雄\n6/6\n拾取后绑定\n装备唯一\n手指\n+1,895 耐力\n+\n140急速\n+\n236精通\n棱彩插槽\n需要等级\n90\n售价:\n38\n71\n93"
+        },
+        {
+          "item_level": 334,
+          "quality": 4,
+          "stats": {
+            "stamina": 2199,
+            "haste": 151,
+            "mastery": 255
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "衔尾蛇印玺\n物品等级：\n334\n升级：神话\n6/6\n拾取后绑定\n装备唯一\n手指\n+2,199 耐力\n+\n151急速\n+\n255精通\n需要等级\n90\n售价:\n38\n97\n17"
         }
       ],
       "name_zh_cn": "衔尾蛇印玺",
@@ -5634,7 +5793,8 @@
         "warrior.protection"
       ],
       "eligibility_status": "broad_rule_v1",
-      "default_optimizer_item_level": 321
+      "default_optimizer_item_level": 334,
+      "myth_reward_source": "https://www.wowhead.com/item=285044/venerated-loa-armament"
     },
     {
       "id": 272255,
@@ -5962,6 +6122,18 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "誓言使者挂披\n物品等级：\n321\n升级：英雄\n6/6\n拾取后绑定\n背部\n72护甲\n+94 [敏捷 or 力量 or 智力]\n+1,895 耐力\n+\n40暴击\n+\n67急速\n需要等级\n90\n售价:\n42\n79\n64"
+        },
+        {
+          "item_level": 334,
+          "quality": 4,
+          "stats": {
+            "stamina": 2199,
+            "agility_or_strength_or_intellect": 106,
+            "critical_strike": 42,
+            "haste": 71
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "誓言使者挂披\n物品等级：\n334\n升级：神话\n6/6\n拾取后绑定\n背部\n78护甲\n+106 [敏捷 or 力量 or 智力]\n+2,199 耐力\n+\n42暴击\n+\n71急速\n需要等级\n90\n售价:\n43\n7\n54"
         }
       ],
       "name_zh_cn": "誓言使者挂披",
@@ -6042,7 +6214,8 @@
         "warrior.protection"
       ],
       "eligibility_status": "broad_rule_v1",
-      "default_optimizer_item_level": 321
+      "default_optimizer_item_level": 334,
+      "myth_reward_source": "https://www.wowhead.com/item=285044/venerated-loa-armament"
     },
     {
       "id": 272260,
@@ -6598,9 +6771,21 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "蹈火者的护肩\n物品等级：\n321\n升级：英雄\n6/6\n拾取后绑定\n背部\n72护甲\n+94 [敏捷 or 力量 or 智力]\n+1,895 耐力\n+\n40暴击\n+\n67急速\n需要等级\n90\n售价:\n46\n45\n7"
+        },
+        {
+          "item_level": 334,
+          "quality": 4,
+          "stats": {
+            "stamina": 2199,
+            "agility_or_strength_or_intellect": 106,
+            "critical_strike": 42,
+            "haste": 71
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "蹈火者的披风\n物品等级：\n334\n升级：神话\n6/6\n拾取后绑定\n背部\n78护甲\n+106 [敏捷 or 力量 or 智力]\n+2,199 耐力\n+\n42暴击\n+\n71急速\n需要等级\n90\n售价:\n46\n75\n35"
         }
       ],
-      "name_zh_cn": "蹈火者的护肩",
+      "name_zh_cn": "蹈火者的披风",
       "icon": "inv_cape_cloth_outdooramaniloa_c_01",
       "instance_zh_cn": "地下堡",
       "encounter_source_en": null,
@@ -6678,7 +6863,8 @@
         "warrior.protection"
       ],
       "eligibility_status": "broad_rule_v1",
-      "default_optimizer_item_level": 321
+      "default_optimizer_item_level": 334,
+      "myth_reward_source": "https://www.wowhead.com/item=285044/venerated-loa-armament"
     },
     {
       "id": 272236,
@@ -7082,6 +7268,18 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "猖獗荆棘披风\n物品等级：\n321\n升级：英雄\n6/6\n拾取后绑定\n背部\n72护甲\n+94 [敏捷 or 力量 or 智力]\n+1,895 耐力\n+\n40暴击\n+\n67急速\n需要等级\n90\n在达到地下堡行者的旅程等级9后，只能在难度11的地下堡内获得。\n售价:\n44\n31\n98"
+        },
+        {
+          "item_level": 334,
+          "quality": 4,
+          "stats": {
+            "stamina": 2199,
+            "agility_or_strength_or_intellect": 106,
+            "critical_strike": 42,
+            "haste": 71
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "猖獗荆棘披风\n物品等级：\n334\n升级：神话\n6/6\n拾取后绑定\n背部\n78护甲\n+106 [敏捷 or 力量 or 智力]\n+2,199 耐力\n+\n42暴击\n+\n71急速\n需要等级\n90\n在达到地下堡行者的旅程等级9后，只能在难度11的地下堡内获得。\n售价:\n44\n60\n87"
         }
       ],
       "name_zh_cn": "猖獗荆棘披风",
@@ -7162,7 +7360,8 @@
         "warrior.protection"
       ],
       "eligibility_status": "broad_rule_v1",
-      "default_optimizer_item_level": 321
+      "default_optimizer_item_level": 334,
+      "myth_reward_source": "https://www.wowhead.com/item=285044/venerated-loa-armament"
     },
     {
       "id": 249657,
@@ -8233,6 +8432,28 @@
           },
           "sockets": 1,
           "tooltip_zh_cn": "蛇纹护符\n物品等级：\n321\n升级：英雄\n6/6\n拾取后绑定\n颈部\n+1,895 耐力\n+\n220暴击\n+\n156急速\n棱彩插槽\n需要等级\n90\n售价:\n24\n40\n97"
+        },
+        {
+          "item_level": 334,
+          "quality": 4,
+          "stats": {
+            "stamina": 2199,
+            "critical_strike": 237,
+            "haste": 168
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "蛇纹护符\n物品等级：\n334\n升级：神话\n6/6\n拾取后绑定\n颈部\n+2,199 耐力\n+\n237暴击\n+\n168急速\n需要等级\n90\n售价:\n24\n56\n88"
+        },
+        {
+          "item_level": 340,
+          "quality": 4,
+          "stats": {
+            "stamina": 2355,
+            "critical_strike": 245,
+            "haste": 174
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "蛇纹护符\n晋升毒液铸造：英雄\n物品等级：\n340\n拾取后绑定\n颈部\n+2,355 耐力\n+\n245暴击\n+\n174急速\n需要等级\n90\n售价:\n24\n64\n26"
         }
       ],
       "name_zh_cn": "蛇纹护符",
@@ -8313,7 +8534,9 @@
         "warrior.protection"
       ],
       "eligibility_status": "broad_rule_v1",
-      "default_optimizer_item_level": 321
+      "default_optimizer_item_level": 340,
+      "myth_reward_source": "https://www.wowhead.com/item=285044/venerated-loa-armament",
+      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
     },
     {
       "id": 272275,
@@ -8674,6 +8897,17 @@
           },
           "sockets": 1,
           "tooltip_zh_cn": "封灵指环\n物品等级：\n321\n升级：英雄\n6/6\n拾取后绑定\n装备唯一\n手指\n+1,895 耐力\n+\n258暴击\n+\n118精通\n棱彩插槽\n需要等级\n90\n在达到地下堡行者的旅程等级9后，只能在难度11的地下堡内获得。\n售价:\n39\n15\n6"
+        },
+        {
+          "item_level": 334,
+          "quality": 4,
+          "stats": {
+            "stamina": 2199,
+            "critical_strike": 278,
+            "mastery": 127
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "封灵指环\n物品等级：\n334\n升级：神话\n6/6\n拾取后绑定\n装备唯一\n手指\n+2,199 耐力\n+\n278暴击\n+\n127精通\n需要等级\n90\n在达到地下堡行者的旅程等级9后，只能在难度11的地下堡内获得。\n售价:\n39\n40\n59"
         }
       ],
       "name_zh_cn": "封灵指环",
@@ -8754,7 +8988,8 @@
         "warrior.protection"
       ],
       "eligibility_status": "broad_rule_v1",
-      "default_optimizer_item_level": 321
+      "default_optimizer_item_level": 334,
+      "myth_reward_source": "https://www.wowhead.com/item=285044/venerated-loa-armament"
     },
     {
       "id": 249634,
@@ -8854,6 +9089,18 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "盘延菌丝披风\n物品等级：\n321\n升级：英雄\n6/6\n拾取后绑定\n背部\n72护甲\n+94 [敏捷 or 力量 or 智力]\n+1,895 耐力\n+\n40全能\n+\n67精通\n需要等级\n90\n在达到地下堡行者的旅程等级9后，只能在难度11的地下堡内获得。\n售价:\n46\n12\n90"
+        },
+        {
+          "item_level": 334,
+          "quality": 4,
+          "stats": {
+            "stamina": 2199,
+            "agility_or_strength_or_intellect": 106,
+            "versatility": 42,
+            "mastery": 71
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "盘延菌丝披风\n物品等级：\n334\n升级：神话\n6/6\n拾取后绑定\n背部\n78护甲\n+106 [敏捷 or 力量 or 智力]\n+2,199 耐力\n+\n42全能\n+\n71精通\n需要等级\n90\n在达到地下堡行者的旅程等级9后，只能在难度11的地下堡内获得。\n售价:\n46\n42\n97"
         }
       ],
       "name_zh_cn": "盘延菌丝披风",
@@ -8934,7 +9181,8 @@
         "warrior.protection"
       ],
       "eligibility_status": "broad_rule_v1",
-      "default_optimizer_item_level": 321
+      "default_optimizer_item_level": 334,
+      "myth_reward_source": "https://www.wowhead.com/item=285044/venerated-loa-armament"
     },
     {
       "id": 249635,
@@ -10085,6 +10333,17 @@
           },
           "sockets": 1,
           "tooltip_zh_cn": "生机荒狂指环\n物品等级：\n321\n升级：英雄\n6/6\n拾取后绑定\n装备唯一\n手指\n+1,895 耐力\n+\n118暴击\n+\n258精通\n棱彩插槽\n需要等级\n90\n在达到地下堡行者的旅程等级9后，只能在难度11的地下堡内获得。\n售价:\n38\n87\n31"
+        },
+        {
+          "item_level": 334,
+          "quality": 4,
+          "stats": {
+            "stamina": 2199,
+            "critical_strike": 127,
+            "mastery": 278
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "生机荒狂指环\n物品等级：\n334\n升级：神话\n6/6\n拾取后绑定\n装备唯一\n手指\n+2,199 耐力\n+\n127暴击\n+\n278精通\n需要等级\n90\n在达到地下堡行者的旅程等级9后，只能在难度11的地下堡内获得。\n售价:\n39\n12\n65"
         }
       ],
       "name_zh_cn": "生机荒狂指环",
@@ -10165,7 +10424,8 @@
         "warrior.protection"
       ],
       "eligibility_status": "broad_rule_v1",
-      "default_optimizer_item_level": 321
+      "default_optimizer_item_level": 334,
+      "myth_reward_source": "https://www.wowhead.com/item=285044/venerated-loa-armament"
     },
     {
       "id": 251785,
@@ -10281,6 +10541,17 @@
           },
           "sockets": 1,
           "tooltip_zh_cn": "巫毒指环\n物品等级：\n321\n升级：英雄\n6/6\n拾取后绑定\n装备唯一\n手指\n+1,895 耐力\n+\n113急速\n+\n263全能\n棱彩插槽\n需要等级\n90\n在达到地下堡行者的旅程等级9后，只能在难度11的地下堡内获得。\n售价:\n39\n1\n19"
+        },
+        {
+          "item_level": 334,
+          "quality": 4,
+          "stats": {
+            "stamina": 2199,
+            "haste": 122,
+            "versatility": 284
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "巫毒指环\n物品等级：\n334\n升级：神话\n6/6\n拾取后绑定\n装备唯一\n手指\n+2,199 耐力\n+\n122急速\n+\n284全能\n需要等级\n90\n在达到地下堡行者的旅程等级9后，只能在难度11的地下堡内获得。\n售价:\n39\n26\n62"
         }
       ],
       "name_zh_cn": "巫毒指环",
@@ -10361,7 +10632,8 @@
         "warrior.protection"
       ],
       "eligibility_status": "broad_rule_v1",
-      "default_optimizer_item_level": 321
+      "default_optimizer_item_level": 334,
+      "myth_reward_source": "https://www.wowhead.com/item=285044/venerated-loa-armament"
     },
     {
       "id": 272276,
@@ -10458,6 +10730,28 @@
           },
           "sockets": 1,
           "tooltip_zh_cn": "呢喃颈饰\n物品等级：\n321\n升级：英雄\n6/6\n拾取后绑定\n颈部\n+1,895 耐力\n+\n156全能\n+\n220精通\n棱彩插槽\n需要等级\n90\n售价:\n24\n31\n50"
+        },
+        {
+          "item_level": 334,
+          "quality": 4,
+          "stats": {
+            "stamina": 2199,
+            "versatility": 168,
+            "mastery": 237
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "呢喃颈饰\n物品等级：\n334\n升级：神话\n6/6\n拾取后绑定\n颈部\n+2,199 耐力\n+\n168全能\n+\n237精通\n需要等级\n90\n售价:\n24\n47\n36"
+        },
+        {
+          "item_level": 340,
+          "quality": 4,
+          "stats": {
+            "stamina": 2355,
+            "versatility": 174,
+            "mastery": 245
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "呢喃颈饰\n晋升毒液铸造：英雄\n物品等级：\n340\n拾取后绑定\n颈部\n+2,355 耐力\n+\n174全能\n+\n245精通\n需要等级\n90\n售价:\n24\n54\n71"
         }
       ],
       "name_zh_cn": "呢喃颈饰",
@@ -10538,7 +10832,9 @@
         "warrior.protection"
       ],
       "eligibility_status": "broad_rule_v1",
-      "default_optimizer_item_level": 321
+      "default_optimizer_item_level": 340,
+      "myth_reward_source": "https://www.wowhead.com/item=285044/venerated-loa-armament",
+      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
     },
     {
       "id": 249662,

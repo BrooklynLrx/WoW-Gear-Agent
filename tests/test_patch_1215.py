@@ -43,6 +43,12 @@ def test_1215_default_levels_search_and_optimizer_preserve_history(monkeypatch):
     assert delve_hero
     delve_default = loot_api.search_loot(item_level=0, source_type="delve", class_key="mage", spec_key="arcane", limit=500)["items"]
     assert any(item["slot_key"] == "head" and item["item_level"] == 334 for item in delve_default)
+    rings = {item["item_id"]: item for item in delve_default if item["slot_key"] == "finger"}
+    assert rings[272149]["item_level"] == 334  # screenshot: 妖术指环
+    assert rings[249621]["item_level"] == 334  # screenshot: 巫毒指环
+    assert all(item["item_level"] == 334 for item in rings.values())
+    assert all(item["item_level"] == 334 for item in delve_default if item["slot_key"] == "back")
+    assert all(item["item_level"] == 340 for item in delve_default if item["slot_key"] == "neck")
     assert all(item["item_level"] == 321 for item in delve_default if item["slot_key"] in {"weapon", "trinket"})
 
     result = optimizer.optimize_loadout(
