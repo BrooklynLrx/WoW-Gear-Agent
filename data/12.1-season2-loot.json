@@ -2,7 +2,7 @@
   "patch": "12.1",
   "season": "Midnight Season 2",
   "generated_at": "2026-08-12T11:52:10.802585+00:00",
-  "scope": "Hero/Myth tracks; Delve armor, cloak and ring default Myth 6/6 334; Delve neck default Ascendant Myth 340; Delve weapons/trinkets remain Hero 6/6 321",
+  "scope": "Hero/Myth tracks; Delve armor, cloak and ring default Myth 6/6 334; Delve neck and off-hand default Ascendant Myth 340; other Delve weapons/trinkets remain Hero 6/6 321",
   "upgrade_tracks": {
     "hero": {
       "1/6": 305,
@@ -702,6 +702,32 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "荆棘壁障\n物品等级：\n321\n升级：英雄\n6/6\n拾取后绑定\n副手\n盾\n1167护甲\n2917点格挡\n+84 力量\n+256 智力\n+1,684 耐力\n+\n56全能\n+\n39精通\n耐久: 120 / 120\n需要等级\n90\n在达到地下堡行者的旅程等级9后，只能在难度11的地下堡内获得。\n售价:\n57\n16\n47"
+        },
+        {
+          "item_level": 334,
+          "quality": 4,
+          "stats": {
+            "strength": 94,
+            "intellect": 289,
+            "stamina": 1955,
+            "versatility": 59,
+            "mastery": 42
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "荆棘壁障\n物品等级：\n334\n升级：神话\n6/6\n拾取后绑定\n副手\n盾\n1274护甲\n3185点格挡\n+94 力量\n+289 智力\n+1,955 耐力\n+\n59全能\n+\n42精通\n耐久: 120 / 120\n需要等级\n90\n在达到地下堡行者的旅程等级9后，只能在难度11的地下堡内获得。\n售价:\n57\n53\n73"
+        },
+        {
+          "item_level": 340,
+          "quality": 4,
+          "stats": {
+            "strength": 100,
+            "intellect": 306,
+            "stamina": 2094,
+            "versatility": 60,
+            "mastery": 43
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "荆棘壁障\n物品等级：\n340\n升级：神话\n1/6\n拾取后绑定\n副手\n盾\n1327护甲\n3317点格挡\n+100 力量\n+306 智力\n+2,094 耐力\n+\n60全能\n+\n43精通\n耐久: 120 / 120\n需要等级\n90\n在达到地下堡行者的旅程等级9后，只能在难度11的地下堡内获得。\n售价:\n57\n71\n2"
         }
       ],
       "name_zh_cn": "荆棘壁障",
@@ -722,36 +748,27 @@
       "multiple_drop_sources": false,
       "slot_key": "weapon",
       "armor_type": null,
-      "weapon_type": "off_hand",
+      "weapon_type": "shield",
       "loot_role": "all",
       "candidate_classes": [
-        "druid",
-        "evoker",
-        "mage",
-        "priest",
+        "paladin",
         "shaman",
-        "warlock"
+        "warrior"
       ],
       "candidate_specs": [
-        "druid.balance",
-        "druid.restoration",
-        "evoker.augmentation",
-        "evoker.devastation",
-        "evoker.preservation",
-        "mage.arcane",
-        "mage.fire",
-        "mage.frost",
-        "priest.discipline",
-        "priest.holy",
-        "priest.shadow",
+        "paladin.holy",
+        "paladin.protection",
+        "paladin.retribution",
         "shaman.elemental",
         "shaman.restoration",
-        "warlock.affliction",
-        "warlock.demonology",
-        "warlock.destruction"
+        "warrior.arms",
+        "warrior.fury",
+        "warrior.protection"
       ],
       "eligibility_status": "broad_rule_v1",
-      "default_optimizer_item_level": 321
+      "default_optimizer_item_level": 340,
+      "myth_reward_source": "https://www.wowhead.com/npc=256670/zahran",
+      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
     },
     {
       "id": 272147,
@@ -1979,6 +1996,30 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "始祖花灯笼\n物品等级：\n321\n升级：英雄\n6/6\n拾取后绑定\n副手物品\n+256 智力\n+1,684 耐力\n+\n39急速\n+\n56精通\n需要等级\n90\n在达到地下堡行者的旅程等级9后，只能在难度11的地下堡内获得。\n售价:\n51\n48\n44"
+        },
+        {
+          "item_level": 334,
+          "quality": 4,
+          "stats": {
+            "intellect": 289,
+            "stamina": 1955,
+            "haste": 42,
+            "mastery": 59
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "始祖花灯笼\n物品等级：\n334\n升级：神话\n6/6\n拾取后绑定\n副手物品\n+289 智力\n+1,955 耐力\n+\n42急速\n+\n59精通\n需要等级\n90\n在达到地下堡行者的旅程等级9后，只能在难度11的地下堡内获得。\n售价:\n51\n82\n1"
+        },
+        {
+          "item_level": 340,
+          "quality": 4,
+          "stats": {
+            "intellect": 306,
+            "stamina": 2094,
+            "haste": 43,
+            "mastery": 60
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "始祖花灯笼\n物品等级：\n340\n升级：神话\n1/6\n拾取后绑定\n副手物品\n+306 智力\n+2,094 耐力\n+\n43急速\n+\n60精通\n需要等级\n90\n在达到地下堡行者的旅程等级9后，只能在难度11的地下堡内获得。\n售价:\n51\n97\n57"
         }
       ],
       "name_zh_cn": "始祖花灯笼",
@@ -2028,7 +2069,9 @@
         "warlock.destruction"
       ],
       "eligibility_status": "broad_rule_v1",
-      "default_optimizer_item_level": 321
+      "default_optimizer_item_level": 340,
+      "myth_reward_source": "https://www.wowhead.com/npc=256670/zahran",
+      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
     },
     {
       "id": 249670,
@@ -8560,6 +8603,30 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "魂咏者之角\n物品等级：\n321\n升级：英雄\n6/6\n拾取后绑定\n副手物品\n+256 智力\n+1,684 耐力\n+\n36暴击\n+\n59全能\n需要等级\n90\n售价:\n51\n29"
+        },
+        {
+          "item_level": 334,
+          "quality": 4,
+          "stats": {
+            "intellect": 289,
+            "stamina": 1955,
+            "critical_strike": 38,
+            "versatility": 62
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "魂咏者之角\n物品等级：\n334\n升级：神话\n6/6\n拾取后绑定\n副手物品\n+289 智力\n+1,955 耐力\n+\n38暴击\n+\n62全能\n需要等级\n90\n售价:\n51\n62\n44"
+        },
+        {
+          "item_level": 340,
+          "quality": 4,
+          "stats": {
+            "intellect": 306,
+            "stamina": 2094,
+            "critical_strike": 39,
+            "versatility": 64
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "魂咏者之角\n物品等级：\n340\n升级：英雄\n6/6\n拾取后绑定\n副手物品\n+306 智力\n+2,094 耐力\n+\n39暴击\n+\n64全能\n需要等级\n90\n售价:\n51\n77\n95"
         }
       ],
       "name_zh_cn": "魂咏者之角",
@@ -8609,7 +8676,9 @@
         "warlock.destruction"
       ],
       "eligibility_status": "broad_rule_v1",
-      "default_optimizer_item_level": 321
+      "default_optimizer_item_level": 340,
+      "myth_reward_source": "https://www.wowhead.com/npc=256670/zahran",
+      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
     },
     {
       "id": 274498,
@@ -10658,6 +10727,32 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "哀嚎壁垒\n物品等级：\n321\n升级：英雄\n6/6\n拾取后绑定\n副手\n盾\n1167护甲\n2917点格挡\n+84 力量\n+256 智力\n+1,684 耐力\n+\n60急速\n+\n36全能\n耐久: 100 / 100\n需要等级\n90\n售价:\n54\n90\n58"
+        },
+        {
+          "item_level": 334,
+          "quality": 4,
+          "stats": {
+            "strength": 94,
+            "intellect": 289,
+            "stamina": 1955,
+            "haste": 63,
+            "versatility": 38
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "哀嚎壁垒\n物品等级：\n334\n升级：神话\n6/6\n拾取后绑定\n副手\n盾\n1274护甲\n3185点格挡\n+94 力量\n+289 智力\n+1,955 耐力\n+\n63急速\n+\n38全能\n耐久: 120 / 120\n需要等级\n90\n售价:\n55\n26\n38"
+        },
+        {
+          "item_level": 340,
+          "quality": 4,
+          "stats": {
+            "strength": 100,
+            "intellect": 306,
+            "stamina": 2094,
+            "haste": 64,
+            "versatility": 39
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "哀嚎壁垒\n物品等级：\n340\n升级：英雄\n6/6\n拾取后绑定\n副手\n盾\n1327护甲\n3317点格挡\n+100 力量\n+306 智力\n+2,094 耐力\n+\n64急速\n+\n39全能\n耐久: 120 / 120\n需要等级\n90\n售价:\n55\n42\n98"
         }
       ],
       "name_zh_cn": "哀嚎壁垒",
@@ -10678,36 +10773,27 @@
       "multiple_drop_sources": false,
       "slot_key": "weapon",
       "armor_type": null,
-      "weapon_type": "off_hand",
+      "weapon_type": "shield",
       "loot_role": "all",
       "candidate_classes": [
-        "druid",
-        "evoker",
-        "mage",
-        "priest",
+        "paladin",
         "shaman",
-        "warlock"
+        "warrior"
       ],
       "candidate_specs": [
-        "druid.balance",
-        "druid.restoration",
-        "evoker.augmentation",
-        "evoker.devastation",
-        "evoker.preservation",
-        "mage.arcane",
-        "mage.fire",
-        "mage.frost",
-        "priest.discipline",
-        "priest.holy",
-        "priest.shadow",
+        "paladin.holy",
+        "paladin.protection",
+        "paladin.retribution",
         "shaman.elemental",
         "shaman.restoration",
-        "warlock.affliction",
-        "warlock.demonology",
-        "warlock.destruction"
+        "warrior.arms",
+        "warrior.fury",
+        "warrior.protection"
       ],
       "eligibility_status": "broad_rule_v1",
-      "default_optimizer_item_level": 321
+      "default_optimizer_item_level": 340,
+      "myth_reward_source": "https://www.wowhead.com/npc=256670/zahran",
+      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
     },
     {
       "id": 272228,

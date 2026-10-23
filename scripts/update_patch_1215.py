@@ -14,6 +14,7 @@ RAID_URL = "https://www.wowhead.com/guide/midnight/raids/the-unbinding-of-kithix
 UPGRADE_URL = "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
 ARMOR_SLOTS = {"head", "shoulder", "chest", "wrist", "hands", "waist", "legs", "feet"}
 MYTH_REWARD_SLOTS = ARMOR_SLOTS | {"back", "ring", "neck"}
+DELVE_OFFHAND_IDS = {249672, 249676, 272275, 272276}
 RAID = {
     280799: ("Lu'selama, Light's Justice", "2H Sword"),
     281056: ("Sanctified Knight's Phoenixblade", "1H Sword"),
@@ -52,10 +53,11 @@ def main():
                 item["catalyst_eligible"] = item["slot"] in {"Plate Helm", "Mail Hands", "Leather Chest", "Cloth Legs"}
                 levels.update({305, 308, 311, 315, 318, 321, 324, 328, 331, 334})
                 slot = "weapon" if "Sword" in item["slot"] else "trinket" if item["slot"] == "Trinket" else slot
-            if item.get("instance_type") == "delve" and slot in MYTH_REWARD_SLOTS:
+            delve_offhand = item.get("instance_type") == "delve" and item["id"] in DELVE_OFFHAND_IDS
+            if item.get("instance_type") == "delve" and (slot in MYTH_REWARD_SLOTS or delve_offhand):
                 levels.add(334)
                 item["default_optimizer_item_level"] = 334
-                item["myth_reward_source"] = "https://www.wowhead.com/item=285044/venerated-loa-armament"
+                item["myth_reward_source"] = "https://www.wowhead.com/npc=256670/zahran" if delve_offhand else "https://www.wowhead.com/item=285044/venerated-loa-armament"
             if slot in {"weapon", "neck", "trinket"} and (331 if is_crafted else 334) in levels:
                 target = 338 if is_crafted else 340
                 item["default_optimizer_item_level"] = target
@@ -86,7 +88,7 @@ def main():
             item["variants"].sort(key=lambda v: v["item_level"])
         catalog["content_patch"] = "12.1.5"
         if catalog is loot:
-            catalog["scope"] = "Hero/Myth tracks; Delve armor, cloak and ring default Myth 6/6 334; Delve neck default Ascendant Myth 340; Delve weapons/trinkets remain Hero 6/6 321"
+            catalog["scope"] = "Hero/Myth tracks; Delve armor, cloak and ring default Myth 6/6 334; Delve neck and off-hand default Ascendant Myth 340; other Delve weapons/trinkets remain Hero 6/6 321"
         save(path, catalog)
     print(f"fetched {len(jobs)} variants; run scripts/prepare_catalog.py and scripts/import_data.py next")
 

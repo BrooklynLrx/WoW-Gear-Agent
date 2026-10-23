@@ -49,7 +49,14 @@ def test_1215_default_levels_search_and_optimizer_preserve_history(monkeypatch):
     assert all(item["item_level"] == 334 for item in rings.values())
     assert all(item["item_level"] == 334 for item in delve_default if item["slot_key"] == "back")
     assert all(item["item_level"] == 340 for item in delve_default if item["slot_key"] == "neck")
-    assert all(item["item_level"] == 321 for item in delve_default if item["slot_key"] in {"weapon", "trinket"})
+    offhand_ids = {249672, 249676, 272275, 272276}
+    assert {item["item_id"] for item in delve_default if item["weapon_type"] == "off_hand"} == {249672, 272275}
+    paladin_delve = loot_api.search_loot(item_level=0, source_type="delve", class_key="paladin", spec_key="holy", limit=500)["items"]
+    assert {item["item_id"] for item in paladin_delve if item["weapon_type"] == "shield"} == {249676, 272276}
+    assert all(item["item_level"] == 340 for item in delve_default + paladin_delve if item["item_id"] in offhand_ids)
+    assert all(item["item_level"] == 321 for item in delve_default if item["slot_key"] in {"weapon", "trinket"} and item["item_id"] not in offhand_ids)
+    old_offhands = loot_api.search_loot(item_level=321, source_type="delve", item_ids=list(offhand_ids), limit=500)["items"]
+    assert {item["item_id"] for item in old_offhands} == offhand_ids
 
     result = optimizer.optimize_loadout(
         "mage", "arcane", [{"rule": "rating_ratio", "weights": {"critical_strike": 3, "haste": 3, "versatility": 3, "mastery": 1}}],

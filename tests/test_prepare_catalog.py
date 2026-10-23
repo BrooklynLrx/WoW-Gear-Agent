@@ -6,6 +6,8 @@ from scripts.prepare_catalog import CLASSES, DATA, TIDEBOUND_GROTTO_ITEM_IDS, WE
 def test_shield_is_not_classified_as_a_caster_off_hand():
     item = {"slot": "Shield", "variants": [{"tooltip_zh_cn": "\n副手\n盾\n"}]}
     assert normalize_slot(item) == ("weapon", None, "shield")
+    item["slot"] = "Unknown"
+    assert normalize_slot(item) == ("weapon", None, "shield")
 
 
 def test_delve_chinese_slot_names_are_normalized():

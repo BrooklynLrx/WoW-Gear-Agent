@@ -159,6 +159,7 @@ def normalize_slot(item: dict) -> tuple[str, str | None, str | None]:
         weapon_name = {"战刃": "warglaive", "匕首": "dagger", "拳套": "fist", "长柄武器": "polearm", "法杖": "staff", "魔杖": "wand", "弓": "bow", "弩": "crossbow", "枪": "gun", "斧": "axe", "锤": "mace", "权杖": "mace", "剑": "sword"}[weapon_zh]
         prefix = "ranged_" if hand_zh == "远程" else ("2h_" if hand_zh == "双手" else "1h_")
         return "weapon", None, prefix + weapon_name
+    if "\n副手\n盾\n" in text: return "weapon", None, "shield"
     if "\n副手\n" in text or "\n副手物品\n" in text: return "weapon", None, "off_hand"
     if "\n盾牌\n" in text: return "weapon", None, "shield"
     for armor in ("Cloth", "Leather", "Mail", "Plate"):
