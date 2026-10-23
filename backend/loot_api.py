@@ -50,7 +50,7 @@ def search_loot(
         rows = db.execute(
             select(Item, ItemVariant).join(ItemVariant).where(
                 Item.version_id == version.id,
-                ItemVariant.item_level.in_([321, 331, 334, 338, 340]) if item_level == 0 else ItemVariant.item_level == item_level,
+                ItemVariant.item_level.in_([321, 331, 334, 337, 341]) if item_level == 0 else ItemVariant.item_level == item_level,
             ).order_by(Item.name_zh_cn, Item.game_item_id)
         ).all()
         sources = db.scalars(select(ItemSource).join(Item).where(Item.version_id == version.id)).all()

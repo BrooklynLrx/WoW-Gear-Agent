@@ -103,7 +103,7 @@
           "quality_5": 331
         }
       },
-      "default_optimizer_item_level": 338,
+      "default_optimizer_item_level": 337,
       "spark_of_tides_cost": 2,
       "sockets": 0,
       "unique_equipped": false,
@@ -192,6 +192,15 @@
           "tooltip_zh_cn": "魔导师的炼金石\n物品等级：\n331\n拾取后绑定\n装备唯一：美化（2）\n饰品\n+\n142全能\n装备：\n当你进行治疗或对敌人造成伤害时，有一定几率使你的力量、敏捷或者智力提高\n359\n点，持续15秒。总是会提升数值最高的那个属性。\n装备：\n使你在饮用治疗药水和法力药水时获得的效果提高40%。这个效果无法叠加。\n需要等级\n90\n\"可在元素转化时代替点金石使用。\"\n售价:\n82\n98\n99"
         },
         {
+          "item_level": 337,
+          "quality": 4,
+          "stats": {
+            "versatility": 145
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "魔导师的炼金石\n物品等级：\n337\n拾取后绑定\n装备唯一：美化（2）\n饰品\n+\n145全能\n装备：\n当你进行治疗或对敌人造成伤害时，有一定几率使你的力量、敏捷或者智力提高\n380\n点，持续15秒。总是会提升数值最高的那个属性。\n装备：\n使你在饮用治疗药水和法力药水时获得的效果提高40%。这个效果无法叠加。\n需要等级\n90\n\"可在元素转化时代替点金石使用。\"\n售价:\n82\n98\n99"
+        },
+        {
           "item_level": 338,
           "quality": 4,
           "stats": {
@@ -202,7 +211,7 @@
         }
       ],
       "secondary_stat_mode": "fixed",
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 237829,
@@ -1686,7 +1695,7 @@
           "quality_5": 331
         }
       },
-      "default_optimizer_item_level": 338,
+      "default_optimizer_item_level": 337,
       "spark_of_tides_cost": 4,
       "wowhead_url": "https://www.wowhead.com/item=237847",
       "icon": "inv_polearm_2h_questbloodelf_b_01",
@@ -1818,6 +1827,20 @@
           ]
         },
         {
+          "item_level": 337,
+          "quality": 4,
+          "stats": {
+            "stamina": 4047,
+            "agility_or_strength": 194
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "血骑士的强击矛\n物品等级：\n337\n拾取后绑定\n双手\n长柄武器\n367 - 683点伤害\n速度\n3.60\n（每秒伤害145.8点）\n+194 [敏捷 or 力量]\n+4,047 耐力\n+\n102 随机属性1\n+\n102 随机属性2\n耐久: 120 / 120\n需要等级\n90\n售价:\n173\n69\n21",
+          "customizable_secondary_amounts": [
+            102,
+            102
+          ]
+        },
+        {
           "item_level": 338,
           "quality": 4,
           "stats": {
@@ -1854,7 +1877,7 @@
         "paladin",
         "warrior"
       ],
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 237848,
@@ -1897,7 +1920,7 @@
           "quality_5": 331
         }
       },
-      "default_optimizer_item_level": 338,
+      "default_optimizer_item_level": 337,
       "spark_of_tides_cost": 4,
       "wowhead_url": "https://www.wowhead.com/item=237848",
       "icon": "mace_2h_blacksmithing_d_04_icon",
@@ -2029,6 +2052,20 @@
           ]
         },
         {
+          "item_level": 337,
+          "quality": 4,
+          "stats": {
+            "stamina": 4047,
+            "agility_or_strength": 194
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "血骑士的慈悲\n物品等级：\n337\n拾取后绑定\n双手\n权杖\n459 - 591点伤害\n速度\n3.60\n（每秒伤害145.8点）\n+194 [敏捷 or 力量]\n+4,047 耐力\n+\n102 随机属性1\n+\n102 随机属性2\n耐久: 120 / 120\n需要等级\n90\n售价:\n174\n36\n62",
+          "customizable_secondary_amounts": [
+            102,
+            102
+          ]
+        },
+        {
           "item_level": 338,
           "quality": 4,
           "stats": {
@@ -2062,7 +2099,7 @@
         "paladin",
         "warrior"
       ],
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 237846,
@@ -2105,7 +2142,7 @@
           "quality_5": 331
         }
       },
-      "default_optimizer_item_level": 338,
+      "default_optimizer_item_level": 337,
       "spark_of_tides_cost": 4,
       "wowhead_url": "https://www.wowhead.com/item=237846",
       "icon": "inv_sword_2h_questbloodelf_b_01",
@@ -2237,6 +2274,20 @@
           ]
         },
         {
+          "item_level": 337,
+          "quality": 4,
+          "stats": {
+            "strength": 194,
+            "stamina": 4047
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "血骑士的战剑\n物品等级：\n337\n拾取后绑定\n双手\n剑\n394 - 657点伤害\n速度\n3.60\n（每秒伤害146.0点）\n+194 力量\n+4,047 耐力\n+\n102 随机属性1\n+\n102 随机属性2\n耐久: 120 / 120\n需要等级\n90\n售价:\n191\n25\n44",
+          "customizable_secondary_amounts": [
+            102,
+            102
+          ]
+        },
+        {
           "item_level": 338,
           "quality": 4,
           "stats": {
@@ -2270,7 +2321,7 @@
         "paladin",
         "warrior"
       ],
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 237845,
@@ -2313,7 +2364,7 @@
           "quality_5": 331
         }
       },
-      "default_optimizer_item_level": 338,
+      "default_optimizer_item_level": 337,
       "spark_of_tides_cost": 2,
       "wowhead_url": "https://www.wowhead.com/item=237845",
       "icon": "inv_hand_1h_dungeonharronir_c_01",
@@ -2445,6 +2496,20 @@
           ]
         },
         {
+          "item_level": 337,
+          "quality": 4,
+          "stats": {
+            "stamina": 2024,
+            "agility_or_strength": 97
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "绽铸之爪\n物品等级：\n337\n拾取后绑定\n单手\n拳套\n236 - 337点伤害\n速度\n2.60\n（每秒伤害110.2点）\n+97 [敏捷 or 力量]\n+2,024 耐力\n+\n51 随机属性1\n+\n51 随机属性2\n耐久: 80 / 80\n需要等级\n90\n售价:\n152\n46\n43",
+          "customizable_secondary_amounts": [
+            51,
+            51
+          ]
+        },
+        {
           "item_level": 338,
           "quality": 4,
           "stats": {
@@ -2481,7 +2546,7 @@
         "rogue",
         "shaman"
       ],
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 237842,
@@ -2524,7 +2589,7 @@
           "quality_5": 331
         }
       },
-      "default_optimizer_item_level": 338,
+      "default_optimizer_item_level": 337,
       "spark_of_tides_cost": 4,
       "wowhead_url": "https://www.wowhead.com/item=237842",
       "icon": "inv_axe_2h_dungeonharronir_c_01",
@@ -2656,6 +2721,20 @@
           ]
         },
         {
+          "item_level": 337,
+          "quality": 4,
+          "stats": {
+            "stamina": 4047,
+            "agility_or_strength": 194
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "绽铸大斧\n物品等级：\n337\n拾取后绑定\n双手\n斧\n341 - 709点伤害\n速度\n3.60\n（每秒伤害145.8点）\n+194 [敏捷 or 力量]\n+4,047 耐力\n+\n102 随机属性1\n+\n102 随机属性2\n耐久: 120 / 120\n需要等级\n90\n售价:\n183\n74\n85",
+          "customizable_secondary_amounts": [
+            102,
+            102
+          ]
+        },
+        {
           "item_level": 338,
           "quality": 4,
           "stats": {
@@ -2689,7 +2768,7 @@
         "paladin",
         "warrior"
       ],
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 237850,
@@ -2732,7 +2811,7 @@
           "quality_5": 331
         }
       },
-      "default_optimizer_item_level": 338,
+      "default_optimizer_item_level": 337,
       "spark_of_tides_cost": 2,
       "wowhead_url": "https://www.wowhead.com/item=237850",
       "icon": "inv_axe_1h_questbloodelf_b_01",
@@ -2864,6 +2943,20 @@
           ]
         },
         {
+          "item_level": 337,
+          "quality": 4,
+          "stats": {
+            "stamina": 2024,
+            "agility_or_strength": 97
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "远行者的劈斧\n物品等级：\n337\n拾取后绑定\n单手\n斧\n186 - 387点伤害\n速度\n2.60\n（每秒伤害110.2点）\n+97 [敏捷 or 力量]\n+2,024 耐力\n+\n51 随机属性1\n+\n51 随机属性2\n耐久: 110 / 110\n需要等级\n90\n售价:\n140\n55\n69",
+          "customizable_secondary_amounts": [
+            51,
+            51
+          ]
+        },
+        {
           "item_level": 338,
           "quality": 4,
           "stats": {
@@ -2907,7 +3000,7 @@
         "shaman",
         "warrior"
       ],
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 237837,
@@ -2950,7 +3043,7 @@
           "quality_5": 331
         }
       },
-      "default_optimizer_item_level": 338,
+      "default_optimizer_item_level": 337,
       "spark_of_tides_cost": 2,
       "wowhead_url": "https://www.wowhead.com/item=237837",
       "icon": "inv_knife_1h_questbloodelf_b_02",
@@ -3082,6 +3175,20 @@
           ]
         },
         {
+          "item_level": 337,
+          "quality": 4,
+          "stats": {
+            "agility": 97,
+            "stamina": 2024
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "远行者的慈悲\n物品等级：\n337\n拾取后绑定\n单手\n匕首\n148 - 248点伤害\n速度\n1.80\n（每秒伤害110.0点）\n+97 敏捷\n+2,024 耐力\n+\n51 随机属性1\n+\n51 随机属性2\n耐久: 80 / 80\n需要等级\n90\n售价:\n144\n33\n17",
+          "customizable_secondary_amounts": [
+            51,
+            51
+          ]
+        },
+        {
           "item_level": 338,
           "quality": 4,
           "stats": {
@@ -3110,7 +3217,7 @@
       "candidate_classes": [
         "rogue"
       ],
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 244472,
@@ -3157,7 +3264,7 @@
           "quality_5": 331
         }
       },
-      "default_optimizer_item_level": 338,
+      "default_optimizer_item_level": 337,
       "spark_of_tides_cost": 2,
       "sockets": 0,
       "unique_equipped": false,
@@ -3300,6 +3407,21 @@
           ]
         },
         {
+          "item_level": 337,
+          "quality": 4,
+          "stats": {
+            "strength": 97,
+            "intellect": 297,
+            "stamina": 2024
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "骑士指挥官的雄关\n物品等级：\n337\n拾取后绑定\n装备唯一：美化（2）\n副手\n盾\n1300护甲\n3250点格挡\n+97 力量\n+297 智力\n+2,024 耐力\n+\n51 随机属性1\n+\n51 随机属性2\n耐久: 120 / 120\n装备：\n圣光守护着你。受到攻击时有几率获得\n壁垒之护\n，提供持续6秒的吸收护盾，可吸收\n4552\n点伤害。\n若护盾在效果结束前被击破，护盾魔法会爆发\n壁垒之赎\n，对附近敌人造成(\n1\n*\n4552\n)点神圣伤害。\n需要等级\n90\n售价:\n135\n19\n89",
+          "customizable_secondary_amounts": [
+            51,
+            51
+          ]
+        },
+        {
           "item_level": 338,
           "quality": 4,
           "stats": {
@@ -3328,7 +3450,7 @@
         "shaman",
         "warrior"
       ],
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 237844,
@@ -3371,7 +3493,7 @@
           "quality_5": 331
         }
       },
-      "default_optimizer_item_level": 338,
+      "default_optimizer_item_level": 337,
       "spark_of_tides_cost": 2,
       "wowhead_url": "https://www.wowhead.com/item=237844",
       "icon": "inv_axe_1h_questbloodelf_b_01",
@@ -3503,6 +3625,20 @@
           ]
         },
         {
+          "item_level": 337,
+          "quality": 4,
+          "stats": {
+            "intellect": 565,
+            "stamina": 2024
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "魔导师的砍斧\n物品等级：\n337\n拾取后绑定\n单手\n斧\n93 - 193点伤害\n速度\n2.60\n（每秒伤害55.0点）\n+565 智力\n+2,024 耐力\n+\n51 随机属性1\n+\n51 随机属性2\n耐久: 110 / 110\n需要等级\n90\n售价:\n148\n7\n73",
+          "customizable_secondary_amounts": [
+            51,
+            51
+          ]
+        },
+        {
           "item_level": 338,
           "quality": 4,
           "stats": {
@@ -3540,7 +3676,7 @@
         "paladin",
         "shaman"
       ],
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 237843,
@@ -3583,7 +3719,7 @@
           "quality_5": 331
         }
       },
-      "default_optimizer_item_level": 338,
+      "default_optimizer_item_level": 337,
       "spark_of_tides_cost": 2,
       "wowhead_url": "https://www.wowhead.com/item=237843",
       "icon": "inv_sword_1h_questbloodelf_b_01",
@@ -3715,6 +3851,20 @@
           ]
         },
         {
+          "item_level": 337,
+          "quality": 4,
+          "stats": {
+            "intellect": 565,
+            "stamina": 2024
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "魔导师的法力之剑\n物品等级：\n337\n拾取后绑定\n单手\n剑\n107 - 179点伤害\n速度\n2.60\n（每秒伤害55.0点）\n+565 智力\n+2,024 耐力\n+\n51 随机属性1\n+\n51 随机属性2\n耐久: 110 / 110\n需要等级\n90\n售价:\n147\n53\n81",
+          "customizable_secondary_amounts": [
+            51,
+            51
+          ]
+        },
+        {
           "item_level": 338,
           "quality": 4,
           "stats": {
@@ -3757,7 +3907,7 @@
         "paladin",
         "warlock"
       ],
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 237838,
@@ -3800,7 +3950,7 @@
           "quality_5": 331
         }
       },
-      "default_optimizer_item_level": 338,
+      "default_optimizer_item_level": 337,
       "spark_of_tides_cost": 2,
       "wowhead_url": "https://www.wowhead.com/item=237838",
       "icon": "inv_knife_1h_questbloodelf_b_01",
@@ -3932,6 +4082,20 @@
           ]
         },
         {
+          "item_level": 337,
+          "quality": 4,
+          "stats": {
+            "intellect": 565,
+            "stamina": 2024
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "魔导师的仪式之匕\n物品等级：\n337\n拾取后绑定\n单手\n匕首\n74 - 124点伤害\n速度\n1.80\n（每秒伤害55.0点）\n+565 智力\n+2,024 耐力\n+\n51 随机属性1\n+\n51 随机属性2\n耐久: 80 / 80\n需要等级\n90\n售价:\n144\n85\n63",
+          "customizable_secondary_amounts": [
+            51,
+            51
+          ]
+        },
+        {
           "item_level": 338,
           "quality": 4,
           "stats": {
@@ -3980,7 +4144,7 @@
         "shaman",
         "warlock"
       ],
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 237849,
@@ -4023,7 +4187,7 @@
           "quality_5": 331
         }
       },
-      "default_optimizer_item_level": 338,
+      "default_optimizer_item_level": 337,
       "spark_of_tides_cost": 4,
       "wowhead_url": "https://www.wowhead.com/item=237849",
       "icon": "mace_2h_blacksmithing_d_04_icon",
@@ -4155,6 +4319,20 @@
           ]
         },
         {
+          "item_level": 337,
+          "quality": 4,
+          "stats": {
+            "intellect": 862,
+            "stamina": 4047
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "魔导师的送别\n物品等级：\n337\n拾取后绑定\n双手\n权杖\n229 - 296点伤害\n速度\n3.60\n（每秒伤害72.9点）\n+862 智力\n+4,047 耐力\n+\n102 随机属性1\n+\n102 随机属性2\n耐久: 120 / 120\n需要等级\n90\n售价:\n175\n2\n20",
+          "customizable_secondary_amounts": [
+            102,
+            102
+          ]
+        },
+        {
           "item_level": 338,
           "quality": 4,
           "stats": {
@@ -4187,7 +4365,7 @@
         "paladin",
         "shaman"
       ],
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 244679,
@@ -4234,7 +4412,7 @@
           "quality_5": 331
         }
       },
-      "default_optimizer_item_level": 338,
+      "default_optimizer_item_level": 337,
       "spark_of_tides_cost": 2,
       "sockets": 0,
       "unique_equipped": false,
@@ -4368,6 +4546,20 @@
           ]
         },
         {
+          "item_level": 337,
+          "quality": 4,
+          "stats": {
+            "agility": 97,
+            "stamina": 2024
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "密谋小径鱼钩\n物品等级：\n337\n拾取后绑定\n装备唯一：美化（2）\n单手\n匕首\n148 - 248点伤害\n速度\n1.80\n（每秒伤害110.0点）\n+97 敏捷\n+2,024 耐力\n+\n51 随机属性1\n+\n51 随机属性2\n耐久: 80 / 80\n装备：\n你的有害法术和技能有几率使你的目标流血，在10秒内每2造成(\n1\n*\n3231\n)点物理伤害。\n需要等级\n90\n售价:\n135\n72\n71",
+          "customizable_secondary_amounts": [
+            51,
+            51
+          ]
+        },
+        {
           "item_level": 338,
           "quality": 4,
           "stats": {
@@ -4391,7 +4583,7 @@
       "candidate_classes": [
         "rogue"
       ],
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 237839,
@@ -4434,7 +4626,7 @@
           "quality_5": 331
         }
       },
-      "default_optimizer_item_level": 338,
+      "default_optimizer_item_level": 337,
       "spark_of_tides_cost": 2,
       "wowhead_url": "https://www.wowhead.com/item=237839",
       "icon": "inv_sword_1h_questbloodelf_b_01",
@@ -4566,6 +4758,20 @@
           ]
         },
         {
+          "item_level": 337,
+          "quality": 4,
+          "stats": {
+            "stamina": 2024,
+            "agility_or_strength": 97
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "破法者的利剑\n物品等级：\n337\n拾取后绑定\n单手\n剑\n214 - 358点伤害\n速度\n2.60\n（每秒伤害110.0点）\n+97 [敏捷 or 力量]\n+2,024 耐力\n+\n51 随机属性1\n+\n51 随机属性2\n耐久: 110 / 110\n需要等级\n90\n售价:\n145\n39\n56",
+          "customizable_secondary_amounts": [
+            51,
+            51
+          ]
+        },
+        {
           "item_level": 338,
           "quality": 4,
           "stats": {
@@ -4607,7 +4813,7 @@
         "rogue",
         "warrior"
       ],
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 237831,
@@ -4650,7 +4856,7 @@
           "quality_5": 331
         }
       },
-      "default_optimizer_item_level": 338,
+      "default_optimizer_item_level": 337,
       "spark_of_tides_cost": 2,
       "wowhead_url": "https://www.wowhead.com/item=237831",
       "icon": "inv_shield_1h_questbloodelf_b_01",
@@ -4791,6 +4997,21 @@
           ]
         },
         {
+          "item_level": 337,
+          "quality": 4,
+          "stats": {
+            "strength": 97,
+            "intellect": 297,
+            "stamina": 2024
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "破法者的责难\n物品等级：\n337\n拾取后绑定\n副手\n盾\n1300护甲\n3250点格挡\n+97 力量\n+297 智力\n+2,024 耐力\n+\n51 随机属性1\n+\n51 随机属性2\n耐久: 120 / 120\n需要等级\n90\n售价:\n141\n11\n7",
+          "customizable_secondary_amounts": [
+            51,
+            51
+          ]
+        },
+        {
           "item_level": 338,
           "quality": 4,
           "stats": {
@@ -4824,7 +5045,7 @@
         "shaman",
         "warrior"
       ],
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 237841,
@@ -4867,7 +5088,7 @@
           "quality_5": 331
         }
       },
-      "default_optimizer_item_level": 338,
+      "default_optimizer_item_level": 337,
       "spark_of_tides_cost": 2,
       "wowhead_url": "https://www.wowhead.com/item=237841",
       "icon": "inv_mace_1h_questbloodelf_b_01",
@@ -4999,6 +5220,20 @@
           ]
         },
         {
+          "item_level": 337,
+          "quality": 4,
+          "stats": {
+            "stamina": 2024,
+            "agility_or_strength": 97
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "破法者的通牒\n物品等级：\n337\n拾取后绑定\n单手\n权杖\n250 - 322点伤害\n速度\n2.60\n（每秒伤害110.0点）\n+97 [敏捷 or 力量]\n+2,024 耐力\n+\n51 随机属性1\n+\n51 随机属性2\n耐久: 110 / 110\n需要等级\n90\n售价:\n146\n45\n95",
+          "customizable_secondary_amounts": [
+            51,
+            51
+          ]
+        },
+        {
           "item_level": 338,
           "quality": 4,
           "stats": {
@@ -5039,7 +5274,7 @@
         "shaman",
         "warrior"
       ],
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 237840,
@@ -5082,7 +5317,7 @@
           "quality_5": 331
         }
       },
-      "default_optimizer_item_level": 338,
+      "default_optimizer_item_level": 337,
       "spark_of_tides_cost": 2,
       "wowhead_url": "https://www.wowhead.com/item=237840",
       "icon": "inv_glaive_1h_questbloodelf_b_01",
@@ -5223,6 +5458,21 @@
           ]
         },
         {
+          "item_level": 337,
+          "quality": 4,
+          "stats": {
+            "intellect": 468,
+            "stamina": 2024,
+            "agility_or_intellect": 97
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "破法者的战刃\n物品等级：\n337\n拾取后绑定\n单手\n战刃\n222 - 351点伤害\n速度\n2.60\n（每秒伤害110.2点）\n+468 智力\n+97 [敏捷 or 智力]\n+2,024 耐力\n+\n51 随机属性1\n+\n51 随机属性2\n耐久: 120 / 120\n需要等级\n90\n售价:\n145\n93\n49",
+          "customizable_secondary_amounts": [
+            51,
+            51
+          ]
+        },
+        {
           "item_level": 338,
           "quality": 4,
           "stats": {
@@ -5252,7 +5502,7 @@
       "candidate_classes": [
         "demon_hunter"
       ],
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 237834,
@@ -5475,7 +5725,7 @@
           "quality_5": 331
         }
       },
-      "default_optimizer_item_level": 338,
+      "default_optimizer_item_level": 337,
       "spark_of_tides_cost": 4,
       "wowhead_url": "https://www.wowhead.com/item=244179",
       "icon": "inv_wand_24",
@@ -5607,6 +5857,20 @@
           ]
         },
         {
+          "item_level": 337,
+          "quality": 4,
+          "stats": {
+            "intellect": 565,
+            "stamina": 2024
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "魔导师的华丽法器\n物品等级：\n337\n拾取后绑定\n远程\n魔杖\n82 - 138点火焰伤害\n速度\n2.00\n（每秒伤害55.0点）\n+565 智力\n+2,024 耐力\n+\n51 随机属性1\n+\n51 随机属性2\n耐久: 110 / 110\n需要等级\n90\n售价:\n177\n39\n4",
+          "customizable_secondary_amounts": [
+            51,
+            51
+          ]
+        },
+        {
           "item_level": 338,
           "quality": 4,
           "stats": {
@@ -5643,7 +5907,7 @@
         "priest",
         "warlock"
       ],
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 244773,
@@ -7054,7 +7318,7 @@
           "quality_5": 331
         }
       },
-      "default_optimizer_item_level": 338,
+      "default_optimizer_item_level": 337,
       "spark_of_tides_cost": 4,
       "wowhead_url": "https://www.wowhead.com/item=268477",
       "icon": "inv_firearm_2h_raidmidnight_d_01",
@@ -7177,6 +7441,19 @@
           ]
         },
         {
+          "item_level": 337,
+          "quality": 4,
+          "stats": {
+            "agility": 194,
+            "stamina": 4047
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "P.O.W. x3\n物品等级：\n337\n拾取后绑定\n远程\n枪\n306 - 569点伤害\n速度\n3.00\n（每秒伤害145.8点）\n+194 敏捷\n+4,047 耐力\n+\n203 随机属性1\n耐久: 120 / 120\n需要等级\n90\n\"再快点，火力全开！\"\n售价:\n172\n10\n86",
+          "customizable_secondary_amounts": [
+            203
+          ]
+        },
+        {
           "item_level": 338,
           "quality": 4,
           "stats": {
@@ -7203,7 +7480,7 @@
       "candidate_classes": [
         "hunter"
       ],
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 244748,
@@ -7929,7 +8206,7 @@
           "quality_5": 331
         }
       },
-      "default_optimizer_item_level": 338,
+      "default_optimizer_item_level": 337,
       "spark_of_tides_cost": 2,
       "sockets": 0,
       "unique_equipped": false,
@@ -8018,6 +8295,15 @@
           "tooltip_zh_cn": "暗月统御：鲜血\n物品等级：\n331\n拾取后绑定\n装备唯一\n装备唯一：美化（2）\n饰品\n+174 [敏捷 or 力量 or 智力]\n装备：\n你的伤害法术和技能有几率赋予\n远行者的机敏\n，使你最低的次要属性提高\n836\n，持续15秒。\n当一名友方玩家死亡时，你最高的次要属性提高\n815\n，持续15秒。此效果每5分钟只能触发一次。\n此效果会被暗月徽记：鲜血所强化。\n需要等级\n90\n售价:\n73\n21\n84"
         },
         {
+          "item_level": 337,
+          "quality": 4,
+          "stats": {
+            "agility_or_strength_or_intellect": 184
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "暗月统御：鲜血\n物品等级：\n337\n拾取后绑定\n装备唯一\n装备唯一：美化（2）\n饰品\n+184 [敏捷 or 力量 or 智力]\n装备：\n你的伤害法术和技能有几率赋予\n远行者的机敏\n，使你最低的次要属性提高\n884\n，持续15秒。\n当一名友方玩家死亡时，你最高的次要属性提高\n886\n，持续15秒。此效果每5分钟只能触发一次。\n此效果会被暗月徽记：鲜血所强化。\n需要等级\n90\n售价:\n73\n21\n84"
+        },
+        {
           "item_level": 338,
           "quality": 4,
           "stats": {
@@ -8028,7 +8314,7 @@
         }
       ],
       "secondary_stat_mode": "fixed",
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 246304,
@@ -8070,7 +8356,7 @@
           "quality_5": 331
         }
       },
-      "default_optimizer_item_level": 338,
+      "default_optimizer_item_level": 337,
       "spark_of_tides_cost": 2,
       "sockets": 0,
       "unique_equipped": false,
@@ -8159,6 +8445,15 @@
           "tooltip_zh_cn": "暗月统御：狩猎\n物品等级：\n331\n拾取后绑定\n装备唯一\n装备唯一：美化（2）\n饰品\n+174 [敏捷 or 力量 or 智力]\n装备：\n根据目标生物类型，你的法术和技能有几率会使你的次要属性提高\n317\n，持续15秒。\n此效果会被暗月徽记：狩猎所强化。\n需要等级\n90\n售价:\n72\n95\n22"
         },
         {
+          "item_level": 337,
+          "quality": 4,
+          "stats": {
+            "agility_or_strength_or_intellect": 184
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "暗月统御：狩猎\n物品等级：\n337\n拾取后绑定\n装备唯一\n装备唯一：美化（2）\n饰品\n+184 [敏捷 or 力量 or 智力]\n装备：\n根据目标生物类型，你的法术和技能有几率会使你的次要属性提高\n335\n，持续15秒。\n此效果会被暗月徽记：狩猎所强化。\n需要等级\n90\n售价:\n72\n95\n22"
+        },
+        {
           "item_level": 338,
           "quality": 4,
           "stats": {
@@ -8169,7 +8464,7 @@
         }
       ],
       "secondary_stat_mode": "fixed",
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 246306,
@@ -8211,7 +8506,7 @@
           "quality_5": 331
         }
       },
-      "default_optimizer_item_level": 338,
+      "default_optimizer_item_level": 337,
       "spark_of_tides_cost": 2,
       "sockets": 0,
       "unique_equipped": false,
@@ -8300,6 +8595,15 @@
           "tooltip_zh_cn": "暗月统御：腐烂\n物品等级：\n331\n拾取后绑定\n装备唯一\n装备唯一：美化（2）\n饰品\n+174 [敏捷 or 力量 or 智力]\n装备：\n使你的目标受到腐烂的根系的折磨，每2秒造成\n753\n点自然伤害，持续6秒。此效果最多可叠加10层。新获得的层数不会刷新已有层数。\n此效果会被暗月徽记：腐烂所强化。\n需要等级\n90\n售价:\n73\n47\n75"
         },
         {
+          "item_level": 337,
+          "quality": 4,
+          "stats": {
+            "agility_or_strength_or_intellect": 184
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "暗月统御：腐烂\n物品等级：\n337\n拾取后绑定\n装备唯一\n装备唯一：美化（2）\n饰品\n+184 [敏捷 or 力量 or 智力]\n装备：\n使你的目标受到腐烂的根系的折磨，每2秒造成\n818\n点自然伤害，持续6秒。此效果最多可叠加10层。新获得的层数不会刷新已有层数。\n此效果会被暗月徽记：腐烂所强化。\n需要等级\n90\n售价:\n73\n47\n75"
+        },
+        {
           "item_level": 338,
           "quality": 4,
           "stats": {
@@ -8310,7 +8614,7 @@
         }
       ],
       "secondary_stat_mode": "fixed",
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 246307,
@@ -8352,7 +8656,7 @@
           "quality_5": 331
         }
       },
-      "default_optimizer_item_level": 338,
+      "default_optimizer_item_level": 337,
       "spark_of_tides_cost": 2,
       "sockets": 0,
       "unique_equipped": false,
@@ -8441,6 +8745,15 @@
           "tooltip_zh_cn": "暗月统御：虚空\n物品等级：\n331\n拾取后绑定\n装备唯一\n装备唯一：美化（2）\n饰品\n+174 [敏捷 or 力量 or 智力]\n装备：\n你的伤害法术和技能有几率使你在虚空琉璃中获得勇气，在15秒秒内获得\n232\n全能。多次施加可以重叠生效。\n此效果会被暗月徽记：虚空所强化。\n需要等级\n90\n售价:\n73\n74\n37"
         },
         {
+          "item_level": 337,
+          "quality": 4,
+          "stats": {
+            "agility_or_strength_or_intellect": 184
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "暗月统御：虚空\n物品等级：\n337\n拾取后绑定\n装备唯一\n装备唯一：美化（2）\n饰品\n+184 [敏捷 or 力量 or 智力]\n装备：\n你的伤害法术和技能有几率使你在虚空琉璃中获得勇气，在15秒秒内获得\n245\n全能。多次施加可以重叠生效。\n此效果会被暗月徽记：虚空所强化。\n需要等级\n90\n售价:\n73\n74\n37"
+        },
+        {
           "item_level": 338,
           "quality": 4,
           "stats": {
@@ -8451,7 +8764,7 @@
         }
       ],
       "secondary_stat_mode": "fixed",
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 245770,
@@ -8494,7 +8807,7 @@
           "quality_5": 331
         }
       },
-      "default_optimizer_item_level": 338,
+      "default_optimizer_item_level": 337,
       "spark_of_tides_cost": 4,
       "wowhead_url": "https://www.wowhead.com/item=245770",
       "icon": "inv_staff_2h_dungeonharronir_c_02",
@@ -8626,6 +8939,20 @@
           ]
         },
         {
+          "item_level": 337,
+          "quality": 4,
+          "stats": {
+            "intellect": 862,
+            "stamina": 4047
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "艾林哈籁手杖\n物品等级：\n337\n拾取后绑定\n双手\n法杖\n223 - 302点伤害\n速度\n3.60\n（每秒伤害72.9点）\n+862 智力\n+4,047 耐力\n+\n102 随机属性1\n+\n102 随机属性2\n耐久: 120 / 120\n需要等级\n90\n售价:\n170\n35\n38",
+          "customizable_secondary_amounts": [
+            102,
+            102
+          ]
+        },
+        {
           "item_level": 338,
           "quality": 4,
           "stats": {
@@ -8674,7 +9001,7 @@
         "shaman",
         "warlock"
       ],
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 245769,
@@ -8717,7 +9044,7 @@
           "quality_5": 331
         }
       },
-      "default_optimizer_item_level": 338,
+      "default_optimizer_item_level": 337,
       "spark_of_tides_cost": 2,
       "wowhead_url": "https://www.wowhead.com/item=245769",
       "icon": "inv_offhand_1h_dungeonharronir_c_01",
@@ -8849,6 +9176,20 @@
           ]
         },
         {
+          "item_level": 337,
+          "quality": 4,
+          "stats": {
+            "intellect": 297,
+            "stamina": 2024
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "艾林哈籁灯笼\n物品等级：\n337\n拾取后绑定\n副手物品\n+297 智力\n+2,024 耐力\n+\n51 随机属性1\n+\n51 随机属性2\n需要等级\n90\n售价:\n203\n65\n32",
+          "customizable_secondary_amounts": [
+            51,
+            51
+          ]
+        },
+        {
           "item_level": 338,
           "quality": 4,
           "stats": {
@@ -8897,7 +9238,7 @@
         "shaman",
         "warlock"
       ],
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 245771,
@@ -8940,7 +9281,7 @@
           "quality_5": 331
         }
       },
-      "default_optimizer_item_level": 338,
+      "default_optimizer_item_level": 337,
       "spark_of_tides_cost": 4,
       "wowhead_url": "https://www.wowhead.com/item=245771",
       "icon": "inv_staff_2h_dungeonharronir_c_01",
@@ -9072,6 +9413,20 @@
           ]
         },
         {
+          "item_level": 337,
+          "quality": 4,
+          "stats": {
+            "agility": 194,
+            "stamina": 4047
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "艾林哈籁刺杖\n物品等级：\n337\n拾取后绑定\n双手\n法杖\n446 - 604点伤害\n速度\n3.60\n（每秒伤害145.8点）\n+194 敏捷\n+4,047 耐力\n+\n102 随机属性1\n+\n102 随机属性2\n耐久: 120 / 120\n需要等级\n90\n售价:\n170\n97\n93",
+          "customizable_secondary_amounts": [
+            102,
+            102
+          ]
+        },
+        {
           "item_level": 338,
           "quality": 4,
           "stats": {
@@ -9104,7 +9459,7 @@
         "hunter",
         "monk"
       ],
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 265337,
@@ -9147,7 +9502,7 @@
           "quality_5": 331
         }
       },
-      "default_optimizer_item_level": 338,
+      "default_optimizer_item_level": 337,
       "spark_of_tides_cost": 4,
       "wowhead_url": "https://www.wowhead.com/item=265337",
       "icon": "inv_bow_1h_dungeonharronir_c_01",
@@ -9279,6 +9634,20 @@
           ]
         },
         {
+          "item_level": 337,
+          "quality": 4,
+          "stats": {
+            "agility": 194,
+            "stamina": 4047
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "艾林哈籁蔓枝弓\n物品等级：\n337\n拾取后绑定\n远程\n弓\n372 - 504点伤害\n速度\n3.00\n（每秒伤害146.0点）\n+194 敏捷\n+4,047 耐力\n+\n102 随机属性1\n+\n102 随机属性2\n耐久: 120 / 120\n需要等级\n90\n售价:\n174\n64\n53",
+          "customizable_secondary_amounts": [
+            102,
+            102
+          ]
+        },
+        {
           "item_level": 338,
           "quality": 4,
           "stats": {
@@ -9306,7 +9675,7 @@
       "candidate_classes": [
         "hunter"
       ],
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 240950,
@@ -9349,7 +9718,7 @@
           "quality_5": 331
         }
       },
-      "default_optimizer_item_level": 338,
+      "default_optimizer_item_level": 337,
       "spark_of_tides_cost": 2,
       "wowhead_url": "https://www.wowhead.com/item=240950",
       "icon": "inv_12_profession_jewelcrafting_necklace2_gold",
@@ -9472,6 +9841,19 @@
           ]
         },
         {
+          "item_level": 337,
+          "quality": 4,
+          "stats": {
+            "stamina": 2277
+          },
+          "sockets": 1,
+          "tooltip_zh_cn": "精工辛多雷护符\n物品等级：\n337\n拾取后绑定\n颈部\n+2,277 耐力\n+\n206 随机属性1\n+\n206 随机属性2\n棱彩插槽\n需要等级\n90\n售价:\n40\n47\n59",
+          "customizable_secondary_amounts": [
+            206,
+            206
+          ]
+        },
+        {
           "item_level": 338,
           "quality": 4,
           "stats": {
@@ -9491,7 +9873,7 @@
       "effect_stat_policy": "count_static_item_stats_only",
       "static_secondary_stats_included": true,
       "triggered_secondary_stats_included": false,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 241139,
@@ -9533,7 +9915,7 @@
           "quality_5": 331
         }
       },
-      "default_optimizer_item_level": 338,
+      "default_optimizer_item_level": 337,
       "spark_of_tides_cost": 2,
       "sockets": 1,
       "unique_equipped": true,
@@ -9640,6 +10022,17 @@
           "tooltip_zh_cn": "萨拉斯凤凰饰环\n物品等级：\n331\n拾取后绑定\n装备唯一：美化（2）\n颈部\n+2,124 耐力\n+\n216急速\n+\n182精通\n棱彩插槽\n装备：\n你的法术和技能有几率唤起不死鸟之焰，将你的目标包围其中。\n若你的目标是友方，为其在10秒内恢复[\n1\n*\n1388\n* (20)]点生命值。若你的目标是敌人，其在10秒内受到[\n1\n*\n926\n* (20)]点火焰伤害。\n镶嵌宝石每有一种不同的颜色，使烈焰效果提高1%。\n需要等级\n90\n售价:\n40\n95\n73"
         },
         {
+          "item_level": 337,
+          "quality": 4,
+          "stats": {
+            "stamina": 2277,
+            "haste": 224,
+            "mastery": 188
+          },
+          "sockets": 1,
+          "tooltip_zh_cn": "萨拉斯凤凰饰环\n物品等级：\n337\n拾取后绑定\n装备唯一：美化（2）\n颈部\n+2,277 耐力\n+\n224急速\n+\n188精通\n棱彩插槽\n装备：\n你的法术和技能有几率唤起不死鸟之焰，将你的目标包围其中。\n若你的目标是友方，为其在10秒内恢复[\n1\n*\n1475\n* (20)]点生命值。若你的目标是敌人，其在10秒内受到[\n1\n*\n983\n* (20)]点火焰伤害。\n镶嵌宝石每有一种不同的颜色，使烈焰效果提高1%。\n需要等级\n90\n售价:\n40\n95\n73"
+        },
+        {
           "item_level": 338,
           "quality": 4,
           "stats": {
@@ -9652,7 +10045,7 @@
         }
       ],
       "secondary_stat_mode": "fixed",
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 251073,
@@ -9694,7 +10087,7 @@
           "quality_5": 331
         }
       },
-      "default_optimizer_item_level": 338,
+      "default_optimizer_item_level": 337,
       "spark_of_tides_cost": 2,
       "sockets": 1,
       "unique_equipped": true,
@@ -9801,6 +10194,17 @@
           "tooltip_zh_cn": "虚空石护盾阵列\n物品等级：\n331\n拾取后绑定\n装备唯一：美化（2）\n颈部\n+2,124 耐力\n+\n159急速\n+\n239全能\n棱彩插槽\n使用:\n使用：激活阵列并生成虚空石屏障，吸收\n169441\n点伤害，持续10秒。\n镶嵌宝石每有一种不同的颜色，使屏障效果额外提高1%。\n(3​分钟 冷却)\n需要等级\n90\n售价:\n41\n64\n32"
         },
         {
+          "item_level": 337,
+          "quality": 4,
+          "stats": {
+            "stamina": 2277,
+            "haste": 165,
+            "versatility": 247
+          },
+          "sockets": 1,
+          "tooltip_zh_cn": "虚空石护盾阵列\n物品等级：\n337\n拾取后绑定\n装备唯一：美化（2）\n颈部\n+2,277 耐力\n+\n165急速\n+\n247全能\n棱彩插槽\n使用:\n使用：激活阵列并生成虚空石屏障，吸收\n180032\n点伤害，持续10秒。\n镶嵌宝石每有一种不同的颜色，使屏障效果额外提高1%。\n(3​分钟 冷却)\n需要等级\n90\n售价:\n41\n64\n32"
+        },
+        {
           "item_level": 338,
           "quality": 4,
           "stats": {
@@ -9813,7 +10217,7 @@
         }
       ],
       "secondary_stat_mode": "fixed",
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 251513,

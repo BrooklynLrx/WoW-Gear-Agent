@@ -2,7 +2,7 @@
   "patch": "12.1",
   "season": "Midnight Season 2",
   "generated_at": "2026-08-12T11:52:10.802585+00:00",
-  "scope": "Hero/Myth tracks; Delve armor, cloak and ring default Myth 6/6 334; Delve neck and off-hand default Ascendant Myth 340; other Delve weapons/trinkets remain Hero 6/6 321",
+  "scope": "Hero/Myth tracks; Delve armor, cloak and ring default Myth 6/6 334; Delve neck and off-hand default Ascendant Myth 341; other Delve weapons/trinkets remain Hero 6/6 321",
   "upgrade_tracks": {
     "hero": {
       "1/6": 305,
@@ -273,6 +273,17 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "树生藤条项圈\n物品等级：\n340\n升级：神话\n1/6\n拾取后绑定\n颈部\n+2,355 耐力\n+\n245暴击\n+\n174全能\n需要等级\n90\n在达到地下堡行者的旅程等级9后，只能在难度11的地下堡内获得。\n售价:\n25\n52\n5"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "stamina": 2382,
+            "critical_strike": 247,
+            "versatility": 175
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "树生藤条项圈\n物品等级：\n341\n升级：神话\n1/6\n拾取后绑定\n颈部\n+2,382 耐力\n+\n247暴击\n+\n175全能\n需要等级\n90\n在达到地下堡行者的旅程等级9后，只能在难度11的地下堡内获得。\n售价:\n25\n53\n33"
         }
       ],
       "name_zh_cn": "树生藤条项圈",
@@ -353,9 +364,9 @@
         "warrior.protection"
       ],
       "eligibility_status": "broad_rule_v1",
-      "default_optimizer_item_level": 340,
+      "default_optimizer_item_level": 341,
       "myth_reward_source": "https://www.wowhead.com/item=285044/venerated-loa-armament",
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 249667,
@@ -728,6 +739,19 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "荆棘壁障\n物品等级：\n340\n升级：神话\n1/6\n拾取后绑定\n副手\n盾\n1327护甲\n3317点格挡\n+100 力量\n+306 智力\n+2,094 耐力\n+\n60全能\n+\n43精通\n耐久: 120 / 120\n需要等级\n90\n在达到地下堡行者的旅程等级9后，只能在难度11的地下堡内获得。\n售价:\n57\n71\n2"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "strength": 101,
+            "intellect": 309,
+            "stamina": 2118,
+            "versatility": 60,
+            "mastery": 43
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "荆棘壁障\n物品等级：\n341\n升级：神话\n1/6\n拾取后绑定\n副手\n盾\n1337护甲\n3342点格挡\n+101 力量\n+309 智力\n+2,118 耐力\n+\n60全能\n+\n43精通\n耐久: 120 / 120\n需要等级\n90\n在达到地下堡行者的旅程等级9后，只能在难度11的地下堡内获得。\n售价:\n57\n73\n90"
         }
       ],
       "name_zh_cn": "荆棘壁障",
@@ -766,9 +790,9 @@
         "warrior.protection"
       ],
       "eligibility_status": "broad_rule_v1",
-      "default_optimizer_item_level": 340,
+      "default_optimizer_item_level": 341,
       "myth_reward_source": "https://www.wowhead.com/npc=256670/zahran",
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 272147,
@@ -2020,6 +2044,18 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "始祖花灯笼\n物品等级：\n340\n升级：神话\n1/6\n拾取后绑定\n副手物品\n+306 智力\n+2,094 耐力\n+\n43急速\n+\n60精通\n需要等级\n90\n在达到地下堡行者的旅程等级9后，只能在难度11的地下堡内获得。\n售价:\n51\n97\n57"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "intellect": 309,
+            "stamina": 2118,
+            "haste": 43,
+            "mastery": 60
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "始祖花灯笼\n物品等级：\n341\n升级：神话\n1/6\n拾取后绑定\n副手物品\n+309 智力\n+2,118 耐力\n+\n43急速\n+\n60精通\n需要等级\n90\n在达到地下堡行者的旅程等级9后，只能在难度11的地下堡内获得。\n售价:\n52\n17"
         }
       ],
       "name_zh_cn": "始祖花灯笼",
@@ -2069,9 +2105,9 @@
         "warlock.destruction"
       ],
       "eligibility_status": "broad_rule_v1",
-      "default_optimizer_item_level": 340,
+      "default_optimizer_item_level": 341,
       "myth_reward_source": "https://www.wowhead.com/npc=256670/zahran",
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 249670,
@@ -4710,6 +4746,17 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "夜行棘刺护符\n物品等级：\n340\n升级：神话\n1/6\n拾取后绑定\n颈部\n+2,355 耐力\n+\n245暴击\n+\n174急速\n需要等级\n90\n在达到地下堡行者的旅程等级9后，只能在难度11的地下堡内获得。\n售价:\n25\n42\n76"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "stamina": 2382,
+            "critical_strike": 247,
+            "haste": 175
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "夜行棘刺护符\n物品等级：\n341\n升级：神话\n1/6\n拾取后绑定\n颈部\n+2,382 耐力\n+\n247暴击\n+\n175急速\n需要等级\n90\n在达到地下堡行者的旅程等级9后，只能在难度11的地下堡内获得。\n售价:\n25\n44\n3"
         }
       ],
       "name_zh_cn": "夜行棘刺护符",
@@ -4790,9 +4837,9 @@
         "warrior.protection"
       ],
       "eligibility_status": "broad_rule_v1",
-      "default_optimizer_item_level": 340,
+      "default_optimizer_item_level": 341,
       "myth_reward_source": "https://www.wowhead.com/item=285044/venerated-loa-armament",
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 274496,
@@ -8497,14 +8544,25 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "蛇纹护符\n晋升毒液铸造：英雄\n物品等级：\n340\n拾取后绑定\n颈部\n+2,355 耐力\n+\n245暴击\n+\n174急速\n需要等级\n90\n售价:\n24\n64\n26"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "stamina": 2382,
+            "critical_strike": 247,
+            "haste": 175
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "蛇纹护符\n晋升毒液铸造：英雄\n物品等级：\n341\n拾取后绑定\n颈部\n+2,382 耐力\n+\n247暴击\n+\n175急速\n需要等级\n90\n售价:\n24\n65\n49\n掉落于: 阿兹塔雷克\n掉落几率: 2.50%"
         }
       ],
       "name_zh_cn": "蛇纹护符",
       "icon": "inv_121_jewelry_neck03_purple",
       "instance_zh_cn": "地下堡",
       "encounter_source_en": null,
-      "encounter_zh_cn": null,
-      "encounter_localization_source": "missing",
+      "encounter_zh_cn": "阿兹塔雷克",
+      "encounter_localization_source": "item_tooltip",
       "drop_sources": [
         {
           "instance": "Midnight Delves",
@@ -8577,9 +8635,9 @@
         "warrior.protection"
       ],
       "eligibility_status": "broad_rule_v1",
-      "default_optimizer_item_level": 340,
+      "default_optimizer_item_level": 341,
       "myth_reward_source": "https://www.wowhead.com/item=285044/venerated-loa-armament",
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 272275,
@@ -8627,6 +8685,18 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "魂咏者之角\n物品等级：\n340\n升级：英雄\n6/6\n拾取后绑定\n副手物品\n+306 智力\n+2,094 耐力\n+\n39暴击\n+\n64全能\n需要等级\n90\n售价:\n51\n77\n95"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "intellect": 309,
+            "stamina": 2118,
+            "critical_strike": 39,
+            "versatility": 64
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "魂咏者之角\n物品等级：\n341\n升级：英雄\n6/6\n拾取后绑定\n副手物品\n+309 智力\n+2,118 耐力\n+\n39暴击\n+\n64全能\n需要等级\n90\n售价:\n51\n80\n54"
         }
       ],
       "name_zh_cn": "魂咏者之角",
@@ -8676,9 +8746,9 @@
         "warlock.destruction"
       ],
       "eligibility_status": "broad_rule_v1",
-      "default_optimizer_item_level": 340,
+      "default_optimizer_item_level": 341,
       "myth_reward_source": "https://www.wowhead.com/npc=256670/zahran",
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 274498,
@@ -10753,6 +10823,19 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "哀嚎壁垒\n物品等级：\n340\n升级：英雄\n6/6\n拾取后绑定\n副手\n盾\n1327护甲\n3317点格挡\n+100 力量\n+306 智力\n+2,094 耐力\n+\n64急速\n+\n39全能\n耐久: 120 / 120\n需要等级\n90\n售价:\n55\n42\n98"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "strength": 101,
+            "intellect": 309,
+            "stamina": 2118,
+            "haste": 65,
+            "versatility": 39
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "哀嚎壁垒\n物品等级：\n341\n升级：英雄\n6/6\n拾取后绑定\n副手\n盾\n1337护甲\n3342点格挡\n+101 力量\n+309 智力\n+2,118 耐力\n+\n65急速\n+\n39全能\n耐久: 120 / 120\n需要等级\n90\n售价:\n55\n45\n75"
         }
       ],
       "name_zh_cn": "哀嚎壁垒",
@@ -10791,9 +10874,9 @@
         "warrior.protection"
       ],
       "eligibility_status": "broad_rule_v1",
-      "default_optimizer_item_level": 340,
+      "default_optimizer_item_level": 341,
       "myth_reward_source": "https://www.wowhead.com/npc=256670/zahran",
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 272228,
@@ -10838,14 +10921,25 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "呢喃颈饰\n晋升毒液铸造：英雄\n物品等级：\n340\n拾取后绑定\n颈部\n+2,355 耐力\n+\n174全能\n+\n245精通\n需要等级\n90\n售价:\n24\n54\n71"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "stamina": 2382,
+            "versatility": 175,
+            "mastery": 247
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "呢喃颈饰\n晋升毒液铸造：英雄\n物品等级：\n341\n拾取后绑定\n颈部\n+2,382 耐力\n+\n175全能\n+\n247精通\n需要等级\n90\n售价:\n24\n55\n94\n掉落于: 阿兹塔雷克\n掉落几率: 2.50%"
         }
       ],
       "name_zh_cn": "呢喃颈饰",
       "icon": "inv_121_jewelry_neck02_purple",
       "instance_zh_cn": "地下堡",
       "encounter_source_en": null,
-      "encounter_zh_cn": null,
-      "encounter_localization_source": "missing",
+      "encounter_zh_cn": "阿兹塔雷克",
+      "encounter_localization_source": "item_tooltip",
       "drop_sources": [
         {
           "instance": "Midnight Delves",
@@ -10918,9 +11012,9 @@
         "warrior.protection"
       ],
       "eligibility_status": "broad_rule_v1",
-      "default_optimizer_item_level": 340,
+      "default_optimizer_item_level": 341,
       "myth_reward_source": "https://www.wowhead.com/item=285044/venerated-loa-armament",
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 249662,
@@ -11300,6 +11394,18 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "毒液蚀刻新月刃\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n单手\n斧\n95 - 199点伤害\n速度\n2.60\n（每秒伤害56.5点）\n+581 智力\n+2,094 耐力\n+\n48暴击\n+\n54精通\n耐久: 110 / 110\n需要等级\n90\n售价:\n85\n84\n掉落于: 拉维\n掉落几率: 10.00%"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "intellect": 586,
+            "stamina": 2118,
+            "critical_strike": 49,
+            "mastery": 55
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "毒液蚀刻新月刃\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n单手\n斧\n96 - 201点伤害\n速度\n2.60\n（每秒伤害57.1点）\n+586 智力\n+2,118 耐力\n+\n49暴击\n+\n55精通\n耐久: 110 / 110\n需要等级\n90\n售价:\n85\n5\n7\n掉落于: 拉维\n掉落几率: 2.70%"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=273780",
@@ -11345,8 +11451,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 273793,
@@ -11502,6 +11608,19 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "多头蛇刺双刃\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n单手\n战刃\n228 - 361点伤害\n速度\n2.60\n（每秒伤害113.3点）\n+481 智力\n+100 [敏捷 or 智力]\n+2,094 耐力\n+\n46全能\n+\n57精通\n耐久: 120 / 120\n需要等级\n90\n售价:\n82\n77\n93\n掉落于: 拉维"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "intellect": 485,
+            "stamina": 2118,
+            "agility_or_intellect": 101,
+            "versatility": 46,
+            "mastery": 58
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "多头蛇刺双刃\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n单手\n战刃\n230 - 364点伤害\n速度\n2.60\n（每秒伤害114.2点）\n+485 智力\n+101 [敏捷 or 智力]\n+2,118 耐力\n+\n46全能\n+\n58精通\n耐久: 120 / 120\n需要等级\n90\n售价:\n82\n82\n4\n掉落于: 拉维"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=273793",
@@ -11534,8 +11653,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 273785,
@@ -12163,6 +12282,15 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "盘卷牙石\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n装备唯一\n饰品\n+190 力量\n使用:\n以你的目标为核心，连续释放出3次涂毒撕咬，总计造成[(\n107466\n* 3) *\n1\n])点自然伤害，该伤害将由附近的敌人共同分摊。\n每额外击中一个敌人，伤害提高30%，最多150%。\n(1​分钟 冷却)\n需要等级\n90\n售价:\n50\n4\n96\n掉落于: 拉维"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "strength": 191
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "盘卷牙石\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n装备唯一\n饰品\n+191 力量\n使用:\n以你的目标为核心，连续释放出3次涂毒撕咬，总计造成[(\n108961\n* 3) *\n1\n])点自然伤害，该伤害将由附近的敌人共同分摊。\n每额外击中一个敌人，伤害提高30%，最多150%。\n(1​分钟 冷却)\n需要等级\n90\n售价:\n50\n7\n46\n掉落于: 拉维"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=273795",
@@ -12212,8 +12340,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 273796,
@@ -12325,6 +12453,15 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "一瓶肮脏的烈性毒液\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n装备唯一\n饰品\n+190 [敏捷 or 力量 or 智力]\n使用:\n只需小口啜饮这瓶毒液，就能使你的一项随机次要属性提升\n988\n，持续15秒。但代价是，随后你的另一项随机次要属性将降低\n141\n，同样持续15秒。\n(2​分钟 冷却)\n需要等级\n90\n\"可疑吗？没错。能喝吗？……严格来说，能喝。\"\n售价:\n50\n24\n6\n掉落于: 拉维"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "agility_or_strength_or_intellect": 191
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "一瓶肮脏的烈性毒液\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n装备唯一\n饰品\n+191 [敏捷 or 力量 or 智力]\n使用:\n只需小口啜饮这瓶毒液，就能使你的一项随机次要属性提升\n992\n，持续15秒。但代价是，随后你的另一项随机次要属性将降低\n142\n，同样持续15秒。\n(2​分钟 冷却)\n需要等级\n90\n\"可疑吗？没错。能喝吗？……严格来说，能喝。\"\n售价:\n50\n26\n57\n掉落于: 拉维\n掉落几率: 13.51%"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=273796",
@@ -12406,8 +12543,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 273782,
@@ -12552,6 +12689,18 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "邪恶扭牙长柄战刃\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n双手\n长柄武器\n378 - 702点伤害\n速度\n3.60\n（每秒伤害150.0点）\n+199 力量\n+4,187 耐力\n+\n113暴击\n+\n93急速\n耐久: 120 / 120\n需要等级\n90\n售价:\n107\n4\n59\n掉落于: 扭缠盘蛇"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "strength": 201,
+            "stamina": 4235,
+            "critical_strike": 114,
+            "haste": 93
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "邪恶扭牙长柄战刃\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n双手\n长柄武器\n381 - 709点伤害\n速度\n3.60\n（每秒伤害151.4点）\n+201 力量\n+4,235 耐力\n+\n114暴击\n+\n93急速\n耐久: 120 / 120\n需要等级\n90\n售价:\n107\n9\n91\n掉落于: 扭缠盘蛇\n掉落几率: 2.63%"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=273782",
@@ -12594,8 +12743,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 273783,
@@ -12740,6 +12889,18 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "涂毒战杖\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n双手\n法杖\n459 - 621点伤害\n速度\n3.60\n（每秒伤害150.0点）\n+199 敏捷\n+4,187 耐力\n+\n119急速\n+\n87精通\n耐久: 120 / 120\n需要等级\n90\n售价:\n110\n29\n49\n掉落于: 扭缠盘蛇"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "agility": 201,
+            "stamina": 4235,
+            "haste": 120,
+            "mastery": 87
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "涂毒战杖\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n双手\n法杖\n463 - 627点伤害\n速度\n3.60\n（每秒伤害151.4点）\n+201 敏捷\n+4,235 耐力\n+\n120急速\n+\n87精通\n耐久: 120 / 120\n需要等级\n90\n售价:\n110\n34\n98\n掉落于: 扭缠盘蛇"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=273783",
@@ -12784,8 +12945,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 273786,
@@ -13268,6 +13429,17 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "护卫之牙束带\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n颈部\n+2,355 耐力\n+\n238暴击\n+\n181急速\n需要等级\n90\n售价:\n25\n59\n80\n掉落于: 扭缠盘蛇\n掉落几率: 20.00%"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "stamina": 2382,
+            "critical_strike": 240,
+            "haste": 182
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "护卫之牙束带\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n颈部\n+2,382 耐力\n+\n240暴击\n+\n182急速\n需要等级\n90\n售价:\n25\n61\n8\n掉落于: 扭缠盘蛇\n掉落几率: 10.53%"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=273781",
@@ -13349,8 +13521,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 273779,
@@ -13495,6 +13667,18 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "有害聚焦之牙\n史诗钥石\n物品等级：\n340\n升级：神话\n6/6\n拾取后绑定\n副手物品\n+306 智力\n+2,094 耐力\n+\n58暴击\n+\n45急速\n需要等级\n90\n售价:\n50\n81\n38\n掉落于: 扭缠盘蛇"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "intellect": 309,
+            "stamina": 2118,
+            "critical_strike": 58,
+            "haste": 45
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "有害聚焦之牙\n史诗钥石\n物品等级：\n341\n升级：神话\n6/6\n拾取后绑定\n副手物品\n+309 智力\n+2,118 耐力\n+\n58暴击\n+\n45急速\n需要等级\n90\n售价:\n50\n83\n92\n掉落于: 扭缠盘蛇\n掉落几率: 2.63%"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=273779",
@@ -13545,8 +13729,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 273787,
@@ -13830,6 +14014,15 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "蠕动毒蛇之结\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n装备唯一\n饰品\n+190 智力\n装备：\n你的伤害性法术有一定几率成功蛊惑一条毒蛇，让它对着你的目标喷吐毒液，造成(\n22972\n*\n1\n)点自然伤害，该伤害将由附近的敌人共同分摊。\n每额外击中一个敌人，伤害提高30%，最多150%。\n主要目标还将在接下来的15秒内，额外承受(\n22972\n*\n1\n)点自然伤害。\n需要等级\n90\n售价:\n49\n85\n85\n掉落于: 扭缠盘蛇"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "intellect": 191
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "蠕动毒蛇之结\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n装备唯一\n饰品\n+191 智力\n装备：\n你的伤害性法术有一定几率成功蛊惑一条毒蛇，让它对着你的目标喷吐毒液，造成(\n23292\n*\n1\n)点自然伤害，该伤害将由附近的敌人共同分摊。\n每额外击中一个敌人，伤害提高30%，最多150%。\n主要目标还将在接下来的15秒内，额外承受(\n23292\n*\n1\n)点自然伤害。\n需要等级\n90\n售价:\n49\n88\n34\n掉落于: 扭缠盘蛇"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=273794",
@@ -13890,8 +14083,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 273778,
@@ -14036,6 +14229,18 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "抛光的光木引导匕首\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n单手\n匕首\n76 - 127点伤害\n速度\n1.80\n（每秒伤害56.4点）\n+581 智力\n+2,094 耐力\n+\n57急速\n+\n46精通\n耐久: 80 / 80\n装备：\n你的伤害性法术有几率向目标发射一枚光之微粒，造成(\n15590\n*\n1\n)点神圣伤害（由附近的敌人分摊）。\n每额外击中一个敌人，伤害提高30%，最多150%。\n需要等级\n90\n售价:\n84\n37\n15\n掉落于: 祖尔加"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "intellect": 586,
+            "stamina": 2118,
+            "haste": 58,
+            "mastery": 46
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "抛光的光木引导匕首\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n单手\n匕首\n77 - 129点伤害\n速度\n1.80\n（每秒伤害57.2点）\n+586 智力\n+2,118 耐力\n+\n58急速\n+\n46精通\n耐久: 80 / 80\n装备：\n你的伤害性法术有几率向目标发射一枚光之微粒，造成(\n15807\n*\n1\n)点神圣伤害（由附近的敌人分摊）。\n每额外击中一个敌人，伤害提高30%，最多150%。\n需要等级\n90\n售价:\n84\n41\n35\n掉落于: 祖尔加"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=273778",
@@ -14089,8 +14294,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 275070,
@@ -14235,6 +14440,18 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "锋利的光木挥砍者\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n单手\n匕首\n152 - 255点伤害\n速度\n1.80\n（每秒伤害113.1点）\n+100 敏捷\n+2,094 耐力\n+\n60暴击\n+\n43急速\n耐久: 80 / 80\n装备：\n你的伤害性攻击和技能有几率灼烧目标，造成\n6235\n点神圣伤害。\n需要等级\n90\n售价:\n83\n14\n8\n掉落于: 祖尔加"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "agility": 101,
+            "stamina": 2118,
+            "critical_strike": 60,
+            "haste": 44
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "锋利的光木挥砍者\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n单手\n匕首\n154 - 257点伤害\n速度\n1.80\n（每秒伤害114.2点）\n+101 敏捷\n+2,118 耐力\n+\n60暴击\n+\n44急速\n耐久: 80 / 80\n装备：\n你的伤害性攻击和技能有几率灼烧目标，造成\n6322\n点神圣伤害。\n需要等级\n90\n售价:\n83\n18\n21\n掉落于: 祖尔加"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=275070",
@@ -14277,8 +14494,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 273773,
@@ -15116,6 +15333,18 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "阿曼尼先祖反曲弓\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n远程\n弓\n382 - 518点伤害\n速度\n3.00\n（每秒伤害150.0点）\n+199 敏捷\n+4,187 耐力\n+\n118急速\n+\n88精通\n耐久: 120 / 120\n需要等级\n90\n售价:\n110\n69\n30\n掉落于: 祖尔加"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "agility": 201,
+            "stamina": 4235,
+            "haste": 118,
+            "mastery": 89
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "阿曼尼先祖反曲弓\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n远程\n弓\n386 - 523点伤害\n速度\n3.00\n（每秒伤害151.5点）\n+201 敏捷\n+4,235 耐力\n+\n118急速\n+\n89精通\n耐久: 120 / 120\n需要等级\n90\n售价:\n110\n74\n80\n掉落于: 祖尔加"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=273784",
@@ -15148,8 +15377,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 273792,
@@ -15464,6 +15693,15 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "破损的阿曼尼战旗\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n装备唯一\n饰品\n+190 [敏捷 or 力量]\n使用:\n重重地插下这面战旗，持续15秒！在这面战旗周围12码范围内战斗，将使你内心充满战斗狂热，让你最高的次要属性提升\n588\n。在战旗存在期间，只要成功击败至少1名敌人，就能使战旗的持续时间延长5秒。\n(1​分钟，30​秒 冷却)\n需要等级\n90\n\"虽饱经岁月磨损，但它曾引领阿曼尼在过去的岁月中夺取无数胜利。\"\n售价:\n50\n42\n65\n掉落于: 祖尔加"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "agility_or_strength": 191
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "破损的阿曼尼战旗\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n装备唯一\n饰品\n+191 [敏捷 or 力量]\n使用:\n重重地插下这面战旗，持续15秒！在这面战旗周围12码范围内战斗，将使你内心充满战斗狂热，让你最高的次要属性提升\n590\n。在战旗存在期间，只要成功击败至少1名敌人，就能使战旗的持续时间延长5秒。\n(1​分钟，30​秒 冷却)\n需要等级\n90\n\"虽饱经岁月磨损，但它曾引领阿曼尼在过去的岁月中夺取无数胜利。\"\n售价:\n50\n45\n17\n掉落于: 祖尔加"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=273797",
@@ -15526,8 +15764,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 251156,
@@ -15672,6 +15910,18 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "堕落代言人法杖\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n双手\n法杖\n229 - 311点伤害\n速度\n3.60\n（每秒伤害75.0点）\n+887 智力\n+4,187 耐力\n+\n129急速\n+\n76全能\n耐久: 100 / 100\n需要等级\n90\n售价:\n109\n14\n38\n掉落于: 纳洛拉克"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "intellect": 895,
+            "stamina": 4235,
+            "haste": 130,
+            "versatility": 77
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "堕落代言人法杖\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n双手\n法杖\n231 - 314点伤害\n速度\n3.60\n（每秒伤害75.7点）\n+895 智力\n+4,235 耐力\n+\n130急速\n+\n77全能\n耐久: 100 / 100\n需要等级\n90\n售价:\n109\n19\n81\n掉落于: 纳洛拉克"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=251156",
@@ -15725,8 +15975,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 251160,
@@ -16381,6 +16631,17 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "冲锋巨熊项圈\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n颈部\n+2,355 耐力\n+\n144暴击\n+\n275急速\n需要等级\n90\n售价:\n25\n90\n78\n掉落于: 纳洛拉克"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "stamina": 2382,
+            "critical_strike": 144,
+            "haste": 277
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "冲锋巨熊项圈\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n颈部\n+2,382 耐力\n+\n144暴击\n+\n277急速\n需要等级\n90\n售价:\n25\n92\n7\n掉落于: 纳洛拉克"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=251173",
@@ -16462,8 +16723,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 251214,
@@ -16747,6 +17008,15 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "战争之神神像\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n装备唯一\n饰品\n+\n147暴击\n装备：\n你已向纳洛拉克证明了自己的价值。你的技能有几率与战争之神的狂怒咆哮产生共鸣，使你获得\n289\n点力量，持续15秒。\n附近获得纳洛拉克青睐的盟友将受到激励，在10秒内移动速度提高25%。\n需要等级\n90\n售价:\n50\n45\n75\n掉落于: 纳洛拉克"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "critical_strike": 148
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "战争之神神像\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n装备唯一\n饰品\n+\n148暴击\n装备：\n你已向纳洛拉克证明了自己的价值。你的技能有几率与战争之神的狂怒咆哮产生共鸣，使你获得\n290\n点力量，持续15秒。\n附近获得纳洛拉克青睐的盟友将受到激励，在10秒内移动速度提高25%。\n需要等级\n90\n售价:\n50\n48\n27\n掉落于: 纳洛拉克"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=250229",
@@ -16828,8 +17098,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 251149,
@@ -16974,6 +17244,18 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "胜利者的闪冻刀刃\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n双手\n长柄武器\n378 - 702点伤害\n速度\n3.60\n（每秒伤害150.0点）\n+199 敏捷\n+4,187 耐力\n+\n85急速\n+\n121精通\n耐久: 120 / 120\n需要等级\n90\n售价:\n103\n52\n79\n掉落于: 寒冬哨兵"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "agility": 201,
+            "stamina": 4235,
+            "haste": 86,
+            "mastery": 121
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "胜利者的闪冻刀刃\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n双手\n长柄武器\n381 - 709点伤害\n速度\n3.60\n（每秒伤害151.4点）\n+201 敏捷\n+4,235 耐力\n+\n86急速\n+\n121精通\n耐久: 120 / 120\n需要等级\n90\n售价:\n103\n57\n94\n掉落于: 寒冬哨兵"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=251149",
@@ -17015,8 +17297,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 251154,
@@ -17854,6 +18136,18 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "恒常冰封护符\n史诗钥石\n物品等级：\n340\n升级：神话\n6/6\n拾取后绑定\n副手物品\n+306 智力\n+2,094 耐力\n+\n43暴击\n+\n60精通\n需要等级\n90\n售价:\n53\n87\n61\n掉落于: 寒冬哨兵"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "intellect": 309,
+            "stamina": 2118,
+            "critical_strike": 43,
+            "mastery": 60
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "恒常冰封护符\n史诗钥石\n物品等级：\n341\n升级：神话\n6/6\n拾取后绑定\n副手物品\n+309 智力\n+2,118 耐力\n+\n43暴击\n+\n60精通\n需要等级\n90\n售价:\n53\n90\n30\n掉落于: 寒冬哨兵"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=271681",
@@ -17904,8 +18198,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 251151,
@@ -18233,6 +18527,19 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "风暴庇护\n史诗钥石\n物品等级：\n340\n升级：神话\n6/6\n拾取后绑定\n副手\n盾\n1327护甲\n3317点格挡\n+100 力量\n+306 智力\n+2,094 耐力\n+\n65急速\n+\n38精通\n耐久: 120 / 120\n需要等级\n90\n售价:\n53\n20\n99\n掉落于: 寒冬哨兵"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "strength": 101,
+            "intellect": 309,
+            "stamina": 2118,
+            "haste": 65,
+            "mastery": 38
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "风暴庇护\n史诗钥石\n物品等级：\n341\n升级：神话\n6/6\n拾取后绑定\n副手\n盾\n1337护甲\n3342点格挡\n+101 力量\n+309 智力\n+2,118 耐力\n+\n65急速\n+\n38精通\n耐久: 120 / 120\n需要等级\n90\n售价:\n53\n23\n65\n掉落于: 寒冬哨兵"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=251150",
@@ -18272,8 +18579,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 250244,
@@ -18363,6 +18670,13 @@
           "stats": {},
           "sockets": 0,
           "tooltip_zh_cn": "永冻精华\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n装备唯一\n饰品\n装备：\n你获得了纳洛拉克的坚毅恩赐。受到伤害时有几率获得一层冰霜印记，使你的爆击提高\n87\n，持续15秒，最多可叠加10层。\n如果生命值降至25%以下，储备会爆发，消耗所有印记形成寒冰屏障，每层印记可吸收\n78377\n点伤害，持续10秒。\n需要等级\n90\n售价:\n49\n50\n73\n掉落于: 寒冬哨兵"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {},
+          "sockets": 0,
+          "tooltip_zh_cn": "永冻精华\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n装备唯一\n饰品\n装备：\n你获得了纳洛拉克的坚毅恩赐。受到伤害时有几率获得一层冰霜印记，使你的爆击提高\n88\n，持续15秒，最多可叠加10层。\n如果生命值降至25%以下，储备会爆发，消耗所有印记形成寒冰屏障，每层印记可吸收\n79173\n点伤害，持续10秒。\n需要等级\n90\n售价:\n49\n53\n21\n掉落于: 寒冬哨兵"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=250244",
@@ -18410,8 +18724,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 251143,
@@ -18556,6 +18870,18 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "严酷收割手套\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n单手\n拳套\n243 - 346点伤害\n速度\n2.60\n（每秒伤害113.3点）\n+100 敏捷\n+2,094 耐力\n+\n60急速\n+\n43全能\n耐久: 65 / 65\n需要等级\n90\n售价:\n89\n54\n42\n掉落于: [The Hoardmonger]"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "agility": 101,
+            "stamina": 2118,
+            "haste": 60,
+            "versatility": 43
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "严酷收割手套\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n单手\n拳套\n245 - 349点伤害\n速度\n2.60\n（每秒伤害114.2点）\n+101 敏捷\n+2,118 耐力\n+\n60急速\n+\n43全能\n耐久: 65 / 65\n需要等级\n90\n售价:\n89\n58\n87\n掉落于: [The Hoardmonger]"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=251143",
@@ -18605,8 +18931,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 251147,
@@ -19614,6 +19940,15 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "真菌药剂\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n装备唯一\n饰品\n+190 智力\n装备：\n你获得纳洛拉克的生长恩赐。你的治疗法术和技能有一定几率立即为目标恢复\n120430\n点生命值，并在其附近生成一朵持续10秒的发光蘑菇。\n如果有盟友踩中并吸收蘑菇，将额外恢复\n68817\n点生命值。\n需要等级\n90\n\"一瓶源自早已灭绝、只存在于梦境中的物种的药水。\"\n售价:\n50\n26\n13\n掉落于: [The Hoardmonger]"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "intellect": 191
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "真菌药剂\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n装备唯一\n饰品\n+191 智力\n装备：\n你获得纳洛拉克的生长恩赐。你的治疗法术和技能有一定几率立即为目标恢复\n122106\n点生命值，并在其附近生成一朵持续10秒的发光蘑菇。\n如果有盟友踩中并吸收蘑菇，将额外恢复\n69774\n点生命值。\n需要等级\n90\n\"一瓶源自早已灭绝、只存在于梦境中的物种的药水。\"\n售价:\n50\n28\n64\n掉落于: [The Hoardmonger]"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=250248",
@@ -19662,8 +19997,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 159645,
@@ -19808,6 +20143,18 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "恳求碎颅者\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n单手\n权杖\n257 - 331点伤害\n速度\n2.60\n（每秒伤害113.1点）\n+100 敏捷\n+2,094 耐力\n+\n43暴击\n+\n60精通\n耐久: 110 / 110\n需要等级\n90\n售价:\n90\n35\n32\n掉落于: 达萨大王"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "agility": 101,
+            "stamina": 2118,
+            "critical_strike": 43,
+            "mastery": 60
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "恳求碎颅者\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n单手\n权杖\n260 - 335点伤害\n速度\n2.60\n（每秒伤害114.4点）\n+101 敏捷\n+2,118 耐力\n+\n43暴击\n+\n60精通\n耐久: 110 / 110\n需要等级\n90\n售价:\n90\n39\n81\n掉落于: 达萨大王"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=159645",
@@ -19853,8 +20200,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 159644,
@@ -19977,6 +20324,16 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "盖蒂伊库，死界之伤\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n双手\n剑\n405 - 675点伤害\n速度\n3.60\n（每秒伤害150.0点）\n+199 力量\n+4,187 耐力\n耐久: 120 / 120\n装备：\n你的近战攻击有一定几率使敌人流血，在12秒内造成\n74918\n点物理伤害。若有一名敌人在带有盖蒂伊库的流血效果时死亡的话，你会回复\n28093\n点生命值。\n需要等级\n90\n售价:\n112\n54\n34\n掉落于: 达萨大王"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "strength": 201,
+            "stamina": 4235
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "盖蒂伊库，死界之伤\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n双手\n剑\n409 - 682点伤害\n速度\n3.60\n（每秒伤害151.5点）\n+201 力量\n+4,235 耐力\n耐久: 120 / 120\n装备：\n你的近战攻击有一定几率使敌人流血，在12秒内造成\n75960\n点物理伤害。若有一名敌人在带有盖蒂伊库的流血效果时死亡的话，你会回复\n28484\n点生命值。\n需要等级\n90\n售价:\n112\n59\n94\n掉落于: 达萨大王"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=159644",
@@ -20018,8 +20375,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 239047,
@@ -21517,6 +21874,15 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "达萨的束风纹章\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n装备唯一\n饰品\n+190 智力\n使用:\n引导2秒，风随达扎尔之令，使你的急速提高\n1078\n，最多持续20秒。\n(2​分钟 冷却)\n需要等级\n90\n售价:\n51\n39\n22\n掉落于: 达萨大王"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "intellect": 191
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "达萨的束风纹章\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n装备唯一\n饰品\n+191 智力\n使用:\n引导2秒，风随达扎尔之令，使你的急速提高\n1082\n，最多持续20秒。\n(2​分钟 冷却)\n需要等级\n90\n售价:\n51\n41\n79\n掉落于: 达萨大王"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=273649",
@@ -21577,8 +21943,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 159642,
@@ -21723,6 +22089,18 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "皇家净化者之铲\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n双手\n长柄武器\n378 - 702点伤害\n速度\n3.60\n（每秒伤害150.0点）\n+199 敏捷\n+4,187 耐力\n+\n116暴击\n+\n90精通\n耐久: 120 / 120\n需要等级\n90\n售价:\n111\n75\n81\n掉落于: 殓尸者姆沁巴\n掉落几率: 2.45%"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "agility": 201,
+            "stamina": 4235,
+            "critical_strike": 117,
+            "mastery": 90
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "皇家净化者之铲\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n双手\n长柄武器\n381 - 709点伤害\n速度\n3.60\n（每秒伤害151.4点）\n+201 敏捷\n+4,235 耐力\n+\n117暴击\n+\n90精通\n耐久: 120 / 120\n需要等级\n90\n售价:\n111\n81\n36\n掉落于: 殓尸者姆沁巴\n掉落几率: 2.45%"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=159642",
@@ -21764,8 +22142,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 159312,
@@ -22259,6 +22637,18 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "临终仪式器皿\n史诗钥石\n物品等级：\n340\n升级：神话\n6/6\n拾取后绑定\n副手物品\n+306 智力\n+2,094 耐力\n+\n62急速\n+\n40全能\n需要等级\n90\n售价:\n50\n78\n29\n掉落于: 殓尸者姆沁巴\n掉落几率: 4.53%"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "intellect": 309,
+            "stamina": 2118,
+            "haste": 63,
+            "versatility": 41
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "临终仪式器皿\n史诗钥石\n物品等级：\n341\n升级：神话\n6/6\n拾取后绑定\n副手物品\n+309 智力\n+2,118 耐力\n+\n63急速\n+\n41全能\n需要等级\n90\n售价:\n50\n80\n82\n掉落于: 殓尸者姆沁巴\n掉落几率: 4.53%"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=159667",
@@ -22309,8 +22699,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 159409,
@@ -22797,6 +23187,15 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "姆沁巴的仪式绷带\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n装备唯一\n饰品\n+190 [敏捷 or 力量]\n使用:\n用仪式的绷带包裹自己，可在6秒内吸收[\n290783\n* (1 + 全能)]点伤害。\n(1​分钟 冷却)\n需要等级\n90\n售价:\n51\n52\n13\n掉落于: 殓尸者姆沁巴\n掉落几率: 3.13%"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "agility_or_strength": 191
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "姆沁巴的仪式绷带\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n装备唯一\n饰品\n+191 [敏捷 or 力量]\n使用:\n用仪式的绷带包裹自己，可在6秒内吸收[\n294830\n* (1 + 全能)]点伤害。\n(1​分钟 冷却)\n需要等级\n90\n售价:\n51\n54\n71\n掉落于: 殓尸者姆沁巴\n掉落几率: 3.13%"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=159618",
@@ -22859,8 +23258,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 159136,
@@ -23005,6 +23404,18 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "尊主宝石匕首\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n单手\n匕首\n152 - 255点伤害\n速度\n1.80\n（每秒伤害113.1点）\n+100 敏捷\n+2,094 耐力\n+\n54急速\n+\n49精通\n耐久: 80 / 80\n需要等级\n90\n售价:\n82\n71\n90\n掉落于: 征服者阿卡阿里"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "agility": 101,
+            "stamina": 2118,
+            "haste": 54,
+            "mastery": 49
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "尊主宝石匕首\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n单手\n匕首\n154 - 257点伤害\n速度\n1.80\n（每秒伤害114.2点）\n+101 敏捷\n+2,118 耐力\n+\n54急速\n+\n49精通\n耐久: 80 / 80\n需要等级\n90\n售价:\n82\n76\n2\n掉落于: 征服者阿卡阿里"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=159136",
@@ -23047,8 +23458,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 160216,
@@ -23193,6 +23604,18 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "碎玉弯刀\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n单手\n剑\n110 - 184点伤害\n速度\n2.60\n（每秒伤害56.5点）\n+581 智力\n+2,094 耐力\n+\n60暴击\n+\n43精通\n耐久: 110 / 110\n需要等级\n90\n售价:\n85\n91\n21\n掉落于: 征服者阿卡阿里"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "intellect": 586,
+            "stamina": 2118,
+            "critical_strike": 60,
+            "mastery": 43
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "碎玉弯刀\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n单手\n剑\n111 - 186点伤害\n速度\n2.60\n（每秒伤害57.1点）\n+586 智力\n+2,118 耐力\n+\n60暴击\n+\n43精通\n耐久: 110 / 110\n需要等级\n90\n售价:\n85\n95\n48\n掉落于: 征服者阿卡阿里"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=160216",
@@ -23243,8 +23666,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 159288,
@@ -24295,6 +24718,18 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "遗忘君王十字弓\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n远程\n弩\n360 - 540点伤害\n速度\n3.00\n（每秒伤害150.0点）\n+199 敏捷\n+4,187 耐力\n+\n121急速\n+\n85精通\n耐久: 120 / 120\n需要等级\n90\n售价:\n112\n14\n54\n掉落于: 征服者阿卡阿里"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "agility": 201,
+            "stamina": 4235,
+            "haste": 121,
+            "mastery": 86
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "遗忘君王十字弓\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n远程\n弩\n363 - 545点伤害\n速度\n3.00\n（每秒伤害151.3点）\n+201 敏捷\n+4,235 耐力\n+\n121急速\n+\n86精通\n耐久: 120 / 120\n需要等级\n90\n售价:\n112\n20\n11\n掉落于: 征服者阿卡阿里"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=159643",
@@ -24327,8 +24762,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 159137,
@@ -24473,6 +24908,18 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "金色风蛇之牙\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n单手\n匕首\n76 - 127点伤害\n速度\n1.80\n（每秒伤害56.4点）\n+581 智力\n+2,094 耐力\n+\n45急速\n+\n58全能\n耐久: 80 / 80\n需要等级\n90\n售价:\n83\n3\n75\n掉落于: 黄金风蛇\n掉落几率: 5.29%"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "intellect": 586,
+            "stamina": 2118,
+            "haste": 45,
+            "versatility": 58
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "金色风蛇之牙\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n单手\n匕首\n77 - 129点伤害\n速度\n1.80\n（每秒伤害57.2点）\n+586 智力\n+2,118 耐力\n+\n45急速\n+\n58全能\n耐久: 80 / 80\n需要等级\n90\n售价:\n83\n7\n88\n掉落于: 黄金风蛇\n掉落几率: 5.29%"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=159137",
@@ -24526,8 +24973,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 159234,
@@ -25509,6 +25956,15 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "金辉飞羽\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n装备唯一\n饰品\n+190 敏捷\n使用:\n你的动作闪烁着金色的羽毛，使你的全能提高\n706\n，持续20秒。\n(2​分钟 冷却)\n需要等级\n90\n售价:\n51\n33\n2\n掉落于: 黄金风蛇\n掉落几率: 4.57%"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "agility": 191
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "金辉飞羽\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n装备唯一\n饰品\n+191 敏捷\n使用:\n你的动作闪烁着金色的羽毛，使你的全能提高\n709\n，持续20秒。\n(2​分钟 冷却)\n需要等级\n90\n售价:\n51\n35\n59\n掉落于: 黄金风蛇\n掉落几率: 4.57%"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=159617",
@@ -25563,8 +26019,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 251123,
@@ -25709,12 +26165,24 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "咬咬的训练棒\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n双手\n法杖\n229 - 311点伤害\n速度\n3.60\n（每秒伤害75.0点）\n+887 智力\n+4,187 耐力\n+\n125暴击\n+\n81急速\n耐久: 120 / 120\n需要等级\n90\n售价:\n111\n94\n10\n掉落于: 凯斯媞亚·魔力之心"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "intellect": 895,
+            "stamina": 4235,
+            "critical_strike": 125,
+            "haste": 81
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "咬咬的训练棒\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n双手\n法杖\n231 - 314点伤害\n速度\n3.60\n（每秒伤害75.7点）\n+895 智力\n+4,235 耐力\n+\n125暴击\n+\n81急速\n耐久: 120 / 120\n需要等级\n90\n售价:\n111\n99\n66"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=251123",
       "instance_zh_cn": "密谋小径",
       "encounter_zh_cn": "凯斯媞亚·魔力之心",
-      "encounter_localization_source": "item_tooltip",
+      "encounter_localization_source": "official_mapping",
       "slot_key": "weapon",
       "armor_type": null,
       "weapon_type": "2h_staff",
@@ -25762,8 +26230,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 251127,
@@ -26601,6 +27069,18 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "罪炽连发枪\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n远程\n枪\n315 - 585点伤害\n速度\n3.00\n（每秒伤害150.0点）\n+199 敏捷\n+4,187 耐力\n+\n134暴击\n+\n72全能\n耐久: 120 / 120\n需要等级\n90\n售价:\n111\n85\n49\n掉落于: 凯斯媞亚·魔力之心"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "agility": 201,
+            "stamina": 4235,
+            "critical_strike": 134,
+            "versatility": 72
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "罪炽连发枪\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n远程\n枪\n318 - 591点伤害\n速度\n3.00\n（每秒伤害151.5点）\n+201 敏捷\n+4,235 耐力\n+\n134暴击\n+\n72全能\n耐久: 120 / 120\n需要等级\n90\n售价:\n111\n91\n5\n掉落于: 凯斯媞亚·魔力之心"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=271680",
@@ -26633,8 +27113,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 250243,
@@ -26746,6 +27226,15 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "魔力之心的联结烈焰\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n装备唯一\n饰品\n+190 [敏捷 or 力量]\n使用:\n形成邪能护盾，持续10秒，吸收接下来受到伤害的30%，最高\n392642\n点。护盾存在期间，被吸收伤害的一部分将储存为不稳定的邪能。\n护盾效果结束或破碎时，能量会产生爆发并对附近敌人造成火焰伤害，由这些敌人均摊。\n(1​分钟，30​秒 冷却)\n需要等级\n90\n售价:\n49\n31\n63\n掉落于: 凯斯媞亚·魔力之心"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "agility_or_strength": 191
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "魔力之心的联结烈焰\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n装备唯一\n饰品\n+191 [敏捷 or 力量]\n使用:\n形成邪能护盾，持续10秒，吸收接下来受到伤害的30%，最高\n398107\n点。护盾存在期间，被吸收伤害的一部分将储存为不稳定的邪能。\n护盾效果结束或破碎时，能量会产生爆发并对附近敌人造成火焰伤害，由这些敌人均摊。\n(1​分钟，30​秒 冷却)\n需要等级\n90\n售价:\n49\n34\n9\n掉落于: 凯斯媞亚·魔力之心"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=250243",
@@ -26793,8 +27282,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 251139,
@@ -27449,12 +27938,23 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "恶毒之怒吊坠\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n颈部\n+2,355 耐力\n+\n132急速\n+\n287精通\n需要等级\n90\n售价:\n26\n76\n76\n掉落于: 利希尔·烬怒"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "stamina": 2382,
+            "haste": 132,
+            "mastery": 289
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "恶毒之怒吊坠\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n颈部\n+2,382 耐力\n+\n132急速\n+\n289精通\n需要等级\n90\n售价:\n26\n78\n10"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=251142",
       "instance_zh_cn": "密谋小径",
       "encounter_zh_cn": "利希尔·烬怒",
-      "encounter_localization_source": "item_tooltip",
+      "encounter_localization_source": "official_mapping",
       "slot_key": "neck",
       "armor_type": null,
       "weapon_type": null,
@@ -27530,8 +28030,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 251138,
@@ -27815,6 +28315,15 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "动荡的邪心水晶\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n装备唯一\n饰品\n+190 智力\n使用:\n释放水晶中蕴藏的邪能之力，牺牲你生命值的\n26536\n点来强化目标盟友，持续10秒，吸收\n921181\n点伤害。\n(1​分钟，30​秒 冷却)\n需要等级\n90\n售价:\n52\n96\n21\n掉落于: 利希尔·烬怒"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "intellect": 191
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "动荡的邪心水晶\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n装备唯一\n饰品\n+191 智力\n使用:\n释放水晶中蕴藏的邪能之力，牺牲你生命值的\n26905\n点来强化目标盟友，持续10秒，吸收\n934001\n点伤害。\n(1​分钟，30​秒 冷却)\n需要等级\n90\n售价:\n52\n98\n85\n掉落于: 利希尔·烬怒"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=250255",
@@ -27875,8 +28384,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 251137,
@@ -28540,6 +29049,15 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "共鸣咆哮石\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n装备唯一\n饰品\n+190 [敏捷 or 力量]\n装备：\n你的伤害技能有几率呼应萨祖克斯的愤怒咆哮，使爆击提高\n198\n，持续30秒。\n在此期间，你的每次攻击都会使爆击额外提高\n27\n，最多可叠加5层。（30秒 冷却）\n需要等级\n90\n售价:\n50\n27\n16\n掉落于: 歼灭者萨祖克斯"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "agility_or_strength": 191
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "共鸣咆哮石\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n装备唯一\n饰品\n+191 [敏捷 or 力量]\n装备：\n你的伤害技能有几率呼应萨祖克斯的愤怒咆哮，使爆击提高\n199\n，持续30秒。\n在此期间，你的每次攻击都会使爆击额外提高\n27\n，最多可叠加5层。（30秒 冷却）\n需要等级\n90\n售价:\n50\n29\n67\n掉落于: 歼灭者萨祖克斯\n掉落几率: 8.47%"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=250228",
@@ -28602,8 +29120,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 251128,
@@ -28748,6 +29266,18 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "刃悲\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n单手\n匕首\n152 - 255点伤害\n速度\n1.80\n（每秒伤害113.1点）\n+100 敏捷\n+2,094 耐力\n+\n60暴击\n+\n43精通\n耐久: 80 / 80\n需要等级\n90\n售价:\n82\n52\n11\n掉落于: 赞恩·刃悲"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "agility": 101,
+            "stamina": 2118,
+            "critical_strike": 60,
+            "mastery": 43
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "刃悲\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n单手\n匕首\n154 - 257点伤害\n速度\n1.80\n（每秒伤害114.2点）\n+101 敏捷\n+2,118 耐力\n+\n60暴击\n+\n43精通\n耐久: 80 / 80\n需要等级\n90\n售价:\n82\n56\n21\n掉落于: 赞恩·刃悲"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=251128",
@@ -28790,8 +29320,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 251132,
@@ -29809,6 +30339,15 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "货运者水壶\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n装备唯一\n饰品\n+190 [敏捷 or 智力]\n使用:\n小酌一口从货物中偷来的饮品，使你的爆击提高\n706\n，持续15秒。\n(1​分钟，30​秒 冷却)\n需要等级\n90\n售价:\n51\n60\n39\n掉落于: 赞恩·刃悲"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "agility_or_intellect": 191
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "货运者水壶\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n装备唯一\n饰品\n+191 [敏捷 or 智力]\n使用:\n小酌一口从货物中偷来的饮品，使你的爆击提高\n709\n，持续15秒。\n(1​分钟，30​秒 冷却)\n需要等级\n90\n售价:\n51\n62\n97\n掉落于: 赞恩·刃悲\n掉落几率: 3.33%"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=250215",
@@ -29882,8 +30421,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 193767,
@@ -30028,6 +30567,18 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "浩劫碾压锤\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n单手\n权杖\n257 - 331点伤害\n速度\n2.60\n（每秒伤害113.1点）\n+100 敏捷\n+2,094 耐力\n+\n65暴击\n+\n38急速\n耐久: 110 / 110\n需要等级\n90\n售价:\n83\n74\n32\n掉落于: 柯姬雅·焰蹄\n掉落几率: 1.54%"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "agility": 101,
+            "stamina": 2118,
+            "critical_strike": 65,
+            "haste": 38
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "浩劫碾压锤\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n单手\n权杖\n260 - 335点伤害\n速度\n2.60\n（每秒伤害114.4点）\n+101 敏捷\n+2,118 耐力\n+\n65暴击\n+\n38急速\n耐久: 110 / 110\n需要等级\n90\n售价:\n83\n78\n49\n掉落于: 柯姬雅·焰蹄\n掉落几率: 1.54%"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=193767",
@@ -30073,8 +30624,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 193763,
@@ -30781,6 +31332,18 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "柯姬雅的熄火短杖\n史诗钥石\n物品等级：\n340\n升级：神话\n6/6\n拾取后绑定\n副手物品\n+306 智力\n+2,094 耐力\n+\n67暴击\n+\n36全能\n需要等级\n90\n售价:\n50\n5\n47\n掉落于: 柯姬雅·焰蹄\n掉落几率: 11.45%"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "intellect": 309,
+            "stamina": 2118,
+            "critical_strike": 67,
+            "versatility": 36
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "柯姬雅的熄火短杖\n史诗钥石\n物品等级：\n341\n升级：神话\n6/6\n拾取后绑定\n副手物品\n+309 智力\n+2,118 耐力\n+\n67暴击\n+\n36全能\n需要等级\n90\n售价:\n50\n7\n97\n掉落于: 柯姬雅·焰蹄\n掉落几率: 11.45%"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=193766",
@@ -30831,8 +31394,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 193762,
@@ -30944,6 +31507,15 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "缚炎者之蹄\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n装备唯一\n饰品\n+\n147急速\n使用:\n与烈焰绑定在一起，持续20秒，你的攻击有较高几率使你的力量提高\n164\n点，该效果最多可叠加6次。绑定完成时你会释放出一道燃尽波浪，基于你从绑定中获得的力量最多造成\n125730\n点火焰伤害，该伤害由附近所有敌人分摊。（500毫秒 冷却）\n(2​分钟 冷却)\n需要等级\n90\n售价:\n49\n29\n56\n掉落于: 柯姬雅·焰蹄\n掉落几率: 8.25%"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "haste": 148
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "缚炎者之蹄\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n装备唯一\n饰品\n+\n148急速\n使用:\n与烈焰绑定在一起，持续20秒，你的攻击有较高几率使你的力量提高\n166\n点，该效果最多可叠加6次。绑定完成时你会释放出一道燃尽波浪，基于你从绑定中获得的力量最多造成\n127007\n点火焰伤害，该伤害由附近所有敌人分摊。（500毫秒 冷却）\n(2​分钟 冷却)\n需要等级\n90\n售价:\n49\n32\n3\n掉落于: 柯姬雅·焰蹄\n掉落几率: 8.26%"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=193762",
@@ -31025,8 +31597,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 193756,
@@ -31171,6 +31743,18 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "天空狱火之匕\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n单手\n匕首\n152 - 255点伤害\n速度\n1.80\n（每秒伤害113.1点）\n+100 敏捷\n+2,094 耐力\n+\n40急速\n+\n62全能\n耐久: 80 / 80\n需要等级\n90\n售价:\n86\n60\n7"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "agility": 101,
+            "stamina": 2118,
+            "haste": 41,
+            "versatility": 63
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "天空狱火之匕\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n单手\n匕首\n154 - 257点伤害\n速度\n1.80\n（每秒伤害114.2点）\n+101 敏捷\n+2,118 耐力\n+\n41急速\n+\n63全能\n耐久: 80 / 80\n需要等级\n90\n售价:\n86\n64\n37"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=193756",
@@ -31213,8 +31797,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 193755,
@@ -31359,6 +31943,18 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "回燃利斧\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n双手\n斧\n351 - 729点伤害\n速度\n3.60\n（每秒伤害150.0点）\n+199 力量\n+4,187 耐力\n+\n76暴击\n+\n129急速\n耐久: 120 / 120\n需要等级\n90\n售价:\n107\n85\n28"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "strength": 201,
+            "stamina": 4235,
+            "critical_strike": 77,
+            "haste": 130
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "回燃利斧\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n双手\n斧\n354 - 736点伤害\n速度\n3.60\n（每秒伤害151.4点）\n+201 力量\n+4,235 耐力\n+\n77暴击\n+\n130急速\n耐久: 120 / 120\n需要等级\n90\n售价:\n107\n90\n64"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=193755",
@@ -31400,8 +31996,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 193750,
@@ -32422,6 +33018,19 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "龙骑兵的矛战圆盾\n史诗钥石\n物品等级：\n340\n升级：神话\n6/6\n拾取后绑定\n副手\n盾\n1327护甲\n3317点格挡\n+100 力量\n+306 智力\n+2,094 耐力\n+\n62全能\n+\n40精通\n耐久: 120 / 120\n需要等级\n90\n售价:\n55\n1\n67"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "strength": 101,
+            "intellect": 309,
+            "stamina": 2118,
+            "versatility": 63,
+            "mastery": 41
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "龙骑兵的矛战圆盾\n史诗钥石\n物品等级：\n341\n升级：神话\n6/6\n拾取后绑定\n副手\n盾\n1337护甲\n3342点格挡\n+101 力量\n+309 智力\n+2,118 耐力\n+\n63全能\n+\n41精通\n耐久: 120 / 120\n需要等级\n90\n售价:\n55\n4\n41"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=193754",
@@ -32461,8 +33070,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 193748,
@@ -32574,6 +33183,15 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "基拉卡的灼热余烬\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n装备唯一\n饰品\n+\n147暴击\n装备：\n你的有益法术和技能有较高的几率在一名盟友身上制造一个爆燃灰烬。灰烬会在1秒后爆燃，从而灼烧伤口，恢复\n65303\n点生命值，并释放出\n17294\n点火焰伤害，由附近的敌人分摊。（1秒 冷却）\n需要等级\n90\n售价:\n50\n44\n20"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "critical_strike": 148
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "基拉卡的灼热余烬\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n装备唯一\n饰品\n+\n148暴击\n装备：\n你的有益法术和技能有较高的几率在一名盟友身上制造一个爆燃灰烬。灰烬会在1秒后爆燃，从而灼烧伤口，恢复\n65966\n点生命值，并释放出\n17469\n点火焰伤害，由附近的敌人分摊。（1秒 冷却）\n需要等级\n90\n售价:\n50\n46\n72"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=193748",
@@ -32655,8 +33273,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 193761,
@@ -32801,6 +33419,18 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "寒妆的注能法杖\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n双手\n法杖\n229 - 311点伤害\n速度\n3.60\n（每秒伤害75.0点）\n+887 智力\n+4,187 耐力\n+\n125暴击\n+\n81精通\n耐久: 120 / 120\n需要等级\n90\n售价:\n102\n30\n14\n掉落于: 梅莉杜莎·寒妆\n掉落几率: 12.05%"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "intellect": 895,
+            "stamina": 4235,
+            "critical_strike": 125,
+            "mastery": 81
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "寒妆的注能法杖\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n双手\n法杖\n231 - 314点伤害\n速度\n3.60\n（每秒伤害75.7点）\n+895 智力\n+4,235 耐力\n+\n125暴击\n+\n81精通\n耐久: 120 / 120\n需要等级\n90\n售价:\n102\n35\n23\n掉落于: 梅莉杜莎·寒妆\n掉落几率: 12.07%"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=193761",
@@ -32854,8 +33484,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 193758,
@@ -33488,6 +34118,15 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "红玉雏龙蛋壳\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n装备唯一\n饰品\n+190 [敏捷 or 力量 or 智力]\n装备：\n你的法术和技能有一定几率召唤一只红玉雏龙，它会尝试帮助你并协助你战斗。\n使用:\n召唤你的红玉雏龙以检查目标的情况，并让其学会如何派上用场。\n(1​天 冷却)\n需要等级\n90\n售价:\n53\n51\n46\n掉落于: 梅莉杜莎·寒妆\n掉落几率: 29.28%"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "agility_or_strength_or_intellect": 191
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "红玉雏龙蛋壳\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n装备唯一\n饰品\n+191 [敏捷 or 力量 or 智力]\n装备：\n你的法术和技能有一定几率召唤一只红玉雏龙，它会尝试帮助你并协助你战斗。\n使用:\n召唤你的红玉雏龙以检查目标的情况，并让其学会如何派上用场。\n(1​天 冷却)\n需要等级\n90\n售价:\n53\n54\n14\n掉落于: 梅莉杜莎·寒妆\n掉落几率: 29.25%"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=193757",
@@ -33569,8 +34208,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 158370,
@@ -33715,6 +34354,18 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "连击大戟\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n双手\n长柄武器\n378 - 702点伤害\n速度\n3.60\n（每秒伤害150.0点）\n+199 敏捷\n+4,187 耐力\n+\n81暴击\n+\n125急速\n耐久: 120 / 120\n需要等级\n90\n售价:\n105\n35\n68"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "agility": 201,
+            "stamina": 4235,
+            "critical_strike": 81,
+            "haste": 125
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "连击大戟\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n双手\n长柄武器\n381 - 709点伤害\n速度\n3.60\n（每秒伤害151.4点）\n+201 敏捷\n+4,235 耐力\n+\n81暴击\n+\n125急速\n耐久: 120 / 120\n需要等级\n90\n售价:\n105\n40\n92"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=158370",
@@ -33756,8 +34407,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 159636,
@@ -33902,6 +34553,18 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "闪电曲蛇法杖\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n双手\n法杖\n229 - 311点伤害\n速度\n3.60\n（每秒伤害75.0点）\n+887 智力\n+4,187 耐力\n+\n121急速\n+\n85精通\n耐久: 120 / 120\n需要等级\n90\n售价:\n109\n38\n5"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "intellect": 895,
+            "stamina": 4235,
+            "haste": 121,
+            "mastery": 86
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "闪电曲蛇法杖\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n双手\n法杖\n231 - 314点伤害\n速度\n3.60\n（每秒伤害75.7点）\n+895 智力\n+4,235 耐力\n+\n121急速\n+\n86精通\n耐久: 120 / 120\n需要等级\n90\n售价:\n109\n43\n49"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=159636",
@@ -33955,8 +34618,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 159259,
@@ -35487,6 +36150,18 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "共鸣水晶弯刀\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n单手\n剑\n220 - 368点伤害\n速度\n2.60\n（每秒伤害113.1点）\n+100 力量\n+2,094 耐力\n+\n58暴击\n+\n45急速\n耐久: 110 / 110\n需要等级\n90\n售价:\n85\n24\n8\n掉落于: 塞塔里斯的化身"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "strength": 101,
+            "stamina": 2118,
+            "critical_strike": 58,
+            "haste": 45
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "共鸣水晶弯刀\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n单手\n剑\n223 - 372点伤害\n速度\n2.60\n（每秒伤害114.4点）\n+101 力量\n+2,118 耐力\n+\n58暴击\n+\n45急速\n耐久: 110 / 110\n需要等级\n90\n售价:\n85\n28\n32\n掉落于: 塞塔里斯的化身"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=158373",
@@ -35533,8 +36208,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 239032,
@@ -37032,6 +37707,15 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "塞塔里斯的亵渎遗物\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n装备唯一\n饰品\n+190 智力\n使用:\n用腐烂伤口诅咒目标，在15秒内造成(\n173261\n*\n1\n)点自然伤害。\n伤口存在期间，你的伤害性法术有很高的几率加深伤口，额外造成(\n10830\n*\n1\n)点自然伤害。\n(2​分钟 冷却)\n需要等级\n90\n售价:\n50\n19\n42\n掉落于: 塞塔里斯的化身"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "intellect": 191
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "塞塔里斯的亵渎遗物\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n装备唯一\n饰品\n+191 智力\n使用:\n用腐烂伤口诅咒目标，在15秒内造成(\n175672\n*\n1\n)点自然伤害。\n伤口存在期间，你的伤害性法术有很高的几率加深伤口，额外造成(\n10980\n*\n1\n)点自然伤害。\n(2​分钟 冷却)\n需要等级\n90\n售价:\n50\n21\n92\n掉落于: 塞塔里斯的化身"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=158368",
@@ -37092,8 +37776,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 158369,
@@ -37238,6 +37922,18 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "充电破风锤\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n单手\n权杖\n128 - 166点伤害\n速度\n2.60\n（每秒伤害56.5点）\n+581 智力\n+2,094 耐力\n+\n60急速\n+\n43全能\n耐久: 110 / 110\n需要等级\n90\n售价:\n83\n97\n56"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "intellect": 586,
+            "stamina": 2118,
+            "haste": 60,
+            "versatility": 43
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "充电破风锤\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n单手\n权杖\n130 - 167点伤害\n速度\n2.60\n（每秒伤害57.1点）\n+586 智力\n+2,118 耐力\n+\n60急速\n+\n43全能\n耐久: 110 / 110\n需要等级\n90\n售价:\n84\n1\n74"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=158369",
@@ -37287,8 +37983,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 159247,
@@ -37991,12 +38687,25 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "满溢希望壁垒\n史诗钥石\n物品等级：\n340\n升级：神话\n6/6\n拾取后绑定\n副手\n盾\n1327护甲\n3317点格挡\n+100 力量\n+306 智力\n+2,094 耐力\n+\n47暴击\n+\n56全能\n耐久: 120 / 120\n需要等级\n90\n售价:\n57\n61\n66\n掉落于: 加瓦兹特\n掉落几率: 1.29%"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "strength": 101,
+            "intellect": 309,
+            "stamina": 2118,
+            "critical_strike": 47,
+            "versatility": 56
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "满溢希望壁垒\n史诗钥石\n物品等级：\n341\n升级：神话\n6/6\n拾取后绑定\n副手\n盾\n1337护甲\n3342点格挡\n+101 力量\n+309 智力\n+2,118 耐力\n+\n47暴击\n+\n56全能\n耐久: 120 / 120\n需要等级\n90\n售价:\n57\n64\n54"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=159664",
       "instance_zh_cn": "塞塔里斯神庙",
       "encounter_zh_cn": "加瓦兹特",
-      "encounter_localization_source": "item_tooltip",
+      "encounter_localization_source": "official_mapping",
       "slot_key": "weapon",
       "armor_type": null,
       "weapon_type": "shield",
@@ -38030,8 +38739,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 158374,
@@ -38143,6 +38852,15 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "瓶中的电荷元素\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n装备唯一\n饰品\n+190 敏捷\n装备：\n你的攻击和技能有几率赋予你惊人力量。当叠加至12层时，你将释放闪电，造成(\n54996\n*\n1\n)点自然伤害。\n需要等级\n90\n\"强大的闪电之力，被禁锢在狭窄的空间里。\"\n售价:\n51\n33\n2\n掉落于: 加瓦兹特\n掉落几率: 4.05%"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "agility": 191
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "瓶中的电荷元素\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n装备唯一\n饰品\n+191 敏捷\n装备：\n你的攻击和技能有几率赋予你惊人力量。当叠加至12层时，你将释放闪电，造成(\n55761\n*\n1\n)点自然伤害。\n需要等级\n90\n\"强大的闪电之力，被禁锢在狭窄的空间里。\"\n售价:\n51\n35\n59\n掉落于: 加瓦兹特\n掉落几率: 4.05%"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=158374",
@@ -38197,8 +38915,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 158714,
@@ -38343,6 +39061,18 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "蛇群之锋\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n单手\n剑\n220 - 368点伤害\n速度\n2.60\n（每秒伤害113.1点）\n+100 敏捷\n+2,094 耐力\n+\n60全能\n+\n43精通\n耐久: 110 / 110\n需要等级\n90\n售价:\n85\n86\n91\n掉落于: 米利克萨\n掉落几率: 1.17%"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "agility": 101,
+            "stamina": 2118,
+            "versatility": 60,
+            "mastery": 43
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "蛇群之锋\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n单手\n剑\n223 - 372点伤害\n速度\n2.60\n（每秒伤害114.4点）\n+101 敏捷\n+2,118 耐力\n+\n60全能\n+\n43精通\n耐久: 110 / 110\n需要等级\n90\n售价:\n85\n91\n18\n掉落于: 米利克萨\n掉落几率: 1.17%"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=158714",
@@ -38391,8 +39121,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 159255,
@@ -39230,6 +39960,18 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "蛇印反曲弓\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n远程\n弓\n382 - 518点伤害\n速度\n3.00\n（每秒伤害150.0点）\n+199 敏捷\n+4,187 耐力\n+\n116暴击\n+\n90急速\n耐久: 120 / 120\n需要等级\n90\n售价:\n109\n77\n85\n掉落于: 米利克萨\n掉落几率: 1.08%"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "agility": 201,
+            "stamina": 4235,
+            "critical_strike": 117,
+            "haste": 90
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "蛇印反曲弓\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n远程\n弓\n386 - 523点伤害\n速度\n3.00\n（每秒伤害151.5点）\n+201 敏捷\n+4,235 耐力\n+\n117暴击\n+\n90急速\n耐久: 120 / 120\n需要等级\n90\n售价:\n109\n83\n31\n掉落于: 米利克萨\n掉落几率: 1.08%"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=159637",
@@ -39262,8 +40004,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 162544,
@@ -39578,6 +40320,15 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "米利克萨之牙\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n装备唯一\n饰品\n+190 力量\n使用:\n挤压毒牙上的毒腺，向前方锥形范围内喷洒出毒雾。毒雾在3秒内每1秒造成(\n13498\n*\n1\n)点自然伤害，最多可叠加3次。\n(2​分钟 冷却)\n需要等级\n90\n售价:\n50\n31\n掉落于: 米利克萨\n掉落几率: 1.87%"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "strength": 191
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "米利克萨之牙\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n装备唯一\n饰品\n+191 力量\n使用:\n挤压毒牙上的毒腺，向前方锥形范围内喷洒出毒雾。毒雾在3秒内每1秒造成(\n13686\n*\n1\n)点自然伤害，最多可叠加3次。\n(2​分钟 冷却)\n需要等级\n90\n售价:\n50\n2\n81\n掉落于: 米利克萨\n掉落几率: 1.87%"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=158367",
@@ -39627,8 +40378,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 251186,
@@ -39773,6 +40524,18 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "棘爪龙利刃\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n单手\n拳套\n243 - 346点伤害\n速度\n2.60\n（每秒伤害113.3点）\n+100 敏捷\n+2,094 耐力\n+\n38暴击\n+\n65精通\n耐久: 80 / 80\n需要等级\n90\n售价:\n84\n13\n5\n掉落于: 圣光猎手伊库兹"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "agility": 101,
+            "stamina": 2118,
+            "critical_strike": 38,
+            "mastery": 65
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "棘爪龙利刃\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n单手\n拳套\n245 - 349点伤害\n速度\n2.60\n（每秒伤害114.2点）\n+101 敏捷\n+2,118 耐力\n+\n38暴击\n+\n65精通\n耐久: 80 / 80\n需要等级\n90\n售价:\n84\n17\n24\n掉落于: 圣光猎手伊库兹\n掉落几率: 2.04%"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=251186",
@@ -39822,8 +40585,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 251190,
@@ -40358,6 +41121,18 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "阿米达希尔之援\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n远程\n弩\n360 - 540点伤害\n速度\n3.00\n（每秒伤害150.0点）\n+199 敏捷\n+4,187 耐力\n+\n85暴击\n+\n121全能\n耐久: 120 / 120\n需要等级\n90\n售价:\n105\n56\n12\n掉落于: 圣光猎手伊库兹"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "agility": 201,
+            "stamina": 4235,
+            "critical_strike": 86,
+            "versatility": 121
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "阿米达希尔之援\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n远程\n弩\n363 - 545点伤害\n速度\n3.00\n（每秒伤害151.3点）\n+201 敏捷\n+4,235 耐力\n+\n86暴击\n+\n121全能\n耐久: 120 / 120\n需要等级\n90\n售价:\n105\n61\n37\n掉落于: 圣光猎手伊库兹\n掉落几率: 4.08%"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=251187",
@@ -40390,8 +41165,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 251188,
@@ -40536,6 +41311,18 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "绝望花瓣\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n远程\n魔杖\n84 - 142点伤害\n速度\n2.00\n（每秒伤害56.5点）\n+581 智力\n+2,094 耐力\n+\n65急速\n+\n38精通\n耐久: 110 / 110\n需要等级\n90\n售价:\n105\n95\n93\n掉落于: 圣光猎手伊库兹"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "intellect": 586,
+            "stamina": 2118,
+            "haste": 65,
+            "mastery": 38
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "绝望花瓣\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n远程\n魔杖\n85 - 143点伤害\n速度\n2.00\n（每秒伤害57.0点）\n+586 智力\n+2,118 耐力\n+\n65急速\n+\n38精通\n耐久: 110 / 110\n需要等级\n90\n售价:\n106\n1\n20\n掉落于: 圣光猎手伊库兹\n掉落几率: 4.08%"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=251188",
@@ -40576,8 +41363,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 250238,
@@ -40689,6 +41476,15 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "贪噬狂野之种\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n装备唯一\n饰品\n+190 力量\n使用:\n唤醒血棘之根，在目标周围爆发，对附近敌人造成(\n101340\n*\n1\n)点自然伤害，由范围内所有敌人分摊。你吸收其精华，在10秒内获得\n422\n精通。\n(1​分钟，30​秒 冷却)\n需要等级\n90\n售价:\n53\n53\n53\n掉落于: 圣光猎手伊库兹"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "strength": 191
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "贪噬狂野之种\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n装备唯一\n饰品\n+191 力量\n使用:\n唤醒血棘之根，在目标周围爆发，对附近敌人造成(\n102751\n*\n1\n)点自然伤害，由范围内所有敌人分摊。你吸收其精华，在10秒内获得\n424\n精通。\n(1​分钟，30​秒 冷却)\n需要等级\n90\n售价:\n53\n56\n20\n掉落于: 圣光猎手伊库兹\n掉落几率: 6.12%"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=250238",
@@ -40738,8 +41534,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 251180,
@@ -40884,6 +41680,18 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "荆棘之刃\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n单手\n匕首\n152 - 255点伤害\n速度\n1.80\n（每秒伤害113.1点）\n+100 敏捷\n+2,094 耐力\n+\n40急速\n+\n62精通\n耐久: 80 / 80\n需要等级\n90\n售价:\n88\n57\n16\n掉落于: 梅提克"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "agility": 101,
+            "stamina": 2118,
+            "haste": 41,
+            "mastery": 63
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "荆棘之刃\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n单手\n匕首\n154 - 257点伤害\n速度\n1.80\n（每秒伤害114.2点）\n+101 敏捷\n+2,118 耐力\n+\n41急速\n+\n63精通\n耐久: 80 / 80\n需要等级\n90\n售价:\n88\n61\n56\n掉落于: 梅提克"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=251180",
@@ -40926,8 +41734,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 251181,
@@ -41072,6 +41880,18 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "剪枝长矛\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n双手\n长柄武器\n378 - 702点伤害\n速度\n3.60\n（每秒伤害150.0点）\n+199 力量\n+4,187 耐力\n+\n121急速\n+\n85全能\n耐久: 120 / 120\n需要等级\n90\n售价:\n111\n11\n26\n掉落于: 梅提克"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "strength": 201,
+            "stamina": 4235,
+            "haste": 121,
+            "versatility": 86
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "剪枝长矛\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n双手\n长柄武器\n381 - 709点伤害\n速度\n3.60\n（每秒伤害151.4点）\n+201 力量\n+4,235 耐力\n+\n121急速\n+\n86全能\n耐久: 120 / 120\n需要等级\n90\n售价:\n111\n16\n78\n掉落于: 梅提克"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=251181",
@@ -41114,8 +41934,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 251185,
@@ -41920,6 +42740,15 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "光耀希望之种\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n装备唯一\n饰品\n+190 智力\n使用:\n用光明之花环绕你的友方目标，在12秒内为其恢复[\n39237\n* (8)]点生命值。\n如果目标生命值低于50%，光明之花会在绚烂光芒中完全绽放，立即为其恢复\n353176\n点生命值。\n(1​分钟 冷却)\n需要等级\n90\n售价:\n52\n77\n10\n掉落于: 梅提克"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "intellect": 191
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "光耀希望之种\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n装备唯一\n饰品\n+191 智力\n使用:\n用光明之花环绕你的友方目标，在12秒内为其恢复[\n39783\n* (8)]点生命值。\n如果目标生命值低于50%，光明之花会在绚烂光芒中完全绽放，立即为其恢复\n358091\n点生命值。\n(1​分钟 冷却)\n需要等级\n90\n售价:\n52\n79\n74\n掉落于: 梅提克\n掉落几率: 6.38%"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=250254",
@@ -41968,8 +42797,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 251192,
@@ -42114,6 +42943,18 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "傲慢断枝\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n双手\n法杖\n459 - 621点伤害\n速度\n3.60\n（每秒伤害150.0点）\n+199 敏捷\n+4,187 耐力\n+\n134暴击\n+\n72全能\n耐久: 120 / 120\n需要等级\n90\n售价:\n107\n54\n8\n掉落于: 护光者鲁伊亚"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "agility": 201,
+            "stamina": 4235,
+            "critical_strike": 134,
+            "versatility": 72
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "傲慢断枝\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n双手\n法杖\n463 - 627点伤害\n速度\n3.60\n（每秒伤害151.4点）\n+201 敏捷\n+4,235 耐力\n+\n134暴击\n+\n72全能\n耐久: 120 / 120\n需要等级\n90\n售价:\n107\n59\n43\n掉落于: 护光者鲁伊亚"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=251192",
@@ -42158,8 +42999,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 251165,
@@ -42476,6 +43317,18 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "冷光嫩芽\n史诗钥石\n物品等级：\n340\n升级：神话\n6/6\n拾取后绑定\n副手物品\n+306 智力\n+2,094 耐力\n+\n43急速\n+\n60精通\n需要等级\n90\n售价:\n51\n42\n84\n掉落于: 护光者鲁伊亚"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "intellect": 309,
+            "stamina": 2118,
+            "haste": 43,
+            "mastery": 60
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "冷光嫩芽\n史诗钥石\n物品等级：\n341\n升级：神话\n6/6\n拾取后绑定\n副手物品\n+309 智力\n+2,118 耐力\n+\n43急速\n+\n60精通\n需要等级\n90\n售价:\n51\n45\n41\n掉落于: 护光者鲁伊亚"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=251191",
@@ -42526,8 +43379,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 251193,
@@ -43014,6 +43867,15 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "光塔核心\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n装备唯一\n饰品\n+190 [敏捷 or 智力]\n装备：\n你受到圣光的庇护，精通提高\n118\n。\n你的伤害法术和技能有几率召唤一束辉光在附近降下，当你站在其中时会给予你精通提高\n205\n的赐福。\n需要等级\n90\n\"立于光下，圆满新生。\"\n售价:\n51\n41\n29\n掉落于: 护光者鲁伊亚\n掉落几率: 25.00%"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "agility_or_intellect": 191
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "光塔核心\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n装备唯一\n饰品\n+191 [敏捷 or 智力]\n装备：\n你受到圣光的庇护，精通提高\n118\n。\n你的伤害法术和技能有几率召唤一束辉光在附近降下，当你站在其中时会给予你精通提高\n206\n的赐福。\n需要等级\n90\n\"立于光下，圆满新生。\"\n售价:\n51\n43\n86\n掉落于: 护光者鲁伊亚\n掉落几率: 4.17%"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=250214",
@@ -43087,8 +43949,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 251195,
@@ -43233,6 +44095,18 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "荆棘回响\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n单手\n剑\n220 - 368点伤害\n速度\n2.60\n（每秒伤害113.1点）\n+100 力量\n+2,094 耐力\n+\n43暴击\n+\n60急速\n耐久: 110 / 110\n需要等级\n90\n售价:\n86\n97\n94\n掉落于: 兹欧凯特"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "strength": 101,
+            "stamina": 2118,
+            "critical_strike": 43,
+            "haste": 60
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "荆棘回响\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n单手\n剑\n223 - 372点伤害\n速度\n2.60\n（每秒伤害114.4点）\n+101 力量\n+2,118 耐力\n+\n43暴击\n+\n60急速\n耐久: 110 / 110\n需要等级\n90\n售价:\n87\n2\n26\n掉落于: 兹欧凯特"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=251195",
@@ -43279,8 +44153,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 251199,
@@ -44129,6 +45003,19 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "泰达希尔的祭献\n史诗钥石\n物品等级：\n340\n升级：神话\n6/6\n拾取后绑定\n副手\n盾\n1327护甲\n3317点格挡\n+100 力量\n+306 智力\n+2,094 耐力\n+\n62暴击\n+\n40全能\n耐久: 120 / 120\n需要等级\n90\n售价:\n55\n87\n4\n掉落于: 兹欧凯特"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "strength": 101,
+            "intellect": 309,
+            "stamina": 2118,
+            "critical_strike": 63,
+            "versatility": 41
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "泰达希尔的祭献\n史诗钥石\n物品等级：\n341\n升级：神话\n6/6\n拾取后绑定\n副手\n盾\n1337护甲\n3342点格挡\n+101 力量\n+309 智力\n+2,118 耐力\n+\n63暴击\n+\n41全能\n耐久: 120 / 120\n需要等级\n90\n售价:\n55\n89\n84\n掉落于: 兹欧凯特\n掉落几率: 5.71%"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=251196",
@@ -44168,8 +45055,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 250259,
@@ -44281,6 +45168,15 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "黎明之根的幼苗\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n装备唯一\n饰品\n+190 [敏捷 or 力量 or 智力]\n装备：\n你的法术和技能有一定几率拔出一个光诞鞭笞者协助你战斗，持续15秒，造成最高[\n1\n* (\n7700\n* 10)]点物理伤害。\n光诞鞭笞者随即枯萎，爆裂出灌注光明的汁液，对附近敌人造成总计(\n1\n*\n20053\n)点神圣伤害并由所有目标分摊。\n需要等级\n90\n售价:\n53\n72\n12\n掉落于: 兹欧凯特"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "agility_or_strength_or_intellect": 191
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "黎明之根的幼苗\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n装备唯一\n饰品\n+191 [敏捷 or 力量 or 智力]\n装备：\n你的法术和技能有一定几率拔出一个光诞鞭笞者协助你战斗，持续15秒，造成最高[\n1\n* (\n7807\n* 10)]点物理伤害。\n光诞鞭笞者随即枯萎，爆裂出灌注光明的汁液，对附近敌人造成总计(\n1\n*\n20332\n)点神圣伤害并由所有目标分摊。\n需要等级\n90\n售价:\n53\n74\n80\n掉落于: 兹欧凯特\n掉落几率: 11.43%"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=250259",
@@ -44362,8 +45258,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 251224,
@@ -44508,6 +45404,18 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "蛮力手斧\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n单手\n斧\n191 - 398点伤害\n速度\n2.60\n（每秒伤害113.3点）\n+100 敏捷\n+2,094 耐力\n+\n36急速\n+\n67精通\n耐久: 110 / 110\n需要等级\n90\n售价:\n83\n47\n64\n掉落于: 阿特洛苏斯"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "agility": 101,
+            "stamina": 2118,
+            "haste": 36,
+            "mastery": 67
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "蛮力手斧\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n单手\n斧\n193 - 402点伤害\n速度\n2.60\n（每秒伤害114.4点）\n+101 敏捷\n+2,118 耐力\n+\n36急速\n+\n67精通\n耐久: 110 / 110\n需要等级\n90\n售价:\n83\n51\n79\n掉落于: 阿特洛苏斯\n掉落几率: 2.38%"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=251224",
@@ -44556,8 +45464,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 251225,
@@ -44702,6 +45610,18 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "传染之牙\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n单手\n匕首\n76 - 127点伤害\n速度\n1.80\n（每秒伤害56.4点）\n+581 智力\n+2,094 耐力\n+\n43全能\n+\n60精通\n耐久: 80 / 80\n需要等级\n90\n售价:\n83\n79\n49\n掉落于: 阿特洛苏斯"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "intellect": 586,
+            "stamina": 2118,
+            "versatility": 43,
+            "mastery": 60
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "传染之牙\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n单手\n匕首\n77 - 129点伤害\n速度\n1.80\n（每秒伤害57.2点）\n+586 智力\n+2,118 耐力\n+\n43全能\n+\n60精通\n耐久: 80 / 80\n需要等级\n90\n售价:\n83\n83\n65\n掉落于: 阿特洛苏斯\n掉落几率: 2.38%"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=251225",
@@ -44755,8 +45675,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 251227,
@@ -45764,6 +46684,15 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "虫群之瘤\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n装备唯一\n饰品\n+190 [敏捷 or 力量]\n装备：\n你的攻击有一定几率释放剧毒寄生虫在你周围爆裂，造成总计\n35711\n点自然伤害，由附近敌人分摊，并为你恢复\n27351\n点生命值。\n需要等级\n90\n售价:\n49\n69\n33\n掉落于: 阿特洛苏斯"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "agility_or_strength": 191
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "虫群之瘤\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n装备唯一\n饰品\n+191 [敏捷 or 力量]\n装备：\n你的攻击有一定几率释放剧毒寄生虫在你周围爆裂，造成总计\n36208\n点自然伤害，由附近敌人分摊，并为你恢复\n27732\n点生命值。\n需要等级\n90\n售价:\n49\n71\n81\n掉落于: 阿特洛苏斯"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=250245",
@@ -45826,8 +46755,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 251231,
@@ -45983,6 +46912,19 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "奇点利刃\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n单手\n战刃\n228 - 361点伤害\n速度\n2.60\n（每秒伤害113.3点）\n+481 智力\n+100 [敏捷 or 智力]\n+2,094 耐力\n+\n60暴击\n+\n43急速\n耐久: 120 / 120\n需要等级\n90\n售价:\n85\n68\n83\n掉落于: 煞戎努斯"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "intellect": 485,
+            "stamina": 2118,
+            "agility_or_intellect": 101,
+            "critical_strike": 60,
+            "haste": 43
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "奇点利刃\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n单手\n战刃\n230 - 364点伤害\n速度\n2.60\n（每秒伤害114.2点）\n+485 智力\n+101 [敏捷 or 智力]\n+2,118 耐力\n+\n60暴击\n+\n43急速\n耐久: 120 / 120\n需要等级\n90\n售价:\n85\n73\n10\n掉落于: 煞戎努斯"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=251231",
@@ -46015,8 +46957,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 251230,
@@ -46161,6 +47103,18 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "冥渊新月\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n双手\n长柄武器\n378 - 702点伤害\n速度\n3.60\n（每秒伤害150.0点）\n+199 力量\n+4,187 耐力\n+\n125全能\n+\n81精通\n耐久: 120 / 120\n需要等级\n90\n售价:\n106\n72\n31\n掉落于: 煞戎努斯"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "strength": 201,
+            "stamina": 4235,
+            "versatility": 125,
+            "mastery": 81
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "冥渊新月\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n双手\n长柄武器\n381 - 709点伤害\n速度\n3.60\n（每秒伤害151.4点）\n+201 力量\n+4,235 耐力\n+\n125全能\n+\n81精通\n耐久: 120 / 120\n需要等级\n90\n售价:\n106\n77\n62\n掉落于: 煞戎努斯"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=251230",
@@ -46203,8 +47157,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 251232,
@@ -46859,12 +47813,23 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "多曼纳尔的寄生契约\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n颈部\n+2,355 耐力\n+\n269暴击\n+\n150精通\n需要等级\n90\n售价:\n26\n67\n72\n掉落于: 煞戎努斯"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "stamina": 2382,
+            "critical_strike": 271,
+            "mastery": 150
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "多曼纳尔的寄生契约\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n颈部\n+2,382 耐力\n+\n271暴击\n+\n150精通\n需要等级\n90\n售价:\n26\n69\n6"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=251234",
       "instance_zh_cn": "虚空之痕竞技场",
       "encounter_zh_cn": "煞戎努斯",
-      "encounter_localization_source": "item_tooltip",
+      "encounter_localization_source": "official_mapping",
       "slot_key": "neck",
       "armor_type": null,
       "weapon_type": null,
@@ -46940,8 +47905,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 250224,
@@ -47031,6 +47996,13 @@
           "stats": {},
           "sockets": 0,
           "tooltip_zh_cn": "穿灵者的魔印\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n装备唯一\n饰品\n装备：\n你的伤害性法术有一定几率扰动目标附近的虚空，迸发出\n92246\n点暗影伤害并由附近敌人分摊。你从虚空虹吸能量，获得\n593\n点智力，持续10秒。\n需要等级\n90\n售价:\n49\n51\n25\n掉落于: 煞戎努斯"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {},
+          "sockets": 0,
+          "tooltip_zh_cn": "穿灵者的魔印\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n装备唯一\n饰品\n装备：\n你的伤害性法术有一定几率扰动目标附近的虚空，迸发出\n93530\n点暗影伤害并由附近敌人分摊。你从虚空虹吸能量，获得\n599\n点智力，持续10秒。\n需要等级\n90\n售价:\n49\n53\n72\n掉落于: 煞戎努斯"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=250224",
@@ -47112,8 +48084,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 251218,
@@ -47258,6 +48230,18 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "塔兹拉尔寰宇之锋\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n单手\n剑\n220 - 368点伤害\n速度\n2.60\n（每秒伤害113.1点）\n+100 力量\n+2,094 耐力\n+\n60急速\n+\n43精通\n耐久: 110 / 110\n需要等级\n90\n售价:\n90\n19\n83\n掉落于: 塔兹拉尔"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "strength": 101,
+            "stamina": 2118,
+            "haste": 60,
+            "mastery": 43
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "塔兹拉尔寰宇之锋\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n单手\n剑\n223 - 372点伤害\n速度\n2.60\n（每秒伤害114.4点）\n+101 力量\n+2,118 耐力\n+\n60急速\n+\n43精通\n耐久: 110 / 110\n需要等级\n90\n售价:\n90\n24\n31\n掉落于: 塔兹拉尔\n掉落几率: 2.27%"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=251218",
@@ -47304,8 +48288,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 251222,
@@ -48110,6 +49094,15 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "虚空处刑指令\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n装备唯一\n饰品\n+190 敏捷\n使用:\n标记处刑目标，使你的急速提高\n353\n，持续20秒。当目标被标记时，虚空驱使你消灭目标，每次对其攻击都会额外获得\n25\n爆击，最高可获得(\n25\n* 15)爆击。\n(2​分钟 冷却)\n需要等级\n90\n售价:\n49\n70\n36\n掉落于: 塔兹拉尔"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "agility": 191
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "虚空处刑指令\n史诗钥石\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n装备唯一\n饰品\n+191 敏捷\n使用:\n标记处刑目标，使你的急速提高\n354\n，持续20秒。当目标被标记时，虚空驱使你消灭目标，每次对其攻击都会额外获得\n25\n爆击，最高可获得(\n25\n* 15)爆击。\n(2​分钟 冷却)\n需要等级\n90\n售价:\n49\n72\n84\n掉落于: 塔兹拉尔\n掉落几率: 4.55%"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=250225",
@@ -48164,8 +49157,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 268204,
@@ -48310,6 +49303,18 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "远古构造体的烈毒短刀\n史诗\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n单手\n匕首\n152 - 255点伤害\n速度\n1.80\n（每秒伤害113.1点）\n+100 敏捷\n+2,094 耐力\n+\n72急速\n+\n31全能\n耐久: 80 / 80\n需要等级\n90\n售价:\n89\n40\n64\n掉落于: 乌拉特克之息\n掉落几率: 34.45%"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "agility": 101,
+            "stamina": 2118,
+            "haste": 72,
+            "versatility": 31
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "远古构造体的烈毒短刀\n史诗\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n单手\n匕首\n154 - 257点伤害\n速度\n1.80\n（每秒伤害114.2点）\n+101 敏捷\n+2,118 耐力\n+\n72急速\n+\n31全能\n耐久: 80 / 80\n需要等级\n90\n售价:\n89\n45\n9\n掉落于: 乌拉特克之息\n掉落几率: 32.81%"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=268204",
@@ -48352,8 +49357,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 268198,
@@ -48498,6 +49503,18 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "强酸守护者粉碎锤\n史诗\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n双手\n权杖\n472 - 608点伤害\n速度\n3.60\n（每秒伤害150.0点）\n+199 力量\n+4,187 耐力\n+\n141暴击\n+\n65急速\n耐久: 120 / 120\n需要等级\n90\n售价:\n109\n38\n5\n掉落于: 乌拉特克之息\n掉落几率: 31.09%"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "strength": 201,
+            "stamina": 4235,
+            "critical_strike": 141,
+            "haste": 65
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "强酸守护者粉碎锤\n史诗\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n双手\n权杖\n477 - 614点伤害\n速度\n3.60\n（每秒伤害151.5点）\n+201 力量\n+4,235 耐力\n+\n141暴击\n+\n65急速\n耐久: 120 / 120\n需要等级\n90\n售价:\n109\n43\n49\n掉落于: 乌拉特克之息\n掉落几率: 30.30%"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=268198",
@@ -48539,8 +49556,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 270910,
@@ -49394,6 +50411,17 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "哨兵的强酸锁链\n史诗\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n颈部\n+2,355 耐力\n+\n98暴击\n+\n321急速\n装备：\n在盘卷蛇岛与烈毒之渊中，受到致命剧毒的伤害降低7%。\n需要等级\n90\n\"血咒涤荡秽物。\"\n售价:\n25\n48\n18\n掉落于: 乌拉特克之息\n掉落几率: 30.25%"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "stamina": 2382,
+            "critical_strike": 99,
+            "haste": 323
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "哨兵的强酸锁链\n史诗\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n颈部\n+2,382 耐力\n+\n99暴击\n+\n323急速\n装备：\n在盘卷蛇岛与烈毒之渊中，受到致命剧毒的伤害降低7%。\n需要等级\n90\n\"血咒涤荡秽物。\"\n售价:\n25\n49\n45\n掉落于: 乌拉特克之息\n掉落几率: 34.61%"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=268250",
@@ -49475,8 +50503,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 268197,
@@ -49621,6 +50649,18 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "嘶鸣深渊脊骨\n史诗\n物品等级：\n340\n升级：神话\n6/6\n拾取后绑定\n副手物品\n+306 智力\n+2,094 耐力\n+\n33急速\n+\n70精通\n需要等级\n90\n售价:\n52\n31\n66\n掉落于: 乌拉特克之息\n掉落几率: 26.89%"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "intellect": 309,
+            "stamina": 2118,
+            "haste": 33,
+            "mastery": 70
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "嘶鸣深渊脊骨\n史诗\n物品等级：\n341\n升级：神话\n6/6\n拾取后绑定\n副手物品\n+309 智力\n+2,118 耐力\n+\n33急速\n+\n70精通\n需要等级\n90\n售价:\n52\n34\n27\n掉落于: 乌拉特克之息\n掉落几率: 32.46%"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=268197",
@@ -49671,8 +50711,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 268224,
@@ -50078,6 +51118,15 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "守护者的躁动核心\n史诗\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n装备唯一\n饰品\n+190 [敏捷 or 力量]\n装备：\n你的攻击有很高的几率使你获得乌拉特克的专注，使你的急速提高\n130\n，持续12秒。多次施加的效果可以重叠。\n当有两个或更多效果同时激活时，你的专注力会进一步增强，使该效果提高20%。\n需要等级\n90\n\"毒咒如影随形。\"\n售价:\n49\n82\n75\n掉落于: 乌拉特克之息\n掉落几率: 35.29%"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "agility_or_strength": 191
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "守护者的躁动核心\n史诗\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n装备唯一\n饰品\n+191 [敏捷 or 力量]\n装备：\n你的攻击有很高的几率使你获得乌拉特克的专注，使你的急速提高\n131\n，持续12秒。多次施加的效果可以重叠。\n当有两个或更多效果同时激活时，你的专注力会进一步增强，使该效果提高20%。\n需要等级\n90\n\"毒咒如影随形。\"\n售价:\n49\n85\n24\n掉落于: 乌拉特克之息\n掉落几率: 32.93%"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=270165",
@@ -50140,8 +51189,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 268208,
@@ -50286,6 +51335,18 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "强血者的仪式切肉斧\n史诗\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n单手\n斧\n191 - 398点伤害\n速度\n2.60\n（每秒伤害113.3点）\n+100 力量\n+2,094 耐力\n+\n35暴击\n+\n67精通\n耐久: 110 / 110\n需要等级\n90\n\"旁人早已察觉到了她的狂热。而他呢？是选择视而不见，还是他根本无法认清自己姐妹的真面目？\"\n售价:\n84\n33\n71"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "strength": 101,
+            "stamina": 2118,
+            "critical_strike": 36,
+            "mastery": 68
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "强血者的仪式切肉斧\n史诗\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n单手\n斧\n193 - 402点伤害\n速度\n2.60\n（每秒伤害114.4点）\n+101 力量\n+2,118 耐力\n+\n36暴击\n+\n68精通\n耐久: 110 / 110\n需要等级\n90\n\"旁人早已察觉到了她的狂热。而他呢？是选择视而不见，还是他根本无法认清自己姐妹的真面目？\"\n售价:\n84\n37\n90"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=268208",
@@ -50331,8 +51392,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 268203,
@@ -50477,6 +51538,18 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "咒魇裂魂匕首\n史诗\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n单手\n匕首\n76 - 127点伤害\n速度\n1.80\n（每秒伤害56.4点）\n+581 智力\n+2,094 耐力\n+\n31暴击\n+\n72精通\n耐久: 80 / 80\n需要等级\n90\n\"“这是唯一的出路。”——内克扎莉\"\n售价:\n89\n8\n80"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "intellect": 586,
+            "stamina": 2118,
+            "critical_strike": 31,
+            "mastery": 72
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "咒魇裂魂匕首\n史诗\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n单手\n匕首\n77 - 129点伤害\n速度\n1.80\n（每秒伤害57.2点）\n+586 智力\n+2,118 耐力\n+\n31暴击\n+\n72精通\n耐久: 80 / 80\n需要等级\n90\n\"“这是唯一的出路。”——内克扎莉\"\n售价:\n89\n13\n23"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=268203",
@@ -50530,8 +51603,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 270930,
@@ -50676,6 +51749,18 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "墓穴行者之爪\n史诗\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n单手\n拳套\n243 - 346点伤害\n速度\n2.60\n（每秒伤害113.3点）\n+100 敏捷\n+2,094 耐力\n+\n32暴击\n+\n71急速\n耐久: 80 / 80\n需要等级\n90\n售价:\n89\n77\n65"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "agility": 101,
+            "stamina": 2118,
+            "critical_strike": 32,
+            "haste": 72
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "墓穴行者之爪\n史诗\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n单手\n拳套\n245 - 349点伤害\n速度\n2.60\n（每秒伤害114.2点）\n+101 敏捷\n+2,118 耐力\n+\n32暴击\n+\n72急速\n耐久: 80 / 80\n需要等级\n90\n售价:\n89\n82\n12"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=270930",
@@ -50725,8 +51810,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 268248,
@@ -52609,6 +53694,15 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "盘魂者仪式容器\n史诗\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n装备唯一\n饰品\n+190 智力\n使用:\n在2秒内召唤5个盘魂者密教徒精魂并献祭其精华，每个精魂为你的一名盟友施加一道屏障，使受到的伤害降低50%，持续20秒或直到防止了(\n326589\n*\n1\n)点伤害。\n盟友死亡会使此冷却时间缩短30秒，并立即召唤一个盘魂教徒精魂进行献祭。\n(2​分钟 冷却)\n需要等级\n90\n售价:\n49\n25\n95"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "intellect": 191
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "盘魂者仪式容器\n史诗\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n装备唯一\n饰品\n+191 智力\n使用:\n在2秒内召唤5个盘魂者密教徒精魂并献祭其精华，每个精魂为你的一名盟友施加一道屏障，使受到的伤害降低50%，持续20秒或直到防止了(\n331134\n*\n1\n)点伤害。\n盟友死亡会使此冷却时间缩短30秒，并立即召唤一个盘魂教徒精魂进行献祭。\n(2​分钟 冷却)\n需要等级\n90\n售价:\n49\n28\n41"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=270162",
@@ -52657,8 +53751,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 268206,
@@ -52803,6 +53897,18 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "游蛇蛮兵之槌\n史诗\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n单手\n权杖\n257 - 331点伤害\n速度\n2.60\n（每秒伤害113.1点）\n+100 敏捷\n+2,094 耐力\n+\n71暴击\n+\n32精通\n耐久: 110 / 110\n需要等级\n90\n售价:\n83\n70\n2\n掉落于: 斯索拉克\n掉落几率: 32.05%"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "agility": 101,
+            "stamina": 2118,
+            "critical_strike": 71,
+            "mastery": 32
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "游蛇蛮兵之槌\n史诗\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n单手\n权杖\n260 - 335点伤害\n速度\n2.60\n（每秒伤害114.4点）\n+101 敏捷\n+2,118 耐力\n+\n71暴击\n+\n32精通\n耐久: 110 / 110\n需要等级\n90\n售价:\n83\n74\n18\n掉落于: 斯索拉克\n掉落几率: 29.78%"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=268206",
@@ -52848,8 +53954,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 268201,
@@ -53005,6 +54111,19 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "烈毒骨制战刃\n史诗\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n单手\n战刃\n228 - 361点伤害\n速度\n2.60\n（每秒伤害113.3点）\n+481 智力\n+100 [敏捷 or 智力]\n+2,094 耐力\n+\n32暴击\n+\n71精通\n耐久: 120 / 120\n需要等级\n90\n售价:\n88\n45\n97\n掉落于: 斯索拉克\n掉落几率: 32.05%"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "intellect": 485,
+            "stamina": 2118,
+            "agility_or_intellect": 101,
+            "critical_strike": 32,
+            "mastery": 72
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "烈毒骨制战刃\n史诗\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n单手\n战刃\n230 - 364点伤害\n速度\n2.60\n（每秒伤害114.2点）\n+485 智力\n+101 [敏捷 or 智力]\n+2,118 耐力\n+\n32暴击\n+\n72精通\n耐久: 120 / 120\n需要等级\n90\n售价:\n88\n50\n37\n掉落于: 斯索拉克\n掉落几率: 30.96%"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=268201",
@@ -53037,8 +54156,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 270918,
@@ -54367,6 +55486,15 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "呼啸枢纽神像\n史诗\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n装备唯一\n饰品\n+\n147精通\n装备：\n躲闪、招架或格挡有很高的几率唤来鼓舞之风，使你的\n力量或敏捷\n提高\n578\n点，加速提高\n146\n，持续12秒。\n如果你在15秒秒内没有躲闪、招架或格挡，此效果会立即触发。每1分钟只能触发一次。\n需要等级\n90\n售价:\n52\n90\n53\n掉落于: 斯索拉克\n掉落几率: 28.21%"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "mastery": 148
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "呼啸枢纽神像\n史诗\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n装备唯一\n饰品\n+\n148精通\n装备：\n躲闪、招架或格挡有很高的几率唤来鼓舞之风，使你的\n力量或敏捷\n提高\n583\n点，加速提高\n146\n，持续12秒。\n如果你在15秒秒内没有躲闪、招架或格挡，此效果会立即触发。每1分钟只能触发一次。\n需要等级\n90\n售价:\n52\n93\n17\n掉落于: 斯索拉克\n掉落几率: 28.93%"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=270174",
@@ -54448,8 +55576,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 270163,
@@ -54561,6 +55689,15 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "斯索拉克的凶猛\n史诗\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n装备唯一\n饰品\n+190 力量\n装备：\n根据附近敌人的数量，你的攻击有很高的几率顺势接续毁伤、断肢或风暴打击。\n你的杀戮本能已打磨至巅峰，在击败一名敌人后，你的下一次攻击必定触发此效果。每10秒只能触发一次。\n需要等级\n90\n\"挣扎。尖叫。然后，死吧。\"\n售价:\n49\n44\n54\n掉落于: 斯索拉克\n掉落几率: 28.21%"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "strength": 191
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "斯索拉克的凶猛\n史诗\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n装备唯一\n饰品\n+191 力量\n装备：\n根据附近敌人的数量，你的攻击有很高的几率顺势接续毁伤、断肢或风暴打击。\n你的杀戮本能已打磨至巅峰，在击败一名敌人后，你的下一次攻击必定触发此效果。每10秒只能触发一次。\n需要等级\n90\n\"挣扎。尖叫。然后，死吧。\"\n售价:\n49\n47\n1\n掉落于: 斯索拉克\n掉落几率: 32.99%"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=270163",
@@ -54610,8 +55747,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 268211,
@@ -54756,6 +55893,18 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "灾厄妖术之刃\n史诗\n物品等级：\n340\n拾取后绑定\n单手\n剑\n110 - 184点伤害\n速度\n2.60\n（每秒伤害56.5点）\n+581 智力\n+2,094 耐力\n+\n70急速\n+\n33精通\n耐久: 110 / 110\n需要等级\n90\n售价:\n85\n28\n38"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "intellect": 586,
+            "stamina": 2118,
+            "haste": 70,
+            "mastery": 33
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "灾厄妖术之刃\n史诗\n物品等级：\n341\n拾取后绑定\n单手\n剑\n111 - 186点伤害\n速度\n2.60\n（每秒伤害57.1点）\n+586 智力\n+2,118 耐力\n+\n70急速\n+\n33精通\n耐久: 110 / 110\n需要等级\n90\n售价:\n85\n32\n62"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=268211",
@@ -54806,8 +55955,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 268253,
@@ -56169,6 +57318,15 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "妖术领主的厄运神像\n史诗\n物品等级：\n340\n拾取后绑定\n装备唯一\n饰品\n+\n147急速\n装备：\n你的法术会使你受到妖术领主的厄运的折磨，使你的智力降低\n3\n点，最多可叠加30次。此效果每6秒只能触发一次。（6秒 冷却）\n使用:\n消耗妖术领主的厄运的力量，每层效果使你的智力提高\n37\n点，持续30秒。\n(30​秒 冷却)\n需要等级\n90\n售价:\n51\n95\n51"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "haste": 148
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "妖术领主的厄运神像\n史诗\n物品等级：\n341\n拾取后绑定\n装备唯一\n饰品\n+\n148急速\n装备：\n你的法术会使你受到妖术领主的厄运的折磨，使你的智力降低\n3\n点，最多可叠加30次。此效果每6秒只能触发一次。（6秒 冷却）\n使用:\n消耗妖术领主的厄运的力量，每层效果使你的智力提高\n38\n点，持续30秒。\n(30​秒 冷却)\n需要等级\n90\n售价:\n51\n98\n10"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=270169",
@@ -56250,8 +57408,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 270173,
@@ -56363,6 +57521,15 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "祖尔金的处斩技法\n史诗\n物品等级：\n340\n拾取后绑定\n装备唯一\n饰品\n+190 [敏捷 or 力量]\n装备：\n你的攻击有几率随后触发处斩，朝你的目标掷出一把巨大的战斧，造成(\n47828\n*\n1\n)点物理伤害。\n目标每损失1%的生命值，伤害就会提高2%。\n需要等级\n90\n\"你想要斧头吗？\"\n祖尔加之咬\n(0/3)\n祖尔金的处斩技法\n阿曼穆索，督军的复仇\n迈兹罗阿，督军的狂怒\n(2) 组合 :\n完善你的处斩技巧，使其弹射至附近的第二名敌人，造成100%的伤害并对两个目标施加毒牙。\n售价:\n52\n71\n42"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "agility_or_strength": 191
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "祖尔金的处斩技法\n史诗\n物品等级：\n341\n拾取后绑定\n装备唯一\n饰品\n+191 [敏捷 or 力量]\n装备：\n你的攻击有几率随后触发处斩，朝你的目标掷出一把巨大的战斧，造成(\n48494\n*\n1\n)点物理伤害。\n目标每损失1%的生命值，伤害就会提高2%。\n需要等级\n90\n\"你想要斧头吗？\"\n祖尔加之咬\n(0/3)\n祖尔金的处斩技法\n阿曼穆索，督军的复仇\n迈兹罗阿，督军的狂怒\n(2) 组合 :\n完善你的处斩技巧，使其弹射至附近的第二名敌人，造成100%的伤害并对两个目标施加毒牙。\n售价:\n52\n74\n5"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=270173",
@@ -56425,8 +57592,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 268209,
@@ -56571,6 +57738,18 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "阿曼穆索，督军的复仇\n史诗\n物品等级：\n340\n拾取后绑定\n装备唯一\n主手\n斧\n206 - 383点伤害\n速度\n2.60\n（每秒伤害113.3点）\n+100 [敏捷 or 力量]\n+2,094 耐力\n+\n31急速\n+\n72精通\n耐久: 110 / 110\n装备：\n你的攻击有很高的几率施加毒牙，在6秒内造成(\n950\n* 6 *\n1\n)点自然伤害，随后爆发并对附近的敌人造成\n2495\n点自然伤害。多次施加的效果可以重叠。\n需要等级\n90\n\"是你向神灵低头，还是他们向你低头？\"\n祖尔加之咬\n(0/3)\n祖尔金的处斩技法\n阿曼穆索，督军的复仇\n迈兹罗阿，督军的狂怒\n(2) 组合 :\n完善你的处斩技巧，使其弹射至附近的第二名敌人，造成100%的伤害并对两个目标施加毒牙。\n售价:\n84\n64\n69"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "stamina": 2118,
+            "agility_or_strength": 101,
+            "haste": 31,
+            "mastery": 72
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "阿曼穆索，督军的复仇\n史诗\n物品等级：\n341\n拾取后绑定\n装备唯一\n主手\n斧\n208 - 387点伤害\n速度\n2.60\n（每秒伤害114.4点）\n+101 [敏捷 or 力量]\n+2,118 耐力\n+\n31急速\n+\n72精通\n耐久: 110 / 110\n装备：\n你的攻击有很高的几率施加毒牙，在6秒内造成(\n964\n* 6 *\n1\n)点自然伤害，随后爆发并对附近的敌人造成\n2529\n点自然伤害。多次施加的效果可以重叠。\n需要等级\n90\n\"是你向神灵低头，还是他们向你低头？\"\n祖尔加之咬\n(0/3)\n祖尔金的处斩技法\n阿曼穆索，督军的复仇\n迈兹罗阿，督军的狂怒\n(2) 组合 :\n完善你的处斩技巧，使其弹射至附近的第二名敌人，造成100%的伤害并对两个目标施加毒牙。\n售价:\n84\n68\n90"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=268209",
@@ -56627,8 +57806,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 268213,
@@ -56773,6 +57952,18 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "迈兹罗阿，督军的狂怒\n史诗\n物品等级：\n340\n拾取后绑定\n装备唯一\n双手\n斧\n351 - 729点伤害\n速度\n3.60\n（每秒伤害150.0点）\n+199 [敏捷 or 力量]\n+4,187 耐力\n+\n145暴击\n+\n60精通\n耐久: 120 / 120\n装备：\n你的攻击有很高的几率施加毒牙，在6秒内造成(\n950\n* 6 *\n1\n)点自然伤害，随后爆发并对附近的敌人造成\n2495\n点自然伤害。多次施加的效果可以重叠。\n需要等级\n90\n\"洛阿神灵说我们的祖父，伟大的祖尔金，背叛了他们。可凭什么信他们？\"\n祖尔加之咬\n(0/3)\n祖尔金的处斩技法\n阿曼穆索，督军的复仇\n迈兹罗阿，督军的狂怒\n(2) 组合 :\n完善你的处斩技巧，使其弹射至附近的第二名敌人，造成100%的伤害并对两个目标施加毒牙。\n售价:\n107\n39\n2"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "stamina": 4235,
+            "agility_or_strength": 201,
+            "critical_strike": 146,
+            "mastery": 60
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "迈兹罗阿，督军的狂怒\n史诗\n物品等级：\n341\n拾取后绑定\n装备唯一\n双手\n斧\n354 - 736点伤害\n速度\n3.60\n（每秒伤害151.4点）\n+201 [敏捷 or 力量]\n+4,235 耐力\n+\n146暴击\n+\n60精通\n耐久: 120 / 120\n装备：\n你的攻击有很高的几率施加毒牙，在6秒内造成(\n964\n* 6 *\n1\n)点自然伤害，随后爆发并对附近的敌人造成\n2529\n点自然伤害。多次施加的效果可以重叠。\n需要等级\n90\n\"洛阿神灵说我们的祖父，伟大的祖尔金，背叛了他们。可凭什么信他们？\"\n祖尔加之咬\n(0/3)\n祖尔金的处斩技法\n阿曼穆索，督军的复仇\n迈兹罗阿，督军的狂怒\n(2) 组合 :\n完善你的处斩技巧，使其弹射至附近的第二名敌人，造成100%的伤害并对两个目标施加毒牙。\n售价:\n107\n44\n36"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=268213",
@@ -56818,8 +58009,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 268210,
@@ -56964,6 +58155,18 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "恶意精魂短棍\n史诗\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n单手\n权杖\n128 - 166点伤害\n速度\n2.60\n（每秒伤害56.5点）\n+581 智力\n+2,094 耐力\n+\n31暴击\n+\n72精通\n耐久: 110 / 110\n需要等级\n90\n售价:\n84\n96\n54\n掉落于: 莫尔扎希"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "intellect": 586,
+            "stamina": 2118,
+            "critical_strike": 31,
+            "mastery": 72
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "恶意精魂短棍\n史诗\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n单手\n权杖\n130 - 167点伤害\n速度\n2.60\n（每秒伤害57.1点）\n+586 智力\n+2,118 耐力\n+\n31暴击\n+\n72精通\n耐久: 110 / 110\n需要等级\n90\n售价:\n85\n76\n掉落于: 莫尔扎希"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=268210",
@@ -57013,8 +58216,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 268242,
@@ -58345,6 +59548,18 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "盖博的备用冲击枪\n史诗\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n远程\n枪\n315 - 585点伤害\n速度\n3.00\n（每秒伤害150.0点）\n+199 敏捷\n+4,187 耐力\n+\n143急速\n+\n63精通\n耐久: 120 / 120\n需要等级\n90\n\"谢天谢地，他之前一直把这玩意儿死死压在包底。\"\n售价:\n110\n17\n66\n掉落于: 莫尔扎希"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "agility": 201,
+            "stamina": 4235,
+            "haste": 143,
+            "mastery": 63
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "盖博的备用冲击枪\n史诗\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n远程\n枪\n318 - 591点伤害\n速度\n3.00\n（每秒伤害151.5点）\n+201 敏捷\n+4,235 耐力\n+\n143急速\n+\n63精通\n耐久: 120 / 120\n需要等级\n90\n\"谢天谢地，他之前一直把这玩意儿死死压在包底。\"\n售价:\n110\n23\n14\n掉落于: 莫尔扎希"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=268200",
@@ -58377,8 +59592,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 268196,
@@ -58534,6 +59749,19 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "毒痕鳞甲盾\n史诗\n物品等级：\n340\n升级：神话\n6/6\n拾取后绑定\n副手\n盾\n1327护甲\n3317点格挡\n+100 力量\n+306 智力\n+2,094 耐力\n+\n34暴击\n+\n69急速\n耐久: 120 / 120\n需要等级\n90\n售价:\n55\n60\n5\n掉落于: 莫尔扎希"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "strength": 101,
+            "intellect": 309,
+            "stamina": 2118,
+            "critical_strike": 34,
+            "haste": 69
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "毒痕鳞甲盾\n史诗\n物品等级：\n341\n升级：神话\n6/6\n拾取后绑定\n副手\n盾\n1337护甲\n3342点格挡\n+101 力量\n+309 智力\n+2,118 耐力\n+\n34暴击\n+\n69急速\n耐久: 120 / 120\n需要等级\n90\n售价:\n55\n62\n83\n掉落于: 莫尔扎希"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=268196",
@@ -58573,8 +59801,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 270164,
@@ -58686,6 +59914,15 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "盖博的无底袋\n史诗\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n装备唯一\n饰品\n+190 [敏捷 or 力量 or 智力]\n装备：\n施放法术和技能时，你有几率从包里掏出一件价值存疑的神器，以各种方式提高你的副属性。包里可能已经没有鱼了，但也说不准。（750毫秒 冷却）\n需要等级\n90\n\"恶心的烂鱼！没完没了了？我本该完全掌控这具躯体的！\"\n售价:\n49\n63\n64\n掉落于: 莫尔扎希"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "agility_or_strength_or_intellect": 191
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "盖博的无底袋\n史诗\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n装备唯一\n饰品\n+191 [敏捷 or 力量 or 智力]\n装备：\n施放法术和技能时，你有几率从包里掏出一件价值存疑的神器，以各种方式提高你的副属性。包里可能已经没有鱼了，但也说不准。（750毫秒 冷却）\n需要等级\n90\n\"恶心的烂鱼！没完没了了？我本该完全掌控这具躯体的！\"\n售价:\n49\n66\n12\n掉落于: 莫尔扎希"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=270164",
@@ -58767,8 +60004,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 270160,
@@ -58880,6 +60117,15 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "大副的甲壳结界\n史诗\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n装备唯一\n饰品\n+190 [敏捷 or 力量]\n使用:\n部署甲壳结界，在30秒内吸收最多40%的承受伤害，直至累计化解\n523456\n点伤害。当你的生命值降至40%以下时，甲壳结界会变得更加坚固，改为使受到的伤害降低80%。\n只要甲壳结界存在，就会对近战攻击者造成\n26043\n点物理伤害。\n(1​分钟，30​秒 冷却)\n需要等级\n90\n售价:\n54\n4\n65\n掉落于: 莫尔扎希"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "agility_or_strength": 191
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "大副的甲壳结界\n史诗\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n装备唯一\n饰品\n+191 [敏捷 or 力量]\n使用:\n部署甲壳结界，在30秒内吸收最多40%的承受伤害，直至累计化解\n530741\n点伤害。当你的生命值降至40%以下时，甲壳结界会变得更加坚固，改为使受到的伤害降低80%。\n只要甲壳结界存在，就会对近战攻击者造成\n26406\n点物理伤害。\n(1​分钟，30​秒 冷却)\n需要等级\n90\n售价:\n54\n7\n35\n掉落于: 莫尔扎希"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=270160",
@@ -58927,8 +60173,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 268264,
@@ -59073,6 +60319,18 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "贪婪盛宴之牙\n史诗\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n单手\n匕首\n152 - 255点伤害\n速度\n1.80\n（每秒伤害113.1点）\n+100 敏捷\n+2,094 耐力\n+\n35暴击\n+\n68精通\n耐久: 80 / 80\n需要等级\n90\n售价:\n83\n3\n75\n掉落于: 维克苏尔"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "agility": 101,
+            "stamina": 2118,
+            "critical_strike": 35,
+            "mastery": 68
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "贪婪盛宴之牙\n史诗\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n单手\n匕首\n154 - 257点伤害\n速度\n1.80\n（每秒伤害114.2点）\n+101 敏捷\n+2,118 耐力\n+\n35暴击\n+\n68精通\n耐久: 80 / 80\n需要等级\n90\n售价:\n83\n7\n88\n掉落于: 维克苏尔"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=268264",
@@ -59115,8 +60373,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 268241,
@@ -60142,6 +61400,17 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "双子毒牙护符\n史诗\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n颈部\n+2,355 耐力\n+\n63急速\n+\n356精通\n装备：\n在盘卷蛇岛与烈毒之渊中，受到致命剧毒的伤害降低7%。\n需要等级\n90\n\"直到生命的最后一刻，乌拉特克最古老子嗣的饥饿感都在不断膨胀。\"\n售价:\n25\n57\n73\n掉落于: 维克苏尔"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "stamina": 2382,
+            "haste": 64,
+            "mastery": 357
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "双子毒牙护符\n史诗\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n颈部\n+2,382 耐力\n+\n64急速\n+\n357精通\n装备：\n在盘卷蛇岛与烈毒之渊中，受到致命剧毒的伤害降低7%。\n需要等级\n90\n\"直到生命的最后一刻，乌拉特克最古老子嗣的饥饿感都在不断膨胀。\"\n售价:\n25\n59\n1\n掉落于: 维克苏尔"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=268251",
@@ -60223,8 +61492,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 268220,
@@ -60630,6 +61899,15 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "维克苏尔的涌流腺体\n史诗\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n装备唯一\n饰品\n+190 智力\n使用:\n释放出一股腐灼毒液，对你的目标造成(\n62797\n*\n1\n/ 0.200000003)点自然伤害。敌人每残存1%的生命值，伤害就提高1%。\n击败敌人能够将其体液催化为额外的毒液，使此冷却时间缩短5秒。\n(3​分钟 冷却)\n需要等级\n90\n售价:\n52\n14\n62\n掉落于: 维克苏尔"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "intellect": 191
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "维克苏尔的涌流腺体\n史诗\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n装备唯一\n饰品\n+191 智力\n使用:\n释放出一股腐灼毒液，对你的目标造成(\n63671\n*\n1\n/ 0.200000003)点自然伤害。敌人每残存1%的生命值，伤害就提高1%。\n击败敌人能够将其体液催化为额外的毒液，使此冷却时间缩短5秒。\n(3​分钟 冷却)\n需要等级\n90\n售价:\n52\n17\n22\n掉落于: 维克苏尔"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=270170",
@@ -60690,8 +61968,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 270171,
@@ -60803,6 +62081,15 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "超自然抗毒剂\n史诗\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n装备唯一\n饰品\n+\n147暴击\n装备：\n你的治疗有很高几率向目标注入超自然抗毒剂，持续30秒，为你盟友恢复相当于其受到任何伤害75%的生命值，直到总计恢复\n342290\n点生命值。\n需要等级\n90\n售价:\n52\n33\n21\n掉落于: 维克苏尔"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "critical_strike": 148
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "超自然抗毒剂\n史诗\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n装备唯一\n饰品\n+\n148暴击\n装备：\n你的治疗有很高几率向目标注入超自然抗毒剂，持续30秒，为你盟友恢复相当于其受到任何伤害75%的生命值，直到总计恢复\n345765\n点生命值。\n需要等级\n90\n售价:\n52\n35\n82\n掉落于: 维克苏尔"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=270171",
@@ -60851,8 +62138,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 268202,
@@ -60986,6 +62273,17 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "被缚女神之颚\n史诗\n毒咒\n物品等级：\n340\n拾取后绑定\n装备唯一\n单手\n剑\n220 - 368点伤害\n速度\n2.60\n（每秒伤害113.1点）\n+100 力量\n+2,094 耐力\n+\n103急速\n耐久: 110 / 110\n装备：\n你的法术和技能有几率使你的急速提高\n372\n，但会使你的其他次要属性降低\n62\n，持续12秒。\n需要等级\n90\n售价:\n88\n76\n95\n掉落于: 乌拉特克"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "strength": 101,
+            "stamina": 2118,
+            "haste": 103
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "被缚女神之颚\n史诗\n毒咒\n物品等级：\n341\n拾取后绑定\n装备唯一\n单手\n剑\n223 - 372点伤害\n速度\n2.60\n（每秒伤害114.4点）\n+101 力量\n+2,118 耐力\n+\n103急速\n耐久: 110 / 110\n装备：\n你的法术和技能有几率使你的急速提高\n373\n，但会使你的其他次要属性降低\n62\n，持续12秒。\n需要等级\n90\n售价:\n88\n81\n37\n掉落于: 乌拉特克"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=268202",
@@ -61032,8 +62330,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 268215,
@@ -61167,6 +62465,17 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "深渊巢魔的长柄大斧\n史诗\n毒咒\n物品等级：\n340\n拾取后绑定\n装备唯一\n双手\n长柄武器\n378 - 702点伤害\n速度\n3.60\n（每秒伤害150.0点）\n+199 敏捷\n+4,187 耐力\n+\n206精通\n耐久: 120 / 120\n装备：\n你的法术和技能有几率使你的精通提高\n372\n，但会使你的其他次要属性降低\n62\n，持续12秒。\n需要等级\n90\n售价:\n108\n18\n63\n掉落于: 乌拉特克"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "agility": 201,
+            "stamina": 4235,
+            "mastery": 207
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "深渊巢魔的长柄大斧\n史诗\n毒咒\n物品等级：\n341\n拾取后绑定\n装备唯一\n双手\n长柄武器\n381 - 709点伤害\n速度\n3.60\n（每秒伤害151.4点）\n+201 敏捷\n+4,235 耐力\n+\n207精通\n耐久: 120 / 120\n装备：\n你的法术和技能有几率使你的精通提高\n373\n，但会使你的其他次要属性降低\n62\n，持续12秒。\n需要等级\n90\n售价:\n108\n24\n1\n掉落于: 乌拉特克"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=268215",
@@ -61208,8 +62517,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 270909,
@@ -61528,6 +62837,19 @@
           },
           "sockets": 1,
           "tooltip_zh_cn": "亚基克星藏骨匣\n史诗\n毒咒\n物品等级：\n340\n拾取后绑定\n颈部\n+2,355 耐力\n+\n105暴击\n+\n105急速\n+\n105全能\n+\n105精通\n棱彩插槽\n装备：\n在盘卷蛇岛与烈毒之渊中，受到致命剧毒的伤害降低7%。\n装备：\n你的法术和技能有几率使你的一项随机次要属性提高\n425\n，但会使你的其他次要属性降低\n71\n，持续12秒。\n需要等级\n90\n\"亚基虫群在她暴虐的攻势下败走，然而她身后溃流的毒液之河却无差别地剥夺着生灵。\"\n售价:\n25\n67\n掉落于: 乌拉特克"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "stamina": 2382,
+            "critical_strike": 105,
+            "haste": 105,
+            "versatility": 105,
+            "mastery": 105
+          },
+          "sockets": 1,
+          "tooltip_zh_cn": "亚基克星藏骨匣\n史诗\n毒咒\n物品等级：\n341\n拾取后绑定\n颈部\n+2,382 耐力\n+\n105暴击\n+\n105急速\n+\n105全能\n+\n105精通\n棱彩插槽\n装备：\n在盘卷蛇岛与烈毒之渊中，受到致命剧毒的伤害降低7%。\n装备：\n你的法术和技能有几率使你的一项随机次要属性提高\n427\n，但会使你的其他次要属性降低\n72\n，持续12秒。\n需要等级\n90\n\"亚基虫群在她暴虐的攻势下败走，然而她身后溃流的毒液之河却无差别地剥夺着生灵。\"\n售价:\n25\n1\n92\n掉落于: 乌拉特克"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=268265",
@@ -61610,8 +62932,8 @@
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
       "effect_stat_policy": "count_static_item_stats_only",
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 268207,
@@ -61745,6 +63067,17 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "强酸安息巨弓\n史诗\n毒咒\n物品等级：\n340\n拾取后绑定\n远程\n弓\n382 - 518点伤害\n速度\n3.00\n（每秒伤害150.0点）\n+199 敏捷\n+4,187 耐力\n+\n206暴击\n耐久: 120 / 120\n装备：\n你的法术和技能有几率使你的爆击提高\n372\n，但会使你的其他次要属性降低\n62\n，持续12秒。\n需要等级\n90\n售价:\n105\n2\n33\n掉落于: 乌拉特克"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "agility": 201,
+            "stamina": 4235,
+            "critical_strike": 207
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "强酸安息巨弓\n史诗\n毒咒\n物品等级：\n341\n拾取后绑定\n远程\n弓\n386 - 523点伤害\n速度\n3.00\n（每秒伤害151.5点）\n+201 敏捷\n+4,235 耐力\n+\n207暴击\n耐久: 120 / 120\n装备：\n你的法术和技能有几率使你的爆击提高\n373\n，但会使你的其他次要属性降低\n62\n，持续12秒。\n需要等级\n90\n售价:\n105\n7\n55\n掉落于: 乌拉特克"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=268207",
@@ -61777,8 +63110,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 270168,
@@ -61890,6 +63223,15 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "剧毒狂怒之泉\n史诗\n物品等级：\n340\n拾取后绑定\n装备唯一\n饰品\n+\n147精通\n使用:\n引导剧毒狂怒洪流，持续2秒，对你的目标造成(\n1\n*\n1306615\n)点自然伤害，并向附近的所有敌人飞溅，造成(\n1\n*\n229944\n)点自然伤害。超过8个目标时造成的伤害降低。\n(4​分钟 冷却)\n需要等级\n90\n售价:\n51\n76\n40\n掉落于: 乌拉特克"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "mastery": 148
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "剧毒狂怒之泉\n史诗\n物品等级：\n341\n拾取后绑定\n装备唯一\n饰品\n+\n148精通\n使用:\n引导剧毒狂怒洪流，持续2秒，对你的目标造成(\n1\n*\n1319881\n)点自然伤害，并向附近的所有敌人飞溅，造成(\n1\n*\n232279\n)点自然伤害。超过8个目标时造成的伤害降低。\n(4​分钟 冷却)\n需要等级\n90\n售价:\n51\n78\n99\n掉落于: 乌拉特克"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=270168",
@@ -61971,8 +63313,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 270175,
@@ -62084,6 +63426,15 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "乌拉特克贪婪之心\n史诗\n物品等级：\n340\n拾取后绑定\n装备唯一\n饰品\n+\n147暴击\n使用:\n咬下心脏，拥抱贪食的饥饿，获得\n462\n力量或敏捷\n，持续20秒。\n在饥饿感持续期间，每次攻击都有极高几率吞噬目标的一块血肉，造成\n15131\n点物理伤害，并使你的\n力量或敏捷\n进一步提高\n52\n点。\n(1​分钟，30​秒 冷却)\n需要等级\n90\n售价:\n53\n9\n12\n掉落于: 乌拉特克"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "critical_strike": 148
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "乌拉特克贪婪之心\n史诗\n物品等级：\n341\n拾取后绑定\n装备唯一\n饰品\n+\n148暴击\n使用:\n咬下心脏，拥抱贪食的饥饿，获得\n466\n力量或敏捷\n，持续20秒。\n在饥饿感持续期间，每次攻击都有极高几率吞噬目标的一块血肉，造成\n15342\n点物理伤害，并使你的\n力量或敏捷\n进一步提高\n52\n点。\n(1​分钟，30​秒 冷却)\n需要等级\n90\n售价:\n53\n11\n77\n掉落于: 乌拉特克"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=270175",
@@ -62165,8 +63516,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 271876,
@@ -62791,6 +64142,17 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "简斯拉泽，灵魂之牙\n史诗\n物品等级：\n340\n拾取后绑定\n装备唯一\n单手\n匕首\n76 - 127点伤害\n速度\n1.80\n（每秒伤害56.4点）\n+581 智力\n+2,094 耐力\n+\n103急速\n耐久: 80 / 80\n装备：\n你的法术有几率吸取一名附近敌人的意志，使其施法速度降低10%，并使你的急速提高\n136\n，持续12秒。\n需要等级\n90\n\"只要踏着族人牺牲的累累白骨，帝国就将再度崛起。\"\n售价:\n86\n26\n50\n掉落于: 乌拉特克"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "intellect": 586,
+            "stamina": 2118,
+            "haste": 103
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "简斯拉泽，灵魂之牙\n史诗\n物品等级：\n341\n拾取后绑定\n装备唯一\n单手\n匕首\n77 - 129点伤害\n速度\n1.80\n（每秒伤害57.2点）\n+586 智力\n+2,118 耐力\n+\n103急速\n耐久: 80 / 80\n装备：\n你的法术有几率吸取一名附近敌人的意志，使其施法速度降低10%，并使你的急速提高\n137\n，持续12秒。\n需要等级\n90\n\"只要踏着族人牺牲的累累白骨，帝国就将再度崛起。\"\n售价:\n86\n30\n79\n掉落于: 乌拉特克"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=271092",
@@ -62845,8 +64207,8 @@
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
       "unique_equipped": true,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 271874,
@@ -63142,6 +64504,17 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "萨塔特克，腐化之息\n史诗\n物品等级：\n340\n拾取后绑定\n装备唯一\n单手\n匕首\n142 - 265点伤害\n速度\n1.80\n（每秒伤害113.1点）\n+100 敏捷\n+2,094 耐力\n+\n103暴击\n耐久: 80 / 80\n装备：\n你的攻击有几率施加腐化之息，造成(\n15761\n*\n1\n)点自然伤害并撕裂出一道死疽裂隙。该裂隙将一直持续直到你死亡，使该效果造成的伤害提高5%，最多叠加10次。\n需要等级\n90\n\"把他们埋了。绝不能让后人知道我们付出的代价。\"\n售价:\n86\n57\n48\n掉落于: 乌拉特克"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "agility": 101,
+            "stamina": 2118,
+            "critical_strike": 103
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "萨塔特克，腐化之息\n史诗\n物品等级：\n341\n拾取后绑定\n装备唯一\n单手\n匕首\n144 - 268点伤害\n速度\n1.80\n（每秒伤害114.4点）\n+101 敏捷\n+2,118 耐力\n+\n103暴击\n耐久: 80 / 80\n装备：\n你的攻击有几率施加腐化之息，造成(\n15981\n*\n1\n)点自然伤害并撕裂出一道死疽裂隙。该裂隙将一直持续直到你死亡，使该效果造成的伤害提高5%，最多叠加10次。\n需要等级\n90\n\"把他们埋了。绝不能让后人知道我们付出的代价。\"\n售价:\n86\n61\n79\n掉落于: 乌拉特克"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=271093",
@@ -63185,8 +64558,8 @@
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
       "unique_equipped": true,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 268205,
@@ -63331,6 +64704,18 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "毒术师的飞翼导能杖\n史诗\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n双手\n法杖\n229 - 311点伤害\n速度\n3.60\n（每秒伤害75.0点）\n+887 智力\n+4,187 耐力\n+\n65急速\n+\n141精通\n耐久: 120 / 120\n需要等级\n90\n售价:\n112\n14\n54"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "intellect": 895,
+            "stamina": 4235,
+            "haste": 65,
+            "mastery": 142
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "毒术师的飞翼导能杖\n史诗\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n双手\n法杖\n231 - 314点伤害\n速度\n3.60\n（每秒伤害75.7点）\n+895 智力\n+4,235 耐力\n+\n65急速\n+\n142精通\n耐久: 120 / 120\n需要等级\n90\n售价:\n112\n20\n11"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=268205",
@@ -63384,8 +64769,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 268214,
@@ -63530,6 +64915,18 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "恶毒齿缘巨剑\n史诗\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n双手\n剑\n405 - 675点伤害\n速度\n3.60\n（每秒伤害150.0点）\n+199 力量\n+4,187 耐力\n+\n137急速\n+\n69精通\n耐久: 120 / 120\n需要等级\n90\n售价:\n107\n78\n82"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "strength": 201,
+            "stamina": 4235,
+            "haste": 137,
+            "mastery": 69
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "恶毒齿缘巨剑\n史诗\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n双手\n剑\n409 - 682点伤害\n速度\n3.60\n（每秒伤害151.5点）\n+201 力量\n+4,235 耐力\n+\n137急速\n+\n69精通\n耐久: 120 / 120\n需要等级\n90\n售价:\n107\n84\n18"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=268214",
@@ -63571,8 +64968,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 270926,
@@ -64901,6 +66298,15 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "幽影恶念之牙\n史诗\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n装备唯一\n饰品\n+190 智力\n装备：\n你的伤害性法术有很高的几率令目标沾染幽影恶念，在1分钟内每3秒造成(\n290\n*\n1\n)点暗影伤害，最多可叠加30次。\n幽影恶念会在目标死亡时爆发，造成等同于其剩余伤害300%的伤害（由附近的敌人均摊），并施加幽影恶念。\n需要等级\n90\n售价:\n49\n6\n84"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "intellect": 191
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "幽影恶念之牙\n史诗\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n装备唯一\n饰品\n+191 智力\n装备：\n你的伤害性法术有很高的几率令目标沾染幽影恶念，在1分钟内每3秒造成(\n294\n*\n1\n)点暗影伤害，最多可叠加30次。\n幽影恶念会在目标死亡时爆发，造成等同于其剩余伤害300%的伤害（由附近的敌人均摊），并施加幽影恶念。\n需要等级\n90\n售价:\n49\n9\n29"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=270161",
@@ -64961,8 +66367,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 270166,
@@ -65074,6 +66480,15 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "瓦什尼克的血色深仇\n史诗\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n装备唯一\n饰品\n+190 敏捷\n装备：\n你的攻击有极高几率在体内积攒血色深仇。叠加至15次时，深仇便会爆发，化作猩红的胆汁鞭笞你的目标及附近所有的敌人，造成(\n110269\n*\n1\n)点暗影伤害（由他们共同分摊）。\n每额外击中一个敌人，伤害提高30%，最多150%。\n如果只有一名敌人被击中，高度浓缩的胆汁将在接下来的3秒内额外造成(\n110269\n* 25 / 100 *\n1\n)点暗影伤害。\n需要等级\n90\n\"猩红。黏稠。美味。\"\n售价:\n50\n1\n86"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "agility": 191
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "瓦什尼克的血色深仇\n史诗\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n装备唯一\n饰品\n+191 敏捷\n装备：\n你的攻击有极高几率在体内积攒血色深仇。叠加至15次时，深仇便会爆发，化作猩红的胆汁鞭笞你的目标及附近所有的敌人，造成(\n111803\n*\n1\n)点暗影伤害（由他们共同分摊）。\n每额外击中一个敌人，伤害提高30%，最多150%。\n如果只有一名敌人被击中，高度浓缩的胆汁将在接下来的3秒内额外造成(\n111803\n* 25 / 100 *\n1\n)点暗影伤害。\n需要等级\n90\n\"猩红。黏稠。美味。\"\n售价:\n50\n4\n36"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=270166",
@@ -65128,8 +66543,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 268199,
@@ -65272,6 +66687,18 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "穿潮者的击泡长杖\n史诗\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n双手\n法杖\n459 - 621点伤害\n速度\n3.60\n（每秒伤害150.0点）\n+199 敏捷\n+4,187 耐力\n+\n140暴击\n+\n66全能\n耐久: 120 / 120\n需要等级\n90\n\"啵！啵！啵！\"\n售价:\n109\n77\n85\n掉落于: 尼姆瑞莎·唤波者\n掉落几率: 16.98%"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "agility": 201,
+            "stamina": 4235,
+            "critical_strike": 140,
+            "versatility": 66
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "穿潮者的击泡长杖\n史诗\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n双手\n法杖\n463 - 627点伤害\n速度\n3.60\n（每秒伤害151.4点）\n+201 敏捷\n+4,235 耐力\n+\n140暴击\n+\n66全能\n耐久: 120 / 120\n需要等级\n90\n\"啵！啵！啵！\"\n售价:\n109\n83\n31\n掉落于: 尼姆瑞莎·唤波者\n掉落几率: 34.67%"
         }
       ],
       "name_zh_cn": "穿潮者的击泡长杖",
@@ -65315,8 +66742,8 @@
         "shaman.enhancement"
       ],
       "eligibility_status": "broad_rule_v1",
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 268221,
@@ -66496,6 +67923,18 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "霜鳞的秘法蕨叶\n史诗\n物品等级：\n340\n升级：神话\n6/6\n拾取后绑定\n副手物品\n+306 智力\n+2,094 耐力\n+\n69暴击\n+\n34精通\n需要等级\n90\n售价:\n49\n63\n13\n掉落于: 尼姆瑞莎·唤波者\n掉落几率: 26.42%"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "intellect": 309,
+            "stamina": 2118,
+            "critical_strike": 69,
+            "mastery": 34
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "霜鳞的秘法蕨叶\n史诗\n物品等级：\n341\n升级：神话\n6/6\n拾取后绑定\n副手物品\n+309 智力\n+2,118 耐力\n+\n69暴击\n+\n34精通\n需要等级\n90\n售价:\n49\n65\n61\n掉落于: 尼姆瑞莎·唤波者\n掉落几率: 25.24%"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=268263",
@@ -66546,8 +67985,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 268226,
@@ -67244,6 +68683,19 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "泡鳍挡水盾\n史诗\n物品等级：\n340\n升级：神话\n6/6\n拾取后绑定\n副手\n盾\n1327护甲\n3317点格挡\n+100 力量\n+306 智力\n+2,094 耐力\n+\n34急速\n+\n69精通\n耐久: 120 / 120\n需要等级\n90\n售价:\n52\n73\n62\n掉落于: 尼姆瑞莎·唤波者\n掉落几率: 11.32%"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "strength": 101,
+            "intellect": 309,
+            "stamina": 2118,
+            "haste": 34,
+            "mastery": 69
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "泡鳍挡水盾\n史诗\n物品等级：\n341\n升级：神话\n6/6\n拾取后绑定\n副手\n盾\n1337护甲\n3342点格挡\n+101 力量\n+309 智力\n+2,118 耐力\n+\n34急速\n+\n69精通\n耐久: 120 / 120\n需要等级\n90\n售价:\n52\n76\n26\n掉落于: 尼姆瑞莎·唤波者\n掉落几率: 21.46%"
         }
       ],
       "wowhead_url_zh_cn": "https://www.wowhead.com/cn/item=268262",
@@ -67283,8 +68735,8 @@
       "multiple_drop_sources": false,
       "catalyst_eligible": false,
       "catalyst_tier_bonus_slot": false,
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 270167,
@@ -67399,6 +68851,15 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "唤波者的海石\n史诗\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n装备唯一\n饰品\n+\n147急速\n装备：\n你的法术有很高的几率呼唤海洋，赋予潮汐洞察，使你的智力提高\n68\n，最多叠加6次。达到巅峰后，你的法术转而会削弱潮汐洞察，然后重新开始循环。\n需要等级\n90\n售价:\n51\n57\n30\n掉落于: 尼姆瑞莎·唤波者\n掉落几率: 32.08%"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "haste": 148
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "唤波者的海石\n史诗\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n装备唯一\n饰品\n+\n148急速\n装备：\n你的法术有很高的几率呼唤海洋，赋予潮汐洞察，使你的智力提高\n69\n，最多叠加6次。达到巅峰后，你的法术转而会削弱潮汐洞察，然后重新开始循环。\n需要等级\n90\n售价:\n51\n59\n87\n掉落于: 尼姆瑞莎·唤波者\n掉落几率: 37.03%"
         }
       ],
       "candidate_classes": [
@@ -67478,8 +68939,8 @@
       "weapon_type": null,
       "loot_role": "all",
       "eligibility_status": "broad_rule_v1",
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
     },
     {
       "id": 280799,
@@ -67600,11 +69061,21 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "露瑟拉玛，圣光之裁\n史诗\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n装备唯一\n双手\n剑\n405 - 675点伤害\n速度\n3.60\n（每秒伤害150.0点）\n+199 力量\n+4,187 耐力\n耐久: 120 / 120\n装备：\n你的伤害有几率点燃露瑟拉玛，持续10秒，使你获得\n774\n急速。燃烧期间，后续攻击有几率额外对目标造成(\n1\n*\n10839\n)点光辉伤害。\n需要等级\n90\n售价:\n109\n17\n61\n掉落于: [Kith'ix]\n掉落几率: 29.95%"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "strength": 201,
+            "stamina": 4235
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "露瑟拉玛，圣光之裁\n史诗\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n装备唯一\n双手\n剑\n409 - 682点伤害\n速度\n3.60\n（每秒伤害151.5点）\n+201 力量\n+4,235 耐力\n耐久: 120 / 120\n装备：\n你的伤害有几率点燃露瑟拉玛，持续10秒，使你获得\n777\n急速。燃烧期间，后续攻击有几率额外对目标造成(\n1\n*\n10990\n)点光辉伤害。\n需要等级\n90\n售价:\n109\n23\n3\n掉落于: [Kith'ix]\n掉落几率: 32.95%"
         }
       ],
       "effect_stat_policy": "count_static_item_stats_only",
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades",
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552",
       "name_zh_cn": "露瑟拉玛，圣光之裁",
       "icon": "inv_sword_2h_raidmidnight_d_01",
       "instance_zh_cn": "基希克斯破封",
@@ -67786,11 +69257,23 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "圣洁骑士的凰刃\n史诗\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n单手\n剑\n110 - 184点伤害\n速度\n2.60\n（每秒伤害56.5点）\n+581 智力\n+2,094 耐力\n+\n47暴击\n+\n56精通\n耐久: 110 / 110\n装备：\n你的法术有极高几率与剑刃产生共鸣，向圣光祈求援助。治疗法术会痛击附近的一名敌人，造成\n6734\n点光辉伤害；伤害法术会为附近的一名盟友恢复\n14141\n点生命值。\n需要等级\n90\n\"“黑暗休想在此立足。”——女伯爵莉亚德琳\"\n售价:\n84\n46\n62\n掉落于: [Kith'ix]\n掉落几率: 34.52%"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "intellect": 586,
+            "stamina": 2118,
+            "critical_strike": 47,
+            "mastery": 56
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "圣洁骑士的凰刃\n史诗\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n单手\n剑\n111 - 186点伤害\n速度\n2.60\n（每秒伤害57.1点）\n+586 智力\n+2,118 耐力\n+\n47暴击\n+\n56精通\n耐久: 110 / 110\n装备：\n你的法术有极高几率与剑刃产生共鸣，向圣光祈求援助。治疗法术会痛击附近的一名敌人，造成\n6827\n点光辉伤害；伤害法术会为附近的一名盟友恢复\n14338\n点生命值。\n需要等级\n90\n\"“黑暗休想在此立足。”——女伯爵莉亚德琳\"\n售价:\n84\n50\n82\n掉落于: [Kith'ix]\n掉落几率: 32.13%"
         }
       ],
       "effect_stat_policy": "count_static_item_stats_only",
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades",
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552",
       "name_zh_cn": "圣洁骑士的凰刃",
       "icon": "inv_sword_1h_raidmidnight_d_01",
       "instance_zh_cn": "基希克斯破封",
@@ -68839,11 +70322,20 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "圣光使者之盾碎片\n史诗\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n装备唯一\n饰品\n+190 [敏捷 or 力量]\n使用:\n祝福你周围的地面，持续10秒，为你提供一道神圣屏障。只要你在区域内，便可吸收接下来的\n1653475\n点伤害。站在受祝地面上的盟友也会将受到的10%的伤害转移给你，直至屏障消失。\n仅适用于坦克专精。\n(3​分钟 冷却)\n需要等级\n90\n\"“不成功，便成仁。”——女伯爵莉亚德琳\"\n售价:\n49\n34\n73\n掉落于: [Kith'ix]\n掉落几率: 30.96%"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "agility_or_strength": 191
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "圣光使者之盾碎片\n史诗\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n装备唯一\n饰品\n+191 [敏捷 or 力量]\n使用:\n祝福你周围的地面，持续10秒，为你提供一道神圣屏障。只要你在区域内，便可吸收接下来的\n1670263\n点伤害。站在受祝地面上的盟友也会将受到的10%的伤害转移给你，直至屏障消失。\n仅适用于坦克专精。\n(3​分钟 冷却)\n需要等级\n90\n\"“不成功，便成仁。”——女伯爵莉亚德琳\"\n售价:\n49\n37\n19\n掉落于: [Kith'ix]\n掉落几率: 33.94%"
         }
       ],
       "effect_stat_policy": "count_static_item_stats_only",
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades",
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552",
       "name_zh_cn": "圣光使者之盾碎片",
       "icon": "8268569",
       "instance_zh_cn": "基希克斯破封",
@@ -68998,11 +70490,20 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "日蚀临世之印\n史诗\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n装备唯一\n饰品\n+190 智力\n装备：\n你的治疗有几率让你瞥见令人窒息的黑暗。你会尝试延缓终焉，持续15秒，使你获得\n278\n急速；目标每损失1%生命值，你还会额外获得\n2\n急速。\n需要等级\n90\n售价:\n51\n62\n98\n掉落于: [Kith'ix]\n掉落几率: 34.52%"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "intellect": 191
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "日蚀临世之印\n史诗\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n装备唯一\n饰品\n+191 智力\n装备：\n你的治疗有几率让你瞥见令人窒息的黑暗。你会尝试延缓终焉，持续15秒，使你获得\n279\n急速；目标每损失1%生命值，你还会额外获得\n2\n急速。\n需要等级\n90\n售价:\n51\n65\n56\n掉落于: [Kith'ix]\n掉落几率: 33.61%"
         }
       ],
       "effect_stat_policy": "count_static_item_stats_only",
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades",
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552",
       "name_zh_cn": "日蚀临世之印",
       "icon": "8268562",
       "instance_zh_cn": "基希克斯破封",
@@ -69158,11 +70659,20 @@
           },
           "sockets": 0,
           "tooltip_zh_cn": "扭曲恐兽触须\n史诗\n晋升毒液铸造：史诗\n物品等级：\n340\n拾取后绑定\n装备唯一\n饰品\n+190 [敏捷 or 力量 or 智力]\n装备：\n你的伤害有极高几率与触须产生共鸣，获得毁灭之力，使你的爆击提高\n35\n，持续15秒。多次施加可以重叠生效。\n每5秒，你对新目标的第一次攻击必定获得3层毁灭之力。\n需要等级\n90\n\"这截断肢散发着一股难以抑制的凶戾气息。\"\n售价:\n53\n17\n38\n掉落于: [Kith'ix]\n掉落几率: 35.03%"
+        },
+        {
+          "item_level": 341,
+          "quality": 4,
+          "stats": {
+            "agility_or_strength_or_intellect": 191
+          },
+          "sockets": 0,
+          "tooltip_zh_cn": "扭曲恐兽触须\n史诗\n晋升毒液铸造：史诗\n物品等级：\n341\n拾取后绑定\n装备唯一\n饰品\n+191 [敏捷 or 力量 or 智力]\n装备：\n你的伤害有极高几率与触须产生共鸣，获得毁灭之力，使你的爆击提高\n35\n，持续15秒。多次施加可以重叠生效。\n每5秒，你对新目标的第一次攻击必定获得3层毁灭之力。\n需要等级\n90\n\"这截断肢散发着一股难以抑制的凶戾气息。\"\n售价:\n53\n20\n4\n掉落于: [Kith'ix]\n掉落几率: 33.69%"
         }
       ],
       "effect_stat_policy": "count_static_item_stats_only",
-      "default_optimizer_item_level": 340,
-      "ascendant_upgrade_source": "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades",
+      "default_optimizer_item_level": 341,
+      "ascendant_upgrade_source": "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552",
       "name_zh_cn": "扭曲恐兽触须",
       "icon": "8268563",
       "instance_zh_cn": "基希克斯破封",

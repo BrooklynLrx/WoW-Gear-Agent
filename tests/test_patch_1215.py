@@ -29,16 +29,17 @@ def test_1215_default_levels_search_and_optimizer_preserve_history(monkeypatch):
         for item in items:
             assert item["item_level"] == item["graduation_item_level"]
             if item["slot_key"] in {"weapon", "neck", "trinket"} and item["item_level"] != 321:
-                assert item["item_level"] == (338 if item["is_crafted"] else 340), (spec, item)
+                assert item["item_level"] == (337 if item["is_crafted"] else 341), (spec, item)
 
     defaults = loot_api.search_loot(item_level=0, class_key="mage", spec_key="arcane", limit=500)["items"]
     staff = next(item for item in defaults if item["item_id"] == 245770)
-    assert staff["item_level"] == 338 and staff["customizable_secondary_amounts"]
+    assert staff["item_level"] == 337 and staff["customizable_secondary_amounts"]
     assert any(item["item_id"] == 281235 and item["item_level"] == 334 for item in defaults)
     assert next(item for item in defaults if item["item_id"] == 281235)["catalyst_eligible"]
-    assert any(item["item_id"] == 281056 and item["item_level"] == 340 for item in defaults)
+    assert any(item["item_id"] == 281056 and item["item_level"] == 341 for item in defaults)
     assert not any(item["item_id"] == 280835 for item in defaults)  # healer-only trinket
     assert loot_api.search_loot(item_level=334, item_ids=[251173])["items"][0]["item_level"] == 334
+    assert loot_api.search_loot(item_level=340, item_ids=[251173])["items"][0]["item_level"] == 340
     delve_hero = loot_api.search_loot(item_level=321, source_type="delve", class_key="mage", spec_key="arcane", limit=500)["items"]
     assert delve_hero
     delve_default = loot_api.search_loot(item_level=0, source_type="delve", class_key="mage", spec_key="arcane", limit=500)["items"]
@@ -48,12 +49,12 @@ def test_1215_default_levels_search_and_optimizer_preserve_history(monkeypatch):
     assert rings[249621]["item_level"] == 334  # screenshot: 巫毒指环
     assert all(item["item_level"] == 334 for item in rings.values())
     assert all(item["item_level"] == 334 for item in delve_default if item["slot_key"] == "back")
-    assert all(item["item_level"] == 340 for item in delve_default if item["slot_key"] == "neck")
+    assert all(item["item_level"] == 341 for item in delve_default if item["slot_key"] == "neck")
     offhand_ids = {249672, 249676, 272275, 272276}
     assert {item["item_id"] for item in delve_default if item["weapon_type"] == "off_hand"} == {249672, 272275}
     paladin_delve = loot_api.search_loot(item_level=0, source_type="delve", class_key="paladin", spec_key="holy", limit=500)["items"]
     assert {item["item_id"] for item in paladin_delve if item["weapon_type"] == "shield"} == {249676, 272276}
-    assert all(item["item_level"] == 340 for item in delve_default + paladin_delve if item["item_id"] in offhand_ids)
+    assert all(item["item_level"] == 341 for item in delve_default + paladin_delve if item["item_id"] in offhand_ids)
     assert all(item["item_level"] == 321 for item in delve_default if item["slot_key"] in {"weapon", "trinket"} and item["item_id"] not in offhand_ids)
     old_offhands = loot_api.search_loot(item_level=321, source_type="delve", item_ids=list(offhand_ids), limit=500)["items"]
     assert {item["item_id"] for item in old_offhands} == offhand_ids
@@ -66,5 +67,5 @@ def test_1215_default_levels_search_and_optimizer_preserve_history(monkeypatch):
     assert result["success"], result
     equipment = result["solutions"][0]["equipment"]
     assert sum(item["is_crafted"] for item in equipment) == 2
-    assert any(item["item_id"] == 245770 and item["item_level"] == 338 for item in equipment)
-    assert all(item["item_level"] == 340 for item in equipment if item["slot_key"] in {"neck", "trinket"} and not item["is_crafted"])
+    assert any(item["item_id"] == 245770 and item["item_level"] == 337 for item in equipment)
+    assert all(item["item_level"] == 341 for item in equipment if item["slot_key"] in {"neck", "trinket"} and not item["is_crafted"])

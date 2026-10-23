@@ -11,7 +11,7 @@ sys.path.insert(0, str(ROOT))
 from scripts.enrich_items import fetch, save
 
 RAID_URL = "https://www.wowhead.com/guide/midnight/raids/the-unbinding-of-kithix-boss-strategy-abilities-rewards"
-UPGRADE_URL = "https://www.wowhead.com/ptr/guide/midnight/bonus-rolls-item-upgrades"
+UPGRADE_URL = "https://www.wowhead.com/news/item-level-changes-for-ascended-venomforged-gear-383552"
 ARMOR_SLOTS = {"head", "shoulder", "chest", "wrist", "hands", "waist", "legs", "feet"}
 MYTH_REWARD_SLOTS = ARMOR_SLOTS | {"back", "ring", "neck"}
 DELVE_OFFHAND_IDS = {249672, 249676, 272275, 272276}
@@ -59,7 +59,7 @@ def main():
                 item["default_optimizer_item_level"] = 334
                 item["myth_reward_source"] = "https://www.wowhead.com/npc=256670/zahran" if delve_offhand else "https://www.wowhead.com/item=285044/venerated-loa-armament"
             if slot in {"weapon", "neck", "trinket"} and (331 if is_crafted else 334) in levels:
-                target = 338 if is_crafted else 340
+                target = 337 if is_crafted else 341
                 item["default_optimizer_item_level"] = target
                 item["ascendant_upgrade_source"] = UPGRADE_URL
                 levels.add(target)
@@ -88,7 +88,7 @@ def main():
             item["variants"].sort(key=lambda v: v["item_level"])
         catalog["content_patch"] = "12.1.5"
         if catalog is loot:
-            catalog["scope"] = "Hero/Myth tracks; Delve armor, cloak and ring default Myth 6/6 334; Delve neck and off-hand default Ascendant Myth 340; other Delve weapons/trinkets remain Hero 6/6 321"
+            catalog["scope"] = "Hero/Myth tracks; Delve armor, cloak and ring default Myth 6/6 334; Delve neck and off-hand default Ascendant Myth 341; other Delve weapons/trinkets remain Hero 6/6 321"
         save(path, catalog)
     print(f"fetched {len(jobs)} variants; run scripts/prepare_catalog.py and scripts/import_data.py next")
 
